@@ -1,0 +1,54 @@
+---
+title: Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題
+description: この記事では、Elasticsearchバージョン 2.x および 5.x を使用している場合に、クラウドインフラストラクチャバージョン 2.3.1 以降のAdobe Commerceにアップグレードした後のデプロイメント中に発生する問題の解決策について説明します。
+exl-id: 6ceeb2ea-528d-4c03-ab2b-c5aed46fd0a2
+feature: Cloud
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 0%
+
+---
+
+# Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題
+
+>[!WARNING]
+>
+>[MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。こちらを参照してください [Elasticsearchのインストールと設定](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+
+>[!WARNING]
+>
+>なお、実稼働環境へのサービスのアップグレードは、インフラストラクチャチームへの 48 営業時間以内通知を行わなければ実行できません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要があるのは、48 時間前までということになります [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 必要なサービスのアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。
+
+この記事では、Elasticsearchバージョン 2.x および 5.x を使用している場合に、クラウドインフラストラクチャバージョン 2.3.1 以降のAdobe Commerceにアップグレードした後のデプロイメント中に発生する問題の解決策について説明します。
+
+## 影響を受ける製品とバージョン：
+
+* クラウドインフラストラクチャー 2.3.1 以降のAdobe Commerce
+* Elasticsearch 2.x および 5.x
+
+## 原因：
+
+クラウドインフラストラクチャー上でAdobe Commerceにアップグレードし（バージョン 2.3.1 以降）、バージョン 6.x より前のElasticsearchを使用しているマーチャントでは、デプロイ時にエラーが発生する場合があります。 これは、Elasticsearchバージョン 2.x と 5.x が [提供終了](https://www.elastic.co/support/eol) およびは、Adobe Commerceではサポートされなくなりました。 Elasticsearchクライアントは最新である必要があります。最新でない場合、デプロイメントを実行するとエラーが発生するリスクがあります。 詳しくは、次を参照してください [Elasticsearchクライアントの変更](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html) 開発者向けドキュメントを参照してください。
+
+## 問題
+
+をデプロイすると、次のようなエラーメッセージが表示され、Elasticsearchバージョンに互換性がないことを示します。 *インフラストラクチャレイヤーのElasticsearchサービスバージョン 5.2.2 は、Magentoアプリケーションで使用されている現在のバージョンの elasticsearch/elasticsearch module （6.7.0.0）と互換性がありません。*  *この問題を解決するには、Magentoのクラウドインフラストラクチャ上のElasticsearchサービスをバージョン 6.x にアップグレードします*. この問題の他の症状は、画像が欠落していたり、環境のフィルターに関する問題が発生していたりする場合があります。
+
+## 解決策
+
+>[!WARNING]
+>
+>共有環境がある場合は、ステージング環境と実稼動環境がアップグレードする準備ができていることを確認します。
+
+この問題を解決するには、ElasticsearchクライアントモジュールとElasticsearchサービスが、最新の推奨バージョンである必要があります。
+
+1. 指示に従って～する [Elasticsearchモジュールの変更](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html) 開発者向けドキュメントで、推奨される最新バージョンのElasticsearchクライアントモジュールを入手できます。
+1. [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ステージング環境および実稼動環境で、Elasticsearchサービスの 6.x へのアップデートをリクエストします。 Elasticsearchサービスへのアップグレードが完了するまでに時間がかかる場合があることに注意してください。
+
+## 関連資料
+
+* [Adobe Commerce 2.3 テクノロジースタックの要件](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements-tech.html) 開発者向けドキュメントを参照してください。
+* [Elasticsearchサービスの設定](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html) 開発者向けドキュメントを参照してください。
+* [Elasticsearchのインストールと設定](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) 開発者向けドキュメントを参照してください。
+* [Elasticsearchが正しくインストールされていることを確認します。](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md) サポートナレッジベースで。

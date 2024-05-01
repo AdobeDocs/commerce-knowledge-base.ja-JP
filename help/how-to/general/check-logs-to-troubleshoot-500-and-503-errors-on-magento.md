@@ -1,0 +1,36 @@
+---
+title: ログを確認して、Adobe Commerceの 500 および 503 エラーのトラブルシューティングを行います
+description: この記事では、「access.log」と関連ログを確認して、トラフィックやサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行う方法について説明します。 「access.log」と関連ログを確認すると、クラウドインフラストラクチャー上のAdobe Commerceに関連して問題を引き起こしている可能性のある原因に関する情報を得ることができます。
+exl-id: 47d7de6b-3e12-4e79-a5c1-c27a9196b99c
+feature: Cloud, Logs
+source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 0%
+
+---
+
+# ログを確認して、Adobe Commerceの 500 および 503 エラーのトラブルシューティングを行います
+
+この記事では、を確認する方法を説明します `access.log` および関連ログを使用して、トラフィックやサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行うことができます。 の表示 `access.log` および関連するログは、クラウドインフラストラクチャー上のAdobe Commerceに関連して、何が問題を引き起こしているかに関する情報を提供できます。
+
+<!--
+Bob - not in TOC
+-->
+
+## 影響を受ける製品とバージョン
+
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
+
+これらのサーバーエラーのログを表示するには、 `access.log` web サーバー上（例：） `<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`
+
+関連ログを確認するには：
+
+1. 次のコマンドを CLI で実行します（クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの場合）。 または、過去の特定の時点（クラウドインフラストラクチャー上のAdobe Commerce Starter プランアーキテクチャの場合）まで。ログのカバー期間は限られており、ログのローテーションは使用できません。 `grep -r "\" [50[0-9]" /path/to/access.log` 過去にエラーが発生した場合は、CLI で次のコマンドを実行します（Pro アーキテクチャのみ）。 `zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
+1. 次に、 `exception.log` および `error.log` または同等の [回転ログ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達した場合に自動的に回転および圧縮されるログ）同じタイムスタンプを使用して、潜在的なエラーを見つけ、そのエラーを引き起こしている可能性があるものを確認します。 メモ：を確認するには `exception.log` および `error.log` 上記のコマンドを CLI で実行するが、 `access.log` （を使用） `exception.log` または `error.log`.
+
+## 関連資料
+
+* 参照： [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) が含まれる *クラウドインフラストラクチャー上のAdobe Commerce ガイド*.
+* 参照： [503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) サポートナレッジベースで。
+* 参照： [Magentoサイトのダウンのトラブルシューティング](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) サポートナレッジベースで。

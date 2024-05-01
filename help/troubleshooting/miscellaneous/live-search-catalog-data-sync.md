@@ -1,0 +1,136 @@
+---
+title: ライブ検索カタログが同期されていません
+description: この記事では、Adobe Commerce拡張機能を使用するとカタログデータが正しく同期されない Live Search の問題の解決策について説明します。
+exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
+feature: Catalog Management, Search
+role: Developer
+source-git-commit: a1b049dab989d5d8594d86b64b778e6e277a9f41
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 0%
+
+---
+
+# ライブ検索カタログが同期されていません
+
+この記事では、Adobe Commerce拡張機能を使用するとカタログデータが正しく同期されない Live Search の問題の解決策について説明します。
+
+## 影響を受ける製品とバージョン
+
+* Adobe Commerce 2.4.x （Live Search Extension がインストールされている場合）
+
+## 問題
+
+カタログデータが正しく同期されていないか、新しい製品が追加されたが検索結果に表示されません。
+
+<u>再現手順</u>
+
+1. の説明に従って、Adobe Commerce インスタンスの Live Search を設定して接続します。 [Live Search/API キーの設定をインストールします。](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) アドビのユーザードキュメントをご覧ください。
+1. 30 分後、に説明されているように、書き出されたカタログ データを確認します [Live Search をインストール/書き出しを確認](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) アドビのユーザードキュメントをご覧ください。
+1. 30 分後、の説明に従って接続をテストします [Live Search をインストール/接続をテスト](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) アドビのユーザードキュメントをご覧ください。
+
+または
+
+1. カタログに新しい商品を追加します。
+1. Magentoインデクサーと cron がデータをバックエンドサービスに同期させるために実行してから 15～20 分後に、製品名またはその他の検索可能な属性を使用して検索クエリを実行してみてください。
+
+<u>期待される結果</u>
+
+* 書き出されたカタログ データを確認できます
+* 接続に成功しました
+* 検索結果に新製品が表示されます。
+
+<u>実際の結果</u>
+
+API キーが変更されたため、エクスポートされたカタログを確認できないか、接続が確立されていません。
+
+## 解決策
+
+カタログの同期に関する問題を修正する方法はいくつかあります。
+
+### 変更が適用されるのを待ちます
+
+設定して接続すると、ES （Elasticsearch）のインデックスが作成され、検索結果が返されるまで、30 分以上かかる場合があります。 その後の 1 回限りの製品アップデートは、数分以内にインデックスが作成される予定です。
+
+### 特定の SKU の製品データを同期
+
+特定の SKU に対して製品データが正しく同期されていない場合は、次の操作をおこないます。
+
+1. 次の SQL クエリを使用し、期待するデータが `feed_data` 列。 また、をメモしておきます `modified_at` タイムスタンプ。
+
+   ```sql
+   select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   ```
+
+1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で SQL クエリを再実行してデータを確認します。
+
+   ```bash
+   bin/magento indexer:reindex catalog_data_exporter_products
+   ```
+
+1. それでも正しいデータが表示されない場合は、 [サポートチケットを作成](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+
+### 前回の製品書き出しのタイムスタンプを確認
+
+1. で正しいデータが表示される場合、 `catalog_data_exporter_products`は、次の SQL クエリを使用して、前回の書き出しのタイムスタンプを確認します。 これは `modified_at` timestamp:
+
+   ```sql
+   select * from flag where flag_code = 'products-feed-version';
+   ```
+
+1. タイムスタンプが古い場合は、次の cron 実行を待つか、次のコマンドを使用して自分でトリガーすることができます。
+
+   ```bash
+   bin/magento cron:run --group=saas_data_exporter
+   ```
+
+1. 待機 `<>` 時間（増分更新の時間）。 それでもデータが表示されない場合は、 [サポートチケットを作成](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+
+### 特定の属性コードを同期
+
+特定の属性コードに対して製品属性データが正しく同期されていない場合は、次の操作を行います。
+
+1. 次の SQL クエリを使用し、期待するデータが `feed_data` 列。 また、をメモしておきます `modified_at` タイムスタンプ。
+
+   ```sql
+   select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
+   ```
+
+1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で SQL クエリを再実行してデータを確認します。
+
+   ```bash
+   bin/magento indexer:reindex catalog_data_exporter_product_attributes
+   ```
+
+1. それでも正しいデータが表示されない場合は、 [サポートチケットを作成](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+
+### 最後の製品属性エクスポートのタイムスタンプを確認します
+
+で正しいデータが表示される場合、 `catalog_data_exporter_product_attributes`:
+
+1. 次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 これは `modified_at` タイムスタンプ。
+
+   ```sql
+   select * from flag where flag_code = 'product-attributes-feed-version';
+   ```
+
+1. タイムスタンプが古い場合は、次の cron 実行を待つか、次のコマンドを使用して自分でトリガーすることができます。
+
+   ```bash
+   bin/magento cron:run --group=saas_data_exporter
+   ```
+
+1. 15～20 分待ちます（増分更新のための時間）。 それでもデータが表示されない場合は、 [サポートチケットを作成](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+
+### API 設定の変更後に同期
+
+（既知の問題） API 設定を変更した場合、その結果データ領域 ID が変更され、カタログの変更が同期されなくなっている場合は、次のコマンドを実行してください。
+
+```bash
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productattributes
+```
+
+## 関連資料
+
+参照： [オンボーディング Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) アドビのユーザードキュメントをご覧ください。

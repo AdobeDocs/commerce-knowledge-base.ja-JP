@@ -1,0 +1,50 @@
+---
+title: Github トークンの問題と Composer の主要手順
+description: この記事では、古い Composer キーが原因で発生した Github トークンの失敗に関連するデプロイメントの失敗の問題に対する解決策を提供します。
+exl-id: 202cb936-f9ba-49ea-bf0a-6e6994d2337a
+feature: Identity Management
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 0%
+
+---
+
+# Github トークンの問題と Composer の主要手順
+
+この記事では、古い Composer キーが原因で発生した Github トークンの失敗に関連するデプロイメントの失敗の問題に対する解決策を提供します。
+
+## 影響を受ける製品とバージョン
+
+* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Composer バージョン 1.10.20 以前
+
+>[!NOTE]
+>
+>Adobe Commerce オンプレミスのマーチャントは、Git によって導入されたトークン形式の変更により、Composer バージョン 1.10.21 以降を使用していることをホスト プロバイダーに確認する必要があります。
+
+## 問題
+
+デプロイメントが失敗し、デプロイメントログに次のような情報が含まれている場合：
+
+*致命的なエラー：キャッチされない UnexpectedValueException: github.comの github OAuth トークンに無効な文字：「ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx」が/app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129 に含まれています*
+
+## 原因：
+
+Composer キーが古いと、Github トークンでエラーが発生し、デプロイメントが失敗します。
+
+## 解決策
+
+この問題を解決するには、Composer のバージョンを 1.10.22 にアップデートしてください。
+
+1. ローカル環境でを実行します。 `composer require “composer/composer”:”>1.10.21`.
+1. これにより、その Composer パッケージ バージョンの要件が追加されます。 ロックファイルを確認します –  `composer/composer` バージョンは 1.0.22 以上である必要があります。
+1. コミット `composer.json` および `composer.lock` デプロイメントをプッシュします。
+
+この方法で解決しない場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+
+## 関連資料
+
+* [Github ブログ：GitHub の新しい認証トークン形式の背後](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
+* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上しました](https://www.infoq.com/news/2021/04/github-new-token-format/)

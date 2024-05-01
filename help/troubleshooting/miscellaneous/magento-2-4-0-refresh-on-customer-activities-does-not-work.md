@@ -1,0 +1,63 @@
+---
+title: 「Adobe Commerce 2.4.0：顧客のアクティビティの更新が機能しない」
+description: この記事では、管理者ユーザーが顧客の注文を作成し、顧客のアクティビティ サイドパネルの「更新」ボタンが機能しない場合の、Adobe Commerce 2.4.0 の既知の問題の解決策を説明します。
+exl-id: 50048e9f-6009-4db5-ae4a-c35a84cec265
+feature: Configuration
+role: Developer
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 0%
+
+---
+
+# Adobe Commerce 2.4.0：顧客のアクティビティの更新が機能しない
+
+この記事では、管理者ユーザーが顧客の注文を作成し、顧客のアクティビティ サイドパネルの「更新」ボタンが機能しない場合の、Adobe Commerce 2.4.0 の既知の問題の解決策を説明します。
+
+## 影響を受ける製品とバージョン
+
+* Adobe Commerce オンプレミス 2.4.0
+* クラウドインフラストラクチャー 2.4.0 上のAdobe Commerce
+
+## 問題
+
+<u>再現手順</u>:
+
+1. に移動します **管理パネル** > **売上** > **注文件数**.
+1. 「」をクリックします **新しい注文を作成** ボタン。
+1. 作成した顧客を選択します。
+1. 作成した顧客としてストアフロントに移動します。
+1. に移動します **製品** ページ。 「」をクリックします **更新** のボタン **最近表示した製品** セクション **顧客のアクティビティ**.
+1. ストアフロントに戻ります。
+1. 作成した製品を使用して注文します。
+1. に戻る **管理パネル** をクリックし、 **更新** のボタン **最後に注文された項目** セクション **顧客のアクティビティ**.
+1. ストアフロントに戻ります。 作成した製品をに追加します **比較リスト**.
+1. に戻る **管理パネル**. 「」をクリックします **更新** のボタン **比較リストの製品** セクション **顧客のアクティビティ**.
+1. ストアフロントに戻ります。
+1. 作成した製品を **比較リスト**.
+1. に戻る **管理パネル**.
+1. 「」をクリックします **更新** のボタン **最近比較した製品** セクション **顧客のアクティビティ**.
+1. ストアフロントに戻ります。
+
+<u>期待される結果</u>:
+
+製品名はに表示されます。 **最近表示した製品**, **最後に注文された項目**, **比較リストの製品**、および **最近比較した製品** セクション。
+
+<u>実際の結果</u>:
+
+ページは毎回上にスクロールされます。 **更新** ボタンがクリックされます。 製品の名前が適切なセクションに表示されません。
+
+## 解決策
+
+回避策は、管理者ユーザーが更新できることです **顧客のアクティビティ** をクリックする **変更を更新** サイドバーの下部にあるボタン。 この問題は、Adobe Commerce 2.4.1 パッチで解決される予定です。
+
+![mceclip0.png](assets/mceclip0.png)
+
+## 関連資料
+
+* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintree支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
+* [Adobe Commerce 2.4.0 での配送ラベル作成の既知の問題](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md)
+* [Adobe Commerce 2.4.0 の既知の問題：ストアフロントに生のメッセージデータが表示される](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
+* [Adobe Commerce 2.4.0 の既知の問題：輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
+* [Adobe Commerce 2.4.0 の既知の問題：「買い物かごに選択項目を追加」ボタンが機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

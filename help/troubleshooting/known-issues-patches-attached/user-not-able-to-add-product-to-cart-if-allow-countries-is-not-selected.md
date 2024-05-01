@@ -1,0 +1,68 @@
+---
+title: 「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない
+description: この記事では、「国を許可」が選択されていない場合に商品を買い物かごに追加できない、PHP 8.1 を使用した既知のAdobe Commerce 2.4.4 の問題に対するパッチを提供します。
+exl-id: d05d1956-de23-496c-9234-c461a3cfdf36
+feature: Orders, Products, Shopping Cart
+role: Developer
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 0%
+
+---
+
+# 「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない
+
+この記事では、「国を許可」が選択されていない場合に商品を買い物かごに追加できない、PHP 8.1 を使用した既知のAdobe Commerce 2.4.4 の問題に対するパッチを提供します。
+
+## 影響を受ける製品とバージョン
+
+Adobe Commerce 2.4.4 と PHP 8.1
+
+## 問題
+
+「国を許可」が選択されていない場合、ユーザーは買い物かごに製品を追加できません。
+
+<u>再現手順</u>:
+
+1. Commerce Admin にログインします。
+1. に移動 **ストア** > **設定** > **一般** > **国オプション**
+1. のすべてのオプションを選択解除します。 **国を許可** フィールド。
+1. クリック **設定を保存** をクリックして、設定を保存します。
+1. ストアフロントに移動して、買い物かごに製品を追加してみてください。
+
+<u>期待される結果：</u>
+
+買い物かごに製品を追加できます。
+
+<u>実際の結果：</u>
+
+買い物かごに製品を追加することはできません。 次のコンソールエラーが表示されます。
+
+```bash
+Failed to load resource: the server responded with a status of 400 (Bad Request)
+customer-data.js:87 Uncaught Error: [object Object]
+    at Object.<anonymous> (customer-data.js:87:23)
+    at fire (jquery.js:3500:50)
+    at Object.fireWith [as rejectWith] (jquery.js:3630:29)
+    at done (jquery.js:9798:30)
+    at XMLHttpRequest.<anonymous> (jquery.js:10057:37)
+```
+
+## 原因：
+
+Adobe Commerce設定は、を取得します。 `null` 複数選択の設定で、選択した項目がない場合。 この設定は、8.1 より前の PHP バージョンで正常に処理された場合に有効になります。ただし、PHP 8.1 では、エラーが原因で&#39;&#39;[PHP 8.1 では、内部関数の null を nullable でない引数に渡すことは推奨されません](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)」と入力します。
+
+## 解決策
+
+この問題を解決するには、次のパッチを適用します。
+
+[AC-2655_2.4.4.patch.zip](assets/AC-2655_2.4.4.patch.zip)
+
+## パッチの適用方法
+
+参照： [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+
+## 役に立つリンク
+
+[クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
