@@ -3,9 +3,9 @@ title: クラウドインフラストラクチャー上のAdobe Commerceで環�
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境をロールバックする様々なシナリオについて説明します。
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: ddde2385f1d94194b34e9ed51f6cbda55c916d90
+source-git-commit: f2aeb0262ddcb3d7e78028d08b9323db243fc96b
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -156,8 +156,8 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 1. [環境に SSH で接続する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. MySQL DB に接続します。 `mysql -h database.internal` （Pro 環境の場合は、以下を参照してください。 [MySQL サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)）に設定します。
-1. \&#39;main\&#39; DB をドロップします： `drop database main;`
-1. 空の\&#39;main\&#39; DB を作成します： `create database main;`
+1. をドロップ `main` DB : `drop database main;`
+1. 空のを作成 `main` DB: `create database main;`
 1. 次の設定ファイルを削除します。 `config.php` , `config.php` , `.bak,` , `env.php`, `env.php.bak`
 
 DB のリセット後、 [作る [!DNL git] 再デプロイをトリガーするために環境にプッシュ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) 新規作成した DB にAdobe Commerceをインストールします。 または [redeploy コマンドを実行する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
