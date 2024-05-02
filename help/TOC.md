@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: b445f8ae73723afaa2f00e089ea18607dc59df72
+source-git-commit: cd3101c325a6e33b4a4b56e6f2494011cdba56d8
 workflow-type: tm+mt
-source-wordcount: '10939'
+source-wordcount: '10949'
 ht-degree: 0%
 
 ---
@@ -791,6 +791,7 @@ ht-degree: 0%
          * [ACSD-56858:B2B 会社管理者の役割の権限の不一致](/help/support-tools/patches-available-in-qpt-tool/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel.md)
       * v1.1.48 {#v1-1-48}
          * [概要： [!DNL Quality Patches Tool] （QPT） v1.1.48](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/overview.md)
+         * [ACSD-57337：アクセス制限を持つ管理者ユーザーに会社が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          * [ACSD-57394：の複数の並べ替えフィールドでの製品の並べ替えが正しくありません [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          * [ACSD-56546：設定可能な製品およびバンドル製品が、ストアフロントに在庫切れとして表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          * [ACSD-55566: [!UICONTROL mergeCart] 内部サーバーエラーでミューテーションが失敗する [!DNL GraphQL] response](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
