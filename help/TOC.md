@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: c4c2ae504a5ecd699ab2fa92c07edb0d0942fd76
+source-git-commit: 2db8eeb5bbe473db895bc092462b77de39af3e6d
 workflow-type: tm+mt
-source-wordcount: '10961'
+source-wordcount: '10975'
 ht-degree: 0%
 
 ---
@@ -791,6 +791,7 @@ ht-degree: 0%
          * [ACSD-56858:B2B 会社管理者の役割の権限の不一致](/help/support-tools/patches-available-in-qpt-tool/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel.md)
       * v1.1.48 {#v1-1-48}
          * [概要： [!DNL Quality Patches Tool] （QPT） v1.1.48](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/overview.md)
+         * [ACSD-57315：新しいトランザクションがで作成されます [!DNL PayPal Payflow Pro] 「取得」ボタンをクリックするたびに、](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
          * [ACSD-56635：アカウント共有がに設定されている場合、読み込まれた顧客は重複します [!DNL Global]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          * [ACSD-57337：アクセス制限を持つ管理者ユーザーに会社が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          * [ACSD-57394：の複数の並べ替えフィールドでの製品の並べ替えが正しくありません [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
