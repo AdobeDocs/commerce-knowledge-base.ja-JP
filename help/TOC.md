@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 2db8eeb5bbe473db895bc092462b77de39af3e6d
+source-git-commit: 59671ff01a398ad8dc525c8948b5dc5548774cf5
 workflow-type: tm+mt
-source-wordcount: '10975'
+source-wordcount: '10989'
 ht-degree: 0%
 
 ---
@@ -797,6 +797,7 @@ ht-degree: 0%
          * [ACSD-57394：の複数の並べ替えフィールドでの製品の並べ替えが正しくありません [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          * [ACSD-56546：設定可能な製品およびバンドル製品が、ストアフロントに在庫切れとして表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          * [ACSD-55566: [!UICONTROL mergeCart] 内部サーバーエラーでミューテーションが失敗する [!DNL GraphQL] response](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
+         * [ACSD-58008：終了日を空として編集すると、スケジュールの更新が表示されなくなる](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          * [ACSD-57854:GraphQL応答に、カテゴリ集計にリストされるべきでない無効なカテゴリが含まれています](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations.md)
          * [ACSD-57565：注文ダッシュボードに間違った注文情報が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
       * [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
