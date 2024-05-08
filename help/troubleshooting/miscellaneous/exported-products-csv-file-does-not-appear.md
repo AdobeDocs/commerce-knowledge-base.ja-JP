@@ -4,9 +4,9 @@ description: ここでは、Commerce Admin で商品を.csv ファイルに書�
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 465eb89cf5c5169b0b459ab7e6bdcbd418781093
+source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,10 @@ Adobe Commerce アプリケーション部分バージョン 2.3.2 の書き出�
 >[!NOTE]
 >
 >が見つからない場合は、 `.magento.env.yaml` 環境用のファイルですが、削除されたと思われる場合は、新しく作成する必要があります `.magento.env.yaml`. 最初は空の場合がありますが、必要に応じて情報を追加できます。 次の記事を参照してください。 [デプロイメント用の環境変数の設定](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) および [環境変数](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) 開発者向けドキュメントを参照してください。
+
+>[!TIP]
+>
+>[YAML ファイル](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) は大文字と小文字が区別され、タブは許可されません。 .magento.env.yaml ファイル全体で一貫したインデントを使用するように注意してください。使用しないと、設定が期待どおりに動作しない場合があります。 ドキュメントとサンプルファイルの例では、2 つのスペースのインデントを使用しています。 ece-tools validate コマンドを使用して、設定を確認します。
 
 >[!NOTE]
 >
