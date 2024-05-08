@@ -3,9 +3,9 @@ title: 新規設定のチェックリスト [!DNL domain]
 description: これは、新規設定方法のチェックリストです。 [!DNL domain] クラウドインフラストラクチャー上のAdobe Commerceで。
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: cc3dc1e3f9c8f98370ce5db125b402d4c1dfbd6f
+source-git-commit: 625ed2c7ab79f7bca9a979903e97c44c875e607c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,13 @@ ht-degree: 0%
 >[!NOTE]
 >
 >新しいを追加できます [!DNL domain] 対象： [!DNL Fastly] で設定を更新することにより、自分で行うことができます。 [!DNL Admin] 。対象： **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** 例： [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) を参照してください。
+>
+>ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
+>
+>1. 独自に設定されたクラウド環境にドメインを移行しようとしています [!DNL Fastly] サービス。 この場合は、リクエストを送信し、ドメインのデリゲーションをリクエストします。
+>1. ドメインを Starter から Pro に移行します。 この場合は、さらに支援を求める要求を送信します。
 
-* **[!DNL Starter]**: [!DNL Custom domains] はサポートされていません。
+* **[!DNL Starter]**: [!DNL Custom domains] は、ステージング環境ではサポートされていません。
 
 ### 手順 3 - [!DNL Production environment]：を担当しています [!DNL Pro] または [!DNL Starter]?
 
@@ -43,6 +48,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >新しいを追加できます [!DNL domain] 対象： [!DNL Fastly] で設定を更新することにより、自分で行うことができます。 [!DNL Admin] 。対象： **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) を参照してください。
+>
+>
+>ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
+>
+>1. ドメインをオンプレミスからクラウド環境に移行しようとしています。この環境は、独自に設定されています [!DNL Fastly] サービス。 この場合は、リクエストを送信し、ドメインのデリゲーションをリクエストします。
+>1. ドメインを Starter から Pro に移行します。 この場合は、さらに支援を求める要求を送信します。
 
 * **[!DNL Starter]**：を追加 [!DNL domain] をプロジェクトに追加する **[!DNL Domains]** タブをクリックし、 **リクエストの送信** を提供する **[!DNL ACME Challenge Key]** の場合 [!DNL SSL certificate].
 
