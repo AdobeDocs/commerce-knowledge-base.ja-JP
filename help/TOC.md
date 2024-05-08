@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: cdfcfbb1c6b91eb06bb028179676d022a1e27000
+source-git-commit: 76be98e46941bc6a7857aba8e95c8415ce3fc978
 workflow-type: tm+mt
-source-wordcount: '11006'
+source-wordcount: '11017'
 ht-degree: 0%
 
 ---
@@ -1110,6 +1110,7 @@ ht-degree: 0%
       * [間違ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [デプロイメントに失敗しました：「キャッシュ」名前空間エラーで定義されたコマンドがありません](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [[!DNL UPS] からの発送方法の統合の移行 [!DNL SOAP] 対象： [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] AC-9182 の Ground Advantage 出荷方法サポートのホットフィックス](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
