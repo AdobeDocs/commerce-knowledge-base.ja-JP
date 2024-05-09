@@ -1,19 +1,19 @@
 ---
 title: Cloud UI に「ログのスニペット」エラーがあるかどうかをデプロイメントログで確認しています
-description: この記事では、デプロイメントログを表示しようとすると、Adobe Commerce on cloud infrastructure UI で「長すぎたので、ログが切り抜かれました」というエラーメッセージが表示される問題の解決策を説明します。
+description: この記事では、クラウドプロジェクト UI でデプロイメントログを表示しようとすると、「長すぎたので、Adobe Commerceでログが切り抜かれました」というエラーメッセージが表示される問題の解決策を説明します。
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 71bec5b99063d771982f6dcab111b9e5a4aaec69
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# Cloud UI に「ログのスニペット」エラーがあるかどうかをデプロイメントログで確認しています
+# クラウド UI が次の条件を満たしているかどうかをデプロイメントログで確認する *ログが切り取られました* エラー
 
-この記事では、クラウドインフラストラクチャ UI 上のAdobe Commerceでが表示される問題の解決策について説明します *長すぎるためログが切り取られました* デプロイメントログを表示しようとすると、エラーメッセージが表示されます。
+この記事では、クラウドインフラストラクチャー上のAdobe Commerceの UI でが表示される問題の解決策について説明します *長すぎるためログが切り取られました* クラウドプロジェクト UI でデプロイメントログを表示しようとすると、エラーメッセージが表示される。 （次には適用されません： [Adobe Commerce Cloud コンソール](https://console.adobecommerce.com/).）
 
 ## 対象製品
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-デプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI 上のAdobe Commerceに次のエラーメッセージが表示されます。 *長すぎるためログが切り取られました*.
+クラウドプロジェクト UI でデプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI 上のAdobe Commerceに次のエラーメッセージが表示されます。 *長すぎるためログが切り取られました*.
 
 ## 再現手順
 
