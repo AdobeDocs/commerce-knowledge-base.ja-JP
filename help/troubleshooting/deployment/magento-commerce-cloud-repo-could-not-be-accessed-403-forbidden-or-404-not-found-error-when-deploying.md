@@ -4,9 +4,9 @@ description: 「この記事では、次のようなクラウドインフラス�
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 認証キーの問題を解決するには、次の手順を実行します（各手順の詳細については、以下の節を参照してください）。
 
 1. 有効な認証キーを取得します（キーが有効であることを確実に確認できる場合は、これをスキップします）。
-1. でキーの値を追加します。 `env:COMPOSER_AUTH` 変数（または正しい値が指定されていることを確認）を使用して、変数とフィールドでキーが一貫して指定されているかどうかを確認します。 `auth.json` ファイルをプロジェクトルートに置きます。
+1. でキーの値を追加します。 `env:COMPOSER_AUTH` 変数（または正しい値が入力されていることを確認）を調べ、キーがプロジェクトレベルと環境レベルの変数および `auth.json` ファイル（存在する場合）。
 1. 更新または削除 `auth.json`（認証キーの値が指定されていない場合や他の値がある場合、キーが設定されている場所が 1 つだけになるようにします）。
 
 ### 1.有効な認証キーを取得する
