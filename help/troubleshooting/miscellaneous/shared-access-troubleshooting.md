@@ -4,9 +4,9 @@ description: 「**問題：**信頼できる同僚への共有アクセスを提
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ ht-degree: 0%
 1. 指定したリソースがない場合は、アカウントオーナー（プライマリアカウント所有者）にお問い合わせください。
 
 引き続き問題が発生する場合は、Adobeアカウントチームに問い合わせるか、grp-Magento-HelpCenterLoginIssues@adobe.comまでメールを送信してください。 名前とアカウントに関連付けられたメールアドレスを指定してください。
+
+## 共有アクセスを使用してクリックしました [!UICONTROL Support]しかし、新しいチケットを開くと、 [!UICONTROL Organization] ドロップダウンが表示されない
+
+**問題：** 共有アクセスアカウントに切り替えましたが、にアクセスできません **[!UICONTROL Support tab]** （例えば）。
+
+**考えられる原因：** アカウント内の 1 つのマーチャントに対してのみ共有アクセスが許可されています。
+
+**解決策：**
+
+1. 切り替え先 **[!UICONTROL My Account]**.
+1. 1 つのみ表示される場合 **[!UICONTROL Shared Name]**。これは *デフォルトの組織* チケットが下に開かれること。
+
+引き続き問題が発生する場合は、Adobeアカウントチームに問い合わせるか、grp-Magento-HelpCenterLoginIssues@adobe.comまでメールを送信してください。 名前とアカウントに関連付けられたメールを指定します。
 
 ## 共有アクセスを使用しましたが、共有アクセスではなくチケットが表示されます
 

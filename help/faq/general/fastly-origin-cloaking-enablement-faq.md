@@ -2,9 +2,9 @@
 title: “[!DNL Fastly] オリジンクローキングの有効化に関する FAQ
 description: この FAQ では、に関するよくある質問について説明しています。 [!DNL Fastly] Adobe Commerceでのオリジンクロークの有効化（2021 年時点で完全に実装されています）。
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
-source-git-commit: 348a1f6e455aff9ad7c562ea20c95f27c9ee0b86
+source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## プロジェクトでオリジンクロークの有効化をリクエストする必要がありますか？
 
-いいえ。 この機能は、既にすべてのクラウドプロジェクトに実装されている必要があり、2021 年以降にプロビジョニングされたプロジェクトでは、デフォルトで有効になっていました。 ただし、次の方法で、プロジェクトのオリジンクロークを無効にするようにリクエストすることもできます [サポートリクエストの送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+いいえ。 この機能は、既にすべてのクラウドプロジェクトに実装されている必要があり、2021 年以降にプロビジョニングされたプロジェクトでは、デフォルトで有効になっていました。
 
 ## オリジン クロークは発信 IP アドレスを変更しますか？
 
@@ -37,8 +37,22 @@ ht-degree: 0%
 
 [!DNL Fastly] は API 呼び出しをキャッシュしないので、クライアントは変更で問題ありません。 オリジンクロークは、次のような、オリジンに直接移動するリクエストのみをブロックします。
 
+* 実稼動
+
 ```php
 mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+```
+
+* ステージング
+
+```php
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+```
+
+* ステージング X
+
+```php
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
 この例では、クライアントは URL をに変更した場合でも API をヒットできます ``mywebsite.com``:
