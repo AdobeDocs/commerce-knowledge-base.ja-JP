@@ -3,9 +3,9 @@ title: Adobe Commerce ヘルプセンターユーザーガイド
 description: Adobe Commerce ヘルプセンターにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: a2e68f63a53013b6f0b8bfa12838fafe2bb6e6c7
+source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -231,6 +231,10 @@ Adobe Commerce ライセンスオーナーの場合は、で請求書を持っ�
 1. にログイン [magento.com web サイトのMagentoアカウント](https://account.magento.com/).
 1. が含まれる **アカウントの切り替え** 右上隅のドロップダウンフィールドで、共有アクセスアカウントを選択します。
 1. 「」をクリック **サポート** 左パネルの「」タブ。 これにより、Magento.comからAdobe Commerce ヘルプセンターへの SSO 呼び出しを通じて、Adobe Commerce ヘルプセンターが正しく設定されます。
+
+既にこれを行っている場合は、付与されているかどうかを確認します *複数のマーチャントからの共有アクセス* をクリックする [[!UICONTROL Shared with me] アカウントのタブ](https://account.magento.com/grantor/manage/shared/):
+* 1 つだけの場合 [!UICONTROL Share Name] がリストされます。つまり、1 人のマーチャントのみによって許可されています。 *この場合、 [!UICONTROL Organization] ドロップダウン*.
+* 複数ある場合 [!UICONTROL Share Names]を選択した場合、支払いの問題が原因で以前にライセンスが取り消されたため、販売員のサポート資格が期限切れになった可能性があります。
 
 ### チケットの追跡 {#track-tickets}
 
