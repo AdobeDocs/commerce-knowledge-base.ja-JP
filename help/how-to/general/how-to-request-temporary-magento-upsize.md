@@ -3,9 +3,9 @@ title: クラウドインフラストラクチャー上で一時的なAdobe Comm
 description: 高トラフィックが予想されるオンラインイベントを計画している場合、またはサイトが突然高トラフィックのイベントに遭遇した場合は、[ サポートチケット ] （/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket）を申請して、クラウドインフラストラクチャストア上のAdobe Commerceの一時的なクラウドキャパシティを増やすようにリクエストできます。
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: a445bae7f013b29cb83fc96eb26dcbfd186a4de7
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Adobeは、クラウドインフラストラクチャー上のAdobe Commerce Pro
 
 ## アップサイズの履歴の表示
 
-リクエストされたサイズ変更の履歴は、で確認できます [プロジェクトポータル（オンボーディング UI）](/docs/commerce-cloud-service/start/onboarding.html#cloud-project-portal-(onboarding-ui))、の下 **プロジェクト** > **サービス** > **CPU 使用率のトラッキング**.
+の情報を要求すると、要求されたサイズ変更の履歴を表示できます。 **CSM （カスタマーサクセスマネージャー）**.
 サイズ変更リクエストごとに、次の情報を使用できます。
 
 * **サイズの開始日**：アップサイズリクエストの日付。

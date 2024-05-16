@@ -4,9 +4,9 @@ description: ホリデーシーズンのピーク時（11 月中旬から 1 月�
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: dfd3f788f42677b631ffb5b3153a1c79c2cc1ca3
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **アップサイズの履歴の表示**
 
-リクエストされたサイズ変更の履歴は、で確認できます [プロジェクトポータル（オンボーディング UI）](https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html)、の下 **プロジェクト** > **サービス** > **CPU 使用率のトラッキング**.
+の情報を要求すると、要求されたサイズ変更の履歴を表示できます。 **CSM （カスタマーサクセスマネージャー）**.
 サイズ変更リクエストごとに、次の情報を使用できます。
 
 * **サイズの開始日**：アップサイズリクエストの日付。
