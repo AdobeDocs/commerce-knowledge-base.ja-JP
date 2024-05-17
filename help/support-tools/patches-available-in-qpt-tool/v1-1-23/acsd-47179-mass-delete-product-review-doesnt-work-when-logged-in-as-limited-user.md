@@ -4,7 +4,7 @@ description: ACSD-47179 パッチを適用すると、制限付きユーザー�
 exl-id: 85d7ce63-7dd6-4df4-b314-278d18e69fbb
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
