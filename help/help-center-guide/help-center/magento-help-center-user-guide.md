@@ -3,9 +3,9 @@ title: Adobe Commerce ヘルプセンターユーザーガイド
 description: Adobe Commerce ヘルプセンターにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
+source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '3992'
 ht-degree: 0%
 
 ---
@@ -574,7 +574,7 @@ DELETEリンクが見つからない場合は、Commerce Cloudを通じて Share
 1. 共有アクセスを取り消すユーザーを見つけて、クリックします **[!UICONTROL Edit]** ユーザーの行（*[!UICONTROL Actions]* 列）に含まれます。
 1. 以下にあるすべてのリソースのチェックを解除 *[!UICONTROL Grant Account Permissions]*.
 
-![画像](https://git.corp.adobe.com/storage/user/38345/files/2d42fa60-559f-4697-a3cf-287c7e765405)
+![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
 詳しくは、を参照してください。 [ユーザーアクセスの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) クラウドインフラストラクチャーに関するCommerceガイドのドキュメント。
 
