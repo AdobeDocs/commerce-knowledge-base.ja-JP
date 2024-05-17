@@ -4,7 +4,7 @@ description: MDVA-35773 パッチを適用すると、100% 割引の注文の請
 exl-id: 895cb7d3-be9f-4864-9658-87ee0471f556
 feature: Invoices, Marketing Tools, Orders, Personalization, Taxes
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%

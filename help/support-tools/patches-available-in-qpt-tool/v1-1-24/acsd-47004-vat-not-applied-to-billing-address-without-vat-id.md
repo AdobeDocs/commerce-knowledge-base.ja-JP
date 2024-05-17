@@ -4,7 +4,7 @@ description: VAT ID のない請求先住所に VAT が適用されないAdobe C
 exl-id: 04706219-be1d-4d9a-a8bf-f5c24b45076d
 feature: Customer Service, Shipping/Delivery, Orders
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%

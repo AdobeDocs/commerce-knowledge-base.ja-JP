@@ -4,7 +4,7 @@ description: 複数の web サイトを使用している場合、共有カタ�
 exl-id: 6d6635bc-4f76-4e2f-9bc7-0276cced8ca9
 feature: Catalog Management, Orders
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%

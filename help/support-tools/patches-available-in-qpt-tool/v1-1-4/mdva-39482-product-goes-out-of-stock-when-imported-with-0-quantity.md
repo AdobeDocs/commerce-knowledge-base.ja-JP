@@ -4,7 +4,7 @@ description: MDVA-39482 は、MSI とバックオーダーが有効で、在庫�
 exl-id: 2caf461c-993d-48b3-bc47-3fa1d014deaf
 feature: Data Import/Export, Orders, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

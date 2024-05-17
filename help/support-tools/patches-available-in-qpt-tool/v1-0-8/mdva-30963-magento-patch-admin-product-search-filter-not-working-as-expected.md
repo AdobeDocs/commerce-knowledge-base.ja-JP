@@ -4,7 +4,7 @@ description: MDVA-30963 パッチを適用すると、Commerce Admin と Product
 exl-id: bde2836e-8954-48e5-b411-08c951ec8620
 feature: Admin Workspace, Products, Search
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%

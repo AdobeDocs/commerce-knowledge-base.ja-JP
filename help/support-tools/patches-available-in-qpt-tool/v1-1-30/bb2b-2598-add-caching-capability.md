@@ -4,7 +4,7 @@ description: BB2B-2598 パッチを適用して、storeConfig、currency、count
 exl-id: 37551954-d721-4f3a-b237-cd795f715a5f
 feature: B2B, GraphQL, Cache
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%

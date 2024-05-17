@@ -2,7 +2,8 @@
 title: GraphQL リクエストで WAF をバイパスする方法
 description: この記事では、GraphQL リクエストで WAF をバイパスする方法について説明します。
 feature: GraphQL
-source-git-commit: c35d4ba82fbe1657756e160a73fd575c736b4e1c
+exl-id: 3a0f2c22-f976-4596-b6a9-4634be1ea4c3
+source-git-commit: 2bec86818336a9ef4d8316e257a0ca4256cdd93c
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -39,4 +40,3 @@ GraphQL リクエストの性質上、リクエストが正と見なされない
 
 * [Web アプリケーションファイアウォール（WAF）](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
 * [カスタム VCL の概要](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
-

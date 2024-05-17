@@ -4,7 +4,7 @@ description: この記事では、フラットテーブルとインデクサー�
 exl-id: a78ca3c3-85b4-40a1-a693-4703dd3ef4b5
 feature: Best Practices, Cache, Categories, Catalog Management
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

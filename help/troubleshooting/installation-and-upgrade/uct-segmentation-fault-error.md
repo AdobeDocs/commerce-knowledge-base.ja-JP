@@ -4,7 +4,7 @@ description: この記事では、アップグレード互換性ツールの使�
 exl-id: 1cce1146-942e-46cb-a395-8da9e472cd39
 feature: Customer Service, Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%

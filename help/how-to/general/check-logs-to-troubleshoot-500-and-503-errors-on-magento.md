@@ -3,7 +3,7 @@ title: ログを確認して、Adobe Commerceの 500 および 503 エラーの�
 description: この記事では、「access.log」と関連ログを確認して、トラフィックやサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行う方法について説明します。 「access.log」と関連ログを確認すると、クラウドインフラストラクチャー上のAdobe Commerceに関連して問題を引き起こしている可能性のある原因に関する情報を得ることができます。
 exl-id: 47d7de6b-3e12-4e79-a5c1-c27a9196b99c
 feature: Cloud, Logs
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: この記事では、「https://repo.magento.com/archives/magento/m
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: この記事では、B2B 1.2.0 のインストール時に「setup:
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%

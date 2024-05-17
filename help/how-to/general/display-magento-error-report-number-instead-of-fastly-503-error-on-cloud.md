@@ -3,7 +3,7 @@ title: Fastly 503 エラーの代わりにAdobe Commerce エラーレポート�
 description: 「デフォルトでは、Fastly は、**503 サービスを利用できません**エラーの背後にあるすべてのAdobe Commerce エラーを非表示にします。 Adobe Commerce エラーログレポート番号を表示するには（ログで見つけてエラーの詳細を確認できるようにするには）、次の手順に従って、Fastly を省略して web サイトを開きます。'
 exl-id: c0a4a9f8-a674-4cef-8088-e844594e6076
 feature: Cache, Cloud
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 title: “[!DNL Fastly] オリジンクローキングの有効化に関する FAQ
 description: この FAQ では、に関するよくある質問について説明しています。 [!DNL Fastly] Adobe Commerceでのオリジンクロークの有効化（2021 年時点で完全に実装されています）。
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
-source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

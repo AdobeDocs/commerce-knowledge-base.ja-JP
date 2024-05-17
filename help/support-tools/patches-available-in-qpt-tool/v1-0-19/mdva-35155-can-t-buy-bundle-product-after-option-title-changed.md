@@ -4,7 +4,7 @@ description: MDVA-35155 パッチは、オプションのタイトルが変更�
 exl-id: 79770c69-1bb0-48d8-acdf-c8c1272f9da8
 feature: Products
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

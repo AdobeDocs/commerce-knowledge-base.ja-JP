@@ -4,7 +4,7 @@ description: ACSD-49822 パッチを適用して、購買依頼リスト・ペ�
 exl-id: 584e3fcd-9153-41aa-8857-cf1fa41269c9
 feature: Admin Workspace, B2B
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

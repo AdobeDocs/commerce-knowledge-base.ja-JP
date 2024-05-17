@@ -4,7 +4,7 @@ description: MDVA-44660 パッチでは、お客様の名前に使用できな�
 exl-id: 696f2690-2af5-4770-a4a8-c88c423c6c16
 feature: Variables
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%

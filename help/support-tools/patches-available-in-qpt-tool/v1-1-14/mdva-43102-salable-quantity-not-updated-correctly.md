@@ -4,7 +4,7 @@ description: MDVA-43102 パッチは、REST API を介して払い戻しが行�
 exl-id: c51bc45b-a7e0-4581-a318-9c4736e6661c
 feature: Variables
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

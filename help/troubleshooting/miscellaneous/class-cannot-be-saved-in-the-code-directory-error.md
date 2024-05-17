@@ -4,7 +4,7 @@ description: この記事では、依存関係を指定した方法によりク�
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

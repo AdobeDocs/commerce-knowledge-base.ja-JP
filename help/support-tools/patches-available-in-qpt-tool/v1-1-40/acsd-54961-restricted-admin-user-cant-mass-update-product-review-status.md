@@ -4,7 +4,7 @@ description: ACSD-54961 パッチを適用して、制限付き管理者ユー�
 feature: Products
 role: Admin, Developer
 exl-id: 26c5bacd-21de-4533-a7b6-4acbacd38fec
-source-git-commit: f12e25ac5dd607cc614dd99c90c5e104b2cee6a8
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-38526 パッチは、管理者ユーザが SWAT ツールに�
 exl-id: 3fe50ae4-abc7-4f97-82d0-477bcc19a851
 feature: Admin Workspace
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%

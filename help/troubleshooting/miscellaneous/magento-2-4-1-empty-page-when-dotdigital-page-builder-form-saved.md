@@ -4,7 +4,7 @@ description: この記事では、Safari ブラウザーを使用する際に、
 exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
 feature: Page Builder
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%

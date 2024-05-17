@@ -4,7 +4,7 @@ description: MDVA-36572 パッチは、クレジット メモの更新後に新�
 exl-id: 6d98e1aa-0faf-4317-a6ae-386f84266b9c
 feature: Inventory, Orders, Returns
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

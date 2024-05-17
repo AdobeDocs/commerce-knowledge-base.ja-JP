@@ -2,7 +2,7 @@
 title: 「ACSD-51739:「CompanyTeam」GraphQL リクエストの「structure_id」をリクエスト中にエラーが発生しました」
 description: ACSD-51739 パッチを適用すると、「CompanyTeam」GraphQL リクエストで「structure_id」がリクエストされた場合にエラーが返されるAdobe Commerceの問題を修正できます。
 exl-id: 31c085e0-c8be-4709-9620-80ff360dca9a
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

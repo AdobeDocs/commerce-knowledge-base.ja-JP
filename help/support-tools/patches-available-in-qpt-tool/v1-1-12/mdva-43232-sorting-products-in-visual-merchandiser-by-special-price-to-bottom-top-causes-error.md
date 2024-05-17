@@ -4,7 +4,7 @@ description: MDVA-43232 パッチは、ビジュアルマーチャンダイザ�
 exl-id: e958a219-5e93-4ae4-94cb-f478f82ad060
 feature: Categories, Merchandising, Orders, Personalization, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%

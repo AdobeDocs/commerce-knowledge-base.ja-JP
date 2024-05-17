@@ -4,7 +4,7 @@ description: MDVA-39043 パッチでは、アクセス権が制限された管�
 exl-id: 63057351-e972-4575-9bf0-e818f590b40a
 feature: Admin Workspace, CMS, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

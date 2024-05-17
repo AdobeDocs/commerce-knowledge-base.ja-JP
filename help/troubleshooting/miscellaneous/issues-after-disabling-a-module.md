@@ -4,7 +4,7 @@ description: この記事では、Commerce Admin でモジュール出力を無�
 exl-id: 517f6993-f09e-4a94-8c57-175ecf9a98a8
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%

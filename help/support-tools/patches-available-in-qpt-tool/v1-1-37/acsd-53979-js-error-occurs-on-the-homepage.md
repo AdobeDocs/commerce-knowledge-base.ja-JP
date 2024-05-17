@@ -4,7 +4,7 @@ description: ウェルカムメッセージに一重引用符が含まれてい�
 feature: Page Content
 role: Admin, Developer
 exl-id: 4e5afc5c-322f-4681-b2aa-01d93be74d4a
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

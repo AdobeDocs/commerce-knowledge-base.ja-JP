@@ -4,7 +4,7 @@ description: この記事では、laminas/laminas-escaper:2.7.1 のリリース�
 exl-id: 89de6827-7b90-4f08-92fb-56ed31ae2672
 feature: Admin Workspace, Categories
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

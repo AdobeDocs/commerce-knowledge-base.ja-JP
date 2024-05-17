@@ -4,7 +4,7 @@ description: この記事では、プログラムによって作成または更�
 exl-id: ac02f961-f9e2-4620-839f-b8dbd0befb15
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: この文書では、MySQL のデッドロックについて説明�
 exl-id: 529d1c0b-77f3-4604-9878-e7ea2c9c3640
 feature: Best Practices, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

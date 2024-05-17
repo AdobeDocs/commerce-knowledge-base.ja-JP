@@ -3,7 +3,7 @@ title: Adobe CommerceのElasticsearchに関するトラブルシューティン�
 description: Adobe CommerceのElasticsearchに関する問題は、Elasticsearchのトラブルシューティング ツールを使用して解決できます。 各質問をクリックすると、トラブルシューティングの各ステップの回答が表示されます。
 exl-id: acae0da0-2918-4021-9fbe-c138940c5a72
 feature: Categories
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%

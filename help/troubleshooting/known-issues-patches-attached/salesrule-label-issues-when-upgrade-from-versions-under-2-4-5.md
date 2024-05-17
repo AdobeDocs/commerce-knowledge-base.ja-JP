@@ -2,7 +2,7 @@
 title: '''[!UICONTROL salesRule] バージョン &lt; 2.4.5''からアップグレードする際のラベルの問題'
 description: その**に対処するためにパッチを適用する[!UICONTROL salesRule]Adobe Commerce バージョン &lt; 2.4.5 からアップグレードする際の**の問題。
 exl-id: e1bd6d44-576e-4d91-bab5-32c41e3b8300
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%

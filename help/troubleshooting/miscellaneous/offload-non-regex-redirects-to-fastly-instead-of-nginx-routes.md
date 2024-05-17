@@ -4,7 +4,7 @@ description: このトピックでは、クラウドインフラストラクチ�
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%

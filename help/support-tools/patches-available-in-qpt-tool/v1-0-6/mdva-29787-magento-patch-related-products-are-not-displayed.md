@@ -4,7 +4,7 @@ description: MDVA-29787 パッチを使用すると、**関連製品**がAdobe C
 exl-id: ee060d7b-3b0e-4bd5-84e6-fbd6d2fa532f
 feature: Cache, Marketing Tools, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%

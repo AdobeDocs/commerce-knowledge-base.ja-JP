@@ -4,7 +4,7 @@ description: 管理者がを使用している際に、複数のアドレスの�
 feature: Checkout
 role: Admin, Developer
 exl-id: 524ec96b-1465-4673-9fbe-1a9c086b7e87
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

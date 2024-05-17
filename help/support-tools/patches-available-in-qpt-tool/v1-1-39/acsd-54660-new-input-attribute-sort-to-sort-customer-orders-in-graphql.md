@@ -4,7 +4,7 @@ description: ACSD-54660 パッチを適用すると、で顧客の注文を並�
 feature: GraphQL, Orders
 role: Admin, Developer
 exl-id: 29869139-e5e2-4b00-a090-e2c6673ff9ca
-source-git-commit: f12e25ac5dd607cc614dd99c90c5e104b2cee6a8
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%

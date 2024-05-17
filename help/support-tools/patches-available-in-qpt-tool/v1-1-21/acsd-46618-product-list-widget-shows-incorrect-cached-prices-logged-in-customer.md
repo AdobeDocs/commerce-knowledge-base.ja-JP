@@ -4,7 +4,7 @@ description: ログインしているお客様の商品リストウィジェッ�
 exl-id: 8b182822-1d3d-4793-871b-cdf4565d0712
 feature: Cache, Orders, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%

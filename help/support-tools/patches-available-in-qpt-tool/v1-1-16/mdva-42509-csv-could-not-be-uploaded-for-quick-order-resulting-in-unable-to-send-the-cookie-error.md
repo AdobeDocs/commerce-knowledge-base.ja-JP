@@ -4,7 +4,7 @@ description: MDVA-42509 パッチは、クイックオーダー用に CSV をア
 exl-id: 7aa0e710-9a28-4531-b9cb-c82f654487f4
 feature: B2B, Orders
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

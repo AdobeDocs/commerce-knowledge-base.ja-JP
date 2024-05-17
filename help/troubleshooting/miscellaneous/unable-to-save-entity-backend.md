@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerce バックエンドでエンテ�
 exl-id: e45dc88a-2da0-4524-bd61-6634cfebb169
 feature: Admin Workspace, Marketing Tools
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%

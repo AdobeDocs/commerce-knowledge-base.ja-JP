@@ -4,7 +4,7 @@ description: MDVA-41229 パッチは、設定可能な製品の読み込み後�
 exl-id: 69d7374f-9f8b-4ec4-8a7f-135ee06135a3
 feature: Data Import/Export, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 2%

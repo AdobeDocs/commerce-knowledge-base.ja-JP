@@ -4,7 +4,7 @@ description: GraphQLで買い物かごの割引が正しく表示されないAdo
 exl-id: 76b64f1c-9b69-4e8d-a93a-d6a355284105
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%

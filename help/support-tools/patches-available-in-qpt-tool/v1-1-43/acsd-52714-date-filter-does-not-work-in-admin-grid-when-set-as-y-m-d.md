@@ -4,7 +4,7 @@ description: ACSD-52714 パッチを適用すると、日付フォーマット�
 feature: Attributes
 role: Admin, Developer
 exl-id: b292ab2c-e12d-40df-a9ad-19f25fbde5a0
-source-git-commit: 513cb47c054dbb907810bbdc3d20d2aca9d5e42b
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

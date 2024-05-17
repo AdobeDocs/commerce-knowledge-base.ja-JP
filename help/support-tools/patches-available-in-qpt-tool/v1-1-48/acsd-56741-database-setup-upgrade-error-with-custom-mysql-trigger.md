@@ -3,7 +3,8 @@ title: 「ACSD-56741：カスタム MySQL トリガーを使用したデータ�
 description: ACSD-56741 パッチを適用すると、「setup:upgrade」の間に、インデックス化およびAdobe Commerceに関連しないデータベースのカスタム MySQL トリガーにより、「null 型の値で配列オフセットにアクセスしようとしています」というエラーメッセージが表示される AEM の問題を修正できます。 [!DNL MView].
 feature: Install
 role: Admin, Developer
-source-git-commit: 216ce1035584e4c049029073ee0017d3616cdbd6
+exl-id: 97839140-03c5-44f0-ba75-935d62f5bf90
+source-git-commit: 7cd830d9ba4af6350a14e0cdb50439d2d07084dc
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

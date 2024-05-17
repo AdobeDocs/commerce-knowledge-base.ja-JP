@@ -4,7 +4,7 @@ description: MDVA-39935 Adobe Commerce パッチは、GraphQLが web サイト�
 exl-id: 45bd6bd9-3572-4477-a689-d6b952a3290a
 feature: GraphQL, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

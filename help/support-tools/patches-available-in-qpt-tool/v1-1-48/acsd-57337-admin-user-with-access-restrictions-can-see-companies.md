@@ -3,7 +3,8 @@ title: 「ACSD-57337：アクセス制限を持つ管理者ユーザーが、*�
 description: ACSD-57337 パッチを適用すると、特定の web サイトへのアクセス制限を持つ管理者ユーザーが*会社* グリッドのすべての web サイトの会社を表示できるAdobe Commerceの問題を修正できます。
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: a02c80006f1c8a434fe17322f0c6cee25f086396
+exl-id: e49289a1-fe86-42b7-8d93-71f35b5e318d
+source-git-commit: 33a9cb0227b318a0fff135621ecd6642f2fa827a
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: インベントリインデクサーが非同期モードで設定�
 feature: Configuration, Inventory
 role: Admin, Developer
 exl-id: 978fe0d0-3917-4ba2-94bb-01c607a825cc
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

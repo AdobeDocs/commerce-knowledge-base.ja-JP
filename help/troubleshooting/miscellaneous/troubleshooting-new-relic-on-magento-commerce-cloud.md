@@ -4,7 +4,7 @@ description: この記事では、クラウドインフラストラクチャー�
 exl-id: ea763291-5c9b-4575-b2ee-820dbc367743
 feature: Cloud, Observability, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

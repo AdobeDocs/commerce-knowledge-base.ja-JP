@@ -4,7 +4,7 @@ description: この記事では、Commerce管理パネルから注文した後�
 feature: Admin Workspace
 role: Developer
 exl-id: b30be5a5-3681-41db-9040-3624faed7c46
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%

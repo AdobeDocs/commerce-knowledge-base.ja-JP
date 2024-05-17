@@ -4,7 +4,7 @@ description: ここでは、クラウドインフラストラクチャー上のA
 exl-id: 1b2c25d3-ca1b-4409-8d6b-378aa0952f94
 feature: Storage, Observability
 role: Developer
-source-git-commit: 9ee4145d5516a37fab1c092d539000627f242a93
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

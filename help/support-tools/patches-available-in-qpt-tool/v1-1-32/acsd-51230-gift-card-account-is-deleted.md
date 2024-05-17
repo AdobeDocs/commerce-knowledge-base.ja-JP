@@ -4,7 +4,7 @@ description: ACSD-51230 パッチを適用すると、簡単な商品の一部�
 exl-id: 4322a175-3641-468a-8a0f-fcbad90c758f
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

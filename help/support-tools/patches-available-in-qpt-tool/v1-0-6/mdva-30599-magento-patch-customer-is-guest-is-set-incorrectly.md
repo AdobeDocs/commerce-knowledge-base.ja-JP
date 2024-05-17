@@ -4,7 +4,7 @@ description: MDVA-30599 パッチでは、API を使用して作成されたゲ�
 exl-id: e16bb926-241b-451e-89a5-33000f73c5b7
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

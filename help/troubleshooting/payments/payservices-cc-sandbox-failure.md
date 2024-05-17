@@ -4,7 +4,7 @@ description: この記事では、PayPal API を使用したサンドボック�
 exl-id: 65fd08e0-eefc-47f3-8964-bef3610e6182
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%

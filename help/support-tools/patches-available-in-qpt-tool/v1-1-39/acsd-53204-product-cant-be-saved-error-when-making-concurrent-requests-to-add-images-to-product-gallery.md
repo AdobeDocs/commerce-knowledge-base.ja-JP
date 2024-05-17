@@ -4,7 +4,7 @@ description: ACSD-53204 パッチを適用すると、Adobe Commerceの問題を
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
 exl-id: dcea2621-66cf-49d1-bba6-b61c70716e84
-source-git-commit: e1ab32a4540ea7483f7f2b8464ef3e4b0ecbbac7
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

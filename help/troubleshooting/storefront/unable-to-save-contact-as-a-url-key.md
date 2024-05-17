@@ -4,7 +4,7 @@ description: この記事では、製品または CMS ページの URL キー（
 exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
 feature: CMS, Marketing Tools, Storefront
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%

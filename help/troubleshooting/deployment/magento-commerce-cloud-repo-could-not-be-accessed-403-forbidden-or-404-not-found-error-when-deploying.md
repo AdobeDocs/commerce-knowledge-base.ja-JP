@@ -6,7 +6,7 @@ feature: Cloud, Deploy, Paas, Variables
 role: Developer
 source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---

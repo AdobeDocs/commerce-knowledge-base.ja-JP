@@ -4,7 +4,7 @@ description: この記事では、「setup」の実行時に「deployed_version.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: 会社登録フォームにファイルをアップロードし、�
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer
 exl-id: ca85b459-f72b-4663-85af-1f793935fe7e
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

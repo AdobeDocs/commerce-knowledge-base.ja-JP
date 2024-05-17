@@ -4,7 +4,7 @@ description: この記事では、インデックスが別のプロセスによ�
 exl-id: 542c714c-fad5-4f0e-9757-d90044c36bfc
 feature: Catalog Management, Categories
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

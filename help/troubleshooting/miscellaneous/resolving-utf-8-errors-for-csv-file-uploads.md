@@ -4,7 +4,7 @@ description: この記事では、「CSV ファイルは UTF-8 エンコーデ�
 exl-id: 88d8e0b8-152e-4a6d-bc44-3b285e0eb0c3
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: ユーザーステータスが非アクティブに設定されて�
 feature: GraphQL
 role: Admin, Developer
 exl-id: 57e7b9ca-3421-4b50-86b4-abdf1b3d79d1
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%

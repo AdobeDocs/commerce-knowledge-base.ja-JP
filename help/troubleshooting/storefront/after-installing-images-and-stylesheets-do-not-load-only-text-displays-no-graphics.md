@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerceのインストール後にス�
 exl-id: f33cee89-b416-4d63-8cc5-9cc57618ce92
 feature: Install, Storefront
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

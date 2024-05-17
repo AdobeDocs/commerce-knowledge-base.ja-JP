@@ -4,7 +4,7 @@ description: 「**問題：**信頼できる同僚への共有アクセスを提
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%

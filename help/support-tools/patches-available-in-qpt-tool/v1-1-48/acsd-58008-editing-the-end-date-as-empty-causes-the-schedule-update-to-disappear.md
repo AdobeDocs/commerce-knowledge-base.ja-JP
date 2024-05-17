@@ -3,7 +3,8 @@ title: 「ACSD-58008：終了日を*空*として編集すると、スケジュ�
 description: ACSD-58008 パッチを適用して、終了日を*空*に変更するとスケジュールの更新が消えるAdobe Commerceの問題を修正してください。
 feature: Staging, Page Content
 role: Admin, Developer
-source-git-commit: 174ed3b35edeb26b09b04bc7d88111a5719e08f8
+exl-id: bfa590b8-377b-49dd-9aff-f89b8fd815c4
+source-git-commit: d7ace1f20defb01105d4a241f971b06fca052215
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

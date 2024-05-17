@@ -4,7 +4,7 @@ description: この記事では、買い物かごの価格ルールクーポン�
 exl-id: 9c81de40-65a3-422d-9053-3c894b863a0a
 feature: Orders
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%

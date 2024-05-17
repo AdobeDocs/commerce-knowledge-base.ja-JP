@@ -4,7 +4,7 @@ description: 現在、ほとんどのAdobe Commerceのエディションとバ�
 exl-id: f86f0bb9-8a03-471d-8696-1eba4b8acbd1
 feature: Cache, Compliance
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%

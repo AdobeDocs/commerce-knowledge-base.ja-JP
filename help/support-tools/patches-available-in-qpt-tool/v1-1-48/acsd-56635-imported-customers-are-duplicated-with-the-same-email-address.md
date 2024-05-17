@@ -3,7 +3,8 @@ title: 'ACSD-56635：アカウント共有がに設定されている場合、�
 description: ACSD-56635 パッチを適用すると、読み込みを使用しアカウント共有をに設定すると、読み込んだお客様が同じメールアドレスで重複するAdobe Commerceの問題が修正されます [!DNL Global].
 feature: Customers, Attributes
 role: Admin, Developer
-source-git-commit: 86d752c9c2791ef19960876afafe24fefe5d29ed
+exl-id: abd542a1-6764-4385-97a6-b46015363b42
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%

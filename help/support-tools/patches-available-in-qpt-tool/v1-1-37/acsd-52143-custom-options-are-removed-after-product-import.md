@@ -4,7 +4,7 @@ description: ACSD-52143 パッチを適用して、製品の読み込み後に�
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: 7dde1efe-37a3-443f-9ce1-82cf1b3d9da7
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

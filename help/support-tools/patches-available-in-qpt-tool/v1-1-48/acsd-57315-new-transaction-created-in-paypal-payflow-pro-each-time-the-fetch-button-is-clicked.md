@@ -3,7 +3,8 @@ title: '''ACSD-57315：新しいトランザクションがで作成されます
 description: ACSD-57315 パッチを適用して、で新しいトランザクションが作成されるAdobe Commerceの問題を修正してください。 [!DNL PayPal Payflow Pro] の「トランザクションを表示」画面で「取得」ボタンをクリックするたびに [!UICONTROL Admin].
 feature: Payments
 role: Admin, Developer
-source-git-commit: b7f85e4fdb7ef4a6328a1a411dac765dd8da083e
+exl-id: bcc7467d-09f9-4235-9f9f-46d3034567b8
+source-git-commit: d7ace1f20defb01105d4a241f971b06fca052215
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

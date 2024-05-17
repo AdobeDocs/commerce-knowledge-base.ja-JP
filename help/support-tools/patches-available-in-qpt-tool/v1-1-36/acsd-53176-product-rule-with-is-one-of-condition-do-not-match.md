@@ -4,7 +4,7 @@ description: ACSD-53176 パッチを適用すると、関連する商品ルー�
 feature: Marketing Tools
 role: Admin
 exl-id: 91f05f5b-6a5e-4b93-9dfb-88cbeccb6c9e
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

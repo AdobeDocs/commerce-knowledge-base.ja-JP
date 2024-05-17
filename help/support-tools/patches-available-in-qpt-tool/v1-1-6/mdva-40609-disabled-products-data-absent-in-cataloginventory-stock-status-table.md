@@ -4,7 +4,7 @@ description: MDVA-40609 パッチを適用すると、無効な製品データ�
 exl-id: 2424c3b3-8bc9-4dd4-908c-9d653f09a57a
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

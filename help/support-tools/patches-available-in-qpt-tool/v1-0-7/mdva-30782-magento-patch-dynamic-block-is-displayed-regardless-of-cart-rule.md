@@ -4,7 +4,7 @@ description: MDVA-30782 パッチは、買い物かごのルールに関係な�
 exl-id: 88da8853-aae7-4fd9-82ba-a4e9fc99cf53
 feature: Cache, Orders, Shopping Cart
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
