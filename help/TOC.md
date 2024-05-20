@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 5e20e9d150eb8a527e530a19abd8b364f55a5aa6
+source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
 workflow-type: tm+mt
-source-wordcount: '11013'
+source-wordcount: '11021'
 ht-degree: 0%
 
 ---
@@ -914,6 +914,7 @@ ht-degree: 0%
    * その他 {#miscellaneous}
       * [理由の確認方法 [!DNL cron] は無効になりました](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。 ～に戻る [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [書き出しストレージがほとんどいっぱいであることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [インデックスが無効化され、「indexer_reindex_all_invalid」が常に実行される](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [設定ファイルが見つからないか変更されている](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL エラー 60 : SSL 証明書の有効期限が切れました](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
