@@ -4,7 +4,7 @@ description: MDVA-42326 パッチは、永続ショッピング カートが有�
 exl-id: bc9b71de-510d-4c4e-8b0d-9abf9a3e447f
 feature: Checkout, Orders
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%

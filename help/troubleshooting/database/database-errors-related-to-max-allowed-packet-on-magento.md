@@ -4,7 +4,7 @@ description: この記事では、多数の製品をインポートしたり、�
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

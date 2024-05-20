@@ -4,7 +4,7 @@ description: MDVA-40619 パッチは、CMS ページ階層の変更によって 
 exl-id: c003d845-1ba0-49c0-9f1a-a4b0ec00f30c
 feature: CMS
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-34886 パッチは、weight 属性が検索可能として設�
 exl-id: e6f33772-0167-4a54-9d62-0ab89edb5d1d
 feature: Attributes, Cache, Search
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

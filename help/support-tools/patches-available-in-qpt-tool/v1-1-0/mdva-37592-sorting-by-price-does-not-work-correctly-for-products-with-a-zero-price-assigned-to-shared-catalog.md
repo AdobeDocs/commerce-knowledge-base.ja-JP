@@ -4,7 +4,7 @@ description: MDVA-37592 Adobe Commerce パッチは、共通カタログに価�
 exl-id: 30ac1e87-c32d-4e79-9ed9-d1861061d760
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

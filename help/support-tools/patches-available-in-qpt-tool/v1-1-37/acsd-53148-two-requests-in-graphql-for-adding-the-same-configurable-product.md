@@ -4,7 +4,7 @@ description: ACSD-53148 パッチを適用すると、Adobe CommerceでGraphQL�
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 exl-id: 14290c7f-9b0a-4745-a579-5c34799b78ef
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%

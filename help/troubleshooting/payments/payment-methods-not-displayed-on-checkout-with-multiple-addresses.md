@@ -4,7 +4,7 @@ description: この記事では、複数の配送先住所が指定されてい�
 exl-id: 68a9ee77-d0ef-43c5-9667-6d099b797666
 feature: Checkout, Orders, Payments, Shipping/Delivery
 role: Developer
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%

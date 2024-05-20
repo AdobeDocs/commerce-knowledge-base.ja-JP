@@ -4,7 +4,7 @@ description: MDVA-43091 パッチを適用すると、Commerce Admin からバ�
 exl-id: 77dff356-4f75-4b06-b62b-5379a4eec273
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-31759 パッチでは、CSV の読み込みで*Dropdown*およ
 exl-id: 5426866c-893f-4abe-bfbc-6e7b30dd8dab
 feature: Attributes, Data Import/Export
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

@@ -5,7 +5,7 @@ labels: troubleshooting,error,indexing,crons,site performance,adobe commerce,mag
 exl-id: c7148ef4-2155-4d4c-869b-1d08de4af598
 feature: B2B, Catalog Management, Categories, Observability, Price Indexer
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

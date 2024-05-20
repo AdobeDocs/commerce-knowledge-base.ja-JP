@@ -4,7 +4,7 @@ description: ACSD-47988 パッチを適用して、製品の書き出しがペ�
 exl-id: 96c45ca8-f526-4876-8f2c-39bce07f86eb
 feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-33482 パッチは、クレジット メモで税金が誤っ�
 exl-id: 80740e6f-2b6c-4770-9a1a-58ba68a1b28f
 feature: Orders, Returns, Taxes
 role: Admin
-source-git-commit: 0ffa6d63f7046048f7e8f0e9fab1ee1869c98e93
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

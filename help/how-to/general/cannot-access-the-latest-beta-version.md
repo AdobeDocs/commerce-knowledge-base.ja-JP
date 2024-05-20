@@ -2,7 +2,7 @@
 title: 最新のベータ版にアクセスできません
 description: この記事では、Adobe Commerce用コードの最新ベータ版を利用しようとする際の問題の解決策について説明します。 ベータ版コードは、[Adobe Commerce ベータ版プログラム ] （https://github.com/magento/magento2/wiki/Magento-Beta-Program）に記載されているプロセスに従った公式Adobeパートナーのみが利用できます。
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%

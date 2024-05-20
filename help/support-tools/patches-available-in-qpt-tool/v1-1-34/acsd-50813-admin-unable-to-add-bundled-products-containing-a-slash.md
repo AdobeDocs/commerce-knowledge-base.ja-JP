@@ -2,7 +2,7 @@
 title: 「ACSD-50813：管理者が、スラッシュを含むバンドルされた製品を追加できない」
 description: ACSD-50813 パッチを適用すると、管理者が、スラッシュ （「/」）を含むバンドル製品を SKU に追加できず、*SKU による製品の追加*機能を管理者の指示に追加できない、Adobe Commerceのパフォーマンスの問題が修正されます。
 exl-id: 80dfe877-9dfd-44a9-9bf0-37e929642fc0
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

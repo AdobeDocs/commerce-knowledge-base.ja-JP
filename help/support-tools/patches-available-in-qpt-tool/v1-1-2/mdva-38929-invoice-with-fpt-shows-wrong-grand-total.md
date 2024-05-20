@@ -4,7 +4,7 @@ description: MDVA-38929 パッチは、注文がストアクレジットで支�
 exl-id: 1ed0e311-f4a5-4dc0-98fc-fc1cc9458516
 feature: Invoices, Orders
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

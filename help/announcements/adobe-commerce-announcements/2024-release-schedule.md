@@ -4,7 +4,7 @@ description: Adobe Commerceは、2024 年のリリース戦略とスケジュー
 feature: Release Notes
 role: Admin
 exl-id: 521251e3-93b2-4fb8-8804-fced82fcac57
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%

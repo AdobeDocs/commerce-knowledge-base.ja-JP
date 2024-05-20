@@ -4,7 +4,7 @@ description: ACSD-56635 パッチを適用すると、読み込みを使用し�
 feature: Customers, Attributes
 role: Admin, Developer
 exl-id: abd542a1-6764-4385-97a6-b46015363b42
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%

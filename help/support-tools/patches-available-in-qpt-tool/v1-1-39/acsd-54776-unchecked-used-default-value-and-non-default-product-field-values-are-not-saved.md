@@ -4,7 +4,7 @@ description: がオフになっているAdobe Commerceの問題を修正する�
 feature: Products
 role: Admin, Developer
 exl-id: 5bdad804-8d7b-48b4-ba3b-c2d5387ef55e
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

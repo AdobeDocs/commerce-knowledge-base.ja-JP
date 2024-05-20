@@ -4,7 +4,7 @@ description: Adobe Commerce ACSD-47920 パッチを適用すると、 [!UICONTRO
 exl-id: 8726eac4-ab19-4232-8e15-270d09bdc0a5
 feature: REST, Checkout, Orders
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

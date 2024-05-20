@@ -4,7 +4,7 @@ description: 注文した商品がオンライン支払い方法によって自�
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
 exl-id: 4bfa3827-a2b1-4168-a39c-99c617ee4795
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%

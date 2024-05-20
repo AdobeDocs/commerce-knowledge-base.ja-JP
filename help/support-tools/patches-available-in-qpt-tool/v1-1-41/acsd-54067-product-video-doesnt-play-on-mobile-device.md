@@ -4,7 +4,7 @@ description: ACSD-54067 パッチを適用すると、モバイルデバイス�
 feature: Media, Products
 role: Admin, Developer
 exl-id: 369650ef-bcce-47c5-bbfe-39f3c2b1d73f
-source-git-commit: 0795e3e0ba11002c8aff2794e16fa05f1c7e19c3
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

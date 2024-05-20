@@ -3,7 +3,7 @@ title: のファクトシートの監視 [!DNL Adobe Commerce on cloud pro infra
 description: このドキュメントでは、Adobe Commerce インフラストラクチャのモニタリングと通知について説明します。
 exl-id: 01342d8d-2123-4455-b1a5-a08a5805b046
 feature: Cloud
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

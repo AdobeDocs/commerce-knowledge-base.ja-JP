@@ -3,7 +3,7 @@ title: Elasticsearch 5 が設定され、「Fielddata が無効になってい�
 description: 「ここでは、Elasticsearch 5 で検索ページが読み込まれず、次のような例外が発生する問題を修正する方法について説明します。」
 exl-id: f5fa8144-4e7c-45ce-89d0-a8367e91d6db
 feature: Cache
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

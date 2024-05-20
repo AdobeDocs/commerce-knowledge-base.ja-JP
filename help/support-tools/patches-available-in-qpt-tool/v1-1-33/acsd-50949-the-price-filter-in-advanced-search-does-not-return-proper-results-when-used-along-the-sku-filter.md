@@ -4,7 +4,7 @@ description: ACSD-50949 パッチを適用すると、詳細検索で価格フ�
 feature: Orders, Search
 role: Admin
 exl-id: 3e1f88dc-07f6-4e10-b4b7-163648076cbc
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 1%

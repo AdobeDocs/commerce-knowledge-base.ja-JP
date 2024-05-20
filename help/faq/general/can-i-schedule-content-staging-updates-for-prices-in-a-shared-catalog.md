@@ -3,7 +3,7 @@ title: 共有カタログの価格に対してコンテンツのステージン�
 description: Adobe Commerceには、共有カタログ内の 1 つ以上の商品の価格アップデート （[ コンテンツのステージング ] （https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html））をスケジュールする機能はありません。
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%

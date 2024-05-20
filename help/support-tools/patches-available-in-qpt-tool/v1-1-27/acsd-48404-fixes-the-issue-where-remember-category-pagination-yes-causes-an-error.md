@@ -4,7 +4,7 @@ description: ACSD-48404 パッチを適用して、次のAdobe Commerceの問題
 exl-id: b4b96198-dee6-4b3c-b60a-0983ef8ef7b2
 feature: Categories
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: 「pub/media」フォルダーが非常に大きい場合は、画�
 exl-id: 43268909-6845-4d1d-b6b8-4ae0ce40fd5e
 feature: Cache, Catalog Management, Categories, Media
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

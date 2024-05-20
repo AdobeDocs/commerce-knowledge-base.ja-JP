@@ -4,7 +4,7 @@ description: Adobe Commerce サポートチームの実証済みのセルフサ�
 exl-id: df225ffd-14f4-438b-932a-555020c67b61
 feature: Support
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '26'
 ht-degree: 84%

@@ -4,7 +4,7 @@ description: この記事では、買い物かごのアイテムを 2 回削除�
 exl-id: 927cf681-febf-42cc-8db5-469bcf8f2012
 feature: Orders, Shopping Cart
 role: Developer
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

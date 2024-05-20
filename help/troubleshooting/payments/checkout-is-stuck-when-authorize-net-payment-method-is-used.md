@@ -4,7 +4,7 @@ description: ここでは、Authorize.netを使用している場合に、ブラ
 exl-id: 01dc1147-4010-4dc5-81f3-3b3015a8c47c
 feature: Cache, Checkout, Console, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%

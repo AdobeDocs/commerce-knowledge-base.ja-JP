@@ -4,7 +4,7 @@ description: 支払い方法**Payment on Account**で注文した場合に REST 
 exl-id: 1b235baa-a188-467c-8ae5-de0836bc2caa
 feature: REST, B2B, Invoices
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

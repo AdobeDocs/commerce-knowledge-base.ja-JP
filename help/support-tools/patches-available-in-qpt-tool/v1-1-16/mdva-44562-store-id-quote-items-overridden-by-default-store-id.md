@@ -4,7 +4,7 @@ description: MDVA-44562 パッチでは、デフォルトのストア ID がGrap
 exl-id: 902bfc05-411d-4a6c-a6e8-cd7376629b0c
 feature: Quotes
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

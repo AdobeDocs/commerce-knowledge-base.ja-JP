@@ -4,7 +4,7 @@ description: ACSD-55231 パッチを適用すると、クイックオーダー�
 feature: Products, Checkout, B2B
 role: Admin, Developer
 exl-id: 463c2c07-39ec-4b03-81f7-ec2f71f5af76
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%

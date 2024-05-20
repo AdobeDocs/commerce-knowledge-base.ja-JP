@@ -4,7 +4,7 @@ description: ACSD-49574 パッチを適用すると、GraphQLを使用して買�
 exl-id: e446128f-c991-4c3c-8d1c-bbff6230e448
 feature: Admin Workspace, Gift, GraphQL, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%

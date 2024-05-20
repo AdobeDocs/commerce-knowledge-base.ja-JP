@@ -4,7 +4,7 @@ description: ACSD-48587 パッチを適用すると、products ウィジェッ�
 exl-id: 9f8f436c-f3ef-4510-a941-12f701e7524e
 feature: Admin Workspace, CMS, Orders, Products
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

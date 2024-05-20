@@ -4,7 +4,7 @@ description: MDVA-42269 パッチを適用すると、TypeError が原因で管�
 exl-id: 66d744a2-054e-493c-a060-9ed78447e35b
 feature: Admin Workspace
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

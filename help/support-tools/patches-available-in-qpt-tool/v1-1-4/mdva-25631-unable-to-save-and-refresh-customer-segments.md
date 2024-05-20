@@ -4,7 +4,7 @@ description: MDVA-25631 パッチを使用すると、多数の顧客を含む�
 exl-id: 4250824b-e347-4ca4-8eaf-4de4d091bfc4
 feature: Customer Service
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

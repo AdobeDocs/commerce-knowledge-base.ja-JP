@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerceのインストール中に発�
 exl-id: c927bc8f-d70b-4305-87c1-223001212555
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%

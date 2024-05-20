@@ -4,7 +4,7 @@ description: MDVA-29042 パッチでは、Commerce Admin の共有済みカタ�
 exl-id: 491b8881-87ec-4820-8f87-54961682e961
 feature: Catalog Management, Categories, Customer Service, Roles/Permissions
 role: Admin
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%

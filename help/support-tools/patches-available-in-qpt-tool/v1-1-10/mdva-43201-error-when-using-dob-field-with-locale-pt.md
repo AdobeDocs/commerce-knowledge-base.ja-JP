@@ -4,7 +4,7 @@ description: MDVA-43201 パッチは、ポルトガル語ロケールの顧客�
 exl-id: 02979378-adc1-4a1a-93bf-a35ad50e6b80
 feature: B2B, Cache
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerceの SendGrid クレジット制�
 exl-id: 43438890-665b-4408-8034-e61de8fbbd8b
 feature: Communications, Orders
 role: Developer
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%

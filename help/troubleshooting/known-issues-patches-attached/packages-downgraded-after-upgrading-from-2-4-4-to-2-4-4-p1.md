@@ -4,7 +4,7 @@ description: この記事では、バージョン 2.4.4 のマーチャントが
 exl-id: 4ebdbcd7-6905-4647-b071-1e4413455f38
 feature: Upgrade
 role: Developer
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%

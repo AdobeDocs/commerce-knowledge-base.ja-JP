@@ -4,7 +4,7 @@ description: MDVA-40399 パッチは、Rest API を使用して同じ注文の�
 exl-id: 2444ba57-b30b-4fdf-9e5d-988cf7fa8dd1
 feature: REST, Invoices, Orders
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

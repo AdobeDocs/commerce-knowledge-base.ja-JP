@@ -4,7 +4,7 @@ promoted: true
 description: この記事では、ホストの CPU 構成を確認する際にユーザーが実行できる手順とクエリに関する詳細なガイドラインを示しています。 ユーザーはこれらの手順を適用して、サイズ変更の特定、変更時点の特定、およびサイズ変更前後の任意の時点で発生したすべてのハードウェア構成の変更（存在する場合）の表示を行うことができます。
 exl-id: 34c28744-9ebb-45b6-af12-a66dc4c7d943
 feature: Cloud, Configuration
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%

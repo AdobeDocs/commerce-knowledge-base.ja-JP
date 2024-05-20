@@ -4,7 +4,7 @@ description: MDVA-39031 パッチを適用すると、対象の Web サイトに
 exl-id: 5bbd64d1-06ae-4cab-a20e-0e5e5807742b
 feature: GraphQL, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

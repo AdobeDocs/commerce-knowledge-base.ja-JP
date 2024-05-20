@@ -4,7 +4,7 @@ description: MDVA-31590 パッチを適用すると、ユーザーが MySQL 非�
 exl-id: 57db28dd-a739-4a77-927d-6339af4fa4a6
 feature: Attributes, Services
 role: Admin
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%

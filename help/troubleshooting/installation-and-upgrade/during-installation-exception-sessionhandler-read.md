@@ -1,7 +1,7 @@
 ---
 title: インストール中、例外 SessionHandler::read （）
 description: 「この記事では、Adobe Commerceのインストール中に例外**SessionHandler::read （）**が発生した場合の対処方法について説明します。」
-source-git-commit: 5cec04f8c4f80d34fc26b06eb929960ce21e2dc0
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

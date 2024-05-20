@@ -4,7 +4,7 @@ description: ACSD-46674 パッチを適用すると、画像タイプのカス�
 exl-id: b4941dd0-bb3a-4805-9631-1d256a92f461
 feature: Communications, Personalization
 role: Developer
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

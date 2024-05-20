@@ -3,7 +3,7 @@ title: テーマをデフォルトにリセット
 description: テーマをカスタマイズしてストアを開発する際に発生する可能性のある問題によっては、Commerce管理者からアクセスできない場合があります。 管理者にアクセスすることなく、テーマを消去してデフォルトにリセットできます。 テーマをクリアすると、デフォルトの Luma テーマが適用されます。
 exl-id: 86304dd5-f448-4dcc-ad07-04ecc6c85b6d
 feature: Cache
-source-git-commit: e223c2e1063b25399cc29a087623435b414e19a6
+source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
