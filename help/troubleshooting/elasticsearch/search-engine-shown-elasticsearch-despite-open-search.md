@@ -3,9 +3,9 @@ title: '[!DNL Elasticsearch] にもかかわらず検索エンジンとして表
 description: この記事では、次の問題の解決策について説明します [!DNL Elasticsearch] をインストールまたはアップグレードした後でも、が cloud 上のAdobe Commerceの検索エンジンとして引き続き表示されます。 [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1a36e74807e6d32b0810416b6fb61aeca6f9be94
+source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,8 @@ cloud 2.4.3-p2 - 2.4.5-p6 のAdobe Commerce
 
 Adobe Commerceは、を指定するようにハードコードされています [!DNL Elasticsearch7] を検索エンジンとして使用します。
 
+これは、インストールされているバージョンのサービスと混同しないでください。 アプリケーションが認識するのは [!DNL Elasticsearch7] を検索エンジンとして使用しますが、は使用しません [!DNL OpenSearch]を使用する場合でも [!DNL OpenSearch] バックエンドのエンジンとしてのサービス。
+
 ## 解決策
 
 次のかどうかを確認します [!DNL OpenSearch] がインストールされている場合は、次のコマンドを実行します。
@@ -42,6 +44,29 @@ Adobe Commerceは、を指定するようにハードコードされています
 **方法 1**:
 
 * サーバーで次のコマンドを実行します。 `curl 127.0.0.1:9200`. が返されます [!DNL OpenSearch] とそのバージョン。
+
+例：
+
+```
+$ curl 127.0.0.1:9200
+{
+  "name" : $clusterName,
+  "cluster_name" : "opensearch_stg",
+  "cluster_uuid" : $clusterUuid,
+  "version" : {
+    "distribution" : "opensearch",
+    "number" : "1.2.4",
+    "build_type" : "deb",
+    "build_hash" : "44ccdbaed5fe5a8b02d99a611857a671b6dd909d",
+    "build_date" : "2022-11-08T09:23:45.993372Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.10.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "The OpenSearch Project: https://opensearch.org/"
+}
+```
 
 **方法 2**:
 
