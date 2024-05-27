@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
+source-git-commit: 45ab0d3a858239dc8a35ed81c3b0d2f7cda5c85b
 workflow-type: tm+mt
-source-wordcount: '11021'
+source-wordcount: '11031'
 ht-degree: 0%
 
 ---
@@ -1255,6 +1255,7 @@ ht-degree: 0%
    * [Magento Order Managementの削除方法](/help/how-to/general/how-to-remove-mom.md)
    * [Commerceの休日に備えるテクニカルヒント](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
    * [GraphQL リクエストで WAF をバイパスする方法](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
+   * [クラウド上のAdobe Commerce用に MariaDB を 10.4 から 10.5 にアップグレード](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQ {#faq}
    * [FAQ の概要](/help/faq/overview.md)
    * [Fastly を利用した web アプリケーションファイアウォール（WAF）:FAQ](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
