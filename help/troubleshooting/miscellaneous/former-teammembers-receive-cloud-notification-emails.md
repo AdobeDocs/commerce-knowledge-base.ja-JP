@@ -4,16 +4,18 @@ description: この記事では、以前のチームメンバーに送信され�
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 075f295c5b600fcca9fbecc5aad20b0640d900f9
+source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # 以前のチームメンバーには、Adobe Commerce クラウド通知メールが届きます
 
-この記事では、プロジェクトに関連付けられていないチームメンバーが、引き続き通知を受信する場合の解決策を提供します。
+この記事では、次のユーザーを受信者の通知メールのリストから削除するソリューションを提供します。
+* 以前のチームメンバーで、プロジェクトとの関連付けがなくなった人。
+* 通知を受け取るべきではない現在のチームメンバー。
 
 ## 問題
 
