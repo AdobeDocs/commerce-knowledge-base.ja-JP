@@ -3,7 +3,7 @@ title: クラウドスナップショットを使用しない環境のロール�
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境のスナップショットを作成することなく、環境をロールバックする 2 つのソリューションについて説明します。
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: f3c976bd44dbc47bd5cc8076f1679d56910cfaf3
+source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 デプロイメント中に以前の設定が自動的に適用されないように、設定管理を無効にする必要があります。
 
-設定管理を無効にするには、 `/app/etc/` ディレクトリにが含まれていない `config.php` （Adobe Commerce 2.2.x の場合）または `config.local.php` （Adobe Commerce 2.1.x 用） ファイル。
+設定管理を無効にするには、 `/app/etc/` ディレクトリにが含まれていない `config.php` （Adobe Commerce 2.4.x の場合）または `config.local.php` （Adobe Commerce 2.1.x 用） ファイル。
 
 設定ファイルを削除するには、次の手順に従います。
 
 1. [環境に SSH で接続する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. 設定ファイルを削除します。
-   * Adobe Commerce 2.2 の場合：
+   * Adobe Commerce 2.4 の場合：
 
    ```php
     rm app/etc/config.php
