@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 45ab0d3a858239dc8a35ed81c3b0d2f7cda5c85b
+source-git-commit: ee1ba9c0bb07c260058f53696c88ced737899361
 workflow-type: tm+mt
-source-wordcount: '11031'
+source-wordcount: '11032'
 ht-degree: 0%
 
 ---
@@ -821,6 +821,7 @@ ht-degree: 0%
       * [Adobeは、顧客データのアクセスとプライバシーをサポートします](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS API の廃止](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
       * [2024 年リリーススケジュール](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
+      * [テスト](/help/announcements/adobe-commerce-announcements/test.md)
    * ヘルプセンターのニュース {#news}
       * [Adobe Commerce サポートナレッジベースがコントリビューションの受け入れを開始](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
 * トラブルシューティング {#troubleshooting}
