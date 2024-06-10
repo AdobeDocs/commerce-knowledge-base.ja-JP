@@ -5,14 +5,18 @@ description: に対処するためのパッチを適用する [!DNL UPS] から�
 feature: Shipping/Delivery
 role: Developer
 exl-id: 8ab5d4a8-0155-4b2c-ab67-d0bd2f949a07
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 6694bb1e041e6285f5bd5a05a1c37b7062521f52
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
 # [!DNL UPS] からの発送方法の統合の移行 [!DNL SOAP] 対象： [!DNL RESTful API]
+
+>[!NOTE]
+>
+>この記事の 3 つのパッチのいずれかを事前にアップロードした場合 **2024 年 6 月 6 日（Pt）**：この問題が原因で [!DNL Metric System/SI] 測定値（キログラムとセンチメートル）が使用されていない場合は、Adobe CommerceとMagento Open Sourceの 2.4.4 以降/2.4.5 以降/2.4.6 以降のバージョンについて、この記事で公開された新しく更新されたパッチを再度適用する必要があります。適用しないと、 [!DNL Metric System/SI] の測定 **キログラム** および **センチメートル** が含まれる [!DNL UPS] での発送方法 **[!DNL Admin configuration]**. これらの新しいパッチは、以前にリリースされたパッチと互換性があります。 この問題は、に予定されている今後のAdobe Commerce バージョン 2.4.7-p1 リリースの範囲で永続的に修正されます **2024 年 6 月 11 日（Pt）**.
 
 >[!NOTE]
 >
@@ -39,9 +43,11 @@ ht-degree: 0%
 * 2.4.6
 * 2.4.6-pX
 
-## 原因：
+## 原因
 
 この [!DNL UPS] リリース日： [ユーザーのセキュリティ更新 [!DNL API]](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914).
+
+発送元として欧州連合（EU）がある場合（他の発送元も同じ問題が発生する可能性があります）、発送元として以下のエラーが発生します。 [!DNL UPS REST] リクエスト : &quot;*出荷の単位として、KGS/IN、LBS/CM、または OZS/CM を使用することはできません。*“
 
 ## 解決策
 
@@ -55,15 +61,15 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、次�
 
 ### バージョン 2.4.4、2.4.4-pX の場合：
 
-* [AC-9363_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-9646_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
+* [AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
 
 ### バージョン 2.4.5、2.4.5-pX の場合：
 
-* [AC-9358_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-9647_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
+* [AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
 
 ### バージョン 2.4.6、2.4.6-pX の場合：
 
-* [AC-9345_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-9648_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
+* [AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
 
 ## パッチの適用方法
 
