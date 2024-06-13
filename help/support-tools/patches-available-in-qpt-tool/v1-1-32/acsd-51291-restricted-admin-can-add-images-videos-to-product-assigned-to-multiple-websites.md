@@ -4,7 +4,7 @@ description: ACSD-51291 パッチを適用すると、1 つの web サイトへ�
 feature: Admin Workspace, Products, Page Content
 role: Admin
 exl-id: d3cf5009-6b80-4841-95c3-75bb15c9c0a4
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%

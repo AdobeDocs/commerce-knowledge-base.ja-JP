@@ -4,7 +4,7 @@ description: ここでは、Adobe Commerce 2.4.2-p1 の既知の問題につい�
 exl-id: bde90251-625f-4c9d-8e5a-9a2019656125
 feature: Customer Service, Invoices
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%

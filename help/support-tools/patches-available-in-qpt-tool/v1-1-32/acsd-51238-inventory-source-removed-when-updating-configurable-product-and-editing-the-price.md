@@ -4,7 +4,7 @@ description: 設定可能な商品をアップデートして価格を編集す�
 exl-id: ab2f60fd-5da3-45f7-a489-6f4f9d34e1f1
 feature: Configuration, Inventory, Orders, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

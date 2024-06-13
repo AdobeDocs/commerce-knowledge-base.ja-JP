@@ -4,7 +4,7 @@ description: この記事では、お支払い方法としてApple Pay または
 exl-id: bf78cc07-9dc7-4eb8-bfdf-57ea5131effb
 feature: Invoices, Orders, Payments
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%

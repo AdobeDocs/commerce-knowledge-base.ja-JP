@@ -4,7 +4,7 @@ description: MDVA-30102 パッチは、Redis キャッシュがいっぱいに�
 exl-id: 34772296-8c93-471c-b5ad-6815adb78ca6
 feature: Cache, Categories, Services
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 324cce66df1e4ab7ec4ef8fb6512c3acbabdf3ab
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%

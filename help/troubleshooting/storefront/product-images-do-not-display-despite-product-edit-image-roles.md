@@ -4,7 +4,7 @@ description: この記事では、製品の編集ページで画像の役割が�
 exl-id: 456baa5a-fa16-4bc1-9d6c-54106fae58ca
 feature: Cache, Products, Roles/Permissions, Storefront
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%

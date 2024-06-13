@@ -4,7 +4,7 @@ description: '「MDVA-13203 Adobe Commerce パッチを適用すると、サイ�
 exl-id: 8e09010b-9aa4-4a79-b546-a24bb72e0e40
 feature: Tools and External Services
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%

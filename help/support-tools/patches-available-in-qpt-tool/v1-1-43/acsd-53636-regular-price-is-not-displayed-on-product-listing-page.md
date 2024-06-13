@@ -4,7 +4,7 @@ description: ACSD-53636 パッチを適用して、に通常の価格が表示�
 feature: Catalog Management, Products
 role: Admin, Developer
 exl-id: 97b4eb64-92d1-4db1-8e5b-915b16115663
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

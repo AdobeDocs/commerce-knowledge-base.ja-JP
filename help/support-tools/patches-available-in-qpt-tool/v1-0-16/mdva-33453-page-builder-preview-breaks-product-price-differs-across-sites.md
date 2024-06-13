@@ -4,7 +4,7 @@ description: MDVA-33453 パッチは、一致する製品の価格が web サイ
 exl-id: 78a7f7d4-8691-4b5d-a900-1c9a6ec73486
 feature: CMS, Orders, Page Builder, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

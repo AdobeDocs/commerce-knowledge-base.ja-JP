@@ -4,7 +4,7 @@ description: 「MDVA-43824 パッチは、注文のキャンセル操作が次�
 exl-id: e4d839d6-84ed-4157-80a1-fd482fef897c
 feature: Orders
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: '[ 品質向上パッチツール（QPT） ] （/help/announcements
 exl-id: ee246380-d37e-4c24-8435-97ae80088227
 feature: Admin Workspace, B2B, Companies, Roles/Permissions
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

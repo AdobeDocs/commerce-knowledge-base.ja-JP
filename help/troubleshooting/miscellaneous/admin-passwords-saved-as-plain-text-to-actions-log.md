@@ -4,7 +4,7 @@ description: ここでは、Commerce管理者が管理者権限で新しいユ�
 exl-id: 0e91198e-66b9-456a-9b75-5986369ed8e6
 feature: Admin Workspace, Logs
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%

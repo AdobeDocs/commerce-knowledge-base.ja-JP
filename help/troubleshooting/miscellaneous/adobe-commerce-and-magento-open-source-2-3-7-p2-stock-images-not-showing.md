@@ -4,7 +4,7 @@ description: ここでは、ファイルシステムディレクトリ「pub/med
 exl-id: 84488d87-095f-4739-858f-19a52d6e5822
 feature: Categories, Orders
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

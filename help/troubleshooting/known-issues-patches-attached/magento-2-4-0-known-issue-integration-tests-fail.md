@@ -4,7 +4,7 @@ description: ここでは、「Dotdigitalgroup\Email\Test\Integration\Model\Sync
 exl-id: 8e0ca2da-81d9-4561-a009-593240f46e41
 feature: Integration
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-38270 パッチは、お客様の注文の合計金額にギ�
 exl-id: 4ab315c4-d26e-4270-a556-66601d01fb2e
 feature: Gift, Orders
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

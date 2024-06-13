@@ -4,7 +4,7 @@ description: が次のパフォーマンスを実行するAdobe Commerceの問�
 feature: Catalog Service
 role: Admin, Developer
 exl-id: 0b099570-9f27-4ae2-9384-6b69ea50bd98
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: fe6269ac042326a85a2cab5ccf834ac3eff1c166
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

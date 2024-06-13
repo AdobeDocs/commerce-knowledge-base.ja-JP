@@ -3,7 +3,7 @@ title: Adobe Commerce GDPR リソース
 description: この記事では、Adobe Commerceが GDPR （EU 一般データ保護規則）にどのように準拠するかについて説明した公式ドキュメントリソースの一覧を示します。
 exl-id: d578ff9b-e39c-4c5b-8aaf-f41cab5c1fbb
 feature: Compliance
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

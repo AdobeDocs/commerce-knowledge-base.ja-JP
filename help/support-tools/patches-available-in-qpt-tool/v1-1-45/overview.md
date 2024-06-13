@@ -4,7 +4,7 @@ description: このサブセクションでは、で使用可能なパッチに�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 313a5a66-efaf-4d60-bb40-2487dbec15da
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: この記事では、B2B 共有カタログ機能がGraphQLのカ�
 exl-id: bdafa8d9-b637-409e-86b5-d132bccfe0b8
 feature: B2B, Catalog Management, Categories, GraphQL, Customer Service
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

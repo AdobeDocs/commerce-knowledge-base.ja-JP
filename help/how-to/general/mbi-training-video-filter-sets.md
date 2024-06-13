@@ -3,7 +3,7 @@ title: 'Adobe Commerce Intelligence トレーニングビデオ：フィルタ�
 description: ビジネスデータの特定の部分のみを分析しますか？ 手動で片付けるのにうんざりですか？ Adobe Commerce Intelligence では、フィルターセット機能を使用してこのプロセスを簡略化できます。
 exl-id: 2756f1f0-1465-4a7b-b249-7a3b36674e43
 feature: Commerce Intelligence
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%

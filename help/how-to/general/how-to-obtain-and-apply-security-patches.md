@@ -2,7 +2,7 @@
 title: の取得と適用方法 [!UICONTROL security patch]
 description: この記事では、を取得して適用する方法について説明します。 [!UICONTROL security patch] はリリースされましたが、説明は使用できません。
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: b15a1d008b6cc2bdce797768e6ee7029a747e6da
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%

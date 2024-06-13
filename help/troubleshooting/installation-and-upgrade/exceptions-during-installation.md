@@ -4,7 +4,7 @@ description: この記事では、Web セットアップウィザードを使用
 exl-id: f9b8ba2d-c8bd-4020-9e95-7194cc51317c
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%

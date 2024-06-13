@@ -4,7 +4,7 @@ description: MDVA-30565 パッチは、セッションキャッシュのロー�
 exl-id: f0693f0c-fc6b-44af-a6a0-ebfa973bca65
 feature: Cache, Checkout, Orders, Storage
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%

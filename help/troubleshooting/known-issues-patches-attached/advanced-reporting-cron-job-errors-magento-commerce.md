@@ -4,7 +4,7 @@ description: この記事では、高度なレポートにアクセスしよう�
 exl-id: c11a5faf-a243-411a-af0f-585a401e6e39
 feature: Cache
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 6287e708c830680e04dd068b64cf63ca13ecdedb
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%

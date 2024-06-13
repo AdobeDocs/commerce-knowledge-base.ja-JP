@@ -2,7 +2,7 @@
 title: Adobe Commerce カスタマーサポートガイドへのアクセス
 description: Adobe Commerce カスタマーサポートガイドでは、カスタマーサポートサービスとその利用方法について説明しています。 これには、サポート関係に関するベストプラクティス、診断に必要な情報の収集、カスタマーサポートの優先度、サポートリクエストの送信、リソースへのリンクが含まれます。 このガイドには、Magentoアカウントページの「ダウンロード」セクションからアクセスできます。 アクセス先：'
 exl-id: 4acd471d-7d94-49a6-ac2d-80661d77a569
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%

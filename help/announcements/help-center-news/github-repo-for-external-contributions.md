@@ -4,7 +4,7 @@ description: 6 月 15 日（PT）より、Adobe Commerce サポートナレッ�
 exl-id: b5198de0-d6b5-4107-8b74-a12606583596
 feature: Support
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%

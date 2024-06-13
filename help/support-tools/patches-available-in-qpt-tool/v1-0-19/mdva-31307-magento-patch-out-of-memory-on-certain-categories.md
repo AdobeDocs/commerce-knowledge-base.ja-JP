@@ -4,7 +4,7 @@ description: MDVA-31307 パッチは、「Magento\_Csp/Model/BlockCache」が大
 exl-id: 15d82f5b-bd43-4a0a-b756-d109dac6d2cd
 feature: Cache, Categories
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

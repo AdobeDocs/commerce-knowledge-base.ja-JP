@@ -4,7 +4,7 @@ description: この記事では、Fastly 資格情報の検証時にユーザー
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 831a928dbe8fd6b37f3fe9ad5dc35ee80e11a578
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%

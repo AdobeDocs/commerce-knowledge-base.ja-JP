@@ -4,7 +4,7 @@ description: MDVA-28300 パッチは、GraphQL リクエストがカタログ価
 exl-id: 86079d29-db69-4758-a159-aeed8e0ea21f
 feature: Catalog Management, GraphQL, Customer Service, Marketing Tools, Orders, Price Rules
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: ACSD-54106 パッチを適用すると、トルコ語のアクセ�
 feature: Categories, Products, Search
 role: Admin
 exl-id: 80386ded-4ada-4822-b073-f477ca123093
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: dccb8dde1666fa0c72c7c94cd94c82daddaadc54
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%

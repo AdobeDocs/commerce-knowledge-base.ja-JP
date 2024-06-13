@@ -4,7 +4,7 @@ description: MDVA-42520 パッチは、**Enable Cross Border Trade**が使用さ
 exl-id: c1ca44eb-fe92-4f28-807a-3a4563433386
 feature: Catalog Management, Orders, Taxes
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%

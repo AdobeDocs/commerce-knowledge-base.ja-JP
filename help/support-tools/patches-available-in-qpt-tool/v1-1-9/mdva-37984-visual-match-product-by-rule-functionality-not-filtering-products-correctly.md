@@ -4,7 +4,7 @@ description: MDVA-37984 パッチを使用すると、ステージングアッ�
 exl-id: d806b94c-3b22-4d4c-8afb-7b57a0ebfe46
 feature: Categories, Merchandising, Products, Staging
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

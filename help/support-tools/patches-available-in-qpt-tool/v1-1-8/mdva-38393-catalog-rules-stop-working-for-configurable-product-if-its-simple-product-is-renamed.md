@@ -4,7 +4,7 @@ description: MDVA-38393 パッチは、設定可能な製品の単純な製品�
 exl-id: a20856c4-8aff-427b-a404-7afe706be06f
 feature: Catalog Management, Categories, Configuration, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%

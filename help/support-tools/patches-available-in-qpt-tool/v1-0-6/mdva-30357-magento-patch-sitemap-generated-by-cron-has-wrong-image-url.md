@@ -4,7 +4,7 @@ description: MDVA-30357 パッチは、Commerce Admin で cron 生成のサイ�
 exl-id: c91f7ae0-0970-4918-9d1f-4ede6bfcb05f
 feature: Marketing Tools
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-41061 パッチは、製品が管理者から保存された�
 exl-id: fd71d3e5-685f-4987-b7e7-bfd86810d865
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: ACSD-54342 パッチを適用すると、有効なデータのな�
 feature: Roles/Permissions
 role: Admin, Developer
 exl-id: 7f443ad8-c4b7-4294-b38f-9861e221bef2
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: f12e25ac5dd607cc614dd99c90c5e104b2cee6a8
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

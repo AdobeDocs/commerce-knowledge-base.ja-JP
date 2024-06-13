@@ -4,7 +4,7 @@ description: この記事では、オプションの PHP 拡張モジュール '
 exl-id: 5090ea99-e0c3-436a-809b-109701740927
 feature: Install
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

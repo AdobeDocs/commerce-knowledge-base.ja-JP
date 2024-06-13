@@ -4,7 +4,7 @@ description: この記事では、MariaDB 10.6 でAdobe Commerce Cloud 2.4.6 の
 feature: Configuration
 role: Developer,Admin
 exl-id: b7af1cc3-93ff-40c5-8959-076cedddb56d
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: f12e25ac5dd607cc614dd99c90c5e104b2cee6a8
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%

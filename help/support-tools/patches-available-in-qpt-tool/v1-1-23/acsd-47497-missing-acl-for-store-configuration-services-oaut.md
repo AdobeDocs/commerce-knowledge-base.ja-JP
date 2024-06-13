@@ -4,7 +4,7 @@ description: 特定の役割に権限が設定されており、設定セクシ�
 exl-id: c13fd541-1379-4893-9190-9da1422b2b99
 feature: Configuration, Identity Management, Services
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

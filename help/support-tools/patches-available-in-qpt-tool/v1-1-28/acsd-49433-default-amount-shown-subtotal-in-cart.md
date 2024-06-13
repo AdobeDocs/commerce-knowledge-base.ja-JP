@@ -4,7 +4,7 @@ description: ACSD-49433 パッチを適用すると、Adobe Commerceの問題を
 exl-id: e2a887bb-c15a-43a6-a145-b295deef399b
 feature: Admin Workspace, Gift, Orders, Shopping Cart
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

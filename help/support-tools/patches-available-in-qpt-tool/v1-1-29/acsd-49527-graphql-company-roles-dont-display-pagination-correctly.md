@@ -4,7 +4,7 @@ description: ACSD-49527 パッチを適用すると、GraphQLの会社のロー�
 exl-id: e2d50081-8002-490e-9476-a19ba6623bda
 feature: B2B, GraphQL, Companies, Roles/Permissions
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

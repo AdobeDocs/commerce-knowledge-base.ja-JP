@@ -4,7 +4,7 @@ description: MDVA-29400 パッチは、お客様が PayPal Express Checkout で�
 exl-id: 75b943c8-5f7c-4d94-ae92-935428fdfcf8
 feature: Checkout, Orders, Payments
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

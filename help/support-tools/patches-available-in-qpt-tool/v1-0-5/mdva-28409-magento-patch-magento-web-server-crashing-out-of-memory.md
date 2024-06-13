@@ -4,7 +4,7 @@ description: MDVA-28409 パッチでは、多数の項目を処理する必要�
 exl-id: 175e5f2f-2f76-42ee-83e9-c1b23ff81e96
 feature: Tools and External Services
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%

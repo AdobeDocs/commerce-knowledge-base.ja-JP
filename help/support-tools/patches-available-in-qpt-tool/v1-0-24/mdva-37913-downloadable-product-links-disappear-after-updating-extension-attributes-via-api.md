@@ -4,7 +4,7 @@ description: の MDVA-37913 パッチでは、API を使用して拡張機能属
 exl-id: e4b2cf59-5c35-4a28-a63e-15cd7d0d5a5d
 feature: REST, Attributes, Extensions, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

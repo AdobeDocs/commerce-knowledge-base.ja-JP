@@ -4,7 +4,7 @@ description: MDVA-39923 パッチでは、B2B クイックオーダー機能で 
 exl-id: 52e435df-28a7-49be-a257-7e5801601d57
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: この記事では、支払いサービスの PayPal サンドボ�
 exl-id: 05ce130d-6dfe-4834-bdfc-837902100118
 feature: Customer Service, Orders, Payments
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%

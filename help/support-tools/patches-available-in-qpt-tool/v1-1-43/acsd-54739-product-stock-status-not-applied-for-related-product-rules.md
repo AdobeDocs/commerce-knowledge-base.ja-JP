@@ -4,7 +4,7 @@ description: ACSD-54739 パッチを適用して、次のAdobe Commerceの問題
 feature: Products
 role: Admin, Developer
 exl-id: 7bc106b1-2c97-46a1-8bb6-71b99511e480
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%

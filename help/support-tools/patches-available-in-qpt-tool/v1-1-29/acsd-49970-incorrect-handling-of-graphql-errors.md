@@ -4,7 +4,7 @@ description: 次の場合にGraphQL エラーの誤った処理が発生するAd
 exl-id: 70acade5-02a5-4769-86e2-5c566b2af709
 feature: GraphQL, Observability
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-28202 パッチは、Adobe Commerce ストアのフロント�
 exl-id: 45976602-15f3-4fef-9d90-da2b3fe6046d
 feature: Catalog Management, Categories, Orders, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

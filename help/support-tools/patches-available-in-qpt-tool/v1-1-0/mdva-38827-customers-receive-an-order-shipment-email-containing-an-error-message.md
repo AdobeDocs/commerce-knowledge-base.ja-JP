@@ -4,7 +4,7 @@ description: 「MDVA-38827 パッチは、次のエラーメッセージが記�
 exl-id: f2e5aeab-7d46-46be-9631-c3a863d9bf52
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%

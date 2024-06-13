@@ -4,7 +4,7 @@ description: Adobe Commerceでのスタックしたデプロイメントと失�
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 6177863da268f43cc30119cef6f718a04c46b3e6
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%

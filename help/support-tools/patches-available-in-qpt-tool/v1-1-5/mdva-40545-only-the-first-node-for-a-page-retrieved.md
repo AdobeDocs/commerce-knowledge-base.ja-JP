@@ -4,7 +4,7 @@ description: MDVA-40545 パッチは、同じページに複数のノードが�
 exl-id: ac7aaed9-5e81-45fe-b699-40d9c086a05c
 feature: CMS, Cache
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%

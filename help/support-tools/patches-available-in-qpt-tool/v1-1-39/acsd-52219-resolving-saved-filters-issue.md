@@ -4,7 +4,7 @@ description: ブックマークビューを頻繁に切り替えると、管理�
 feature: Admin Workspace
 role: Admin
 exl-id: e8333ee7-28a8-4457-aeff-6828f8ca9412
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: dccb8dde1666fa0c72c7c94cd94c82daddaadc54
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

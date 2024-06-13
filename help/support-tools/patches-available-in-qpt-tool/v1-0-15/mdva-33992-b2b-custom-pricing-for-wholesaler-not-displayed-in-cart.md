@@ -4,7 +4,7 @@ description: MDVA-33992 パッチは、B2B 顧客のカスタム価格が商品�
 exl-id: 6018fae6-762c-46c6-9497-ecf090115b7f
 feature: B2B, Catalog Management, Orders, Shopping Cart
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

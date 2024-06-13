@@ -4,7 +4,7 @@ description: ACSD-56023 パッチを適用して、ウィジェットコンテ�
 feature: CMS
 role: Admin, Developer
 exl-id: 2ff33b1c-ae92-4c59-83d2-e252bf543bab
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

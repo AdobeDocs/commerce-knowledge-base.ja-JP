@@ -4,7 +4,7 @@ description: この記事では、ゲストのチェックアウト時にブラ�
 exl-id: b757e4af-7b1a-41bc-8460-9a6858c7aa5e
 feature: Checkout, Orders, Shipping/Delivery
 role: Developer
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

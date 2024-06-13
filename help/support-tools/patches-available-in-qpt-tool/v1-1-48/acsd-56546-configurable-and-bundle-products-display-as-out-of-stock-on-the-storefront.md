@@ -4,7 +4,7 @@ description: Adobe Commerce ACSD-56546 パッチを適用すると、設定可�
 feature: Storefront, Products
 role: Admin, Developer
 exl-id: 488e2c69-442f-45e1-aa8f-71d9c0a93950
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 031d5cad6727bac61c88f21fa7c84e0d2a6df331
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

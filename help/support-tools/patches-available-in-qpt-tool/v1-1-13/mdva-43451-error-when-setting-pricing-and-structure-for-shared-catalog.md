@@ -4,7 +4,7 @@ description: MDVA-43451 パッチは、共有カタログの価格と構造を�
 exl-id: 78de2e98-dfd7-4829-8e3f-76eadf5570e8
 feature: Catalog Management
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%

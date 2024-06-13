@@ -4,7 +4,7 @@ description: MDVA-40550 パッチでは、インデックス再作成によっ�
 exl-id: 0aca6eb2-6eb2-4ac4-8ae1-052f671c14e5
 feature: Categories, Console, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: Adobe Commerceの問題を修正するために ACSD-52824 パッ�
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
 exl-id: 03496fb1-d492-4f02-9cdc-466cb571a2eb
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

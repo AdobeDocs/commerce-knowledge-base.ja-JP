@@ -4,7 +4,7 @@ description: Adobe Commerce ACSD-49628 パッチを適用して、 [!DNL Page Bu
 exl-id: c6e2f0b3-aea0-4caf-8b69-9644b38c909c
 feature: Categories, Page Builder, Products
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

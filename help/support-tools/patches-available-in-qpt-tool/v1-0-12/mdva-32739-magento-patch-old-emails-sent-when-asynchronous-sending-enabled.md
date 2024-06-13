@@ -4,7 +4,7 @@ description: MDVA-32739 パッチでは、[ 非同期メール通知 ] （https:
 exl-id: 8cf4ef8a-f2f2-47fb-9f69-0eedcc10ba8b
 feature: Communications
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: MDVA-31282 パッチは、Adobe Commerceの Paypal PayFlow Pro で�
 exl-id: f239012e-e1bd-474b-aad2-7218ec3a3d1b
 feature: Orders, Payments
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%

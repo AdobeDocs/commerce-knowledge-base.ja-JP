@@ -4,7 +4,7 @@ description: MDVA-34192 パッチでは、dd/mm/yyyy 形式を使用してお客
 exl-id: 8aa36970-b2bf-43f8-ba8f-bfc144f8d4ab
 feature: Tools and External Services
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%

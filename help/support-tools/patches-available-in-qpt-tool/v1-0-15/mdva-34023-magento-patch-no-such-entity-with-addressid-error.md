@@ -4,7 +4,7 @@ description: MDVA-34023 パッチは、お客様の Web ブラウザで「No suc
 exl-id: bdf8f97d-856a-4dd7-bf21-941d1493496c
 feature: Variables
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

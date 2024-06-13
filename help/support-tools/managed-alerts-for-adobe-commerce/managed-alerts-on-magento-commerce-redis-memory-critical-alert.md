@@ -4,7 +4,7 @@ description: この記事では、New RelicのAdobe Commerceで Redis メモリ�
 exl-id: 28e1d879-d7ca-4439-8e81-52a1fbf3ecb0
 feature: Cache, Categories, Observability, Services, Support, Tools and External Services, Variables
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%

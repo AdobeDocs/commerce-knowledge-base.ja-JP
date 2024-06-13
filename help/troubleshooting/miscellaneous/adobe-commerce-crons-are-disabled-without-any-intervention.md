@@ -2,7 +2,7 @@
 title: Adobe Commerce [!DNL crons] 介入なしで無効にされた
 description: この記事を使用して、次の問題を修正します [!DNL crons] は操作なしで無効になります。
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 9cd7cabc37c0f290c41f790b0fb06177c3156d48
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

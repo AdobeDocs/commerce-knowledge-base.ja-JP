@@ -4,7 +4,7 @@ description: ACSD-48204 パッチを適用すると、*Yes/No*属性に基づい
 exl-id: 9b0b4d62-c4c5-40d7-a279-52f59ee7ac42
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

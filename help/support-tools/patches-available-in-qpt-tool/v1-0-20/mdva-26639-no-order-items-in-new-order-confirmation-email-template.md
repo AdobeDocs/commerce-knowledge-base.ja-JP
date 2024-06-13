@@ -4,7 +4,7 @@ description: MDVA-26639 パッチは、新しい注文が作成され、確認�
 exl-id: 5d9716ab-6e57-47b0-8b38-ca98a98101e8
 feature: Communications, Marketing Tools, Native Luma Frontend Development, Orders
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: ACSD-48784 パッチを適用すると、顧客セグメント価�
 exl-id: 6be11fd0-5c93-4ac7-8664-7e2a289c9e38
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%

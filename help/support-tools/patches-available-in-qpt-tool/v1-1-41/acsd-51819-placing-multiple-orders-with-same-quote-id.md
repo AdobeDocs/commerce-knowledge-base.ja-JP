@@ -4,7 +4,7 @@ description: ACSD-51819 パッチを適用すると、同じ見積書 ID で複�
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: f217de21-2914-4b84-b596-e9e763669941
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: 6fa7182a807147a00ad750966cd839ec18ffe0c7
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

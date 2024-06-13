@@ -4,7 +4,7 @@ description: この記事では、New RelicでAdobe Commerceの重大なディ�
 exl-id: 03e5694b-7689-4fbf-8781-636fa46ca0d3
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 21d5bee77c87b93345e9e730642539f1e6b4730a
+source-git-commit: c829b4383fa808df29aab03229c59f06ef8a38bc
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
