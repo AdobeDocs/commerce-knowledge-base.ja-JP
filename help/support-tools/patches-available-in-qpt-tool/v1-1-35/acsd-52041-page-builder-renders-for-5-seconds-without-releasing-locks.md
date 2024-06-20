@@ -4,16 +4,16 @@ description: ACSD-52041 パッチを適用して、ページビルダーがロ�
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # ACSD-52041：ページビルダーのレンダリングでロックが解放されない
 
-ACSD-52041 パッチでは、ロックを解除せずにページビルダーが 5 秒間レンダリングされる問題が修正されています。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.35 がインストールされています。 パッチ ID は ACSD-52041 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-52041 パッチでは、ページビルダーがロックを解除せずに 5 秒間レンダリングされる問題を修正しています。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.48 がインストールされています。 パッチ ID は ACSD-52041-v2 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -23,7 +23,7 @@ ACSD-52041 パッチでは、ロックを解除せずにページビルダーが
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.6-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 ～ 2.4.4-p8、2.4.5 ～ 2.4.5-p7、2.4.6 ～ 2.4.6-p6
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ACSD-52041 パッチでは、ロックを解除せずにページビルダーが
 
 ## 問題
 
-ページビルダーは、ロックを解除せずに 5 秒間レンダリングされます。
+ページビルダーは、ロックを解除せずに 5 秒間レンダリングします。
 
 <u>再現手順</u>:
 
