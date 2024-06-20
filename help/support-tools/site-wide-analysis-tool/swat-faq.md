@@ -4,9 +4,9 @@ description: について説明します [!DNL Site-Wide Analysis Tool]は、プ
 exl-id: 7c843d55-9e2c-4b18-8859-0ebad0ae28cf
 feature: Best Practices, Saas, Support, Tools and External Services
 role: Admin
-source-git-commit: 4e327654279095f6523a7cbec77bd2dca57b2034
+source-git-commit: 580ad148cd4346868cd9892a1ae9a4d85f73edce
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 ## レポートはどのように配信されますか。
 
 [!DNL Site-Wide Analysis Tool] レポートは、毎月または四半期ごとにAdobe Commerce サポートチケットシステムを通じて自動的に配信されます。 [!DNL Site-Wide Analysis Tool] レポートは、から手動で生成することもできます [!DNL Site-Wide Analysis Tool] ダッシュボードを開き、デスクトップに保存しました。 これら [!DNL Site-Wide Analysis Tool] レポートは、添付ファイルとしてメールで送信できます。
+
+>[!NOTE]
+>
+>レコメンデーションを適用した後、手動でレポートを生成してもレコメンデーションは更新されません。レコメンデーションがフォームから削除されるまでに数日かかる場合があります [!DNL Site-Wide Analysis Tool Dashboard].
