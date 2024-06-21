@@ -4,9 +4,9 @@ description: Adobe Commerce on cloud infrastructure Pro プランアーキテク
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: 43be85de953909253900d60488f76a20bac91793
+source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # 統合環境の強化リクエスト - Pro と Starter
 
 Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのお客様が標準サイズの統合環境を使用している場合、またはAdobe Commerce on cloud infrastructure Starter プランアーキテクチャのお客様が標準サイズのステージング環境を使用しており、より多くの電力を必要としている場合は、Enhanced Integration Environments へのアップグレードをリクエストできます。このアップグレードにより、およそ 4 倍のパフォーマンスが得られます。 この記事では、Pro のお客様と Starter のお客様の説明を分けています。
+
+>[!NOTE]
+>
+> 拡張統合にアップグレードすると、サードパーティの統合やカスタマイズを含むインストールの総リソース要件に応じてパフォーマンス上の問題がすべて解決されるわけではありません。
+>
+> また、統合環境でのベストパフォーマンスを得るために、ベストプラクティスに従っていることを確認する必要があります。さらに、それがエンドオールのソリューションではない場合もあります。 詳しくは、次のドキュメントを参照してください。 [Pro アーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) および [スターターアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) （Commerce on Cloud Infrastructure ガイド）を参照してください。
 
 ## プロ
 
