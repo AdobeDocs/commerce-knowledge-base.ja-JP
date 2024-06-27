@@ -4,9 +4,9 @@ description: この記事では、「https://repo.magento.com/archives/magento/m
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
+source-git-commit: 7804e7094fb05d1cce9747c8f96c3cfe6bc6171e
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 クラウドインフラストラクチャー 2.4.x 上のAdobe Commerce
 
-## 問題  
+## 問題
 
 <u>再現手順</u>:
 
-デプロイを試みます。 
+デプロイを試みます。
 
 <u>期待される結果</u>:
 
@@ -40,7 +40,7 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 >
 >これはエラーの例です。 （デプロイするAdobe Commerceのバージョンに応じて）別のファイルを示すエラーが発生する場合があります。
 
-デプロイに失敗しました。 のようなエラーが表示されます *「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 が見つかりません）* が含まれる [デプロイメントログ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+デプロイに失敗しました。 のようなエラーが表示されます *「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 が見つかりません）* が含まれる [デプロイメントログ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 
 ### 原因：
@@ -54,7 +54,7 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 を更新 `env:COMPOSER_AUTH` プロジェクトレベルの変数で、コードへのアクセス権を持つキーで設定されていることを確認します。
 
-手順については、次を参照してください [変数レベル](/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
+手順については、次を参照してください [変数レベル](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
 
 ## 関連資料
 

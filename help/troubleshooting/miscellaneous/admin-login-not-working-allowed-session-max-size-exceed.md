@@ -2,9 +2,9 @@
 title: '[!DNL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています'
 description: にログインしようとすると、問題を解決できる [!DNL Admin] パネルとフォームが更新され、ログインできません。
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,6 @@ bin/magento config:set system/security/max_session_size_admin 500000
 
 ## 関連資料
 
-* [セッションサイズ](/docs/commerce-admin/systems/security/security-session-management.html?lang=en#admin-sessions) （管理システムガイド）。
-* [操作モード](/docs/commerce-operations/configuration-guide/cli/set-mode.html) （設定ガイド）を参照してください。
-* [安全な接続](/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) （Commerce on Cloud Infrastructure ガイド）を参照してください。
+* [セッションサイズ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) （管理システムガイド）。
+* [操作モード](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) （設定ガイド）を参照してください。
+* [安全な接続](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) （Commerce on Cloud Infrastructure ガイド）を参照してください。
