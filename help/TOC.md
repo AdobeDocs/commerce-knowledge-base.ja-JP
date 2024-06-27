@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
+source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
 workflow-type: tm+mt
-source-wordcount: '11040'
+source-wordcount: '11052'
 ht-degree: 0%
 
 ---
@@ -1035,7 +1035,7 @@ ht-degree: 0%
       * [Adobe Commerceを使用する際の時間別Amazon E メールを無効にする](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [キャッシュが無効化されると、レスポンス・タイムが低下する](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
       * [Github トークンの問題と Composer の主要手順](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
-      * [Adobe Commerce 2.4.1 の問題：Chrome でAmazon アカウントを変更できない](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
+      * [Adobe Commerce 2.4.1 の問題：ChromeでAmazon アカウントを変更できない](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ECE ツールとパッチアップデートエラーAdobe Commerce Cloud Infrastructure 2.2.x.、2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
       * [PWA Studio: コンパイルを開始する前に webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Adobe Commerce Redis の問題を修正するための最新のパッチをインストールします。](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
@@ -1066,7 +1066,7 @@ ht-degree: 0%
       * [xdebug のインストールに影響する既知の問題](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [Adobe Commerce サポートまたは Cloud アカウントにログインできない](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
       * [コンポーネントの依存関係が競合しています](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
-      * [Adobe Commerce Intelligence Service ポリシー](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
+      * [Adobe Commerce Intelligence サービスポリシー](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Git からプッシュされると、新しい環境が実稼動環境に配置される](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Commerce管理者にログイン後にエラーが発生する](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Adobe CommerceのMagento Order Managementシステム（OMS）がタイムアウトしました](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
@@ -1085,7 +1085,7 @@ ht-degree: 0%
       * [Cron が設定の誤りや欠落によって停止する [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [ファイルを削除できません。 警告！ unlink：からの該当するファイルまたはディレクトリのエラーはありません* [!DNL Admin]](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md)
       * [[!DNL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
-      * [既存のクラウドスタータープロジェクトへのAdobe Commerce Intelligence 接続の設定](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
+      * [既存のクラウドスタータープロジェクトのAdobe Commerce Intelligence接続の設定](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] は、ライブ検索ウィジェットによって壊されます](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
       * [サードパーティのセキュリティスキャンで見つかった脆弱性は、次の場所に移動する必要があります [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
       * [2.4.2 から 2.4.5-p3 へのアップグレード後に何千もの検索結果を取得する](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
@@ -1113,6 +1113,7 @@ ht-degree: 0%
       * [デプロイメントに失敗しました：「キャッシュ」名前空間エラーで定義されたコマンドがありません](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * 既知の問題 {#known-issues-patches-attached}
+      * [Adobe Commerceのセキュリティ更新プログラムを利用できます –  [!DNL APSB24-40] 専用パッチを含むように改訂されました [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] からの発送方法の統合の移行 [!DNL SOAP] 対象： [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] AC-9182 の Ground Advantage 出荷方法サポートのホットフィックス](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2 - 2.4.5 CVE-2022-35698 のセキュリティホットフィックス](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
@@ -1165,7 +1166,7 @@ ht-degree: 0%
       * [管理パネルからのAdobe Commerce 2.4.6 エラー](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] バージョン &lt; 2.4.5 からアップグレードする際のラベルの問題](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [[!DNL JQuery UI] セキュリティの脆弱性 [!DNL CVE-2022-31160] 2.4.4、2.4.5、2.4.6 リリースの修正](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
-      * [[!DNL FedEx] soap から RESTful API への発送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
+      * [[!DNL FedEx] SOAPから RESTful API への発送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
    * Elasticsearch {#elasticsearch}
       * [～に戻る [!DNL Elasticsearch7] 検索エンジンがに設定されている場合 [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
@@ -1238,7 +1239,7 @@ ht-degree: 0%
    * [MBI：高度な計算列の作成と編集](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceのディスク容量制限を確認](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceに対する SSL （TLS）証明書](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [最新のベータ版にアクセスできません](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [最新バージョンのBetaにアクセスできません](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [アプリケーションモードの切り替え](/help/how-to/general/switch-the-magento-mode.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで提供される Fastly アカウントへのログイン方法](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Fastly 503 エラーの代わりにAdobe Commerce エラーレポート番号を表示](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
