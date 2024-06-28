@@ -3,7 +3,7 @@ title: Google マップのすべてのAdobe Commerce バージョンのアクセ
 description: 「この記事では、最近使用したものとは互換性のないAdobe Commerce マーチャント向けに修正を提供します [!DNL Google Maps] 3.54 以降のバージョン。'
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
+source-git-commit: 98581cc9c251976339406f80764715096321126b
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 日付： *2024 年 6 月 14 日（Pt）* [!DNL Google Maps] version *3.53* 寿命に達し、によりオフにされました [!DNL Google].
 
-[ 詳細については、（[!DNL Google Maps Platform: Maps JavaScript API]） ] （https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions）を選択します。
+詳しくは、を参照してください。 [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerceは、最近のと互換性がありませんでした [!DNL  Google Maps] 3.54 以降のバージョン
 
 非互換性はレガシーが原因でした `prototype.js script`を介して読み込まれます `lib/web/legacy-build.min.js` ネイティブの Array.from 関数をオーバーライドします。これにより、と直接競合します。 [!DNL  Google Maps] API です。
 
-[ を参照（[!DNL Google Maps: JS Best Practices]） ] （https://developers.google.com/maps/documentation/javascript/best-practices）を選択します。
+こちらを参照してください [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>再現手順</u> :
 
