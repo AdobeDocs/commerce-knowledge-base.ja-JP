@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
+source-git-commit: c8e688b59f0d66dc32da098c185d81b14c6770bc
 workflow-type: tm+mt
-source-wordcount: '11052'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -912,6 +912,7 @@ ht-degree: 0%
       * [Adobe Commerce サイトの停止に関するトラブルシューティング](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [パッチを適用すると、サイトが停止します](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [コンテンツのステージングに関する問題が原因で、すべてのページでエラー 404 が発生する](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
+      * [Google マップのすべてのAdobe Commerce バージョンのアクセス損失に対する修正パッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
       * [理由の確認方法 [!DNL cron] は無効になりました](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。 ～に戻る [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
