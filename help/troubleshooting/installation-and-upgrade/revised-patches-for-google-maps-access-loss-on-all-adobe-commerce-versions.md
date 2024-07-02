@@ -3,7 +3,7 @@ title: Google マップのすべてのAdobe Commerce バージョンのアクセ
 description: 「この記事では、最近使用したものとは互換性のないAdobe Commerce マーチャント向けに修正を提供します [!DNL Google Maps] 3.54 以降のバージョン。'
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 98581cc9c251976339406f80764715096321126b
+source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Adobe Commerceは、最近のと互換性がありませんでした [!DNL  Goog
 
 ## 解決策
 
-* 2.4.4、2.4.5、2.4.6 または 2.2.7 のパッチバージョンのすべてのマーチャントは、これらの対応するパッチをバージョンに適用する必要があります。
+* 2.4.4、2.4.5、2.4.6 または 2.4.7 のパッチバージョンのすべてのマーチャントは、これらの対応するパッチをバージョンに適用する必要があります。
 
 ## パッチ
 
