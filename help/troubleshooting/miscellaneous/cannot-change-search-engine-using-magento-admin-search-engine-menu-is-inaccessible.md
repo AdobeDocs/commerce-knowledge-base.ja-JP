@@ -4,9 +4,9 @@ description: この記事では、「検索エンジン」フィールドが表�
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,12 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。こちらを参照してください [Elasticsearchのインストールと設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html).
+> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。
+> 
+> 以下を参照してください。
+> [Elasticsearchのインストールと設定](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
+> [Opensearch のインストールと設定](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+> [Live Search のインストールと設定](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install)
 
 この記事では、次の場合にCommerce Admin を使用してAdobe Commerce検索エンジンを変更するソリューションを提供します **検索エンジン** フィールドが表示されない **システム値を使用** チェックボックスが灰色表示になっており、アクセスできません。
 
@@ -23,16 +28,16 @@ ht-degree: 0%
 
 * [影響を受けるバージョン](#affected-versions)
 * [Commerce Admin を使用した検索エンジンの変更（手順）](#change-search-engine-using-magento-admin-steps)
-* [Adobe Commerceのオンプレミスにおける問題）](#magento-commerce-on-premise)
+* [Adobe Commerceのオンプレミスにおける問題](#magento-commerce-on-premise)
 * [クラウドインフラストラクチャー上のAdobe Commerce](#magento-commerce-cloud)
 
 ## 影響を受けるバージョン
 
-* Adobe Commerce オンプレミス：2.X.X
+* Adobe Commerce オンプレミス：2.4.X
 * クラウドインフラストラクチャー上のAdobe Commerce:
-   * バージョン：2.X.X
+   * バージョン：2.4.X
    * スターターおよび Pro プランアーキテクチャ
-* MySQL、Elasticsearch：サポートされているすべてのバージョン
+* MySQL、Elasticsearch、Opensearch、Live Search：サポートされているすべてのバージョン
 
 ## 管理者を使用して検索エンジンを変更する（手順）
 
@@ -117,17 +122,39 @@ array (
 
 ステージング環境と実稼動環境で使用する検索エンジンを変更するには、 `SEARCH_CONFIGURATION` の環境変数 `.magento.env.yaml` ローカル環境にを置いてから、変更を統合環境およびステージング環境/実稼動環境にプッシュして、変更を有効にします。
 
-MySQL からElasticsearchに切り替えた場合、SEARCH\_CONFIGURATION 変数は結果として `.magento.env.yaml` ファイルは次のようになります。
+Elasticsearch 7 に切り替えると、結果として SEARCH\_CONFIGURATION 変数が `.magento.env.yaml` ファイルは次のようになります。
 
 ```yaml
 stage:
   deploy:
    SEARCH_CONFIGURATION:
-     engine: elasticsearch
+     engine: elasticsearch7
      elasticsearch_server_hostname: hostname
-     elasticsearch_server_port: '123456'
+     elasticsearch_server_port: '12345'
      elasticsearch_index_prefix: magento
      elasticsearch_server_timeout: '15'
+```
+
+切り替える場合 [Opensearch （2.4.6 以降）](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search) 結果のの SEARCH\_CONFIGURATION 変数 `.magento.env.yaml` ファイルは次のようになります。
+
+```yaml
+stage:
+  deploy:
+   SEARCH_CONFIGURATION:
+     engine: opensearch
+     elasticsearch_server_hostname: hostname
+     elasticsearch_server_port: '12345'
+     elasticsearch_index_prefix: magento
+     elasticsearch_server_timeout: '15'
+```
+
+次の場合： [ライブ検索への切り替え](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch)：結果のの SEARCH\_CONFIGURATION 変数 `.magento.env.yaml` ファイルは次のようになります。
+
+```yaml
+stage:
+  deploy:
+   SEARCH_CONFIGURATION:
+     engine: livesearch
 ```
 
 ### 関連ドキュメント
@@ -142,3 +169,4 @@ stage:
 * [ビルドとデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) （ドキュメントについて） `.magento.env.yaml` 設定ファイル）
 * [変数のデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) （[SEARCH\_CONFIGURATION セクション](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#search_configuration)）
 * [サービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) （ドキュメントについて） `.magento/services.yaml` 設定ファイル）
+* [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)
