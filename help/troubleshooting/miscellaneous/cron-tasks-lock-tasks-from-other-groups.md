@@ -4,7 +4,7 @@ description: この記事では、特定の長時間実行される cron ジョ�
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: faa80e8233438fc15781341b3a9d5325269d6d20
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -71,4 +71,4 @@ Cron ジョブで実行されるプロセスは実行されません。 例え�
 
 ## 関連資料
 
-* [cron ジョブの設定](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html) 開発者向けドキュメントで
+* [cron ジョブの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) 開発者向けドキュメントを参照してください。
