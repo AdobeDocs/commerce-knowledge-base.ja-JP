@@ -2,9 +2,10 @@
 title: クラウド上のAdobe Commerce用に MariaDB を 10.4 から 10.5 にアップグレード
 description: MariaDB 10.4 は 2024 年 6 月 18 日（PT）にサポートを終了します。 この記事では、MariaDB を 10.4 から 10.5 にアップグレードして、クラウドインフラストラクチャで引き続きAdobe Commerceを使用する方法について説明します。
 feature: Best Practices, Cloud
-source-git-commit: 401a36722b3336b47dd76bb12ace34f0bf55b8e6
+exl-id: 065840b8-28c1-4686-95fc-df3e73152845
+source-git-commit: 11f2fae3264a61413c5da1b93ef4980151a1df1e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -39,6 +40,10 @@ MariaDB 10.4 はでサポート終了となります。 [2024 年 6 月 18 日�
    1. サポートチケットを使用してバックアップを完了したことをサポートに連絡します。 チケットを表示および追跡する手順については、を参照してください。 [Adobe Commerce ヘルプセンターユーザーガイド：チケットの追跡](/help/help-center-guide/help-center/magento-help-center-user-guide.md#track-tickets) サポートナレッジベースで。
    1. 次に、Adobe Commerce サポートチームは、MariaDB のアップグレードプロセスを開始します。 上記の手順がすべて実行され、データベースが平均サイズの場合、プロセスには約 1 時間かかります。 DB が大きいほど時間がかかります。 アップグレードが完了すると、チケットに関する情報が表示されます。
 1. メンテナンスモードを無効にします。 こちらを参照してください [メンテナンスモードの有効化または無効化](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) 開発者向けドキュメントを参照してください。
+
+>[!NOTE]
+>
+>データが失われる可能性を排除するために、アップグレード手順の前後に DB バックアップを作成することをお勧めします。 これにより、バージョンのアップグレード中に問題が発生した場合に、前の手順にロールバックできます。
 
 ## 関連資料
 
