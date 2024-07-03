@@ -4,9 +4,9 @@ description: この記事では、「検索エンジン」フィールドが表�
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
+source-git-commit: 0ea7bbef7fec556f9a90151be9cf1077f5cfac45
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,14 @@ ht-degree: 0%
 
 ## 管理者を使用して検索エンジンを変更する（手順）
 
-1. 管理者として「Admin」にログインします。
-1. 左側の管理サイドバーで、 **ストア**. 次に、の下に **設定**、を選択 **設定**.
-1. の下にある左側のパネル **カタログ、** を選択 **カタログ**.
-1. を展開します。 **カタログ検索** セクション。    ![catalog_menu.png](assets/catalog_menu.png)
-1. に移動します **検索エンジン** フィールドに移動し、から選択を削除します **システム値を使用** チェックボックス。
-1. 「」をクリックします **検索エンジン** メニューをクリックし、使用可能なオプションの 1 つを選択します。    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. クリック **設定を保存** ページの右上隅
+1. にログインします **[!UICONTROL Admin]** 管理者として。
+1. の左側に **[!UICONTROL Admin]** サイドバー、クリックして **[!UICONTROL Stores]**.
+1. 次の下 **[!UICONTROL Settings]**、を選択 **[!UICONTROL Configuration]**.
+1. 左側のの下にあるパネルに移動します。 **[!UICONTROL Catalog],** を選択します **[!UICONTROL Catalog]**.
+1. を展開します。 **[!UICONTROL Catalog Search]** セクション。    ![catalog_menu.png](assets/catalog_menu.png)
+1. に移動します **[!UICONTROL Search Engine]** フィールドに移動し、から選択を削除します **[!UICONTROL Use system value]** チェックボックス。
+1. 「」をクリックします **[!UICONTROL Search Engine]** メニューをクリックし、以下に示すように、利用可能なオプションの 1 つを選択します。    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. クリックする **[!UICONTROL Save Config]** ページの右上隅
 
 ## Adobe Commerceのオンプレミスにおける問題
 
@@ -65,10 +66,11 @@ ht-degree: 0%
 
 ### 解決策：ストア表示をデフォルト設定に設定します
 
-1. 管理者として「Admin」にログインします。
-1. 左側の管理サイドバーで、 **ストア**. 次に、の下に **設定**、を選択 **設定**.
-1. 左上隅のをクリックします **ストア表示** セレクターと選択 *デフォルトの設定*.
-1. クリック **OK** 確認ダイアログで「ストア表示の変更を承認」を選択します。
+1. にログインします **[!UICONTROL Admin]** 管理者として。
+1. の左側に **[!UICONTROL Admin]** サイドバー、クリックして **[!UICONTROL Stores]**.
+1. に移動します。 **[!UICONTROL Settings]** を選択します **[!UICONTROL Configuration]**.
+1. 左上隅のをクリックします **[!UICONTROL Store View]** セレクターと選択 **[!UICONTROL *デフォルトの設定&#x200B;*]**.
+1. クリックする **[!UICONTROL OK]** 確認ダイアログボックスで、ストア表示の変更を承認します。
 
 ![change_store_view.png](assets/change_store_view.png)
 
