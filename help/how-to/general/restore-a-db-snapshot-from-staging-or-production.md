@@ -2,9 +2,9 @@
 title: ステージング環境または実稼動環境から DB スナップショットを復元
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceでステージング環境または実稼動環境から DB スナップショットを復元する方法について説明します。
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
+source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 手順は次のとおりです。
 
-1. 使用 [!DNL sFTP]で、データベースがある場所に移動します。 [!DNL snapshot] が（通常はユーザーの最初のサーバーやノードに）配置されている [!DNL cluster] （例： `/mnt/recovery-<recovery_id>`）に設定します。 メモ：プロジェクトが Azure ベースの場合、プロジェクト URL はhttps://us-a1.magento.cloud/projects/のようになります。&lt;cluster_id>を選択すると、スナップショットはに配置されます。 `/mnt/shared/<cluster ID>/all-databases.sql.gz` または `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` その代わり。
+1. 使用 [!DNL SFTP]で、データベースがある場所に移動します。 [!DNL snapshot] が（通常はユーザーの最初のサーバーやノードに）配置されている [!DNL cluster] （例： `/mnt/recovery-<recovery_id>`）に設定します。 メモ：プロジェクトが Azure ベースの場合、プロジェクト URL はhttps://us-a1.magento.cloud/projects/のようになります。&lt;cluster_id>を選択すると、スナップショットはに配置されます。 `/mnt/shared/<cluster ID>/all-databases.sql.gz` または `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` その代わり。
 
    メモ : Azure プロジェクトのスナップショットの形式は異なり、インポートできない他のデータベースが含まれます。 スナップショットをインポートする前に、ダンプをインポートする前に、適切なデータベースを抽出するための追加手順を実行する必要があります。
 
@@ -134,6 +134,12 @@ ht-degree: 0%
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   （他の環境からデータベースバックアップを読み込む場合）
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
    （他の環境からデータベースバックアップを読み込む場合）
