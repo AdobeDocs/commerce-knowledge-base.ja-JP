@@ -4,9 +4,9 @@ description: この記事では、「https://repo.magento.com/archives/magento/m
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 7804e7094fb05d1cce9747c8f96c3cfe6bc6171e
+source-git-commit: 9f9dc8374bb681398ed1c295ac15679553cfc74e
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,7 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 >
 >これはエラーの例です。 （デプロイするAdobe Commerceのバージョンに応じて）別のファイルを示すエラーが発生する場合があります。
 
-デプロイに失敗しました。 のようなエラーが表示されます *「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 が見つかりません）* が含まれる [デプロイメントログ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
-
+デプロイに失敗しました。 のようなエラーが表示されます *「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 が見つかりません）* が含まれる [デプロイメントログ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### 原因：
 
@@ -59,4 +58,4 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 ## 関連資料
 
 * [クラウドリポジトリー上のAdobe Commerceにアクセスできませんでした：デプロイ中に「403 Forbidden」または「404 Not Found」エラーが発生する](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)
-* [展開エラー：ダウンロード中のエラー 7... ポート 443：接続が拒否されました](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce)
+* [展開エラー：ダウンロード中のエラー 7... ポート 443：接続が拒否されました](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
