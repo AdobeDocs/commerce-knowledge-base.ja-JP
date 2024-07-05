@@ -1,19 +1,19 @@
 ---
-title: 「送料」を URL キーとして保存できません
-description: この記事では、「shipping」を製品または CMS ページの URL キー（「/shipping」など）として保存できない場合の問題の回避策を説明します。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
+title: URL キーとして配送を保存できない
+description: この記事では、製品または CMS ページの URL キー（/shipping_など）として shipping を保存できない場合の問題の回避策を説明します。 URL キーを保存しようとすると、URL キーが URL と重複していることを示すエラーが表示されます。
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
-# 「送料」を URL キーとして保存できません
+# 保存できません _送料_ URL キーとして
 
-この記事では、「shipping」を製品または CMS ページの URL キー（「/shipping」など）として保存できない場合の問題の回避策を説明します。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
+この記事では、URL キーとして送信を保存できない場合の問題の回避策を説明します（_例：/shipping_）に設定する必要があります。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,19 +21,20 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.x
 
 ## 問題
 
-URL キーに「shipping」という語句を含む CMS ページを保存することはできません。
+CMS ページを次の用語で保存することはできません _送料_ を URL キーに入力します。
 
 <u>再現手順</u>:
 
-URL キーが「shipping」の CMS ページを作成します。
+を作成 **[!UICONTROL CMS page]** URL キーがの場合 _送料_.
 
 <u>期待される結果</u>:
 
-ページが URL キーに「shipping」とともに保存されます。
+ページがと共に保存されます _送料_ を URL キーとして使用します。
 
 <u>実際の結果</u>:
 
-保存できず、次のエラーが表示されます。 *「URL キー」フィールドに指定した値は、既に存在する URL を生成します。*
+このエラーが発生したため、保存できません：
+*「URL キー」フィールドに指定した値は、既に存在する URL を生成します。*
 
 ## 原因：
 
@@ -49,19 +50,77 @@ URL キーが「shipping」の CMS ページを作成します。
 
 ## 解決策
 
-URL キーに「shipping」という用語は使用できませんが、「shipping」という用語を別の文字または数字と組み合わせて使用することはできます（「shipping1」や「shipping2」など）。 「送料」という用語は必須ではありませんが、&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;>  – 長さが 255 文字を超えない限り、用語は任意の文字列にすることができます。
+この用語は使用できません _送料_ URL キーに – という用語を使用できます _送料_ 他の文字または数字（_例：shipping1 および shipping2_）に設定します。
 
-次の手順を実行します。
+という用語は必須ではありませんが、 _送料_+&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;>  – 長さが以下である限り、用語は任意の文字列にすることができます *255* 文字。
 
-1. Commerce Admin にログインします。
-1. に移動 **Marketing** > SEO と検索 > **URL リライト**.
-1. クリック **URL 書き換えの追加**.
-1. を選択 *カスタム* URL 書き換えを作成ドロップダウンで、
-   1. リクエストパス「shipping」を入力します。 メモ：リクエストパスは、ユーザーがブラウザーに入力するパスで、ターゲットパスは、リダイレクト先のパスです。
-   1. 「ターゲットパス」に新しい URL キーを入力します（例：「shipping1」）。
-   1. を選択 **不可** 「リダイレクト」ドロップダウンで、次の操作を行います。
+## 次の手順を実行します。
+
+1. Adobe Commerce Admin にログインします。
+1. に移動 **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. クリック **[!UICONTROL Add URL Rewrite]**.
+1. を選択 **[!UICONTROL Custom]** が含まれる **[!UICONTROL Create URL Rewrite]** ドロップダウン。
+   1. を入力 [!UICONTROL Request Path] as **_送料_**.
+   1. が含まれる **[!UICONTROL Target Path]**：新しい URL キー（_例：「shipping1」_）に設定します。
+   1. を選択 **[!UICONTROL No]** が含まれる **[!UICONTROL Redirect]** ドロップダウン。
+
+
+      （**注意**：リクエストパスは、ユーザーがブラウザーに入力するパスで、ターゲットパスは、リダイレクト先のパスです）。
+
+また、というラベルが付いているこれらのキーワードの使用は避けてください *予約済み* 同じ例外が表示されるキーワード。 以下に示すこれらのキーワードのいずれかを URL キー値として使用すると、同じエラーが表示されます。
+
+
+```
+"admin"
+"adminAnalytics"
+"analytics"
+"api"
+"backup"
+"bulk"
+"captcha"
+"catalog"
+"catalogsearch"
+"checkout"
+"cms"
+"contact"
+"cookie"
+"customer"
+"directory"
+"downloadable"
+"giftmessage"
+"groupedProduct"
+"indexer"
+"instantpurchase"
+"loginascustomer"
+"marketplace"
+"mui"
+"multishipping"
+"newsletter"
+"oauth"
+"paypal"
+"persistent"
+"productalert"
+"releaseNotification"
+"reports"
+"review"
+"robots"
+"rss"
+"sales"
+"search"
+"security"
+"sendfriend"
+"shipping"
+"stores"
+"swagger"
+"swatches"
+"tax"
+"theme"
+"translation"
+"vault"
+"wishlist"
+```
 
 ## 関連資料
 
-* [URL リライト](https://docs.magento.com/user-guide/marketing/url-rewrite.html) を参照してください。
-* [SEO のベストプラクティス](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) を参照してください。
+* [URL リライト](https://docs.magento.com/user-guide/marketing/url-rewrite.html) 詳しくは、マーチャンダイジングおよびプロモーションユーザーガイドを参照してください。
+* [SEO のベストプラクティス](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) アドビのマーチャンダイジングおよびプロモーションユーザーガイドの
