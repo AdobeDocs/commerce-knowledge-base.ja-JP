@@ -4,9 +4,9 @@ description: この記事では、コンポーネントの依存関係が競合�
 exl-id: 782049c4-b6e1-4ead-a00f-80d2aa8475c9
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -64,8 +64,8 @@ We have detected conflicts with the following packages:
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}
 
 1. サポートを受けられるよう、拡張機能の開発者にお問い合わせください。 Commerce Marketplaceから拡張機能を購入したページに、連絡先情報が表示されます。 を探します。 **販売者に連絡** 右パネルに表示されるボタン。 すべてのCommerce開発者は、Marketplace で拡張機能を公開する際に、ユーザーおよびインストールガイドを提供する必要があります。 両方の画像はランディングページの右側にあります。
-1. 売主から相当の期間に回答がない場合は、 [Commerce Marketplaceに知らせる](https://marketplacesupport.magento.com/hc/en-us) それにより、お客様のカスタマーサポートに対するコミットメントを思い出してもらうことができます。
+1. 売主から相当の期間に回答がない場合は、 [marketplace サポートに連絡](mailto:commercemarketplacesupport@adobe.com) それにより、お客様のカスタマーサポートに対するコミットメントを思い出してもらうことができます。
 
 ## Magento Open Source {#opensource}
 
-で支援を依頼する [メインフォーラム](https://community.magento.com/) または [Adobe Commerce パートナーに連絡](https://magento.com/find-a-partner) これは、オープンソースの問題に役立ちます。
+で支援を依頼する [メインフォーラム](https://community.magento.com/) または [Adobe Commerce パートナーに連絡](https://magento.com/find-a-partner) これは、オープンなSourceの問題に役立ちます。

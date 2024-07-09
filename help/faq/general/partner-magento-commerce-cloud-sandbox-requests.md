@@ -3,9 +3,9 @@ title: クラウドインフラストラクチャサンドボックスリクエ�
 description: この FAQ 記事には、クラウドインフラストラクチャサンドボックスリクエスト上のAdobe Commerceに関する有用なリソースへのリンクが含まれています。
 exl-id: 3ec1cbc0-1a71-4753-8fc5-51c5f1928f12
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 0%
 ## ソリューションパートナーまたはテクニカルパートナーがサポートリクエストを送信する場所/方法 {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
 * ソリューションパートナーは、にメールを送信することで、サンドボックス関連の問題のチケットを送信できます。 [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) また、パートナーのテクニカルサポートチームに転送されます。
-* 技術パートナーは、 [Commerce Marketplaceヘルプセンター](https://marketplacesupport.magento.com/hc/en-us/requests) ページ。
+* 技術パートナーは以下が可能 [marketplace サポートに連絡](mailto:commercemarketplacesupport@adobe.com).
