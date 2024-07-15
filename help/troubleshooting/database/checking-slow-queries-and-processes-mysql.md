@@ -30,7 +30,7 @@ ht-degree: 0%
    grep 'Query_time: [5-9][0-9]\|Query_time: [0-9][0-9][0-9]' /var/log/mysql/mysql-slow.log -A 3
    ```
 
-1. に移動 <https://www.unixtimestamp.com/> （または同様の Unix タイムスタンプコンバーター）を使用して、処理に時間のかかるクエリが実行されたときのタイムスタンプを挿入します。
+1. <https://www.unixtimestamp.com/> （または類似の Unix タイムスタンプコンバーター）に移動し、処理に時間のかかるクエリが実行されたときのタイムスタンプを挿入します。
 1. 発生したサイトの停止に関連する時間がある場合は、データベースの過負荷が原因である可能性があります。 その時点でデータベースにどのような負荷がかかっていたかを確認します。 このような負荷の例を次に示します。
 
 * Cron プロセス
@@ -39,13 +39,13 @@ ht-degree: 0%
 * ダンプの作成
 
 
-### を使用したクエリの分析 [!DNL Percona Toolkit] （Adobe Commerce Pro：クラウドアーキテクチャのみ）
+### [!DNL Percona Toolkit] を使用してクエリを分析する（Adobe Commerce Pro：クラウドアーキテクチャのみ）
 
-Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイされている場合は、 [!DNL Percona Toolkit] クエリを分析します。
+Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイされている場合は、[!DNL Percona Toolkit] を使用してクエリを分析できます。
 
-1. を実行 `pt-query-digest --type=slowlog` mysql の低速なクエリログに対してコマンドを実行します。
-   * 処理に時間のかかるクエリログの場所については、を参照してください。 **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** 開発者向けドキュメントを参照してください。
-   * を参照してください。 [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) ドキュメント。
+1. MySQL の低速クエリログに対して `pt-query-digest --type=slowlog` コマンドを実行します。
+   * 処理に時間のかかるクエリログの場所を見つけるには、開発者向けドキュメントの **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** を参照してください。
+   * [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) のドキュメントを参照してください。
 1. 見つかった問題に基づいて、クエリを修正する手順を実行して、クエリをより迅速に実行します。
 
 ## MySQL の「プロセスリスト」を確認しています
@@ -78,7 +78,7 @@ Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイさ
 
 ## 関連資料
 
-* [MySQL Show Processlist 構文](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) （dev.mysql.com内）。
-* [MySQL Kill 構文](https://dev.mysql.com/doc/refman/8.0/en/kill.html) （dev.mysql.com内）。
-* [セキュリティ、パフォーマンス、データ処理](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) 開発者向けドキュメントを参照してください。
-* [MySQL ヘルプ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) 開発者向けドキュメントを参照してください。
+* dev.mysql.comの [MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html)
+* dev.mysql.comの [MySQL Kill 構文 ](https://dev.mysql.com/doc/refman/8.0/en/kill.html)。
+* [ セキュリティ、パフォーマンス、データ処理 ](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) については、開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [MySQL ヘルプ ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html)。

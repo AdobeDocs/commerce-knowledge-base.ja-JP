@@ -23,15 +23,15 @@ ht-degree: 0%
 
 Web セットアップウィザードを使用して拡張機能をインストールすると、404 ページが表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 マーチャントは、Web セットアップウィザードをクリックして、新しいモジュール/統合をインストールします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 モジュール/統合のインストール
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 404 エラーが表示される。
 
@@ -43,9 +43,9 @@ Web セットアップウィザードは、クラウドインフラストラク�
 
 この機能は、クラウドインフラストラクチャー上のAdobe Commerceでは無効になっています。
 
-参照： [拡張機能のインストール、管理、アップグレード](https://devdocs.magento.com/cloud/howtos/install-components.html) アドビのクラウドインフラストラクチャでAdobe Commerceの更新を実行する方法や外部モジュールをインストールする方法については、開発者向けドキュメントを参照してください。
-参照： [クイックスタートインストール](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) Adobe Commerce オンプレミスの更新を実行する方法や外部モジュールをインストールする方法については、開発者向けドキュメントを参照してください。
+アドビのクラウドインフラストラクチャでAdobe Commerceの更新を実行したり、外部モジュールをインストールしたりする方法について詳しくは、開発者向けドキュメントの [ 拡張機能のインストール、管理、アップグレード ](https://devdocs.magento.com/cloud/howtos/install-components.html) を参照してください。
+アップデートの実行方法やAdobe Commerce オンプレミス用の外部モジュールのインストール方法については、開発者向けドキュメントの [ クイックスタートインストール ](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) を参照してください。
 
 ## 関連資料
 
-* 参照： [拡張機能のインストール](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [ 拡張機能のインストール ](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) を参照してください。

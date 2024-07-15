@@ -29,7 +29,7 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* PHP をバージョン 7.3 にアップグレードします。詳しくは、次を参照してください [Adobe Commerce 2.3 テクノロジースタックの要件](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html#php) 開発者向けドキュメントを参照してください。
+* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 ](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html#php) を参照してください。
 * Apache を再起動します。ファイルシステムと同じ PHP バージョンを使用していない可能性があるからです。 Apache を再起動するには、次のコマンドを使用します。
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* 確認する [Apache サーバーのリライト](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html) が有効になっています。 Apache サーバーの書き換えが正しく設定されていない場合、静的ファイルは正しい場所から提供されません。
-* インストール中に入力したベース URL に問題がある可能性があります。 ベース URL を値として指定します。 `--base-url=` コマンドラインからまたはを値としてAdobe Commerceをインストールする場合 **店舗の住所** web インストーラーの web 設定ページの「」フィールド。 ベース URL *が* スキームから開始する（例： `http://` ）を指定し、末尾をスラッシュ（/）で終えます。 有効な値でインストーラーを再度実行し、後でAdobe Commerceにアクセスしてみてください。
+* [Apache server rewrites](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html) が有効になっていることを確認します。 Apache サーバーの書き換えが正しく設定されていない場合、静的ファイルは正しい場所から提供されません。
+* インストール中に入力したベース URL に問題がある可能性があります。 ベース URL の値は、コマンドラインからAdobe Commerceをインストールするときに `--base-url=` を指定するか、web インストーラーの Web 設定ページにある **ストアアドレス** フィールドの値として指定します。 ベース URL *必須* は、スキーム（`http://` など）で始まり、末尾がスラッシュ（/）で終わります。 有効な値でインストーラーを再度実行し、後でAdobe Commerceにアクセスしてみてください。

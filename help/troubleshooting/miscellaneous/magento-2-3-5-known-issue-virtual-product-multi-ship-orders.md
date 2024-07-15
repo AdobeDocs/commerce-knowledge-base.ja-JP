@@ -22,17 +22,17 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. ストアフロントで、物理的な製品と仮想製品を買い物かごに追加します。
-1. チェックアウトに進み、を選択します **複数のアドレスを使用してチェックアウト**.
+1. チェックアウトに進み、「**複数のアドレスを使用してチェックアウト**」を選択します。
 1. 必要な情報をすべて追加して注文します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 すべての製品の注文が正常に行われます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 仮想製品の順序が空です。
 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [Adobe Commerce 2.3.5 リリースノート](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Adobe Commerce 2.3.5 リリースノート ](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

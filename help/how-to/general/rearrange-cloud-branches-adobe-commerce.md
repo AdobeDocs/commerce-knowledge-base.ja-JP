@@ -29,17 +29,17 @@ ht-degree: 0%
 
 クラウドのブランチを並べ替えるには：
 
-1. 以下が必要です。 [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) 役割。
-1. magento-cloud のインストール [!DNL CLI] （まだ行っていない場合）。
+1. [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) の役割が必要です。
+1. magento-cloud [!DNL CLI] をインストールします（まだインストールしていない場合）。
 1. 移動する必要があるブランチに対して、次のコマンドを実行します。
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-注：新しいブランチを作成する際に、親ブランチを指定できます。 手順については、次を参照してください [分岐を作成するスターターを取得しています](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) 開発者向けドキュメントを参照してください。
+注：新しいブランチを作成する際に、親ブランチを指定できます。 手順については、開発者向けドキュメントの [ ブランチ作成のスターターの取得 ](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) を参照してください。
 
-新しい環境ブランチを作成するには、 `branch <environment-name> <parent-environment-ID>` magento-cloud 環境コマンド
+`branch <environment-name> <parent-environment-ID>` magento-cloud 環境コマンドを使用して、新しい環境ブランチを作成できます。
 
 新しい環境ブランチの作成とアクティブ化にはさらに時間がかかる場合があります。
 
 ## 関連資料
 
-[を使用して分岐を管理する [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ を使用したブランチの管理  [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) を参照してください。

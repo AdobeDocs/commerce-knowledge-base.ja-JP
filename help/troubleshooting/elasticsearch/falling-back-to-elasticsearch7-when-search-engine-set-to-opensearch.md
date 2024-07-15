@@ -1,6 +1,6 @@
 ---
-title: ～に戻る [!DNL Elasticsearch7] 検索エンジンがに設定されている場合 [!DNL Opensearch]
-description: この記事では、が*フォールバックする際の問題の解決策を説明します [!DNL Elasticsearch7]* error occurs when the search engine is set to [!DNL OpenSearch] Adobe Commerceで。
+title: 検索エンジンがに設定されている場合に  [!DNL Elasticsearch7]  フォールバック  [!DNL Opensearch]
+description: この記事では、Adobe Commerceでのフォールバック時の問題のソリューショ  [!DNL Elasticsearch7]* error occurs when the search engine is set to [!DNL OpenSearch]  を説明します。
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ～に戻る [!DNL Elasticsearch7] 検索エンジンがに設定されている場合 [!DNL Opensearch]
+# 検索エンジンが [!DNL Opensearch] に設定されている場合に [!DNL Elasticsearch7] にフォールバック
 
-この記事では、次の場合の問題の解決策を説明します *～に戻る[!DNL Elasticsearch7]* 検索エンジンがに設定されているとエラーが発生する [!DNL OpenSearch] Adobe Commerceで。
+この記事では、Adobe Commerceで検索エンジンが「[!DNL OpenSearch]」に設定されている場合に *[!DNL Elasticsearch7]* のエラーにフォールバックする」と表示される問題の解決策について説明します。
 
 ## 影響を受けるバージョン
 
@@ -21,33 +21,33 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL OpenSearch] は、Adobe Commerce 2.4.6 以降の検索エンジンとして使用できます。
+>[!DNL OpenSearch] は、Adobe Commerce 2.4.6 以降で検索エンジンとして使用できます。
 
 ## 問題
 
-を設定しました **検索エンジン** 対象： **[!DNL OpenSearch]**&#x200B;ただし、このタイプのエラーは `var/log/support_report.log` ファイル：
+**検索エンジン** を **[!DNL OpenSearch]** に設定しましたが、`var/log/support_report.log` ファイルにこのタイプのエラーが表示されます。
 
 ```[2024-04-04T00:27:41.212916+00:00] report.ERROR: opensearch search engine doesn't exist. Falling back to elasticsearch7 [] []```
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. を確認します。 [!DNL OpenSearch] は、次のコマンドを実行することによってインストールします。 `curl 127.0.0.1:9200`<br>
-が示している場合 *1.2.4*、次に [!DNL OpenSearch] は既にインストールされています。
-1. に移動 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
-1. 検索エンジンを確認します。 次の内容が表示されます [!DNL Elasticsearch7].
+1. 次のコマンドを実行して、[!DNL OpenSearch] がインストールされていることを確認します：`curl 127.0.0.1:9200`<br>
+*1.2.4* と表示される場合は、[!DNL OpenSearch] は既にインストールされています。
+1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]**/**[!UICONTROL Catalog Search]** に移動します。
+1. 検索エンジンを確認します。 [!DNL Elasticsearch7] が表示されます。
 
 ## 原因：
 
-はサポートしていますが、 [!DNL OpenSearch]を選択すると、アプリケーションは認識/同意するだけです [!DNL Elasticsearch7] を検索エンジンとして使用します。
+お使いのバージョンが [!DNL OpenSearch] をサポートしている場合でも、アプリケーションは [!DNL Elasticsearch7] を検索エンジンとして認識または承認するだけです。
 
-Adobe Commerce バージョン 2.4.6 以降、アプリケーションはを許可するように更新されました [!DNL OpenSearch] を検索エンジンとして選択します。
-に移動した場合 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** クラウド以外の環境では、に示すように、このオプションを変更することができます。 **解決策** 下。
-（メモ：クラウド環境では、検索エンジンが以下でロックされているので、このフィールドは変更できません。 `app/etc/env.php` ファイル。）
+Adobe Commerce バージョン 2.4.6 以降、[!DNL OpenSearch] を検索エンジンとして選択できるように更新されました。
+クラウド以外の環境で **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]**/**[!UICONTROL Catalog Search]** に移動すると、以下の **ソリューション** に示すように、このオプションを変更できます。
+（メモ：クラウド環境では、検索エンジンが `app/etc/env.php` ファイルでロックされているので、このフィールドは変更できません。）
 
 ## 解決策
 
-を更新 `SEARCH_CONFIGURATION` 内の変数 `.magento.env.yaml` ファイルを作成し、以下を実行します **検索エンジン** はに設定されています。 *[!DNL elasticsearch7]*.
+`.magento.env.yaml` ファイルの `SEARCH_CONFIGURATION` 変数を更新し、**検索エンジン** が *[!DNL elasticsearch7]* に設定されていることを確認します。
 
 ## 関連資料
 
-[OpenSearch サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html)。

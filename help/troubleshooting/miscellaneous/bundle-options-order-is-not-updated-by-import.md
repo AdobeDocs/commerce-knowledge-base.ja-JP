@@ -23,20 +23,20 @@ ht-degree: 0%
 
 ## 問題
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 バンドル製品を含む有効な.csv ファイルがある。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. を使用してファイルを読み込みます [読み込み機能](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. [ インポート機能 ](https://docs.magento.com/m2/ee/user_guide/system/data-import.html) を使用してファイルをインポートします。
 1. バンドル製品ページを開きます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 オプションの順序は、.csv ファイルの場合と同じです。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 オプションの順序は、.csv ファイルの順序とは異なります。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 内の各オプションに対して位置を明示的に宣言する `position` のパラメーター `bundle_values` .csv ファイルの列。 手順について詳しくは、 [製品データの編集](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) を参照してください。
+1. .csv ファイル内の `bundle_values` 列の `position` パラメーターで、各オプションに対して位置を明示的に宣言します。 詳しい手順については、製品ガイドの [ 製品データの編集 ](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) を参照してください。
 1. 読み込み操作を繰り返します。
 
-読み込みの一般的な情報については、 [バンドル製品の読み込み](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) を参照してください。
+読み込みの一般情報については、ユーザーガイドの [ バンドル製品の読み込み ](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) を参照してください。

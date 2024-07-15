@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52801:GraphQL製品フィルタークエリに部分一致の結果が表示されない
 
-ACSD-52801 パッチでは、GraphQLの製品フィルタークエリに部分一致の結果が表示されない問題が修正されています。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.40 がインストールされています。 パッチ ID は ACSD-52801 です。 この問題はAdobe Commerce 2.4.7 で修正されていることに注意してください。
+ACSD-52801 パッチでは、GraphQLの製品フィルタークエリに部分一致の結果が表示されない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.40 がインストールされている場合に使用できます。 パッチ ID は ACSD-52801 です。 この問題はAdobe Commerce 2.4.7 で修正されていることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,13 +27,13 @@ ACSD-52801 パッチでは、GraphQLの製品フィルタークエリに部分�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 GraphQL製品フィルタークエリに部分一致の結果が表示されません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. サンプルデータを含んだクリーンなインスタンスをインストールします。
 1. 次のGraphQL クエリを実行します。
@@ -57,11 +57,11 @@ GraphQL製品フィルタークエリに部分一致の結果が表示されま�
 }
 ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-を追加することで、ストアフロントの事前検索と同様の一致結果が可能になります。 `match_type` （[!UICONTROL PARTIAL], [!UICONTROL FULL]）属性を使用して必要な結果を制御します。 [!UICONTROL FULL] 完全な単語に一致し、 [!UICONTROL PARTIAL] 生涯に含まれる人生のような部分的な単語に一致します。
+`match_type` （[!UICONTROL PARTIAL]、[!UICONTROL FULL]）属性を追加して必要な結果を制御することで、ストアフロントの事前検索と同様の一致結果が可能になります。 [!UICONTROL FULL] は完全な単語に一致し、[!UICONTROL PARTIAL] は生涯に含まれる生命のような部分的な単語に一致します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 製品フィルタークエリは、検索キーワードの部分一致の結果を返しません。
 
@@ -69,14 +69,14 @@ GraphQL製品フィルタークエリに部分一致の結果が表示されま�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

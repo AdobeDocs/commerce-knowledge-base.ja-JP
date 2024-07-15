@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ## クラウドインフラストラクチャサンドボックスでAdobe Commerceを更新するにはどうすればよいですか？ {#how-do-i-refresh-my-cloud-sandbox}
 
-参照： [クラウドの環境をリセット](/help/how-to/general/reset-environment-on-cloud.md) サポートナレッジベースで。
+サポートナレッジベースの [ クラウド上の環境のリセット ](/help/how-to/general/reset-environment-on-cloud.md) を参照してください。
 
 ## デプロイメントが停止した場合はどうすればよいですか？ {#what-do-i-do-with-a-stuck-deployment}
 
-参照： [デプロイメントのトラブルシューティング](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md) サポートナレッジベースで。
+サポートナレッジベースで [ デプロイメントのトラブルシューティング ](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md) を参照してください。
 
 ## 必要に応じてヘルプを参照する場所/方法 {#wherehow-do-i-get-help-when-needed}
 
-を参照してください。 [Adobe Commerce サポートナレッジベース](https://support.magento.com/hc/en-us).
+[Adobe Commerce サポートナレッジベース ](https://support.magento.com/hc/en-us) を参照してください。
 
 ## ソリューションパートナーまたはテクニカルパートナーがサポートリクエストを送信する場所/方法 {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
-* ソリューションパートナーは、にメールを送信することで、サンドボックス関連の問題のチケットを送信できます。 [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) また、パートナーのテクニカルサポートチームに転送されます。
-* 技術パートナーは以下が可能 [marketplace サポートに連絡](mailto:commercemarketplacesupport@adobe.com).
+* ソリューションパートナーは、[SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) にメールを送信することで、サンドボックス関連の問題に対するチケットを送信できます。このチケットは、パートナーのテクニカルサポートチームに転送されます。
+* 技術パートナーは [Marketplace サポートに連絡 ](mailto:commercemarketplacesupport@adobe.com) できます。

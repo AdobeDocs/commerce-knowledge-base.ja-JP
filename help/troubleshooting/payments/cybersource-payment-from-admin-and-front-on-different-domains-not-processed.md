@@ -17,17 +17,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->コアとなるAdobe Commerce Cybersource の支払い統合は 2.3.3 以降で非推奨となり、2.4.0 で完全に削除される予定です。の使用 [公式の延長](https://marketplace.magento.com/cybersource-global-payment-management.html) 代わりに、marketplace から。
+>コアとなるAdobe Commerce Cybersource の支払い統合は 2.3.3 以降で非推奨となり、2.4.0 で完全に削除される予定です。代わりに、Marketplace の [ 公式拡張機能 ](https://marketplace.magento.com/cybersource-global-payment-management.html) を使用してください。
 
 ## 問題
 
-Cybersource 統合の以前の実装では、1 つのドメインからのみ支払いを処理することができました。 その結果、Adobe Commerce ストアフロントがCommerce管理者とは異なるドメインにある場合、管理者で Cybersource を使用して注文しようとすると次のエラーが発生します。」 *X-Frame-Options によって読み込みが拒否されました：https://%your\_domain%/cybersource/SilentOrder/TokenResponse/はクロスオリジンフレーミングを許可しません。* ...」
+Cybersource 統合の以前の実装では、1 つのドメインからのみ支払いを処理することができました。 その結果、Adobe Commerce ストアフロントがCommerce管理者と異なるドメインにある場合、管理者で Cybersource を使用して注文しようとすると、「*X-Frame-Options によって読み込みが拒否されました：https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ does not permit cross-origin framing.*」というエラーが発生します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 別のサブドメインで管理者を設定します。
-1. の下のストアにサイバーソースを設定します。 **ストア** > 設定 > **設定** > **売上** > **支払い方法** > **CyberSource**.
-1. に移動 **売上** > **注文件数**.
+1. **ストア**/設定/**設定**/**販売**/**支払い方法**/**CyberSource** で、ストアの Cybersource を設定します。
+1. **セールス**/**オーダー** に移動します。
 1. 新しい注文を作成します。
 1. 顧客を新規作成します。
 1. 顧客詳細を入力します。
@@ -35,13 +35,13 @@ Cybersource 統合の以前の実装では、1 つのドメインからのみ支
 1. 支払方法として「Cybersource」を選択します。
 1. 注文を送信します。
 
-<u>期待される結果</u>：問題なく注文されます。
+<u> 期待される結果 </u>：注文は問題なく行われます。
 
-<u>実際の結果</u>：注文ページには読み込み中のアイコンが表示されますが、注文は行われません。 エラーはコンソールに表示されます。
+<u> 実際の結果 </u>：注文ページには読み込み中アイコンが表示されますが、注文は行われません。 エラーはコンソールに表示されます。
 
 ## 解決策
 
-添付のパッチは、Cybersource との統合の改善を提供します。 パッチを適用した後、管理者で支払いを処理するために Cybersource でもう 1 つのプロファイルを作成し、Commerce管理者の Cybersource 設定に必要な資格情報を追加する必要があります **ストア** > 設定 > **設定** > **売上** > **支払い方法** > **CyberSource**.
+添付のパッチは、Cybersource との統合の改善を提供します。 パッチを適用した後、管理者で支払いを処理するために Cybersource で 1 つ以上のプロファイルを作成し、Commerce管理者の **Stores**/Settings/**Configuration**/**Sales**/**Payment Methods**/**CyberSource** で、必要な資格情報を Cybersource 設定に追加する必要があります。
 
 >[!NOTE]
 >
@@ -69,6 +69,6 @@ Cybersource 統合の以前の実装では、1 つのドメインからのみ支
 
 ## パッチの適用方法
 
-手順については、を参照してください [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

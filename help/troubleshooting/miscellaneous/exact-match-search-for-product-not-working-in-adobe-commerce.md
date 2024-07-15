@@ -22,23 +22,23 @@ ht-degree: 0%
 
 ## 問題
 
-<u>前提条件：</u>
+<u> 前提条件：</u>
 
-属性値を持つ製品がある `Saga 1` および `Saga 16` Adobe Commerce 2.3 およびAdobe Commerce 2.4 の両方のストアで確認できます。
+属性値が `Saga 1` と `Saga 16` の製品は、Adobe Commerce 2.3 とAdobe Commerce 2.4 の両方のストアに格納されています。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-1. Adobe Commerce 2.3 を利用したストアの前面で、次のように入力します *佐賀 1* 検索フィールドで「」をクリックし、 **検索**.
-1. 検索結果では、属性値を持つ製品のみが取得されます `Saga 1`.
-1. Adobe Commerce 2.4 を利用したストアの前面で、次のように入力します *佐賀 1* 検索フィールドで「」をクリックし、 **検索**.
+1. Adobe Commerce 2.3 を利用した店舗の店舗正面で、検索フィールドに *Saga 1* と入力し、**検索** をクリックします。
+1. 検索結果では、属性値が `Saga 1` の製品のみが取得されます。
+1. Adobe Commerce 2.4 を利用した店舗の店舗正面で、検索フィールドに *Saga 1* と入力し、**検索** をクリックします。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
-2.4 での検索結果には、属性値を持つ製品が含まれます `Saga 1` および `Saga 16`.
+2.4 での検索結果には、属性値が `Saga 1` と `Saga 16` の製品が含まれます。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
-2.4 の検索結果は 2.3 と似ており、属性値を持つ製品のみを含みます `Saga 1`.
+2.4 の検索結果は 2.3 と似ており、属性値が `Saga 1` の製品のみを含みます。
 
 ## 原因：
 
@@ -46,6 +46,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-[Live Search のインストール](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) を参照してください。
+ユーザーガイドの [Live Search をインストール ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) します。
 
-[Live Search](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [Live Search](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search)。

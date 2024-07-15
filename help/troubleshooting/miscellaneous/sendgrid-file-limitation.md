@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL SendGrid] Adobe Commerce Cloudのファイル制限'
-description: この記事では、の回避策を説明します  [!DNL SendGrid] クラウドインフラストラクチャー上のAdobe Commerceの制限事項
+title: 'Adobe Commerce Cloudの [!DNL SendGrid] ファイル制限'
+description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceに関する  [!DNL SendGrid]  制限事項の回避策を説明します。
 feature: Deploy, Marketing Tools
 role: Developer, Admin
 exl-id: 48629f48-8100-4128-9211-53d947aecd49
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 ---
 
-# [!DNL SendGrid] Adobe Commerce Cloudの制限
+# Adobe Commerce Cloudの [!DNL SendGrid] の制限
 
-この記事では、次の問題の回避策を提供します [!DNL SendGrid] クラウドインフラストラクチャー上のAdobe Commerceの制限事項
+この記事では、クラウドインフラストラクチャー上のAdobe Commerceの [!DNL SendGrid] 制限に対する回避策をいくつか説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 
 ## 問題
 
 大きな添付ファイルをメールで送信しようとすると、次のログエラーが表示されます。
 
-対象： `/var/log/mail.log`
+`/var/log/mail.log` 内
 
 ```shell
 Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[21408]: fatal: no-reply@xxxxxxxx.com(8080): message file too big
 Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxxxxxxxx.com(8080): message file too big
 ```
 
-対象： `/var/log/exception.log`
+`/var/log/exception.log` 内
 
 実稼動：
 
@@ -47,14 +47,14 @@ Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxx
 
 ## 原因：
 
-[!DNL SendGrid] には、メールのシステム制限として 30 Mb サイズがあります。 10 Mb を超える添付ファイルは使用しないことをお勧めします。 参照： [添付ファイルの送信](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) 詳しくは、SendGrid のドキュメントを参照してください。
+[!DNL SendGrid] には、メールのシステム制限として 30 Mb のサイズがあります。 10 Mb を超える添付ファイルは使用しないことをお勧めします。 詳しくは、SendGrid ドキュメントの [ 添付ファイルの送信 ](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) を参照してください。
 
 ## 回避策
 
 * 6 MB または 10 MB を超える添付ファイルは使用しないでください。
-* Adobe Commerce インスタンスでリモート SMTP サーバーを使用することを検討してください。 手順については、次を参照してください [メール通信を設定する](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) アドビの管理システムガイドをご覧ください。
+* Adobe Commerce インスタンスでリモート SMTP サーバーを使用することを検討してください。 手順については、管理システムガイドの [ メール通信の設定 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) を参照してください。
 * モジュール内にファイルを保存できるようにサーバーを再設定し、メール内のファイルへのリンクを添付します。
 
 ## 関連資料
 
-* [[!DNL SendGrid] メールサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
+* Commerce on Cloud Infrastructure ガイドの [[!DNL SendGrid]  メールサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。

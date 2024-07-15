@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-43887：チェックアウト支払いページに間違った詳細が表示される
 
-ACSD-43887 パッチは、会社の発注書が有効になっている場合に、チェックアウトの支払いページに誤った詳細が表示される問題を修正します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 がインストールされています。 パッチ ID は ACSD-43887 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-43887 パッチは、会社の発注書が有効になっている場合に、チェックアウトの支払いページに誤った詳細が表示される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.17 がインストールされている場合に使用できます。 パッチ ID は ACSD-43887 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,27 +27,27 @@ ACSD-43887 パッチは、会社の発注書が有効になっている場合に
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 会社の発注書が有効になっている場合、チェックアウトの支払いページに正しくない詳細が表示される。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 1. B2B モジュールがインストールされている。
-1. 「会社を有効にする」が「」に設定されている _はい_. に移動 **ストア** > **設定** > **一般** > **B2B の機能** > **会社を有効にする** > **はい**.
-1. 「発注の有効化」が「有効」に設定されている _はい_. に移動 **注文の承認設定** > **発注書を有効にする** > **はい**.
+1. 「会社を有効化」が「はい _に設定されている_。 **ストア**/**設定**/**一般**/**B2B 機能**/**会社を有効化**/**はい** に移動します。
+1. 「発注の有効化」が _Yes_ に設定されている。 **Order Approval Configuration**/**Enable Purchase Orders**/**Yes** に移動します。
 1. PayPal Express は、支払い方法として設定されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 仮想製品を作成します。
 1. 会社の管理者とフロントエンドから会社アカウントを登録します。
-1. バックエンドから会社アカウントを承認して設定 **発注書を有効にする** as _はい_ 会社を承認しています。
+1. バックエンドから会社アカウントを承認し、会社の承認時に **発注書を有効にする** を _はい_ に設定します。
 1. フロントエンドに移動し、手順 2 で作成した会社の管理者アカウントを使用してログインします。
-1. 会社の「デフォルトユーザー」を作成します。 に移動 **会社ユーザー** > **新規ユーザーの追加**.
-1. 会社の「承認ルール」を作成します。 に移動 **承認ルール** > **新規ルールの追加**.
+1. 会社の「デフォルトユーザー」を作成します。 **会社ユーザー**/**新規ユーザーを追加** に移動します。
+1. 会社の「承認ルール」を作成します。 **承認ルール**/**新しいルールを追加** に移動します。
 
    * ルールタイプ：注文合計
    * 注文の合計：$1 以上
@@ -55,19 +55,19 @@ ACSD-43887 パッチは、会社の発注書が有効になっている場合に
 
 1. 「デフォルトユーザー」アカウントを使用してログアウトしてログインします。
 1. 手順 1 で作成した仮想製品を買い物かごに追加し、チェックアウトに進みます。
-1. 支払い方法として PayPal Express を選択し、をクリックします。 **発注する**.
+1. 支払い方法として PayPal Express を選択し、**注文書を作成** をクリックします。
 1. 会社の管理者アカウントを使用してログアウトしてログインします。
-1. に移動 **自分の発注書** およびから **会社の発注書**&#x200B;をクリックします。 **表示** （手順 9 で作成したオーダー用）
+1. **自分の発注書** に移動し、**会社の発注書** から **表示** をクリックして、手順 9 で作成した注文を表示します。
 1. 発注書を承認します。 発注書のステータスは、「承認済：支払保留中」にする必要があります。
 1. 会社の「デフォルトユーザー」アカウントを使用してログアウトしてログインします。
-1. に移動 **自分の発注書** > **表示** > **注文する**.
-1. を確認します **注文概要**.
+1. **自分の発注書**/**表示**/**注文を行う** に移動します。
+1. **注文概要** を確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 注文概要に、正しいゼロ以外の値が表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 注文の概要の合計値はゼロです。
 
@@ -75,14 +75,14 @@ ACSD-43887 パッチは、会社の発注書が有効になっている場合に
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

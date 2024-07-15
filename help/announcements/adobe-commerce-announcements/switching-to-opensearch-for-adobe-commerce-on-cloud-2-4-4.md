@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Cloud 2.4.4 でのAdobe Commerceの OpenSearch への切り替え
 
-クラウドインフラストラクチャー 2.4.4 上のAdobe Commerceでは、7.10 以降、Elasticsearchのバージョンをサポートしません。 **まずAdobe Commerce 2.4.4 にアップグレードしてから、すぐにElasticsearchから OpenSearch 1.2.x に切り替える必要があります。** Adobeでは、Adobe Commerce 2.4.4 GA リリースに近い詳細な手順を提供します。
+クラウドインフラストラクチャー上のAdobe Commerce 2.4.4 では、7.10 以降、Elasticsearchのバージョンはサポートされません。**Adobe Commerce 2.4.4 にアップグレードしてから、Elasticsearch環境から OpenSearch 1.2.x.** Adobeに直ちに切り替える必要があります。Adobe Commerce 2.4.4 GA リリースに近い詳細な手順が表示されます。
 
 >[!NOTE]
 >
@@ -25,13 +25,13 @@ Adobe Commerce オンプレミスでは、2022 年 3 月のすべてのパッチ
 
 ## OpenSearch とは
 
-OpenSearch はElasticsearchと Kibana のフォークです。 Elastic.co の代わりにAWSが管理します。 詳しくは、GitHub を参照してください。 [opensearch-project/OpenSearch](https://github.com/opensearch-project/OpenSearch).
+OpenSearch はElasticsearchと Kibana のフォークです。 Elastic.co の代わりにAWSが管理します。 詳しくは、GitHub [opensearch-project/OpenSearch](https://github.com/opensearch-project/OpenSearch) を参照してください。
 
 **バージョン間の互換性：**
 
 **Adobe Commerce on cloud infrastructure はElasticsearch 7.10 をサポートしますか？**
 
-**はい** - 2022 年 1 月中旬以降、クラウドインフラストラクチャバージョン 2.4.3-p1、2.4.3-p2、2.3.7-p3 でのAdobe Commerceは、Elasticsearch 7.10 をサポートします。
+**はい** - 2022 年 1 月中旬以降、Adobe Commerce on cloud infrastructure バージョン 2.4.3-p1、2.4.3-p2、2.3.7-p3 はElasticsearch 7.10 をサポートします。
 
 Adobe Commerceのオンプレミスの場合は、Log4j を軽減するために、最新バージョン 7.16.x をお勧めします。
 
@@ -47,10 +47,10 @@ Adobe Commerce 2.4.4 以降。
 
 使用しているAdobe Commerce コアバージョンがElasticsearch 7.10 をサポートしている場合は、そのバージョンを使用できます。
 
-レビュー [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) バージョンの互換性については、開発者向けドキュメントを参照してください。
+バージョンの互換性については、開発者向けドキュメントの [ システム要件 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) を確認してください。
 
 >[!NOTE]
 >
 >2022 年 5 月にElasticsearch 7.10 がサポート終了となるため、できるだけ早くAdobe Commerce 2.4.4 へのアップグレードを計画することをお勧めします。
 
-Adobeパートナーは、ベータ版プログラムに新規登録できます [こちら](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) Elasticsearch 7.16.1 および OpenSearch 1.1 に対してテストされた最新の beta4 コードにアクセスするには、
+Adobeパートナーは、Elasticsearch 7.16.1 および OpenSearch 1.1 に対してテストされた最新の beta4 コードにアクセスするために、アドビのベータ版プログラム [ こちら ](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) に新規登録できます。

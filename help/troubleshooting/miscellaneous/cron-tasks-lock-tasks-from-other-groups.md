@@ -24,20 +24,20 @@ ht-degree: 0%
 
 Adobe Commerce for cloud には、複雑な cron タスク（長時間実行タスク）がある場合、他のタスクをロックして実行してしまう可能性があります。 例えば、インデクサーのタスクは、無効化されたインデクサーのインデックスを再作成します。 終了までに数時間かかる場合があり、メールの送信、サイトマップの生成、顧客通知、その他のカスタムタスクなど、他のデフォルトの cron ジョブがロックされます。
 
-<u>症状</u>:
+<u> 症状 </u>:
 
 Cron ジョブで実行されるプロセスは実行されません。 例えば、製品のアップデートが時間に適用されない、顧客からメールが届かないと報告される、などの場合です。
 
-を開くと `cron_schedule` データベース テーブルには、次のジョブが表示されます `missed` ステータス。
+`cron_schedule` データベース テーブルを開くと、`missed` の状態のジョブが表示されます。
 
 ## 原因：
 
-以前は、クラウド環境では、Jenkins サーバーを使用して cron ジョブを実行していました。 Jenkins は、一度に 1 つのジョブのインスタンスのみを実行します。その結果、1 つのジョブのみが実行されます `bin/magento cron:run` 一度に実行されるプロセス。
+以前は、クラウド環境では、Jenkins サーバーを使用して cron ジョブを実行していました。 Jenkins は一度に 1 つのジョブのインスタンスのみを実行します。その結果、一度に実行される `bin/magento cron:run` プロセスは 1 つだけです。
 
 ## 解決策
 
-1. 連絡先 [Adobe Commerce サポート](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 自己管理 cron を有効にする。
-1. を編集する `.magento.app.yaml` git ブランチのAdobe Commerce コードのルートディレクトリにあるファイル。 以下を追加します。
+1. 自己管理 cron を有効にするには、[Adobe Commerce サポート ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にお問い合わせください。
+1. Git ブランチのAdobe Commerce コードのルートディレクトリにある `.magento.app.yaml` ファイルを編集します。 以下を追加します。
 
    ```yaml
      crons:
@@ -50,11 +50,11 @@ Cron ジョブで実行されるプロセスは実行されません。 例え�
 
 >[!NOTE]
 >
->複数ある場合、古い cron 設定を転送する必要はありません `cron:run` 新しい cron スケジュールに存在（通常 `cron:run` 上記のように追加されたタスクで十分です。 ただし、カスタムジョブがある場合は、転送する必要があります。
+>複数の `cron:run` が存在する古い cron 設定を新しい cron スケジュールに転送する必要はありません。前述のように追加された通常の `cron:run` タスクで十分です。 ただし、カスタムジョブがある場合は、転送する必要があります。
 
 ### 自己管理の cron が有効になっているかどうかを確認します（Cloud Pro ステージングおよび実稼動環境の場合のみ）。
 
-自己管理 Cron が有効かどうかを確認するには、 `crontab -l` コマンドを実行し、結果を確認します。
+自己管理 cron が有効かどうかを確認するには、`crontab -l` コマンドを実行し、結果を確認します。
 
 * 自己管理 Cron が有効になっていることを確認できます。次のようなタスクが表示されます。
 
@@ -63,7 +63,7 @@ Cron ジョブで実行されるプロセスは実行されません。 例え�
   SHELL=/etc/platform/username/cron-run    MAILTO=""    # m h dom mon dow job_name    * * * * * cronrun
   ```
 
-* タスクを表示して取得できない場合、自己管理 cron は有効になっていません *「このプログラムは使用できません」* エラーメッセージ。
+* タスクが表示されず、「このプログラムの使用は許可されていません *というエラーメッセージが表示される場合は* 自己管理 cron は有効になっていません。
 
 >[!NOTE]
 >
@@ -71,4 +71,4 @@ Cron ジョブで実行されるプロセスは実行されません。 例え�
 
 ## 関連資料
 
-* [cron ジョブの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) を参照してください。

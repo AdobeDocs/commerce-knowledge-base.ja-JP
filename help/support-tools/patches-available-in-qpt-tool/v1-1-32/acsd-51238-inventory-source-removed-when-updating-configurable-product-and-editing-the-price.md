@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-51238：設定可能な製品を更新して価格を編集すると、在庫ソースが削除される
 
-ACSD-51238 パッチは、設定可能な製品を更新して価格を編集する際に在庫ソースが削除される問題を修正します。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.32 がインストールされています。 パッチ ID は ACSD-51238 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-51238 パッチは、設定可能な製品を更新して価格を編集する際に在庫ソースが削除される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.32 がインストールされている場合に使用できます。 パッチ ID は ACSD-51238 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,42 +27,42 @@ ACSD-51238 パッチは、設定可能な製品を更新して価格を編集す
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 設定可能な商品を更新し、価格を編集すると、在庫ソースが削除されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. インストール **[!DNL Adobe Commerce]** （を使用） **[!DNL Inventory module]**
-1. に移動します **[!UICONTROL Admin]** -> **[!UICONTROL Stores]** -> **[!UICONTROL Inventory]** および作成 *2 つのソース* および *二株*.
-1. を作成 **[!UICONTROL configurable product]** そしてそれを割り当て先： **[!UICONTROL default sources]** または **[!UICONTROL newly created sources]**.
-1. 「」をクリック **[!UICONTROL next button]** および *保存* 商品。
-1. 同じものを編集する **[!UICONTROL Configurable Product]** をクリックし、 **[!UICONTROL Edit Configuration]** 内 **[!UICONTROL Configuration tab]**.
-1. 対象： `Step 3: Bulk Images,Price and Quantity`、を変更します `price` と終了します `Quantity` および `Images` 対象： `Skip quantity at this time` および `Skip image uploading at this time` それぞれ。
-1. クリックする **[!UICONTROL next button]** 製品を生成します。
+1. **[!DNL Inventory module]** を使用した **[!DNL Adobe Commerce]** のインストール
+1. **[!UICONTROL Admin]**/**[!UICONTROL Stores]**/**[!UICONTROL Inventory]** に移動し、*2 つのソース* および *2 つの在庫* を作成します。
+1. **[!UICONTROL configurable product]** を作成して、**[!UICONTROL default sources]** または **[!UICONTROL newly created sources]** に割り当てます。
+1. **[!UICONTROL next button]** をクリックして、製品を *保存* します。
+1. 次に、同じ **[!UICONTROL Configurable Product]** を編集し、**[!UICONTROL Configuration tab]** ージ内の **[!UICONTROL Edit Configuration]** をクリックします。
+1. `Step 3: Bulk Images,Price and Quantity` に、`price` を変更し、`Quantity` と `Images` をそれぞれ `Skip quantity at this time` と `Skip image uploading at this time` のままにします。
+1. 「**[!UICONTROL next button]**」をクリックし、製品を生成します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
-内のソースごとの数量 **[!UICONTROL Configuration tab]** 空にはしないでください。
+**[!UICONTROL Configuration tab]** 内のソースごとの数量は空にしないでください。
 
-<u>実際の結果</u>
+<u> 実績 </u>
 
-内のソースごとの数量 **[!UICONTROL Configuration tab]** が空である。
+**[!UICONTROL Configuration tab]** 内のソースごとの数量が空です。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>)」を参照してください。

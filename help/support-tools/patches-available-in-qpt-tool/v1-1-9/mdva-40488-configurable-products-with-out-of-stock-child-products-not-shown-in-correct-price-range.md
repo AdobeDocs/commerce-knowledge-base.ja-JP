@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40488：在庫切れの子製品が正しい価格範囲で表示されない設定可能な製品
 
-MDVA-40488 パッチを使用すると、在庫切れの子製品を含む設定可能な製品が正しい価格範囲で表示されない問題を解決できます。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 がインストールされています。 パッチ ID は MDVA-40488。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-40488 パッチを使用すると、在庫切れの子製品を含む設定可能な製品が正しい価格範囲で表示されない問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.9 がインストールされている場合に使用できます。 パッチ ID は MDVA-40488。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,48 +27,48 @@ MDVA-40488 パッチを使用すると、在庫切れの子製品を含む設定
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 在庫切れの子製品を含む設定可能な製品が、正しい価格範囲で表示されない。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-Commerce管理者に移動します **ストア** > **設定** > **カタログ** > **在庫** > **在庫オプション** およびを設定 **在庫切れ商品の表示** 設定： *はい*.
+Commerce管理者/**stores**/**configuration**/**catalog**/**Inventory**/**Stock options** に移動し、「**在庫切れ商品を表示**」設定を「*はい*」に設定します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 2 つの関連する製品を使用して設定可能な製品を作成します。 例：単純な製品赤と茶色。
-1. 単純商品の在庫を赤に設定し、在庫ステータスをに設定します *在庫あり*&#x200B;を選択してから、「製品を有効にする」ステータスをに設定します。 *不可*.
-1. シンプル製品の在庫をブラウンに設定してから、製品の有効化ステータスを次のように設定します *はい*.
-1. 設定可能な製品の在庫ステータスがであることを確認します。 *在庫あり*.
-1. シンプル製品 Brown の在庫を 0 に変更し、在庫状態をに設定します。 *在庫切れ*.
-1. この時点では、設定可能な商品の在庫ステータスは、引き続きになります *在庫あり*.
+1. シンプルな商品の在庫を赤に設定し、在庫ステータスを *在庫中* に設定してから、商品の有効ステータスを *いいえ* に設定します。
+1. 単純製品の在庫を「ブラウン」に設定し、「製品の有効化」ステータスを *Yes* に設定します。
+1. 設定可能な製品の在庫ステータスが *在庫中* であることを確認します。
+1. シンプル商品の在庫を Brown から 0 に変更し、在庫ステータスを *在庫切れ* に設定します。
+1. この時点では、設定可能な商品の在庫ステータスは *在庫* のままです。
 1. 再インデックスを実行します。
-1. を確認します `min_price` および `max_price` の設定可能な製品について `catalog_product_index_price` DB テーブル - 2 つの値は 0 に設定されます。
-1. ただし、設定可能な製品の在庫ステータスをに設定した場合は、 *在庫切れ* そして、再インデックスを実行すると、ゼロ以外の値が表示されます `min_price` および `max_price` 設定可能な商品の値。
+1. `catalog_product_index_price` DB テーブル内の設定可能な製品の `min_price` と `max_price` をチェックします。2 つの値は 0 に設定されています。
+1. ただし、設定可能な商品の在庫ステータスを *在庫切れ* に設定してインデックス再作成を行うと、設定可能な商品のゼロ以外の `min_price` と `max_price` の値を確認できます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-すべての子製品が *在庫切れ* 設定可能な製品自体も次の通りです *在庫切れ*&#x200B;は、すべての子製品を使用して価格が計算されます。
+子製品がすべて *在庫切れ* で、設定可能な製品自体も *在庫切れ* の場合、価格はすべての子製品を使用して計算されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この `min_price` および `max_price` の設定可能な商品の値 `catalog_product_index_price` 設定可能な在庫ステータスがの場合、DB テーブルは 0 に設定されます。 *在庫あり*&#x200B;しかし、もしそうなら *在庫切れ* これらの値はゼロ以外の値になります。
+`catalog_product_index_price` DB テーブルの設定可能なプロダクトの `min_price` と `max_price` の値は、設定可能なストックステータスが *在庫切れ* の場合は 0 に設定されますが、在庫切れ *の場合は* 0 以外の値になります。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

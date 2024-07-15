@@ -1,6 +1,6 @@
 ---
-title: “[!DNL Fastly] オリジンクローキングの有効化に関する FAQ
-description: この FAQ では、に関するよくある質問について説明しています。 [!DNL Fastly] Adobe Commerceでのオリジンクロークの有効化（2021 年時点で完全に実装されています）。
+title: 「[!DNL Fastly] オリジンクローキングの有効化に関する FAQ」
+description: この FAQ では、Adobe Commerce（2021 年  [!DNL Fastly]  既に完全に実装されている）でのオリジンクロークの有効化に関するよくある質問について説明しています。
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
 source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # [!DNL Fastly] オリジンクローキングの有効化に関するよくある質問
 
-この FAQ では、に関するよくある質問について説明しています。 [!DNL Fastly] Adobe Commerceでのオリジンクロークの有効化（2021 年時点で完全に実装されています）。
+この FAQ では、Adobe Commerce（2021 年現在で完全に実装されている）での [!DNL Fastly] オリジンクロークの有効化に関するよくある質問について説明しています。
 
-## について [!DNL Fastly] オリジン・クローク？
+## オリジン [!DNL Fastly] クローキングとは何ですか？
 
-オリジンクロークは、クラウドインフラストラクチャ上のAdobe Commerceで任意のをブロックできるセキュリティ機能です [!DNL non-Fastly] トラフィック（DDoS 攻撃を防ぐために、クラウドインフラストラクチャ（オリジン）に移動します。
+オリジンクロークは、クラウドインフラストラクチャ上のAdobe Commerceで [!DNL non-Fastly] トラフィックをブロックできるセキュリティ機能です（DDoS 攻撃を防ぐために、クラウドインフラストラクチャ（オリジン）に移動します）。
 
 ## オリジンクローキングのメリットは何ですか？
 
-オリジンクロークは、トラフィックによるトラフィックのバイパスを防ぐように設計されています。 [!DNL Fastly Web Application Firewall] （WAF）と、厳密に定義された **[!DNL Fastly]** > **ロードバランサー** > **インスタンス**. この実装では、すべてのトラフィックは次を通過することが保証されます。 [!DNL Fastly] ロードバランサーに組み込まれた内部 WAF と同様に WAF。
+オリジンクロークは、トラフィックが [!DNL Fastly Web Application Firewall] （WAF）をバイパスし、**[!DNL Fastly]**/**ロードバランサー**/**インスタンス** の厳密に定義されたフローを通じてルーティングするのを防ぐように設計されています。 この実装では、すべてのトラフィックが [!DNL Fastly] WAF と、ロードバランサーに組み込まれた内部 WAF を通過することが保証されます。
 
 ## このオリジンのクローク有効化が行われる理由は何ですか？
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## オリジンクロークは REST API に影響を与えますか。
 
-[!DNL Fastly] は API 呼び出しをキャッシュしないので、クライアントは変更で問題ありません。 オリジンクロークは、次のような、オリジンに直接移動するリクエストのみをブロックします。
+[!DNL Fastly] は API 呼び出しをキャッシュしないので、クライアントは変更で正常に動作します。 オリジンクロークは、次のような、オリジンに直接移動するリクエストのみをブロックします。
 
 * 実稼動
 
@@ -55,7 +55,7 @@ mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
 mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
-この例では、クライアントは URL をに変更した場合でも API をヒットできます ``mywebsite.com``:
+この例では、クライアントは URL を ``mywebsite.com`` に変更した場合でも API をヒットできます。
 
 ```php
 mywebsite.com/rest/default/V1/integration/admin/token?username=XXXX&password=XXXXX;
@@ -66,7 +66,7 @@ mywebsite.com/rest/default/V1/inventory/source-items
 
 ## この変更はデプロイメントとダウンタイムに影響しますか？
 
-いいえ、この変更は次のようになります **ではない** デプロイメントとダウンタイムに影響します。
+いいえ、この変更はデプロイメントとダウンタイムに **影響しません**。
 
 ## プロジェクトに複数のステージング環境がある場合、オリジンクロークはすべてのステージング環境に適用されますか？
 

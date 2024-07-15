@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-28661：管理者の電子メールを変更する際の会社ユーザー管理の問題
 
-MDVA-28861 パッチは、管理者の電子メールを変更するときにユーザーにエラーが発生する問題を修正します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.5 がインストールされています。 パッチ ID は MDVA-28861。
+MDVA-28861 パッチは、管理者の電子メールを変更するときにユーザーにエラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.5 がインストールされている場合に使用できます。 パッチ ID は MDVA-28861。
 
 ## 影響を受ける製品とバージョン
 
@@ -23,27 +23,27 @@ Adobe Commerce オンプレミスおよびAdobe Commerce on cloud infrastructure
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-変更後： **会社管理者** メールアドレスにエラーが返され、 **会社のユーザー** リストが表示されない。
+**会社管理者** メールアドレスを変更すると、エラーが返され、**会社ユーザー** リストは表示されません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 会社機能を有効にする（詳しくは、こちらを参照） [B2B のインストール：Commerce Admin での B2B 機能の有効化](https://devdocs.magento.com/extensions/b2b/#enable-b2b-features-in-magento-admin) アドビの開発者ドキュメントでは、2 人のユーザー（管理者と 2 人のユーザー）で新しい会社を作成し、全員がメールアドレスを持っています。
-1. に移動します **Commerce管理者** > **顧客** > **会社** そして会社アカウントを開きます。
-1. 開く **会社管理者** 最初のユーザーに tab キーを押して「admin」を変更します。これには、次の変更が含まれます **会社管理者** 最初のユーザーのメールに送信します。
+1. 会社の機能を有効にする（詳しくは、[Commerce管理者での B2B 機能を有効にする：](https://devdocs.magento.com/extensions/b2b/#enable-b2b-features-in-magento-admin) の開発者向けドキュメントを参照し、管理者と 2 人のユーザー（すべてメールアドレスを持つ）から 2 人のユーザーで新しい会社を作成します。
+1. **Commerce管理者** / **顧客** / **会社** に移動し、会社アカウントを開きます。
+1. **会社管理者** タブを開き、管理者を最初のユーザーに変更します。これには、**会社管理者** のメールを最初のユーザーのメールに変更することも含まれます。
 1. Adobe Commerce フロントエンドに移動し、最初のユーザーとしてログインします。
-1. に移動します **会社のユーザー** セクション。
+1. **会社ユーザー** セクションに移動します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-この **会社のユーザー** リストは、期待どおりに表示されます。
+**会社ユーザー** リストが期待どおりに表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この **会社のユーザー** リストが表示されず、次のようなエラーが表示されます。
+**会社ユーザー** リストは表示されず、次のようなエラーが表示されます。
 
 ```bash
 No such entity with id = 2
@@ -53,20 +53,20 @@ No such entity with id = 2
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。
 
 B2B 会社の機能について詳しくは、開発者向けドキュメントで次の記事を参照してください。
 
-* [B2B デベロッパーガイド](https://devdocs.magento.com/guides/v2.4/b2b/bk-b2b.html)
-* [会社の役割の管理](https://devdocs.magento.com/guides/v2.4/b2b/roles.html)
-* [Adobe Commerce Enterprise B2B Extension 設定パスのリファレンス](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-b2b.html)
+* [B2B デベロッパーガイド ](https://devdocs.magento.com/guides/v2.4/b2b/bk-b2b.html)
+* [ 会社の役割の管理 ](https://devdocs.magento.com/guides/v2.4/b2b/roles.html)
+* [Adobe Commerce Enterprise B2B Extension 設定パスのリファレンス ](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-b2b.html)

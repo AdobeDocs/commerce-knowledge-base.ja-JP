@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 独自の cron グループで実行するように詳細レポートを更新
 
-この記事では、Cloud Infrastructure 2.3.0 上のAdobe Commerceで高度なレポートにデータが表示されない既知の問題のパッチを提供します。 これは、高度なレポートジョブが `analytics_collect_data` はスケジュールに従って実行されません。 この記事では、詳細レポートの cron グループを作成するパッチを提供します `analytics`.
+この記事では、Cloud Infrastructure 2.3.0 上のAdobe Commerceで高度なレポートにデータが表示されない既知の問題のパッチを提供します。 これは、高度なレポートジョブ `analytics_collect_data` がスケジュールに従って実行されないからです。 この記事では、詳細レポートの cron グループ `analytics` を作成するパッチを提供します。
 
 ## 問題
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## パッチ
 
-パッチはこの記事に添付されています。 パッチは、 `analytics` cron ジョブタスクをデフォルトグループからに `analytics`.
+パッチはこの記事に添付されています。 このパッチは、`analytics` cron ジョブタスクをデフォルトグループから `analytics` に移動します。
 
 ダウンロードするには、記事の最後まで下にスクロールしてファイル名をクリックするか、次のリンクをクリックします。
 
 [MDVA-19640\_EE\_2.3.0\_COMPOSER\_v1.patch](assets/MDVA-19640_EE_2.3.0_COMPOSER_v1.patch.zip)
 
-パッチを適用した後、次の SQL クエリを実行します。 のレコードを変更するには、クエリを実行する必要があります `cron_schedule` テーブル。
+パッチを適用した後、次の SQL クエリを実行します。 テーブル内のレコードを変更するには、クエリを実行する必要 `cron_schedule` あります。
 
 ```
 UPDATE core_config_data
@@ -45,6 +45,6 @@ WHERE `path` LIKE "crontab/default/jobs/analytics%";
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 説明を参照してください。
+手順については、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

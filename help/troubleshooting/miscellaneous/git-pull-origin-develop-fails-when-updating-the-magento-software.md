@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce ソフトウェアを更新すると、git プルオリジンの開発が失敗します
 
-この記事では、の実行中にAdobe Commerce ソフトウェアを更新できない場合に対処する方法について説明します `git pull origin develop`.
+ここでは、`git pull origin develop` の実行時にAdobe Commerce ソフトウェアをアップデートできない場合の対処方法について説明します。
 
 ## 詳細
 
@@ -44,7 +44,7 @@ Adobe Commerce ファイルシステム内のファイルを意図的に変更�
 
 #### ファイルを意図的に変更しました
 
-競合は通常の方法で手動で解決します。 どうすればよいかわからない場合は、次を参照してください。 [GitHub ヘルプ](https://help.github.com/).
+競合は通常の方法で手動で解決します。 どうすればよいかわからない場合は、[GitHub ヘルプ ](https://help.github.com/) を参照してください。
 
 #### 意図的にファイルを変更していません
 
@@ -71,6 +71,6 @@ Adobe Commerce ファイルシステム内のファイルを意図的に変更�
 
   >[!NOTE]
   >
-  >Adobeは、特定の GitHub 設定を推奨または推奨しません。 上記は提案のみです。 詳しくは、次を参照してください [GitHub ヘルプ](https://help.github.com/).
+  >Adobeは、特定の GitHub 設定を推奨または推奨しません。 上記は提案のみです。 詳しくは、[GitHub ヘルプ ](https://help.github.com/) を参照してください。
 
   Adobe Commerceの更新を中断した場所に進みます。

@@ -17,28 +17,28 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
 
 ## 原因：
 
-* チームメンバーがに追加されていません [!DNL cloud project] 必要な権限を持つ。
+* チーム メンバーが必要な特権で [!DNL cloud project] に追加されていません。
 * チームメンバーにサポートアカウントがありません。
 
 ## 解決策
 
-1. に移動します **[!DNL Cloud Project URL]** （例： `https://us-3.magento.cloud/projects/xxxxxx/edit`）に設定します。
-1. チームメンバーがプロジェクト（）に追加されたかどうかを確認する [!DNL Super User].
+1. **[!DNL Cloud Project URL]** に移動します（例：`https://us-3.magento.cloud/projects/xxxxxx/edit`）。
+1. チームメンバーがプロジェクトに追加されたかどうか、および [!DNL Super User] ーザーであるかどうかを確認します。
 
-必要なければ、 [!DNL cloud project] アクセス、送信 [Adobe Commerce サポートセンターでのサポートリクエスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 自動的に CC するには：すべてのチケットでそれらを提供します **[!DNL MAGE ID]** （使用可能な場合）。
+[!DNL cloud project] のアクセスが必要ない場合は、[Adobe Commerce サポートセンターでのサポートリクエスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信して、すべてのチケットで自動的に CC：を実行し、**[!DNL MAGE ID]** ールも提供します（利用可能な場合）。
 
-プロジェクトに追加されていない場合は、として追加する必要があります [!DNL Super User] とグラント [!DNL Shared Access]:
+アセットがプロジェクトに追加されていない場合は、アセットを [!DNL Super User] として追加し、[!DNL Shared Access] の権限を付与する必要があります。
 
-* [ユーザーアクセスの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) を参照してください。
-* [Adobe Commerce クラウドプロジェクトにユーザーを追加できない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html) Commerceのナレッジベースで。
-* [Adobe Commerce ヘルプセンターユーザーガイド：共有アクセス](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) Commerceのナレッジベースで。
+* ユーザーガイドの [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)。
+* Commerce ナレッジベースの [Adobe Commerce クラウドプロジェクトにユーザーを追加できない ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html)。
+* [Adobe Commerce ヘルプセンターユーザーガイド：共有アクセス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) （Commerce ナレッジベース）。
 
-に追加されている場合 [!DNL cloud project]ただし、次の権限はありません [!DNL Super User role]、を更新 [!DNL role] それに応じて [ユーザーアクセスの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+ユーザーが [!DNL cloud project] に追加されたが、[!DNL Super User role] がない場合、[ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) で適切に [!DNL role] を更新します。
 
 ## 関連資料
 
-[以前のチームメンバーには、Adobe Commerce クラウド通知メールが届きます](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)
+[ 以前のチームメンバーには、Adobe Commerce Cloud 通知メールが届きます ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)

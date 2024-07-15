@@ -5,13 +5,13 @@ feature: Support
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3550cdc1ddf4337bb0a5047e19e8da9a514defe1
+exl-id: 30b62c0e-4341-46c4-8e9c-2cc0fd8e33f9
+source-git-commit: 52c7092df0e052839aefee4783a44f6a0193d755
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce サポートの取り込みプロセスのExperience Leagueへの移行
 

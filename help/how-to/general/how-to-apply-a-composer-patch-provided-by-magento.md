@@ -20,8 +20,8 @@ ht-degree: 0%
 
 ## クラウドインフラストラクチャー上のAdobe Commerceに composer パッチを適用する方法 {#cloud}
 
-1. というディレクトリがない場合 `m2-hotfixes` プロジェクトルートに作成してください。
-1. をコピーします `%patch_name%.composer.patch` 個のファイルを `m2-hotfixes` ディレクトリ。
+1. プロジェクトルートに `m2-hotfixes` という名前のディレクトリがない場合は作成してください。
+1. `%patch_name%.composer.patch` ファイルを `m2-hotfixes` ディレクトリにコピーします。
 1. コードの変更を追加、コミット、プッシュします。
 
    ```git
@@ -36,7 +36,7 @@ ht-degree: 0%
    git push origin
    ```
 
-クラウドプロジェクトにパッチを適用する方法については、を参照してください。 [パッチの適用](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+クラウドプロジェクトにパッチを適用する方法について詳しくは、開発者向けドキュメントの [ パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html) を参照してください。
 
 ### Adobe Commerceのオンプレミス環境およびMagento Open Sourceに composer パッチを適用する方法 {#commerce}
 
@@ -47,6 +47,6 @@ ht-degree: 0%
    patch -p1 < %patch_name%.composer.patch
    ```
 
-   （上記のコマンドが機能しない場合は、を使用してみてください。 `-p2` の代わりに `-p1` ）
+   （上記のコマンドが機能しない場合は、`-p1` の代わりに `-p2` を使用してみてください）
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/**キャッシュ管理** でキャッシュを更新します。

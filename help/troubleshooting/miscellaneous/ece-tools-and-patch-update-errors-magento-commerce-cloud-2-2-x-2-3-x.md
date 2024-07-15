@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ECE ツールとパッチアップデートエラーAdobe Commerce Cloud Infrastructure 2.2.x.、2.3.x
 
-この記事では、次のようなエラーメッセージが表示される問題の解決策を説明します。*ストリームを開けませんでした：*「または」*そのようなファイルまたはディレクトリはありません*「ECE ツール、パッチ、またはその他の変更に対してアップデートをデプロイしようとする場合。
+この記事では、ECE-Tools、パッチ、またはその他の変更に対して更新をデプロイしようとすると、「*ストリームを開けませんでした：*」や「*そのようなファイルやディレクトリがありません*」などのエラーメッセージが表示される問題の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-ECE-Tools、パッチ、その他の変更に対して更新をデプロイしようとすると次のようなエラーが発生します。Cloud Console と `var/log/cloud.log`
+ECE-Tools、パッチ、その他の変更をデプロイしようとするとエラーが発生します。Cloud Console と `var/log/cloud.log` の PHP エラー
 
 ```
 W: PHP Warning: require(<path to file>): failed to open stream: No such file or directory in <path to file> on line 70
@@ -65,11 +65,11 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## 原因：
 
-の設定ミス `composer.json` ファイル。
+`composer.json` ファイルの設定ミス。
 
 ## 解決策
 
-の設定がない場合 `composer.json` ファイルが含まれています。一部のディレクトリは、Adobe Commerce コードベースからコピーされません。 ファイルが見つからないため、パッケージと更新/修正プログラムを適用できません。
+`composer.json` ファイルに設定がない場合、一部のディレクトリはAdobe Commerce コードベースからコピーされません。 ファイルが見つからないため、パッケージと更新/修正プログラムを適用できません。
 
 以下に示す内容に合わせて追加のセクションを変更し、デプロイメントを再試行してください。
 
@@ -82,4 +82,4 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## 関連資料
 
-* [アップグレードとパッチ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade-parent.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=update%20ece%20tools) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [ アップグレードとパッチ ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade-parent.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=update%20ece%20tools)。

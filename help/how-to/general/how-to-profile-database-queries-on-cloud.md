@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャー上のAdobe Commerceでデータベースクエリをプロファイルする方法
 
-を参照してください [プロファイルデータベースクエリ](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ プロファイルデータベースクエリ ](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) を参照してください。

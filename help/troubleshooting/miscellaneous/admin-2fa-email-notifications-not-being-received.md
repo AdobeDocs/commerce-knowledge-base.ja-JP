@@ -37,10 +37,10 @@ ht-degree: 0%
    ```
 
    * 結果が返されない場合は、送信者アドレスが設定されていないことを意味します。
-   * 結果が返された場合は、次に進みます。 **手順 2**.
+   * 結果が返された場合は、**手順 2** に進みます。
 
 1. メールがスパムフォルダーに表示された場合は、メール内のリンクをクリックします。 リンクの有効期限が切れてから再度ログインして、このプロセスを繰り返します。
-1. アクセス権を取得したら、に移動します **ストア** > **設定** > **一般** > **メールアドレスの保存** メールアドレスを設定します。
+1. アクセス権を取得したら、**ストア**/**設定**/**一般**/**メールアドレスを保存** に移動してメールアドレスを設定します。
 
 ### 手順 2：メールアドレスが正しく設定されている場合は、環境に SSH で接続し、次のコマンドを実行します。
 
@@ -48,8 +48,8 @@ ht-degree: 0%
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-メールのスパムフォルダーを確認します。 メールが表示された場合、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) をクリックして、SendGrid でドメインにホワイトレーベルをリクエストします。
+メールのスパムフォルダーを確認します。 メールが表示された場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login)、SendGrid でドメインにホワイトレーベルが付くようリクエストします。
 
 ## 関連資料
 
-* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html)。

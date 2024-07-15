@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-44147:GraphQL要求で要求リストが返されない
 
-MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さない問題を修正します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 がインストールされています。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,17 +27,17 @@ MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さな�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 GraphQL リクエストが購買依頼リストを返さない。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. に移動 **ストア** > **設定** > **設定** > **一般** > **B2B の機能** 「購買依頼リスト」を使用可能にします。
-1. 顧客としてログインし、に製品を追加する [要求リスト](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
-1. を作成 [顧客トークン](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. **ストア**/**設定**/**設定**/**一般**/**B2B 機能** に移動し、購買依頼リストを有効化します。
+1. 顧客としてログインし、[ 購買依頼リスト ](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html) に製品を追加します。
+1. [ 顧客トークン ](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html) を作成します。
 
    <pre>
     <code class="language-graphql">
@@ -52,7 +52,7 @@ GraphQL リクエストが購買依頼リストを返さない。
       </code>
       </pre>
 
-1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 の使用 **認証** ヘッダーと値 `Bearer <customer_token>`. を参照してください。 [顧客クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) 詳しくは、開発者ドキュメントの記事を参照してください。
+1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) 記事を参照してください。
 
    リクエスト :
 
@@ -165,11 +165,11 @@ GraphQL リクエストが購買依頼リストを返さない。
       </code>
       </pre>
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 1 つの結果が返されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 ゼロの結果が返されます。
 
@@ -177,14 +177,14 @@ GraphQL リクエストが購買依頼リストを返さない。
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

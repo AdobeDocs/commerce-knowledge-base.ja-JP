@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-55231：クイックオーダー機能の使用中に SKU が見つからないというエラーが発生する
 
-ACSD-55231 パッチは、発生した問題を修正します *「カタログに SKU が見つかりませんでした」* クイックオーダー機能を使用して買い物かごに製品を追加しようとするとエラーが発生する。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.44 がインストールされています。 パッチ ID は ACSD-55231 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-55231 パッチでは、クイックオーダー機能を使用して買い物かごに製品を追加しようとすると、「*カタログに SKU が見つかりませんでした* というエラーが発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.44 がインストールされている場合に使用できます。 パッチ ID は ACSD-55231 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,24 +27,24 @@ ACSD-55231 パッチは、発生した問題を修正します *「カタログ�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-取得 *「カタログに SKU が見つかりませんでした」* クイックオーダー機能を使用して買い物かごに追加する製品を検索中にエラーが発生します。
+クイックオーダー機能 *使用して買い物かごに追加する製品を検索する際に、カタログ* エラーに「SKU が見つかりませんでした」が表示される。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. B2B モジュールと共にAdobe Commerceをインストールします。
-1. に移動します。 **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL B2B Features]** さらに、次のように設定します。
+1. **[!UICONTROL Admin]**/**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL B2B Features]** に移動し、以下を設定します。
    * **[!UICONTROL Enable company]**: *はい*
    * **[!UICONTROL Enable Shared Catalog]**: *はい*
    * **[!UICONTROL Enable Quick Order]**: *はい*
 1. 上記の設定を保存します。
-1. に移動 **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]** 新しい共有カタログを作成します。
-1. に移動します。 **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** 新しい顧客を作成します。
-   * グループ フィールドで、最近作成した共有カタログを選択し、 *[!UICONTROL Allow remote shopping assistance]* 対象： *はい*.
-1. SKU を使用したシンプルな製品の生成 *p12*、カテゴリに関連付けます *c1*&#x200B;を開き、で新しく作成した共有カタログを選択します。 [!UICONTROL Product in Shared Catalog] セクション。
+1. **[!UICONTROL Catalog]**/**[!UICONTROL Shared Catalogs]** に移動し、新しい共有カタログを作成します。
+1. **[!UICONTROL Customers]**/**[!UICONTROL All Customers]** に移動し、新しい顧客を作成します。
+   * グループ フィールドで、最近作成した共有カタログを選択し、*[!UICONTROL Allow remote shopping assistance]* を *はい* に設定します。
+1. SKU *p12* を持つシンプルな製品を生成してカテゴリ *c1* に関連付け、「[!UICONTROL Product in Shared Catalog]」セクションで新しく作成した共有カタログを選択します。
 1. 実行：
 
    ```
@@ -54,33 +54,33 @@ ACSD-55231 パッチは、発生した問題を修正します *「カタログ�
    ```
 
 1. 管理ページを更新します。
-1. に移動します。 **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** および前に作成した顧客を編集します。
-1. クリック **[!UICONTROL Login as customer]**.
-1. に移動 **[!UICONTROL Quick order]**.
-1. を検索 *p12* SKU を選択し、 **[!UICONTROL Product Suggestion]**.
+1. **[!UICONTROL Customers]**/**[!UICONTROL All Customers]** に移動し、以前に作成した顧客を編集します。
+1. 「**[!UICONTROL Login as customer]**」をクリックします。
+1. **[!UICONTROL Quick order]** に移動します。
+1. *p12* SKU を検索し、**[!UICONTROL Product Suggestion]** をクリックします。
 1. この商品を買い物かごに追加して注文します。
-1. に戻る **[!UICONTROL Quick Order]**、SKU を検索 *p12* 再度クリックして、 **[!UICONTROL Product Suggestion]**.
+1. **[!UICONTROL Quick Order]** に戻り、SKU *p12* をもう一度検索し、「**[!UICONTROL Product Suggestion]**」をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 クイックオーダー機能を使用して、商品を買い物かごに追加できます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-クイックオーダー機能を使用して買い物かごに製品を追加して次を取得することはできません *「カタログに SKU が見つかりませんでした」* 製品 SKU の検索中にエラーが発生しました。
+クイックオーダー機能を使用して商品を買い物かごに追加できず、「*&#39;The SKU was not found in the catalog&#39;* error」が表示される（商品 SKU の検索中）。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-31282: Paypal PayFlow Pro での二重認証
 
-MDVA-31282 パッチは、Adobe Commerceの Paypal PayFlow Pro で二重認証が発生した場合の問題を解決します。 二重認証は、PayFlow Pro の不正フィルターをバイパスし、取引手数料を倍増させる効果もあります。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 がインストールされています。
+MDVA-31282 パッチは、Adobe Commerceの Paypal PayFlow Pro で二重認証が発生した場合の問題を解決します。 二重認証は、PayFlow Pro の不正フィルターをバイパスし、取引手数料を倍増させる効果もあります。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.7 がインストールされている場合に使用できます。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,48 +27,48 @@ MDVA-31282 パッチは、Adobe Commerceの Paypal PayFlow Pro で二重認証�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 Adobe Commerceの PayPal PayFlow Pro では二重認証が行われ、PayFlow Pro の不正フィルターをバイパスして取引手数料を倍増させる効果があります。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 PayPal PayFlow Pro 支払い方法を設定します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. ゲストカスタマーとしてフロントエンドに移動します。
-1. への製品の追加 **ショッピングカート** 製品ページから。
-1. 次の手順に進みます。 **チェックアウト**.
-1. を指定 **発送先住所** 国\#1 の住所として（例：英国の住所）、配送方法を選択します。
-1. を選択 **PayPal PayFlow Pro** 支払方法として。 を指定 **請求先住所** 国\#2 の住所として（例：米国の住所）。
+1. 製品ページから **買い物かご** に製品を追加します。
+1. **チェックアウト** に進みます。
+1. **配送先住所** を国\#1 の住所として指定し（例：英国住所）、配送方法を選択します。
+1. 支払い方法として **PayPal PayFlow Pro** を選択します。 **請求先住所** を国\#2 の住所として指定します（例：USA 住所）。
 1. クレジットカードのデータを入力し、注文します。
-1. に移動します。 **売上** > **注文件数** を admin で実行し、作成された順序を確認します。
+1. 管理で **営業**/**注文** に移動し、作成された注文を確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-* 「支払情報」ブロックが次のように表示されます。 *「トリガーされた不正フィルター：RESMSG：不正サービスによる審査中*. *注文は不正疑いステータスです」*.
+* 「Payment Information」ブロックに、「*&quot;Triggered Fraud Filters: RESMSG: Under review by Fraud Service* と表示されます。 *注文は不正の疑いがあるステータスです」*。
 * Paypal PayFlow Pro は、期待どおりに単一の承認トランザクションを表示します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-* 「支払情報」ブロックが次のように表示されます。 *「トリガーされた不正フィルター：RESMSG：不正サービスによる審査中*. *注文は処理中ステータスです」*.
+* 「Payment Information」ブロックに、「*&quot;Triggered Fraud Filters: RESMSG: Under review by Fraud Service* と表示されます。 *注文は処理中ステータスです」*。
 * Paypal PayFlow Pro は二重認証トランザクションを示しています。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

@@ -1,6 +1,6 @@
 ---
-title: 「設定」を実行:static-content:deploy の deployed_version.txt の問題
-description: この記事では、「setup」の実行時に「deployed_version.txt」が書き込み不可エラーの修正について説明します:static-content:コマンドを手動でデプロイします。
+title: 「setup:static-content:deploy」 deployed_version.txt 問題を実行する
+description: 'この記事では、「setup_deploy」コマンドを手動で実行した場合に、「deployed_version.txt」が書き込み不可エラーに修正され :static-content: す。'
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 実行 `setup:static-content:deploy` deployed_version.txt の問題
+# deployed_version.txt 問題 `setup:static-content:deploy` 実行
 
-この記事では、次の問題を修正します `deployed_version.txt` を実行中は書き込み不可エラーが発生する `setup:static-content:deploy` コマンドを手動で実行します。
+この記事では、`setup:static-content:deploy` コマンドを手動で実行した際に `deployed_version.txt` 書き込み不可エラーが発生した場合の対処法を示します。
 
 ## 問題
 
-クラウドインフラストラクチャに関するAdobe Commerceの推奨事項に従って次を使用する場合 [設定の管理](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) （さらに、デプロイメント中に web サイトのダウンタイムを減らすために、静的アセットの生成をビルドステージに移動します）。を実行すると、次のエラーが発生する場合があります。 `setup:static-content:deploy` 手動コマンド：
+Adobe Commerce on cloud infrastructure の推奨事項に従って [Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) を使用する（および、デプロイメント中に web サイトのダウンタイムを減らすために静的アセットの生成をビルドステージに移行する）場合、`setup:static-content:deploy` コマンドを手動で実行すると、次のエラーが発生する可能性があります。
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy
@@ -36,7 +36,7 @@ The path "deployed_version.txt:///app/{{cloud-project-id}}_stg/pub/static/app/{{
 
 ## 解決策
 
-静的コンテンツのデプロイメントを引き続き実行する場合は、以下でシンボリックリンクを削除します。 `pub/static` ディレクトリに移動し、を実行します。 `setup:static-content:deploy` 再びコマンド：
+静的コンテンツのデプロイメントを引き続き実行する場合は、`pub/static` ディレクトリ内のシンボリックリンクを削除し、`setup:static-content:deploy` コマンドを再度実行します。
 
 ```
 find pub/static/ -maxdepth 1 -type l -delete

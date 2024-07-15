@@ -17,24 +17,24 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* [支払いサービス](https://marketplace.magento.com/magento-payment-services.html) は、Adobe Commerce バージョン 2.4.0～2.4.4 と互換性を持つようになりました。
+* [ 支払いサービス ](https://marketplace.magento.com/magento-payment-services.html) は、Adobe Commerce バージョン 2.4.0 から 2.4.4 と互換性を持つようになりました。
 
 ## 問題 – コンポーザーのキーが正しくありません
 
 Payment Services 拡張機能をインストールすると、インストール時に間違った Composer キーを使用したことを示すエラーメッセージが表示される場合があります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 試み [支払いサービスのインストール](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. [ 支払いサービスのインストール ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) を試みます。
 1. 次のエラーが表示されます。
 
-   *一致するバージョンのパッケージ magento/payment-services が見つかりませんでした。 パッケージのスペル、バージョンの制約、およびパッケージが最小安定性（stable）に一致する安定性で使用可能であることを確認します。*
+   *magento/payment-services パッケージの一致するバージョンが見つかりませんでした。 パッケージのスペル、バージョンの制約、およびパッケージが最小安定性（stable）に一致する安定性で使用可能であることを確認します。*
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-以下に従ってください [インストール手順](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) 開発者ドキュメントに記載されている、支払いサービスのインストールに成功します。
+アドビの開発者向けドキュメントの以下の [ インストール手順 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) に従って、支払いサービスを正常にインストールできます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 インストール中に、インストール中に正しい Composer キーを使用しなかったことを示すエラーメッセージが表示されます。
 
@@ -44,7 +44,7 @@ Payment Services 拡張機能をインストールすると、インストール
 
 ### 解決策
 
-を確認します。 [composer キーはMagentoID にリンクされています](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) 支払いサービスの登録時に使用されます。
+Payment Services の登録時に使用した [Composer キーがMagentoID にリンクされている ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) ことを確認します。
 
 ## 問題 – 複数のインスタンスで同じデータスペースを使用する
 
@@ -59,24 +59,24 @@ SaaS プロジェクトを作成すると、CommerceはCommerce ライセンス�
 * Adobe Commerce – 実稼動データスペース 1 つ、テスト用データスペース 2 つ
 * Magento Open Source - 1 つの実稼動データスペースで、テスト用のデータスペースはない
 
-の手順に従います。 [Commerce API キーと秘密鍵](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) 支払いサービス拡張機能を正常に設定します。
+[Commerce API キーと秘密鍵 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) の手順に従って、支払いサービス拡張機能を正常に設定します。
 
 ## 問題 – PHP 用のメモリが不足しています
 
 Payment Services 拡張機能をインストールすると、PHP に十分なメモリがないことを示すエラーメッセージが表示される場合があります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 試み [支払いサービスのインストール](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. [ 支払いサービスのインストール ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) を試みます。
 1. 次のエラーまたは同様のエラーが表示されます。
 
-   *致命的なエラー：52 行目のphar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.phpで、2146435072 バイトのメモリ サイズが使い果たされました（4096 バイトの割り当てを試みました）*
+   *致命的なエラー：52 行目のphar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.phpで 2146435072 バイトのメモリ サイズが使い果たされました（4096 バイトの割り当てを試みました）*
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-以下に従ってください [インストール手順](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) 開発者ドキュメントに記載されている、支払いサービスのインストールに成功します。
+アドビの開発者向けドキュメントの以下の [ インストール手順 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) に従って、支払いサービスを正常にインストールできます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 インストール中に、PHP 用のメモリが不足していることを示すエラーメッセージが表示されます。
 
@@ -86,4 +86,4 @@ Payment Services 拡張機能をインストールすると、PHP に十分な�
 
 ### 解決策
 
-[PHP のメモリ制限を増やす](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#not-enough-memory-for-php) 環境で次の操作をおこないます `php.ini`.
+[PHP のメモリの上限を増やす ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#not-enough-memory-for-php) を使用している環境で `php.ini` ます。

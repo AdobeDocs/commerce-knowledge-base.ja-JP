@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # ステージング環境と実稼動環境での Fastly DNS 設定
 
-を参照してください [Fastly の設定](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) 最新情報については、開発者向けドキュメントの記事を参照してください。
+最新情報については、開発者向けドキュメントの [Fastly の設定 ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) の記事を参照してください。

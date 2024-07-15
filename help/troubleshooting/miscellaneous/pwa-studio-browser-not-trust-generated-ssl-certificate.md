@@ -35,24 +35,24 @@ Adobe CommerceのPWA Studio
 yarn buildpack create-custom-origin ./
 ```
 
-証明書の生成は次によって処理されます： [devcert](https://github.com/davewasmer/devcert). OpenSSL によって異なるので、次のコマンドを使用してシステムに現在のバージョンの openssl があることを確認します。
+証明書の生成は [devcert](https://github.com/davewasmer/devcert) によって処理されます。 OpenSSL によって異なるので、次のコマンドを使用してシステムに現在のバージョンの openssl があることを確認します。
 
 `openssl version`
 
 バージョンは 1.0 以上（OSX High Sierra の場合は LibreSSL 2）にする必要があります。
 
-を使用して、より新しいバージョンの OpenSSL をインストールできます [Homebrew](https://brew.sh/) （OSX では） [チョコレート](https://chocolatey.org/) Windows の場合、または Linux ディストリビューションのパッケージマネージャー。
+OSX の [Homebrew](https://brew.sh/)、Windows の [Chocolatey](https://chocolatey.org/) または Linux ディストリビューションのパッケージマネージャーを使用して、より新しいバージョンの OpenSSL をインストールできます。
 
-Linux を使用している場合は、次のことを確認してください `libnss3-tools` （または同等の）がシステムにインストールされている。 詳細については、のこの節を参照してください [devcert](https://github.com/davewasmer/devcert#skipcertutil) readme.
+Linux を実行している場合は、`libnss3-tools` （または同等のツール）がシステムにインストールされていることを確認します。 詳細については、[devcert](https://github.com/davewasmer/devcert#skipcertutil) readme のこのセクションで説明しています。
 
 一部のユーザーは、トリガー証明書の再生成のために devcert フォルダーを削除することを推奨しています。
 
-* macOS ユーザーの場合、通常このフォルダーは次の場所にあります。 `{{~/Library/Application Support/devcert }}`
-* Windows ユーザーの場合、通常、このフォルダーは次の場所にあります。 `${User}\AppData\Local\devcert`
+* macOS ユーザーの場合、通常このフォルダーは `{{~/Library/Application Support/devcert }}` にあります。
+* Windows ユーザーの場合、通常、このフォルダーは `${User}\AppData\Local\devcert` にあります。
 
 ## サポートナレッジベースの関連資料
 
-* [PWA Studio：自己署名証明書の信頼エラー](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio：自己署名証明書の信頼エラー ](https://support.magento.com/hc/en-us/articles/360038973172)
 * [PWA Studio: コンパイルを開始する前に webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
 * [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)

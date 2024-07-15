@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-Fastly 設定ページの Fastly IO スニペットの横には、現在の状態が「\_disabled \_with」と表示され、その下に次のメッセージが表示されます。営業担当者に連絡するか、にメールを送信してください。 `support@fastly.com` をクリックして、Fastly サービスの画像最適化のアクティベーションをリクエストします。
+Fastly 設定ページの Fastly IO スニペットの横には、現在の状態が「\_disabled \_with the following message below: Please contact your sales rep or send a email to `support@fastly.com` to request image optimization activation for your Fastly service」と表示されます。
 
 ## 原因：
 
@@ -29,4 +29,4 @@ Fastly 設定ページの Fastly IO スニペットの横には、現在の状�
 
 ## 解決策
 
-を作成 [サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) およびリクエスト画像の最適化。
+[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を作成し、画像の最適化をリクエストします。

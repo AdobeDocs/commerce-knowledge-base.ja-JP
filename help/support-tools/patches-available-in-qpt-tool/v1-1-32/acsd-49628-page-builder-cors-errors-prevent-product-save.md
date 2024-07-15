@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-49628: [!DNL Page Builder] CORS エラーにより製品を保存できない'
-description: Adobe Commerce ACSD-49628 パッチを適用して、 [!DNL Page Builder] CORS エラーが原因で製品を保存できない。
+description: ACSD-49628 パッチを適用して、 [!DNL Page Builder] CORS エラーによって商品の保存が妨げられるAdobe Commerceの問題を修正してください。
 exl-id: c6e2f0b3-aea0-4caf-8b69-9644b38c909c
 feature: Categories, Page Builder, Products
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-49628: [!DNL Page Builder] CORS エラーにより製品を保存できない
+# ACSD-49628:[!DNL Page Builder] CORS エラーにより製品を保存できない
 
-ACSD-49628 パッチは、次の問題を修正します。 [!DNL Page Builder] CORS エラーにより、管理者が製品を保存できません。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.32 がインストールされています。 パッチ ID は ACSD-49628 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-49628 パッチは、CORS エラーが原因で管理者 [!DNL Page Builder] 製品を保存できない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.32 がインストールされている場合に使用できます。 パッチ ID は ACSD-49628 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,46 +27,46 @@ ACSD-49628 パッチは、次の問題を修正します。 [!DNL Page Builder] 
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-[!DNL Page Builder] CORS エラーは、製品の保存を妨げます。
+CORS エラー [!DNL Page Builder]、製品の保存を妨げます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 管理者としてログインします。
 1. 次の権限を持つユーザーロールを作成します。
 
-   * **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Products]**.
-   * **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Categories]**.
+   * **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Products]**。
+   * **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Categories]**。
 
-1. を追加しないでください *[!UICONTROL Content]* 権限。
+1. *[!UICONTROL Content]* の権限を追加しないでください。
 1. 別の管理者ユーザーを作成して、上記で作成した役割をこのユーザーに割り当てます。
 1. 製品を作成し、ログアウトします。
 1. 2 人目の管理者としてログインします。
 1. 製品を編集して保存してみてください。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-2 人目の管理者は製品を保存できますが、 **[!UICONTROL Edit with Page Builder]** ボタンが表示されない場合、管理者には表示されません *[!UICONTROL Content]* 権限。
+2 人目の管理者は製品を保存できますが、「**[!UICONTROL Edit with Page Builder]**」ボタンは *[!UICONTROL Content]* の権限を持たない管理者には表示されません。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-複数の理由により、2 人目の管理者は製品を保存できません [!DNL Page Builder] エラー。
+複数の [!DNL Page Builder] エラーが発生したので、2 人目の管理者は製品を保存できません。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

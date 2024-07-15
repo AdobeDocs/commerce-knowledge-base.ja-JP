@@ -31,9 +31,9 @@ ht-degree: 0%
 
 このような場合は、Magentoコマンドを使用して画像キャッシュを再生成し、画像を適切に表示することができます。
 
-これを実行するには、から使用できる SSH 情報とストア URL が必要です。 [クラウドコンソール](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+これを実行するには、[Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) から使用できる SSH 情報とストア URL が必要です。
 
-1. のソースとなったプロジェクトに SSH で接続する [データベース ダンプ](/help/how-to/general/create-database-dump-on-cloud.md)（を参照） [環境への SSH](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) 開発者向けドキュメントを参照してください。
+1. [ データベースダンプ ](/help/how-to/general/create-database-dump-on-cloud.md) のソースとなったプロジェクトに SSH で接続します。詳しくは、開発者向けドキュメントの [ 環境への SSH](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) を参照してください。
 1. 次を実行して画像キャッシュを再生成します。
 
    ```bash

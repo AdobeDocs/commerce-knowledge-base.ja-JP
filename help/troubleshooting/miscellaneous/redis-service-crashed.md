@@ -37,10 +37,10 @@ Redis のメモリオーバーフローによる Web サイトの速度低下ま
 redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_peak|maxmemory|evicted_keys|uptime_in_days)"
 ```
 
-この *REDIS\_PORT* および *REDIS\_HOST* 変数は、次の場所から取得できます `app/etc/env.php`.
+*REDIS\_PORT* 変数と *REDIS\_HOST* 変数は `app/etc/env.php` から取得できます。
 
-上記のクエリを実行した結果、空きメモリの割合が 40% 未満と表示された場合、 [Adobe Commerce サポートへのチケットの送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) の増額の請求 `maxmemory` redis サーバーで設定します。 削除されたキーの値が「0」でない場合、または Redis の稼働時間（日数）が 0 に等しい場合（Redis が今日クラッシュしたことを示します）、次の操作も行う必要があります [Adobe Commerce サポートへのチケットの送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) この問題の調査と修正を要求しています。
+上記のクエリを実行した結果、空きメモリの割合が 40% 未満であることが示された場合は、[Adobe Commerce サポートにチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、Redis サーバーの `maxmemory` 設定の増加をリクエストします。 削除されたキーの値が「0」でない場合、または Redis の稼働時間（日数）が 0 である場合（Redis が本日クラッシュしたことを示す）、[Adobe Commerce サポートにチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、この問題の調査と修正を依頼する必要があります。
 
 ## 関連資料
 
-Redis メモリの詳細については、を参照してください。 [Redis メモリ最適化](https://redis.io/topics/memory-optimization).
+Redis メモリの詳細については、[Redis メモリ最適化 ](https://redis.io/topics/memory-optimization) を参照してください。

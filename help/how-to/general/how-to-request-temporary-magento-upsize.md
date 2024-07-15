@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャー上で一時的なAdobe Commerceのアップサイズをリクエストする方法
 
-組織が高トラフィックを期待するオンラインイベントを計画している場合や、サイトが突然高トラフィックのイベントに遭遇した場合は、 [サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Adobe Commerce on cloud infrastructure store の一時的なクラウド容量の追加をリクエストするには、次の手順を実行します。
+高トラフィックが予想されるオンラインイベントを計画している場合、またはサイトが突然、高トラフィックイベントに遭遇した場合は、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を申請して、Adobe Commerce on cloud infrastructure store の一時的なクラウド容量の追加をリクエストできます。
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
 
 ## 高トラフィックイベントの識別方法
 
@@ -33,54 +33,54 @@ New Relic アラートでは、ベースラインアラート条件を使用し�
 
 さらに、ベースラインアラートは、動作が不明な新しいアプリケーションでもうまく機能します。
 
-New Relicについて詳しくは、こちらのリンクを参照してください [Intelligence を適用した異常値検出](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/anomaly-detection/anomaly-detection-applied-intelligence/).
+このリンクでは、New Relic[Applied Intelligence を使用した異常値検出 ](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/anomaly-detection/anomaly-detection-applied-intelligence/) の詳細を説明します。
 
-高いトラフィックイベントを示唆するアラート通知が届いた場合は、考慮が必要な場合があります [サポートチケットの送信](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 追加容量を要求しています。 次の手順に従います。
+高トラフィックイベントを示唆するアラート通知が届いた場合は、追加容量のリクエスト [ サポートチケットの送信 ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) を検討する必要がある場合があります。 次の手順に従います。
 
 ## サイトのパフォーマンスの監視方法
 
 Adobeは、クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャとクラウドインフラストラクチャー上のAdobe Commerce Starter プランアーキテクチャ実稼動環境では、次の主要業績評価指標を追跡するための一連のNew Relic アラートポリシーを提供します。
 
-* [Apdex スコア](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction)
+* [Apdex スコア ](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction)
 * エラー率
 * ディスク容量（Pro アーキテクチャの実稼動環境でのみ使用可能）
 
 これらのポリシーは、業界のベスト・プラクティスに基づいて、パフォーマンスに影響を及ぼす警告や重要な条件に対するしきい値を設定します。 アラートしきい値をトリガーにするインフラストラクチャまたはアプリケーションの問題がサイトで発生すると、New Relicからアラート通知が送信されるので、問題にプロアクティブに対処できます。 これらのポリシーを使用するには、アラートメッセージを受信する通知チャネルを設定する必要があります。
 
-次の方法については、このリンクを参照してください [パフォーマンスベースのアラートの設定](/docs/commerce-cloud-service/user-guide/monitor/new-relic.html#monitor-performance-with-managed-alerts).
+このリンクでは、[ パフォーマンスベースのアラートの設定 ](/docs/commerce-cloud-service/user-guide/monitor/new-relic.html#monitor-performance-with-managed-alerts) 方法を説明します。
 
 ## 一時的なアップサイズをリクエストする手順
 
-以下の手順に従って、 [サポートチケット](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 一時的な追加クラウド容量をリクエストするには：
+次の手順に従って、[ サポートチケット ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) を送信し、一時的なクラウド容量の追加をリクエストします。
 
-を送信 [Adobe Commerce サポートセンターのサポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)：次の情報を入力します。
+次の情報を入力した後、[Adobe Commerce サポートセンターでのサポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を送信します。
 
 >[!NOTE]
 >
->この *休日サージ要求* 選択は、10 月から 12 月の間のオプションです。
+>*ホリデーサージリクエスト* の選択は、10 月から 12 月の間のオプションです。
 
 1. サポートを受けようとするAdobe Commerce製品を選択してください。
 1. 最初の 4 つのフィールド（製品、組織、実装タイプ、件名）に入力します。
-1. を選択 *Adobe Commerce クラウドインフラストラクチャ* が含まれる **連絡先の理由** ドロップダウン。
-1. を選択 *休日のサージ容量リクエスト* が含まれる **Adobe Commerce インフラストラクチャ連絡先の理由** ドロップダウンオプション。 クリック **OK** 一時的な追加クラウド容量リクエストに対する 48 営業時間前の通知をリクエストするポップアップメッセージ
-1. 必須フィールドの日付を選択 **開始日のサイズ変更** および **終了日のサイズ変更**. 推奨 **開始時間のサイズ変更** また、は必須フィールドです。
+1. **連絡先の理由 *ドロップダウンで「*Adobe Commerce クラウドインフラストラクチャ**」を選択します。
+1. *2}Adobe Commerce インフラストラクチャの連絡先の理由* ドロップダウンオプションで、「{Holiday Surge Capacity Request **」を選択します。**&#x200B;一時的な追加のクラウド容量リクエストに対しては、48 営業時間前の通知をリクエストするポップアップメッセージで **OK** をクリックします。
+1. 必須フィールド **開始日のサイズ変更** および **終了日のサイズ変更** の日付を選択します。 推奨される **開始時間のサイズ変更** も必須フィールドです。
 1. 次の 4 つのフィールドに入力します。
-1. が含まれる **説明** フィールドに、サイズに関する追加情報がある場合は、ここに入力します。 特に大きなサイズが要求されない場合は、次に大きい環境サイズの容量までアップサイズされます。 サージリクエストは、デフォルトで現在のサイズより次に大きいサイズに設定されます。 追加容量が必要な場合は、そのを **説明** フィールド。 容量の増加は、契約されたサージ日数または vCPU 日数から差し引かれます。 通常の容量増加期間は 5 日ですが、必要な日数が増減する場合は、で指定してください [サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. サイズに関する追加情報がある場合は、「**説明**」フィールドに入力します。 特に大きなサイズが要求されない場合は、次に大きい環境サイズの容量までアップサイズされます。 サージリクエストは、デフォルトで現在のサイズより次に大きいサイズに設定されます。 追加容量が必要な場合は、「説明 **フィールドにそ** を入力してください。 容量の増加は、契約されたサージ日数または vCPU 日数から差し引かれます。 通常の容量増加期間は 5 日ですが、必要な日数が増減する場合は、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にその旨を記載してください。
 
 >[!NOTE]
 >
->アップサイズがスケジュールされると、自動システムによってクラウドインスタンスのサイズが調整されます。 手順が完了すると、チケット通知が届かないことがあります。 Adobe Commerceの監視ツールを使用すると、AWSまたは Azure インスタンスタイプをに表示できます [変更の確認](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md).
+>アップサイズがスケジュールされると、自動システムによってクラウドインスタンスのサイズが調整されます。 手順が完了すると、チケット通知が届かないことがあります。 Adobe Commerceの監視ツールを使用して、AWSまたは Azure インスタンスタイプを表示し、[ 変更を確認 ](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md) ることができます。
 
 ## アップサイズの履歴の表示
 
-の情報を要求すると、要求されたサイズ変更の履歴を表示できます。 **CSM （カスタマーサクセスマネージャー）**.
+**CSM （Customer Success Manager）** に情報を要求すると、要求されたサイズ変更の履歴を表示できます。
 サイズ変更リクエストごとに、次の情報を使用できます。
 
-* **サイズの開始日**：アップサイズリクエストの日付。
+* **サイズ開始日**：アップサイズリクエストの日付。
 * **サイズ終了日**：クラスターが以前のサイズに戻された日付。
-* **vCPU サイズ**：アップサイズ後のクラスターのサイズ。
-* **使用日数**：クラスターがアップサイズされたままであった日数。
-* **期間 vCPU**:vCPU サイズが使用日数によって変更されました。 （例えば、vCPU サイズ 192 x 25 日は 4,800 です）。
+* **vCPU サイズ**：アップサイズ後のクラスターのサイズです。
+* **使用日数**：クラスターがアップサイズのままであった日数。
+* **期間 vCPU**:vCPU サイズが使用日数だけ変更されました。 （例えば、vCPU サイズ 192 x 25 日は 4,800 です）。
 
 
 ## 関連資料
@@ -89,7 +89,7 @@ Adobeは、クラウドインフラストラクチャー上のAdobe Commerce Pro
    * [クラウド上のAdobe Commerceの CPU 割り当ての計算](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
    * [クラウド上のAdobe Commerceでホストのインスタンスのアップサイズが必要かどうかを確認する](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
    * [クラウド上のAdobe Commerceに対するホストの CPU 設定の確認](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
-* 停止を特定する方法については、次を参照してください。 [クラウド上のAdobe Commerceの停止の特定と測定](/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html) サポートナレッジベースで。
+* 停止を特定する方法について詳しくは、サポートナレッジベースの [Adobe Commerce on cloud の停止の特定と測定 ](/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html) を参照してください。
 * 容量の増加を利用する必要をなくすためにサイトのパフォーマンスを向上させる方法については、開発者向けドキュメントで次の記事を参照してください。
    * [画像サイズ](/docs/commerce-admin/catalog/products/digital-assets/product-image-config.html#product-image-resizing)
    * [完全なページキャッシュ](/docs/commerce-admin/systems/tools/cache-management.html#full-page-caching)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0:B2B 1.2.0 インストール中の例外
 
-この記事では、次の期間にスローされた例外に関するAdobe Commerceの既知の問題を修正します `setup:upgrade` b2B 1.2.0 をインストールする場合。
+この記事では、B2B 1.2.0 のインストール時に `setup:upgrade` 中にスローされる例外に対するAdobe Commerceの既知の問題を修正しました。
 
 ## 影響を受ける製品とバージョン
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 1. 複数のストアが作成されたAdobe Commerceをインストールします。
 1. 追加のストアを作成します。
@@ -33,13 +33,13 @@ ht-degree: 0%
 >
 >1.2.0 未満のバージョンまたは 2.4.0 未満のCommerce インスタンスから 1 つ以上のストアを含む B2B インスタンスのアップグレードも影響を受けます。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 B2B 1.2.0 のインストール。
 
-<u>実際の結果</u>
+<u> 実際の結果 </u>
 
-条件 `setup:upgrade` b2B 1.2.0 をインストールするために実行します。このエラーは、 `PurchaseOrder` モジュール：
+`setup:upgrade` を実行して B2B 1.2.0 をインストールすると、`PurchaseOrder` モジュールに次のエラーが表示されます。
 
 ```php
 Module 'Magento_PurchaseOrder':
@@ -54,7 +54,7 @@ Module 'Magento_PurchaseOrder':
 
 ## パッチ
 
-パッチはこの記事に添付されており、両方からダウンロードできます `.composer` および `.git` 形式（ファイルを解凍した後）。
+パッチはこの記事に添付されており、（ファイルを解凍した後に） `.composer` 形式と `.git` 形式の両方でダウンロードできます。
 
 ダウンロードするには、記事の最後まで下にスクロールしてファイル名をクリックするか、次のいずれかのリンクをクリックします。
 
@@ -65,12 +65,12 @@ Module 'Magento_PurchaseOrder':
 
 <u>Composer パッチ </u>
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) （composer のパッチ手順）
+composer のパッチ手順については、[Adobeが提供する composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 <u>Git パッチ </u>
 
-* 参照： [パッチの適用](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントの git に関する cloud infrastructure 上のAdobe Commerceのパッチ手順。
-* 参照： [パッチの適用：カスタム パッチ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) 開発者向けドキュメントの git に関するAdobe Commerceのパッチ手順。
+* クラウドインフラストラクチャー上のAdobe Commerceに対する Git パッチの手順については、開発者向けドキュメントの [ パッチを適用する ](https://devdocs.magento.com/cloud/project/project-patch.html) を参照してください。
+* Adobe Commerceの Git パッチ手順については、開発者向けドキュメントの [ パッチの適用：カスタムパッチ ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) を参照してください。
 
 ## 関連資料
 

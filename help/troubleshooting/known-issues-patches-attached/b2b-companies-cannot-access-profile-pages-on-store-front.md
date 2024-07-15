@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 問題
 
-顧客（会社）は、サイト上に会社アカウントを正常に作成できますが、 *「customerId =」を持つそのようなエンティティはありません* および *「まだ会社アカウントがありません」* エラーメッセージ。 また、以下の情報も得られます。 *&quot;500 内部サーバーエラー&quot;* 会社プロファイルページにアクセスしようとしたとき。
+顧客（会社）は、サイト上で会社アカウントを正常に作成できますが、エラーメッセージが *「No such entity with customerId = &quot;* and *&quot;You don&#39;t have a company account yet」* になります。 また、会社プロファイルページにアクセスしようとすると、*「500 内部サーバーエラー」* が発生する場合があります。
 
 ## パッチ
 
@@ -38,4 +38,4 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 説明を参照してください。
+手順については、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。

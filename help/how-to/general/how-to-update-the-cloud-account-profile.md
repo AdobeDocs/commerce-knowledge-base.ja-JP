@@ -25,19 +25,21 @@ ht-degree: 0%
 
 これらのフィールドを変更するには、次の手順に従います。
 
-1. アカウント（）にアクセスします [Adobeアカウントへのログイン](https://accounts.magento.cloud).
-1. 「」をクリック **[!UICONTROL Account Settings]** タブ。
-1. 「」を選択します *新しいパスワードを作成* チェックボックス。
-1. 必要な変更を行い、 *保存*.
+1. [Adobeアカウントのログイン ](https://accounts.magento.cloud) でアカウントにアクセスします。
+1. 「**[!UICONTROL Account Settings]**」タブをクリックします。
+1. 「*新しいパスワードを作成*」チェックボックスを選択します。
+1. 必要な変更を加え、「*保存*」をクリックします。
 
-**メモ**: *パスワードは変更されません。*
+**注意**: *パスワードは変更されません。*
 
 ## 変更できないもの
 
-1. **[!UICONTROL Password]**：パスワードを変更するには、次にアクセスします： [Adobeパスワードリセット](https://account.adobe.com/)このプロファイルはアカウント / メールアドレスにリンクされています。
+1. **[!UICONTROL Password]**:
+このプロファイルはAdobeのアカウント / メールアドレスにリンクされているので、パスワードを変更するには、[ パスワードのリセット ](https://account.adobe.com/) にアクセスしてください。
 
-1. **[!UICONTROL Email Address]**：このフィールドを変更するのは、個々の状況によって異なります。
+1. **[!UICONTROL Email Address]**:
+このフィールドを変更するのは、個々の状況によって異なります。
 
 現在のアカウントの所有権を新しい所有者または別のメールアドレスに転送する必要がある場合は、アカウントに関連付けられたプライマリユーザーのメールを更新する必要があります。
 
-以下を参照してください。 [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)
+次を参照してください：[https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)

@@ -19,8 +19,8 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 次の場合は、別のトラブルシューティングリソースも用意されています。
 
 * Adobe Commerce ラーニング : [https://learning.adobe.com/products-resources/contact-us.html](https://learning.adobe.com/products-resources/contact-us.html)
-* ソリューションパートナー： [https://solutionpartners.adobe.com/](https://solutionpartners.adobe.com/)
-* テクニカルパートナー： [https://partners.adobe.com/exchangeprogram/experiencecloud.html](https://solutionpartners.adobe.com/)
+* ソリューションパートナー：[https://solutionpartners.adobe.com/](https://solutionpartners.adobe.com/)
+* テクニカルパートナー：[https://partners.adobe.com/exchangeprogram/experiencecloud.html](https://solutionpartners.adobe.com/)
 * Commerce Marketplace: [https://commercemarketplace.adobe.com](https://commercemarketplace.adobe.com)
 
 技術ドキュメントまたはエンドユーザードキュメントを探している場合は、次のいずれかのリンクを使用してください。
@@ -34,7 +34,8 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 <td>Web サイト</td>
 </tr>
 <tr>
-<td rowspan="2">Adobe CommerceのオンプレミスおよびAdobe Commerceのクラウドインフラストラクチャ</td>
+<td rowspan="2">Adobe Commerceオンプレミスおよび
+クラウドインフラストラクチャー上のAdobe Commerce</td>
 <td>
 <p>開発者向け（技術）ドキュメント：</p>
 <p><a href="https://developer.adobe.com/commerce/docs/">https://developer.adobe.com/commerce/docs/</a></p>
@@ -101,5 +102,5 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 ## ブログとコミュニケーション
 
 * Adobeのセキュリティ センター（セキュリティ更新プログラムおよびパッチ）: [https://www.adobe.com/trust/resources.html](https://www.adobe.com/trust/resources.html)
-* Adobe Commerce Community Developer Blog （ハウツー、ベストプラクティス、コミュニティの技術ニュース）: [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
-* Adobe Commerce ブログ（e コマースの概要）:[https://business.adobe.com/blog/](https://business.adobe.com/blog/)
+* Adobe Commerce コミュニティ開発者向けブログ （チュートリアル、ベストプラクティス、コミュニティの技術ニュース）: [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
+* Adobe Commerce ブログ （e コマースの概要）:[https://business.adobe.com/blog/](https://business.adobe.com/blog/)

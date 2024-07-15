@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-50895: [!DNL Google Analytics] 次の場合、3 GTM タグは実行されません。 [!DNL Google Analytics] 4 GTM が設定されていません」'
-description: Adobe Commerceの問題を修正するために ACSD-50895 パッチを適用してください。この問題の場所は次のとおりです。 [!DNL Google Analytics] 次の場合、3 GTM タグは実行されません。 [!DNL Google Analytics] 4 GTM が設定されていません。
+title: '「ACSD-50895: [!DNL Google Analytics] 3 GTM が設定されていない場合、GTM タグが実行され  [!DNL Google Analytics]  せん」'
+description: ' [!DNL Google Analytics] 4 GTM が設定されていない場合、 [!DNL Google Analytics] 3 GTM タグが実行されないAdobe Commerceの問題を修正するために、ACSD-50895 パッチを適用します。'
 role: Admin
 exl-id: da48f6f1-a68b-4a9c-a79a-d7bd01b65dc2
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-50895: [!DNL Google Analytics] 次の場合、3 GTM タグは実行されません。 [!DNL Google Analytics] 4 GTM が設定されていません。
+# ACSD-50895:[!DNL Google Analytics] 3 GTM が設定されていない場合、[!DNL Google Analytics] 4 GTM タグが実行されない
 
-ACSD-50895 パッチは、次の問題を修正します。 [!DNL Google Analytics] 次の場合、3 GTM タグは実行されません。 [!DNL Google Analytics] 4 GTM が設定されていません。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.33 がインストールされています。 パッチ ID は ACSD-50895 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-50895 パッチは、[!DNL Google Analytics] 4 GTM が設定されていない場合に [!DNL Google Analytics] 3 GTM タグが起動されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.33 がインストールされている場合に使用できます。 パッチ ID は ACSD-50895 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -26,39 +26,39 @@ ACSD-50895 パッチは、次の問題を修正します。 [!DNL Google Analyti
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-[!DNL Google Analytics] 次の場合、3 GTM タグは実行されません。 [!DNL Google Analytics] 4 GTM が設定されていません。
+[!DNL Google Analytics] 3 GTM が設定されていない場合、[!DNL Google Analytics] 4 GTM タグは実行されません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 管理者ユーザーとしてログインします。
-1. Enable （有効） **[!DNL Google Analytics 3]** および **[!DNL Google Tag Manager]** 。対象： **Admin** > **ストア** > **設定** > **売上** > **GOOGLE API** > **Google Analytics**.
-1. を有効にしないでください **[!DNL Google Analytics 4]** および **[!DNL Google Tag Manager]**.
+1. **Admin**/**Store**/**Configuration**/**Sales**/10}Google API **/** Google Analytics **で、**[!DNL Google Analytics 3]**と&#x200B;**[!DNL Google Tag Manager]**を有効にします。**
+1. **[!DNL Google Analytics 4]** と **[!DNL Google Tag Manager]** を有効にしないでください。
 1. ストアフロントの商品ページを開きます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-GTM タグは、次の場合にのみ実行されます **[!DNL Google Analytics]** 3 GTM が有効になっています。
+GTM タグは、**[!DNL Google Analytics]** 3 GTM のみが有効な場合に実行されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-次の場合、GTM タグは実行されません **[!DNL Google Analytics]** 4 GTM が無効になっています。
+**[!DNL Google Analytics]** 4 GTM が無効になっている場合、GTM タグは実行されません。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

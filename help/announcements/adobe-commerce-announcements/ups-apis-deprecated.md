@@ -15,4 +15,4 @@ ht-degree: 0%
 
 United Postal Service （UPS）とのAdobe Commerce統合では、現在、OAuth 2.0 セキュリティモデルをサポートしていないため、UPS API は一時的に廃止されます。 ただし、このモデルは 2023 年末までにサポートされる予定です。 UPS は 2024 年 6 月 3 日（PT）まで API キーを介した認証をサポートするので、生成された API キーを使用する現在のマーチャントには影響しません。 生成されたキーのないマーチャントは統合を使用できませんが、マーケットプレイスの既存の統合を使用できます。
 
-詳しくは、developer.ups.comを参照してください。 [開発者ポータルアクセスキー移行ガイド](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914).
+詳しくは、developer.ups.com:[ 開発者ポータルアクセスキーの移行ガイド ](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914) を参照してください。

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-42689：読み込み中に製品カテゴリを更新すると、整合性制約違反エラーが発生する
 
-MDVA-42689 パッチを使用すると、インポート中に製品カテゴリを更新する際に、整合性制約違反エラーが発生する問題を解決できます。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 がインストールされています。 パッチ ID は MDVA-42689。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-42689 パッチを使用すると、インポート中に製品カテゴリを更新する際に、整合性制約違反エラーが発生する問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.12 がインストールされている場合に使用できます。 パッチ ID は MDVA-42689。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,27 +27,27 @@ MDVA-42689 パッチを使用すると、インポート中に製品カテゴリ
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 読み込み中に商品カテゴリの更新中に、Adobe Commerceが整合性制約違反エラーをスローする。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 2 つの web サイトを設定します。
-1. カテゴリページのルートカテゴリの下に、最大 2 レベルのサブカテゴリを作成します。 例えば、ルートカテゴリ > **歯車** > **ウォッチ**.
-1. 2 つのシンプルな製品を作成し、両方の製品を同じ製品に割り当てます **歯車** > **ウォッチ** カテゴリ。
+1. カテゴリページのルートカテゴリの下に、最大 2 レベルのサブカテゴリを作成します。 例えば、ルートカテゴリ / **歯車** / **ウォッチ** のように指定します。
+1. 2 つのシンプルな製品を作成し、両方の製品を同じ **歯車**/**ウォッチ** カテゴリに割り当てます。
 1. 両方の web サイトに 1 つのシンプルな製品を割り当てます。
 1. 商品を保存します。
 1. 読み込む CSV ファイルを準備します。 異なるストア表示を持つ 2 つの製品レコードがあるはずです。 一方の製品がこれらの両方のストア表示に属している必要があります。
-1. 次に移動して、CSV ファイルを読み込みます。 **システム** > **インポート** > **エンティティタイプ** （製品）。
+1. **システム**/**読み込み**/**エンティティタイプ** （製品）に移動して、CSV ファイルを読み込みます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 エラーなしで CSV ファイルが読み込まれます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 Adobe Commerceが次のエラーをスローする：
 
@@ -59,14 +59,14 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1302' for
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

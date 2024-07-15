@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Composer バージョン 1.10.20 以前
 
 >[!NOTE]
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 デプロイメントが失敗し、デプロイメントログに次のような情報が含まれている場合：
 
-*致命的なエラー：キャッチされない UnexpectedValueException: github.comの github OAuth トークンに無効な文字：「ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx」が/app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129 に含まれています*
+*致命的なエラー：見つからなかった予期しない ValueException: github.comの github OAuth トークンに無効な文字：「ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx」が/app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129 に含まれています*
 
 ## 原因：
 
@@ -38,13 +38,13 @@ Composer キーが古いと、Github トークンでエラーが発生し、デ�
 
 この問題を解決するには、Composer のバージョンを 1.10.22 にアップデートしてください。
 
-1. ローカル環境でを実行します。 `composer require “composer/composer”:”>1.10.21`.
-1. これにより、その Composer パッケージ バージョンの要件が追加されます。 ロックファイルを確認します –  `composer/composer` バージョンは 1.0.22 以上である必要があります。
-1. コミット `composer.json` および `composer.lock` デプロイメントをプッシュします。
+1. ローカル環境で、`composer require “composer/composer”:”>1.10.21` を実行します。
+1. これにより、その Composer パッケージ バージョンの要件が追加されます。 ロックファイルを確認します。`composer/composer` のバージョンは 1.0.22 以降である必要があります。
+1. `composer.json` および `composer.lock` をコミットし、デプロイメントをプッシュします。
 
-この方法で解決しない場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+この方法が機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
 
 ## 関連資料
 
-* [Github ブログ：GitHub の新しい認証トークン形式の背後](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上しました](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [Github ブログ：GitHub の新しい認証トークン形式の背後 ](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
+* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上 ](https://www.infoq.com/news/2021/04/github-new-token-format/)

@@ -12,23 +12,23 @@ ht-degree: 0%
 
 # Magento.comと accounts.magento.cloud アカウントのログインにリンクします
 
-2020 年 4 月 1 日から、Adobe Commerceでは、 [accounts.magento.cloud](https://accounts.magento.cloud/) このアカウントをのユーザーにリンクするには [Magento.com](https://account.magento.com/customer/account/login/) アカウント。 これで [Magento.com](https://account.magento.com/customer/account/login/) アカウントログイン両方のアカウントのプライマリログイン方法であり、ユーザーのセキュリティを向上させます。
+2020 年 4 月 1 日（PT）をもって、Adobe Commerceは、{accounts.magento.cloud](https://accounts.magento.cloud/) でアカウントを持つユーザーに、このアカウントを [2}user.com](https://account.magento.com/customer/account/login/) アカウントにリンクすることをMagentoに求めます。 [これにより、[User.com](https://account.magento.com/customer/account/login/) アカウントへのMagentoが両方のアカウントのプライマリ ログイン方式になり、ユーザーのセキュリティが向上します。
 
-のユーザー [accounts.magento.cloud](https://accounts.magento.cloud/) は、次の 2 つの方法のいずれかを使用して、これらのアカウントを接続できます。
+[accounts.magento.cloud](https://accounts.magento.cloud/) のユーザーは、次の 2 つの方法のいずれかを使用してこれらのアカウントに接続できます。
 
 ## 方法 1
 
-1. に移動 **アカウント設定** 時刻 [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) 好みの方法でログインした後。
-1. を開きます **シングルサインオン** ページのセクション。
-1. 次の場合 **プロバイダー：Magento.com** レポートの「ステータスが接続されていません」を選択します **Magento.comとの接続** ボタン。
-1. リダイレクト先 [https://account.magento.com/applications/customer/login/](https://account.magento.com/applications/customer/login/).
+1. 任意の方法でログインしてから、**アカウント設定** （[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user)）に移動してください。
+1. ページの **シングルサインオン** セクションを開きます。
+1. **Provider: Magento.com** から「Status Not Connected」と表示された場合は、「**Connect with Magento.com**」ボタンを選択します。
+1. [https://account.magento.com/applications/customer/login/](https://account.magento.com/applications/customer/login/) にリダイレクトされます。
 1. ここから、Adobe Commerce アカウントを作成するか、既存のアカウントにログインできます。
 
 ## 方法 2
 
-1. へのログイン [https://account.magento.com](https://account.magento.com/).
-1. 別のタブに移動して、次の操作を行います [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user).
-1. 「接続先」をクリックします [Magento.com](https://account.magento.com/customer/account/login/)」と入力します。
+1. [https://account.magento.com](https://account.magento.com/) にログインします。
+1. 別のタブに移動して、[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) に移動します。
+1. 「Magento[Connect.com](https://account.magento.com/customer/account/login/)」をクリックします。
 
 ## 関連資料
 

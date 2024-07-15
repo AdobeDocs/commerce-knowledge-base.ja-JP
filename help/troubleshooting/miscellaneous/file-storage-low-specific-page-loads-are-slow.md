@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 問題
 
-大容量の画像がで大量のストレージを使用していると、ディスクのストレージが少なくなり、ページの読み込みに時間がかかる可能性があります。 `pub/media/catalog/products` （専用のステージング環境がプロビジョニングされていない限り）ステージング環境と実稼動環境の間でディスク領域を共有する。
+専用のステージング環境がプロビジョニングされていない限り、ス `pub/media/catalog/products` ージングに大量のストレージを使用し、ステージングと実稼動環境の間でディスク領域を共有すると、大きなリッチ画像が原因で、ディスク記憶域が少なくページの読み込みが遅くなる可能性があります。
 
 ## 原因：
 
@@ -33,8 +33,8 @@ ht-degree: 0%
 
 画像をアップロードする前に、パフォーマンスと表示品質のバランスを取るために画像を最適化および圧縮します。 これにより、スペースを増やし、ページ読み込み時間を短縮できます。 PNG は、単色の領域が大きい画像ほどサイズが小さくなります。 JPEGは他のすべてのもののために小さいサイズを与えます。 最も高い圧縮率を使用します（著しい劣化は発生しません）。 これは通常 60～80% です。
 
-使用方法 [Fastly 画像の最適化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) より記憶効率の良い画像を生成する。
+[Fastly 画像の最適化 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) を使用すると、よりストレージ効率の高い画像を作成できます。
 
 ## 関連資料
 
-ディスク容量の管理について（クラウドインフラストラクチャ上のAdobe Commerceを使用している場合）詳しくは、 [Adobe Commerceでのディスク容量の管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) （Commerce on Cloud Infrastructure ガイド）を参照してください。
+Commerce on Cloud Infrastructure を使用している場合のディスク容量の管理については、Adobe Commerce on Cloud Infrastructure ガイドの [Adobe Commerceでのディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) を参照してください。

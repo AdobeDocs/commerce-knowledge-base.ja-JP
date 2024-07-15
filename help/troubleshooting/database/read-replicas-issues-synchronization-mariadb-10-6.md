@@ -26,11 +26,11 @@ ht-degree: 0%
 
 ## 原因：
 
-この `slave_parallel_mode` データベースの設定は、デフォルトでに変更されました。 *最適主義* 値をどのような場合に設定するか *保守的*、および `synchronous_replication` ece-Tools の値はデフォルトで *true* 値をどのような場合に設定するか *偽*.
+値を *保守的* にする必要がある場合、データベースの `slave_parallel_mode` 設定はデフォルトで *optimistics* に変更され、Ece-Tools の `synchronous_replication` 値は、値を *false* にする場合に *true* にデフォルト設定されています。
 
 ## 解決策
 
-1. を確認します。 `slave_parallel_mode` パラメーターはに設定されています。 *保守的* （次が必要です [サポートチケットを発行する](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 値がとして表示されない場合 *保守的*）に設定します。 確認するには、次のコマンドを実行します。
+1. `slave_parallel_mode` パラメーターが *conservative* に設定されていることを確認します（値が *conservative* と表示されていない場合は、[ サポートチケットを発行 ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) する必要があります）。 確認するには、次のコマンドを実行します。
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -42,7 +42,7 @@ ht-degree: 0%
     1 row in set (0.001 sec)
    ```
 
-1. 更新 `.magento.env.yaml` データベース構成を次に示します。
+1. `.magento.env.yaml` データベース設定を次のように更新します。
 
    ```yaml
        DATABASE_CONFIGURATION:
@@ -54,10 +54,10 @@ ht-degree: 0%
 
 
 
-データベース設定の更新手順については、次を参照してください [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) クラウドインフラストラクチャガイドのCommerceにおける変数のデプロイのトピックを参照してください。
+データベース設定を更新する手順については、Cloud Infrastructure ガイドのCommerceにある「変数のデプロイ」トピックの [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) を参照してください。
 
 
 ## 関連資料
 
-* [デプロイメント用の環境変数の設定](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) （Commerce on Cloud Infrastructure ガイド）を参照してください。
-* [データベース設定のベストプラクティス](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) 実装プレイブック内。
+* Commerce on Cloud Infrastructure ガイドの [ デプロイメント用の環境変数の設定 ](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)。
+* 実装プレイブックの [ データベース設定のベストプラクティス ](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)。

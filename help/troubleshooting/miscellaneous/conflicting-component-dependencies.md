@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # コンポーネントの依存関係が競合しています
 
-この記事では、コンポーネントの依存関係が競合する場合の解決策を示します。 Web 設定ウィザードを使用してAdobe Commerceを設定または更新しようとすると、 *「競合するコンポーネントの依存関係が見つかりました」* Composer エラーメッセージ。
+この記事では、コンポーネントの依存関係が競合する場合の解決策を示します。 Web セットアップウィザードを使用してAdobe Commerceをセットアップまたは更新しようとすると、*「競合するコンポーネントの依存関係が見つかりました」* という Composer エラーメッセージが表示されます。
 
 ## 影響を受ける製品とバージョン
 
@@ -51,21 +51,21 @@ We have detected conflicts with the following packages:
 クラウドインフラストラクチャー上でAdobe Commerceをアップグレードしている場合は、以下の手順を実行して競合するコンポーネントの依存関係を解決してください。
 
 * アップグレードに使用するキーを確認します。 キーは正しいメールアカウントから生成されていますか？
-* 権限を確認し、Magentoのアップグレード要件に一致していることを確認します。 レビュー [Magentoのアップグレードの概要/更新とアップグレードのチェックリスト/ファイルシステムの権限](https://devdocs.magento.com/guides/v2.3/comp-mgr/prereq/prereq_compman-checklist.html#perms) 開発者向けドキュメントを参照してください。
+* 権限を確認し、Magentoのアップグレード要件に一致していることを確認します。 開発者向けドキュメントで、[Magentoのアップグレードの概要/更新およびアップグレードのチェックリスト/ファイルシステムの権限 ](https://devdocs.magento.com/guides/v2.3/comp-mgr/prereq/prereq_compman-checklist.html#perms) を確認してください。
 
 ## サードパーティモジュールとの非互換性： {#incompatibility-third-party-modules}
 
 コンポーネントの依存関係の競合は、インストールしたものよりも古いCommerce コンポーネントに依存しているサードパーティモジュールが原因で発生することもあります。 次の操作を試してください。
 
-1. 前項 [例](#issue)の場合、インストールされているパッケージ magento/sample-data バージョン 0.74.0-beta15 を 1.0.0-beta にアップグレードすることはできません。 ただし、0.74.0-beta15 は 0.74.0-beta16 （またはその他）にアップグレードできます。 編集 `composer.json` これらの変更を行います。 通常、プロジェクトがリクエストするバージョンは、 `require` または `require-dev` その JSON ファイル内のオブジェクトのプロパティ。 提供されるパッケージバージョンのオプションに応じて、特定のバージョンまたは制約を指定する場合があります。 Composer の使用方法に関する一般的なガイダンスについては、クラウドインフラストラクチャを使用している場合は、次を参照してください。 [Cloud for Adobe Commerce/技術と要件/Composer](https://devdocs.magento.com/cloud/reference/cloud-composer.html#files) 開発者向けドキュメントを参照してください。 Adobe Commerceをオンプレミスで使用している場合は、を参照してください。 [Adobe Commerce/インストールガイド/Composer を使用したAdobe Commerceのインストール](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) .
-1. 次に、準備チェックを試します。 レビュー [Adobe Commerceのアップグレードの概要/Module Manager の実行/手順 1 の準備状況チェック](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-readiness.html) 開発者向けドキュメントを参照してください。
-1. 別のコンポーネント依存関係チェック失敗メッセージで準備チェックが失敗した場合は、を使用しているかどうかに応じて、次のリンクをクリックします [Adobe Commerce](#magento-commerce-magento-commerce-cloud) または [Magento Open Source](#opensource) 詳細なトラブルシューティング手順については、を参照してください。
+1. 上記の [ 例 ](#issue) では、インストールされたパッケージ magento/sample-data バージョン 0.74.0-beta15 を 1.0.0-beta にアップグレードすることはできません。 ただし、0.74.0-beta15 は 0.74.0-beta16 （またはその他）にアップグレードできます。 `composer.json` を編集して、これらの変更を加えます。 通常、プロジェクトが要求するバージョンは、その JSON ファイル内のオブジェクトの `require` または `require-dev` プロパティで定義されます。 提供されるパッケージバージョンのオプションに応じて、特定のバージョンまたは制約を指定する場合があります。 Composer の使用方法に関する一般的なガイダンスは、アドビのクラウドインフラストラクチャを使用している場合は、開発者向けドキュメントの [Cloud for Adobe Commerce/テクノロジーと要件/Composer](https://devdocs.magento.com/cloud/reference/cloud-composer.html#files) を参照してください。 Adobe Commerceをオンプレミスで使用している場合は、[Adobe Commerce/インストールガイド/Composer を使用したAdobe Commerceのインストールを参照してください ](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html)
+1. 次に、準備チェックを試します。 開発者向けドキュメントで、[Adobe Commerce アップグレードの概要/Module Manager を実行する/手順 1 の準備チェック ](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-readiness.html) を確認します。
+1. 別のコンポーネント依存関係チェックの失敗メッセージで準備チェックが失敗した場合は、[Adobe Commerce](#magento-commerce-magento-commerce-cloud) または [Magento Open Source](#opensource) のどちらを使用しているかに応じて次のリンクをクリックして、詳細なトラブルシューティング手順を取得します。
 
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}
 
-1. サポートを受けられるよう、拡張機能の開発者にお問い合わせください。 Commerce Marketplaceから拡張機能を購入したページに、連絡先情報が表示されます。 を探します。 **販売者に連絡** 右パネルに表示されるボタン。 すべてのCommerce開発者は、Marketplace で拡張機能を公開する際に、ユーザーおよびインストールガイドを提供する必要があります。 両方の画像はランディングページの右側にあります。
-1. 売主から相当の期間に回答がない場合は、 [marketplace サポートに連絡](mailto:commercemarketplacesupport@adobe.com) それにより、お客様のカスタマーサポートに対するコミットメントを思い出してもらうことができます。
+1. サポートを受けられるよう、拡張機能の開発者にお問い合わせください。 Commerce Marketplaceから拡張機能を購入したページに、連絡先情報が表示されます。 右側のパネルに表示されている **販売者に連絡** ボタンを探します。 すべてのCommerce開発者は、Marketplace で拡張機能を公開する際に、ユーザーおよびインストールガイドを提供する必要があります。 両方の画像はランディングページの右側にあります。
+1. 販売者から妥当な時間内に回答がない場合は、カスタマーサポートのコミットメントを思い出させるために、[Marketplace サポートにお問い合わせ ](mailto:commercemarketplacesupport@adobe.com) ください。
 
 ## Magento Open Source {#opensource}
 
-で支援を依頼する [メインフォーラム](https://community.magento.com/) または [Adobe Commerce パートナーに連絡](https://magento.com/find-a-partner) これは、オープンなSourceの問題に役立ちます。
+Open Sourceの問題を支援する [ メインフォーラム ](https://community.magento.com/) でサポートをリクエストするか、[Adobe Commerce パートナーにお問い合わせください ](https://magento.com/find-a-partner)。

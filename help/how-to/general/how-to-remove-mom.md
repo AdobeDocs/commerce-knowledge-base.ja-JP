@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # Magento Order Management（MOM）の削除方法
 
-1. 次の手順に従って、MOM 統合を無効にします。 [統合を無効または有効にする](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration).
-1. MOM モジュールを無効にするには、次の手順に従います。 [モジュールのアンインストール](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
-1. フルオーダーデータを抽出するには、API を提供しています。 詳しくは、 [注文リポジトリ](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) 私たちのAdobeでは |注文情報（order_repository）をカバーするMagentoOMS ドキュメント。 の使用 [仕様欄](https://omsdocs.magento.com/specifications/#services) 私たちのAdobeでは | Magento他の API を使用して様々な情報タイプを抽出するための OMS ドキュメント。
+1. [ 統合の無効化または有効化 ](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration) の手順に従って、MOM 統合を無効にします。
+1. [ モジュールのアンインストール ](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) の手順に従って、MOM モジュールを無効にします。
+1. フルオーダーデータを抽出するには、API を提供しています。 詳しくは、Adobeの [ 注文リポジトリー ](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) を確認してください |注文情報（order_repository）をカバーするMagentoOMS ドキュメント。 Adobeで [ 仕様セクション ](https://omsdocs.magento.com/specifications/#services) を使用します。 | Magento他の API を使用して様々な情報タイプを抽出するための OMS ドキュメント。

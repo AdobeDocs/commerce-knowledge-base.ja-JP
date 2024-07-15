@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ### サービス利用規約
 
-Adobe Commerce on cloud infrastructure エディション [サービス利用規約](https://magento.com/legal/terms/cloud-terms) 同条第 18 条には次の条項が盛り込まれている。
+Adobe Commerce on cloud infrastructure Edition[ 利用規約 ](https://magento.com/legal/terms/cloud-terms) は、第 18 条に以下を規定しています。
 
 > お客様は、Adobe Commerceおよび本サービスが、本ソフトウェアに直接依存しない他のサードパーティ製ソフトウェアアプリケーションをホスティングするために使用されないことに同意します。
 
@@ -29,10 +29,10 @@ Adobe Commerce on cloud infrastructure エディション [サービス利用規
 PCI 認定のレベル 1 のソリューションプロバイダーであるクラウドインフラストラクチャー上のAdobe Commerceは、PCI データセキュリティ標準に従い、次のことを確認する必要があります。
 
 >...安全なシステムとアプリケーションの開発と維持
-> （[PCI コンプライアンスに対するAdobeアプローチ](https://magento.com/pci-compliance) 要件 6：脆弱性管理プログラムの維持）
+> （[PCI コンプライアンスへのAdobeアプローチ ](https://magento.com/pci-compliance) 要件 6、Maintain a Vulnerability Management Program）
 
 Adobeでは、サードパーティ製アプリケーションの PCI 準拠を保証できないので、クラウドサーバーにそのようなアプリケーションをインストールすることはできません。
 
 ## ヒント：より良い統合のために、Commerce Marketplace拡張機能を使用する
 
-クラウドインフラストラクチャアプリケーション上のAdobe Commerceと、外部サーバーでホストされるサードパーティのソリューションの統合を改善するために、 [Commerce Marketplace](https://marketplace.magento.com) 目的に合った拡張機能。
+クラウドインフラストラクチャアプリケーション上のAdobe Commerceと、外部サーバーでホストされるサードパーティのソリューションとの統合を強化するために、目的に合った [Commerce Marketplace](https://marketplace.magento.com) 拡張機能を使用することをお勧めします。

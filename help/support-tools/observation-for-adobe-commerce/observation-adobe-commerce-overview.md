@@ -17,4 +17,4 @@ Adobe Commerceの監視は、New Relic サイトのステータスや現在ま�
 
 Adobe Commerceの「概要」タブは、サイトで発生した問題をすばやく確認して、サイトの問題の潜在的な根本原因を自動解決または特定するのに役立ちます。 追加のタブでは、コンポーネント・サービス、データベース、インフラストラクチャ、プロセスの状態に関する詳細な情報を提供します。
 
-クラウドインフラストラクチャー上で Observation for Adobe Commerceを使用する方法に関するガイドについては、以下を参照してください。 [Adobe Commerceの監視](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) Experience Leagueのガイド
+クラウドインフラストラクチャでAdobe Commerceの観測を使用する方法の完全なガイドを確認するには、Experience Leagueの [Adobe Commerceの観測 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) ガイドを参照してください。

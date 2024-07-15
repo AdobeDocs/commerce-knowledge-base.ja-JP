@@ -9,13 +9,13 @@ ht-degree: 0%
 
 ---
 
-# の検索エンジンを変更できません `app/etc/env.php`
+# `app/etc/env.php` の検索エンジンを変更できません
 
-この記事では、から検索エンジン設定を削除しようとする問題の解決策を提供します `app/etc/env.php` ファイルを再デプロイした後に、設定が以前の設定に戻るか、に変更されます。 [!DNL OpenSearch] デフォルトでは。
+この記事では、`app/etc/env.php` ファイルから検索エンジンの構成を削除しようとして、展開し直した後に構成が以前の設定に戻ったり、既定で [!DNL OpenSearch] に変更されたりする問題の解決策を示します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
@@ -23,11 +23,11 @@ Commerce Admin で検索エンジンを変更しようとすると、フィー�
 
 ## 原因：
 
-検索エンジンの設定は、 `app/etc/env.php` ファイルまたは検索エンジンが `.magento.env.yaml` ファイル。
+検索エンジンの設定が `app/etc/env.php` ファイルでロックされているか、検索エンジンが `.magento.env.yaml` ファイルで明示的に定義されています。
 
 ## 解決策
 
-1. を確認します `.magento.env.yaml` デプロイステージの下のファイルで、 `SEARCH_CONFIGURATION` 変数が設定されています。 例：
+1. デプロイステージの下の `.magento.env.yaml` ファイルを確認し、`SEARCH_CONFIGURATION` 変数が設定されているかどうかを確認します。 例：
 
    ```yaml
    SEARCH_CONFIGURATION:
@@ -36,10 +36,10 @@ Commerce Admin で検索エンジンを変更しようとすると、フィー�
    <VARIABLE X>
    ```
 
-1. が  `SEARCH_CONFIGURATION` 変数が存在する場合 存在しない場合、検索エンジン設定はロックされます [!DNL OpenSearch] デフォルトでは。 設定を変更するには、変数をに追加する必要があります。 `.magento.env.yaml` 検索エンジンに適した値を持つファイル。 次の場合 `SEARCH_CONFIGURATION` 変数が存在しており、エンジンを変更する場合は、にあるエンジンの既存の値を `.magento.env.yaml`. 可能な値/既知の値： [!DNL opensearch], [!DNL livesearch], [!DNL elasticsuite], [!DNL amasty_elastic]、および [!DNL amasty_elastic_opensearch].
+1. `SEARCH_CONFIGURATION` 変数は存在しますか？ 存在しない場合、検索エンジン設定は、デフォルトで [!DNL OpenSearch] にロックされます。 設定を変更するには、変数を `.magento.env.yaml` ファイルに追加し、検索エンジンに適した値を指定する必要があります。 `SEARCH_CONFIGURATION` 変数が存在し、エンジンを変更する場合は、`.magento.env.yaml` のエンジンの既存の値を置き換えます。 可能な値/既知の値：[!DNL opensearch]、[!DNL livesearch]、[!DNL elasticsuite]、[!DNL amasty_elastic]、[!DNL amasty_elastic_opensearch]。
 1. インスタンスを再デプロイします。
 1. 管理者の検索エンジンフィールドはロックされたままになりますが、指定した値で更新される必要があります。
 
 ## 関連資料
 
-* [Commerce Admin でロックされたフィールド](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
+* [ クラウドインフラストラクチャー上のCommerceのCommerce管理者 ](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) でロックされたフィールド」ガイド。

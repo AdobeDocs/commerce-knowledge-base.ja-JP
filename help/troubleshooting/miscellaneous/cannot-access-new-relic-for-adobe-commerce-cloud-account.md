@@ -1,6 +1,6 @@
 ---
-title: にアクセスできません [!DNL New Relic] Adobe Commerce クラウドプロジェクト上
-description: この記事では、にアクセスできない場合の解決策を説明します [!DNL New Relic] Adobe Commerceのクラウドプロジェクトに追加された場合でも。
+title: Adobe Commerce クラウドプロジェク  [!DNL New Relic]  にアクセスできない
+description: ここでは、Adobe Commerce上のクラウドプロジェクトに追加されているにもかかわらず  [!DNL New Relic]  アクセスできない場合の解決策について説明します。
 exl-id: bafe2dd9-8a16-4249-b814-7e421e25e828
 feature: Cloud, Observability, Paas
 role: Developer
@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# にアクセスできません [!DNL New Relic] Adobe Commerce Cloud プロジェクト上
+# Adobe Commerce Cloud プロジェクトの [!DNL New Relic] にアクセスできない
 
-この記事では、にアクセスできない場合の解決策を説明します [!DNL New Relic] がAdobe Commerce クラウドプロジェクトに追加されたにもかかわらず、
+この記事では、Adobe Commerce クラウドプロジェクトに追加されたにもかかわらず、[!DNL New Relic] にアクセスできない場合の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerceすべて [サポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerceすべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
-クラウドプロジェクトに追加されているにもかかわらず、 [!DNL New Relic] そのプロジェクトのアカウント。
+クラウドプロジェクトに追加されているにもかかわらず、そのプロジェクトの [!DNL New Relic] アカウントにアクセスすることはできません。
 
 ## 原因：
 
-クラウドプロジェクトに追加されても、自動的には付与されません [!DNL New Relic] アクセス。
+クラウドプロジェクトに追加されても、自動的に [!DNL New Relic] のアクセス権が付与されるわけではありません。
 
 ## 解決策
 
-New Relic アカウントオーナーに連絡し、のアカウントにあなたを追加するようリクエストします [!DNL New Relic].
+New Relic アカウントオーナーに連絡し、[!DNL New Relic] の自分のアカウントにあなたを追加するようリクエストします。
 
 ## 関連資料
 
-[管理 [!DNL New Relic] アカウント](https://devdocs.magento.com/cloud/project/new-relic.html#manage-new-relic-account) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [Manage [!DNL New Relic] account](https://devdocs.magento.com/cloud/project/new-relic.html#manage-new-relic-account) を参照してください。

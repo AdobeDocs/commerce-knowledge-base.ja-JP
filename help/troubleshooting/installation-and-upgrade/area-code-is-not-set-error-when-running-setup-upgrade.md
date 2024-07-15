@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# 実行中に「市外局番が設定されていません」エラーが発生する `setup:upgrade`
+# `setup:upgrade` を実行中に「市外局番が設定されていません」エラーが発生する
 
-この記事では、の取得に関連するAdobe Commerce on cloud infrastructure 2.2.3 の既知の問題に対するパッチを提供します *「市外局番が設定されていません」* 次のコマンドの実行中にエラーが発生しました：
+この記事では、次のコマンドを実行した際に *エリアコードが設定されていません」というエラーが発生することに関連する* Cloud Infrastructure 2.2.3 上の既知のAdobe Commerceの問題に対するパッチを提供します。
 
 ```bash
 setup:upgrade
@@ -31,7 +31,7 @@ setup:upgrade
 bin/magento setup:upgrade
 ```
 
-コマンドを実行すると、次のエラーメッセージが表示されます。 *「モジュール「Magento\_AdvancedSalesRule」：データをインストール中…市外局番が設定されていません：セッションを開始する前に、市外局番を設定する必要があります」* コマンドの実行が中断されます。 この問題は、実際に設定される前にエリアの設定が要求されることが原因で発生します。 パッチを適用すると、エラーをキャッチでき、アップグレードプロセスが中断されることはありません。
+Magento コマンドで「*Module &#39;Module\_AdvancedSalesRule&#39;: Installing data...Area code not set: Area code must set before a session」というエラーメッセージが表示され* コマンドの実行が中断されます。 この問題は、実際に設定される前にエリアの設定が要求されることが原因で発生します。 パッチを適用すると、エラーをキャッチでき、アップグレードプロセスが中断されることはありません。
 
 ## パッチ
 
@@ -51,6 +51,6 @@ bin/magento setup:upgrade
 
 ## パッチの適用方法
 
-手順については、を参照してください [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

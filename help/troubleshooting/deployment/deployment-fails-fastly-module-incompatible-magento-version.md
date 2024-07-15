@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ここでは、Fastly モジュールが現在のAdobe Commerceのバージョンと互換性がないことが原因でデプロイが失敗した場合の対応策を説明します。
 
-**問題：** 新しいコミットおよびプッシュの後にデプロイメントが失敗し、次のようなエラーメッセージが表示されます。
+**問題：** 新しいコミットおよびプッシュの後、デプロイメントが失敗し、次のようなエラーメッセージが表示されます。
 
 >\[ 例外\] 警告：Fastly\\Cdn\\Plugin\\...の引数 3 が不足しています。これは/app/vendor/magento/framework/Interception/Interceptor.phpで呼び出され、/app/vendor/fastly/magento2/Plugin/ExcludeFilesFromMinification.phpで定義されています…
 
-**原因：** fastly モジュール v1.2.79 における後方互換性のない変更。
+**原因：** Fastly モジュール v1.2.79 における後方互換性のない変更。
 
-**解決策（一時的）:** fastly モジュールをバージョン 1.2.82 以降にアップグレードし、Commerce Admin に新しい VCL をアップロードします。 その後、変更をコミットしプッシュして、デプロイメントが成功したことをトリガーします。
+**解決策（一時的）:** Fastly モジュールをバージョン 1.2.82 以降にアップグレードし、新しい VCL をCommerce Admin にアップロードします。 その後、変更をコミットしプッシュして、デプロイメントが成功したことをトリガーします。
 
 ## 影響を受けるバージョン
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-クラウドインフラストラクチャソリューションでAdobe Commerceを使用している場合は、次の場所にこのエラーメッセージが表示されます。 [ログをデプロイ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log). Adobe Commerce オンプレミスの場合は、コマンドラインにエラーが表示されます。
+クラウドインフラストラクチャソリューションでAdobe Commerceを使用している場合は、このエラーメッセージが [ デプロイログ ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log) に表示されます。 Adobe Commerce オンプレミスの場合は、コマンドラインにエラーが表示されます。
 
 ## 原因：
 
@@ -70,4 +70,4 @@ Fastly モジュールをバージョン 1.2.82 以降にアップグレード�
    * fastly モジュールが magento-cloud-metapackage に含まれている場合：    <pre>composer update magento/magento-cloud-metapackage</pre>
    * fastly モジュールが個別にインストールされた場合（例えば、cloud edition ではなくAdobe Commerceをオンプレミスで使用している場合） <pre>composer update fastly/magento2</pre>
 1. 変更内容をコミットしてプッシュし、デプロイメントプロセスをトリガーします（自動的に行われない場合）。
-1. 管理者で、 [fastly への新しい VCL のアップロード](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. Admin で [ 新しい VCL を Fastly にアップロードします ](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets)。

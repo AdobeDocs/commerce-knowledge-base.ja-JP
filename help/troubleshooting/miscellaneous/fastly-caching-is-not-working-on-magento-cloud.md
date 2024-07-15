@@ -34,24 +34,24 @@ ht-degree: 0%
 
 ### dig コマンドを使用したテスト
 
-まず、URL に対して dig コマンドを使用してヘッダーを確認します。 端末アプリケーションで、dig と入力します。 `<url>` で Fastly サービスがヘッダーに表示されることを確認します。 その他の掘り下げテストについては、Fastly のを参照してください。 [DNS 変更前のテスト](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
+まず、URL に対して dig コマンドを使用してヘッダーを確認します。 ターミナルアプリケーションで、dig `<url>` と入力し、Fastly サービスがヘッダーに表示されることを確認します。 その他の dig テストについては、Fastly の [DNS 変更前のテスト ](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains) を参照してください。
 
 例：
 
-* ライブサイト： `dig http[s]://<your domain>`
-* ステージング： `dig http[s]://staging.<your domain>.c.<instanceid>.ent.magento.cloud`
-* 実稼動： `dig http[s]://<your domain>.{1|2|3}.<project ID>.ent.magento.cloud`
+* ライブサイト：`dig http[s]://<your domain>`
+* ステージング：`dig http[s]://staging.<your domain>.c.<instanceid>.ent.magento.cloud`
+* 実稼動：`dig http[s]://<your domain>.{1|2|3}.<project ID>.ent.magento.cloud`
 
 ### curl コマンドによるテスト
 
 次に、curl コマンドを使用して、X-header-Tags が存在することと、追加のMagento情報を確認します。 コマンドの形式は、ステージングと実稼動で異なります。
 
-これらのコマンドの詳細については、挿入時に Fastly をバイパスしてください `-H "host:URL"`を、接続元（OneDrive スプレッドシートの CNAME 情報）に置き換えます。 `-k` は SSL を無視し、 `-v` 詳細応答を提供します。 ヘッダーが正しく表示される場合は、ライブサイトを確認して、ヘッダーを再度確認します。
+これらのコマンドについて詳しくは、`-H "host:URL"` を挿入する際に Fastly をバイパスし、接続場所（OneDrive スプレッドシートからの CNAME 情報）の元に置き換え、`-k` は SSL を無視し、詳細な応答を提供 `-v` ます。 ヘッダーが正しく表示される場合は、ライブサイトを確認して、ヘッダーを再度確認します。
 
 * Fastly をバイパスしてオリジンサーバーに直接アクセスする際にヘッダーの問題が発生した場合は、コード、拡張機能、インフラストラクチャに問題がある可能性があります。
 * オリジンサーバーに直接エラーが発生していないが、Fastly を通じてライブドメインにヘッダーが届いていない場合は、Fastly エラーが発生している可能性があります。
 
-まず、を確認します **ライブサイト** 応答ヘッダーを検証します。 コマンドは、応答を受信するために Fastly 拡張機能を経由します。 正しいヘッダーが届かない場合は、オリジンサーバーを直接テストする必要があります。 このコマンドは、の値を返します。 `Fastly-Magento-VCL-Uploaded` および `X-Cache` ヘッダー。
+まず、**ライブサイト** を確認して、応答ヘッダーを検証します。 コマンドは、応答を受信するために Fastly 拡張機能を経由します。 正しいヘッダーが届かない場合は、オリジンサーバーを直接テストする必要があります。 このコマンドは、`Fastly-Magento-VCL-Uploaded` ヘッダーと `X-Cache` ヘッダーの値を返します。
 
 1. ターミナルで、次のコマンドを入力してライブサイト URL をテストします。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
    curl http://<live URL> -vo /dev/null -HFastly-Debug:1 [--resolve]
    ```
 
-   使用方法 `--resolve` ライブ URL が DNS で設定されておらず、静的ルートが設定されていない場合にのみ使用します。 例：
+   ライブ URL が DNS で設定されておらず、静的ルートも設定されていない場合にのみ、`--resolve` を使用します。 例：
 
    ```
    curl http://www.mymagento.biz -vo /dev/null -HFastly-Debug:1
@@ -71,19 +71,19 @@ ht-degree: 0%
    < Fastly-Magento-VCL-Uploaded: yes    < X-Cache: HIT, MISS
    ```
 
-テスト対象 **ステージング** :
+テストするには **ステージング** :
 
 ```
 curl http[s]://staging.<your domain>.c.<instanceid>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-テスト対象 **実稼動用ロードバランサー** :
+**実稼動ロードバランサー** をテストするには：
 
 ```
 curl http[s]://<your domain>.c.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-テスト対象 **実稼動元ノード** :
+**実稼動オリジンノード** をテストするには：
 
 ```
 curl http[s]://<your domain>.{1|2|3}.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
@@ -163,20 +163,20 @@ curl コマンドの出力は長くなる場合があります。 以下は概�
 1. 「Fastly 設定」をクリックします。 Fastly サービス ID と Fastly API トークンが入力されていることを確認します（Fastly 資格情報）。 ステージング環境と実稼動環境に正しい資格情報が入力されていることを確認します。 「テスト資格情報」をクリックしてください。
 1. composer.json を編集し、Fasty モジュールがバージョンに含まれていることを確認します。 このファイルには、バージョンと共にすべてのモジュールがリストされています。
 
-   * 「require」セクションには、「fastly/magento2」が必要です。 `<version number>`
+   * 「require」セクションには、「fastly/magento2」が必要です。`<version number>`
    * 「リポジトリ」セクションには、次が必要です。
 
    ```
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Configuration Management を使用する場合は、設定ファイルが必要です。 app/etc/config.app.php （2.0、2.1）またはapp/etc/config.php（2.2）ファイルを編集し、次の設定を確認します `'Fastly_Cdn' => 1` は正しいです。 この設定は、にしないでください `'Fastly_Cdn' => 0` （無効にすることを意味します）。Fastly を有効にした場合は、設定ファイルを削除し、bin/magento magento-cloud:scd-dump コマンドを実行して更新します。 このファイルの詳細については、を参照してください。 [システム固有の設定の管理例](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) （設定ガイド）を参照してください。
+1. Configuration Management を使用する場合は、設定ファイルが必要です。 app/etc/config.app.php （2.0、2.1）またはapp/etc/config.php（2.2）ファイルを編集し、`'Fastly_Cdn' => 1` の設定が正しいことを確認します。 この設定は `'Fastly_Cdn' => 0` （無効）にしないでください。Fastly を有効にした場合は、設定ファイルを削除し、bin/magento magento-cloud:scd-dump コマンドを実行して更新します。 このファイルの手順については、『設定ガイド』の [ システム固有の設定の管理例 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) を参照してください。
 
-モジュールがインストールされていない場合は、 [統合環境](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) 分岐して、ステージング環境および実稼動環境にデプロイします。 参照： [Fastly の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) 手順については、Cloud Infrastructure のCommerce ガイドを参照してください。
+モジュールがインストールされていない場合は、[ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) ブランチにインストールし、ステージング環境と実稼動環境にデプロイする必要があります。 詳しくは、クラウドインフラストラクチャー上のCommerce ガイドの [Fastly の設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) を参照してください。
 
 ### Fastly-Magento-VCL-Uploaded がありません
 
-インストールおよび設定中に、Fastly VCL をアップロードしている必要があります。 これらは、作成したカスタム VCL スニペットではなく、Fastly モジュールによって提供される基本 VCL スニペットです。 手順については、を参照してください [Fastly VCL スニペットのアップロード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) （Commerce on Cloud Infrastructure ガイド）を参照してください。
+インストールおよび設定中に、Fastly VCL をアップロードしている必要があります。 これらは、作成したカスタム VCL スニペットではなく、Fastly モジュールによって提供される基本 VCL スニペットです。 Commerce手順については、『 Cloud Infrastructure ガイド』の [Fastly VCL スニペットのアップロード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) を参照してください。
 
 ### X-Cache に MISS が含まれる
 
@@ -190,9 +190,9 @@ X-Cache が HIT、MISS または MISS、MISS の場合、同じ curl コマン�
 
 問題が解決しない場合は、別の拡張機能がこれらのヘッダーをリセットしている可能性があります。 ステージングで次の手順を繰り返して、拡張機能を無効にし、問題を引き起こしている拡張機能を見つけます。 問題の原因となっている拡張機能を見つけたら、実稼動環境でその拡張機能を無効にする必要があります。
 
-1. 拡張機能を無効にするには、の手順に従います [拡張機能の管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) の節（クラウドインフラストラクチャガイドに関するCommerceのセクション）
-1. 拡張機能を無効にした後、に移動します。 **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
-1. クリック **[!UICONTROL Flush Magento Cache]**.
+1. 拡張機能を無効にするには、Cloud Infrastructure ガイドのCommerceの [ 拡張機能の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) の節で説明されている手順に従ってください。
+1. 拡張機能を無効にした後、**[!UICONTROL System]**/**[!UICONTROL Tools]**/**[!UICONTROL Cache Management]** に移動します。
+1. 「**[!UICONTROL Flush Magento Cache]**」をクリックします。
 1. ここで、一度に 1 つの拡張機能を有効にして、設定を保存し、キャッシュをフラッシュします。
 1. curl コマンドを試して、応答ヘッダーを確認します。
 1. 手順 4 と 5 を繰り返して、curl コマンドを有効にしテストします。 Fastly ヘッダーが表示されなくなった場合は、拡張機能が Fastly で問題を引き起こしていることがわかります。
@@ -201,6 +201,6 @@ Fastly ヘッダーをリセットしている拡張機能を分離する場合�
 
 ## 詳しくは、開発者向けドキュメントを参照してください。
 
-* [Fastly について](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Fastly の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [カスタム Fastly VCL スニペット](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Fastly について ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Fastly のセットアップ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

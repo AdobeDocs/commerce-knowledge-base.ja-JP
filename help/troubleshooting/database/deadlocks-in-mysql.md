@@ -24,7 +24,7 @@ ht-degree: 0%
 
 MySQL のデッドロックは、2 つ以上のトランザクションが相互に保持してロックを要求する場合に発生します。 デッドロックが存在する場合、必ずしも問題を示しているわけではありませんが、多くの場合、発生した他の MySQL またはAdobe Commerceの問題の症状です。
 
-多くの場合、アプリケーション、デプロイメントまたは MySQL のログには、 *「デッドロック」* エラーまたはエラー *「ロックの取得中にデッドロックが見つかりました。トランザクションを再度開始してください。」*
+多くの場合、アプリケーション、デプロイメントまたは MySQL ログで、「*&quot;deadlock&quot;* エラーまたは *&quot;ロックを取得しようとしたときにデッドロックが見つかりました。トランザクションを再開してみてください。&quot;* が表示されます。
 
 ## 原因：
 
@@ -35,17 +35,17 @@ MySQL のデッドロックは、2 つ以上のトランザクションが相互
 ## 解決策
 
 1. アプリケーション、デプロイメント、または MySQL ログでデッドロックエラーを確認します。
-   * [Adobe CommerceとMagento Open Sourceログの場所](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [クラウドインフラストラクチャログ上のAdobe Commerceの場所](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
-1. コマンドを使用して、MySQL プロセスのリストでプロセスを実行しているかどうかを確認します。 `mysql -e 'show full processlist';`
-1. クラウドインフラストラクチャー上のAdobe Commerceで、MySQL スレーブが有効になっていることを確認します。 この記事を参照してください。 [変数のデプロイ（MYSQL\_USE\_SLAVE\_CONNECTION）](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
-1. 関連するエラーに応じて、ソリューション自体が表示される場合や、 [サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+   * [Adobe CommerceとMagento Open Sourceログの場所 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
+   * [ クラウドインフラストラクチャログ上のAdobe Commerceの場所 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+1. コマンド `mysql -e 'show full processlist';` を使用して、MySQL プロセスのリストでプロセスが実行されているかどうかを確認します。
+1. クラウドインフラストラクチャー上のAdobe Commerceで、MySQL スレーブが有効になっていることを確認します。 詳しくは、「[ 変数をデプロイ（MYSQL\_USE\_SLAVE\_CONNECTION） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection)」を参照してください。
+1. 関連するエラーに応じて、ソリューション自体が表示されるか、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を開く必要がある場合は、役立つログ情報を含める必要がある場合があります。
 
 ## 関連資料
 
-* [デッドロックを最小化して処理する方法](https://dev.mysql.com/doc/refman/5.7/en/innodb-deadlocks-handling.html)
-* [インデクサーの最適化 – インデクサーテーブルの切り替え](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
-* [一括操作 – メッセージの使用](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+* [ デッドロックを最小限に抑えて処理する方法 ](https://dev.mysql.com/doc/refman/5.7/en/innodb-deadlocks-handling.html)
+* [ インデクサーの最適化 – インデクサーテーブルの切り替え ](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
+* [ 一括操作 – メッセージの使用 ](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
 >[!NOTE]
 >

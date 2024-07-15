@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 管理者アクセスが制限され、パフォーマンスの問題が発生する
 
-この記事では、を使用することでパフォーマンスに悪影響が出た場合の解決策について説明します [Web サイトによって制限されたロール範囲を持つ管理者ロール](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) を参照してください。
+この記事では、ユーザーガイドで [web サイトによって役割の範囲が制限されている管理者の役割 ](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) を使用することでパフォーマンスに悪影響が出る場合の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -30,10 +30,10 @@ Web サイトによってロール範囲が制限されている管理者ユー�
 
 この問題を回避するオプションを次に示します。
 
-* Adobe Commerce アプリケーションのバージョンを 2.2.10 または 2.3.3 にアップグレードします。 （手順については、 [クラウドインフラストラクチャバージョンでのAdobe Commerceのアップグレード](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) （開発者向けドキュメントを参照）。
+* Adobe Commerce アプリケーションのバージョンを 2.2.10 または 2.3.3 にアップグレードします。 （手順については、開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) を参照してください。
 * 可能であれば、管理者ユーザーの役割の範囲を web サイトで制限しないでください。
-* [Magentoサポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、パッチをリクエストします（使用可能な場合）。
+* [Magentoサポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、パッチをリクエストします（使用可能な場合）。
 
 ## 関連資料
 
-* [ユーザーの役割](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html) を参照してください。
+* ユーザーガイドの [ ユーザーの役割 ](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html)。

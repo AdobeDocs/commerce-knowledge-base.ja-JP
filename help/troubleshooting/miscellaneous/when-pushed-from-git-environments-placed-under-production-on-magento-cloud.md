@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## 問題
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 プロジェクトのローカル Git で制御されたクローンがある。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 ステージングブランチから統合ブランチを作成する必要があります。
 
-1. ローカルシェルで次のコマンドを実行して、ステージングブランチに切り替えます。 `git checkout staging`
-1. ローカルシェルで次のコマンドを実行して、ステージングブランチから統合ブランチを作成します。 `git checkout -b <branch>`
-1. ブランチをリモートリポジトリにプッシュし、ローカルシェルで次のコマンドを実行してアップストリームブランチを設定します。 `git push --set-upstream origin <branch>`
+1. ローカルシェルで次のコマンドを実行して、ステージングブランチに切り替えます。`git checkout staging`
+1. ローカルシェルで次のコマンドを実行して、ステージングブランチから統合ブランチを作成します。`git checkout -b <branch>`
+1. ブランチをリモートリポジトリにプッシュし、ローカルシェルで次のコマンドを実行してアップストリームブランチを設定します。`git push --set-upstream origin <branch>`
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 ステージングブランチの下に新しいブランチが作成されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 実稼動ブランチの下に新しいブランチが作成されました。
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 ## 解決策
 
-親ブランチは、マーチャントが新しく作成されたブランチをプッシュしてアクティブ化した後にのみ設定できます。 こちらを参照してください [クラウドインフラストラクチャー上のAdobe Commerce/Bitbucket 統合](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) 開発者向けドキュメントを参照してください。
+親ブランチは、マーチャントが新しく作成されたブランチをプッシュしてアクティブ化した後にのみ設定できます。 開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerce/Bitbucket の統合 ](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) を参照してください。
 
-サーバー上の既存のブランチの親を更新するには、 `magento-cloud environment:info` magento-cloud CLI のコマンド。
+サーバー上の既存のブランチの親を更新するには、magento-cloud CLI で `magento-cloud environment:info` コマンドを使用します。
 
 使用例：
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [クラウドインフラストラクチャー上のAdobe Commerce > magento-cloud CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) 開発者向けドキュメントを参照してください。
+* [ クラウドインフラストラクチャー上のAdobe Commerce/magento-cloud CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) 開発者向けドキュメント。

@@ -28,10 +28,10 @@ MySQL テーブルのサイズは、サイトのパフォーマンスに直接�
 
 パフォーマンスの低下を避けるために、次のオプションを考慮してください。
 
-* 大きなテーブルをクリーンアップする CRON ジョブを作成します。 参照： [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md) 大きなテーブルを識別する方法に関する推奨事項については、サポートナレッジベースを参照してください。
+* 大きなテーブルをクリーンアップする CRON ジョブを作成します。 大きなテーブルを特定する方法に関する推奨事項については、サポートナレッジベースの [ 大きな MySQL テーブルの検索 ](/help/how-to/general/find-large-mysql-tables.md) を参照してください。
 * 1 GB を超えるテーブルの場合は、ログ書き込み用に最適化された MySQL エンジンを使用します。 例えば、アーカイブエンジンなどです。
 * ログを DB に保存しないように機能を更新します。
 
 ## 関連資料
 
-[変更ログテーブルのサイズが大きすぎて、エンティティの更新が遅延する](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) サポートナレッジベースで。
+[ 変更ログテーブルのサイズが大きすぎて、エンティティの更新に遅延が発生する ](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)、アドビのサポートナレッジベースに記載されています。

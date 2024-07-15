@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # GraphQL リクエストで WAF をバイパスする方法
 
-この記事では、次の場合にGraphQL リクエストの WAF をバイパスする方法について説明します。 [!DNL Fastly] WAF がGraphQL リクエストをブロックしています。
+この記事では、[!DNL Fastly] WAF がGraphQL リクエストをブロックしている場合に、GraphQL リクエストの WAF をバイパスする方法について説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -20,13 +20,15 @@ ht-degree: 0%
 
 ## 原因：
 
-GraphQL リクエストの性質上、リクエストが正と見なされないことをトリガーする反復文字が多数発生する場合があります。 [!DNL Fastly] WAF。
+GraphQL リクエストの性質上、[!DNL Fastly] WAF によるリクエストの偽陽性ブロッキングのトリガーになる可能性がある多くの繰り返し文字が存在する場合があります。
 
 ## 解決策
 
-1. を介してカスタムスニペットを追加することで、これらのリクエストの WAF を回避します。 [!DNL Fastly] Magentoモジュール：
+1. [!DNL Fastly] のMagentoモジュールを介してカスタムスニペットを追加することで、これらのリクエストに対する WAF を回避します。
 
-   タイプ：recv 優先度：15 コンテンツ：
+   タイプ：recv
+優先度：15
+コンテンツ :
 
    ```
    if( req.url.path ~ "^/graphql" ) {
@@ -34,9 +36,9 @@ GraphQL リクエストの性質上、リクエストが正と見なされない
    }
    ```
 
-1. クリックする **[!UICONTROL Upload VCL to Fastly]**.
+1. 「**[!UICONTROL Upload VCL to Fastly]**」をクリックします。
 
 ## 関連資料
 
-* [Web アプリケーションファイアウォール（WAF）](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
-* [カスタム VCL の概要](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
+* クラウドインフラストラクチャー上のCommerceにある [Web アプリケーションファイアウォール（WAF） ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) に関するガイド。
+* クラウドインフラストラクチャー上のCommerceにおける [ カスタム VCL の概要 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) ガイド。

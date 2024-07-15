@@ -23,21 +23,21 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->免責事項：Adobe Commerceは、トンネルを確立するための特定のツールを推奨または推奨しません。 上記は提案のみです。 詳しくは、を参照してください [ngrok ドキュメント](https://ngrok.com/docs).
+>免責事項：Adobe Commerceは、トンネルを確立するための特定のツールを推奨または推奨しません。 上記は提案のみです。 詳しくは、[ngrok のドキュメント ](https://ngrok.com/docs) を参照してください。
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 1. ローカル環境にAdobe Commerceをインストールします。
 1. ngrok を設定して、ローカルサーバーを公開するトンネルを作成します。
-1. Try [oms への接続](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+1. [OMS への接続 ](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) を試します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 接続が正常に確立されました。
 
-<u>実際の結果</u>
+<u> 実際の結果 </u>
 
 ngrok URL にコールバックしようとすると、MCOM がタイムアウトするようです。
 
@@ -53,4 +53,4 @@ ngrok の起動時に、地域を指定するパラメータを追加します�
 ./ngrok http 80 -region eu
 ```
 
-デフォルトのリージョンは US です。 参照： [使用可能なすべての値](https://ngrok.com/docs#config_region).
+デフォルトのリージョンは US です。 [ 使用可能なすべての値 ](https://ngrok.com/docs#config_region) を参照してください。

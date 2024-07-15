@@ -1,6 +1,6 @@
 ---
 title: 上部のナビゲーションパネルがストアフロントに読み込まれない
-description: この記事では、Varnish Edge Side Includes （ESI）の問題に対する設定ソリューションを提供します。この問題では、Varnish をキャッシュに使用すると、特定のページのコンテンツ（通常は上部のナビゲーションパネル）がストアフロントに表示されません。
+description: この記事では、Varnish をキャッシングに使用している場合、特定のページ（通常は上部のナビゲーションパネル）のコンテンツがストアフロントに表示されない Varnish Edge Side Includes （ESI）の問題に対する設定ソリューションを提供します。
 exl-id: e7f9b773-1a2d-4c3b-9e1f-a1781fbc898c
 feature: Categories, Site Navigation, Storefront, Variables
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 上部のナビゲーションパネルがストアフロントに読み込まれない
 
-この記事では、Varnish Edge Side Includes （ESI）の問題に対する設定ソリューションを提供します。この問題では、Varnish をキャッシュに使用すると、特定のページのコンテンツ（通常は上部のナビゲーションパネル）がストアフロントに表示されません。
+この記事では、Varnish をキャッシングに使用している場合、特定のページ（通常は上部のナビゲーションパネル）のコンテンツがストアフロントに表示されない Varnish Edge Side Includes （ESI）の問題に対する設定ソリューションを提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,20 +22,20 @@ ht-degree: 0%
 
 ## 問題
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 Adobe Commerceストア用に Varnish をインストールして設定します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. ストアフロントに移動します。
 1. ストアページを参照します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 すべてのコンテンツとすべてのページブロックが正常に読み込まれます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 カテゴリを含む上部のナビゲーションパネルなどの一部のコンテンツブロックが読み込まれないことがわかります。 代わりに空白が表示されます。
 
@@ -51,18 +51,18 @@ Adobe Commerceストア用に Varnish をインストールして設定します
 
 問題を解決するには、追加の Varnish 設定を実行し、Varnish を再起動する必要があります。
 
-1. を使用した As a ユーザー `root` 権限がある場合は、Vanish 設定ファイルをテキストエディターで開きます。 を参照してください。 [Varnish システムの設定を変更します。](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) このファイルが様々なオペレーティングシステムのどこに格納されているかの情報については、開発者向けドキュメントを参照してください。
-1. が含まれる `DAEMON_OPTS variable`、追加： `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. 次のようになります。
+1. `root` 権限を持つユーザーとして、Vanish 設定ファイルをテキストエディターで開きます。 このファイルが別のオペレーティングシステムのどこに配置されているかの情報については、開発者向けドキュメントの [Varnish システム設定の変更 ](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) を参照してください。
+1. `DAEMON_OPTS variable` で、`-p feature=+esi_ignore_https`、`-p  feature=+esi_ignore_other_elements`、`-p  feature=+esi_disable_xml_check` を追加します。 次のようになります。
 
    ```bash
    DAEMON_OPTS="-a :6081 \    -p feature=+esi_ignore_other_elements \    -p feature=+esi_disable_xml_check \    -p feature=+esi_ignore_https \    -T localhost:6082 \    -f /etc/varnish/default.vcl \    -S /etc/varnish/secret \    -s malloc,256m"
    ```
 
 1. 変更を保存し、テキストエディターを終了します。
-1. VCL 設定ファイルで、次のパラメータの値を増やして応答ヘッダーを増やします。 `http_resp_hdr_len`, `http_resp_size`, `workspace_backend`. 最後の 2 つの値が類似していることを確認します。
-1. これを変更する場合は、を実行する必要があります `service varnish restart` 変更を有効にします。
+1. VCL 構成ファイルで、`http_resp_hdr_len`、`http_resp_size`、`workspace_backend` のパラメータの値を増やして応答ヘッダーを増やします。 最後の 2 つの値が類似していることを確認します。
+1. これを変更する場合、変更を有効にするには `service varnish restart` を実行する必要があります。
 
 ## 関連資料
 
-* [Varnish と Web サーバーの設定](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) 開発者向けドキュメントを参照してください。
-* [Varnish ドキュメント](https://varnish-cache.org/docs/5.1/reference/index.html)
+* 開発者向けドキュメントの [Varnish と web サーバーの設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) を参照してください。
+* [Varnish のドキュメント ](https://varnish-cache.org/docs/5.1/reference/index.html)

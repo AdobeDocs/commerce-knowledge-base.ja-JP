@@ -30,7 +30,7 @@ ht-degree: 0%
 
 symfony/console 依存関係の新しいバージョン（4.4.27、4.4.28）により、依存関係のコンパイル処理が失敗します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 Adobe Commerceをインストールまたはアップグレードする場合、または composer のアップデートを実行する場合は、次のエラーメッセージが表示されて実行が失敗します。
 *互換性のない引数タイプ：必須タイプ : int。 実際のタイプ：文字列*
@@ -43,7 +43,7 @@ Adobe Commerceをインストールまたはアップグレードする場合、
 
 この問題は、新しい symfony/console バージョン 4.2.29 （2021 年 8 月予定）がリリースされると、自動的に解決されます。
 
-**Adobe Commerce オンプレミスでの修正方法：**
+**オンプレミスのAdobe Commerceを修正する方法：**
 
 Adobe Commerce オンプレミス 2.4.x
 
@@ -55,12 +55,12 @@ CLI/ターミナルで次のコマンドを実行します。
 
 ``composer require symfony/console:"~4.1.0||~4.2.0||~4.3.0||>=4.4.0 <4.4.27 || ~4.4.29"``
 
-**クラウドインフラストラクチャー上のAdobe Commerceを修正する方法：**
+**クラウドインフラストラクチャ上のAdobe Commerceを修正する方法：**
 
-上記のコマンドを実行するか、7 月 29 日木曜日（PT）に利用可能になる最新バージョンの ECE ツール（ece-tools: 2002.1.7）にアップグレードします。 手順については、次を参照してください [Cloud for Adobe Commerce/ece-tools のバージョンの更新](https://devdocs.magento.com/cloud/project/ece-tools-update.html) 開発者向けドキュメントを参照してください。
+上記のコマンドを実行するか、7 月 29 日木曜日（PT）に利用可能になる最新バージョンの ECE ツール（ece-tools: 2002.1.7）にアップグレードします。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 ](https://devdocs.magento.com/cloud/project/ece-tools-update.html) を参照してください。
 
 完全な修正は、Adobe Commerce（すべてのデプロイメント方法） 2.4.4 でリリースされる予定です。
 
 ## 関連資料
 
-* Github: [2021-07-27 Composer の更新互換性のない引数タイプ：必須タイプ : int。 実際のタイプ：文字列](https://github.com/magento/magento2/issues/33595)
+* Github: [2021-07-27 Composer 更新互換性のない引数タイプ：必須タイプ : int。 実際のタイプ：文字列 ](https://github.com/magento/magento2/issues/33595)

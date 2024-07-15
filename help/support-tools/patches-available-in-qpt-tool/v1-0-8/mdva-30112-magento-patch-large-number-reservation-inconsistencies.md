@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30112：大量の予約の不整合
 
-MDVA-30112 パッチは、の数が予期せず多い問題を解決します。 [予約の不整合](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#what-causes-reservation-inconsistencies) が含まれる `inventory_reservation` テーブル。 予約の不整合には、未登録の未登録オープン注文と未登録の完了注文が含まれます。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.8 がインストールされています。 この問題は、Adobe Commerce バージョン 2.4.2 で修正されました。
+MDVA-30112 パッチを適用すると、`inventory_reservation` テーブルに予期せず多数の [ 予約の不整合 ](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#what-causes-reservation-inconsistencies) が存在する問題が解決されます。 予約の不整合には、未登録の未登録オープン注文と未登録の完了注文が含まれます。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.8 がインストールされている場合に使用できます。 この問題は、Adobe Commerce バージョン 2.4.2 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,19 +27,19 @@ MDVA-30112 パッチは、の数が予期せず多い問題を解決します。
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-この [バンチサイズ](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#list-inconsistencies-command) 値は、一度に読み込む注文の数を示す値です。 この値より多くの注文がある場合、Adobe Commerceは保留中ステータスの注文を不整合と見なします。
+[bunch-size](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#list-inconsistencies-command) 値は、一度に読み込む注文の数の値です。 この値より多くの注文がある場合、Adobe Commerceは保留中ステータスの注文を不整合と見なします。
 
 >[!NOTE]
 >
->他の 3 つのインベントリ不整合の問題を修正するパッチ MDVA-33281 があります。 これには、実行中に PHP Fatal エラーが発生する場合が含まれます `bin/magento inventory:reservation:list-inconsistencies` CLI で以下を行います。 修正されているもう 1 つの問題は、不整合リストのデータが重複していることです。 また、注文前に予約が作成される問題（注文後の予約に基づく以前の認識）。 解決策については、次を参照してください： [MDVA-33281: インベントリ不整合の問題](/help/support-tools/patches-available-in-qpt-tool/v1-0-14/mdva-33281-magento-patch-inventory-inconsistency-issues.md) サポートナレッジベースで。
+>他の 3 つのインベントリ不整合の問題を修正するパッチ MDVA-33281 があります。 これには、CLI で `bin/magento inventory:reservation:list-inconsistencies` を実行しているときに発生する PHP Fatal エラーが含まれます。 修正されているもう 1 つの問題は、不整合リストのデータが重複していることです。 また、注文前に予約が作成される問題（注文後の予約に基づく以前の認識）。 このソリューションについては、サポート情報ベースの [MDVA-33281: inventory inconsistency issues](/help/support-tools/patches-available-in-qpt-tool/v1-0-14/mdva-33281-magento-patch-inventory-inconsistency-issues.md) を参照してください。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-CLI で次のコマンドを実行すると、 `inventory_reservation` テーブル：
+CLI で次のコマンドを実行して、`inventory_reservation` テーブル内の予約の不整合を一覧表示します。
 
 ```
 magento inventory:reservation:list-inconsistencies
@@ -47,7 +47,7 @@ magento inventory:reservation:list-inconsistencies
 
 予期せず多数の予約の不整合が発生する、またはコマンドが完了しない。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. CLI で次のコマンドを実行して不整合を解決します。
 
@@ -58,7 +58,7 @@ magento inventory:reservation:list-inconsistencies
 1. 次の 3 つの注文を行います。
    * それぞれに 1 つの製品を割り当てます。
    * Check/Money Order の支払い方法を使用して、注文ステータスが「保留中」になるようにします。
-1. 数量–1 のレコードが 3 つ `inventory_reservation` テーブル。 CLI で次のコマンドを実行して、不整合を確認します。
+1. 数量–1 の 3 つのレコードが `inventory_reservation` テーブルに表示されます。 CLI で次のコマンドを実行して、不整合を確認します。
 
    ```
    bin/magento inventory:reservation:list-inconsistencies
@@ -80,11 +80,11 @@ magento inventory:reservation:list-inconsistencies
    bin/magento inventory:reservation:list-inconsistencies      -r --bunch-size 1 | bin/magento inventory:reservation:create-compensations
    ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 Adobe Commerceは、「保留中」ステータスの注文の不整合を解決しないでください。 在庫の不整合は、「完了」、「クローズ」、「キャンセル」ステータスの注文で解決する必要があります。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 指定された束サイズの値を超える注文がある場合、Adobe Commerceは「保留中」ステータスの注文を不整合と見なし、同じ注文に対して複数の不整合の解決記録を追加します。
 
@@ -92,14 +92,14 @@ Adobe Commerceは、「保留中」ステータスの注文の不整合を解決
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

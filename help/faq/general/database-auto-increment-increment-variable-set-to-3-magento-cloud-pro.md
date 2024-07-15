@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Galera データベース・クラスタが使用されます。これは、各ノードに 1 つの MariaDB MySQL データベースを持つデータベース・クラスタで、各データベースの一意の ID に対して自動インクリメント設定は 3 です。
 
-<u>Pro クラスターで使用される増分 ID が常に 3 で区切られない/増分されないのはなぜですか？</u>
+<u>Pro クラスターで使用される増分 ID が常に 3 で区切られたり増分されたりしないのはなぜですか？</u>
 
 クラスターで使用される増分 ID は、Galera の動作の理由から、常に 3 で区切られるとは限りません。
 
@@ -25,11 +25,11 @@ Galera データベース・クラスタが使用されます。これは、各�
 
 ![auto_increment](assets/auto_increment_id.png)
 
-例えば、選択されたメインがノード 1 の場合、次のようになります。 `auto_increment_offset = 1`、ID は 1 ずつ増加します。 その後、新しいメインノードが後で選択された場合（例：ノード 3）。 `auto_increment_offset = 3`の場合は、代わりに 3 ずつ増加します。
+例えば、選択されたメインがノード 1 で、`auto_increment_offset = 1` の場合、ID は 1 増分されます。 その後、新しいメインノードが後で選択された場合（例えば、`auto_increment_offset = 3` の場合はノード 3）、代わりに 3 ずつ増加します。
 
 ## 役に立つリンク
 
 詳しくは、開発者向けドキュメントを参照してください。
 
-* [Cloud for Adobe Commerce/Pro アーキテクチャ/バックアップと障害回復](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce/Pro アーキテクチャ/バックアップと災害復旧 ](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
 * [Cloud for Adobe Commerce/インストールの前提条件：database](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)

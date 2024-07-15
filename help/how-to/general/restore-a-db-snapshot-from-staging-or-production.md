@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# から DB スナップショットをリストアする [!DNL Staging] または [!DNL Production]
+# [!DNL Staging] または [!DNL Production] から DB スナップショットをリストアする
 
-この記事では、DB の復元方法を説明します [!DNL snapshot] から [!DNL Staging] または [!DNL Production] （Cloud Pro インフラストラクチャ上のAdobe Commerce上）。
+この記事では、Cloud Pro インフラストラクチャ上のAdobe Commerceで [!DNL Staging] または [!DNL Production] から DB [!DNL snapshot] を復元する方法について説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 お客様の状況に最も適したものを選択してください。
 
-* [方法 1：データベースを転送する [!DNL dump] ローカルマシンに追加して読み込みます。](#meth2).
-* [方法 2：データベースをインポートする [!DNL dump] サーバーから直接](#meth3).
+* [ 方法 1：データベースをローカルマシンに転送し  [!DNL dump]  読み込みます ](#meth2)。
+* [ 方法 2：サーバーからデータベース  [!DNL dump]  直接インポート ](#meth3)。
 
-## 方法 1：データベースを転送する [!DNL dump] ローカルマシンに追加して読み込みます。 {#meth2}
+## 方法 1: データベース [!DNL dump] をローカル マシンに転送し、インポートする {#meth2}
 
 手順は次のとおりです。
 
-1. 使用 [!DNL SFTP]で、データベースがある場所に移動します。 [!DNL snapshot] が（通常はユーザーの最初のサーバーやノードに）配置されている [!DNL cluster] （例： `/mnt/recovery-<recovery_id>`）に設定します。 メモ：プロジェクトが Azure ベースの場合、プロジェクト URL はhttps://us-a1.magento.cloud/projects/のようになります。&lt;cluster_id>を選択すると、スナップショットはに配置されます。 `/mnt/shared/<cluster ID>/all-databases.sql.gz` または `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` その代わり。
+1. [!DNL SFTP] を使用して、データベース [!DNL snapshot] が配置されている場所（通常は [!DNL cluster] の最初のサーバー/ノード）に移動します（例：`/mnt/recovery-<recovery_id>`）。 メモ：プロジェクトが Azure ベースの場合（例：プロジェクト URL がhttps://us-a1.magento.cloud/projects/&lt;cluster_id> のような場合）、スナップショットは代わりに `/mnt/shared/<cluster ID>/all-databases.sql.gz` または `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` に配置されます。
 
-   メモ : Azure プロジェクトのスナップショットの形式は異なり、インポートできない他のデータベースが含まれます。 スナップショットをインポートする前に、ダンプをインポートする前に、適切なデータベースを抽出するための追加手順を実行する必要があります。
+   メモ : Azure プロジェクトのスナップショットの形式は異なり、インポートできない他のデータベースが含まれます。 スナップショットを読み込む前に、次の操作を行います     ダンプをインポートする前に、適切なデータベースを抽出するための追加手順を実行する必要があります。
 
    実稼動の場合：
 
@@ -61,76 +61,76 @@ ht-degree: 0%
    --init-command="SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT ;SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS ;SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION ;SET NAMES utf8 ;SET @OLD_TIME_ZONE=@@TIME_ZONE ;SET TIME_ZONE='+00:00' ;SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 ;SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 ;SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' ;SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0;"
    ```
 
-1. データベースをコピーします [!DNL dump file] （例： `<cluster ID>.sql.gz` （用） [!DNL Production] または `<cluster ID_stg>.sql.gz` （用） [!DNL Staging]）をローカルコンピューターに追加します。
-1. を設定したことを確認します [!DNL SSH tunnel] データベースにリモートで接続するには： [[!DNL SSH] および [!DNL sFTP]: [!DNL SSH tunneling]](https://devdocs.magento.com/cloud/env/environments-ssh.html#env-start-tunn) 開発者向けドキュメントを参照してください。
+1. データベース [!DNL dump file] （例：[!DNL Production] の場合は `<cluster ID>.sql.gz`、[!DNL Staging] の場合は `<cluster ID_stg>.sql.gz`）をローカルコンピューターにコピーします。
+1. 開発者向けドキュメントで、データベースにリモートで接続する [!DNL SSH tunnel] を [[!DNL SSH]  および  [!DNL sFTP]: [!DNL SSH tunneling]](https://devdocs.magento.com/cloud/env/environments-ssh.html#env-start-tunn) のように設定していることを確認します。
 1. データベースに接続します。
 
    ```sql
    mysql -h <db-host> -P <db-port> -p -u <db-user> <db-name>
    ```
 
-1. [!DNL Drop] データベース（） [!DNL MariaDB] プロンプトで、次のように入力します。
+1. データベース [!DNL Drop]、[!DNL MariaDB] のプロンプトに対して、次のように入力します。
 
-   （用 [!DNL Production]）
+   （[!DNL Production] 用）
 
    ```sql
    drop database <cluster ID>;
    ```
 
-   （用 [!DNL Staging]）
+   （[!DNL Staging] 用）
 
    ```sql
    drop database <cluster ID_stg>;
    ```
 
-1. 次のコマンドを入力して、 [!DNL snapshot]:
+1. 次のコマンドを入力して [!DNL snapshot] を読み込みます。
 
-   （用 [!DNL Production]）
+   （[!DNL Production] 用）
 
    ```sql
    zcat <cluster ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -P <db-port> -p -u   <db-user> <db-name>
    ```
 
-   （用 [!DNL Staging]）
+   （[!DNL Staging] 用）
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -P <db-port> -p -u   <db-user> <db-name>
    ```
 
-## 方法 2：データベースをインポートする [!DNL dump] サーバーから直接 {#meth3}
+## 方法 2：サーバーからデータベース [!DNL dump] を直接インポートする {#meth3}
 
 手順は次のとおりです。
 
-1. データベースがある場所に移動します。 [!DNL snapshot] が（通常はユーザーの最初のサーバーやノードに）配置されている [!DNL cluster] （例： `/mnt/recovery-<recovery_id>`）に設定します。
-1. 終了 [!DNL drop] クラウドデータベースを再作成するには、まずデータベースに接続します。
+1. データベース [!DNL snapshot] が配置されている場所に移動します。通常は [!DNL cluster] の最初のサーバー/ノードに移動します（例：`/mnt/recovery-<recovery_id>`）。
+1. クラウドデータベースを [!DNL drop] 成して再作成するには、まずデータベースに接続します。
 
    ```sql
    mysql -h 127.0.0.1 -P <db-port> -p -u <db-user> <db-name>
    ```
 
-1. [!DNL Drop] データベース（） [!DNL MariaDB] プロンプトで、次のように入力します。
+1. データベース [!DNL Drop]、[!DNL MariaDB] のプロンプトに対して、次のように入力します。
 
-   （用 [!DNL Production]）
+   （[!DNL Production] 用）
 
    ```sql
    drop database <cluster ID>;
    ```
 
-   （用 [!DNL Staging]）
+   （[!DNL Staging] 用）
 
    ```sql
    drop database <cluster ID_stg>;
    ```
 
-1. 次のコマンドを入力して、 [!DNL snapshot]:
+1. 次のコマンドを入力して [!DNL snapshot] を読み込みます。
 
-   （データベース バックアップのインポート元： [!DNL Production]）
+   （[!DNL Production] からデータベース バックアップをインポートする場合）
 
    ```sql
    zcat <cluster ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
-   （データベース バックアップのインポート元： [!DNL Staging]）
+   （[!DNL Staging] からデータベース バックアップをインポートする場合）
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
@@ -152,5 +152,5 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [コードのインポート：データベースをインポートします](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html#cloud-import-db)
-* [[!DNL Snapshots] および [!DNL backup] 管理： [!DNL Dump] データベース](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)
+* [ コードのインポート：データベースをインポートします ](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html#cloud-import-db)。
+* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース ](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)

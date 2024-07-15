@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0 の既知の問題：統合テストが失敗する
 
-この記事では、の宣言が原因で統合テストが失敗するAdobe Commerce 2.4.0 の問題に対するパッチを提供します `Dotdigitalgroup\Email\Test\Integration\Model\Sync\Importer\ImporterFailedTest::setUp()` は、2.4.0 に使用される PHPUnit 9 とは互換性がありません。
+この文書では、`Dotdigitalgroup\Email\Test\Integration\Model\Sync\Importer\ImporterFailedTest::setUp()` の宣言が 2.4.0 で使用される PHPUnit 9 と互換性がないために統合テストが失敗するAdobe Commerce 2.4.0 の問題に対するパッチを提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,17 +22,17 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 2.4.0 統合テストを実行します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 テストは成功。
 
-<u>実際の結果</u>
+<u> 実際の結果 </u>
 
-*PHP 致命的エラー：Dotdigitalgroup\\Email\\Test\\Integration\\Model\\Sync\\Importer\\ImporterFailedTest::setUp （）の宣言は PHPUnit\\Framework\\TestCase::setUp （）: /var/www/vendor/dotmailer/dotmailer-magento2-extension/Test/Integration/Model/Sync/Importer/ImporterFailedTest.phpの 36 行目の void と互換性がある必要があります*
+*PHP 致命的エラー：Dotdigitalgroup\\Email\\Test\\Integration\\Model\\Sync\\Importer\\ImporterFailedTest::setUp （）の宣言は、PHPUnit\\Framework\\TestCase::setUp （）: /var/www/vendor/dotmailer/dotmailer-magento2-extension/Test/Integration/Model/Sync/Importer/ImporterFailedTest.phpの 36 行目の void と互換性がある必要があります*
 
 ## 解決策
 
@@ -53,6 +53,6 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

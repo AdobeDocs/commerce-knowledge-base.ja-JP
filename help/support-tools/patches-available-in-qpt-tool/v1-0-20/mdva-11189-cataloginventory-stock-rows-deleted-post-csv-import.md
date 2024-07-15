@@ -13,64 +13,64 @@ ht-degree: 0%
 
 # MDVA-11189: cataloginventory_stock 行が CSV のインポート後に削除されました
 
-MDVA-11189 Adobe Commerce パッチでは、.csv ファイルを読み込んで商品の在庫を更新した後、 `cataloginventory_stock` テーブルが削除されます。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 がインストールされています。 パッチ ID は MDVA-1189。 この問題はAdobe Commerce 2.3.5 で修正されました。
+MDVA-11189 Adobe Commerce パッチでは、.csv ファイルを読み込んで商品ストックを更新した後、`cataloginventory_stock` テーブルの行が削除される問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.20 がインストールされている場合に使用できます。 パッチ ID は MDVA-1189。 この問題はAdobe Commerce 2.3.5 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。** クラウドインフラストラクチャー 2.2.3 上のAdobe Commerce
+**Adobe Commerce バージョン用のパッチが作成されます。** Cloud Infrastructure 2.2.3 上のAdobe Commerce
 
 **Adobe Commerce バージョンとの互換性：** Adobe Commerce（すべてのデプロイメント方法） 2.3.0-2.3.4-p2
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-を読み込んだ後の問題の修正 `.csv` 製品ストックを更新するには、の行を `cataloginventory_stock` テーブルが削除されます。
+`.csv` を読み込んで製品ストックを更新した後に、`cataloginventory_stock` テーブルから行が削除される問題を修正しました。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-1. データベースで、次の MySQL コマンドを実行します。 `select count(*) from cataloginventory_stock_status;`
+1. データベースで、次の MySQL コマンドを実行します。`select count(*) from cataloginventory_stock_status;`
 1. 行数に注意してください。
-1. crontab を次のように設定します。 `* * * * * /usr/bin/php <path to installation>/bin/magento cron:run  | grep -v "Ran jobs by schedule" >> <path to installation>/var/log/cron.log 2>&1`
-1. の管理パネルに移動します。 **システム** > **ツール** > **インデックス管理**.
-1. インデクサーをに設定 *スケジュールに従って更新。*
-1. に移動 **システム** > *データ転送* > **Export**.
-1. を設定 **エンティティタイプ** 次と等しい *製品* > **続行**.
-1. 保存済みのを開く `.csv` ファイル/SKU と数量を除くすべての列を削除。
+1. crontab を次のように設定します。`* * * * * /usr/bin/php <path to installation>/bin/magento cron:run  | grep -v "Ran jobs by schedule" >> <path to installation>/var/log/cron.log 2>&1`
+1. **システム**/**ツール**/**インデックス管理** の管理パネルに移動します。
+1. インデクサーを *スケジュールに従って更新* に設定します
+1. **システム**/*データ転送*/**エクスポート** に移動します。
+1. **エンティティタイプ** を *製品*/**続行** に設定します。
+1. 保存した `.csv` ファイルを開き、「SKU」と「QTY」を除くすべての列を削除します。
 1. すべての製品の数量を 150 に更新します。
-1. を保存します `.csv` ファイル。
-1. に移動 **システム** > *データ転送* > **インポート** .
+1. `.csv` ファイルを保存します。
+1. **システム**/*データ転送*/**インポート** に移動します。
 1. 次の値を設定します。
-   1. エンティティタイプ： *製品*
-   1. 読み込み動作： *追加/更新*
+   1. エンティティタイプ：*Products*
+   1. 読み込みの動作：*追加/更新*
    1. その他の値はデフォルトのままにします。
    1. 「ファイル」を選択して、カタログ製品スプレッドシートを選択します。
-1. クリック **データを確認** > **インポート**. 5～10 分を通過させます。
+1. **データの確認**/**インポート** をクリックします。 5～10 分を通過させます。
 1. データベースで、次の MySQL コマンドを実行します。
    `select count(*) from cataloginventory_stock_status;`
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
-の行数 `cataloginventory_stock` は、CSV の読み込み後、在庫を更新するために減らされます。
+`cataloginventory_stock` の行数は、CSV の読み込み後に減らして在庫を更新します。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
-の行数 `cataloginventory_stock` 在庫を更新するには、CSV の読み込み後も同じままにする必要があります。
+`cataloginventory_stock` の行数は、CSV の読み込み後も、同じままにして在庫を更新する必要があります。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

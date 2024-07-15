@@ -17,15 +17,15 @@ ht-degree: 0%
 
 この既知の問題については、開発者向けドキュメントに記載されています。
 
-<u>Adobe Commerce 2.3.6 の場合</u>:
+<u>Adobe Commerce 2.3.6 の場合 </u>:
 
-* [Adobe Commerce 2.3.6 リリースノート：既知の問題](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
-* [Magento Open Source 2.3.6 リリースノート：既知の問題](https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
+* [Adobe Commerce 2.3.6 リリースノート：既知の問題 ](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
+* [Magento Open Source 2.3.6 リリースノート：既知の問題 ](https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
 
-<u>Adobe Commerce 2.4.1 の場合</u>:
+<u>Adobe Commerce 2.4.1 の場合 </u>:
 
-* [Adobe Commerce 2.4.1 リリースノート：既知の問題](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
-* [Magento Open Source 2.4.1 リリースノート：既知の問題](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
+* [Adobe Commerce 2.4.1 リリースノート：既知の問題 ](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
+* [Magento Open Source 2.4.1 リリースノート：既知の問題 ](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
 
 ## 影響を受ける製品とバージョン
 
@@ -34,24 +34,24 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 1. Commerceで、Paypal Express、Paypflow Pro、CyberSource のいずれかの支払い方法を少なくとも 1 つ設定します。
-1. に移動 **管理者/ ストア /設定/顧客/ カスタマー設定/ CAPTCHA** .
-   * を設定 **ストアフロントでの CAPTCHA の有効化** = *はい* .
-   * で選択 **Forms** : *チェックアウト/注文* , *ログイン* 、および *パスワードを忘れる* .
-   * を設定 **表示モード** = *ログイン試行回数* （次を行います **失敗したログイン試行回数** 設定が表示されます）。
-   * を設定 **失敗したログイン試行回数** = *0* （captcha を常に機能させるために）。
+1. **管理者/ ストア /設定/顧客/顧客設定/ CAPTCHA** に移動します。
+   * **ストアフロントで CAPTCHA を有効にする**= *はい* を設定します。
+   * **Forms** : *チェックアウト/注文*、*ログイン*、*パスワードを忘れた場合* を選択します。
+   * **表示モード** = *ログイン試行回数後* を設定します（**ログイン失敗回数** 設定を表示します）。
+   * **ログインに失敗した回数** = *0* を設定します（captcha を常に機能させる場合）。
 1. フロントエンドで、買い物かごに製品を追加し、チェックアウトを試みます。
 1. 支払い情報ページに captcha と入力し、Paypal Express、Payflow Pro、または CyberSource でチェックアウトしてみてください。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 CAPTCHA 機能は、期待どおりに機能します。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
-エラーメッセージが次のように表示されます。 *CAPTCHA コードを指定して、もう一度試してください。*
+「*CAPTCHA コードを指定し、再試行してください。*」というエラーメッセージが表示されます。
 
 ## 解決策
 
@@ -59,16 +59,16 @@ Adobe Commerce オンプレミス/Adobe Commerce on cloud infrastructure/Magento
 
 ## パッチ
 
-パッチはこの記事に添付されており、次の両方からダウンロードできます `.composer` および `.git` 形式。
+パッチはこの記事に添付されており、`.composer` 形式と `.git` 形式の両方でダウンロードできます。
 
 パッチをダウンロードするには、記事の最後までスクロールしてファイル名をクリックするか、次のいずれかのリンクをクリックします。
 
-<u>Adobe Commerce オンプレミス/Adobe Commerce on cloud infrastructure/Magento Open Source 2.3.6 の場合</u> :
+<u>Adobe Commerce オンプレミス/Adobe Commerce on cloud infrastructure/Magento Open Source 2.3.6 の場合 </u> :
 
 * [Composer パッチ MDVA-33093\_\_\_\_2\_3\_x-p1\_\_CAPTCHA\_COMPOSER.patch](assets/MDVA-33093____2_3_x-p1__CAPTCHA_COMPOSER.patch.zip)
 * [Git パッチ MDVA-33093\_\_\_\_2\_3\_x-p1\_\_CAPTCHA\_GIT.patch](assets/MDVA-33093____2_3_x-p1__CAPTCHA_GIT.patch.zip)
 
-<u>Adobe Commerce オンプレミス/Adobe Commerce on cloud infrastructure/Magento Open Source 2.4.1 の場合</u> :
+<u>Adobe Commerce オンプレミス/Adobe Commerce on cloud infrastructure/Magento Open Source 2.4.1 の場合 </u> :
 
 * [Composer パッチ MDVA-33093\_\_\_\_2\_4\_x-p1\_\_CAPTCHA\_COMPOSER.patch](assets/MDVA-33093____2_4_x-p1__CAPTCHA_COMPOSER.patch.zip)
 * [Git パッチ MDVA-33093\_\_\_\_2\_4\_x-p1\_\_CAPTCHA\_GIT.patch](assets/MDVA-33093____2_4_x-p1__CAPTCHA_GIT.patch.zip)
@@ -77,10 +77,10 @@ Adobe Commerce オンプレミス/Adobe Commerce on cloud infrastructure/Magento
 
 ## パッチの適用方法
 
-<u>Composer パッチ</u>
+<u>Composer パッチ </u>
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポート技術情報の composer のパッチ手順を参照してください。
+Composer パッチの手順については、サポート技術情報の [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
-<u>Git パッチ</u>
+<u>Git パッチ </u>
 
-開発者向けドキュメントを参照してください [パッチの適用：カスタム パッチ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) （Adobe Commerce/Magento Open Source用の git パッチ手順）。
+Adobe Commerce/Magento Open Sourceの Git パッチ手順については、開発者向けドキュメント [ パッチの適用：カスタムパッチ ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) を参照してください。

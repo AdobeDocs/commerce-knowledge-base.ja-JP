@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-50814：管理者ユーザーがクレジットメモを作成できない
 
-ACSD-50814 パッチは、管理者ユーザーがクレジットメモを作成できない問題を修正します。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 がインストールされています。 パッチ ID は ACSD-50814 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-50814 パッチは、管理者ユーザーがクレジットメモを作成できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 がインストールされている場合に使用できます。 パッチ ID は ACSD-50814 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,30 +27,30 @@ ACSD-50814 パッチは、管理者ユーザーがクレジットメモを作成
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 管理者ユーザーはクレジットメモを作成できません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. Adobe Commerce Admin で、に移動します。 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Shipping methods]** > **[!UICONTROL Free shipping]** およびを設定 **[!UICONTROL Enable free shipping]** 対象： *[!UICONTROL Yes]*
-1. 再び以下に移動 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]**&#x200B;を開き、計算設定を展開して次を設定します。
+1. Adobe Commerce Admin で、**[!UICONTROL Stores]** / **[!UICONTROL Configuration]** / **[!UICONTROL Sales]** / **[!UICONTROL Shipping methods]** / **[!UICONTROL Free shipping]** に移動し、**[!UICONTROL Enable free shipping]** を *[!UICONTROL Yes]* に設定します。
+1. 再び **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Tax]** に移動し、計算設定を展開して、次の項目を設定します。
    * [!UICONTROL Shipping prices] = [!UICONTROL Including tax]
    * [!UICONTROL Enable cross border trade] = [!UICONTROL No]
-1. 価格表示設定を展開し、 [!UICONTROL Display shipping prices] = [!UICONTROL Including tax].
-1. を展開 [!UICONTROL Orders], [!UICONTROL Invoices], [!UICONTROL Credit memo] ディスプレイの設定と設定 [!UICONTROL Display shipping amount] = [!UICONTROL Including tax].
+1. 価格表示設定を展開し、[!UICONTROL Display shipping prices] = [!UICONTROL Including tax] を設定します。
+1. [!UICONTROL Orders]、[!UICONTROL Invoices]、[!UICONTROL Credit memo] の表示設定を展開し、[!UICONTROL Display shipping amount] = [!UICONTROL Including tax] を設定します。
 1. キャッシュをクリアします。
 1. 店頭で注文します。
 1. 管理画面で注文の請求書を作成します。
 1. クレジットメモを作成します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 クレジット メモが作成されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 次のエラーが発生します。
 
@@ -64,14 +64,14 @@ report.CRITICAL: DivisionByZeroError: Division by zero in vendor/magento/module-
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

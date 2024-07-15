@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Adobe Commerceは GDPR に対応しました
 
-この [公式ホームページ](https://business.adobe.com/privacy/general-data-protection-regulation.html) Adobe Commerceのすべての GDPR リソース用。
+Adobe Commerceのすべての GDPR リソースに関する [ 公式ホームページ ](https://business.adobe.com/privacy/general-data-protection-regulation.html)。
 
 ## Adobe Commerceの公式声明
 

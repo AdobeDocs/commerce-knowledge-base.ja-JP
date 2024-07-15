@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # PWA Studioを使用できるように NPM を設定する
 
-[プログレッシブ Web アプリケーション （PWA） Studio](https://magento.github.io/pwa-studio/) は、cloud infrastructure 2.3.x 以降のAdobe Commerceで使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、次の場所で行います。 `hooks:build` の節 `.magento.app.yaml` 設定ファイル。
+[ プログレッシブ web アプリケーション（PWA） Studio](https://magento.github.io/pwa-studio/) は、Cloud Infrastructure 2.3.x 以降でAdobe Commerce用に使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、`.magento.app.yaml` 設定ファイルの `hooks:build` セクションで行います。
 
 ## 環境とテクノロジー
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## NPM バージョンの設定：手順
 
-必要な NPM バージョンを設定するには、で指定します。 `.magento.app.yaml` 設定ファイル。 次の手順に従います。
+必要な NPM バージョンを設定するには、`.magento.app.yaml` 設定ファイルで指定します。 次の手順に従います。
 
-1. ローカル開発環境で、を見つけます。 `.magento.app.yaml` 設定ファイル。
+1. ローカル開発環境で、`.magento.app.yaml` 設定ファイルを見つけます。
 1. プレーンテキストエディターまたは IDE を使用して編集するファイルを開きます。
-1. 必要なバージョンをに設定します。 `hooks:build` セクション。 次の例では、現時点で最高（2019 年 2 月 4 日（PT））の NPM v9.5.0 をインストールするように設定されています。
+1. `hooks:build` のセクションで、必要なバージョンを設定します。 次の例では、現時点で最高（2019 年 2 月 4 日（PT））の NPM v9.5.0 をインストールするように設定されています。
 
    ```yaml
    hooks:
@@ -48,10 +48,10 @@ ht-degree: 0%
    > ```
 
 1. 変更をファイルに保存します。
-1. 編集したファイルを Git でユーザーにプッシュ [統合環境](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
+1. Git が編集したファイルを [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) にプッシュします。
 
 変更は、更新された YAML ファイルを Git によって環境にプッシュした後に有効になります。
 
 ## 関連ドキュメント
 
-* [アプリケーション設定：フック](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) クラウドインフラストラクチャーに関するAdobe Commerceのガイドを参照してください。
+* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html)。

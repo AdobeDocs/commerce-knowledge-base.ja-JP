@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
-書き込み可能なディレクトリを持つディスクのディスク領域が不足しています。 症状の 1 つに以下のものがあります。 [デプロイメントの停止](/help/troubleshooting/deployment/deployment-stuck-with-unable-to-upload-the-application-to-the-remote-cluster-error.md).
+書き込み可能なディレクトリを持つディスクのディスク領域が不足しています。 症状の 1 つに、デプロイメントが停止 [ することがあります ](/help/troubleshooting/deployment/deployment-stuck-with-unable-to-upload-the-application-to-the-remote-cluster-error.md)。
 
 ディスク使用量を確認するには、次のコマンドを実行します。
 
@@ -31,21 +31,21 @@ df -h var/
 
 ## 原因：
 
-この `var` ディレクトリは通常、多くのスペースを取ることができ、簡単に掃除することができます。
+`var` ディレクトリは、通常、多くのスペースを取ることができ、簡単に消去できるディレクトリです。
 
-Adobe Commerceは、すべてのログファイルをに保存します。 `var` ディレクトリ。 新しいログファイルが作成され、古いログファイルが毎日アーカイブされます。 ただし、生成されるエラーの数が増え続ける場合は、ログファイルにより多くの容量が必要になります。
+Adobe Commerceでは、すべてのログファイルが `var` ディレクトリに格納されます。 新しいログファイルが作成され、古いログファイルが毎日アーカイブされます。 ただし、生成されるエラーの数が増え続ける場合は、ログファイルにより多くの容量が必要になります。
 
-カスタムのインポート/エクスポートファイルも以下に保存されます。 `var` ディレクトリ、およびその数が増加した場合はスペースを取る。
+カスタムのインポート/エクスポートファイルも `var` ディレクトリに格納され、ファイルの数が増えるとスペースを取ります。
 
 ## 解決策
 
 ソリューションオプション：
 
 * 大きなログファイルがあるかどうかを確認し、それが大きい理由を調査して、大量のログ出力を生成する問題を修正します。
-* を掃除する `var` ディレクトリ。
-* のサイズを追跡する cron ジョブを設定 `var` ディレクトリを削除してクリーンアップします。
+* `var` ディレクトリをクリーンアップします。
+* `var` ディレクトリのサイズを追跡してクリーンアップする cron ジョブを設定します。
 * 未使用のディスク容量がある場合は、割り当てるディスク容量を増やします。 （スペース制限を確認する方法については、以下の節を参照してください）。
-   * スタータープラン、すべての環境、および Pro プラン統合環境の場合、の説明に従って、未使用のディスク容量があれば割り当てることができます [ディスク領域の管理：ディスク領域の割り当て](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html#application-disk-space).
+   * スタータープラン、すべての環境、Pro プラン統合環境の場合は、[ ディスク領域の管理：ディスク領域の割り当て ](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html#application-disk-space) で説明しているように、未使用のディスク領域があれば割り当てることができます。
    * Pro プランのステージング環境および実稼動環境では、未使用のディスク容量がある場合に割り当てるディスク容量を増やすには、サポートにお問い合わせください。
 * ディスク容量の上限に達してもディスク容量の不足が発生する場合は、ディスク容量の購入を検討してください。詳しくは、Adobeアカウントチームにお問い合わせください。
 
@@ -53,7 +53,7 @@ Adobe Commerceは、すべてのログファイルをに保存します。 `var`
 
 クラウドインフラストラクチャ環境の各Adobe Commerceに空き容量を確認するには、次の手順を実行します。
 
-1. にログインします [クラウドコンソール](https://console.adobecommerce.com).
-1. 日 **[!UICONTROL All projects]** ダッシュボードで、関連するプロジェクトを選択します。 左隅に、空きディスク容量が表示されます。
+1. [Cloud Console](https://console.adobecommerce.com) にログインします。
+1. **[!UICONTROL All projects]** ダッシュボードで、関連するプロジェクトを選択します。 左隅に、空きディスク容量が表示されます。
 
    ![project_space.png](/help/troubleshooting/miscellaneous/assets/project_space.png)

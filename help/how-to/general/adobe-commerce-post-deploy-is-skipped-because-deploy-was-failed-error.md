@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerceの*デプロイに失敗したので*デプロイ後の*エラーはスキップされます
-description: 「この記事では、デプロイメントエラーを調査する方法を説明します。*デプロイに失敗したので、デプロイ後はスキップされます*」
+description: 「この記事では、デプロイメントエラーを調査する方法を説明します。*デプロイに失敗したので、Post-deploy はスキップされます*」
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce *デプロイが失敗したので、デプロイ後はスキップされます* エラー
+# Adobe Commerce *デプロイに失敗したので、デプロイ後はスキップされます* エラー
 
-この記事では、デプロイメントエラーを調査する方法を説明します。 *デプロイが失敗したので、デプロイ後はスキップされます* これは、アップグレードなど、様々な環境へのデプロイメント中に発生します。
+この記事では、デプロイメントエラーを調査する方法を説明します。*アップグレードなど* 様々な環境へのデプロイメント中にデプロイが失敗したので、Post-deploy はスキップされます。
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
@@ -46,4 +46,4 @@ ht-degree: 0%
     W:
 ```
 
-実際の原因を特定するためのエラートレースを取得するには、サーバーに SSH で接続し、ログファイルを確認します `var/log/install_upgrade.log`.
+実際の原因を特定するためのエラートレースを取得するには、サーバーに SSH で接続し、ログファイルの `var/log/install_upgrade.log` を確認します。

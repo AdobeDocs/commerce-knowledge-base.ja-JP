@@ -15,7 +15,7 @@ ht-degree: 0%
 
 この記事では、次のような「クラウドインフラストラクチャー上のAdobe Commerceのデプロイメントに失敗しました」エラーを解決する方法について説明します。
 
-“*「https://repo.magento.com/archives/magento/magento-cloud-configuration/magento-magento-cloud-configuration-x.x.x.x.zip&#39; URL にアクセスできませんでした：HTTP/1.1 403 Forbidden* 」と入力します。 または&quot;*https://repo.magento.com/archives/magento/module-customer-segment/magento-module-customer-segment-102.0.5.0-patch2.zip&quot; ファイルをダウンロードできませんでした（HTTP/1.1 404 が見つかりません）*」と入力します。
+「*https://repo.magento.com/archives/magento/magento-cloud-configuration/magento-magento-cloud-configuration-x.x.x.x.zip&#39; URL にアクセスできませんでした：HTTP/1.1 403 Forbidden*」 または、「*https://repo.magento.com/archives/magento/module-customer-segment/magento-module-customer-segment-102.0.5.0-patch2.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 Not Found）*」。
 
 ## 影響を受ける製品とバージョン
 
@@ -25,19 +25,19 @@ ht-degree: 0%
 
 リポジトリ URL にアクセスできなかったことを示すデプロイメントのエラーメッセージ。
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 トリガーのデプロイメントを手動で行うか、環境の結合、プッシュまたは同期を実行して行います。
 
-<u>実際の結果</u>
+<u> 実際の結果 </u>
 
 デプロイメントが停止します。 プロジェクト UI のデプロイメントエラーログに、次のようなエラーメッセージが表示されます。
 
-*「https://repo.magento.com/archives/magento/magento-cloud-configuration/magento-magento-cloud-configuration-x.x.x.x.zip&#39; URL にアクセスできませんでした：HTTP/1.1 \[403 Forbidden or 404 Not Found\]」*.
+*「https://repo.magento.com/archives/magento/magento-cloud-configuration/magento-magento-cloud-configuration-x.x.x.x.zip&#39; URL にアクセスできませんでした：HTTP/1.1 \[403 Forbidden or 404 Not Found\]」*。
 
 （ログを確認するには、プロジェクト UI の「失敗」アイコンをクリックします）。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 デプロイメントが正常に完了しました。
 
@@ -59,29 +59,29 @@ ht-degree: 0%
 認証キーの問題を解決するには、次の手順を実行します（各手順の詳細については、以下の節を参照してください）。
 
 1. 有効な認証キーを取得します（キーが有効であることを確実に確認できる場合は、これをスキップします）。
-1. でキーの値を追加します。 `env:COMPOSER_AUTH` 変数（または正しい値が入力されていることを確認）を調べ、キーがプロジェクトレベルと環境レベルの変数および `auth.json` ファイル（存在する場合）。
-1. 更新または削除 `auth.json`（認証キーの値が指定されていない場合や他の値がある場合、キーが設定されている場所が 1 つだけになるようにします）。
+1. `env:COMPOSER_AUTH` 変数にキー値を追加し（または正しい値が存在することを確認し）、プロジェクトレベルおよび環境レベルの変数と、プロジェクトルートの `auth.json` ファイル（存在する場合）でキーの指定が一貫しているかどうかを確認します。
+1. 認証キーの値が指定されていない場合や他の値がある場合に、キーが設定されている 1 つの場所のみを使用するように、`auth.json` を更新または削除します。
 
 ### 1.有効な認証キーを取得する
 
 共有アカウントで作成したキーを使用していた場合は、アクセス権を付与したAdobe Commerce ライセンスオーナーに連絡し、キーの生成をリクエストする必要があります。
 
-お支払いの問題によりライセンスが以前に失効され、その問題が解決されてライセンスが更新された場合は、以下が必要です [新しい認証キーの生成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html).
+支払いの問題が原因でライセンスが以前に失効され、その問題が解決されてライセンスが更新された場合は、[ 新しい認証キーを生成 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) する必要があります。
 
 ### 2. env:COMPOSER\_AUTH 変数に keys 値を追加し、auth.json で同じキーが指定されているかどうかを確認します
 
-の手順および関連情報を参照してください。 [既存のシステムの準備](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) および [認証キーの追加](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ 既存システムの準備 ](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) および [ 認証キーの追加 ](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) の手順と関連情報を参照してください。
 
 ### 3. auth.json の更新または削除
 
 次に、認証キーを更新する方法を順を追って説明します。
 
 1. クラウドインフラストラクチャ上にAdobe Commerceがあるマシンに SSH キーでログインします。
-1. プロジェクトへのログイン `magento-cloud login`
-1. コードを更新するブランチを作成します（次の例では、ブランチ名はです）。 `auth` プライマリブランチ（以下の場所から作成されます）:     `magento-cloud environment:branch auth master`
+1. プロジェクトにログイン：`magento-cloud login`
+1. コードを更新するブランチを作成します（次の例では、ブランチ名はプライマリブランチから作成され `auth` す）。     `magento-cloud environment:branch auth master`
 1. プロジェクトのルートディレクトリに移動します。
-1. オプション： `auth.json` 続ける場合は、次の操作を行います [手順 9](#step9).
-1. 開く `auth.json` テキストエディター。
+1. オプション：必要に応じて `auth.json` を削除し、[ 手順 9](#step9) に進みます。
+1. `auth.json` をテキストエディターで開きます。
 
    ```json
               {

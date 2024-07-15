@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ## 問題
 
-商品画像はに保存されます `s3` バケットですが、に同期されません `pub/media` ディレクトリ。 この問題は、次の両方を使用した場合にのみ発生します。
+製品画像は `s3` バケットに保存されますが、`pub/media` ディレクトリには同期されません。 この問題は、次の両方を使用した場合にのみ発生します。
 
 * サイト対応 Nginx による画像のサイズ変更
-* AWS `s3` メディアストレージとして
+* AWS `s3` as media storage
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 Adobe Commerceは Nginx と共にインストールされます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. AWSを使用するためのAdobe Commerceの設定 `s3` メディアストレージとして。
-1. を使用した Nginx の設定 `nginx.conf.sample` Adobe Commerce インストールディレクトリおよび Nginx 仮想ホストに用意されている設定ファイル。 参照： [Nginx の設定](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) 開発者向けドキュメントを参照してください。
+1. AWS `s3` をメディアストレージとして使用するようにAdobe Commerceを設定します。
+1. Adobe Commerce インストールディレクトリに用意されている `nginx.conf.sample` 設定ファイルと Nginx バーチャルホストを使用して、Nginx を設定します。 開発者向けドキュメントの [Nginx の設定 ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) を参照してください。
 1. 1 つの製品画像でシンプルな製品を作成します。
-1. Nginx には、で画像のサイズを変更するためのコメントなしの設定があります `nginx.conf.sample` 次に類似しています。
+1. Nginx には、次のような `nginx.conf.sample` で画像のサイズ変更を行うコメントなしの設定があります。
 
 ```conf
 load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -54,11 +54,11 @@ location /media/ {
     }
 ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 製品画像が製品ページにアップロードされます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 製品画像は製品ページにアップロードされません。
 

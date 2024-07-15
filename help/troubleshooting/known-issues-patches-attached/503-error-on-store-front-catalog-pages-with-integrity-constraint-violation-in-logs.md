@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、回避策としてパッチを提供しますが、この問題は cloud infrastructure v2.3.3 リリースのAdobe Commerceで永続的に修正されており、v2.3.3 にアップグレードすることをお勧めします。の手順に従います [Adobe Commerceのバージョンのアップグレード](https://devdocs.magento.com/cloud/project/project-upgrade.html) 開発者向けドキュメントを参照してください。
+>この記事では、回避策としてパッチを提供しますが、この問題は cloud infrastructure v2.3.3 リリースのAdobe Commerceで永続的に修正されており、v2.3.3 にアップグレードすることをお勧めします。開発者向けドキュメントの [Adobe Commerceのバージョンをアップグレード ](https://devdocs.magento.com/cloud/project/project-upgrade.html) の手順に従います。
 
-この記事では、ストアフロントカタログページにアクセスできず、「ログイン」ログに次のようなエラーメッセージが表示される、cloud infrastructure 2.2.0 上の既知のAdobe Commerceの問題に対するパッチを提供します。 *整合性制約違反：1062 キー&#39;プライマリ&#39;の重複エントリ &#39;%entry%&#39;、クエリ：INSERT INTO \&#39;search\_tmp\_%number%*.
+この記事では、ストアフロントカタログページにアクセスできないというAdobe Commerce on cloud infrastructure 2.2.0 の既知の問題に対するパッチを提供します。エラーメッセージは次のようになります。*Integrity constraint violation: 1062 Duplicate entry &#39;%entry%&#39; for key &#39;プライマリ&#39;, query was: INSERT INTO \&#39;search\_tmp\_%number%*
 
 ## 問題
 
-ストア フロント カタログ ページに予期せずアクセスできなくなります。 エラーログには、次のようなエラー説明が含まれます。 *整合性制約違反：1062 キー&#39;プライマリ&#39;の重複エントリ &#39;%entry%&#39;、クエリ：INSERT INTO \&#39;search\_tmp\_%number%*.
+ストア フロント カタログ ページに予期せずアクセスできなくなります。 次のようなエラーの説明がエラーログに含まれています：*Integrity constraint violation: 1062 キー&#39;プライマリ&#39;の重複エントリ &#39;%entry%&#39;, query was: INSERT INTO \&#39;search\_tmp\_%number%*。
 
 この問題は検索に関連しており、インデックス再作成後に新しいインデックスとともに古いインデックスが存在することが原因です。
 
@@ -57,27 +57,27 @@ curl -X DELETE 127.0.0.1:9200/magento2_product_8_v332
 
 パッチは、次のエディションとバージョン用に作成されました。
 
-* クラウドインフラストラクチャー 2.2.0 上のAdobe Commerce（`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`）
-* クラウドインフラストラクチャー 2.2.4 上のAdobe Commerce（`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`）
+* クラウドインフラストラクチャー 2.2.0 （`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`）上のAdobe Commerce
+* クラウドインフラストラクチャー 2.2.4 （`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`）上のAdobe Commerce
 
-この `MDVA-9590_EE_2.2.0_COMPOSER_v2` patch は、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決する可能性があります）。
+`MDVA-9590_EE_2.2.0_COMPOSER_v2` のパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決する可能性があります）。
 
 * cloud infrastructure 2.0.X、2.1.X、2.2.X、および 2.3.0 ～ 2.3.3 のAdobe Commerce
 * Adobe Commerce オンプレミス 2.0.X、2.1.X、2.2.X、および 2.3.0 ～ 2.3.3
 
-この `MDVA-13203_EE_2.2.4_V1_COMPOSER` patch は、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決する可能性があります）。
+`MDVA-13203_EE_2.2.4_V1_COMPOSER` のパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決する可能性があります）。
 
 * cloud infrastructure 2.0.X、2.1.X、2.2.X、および 2.3.0 ～ 2.3.3 のAdobe Commerce
 * Adobe Commerce オンプレミス 2.0.X、2.1.X、2.2.X、および 2.3.0 ～ 2.3.3
 
 ## パッチの適用方法
 
-手順については、を参照してください [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 役に立つリンク
 
-* [クラウドインフラストラクチャー上のAdobe Commerceのログファイルの場所スタータープランアーキテクチャ](/help/how-to/general/log-locations-directories-for-starter-plan.md) サポートナレッジベースで。
-* [Cloud Infrastructure Pro プランアーキテクチャ上のAdobe Commerceのログファイルの場所](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) サポートナレッジベースで。
-* [Adobe Commerceのログファイルの場所](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) 開発者向けドキュメントを参照してください。
+* [ クラウドインフラストラクチャー上のAdobe Commerceのログファイルの場所スタータープランアーキテクチャ ](/help/how-to/general/log-locations-directories-for-starter-plan.md) に関するアドビのサポートナレッジベースを参照してください。
+* [ クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャのログファイルの場所 ](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) に関するアドビのサポートナレッジベースを参照してください。
+* 開発者向けドキュメントの [Adobe Commerceのログファイル ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) 場所
 
 ## 添付ファイル

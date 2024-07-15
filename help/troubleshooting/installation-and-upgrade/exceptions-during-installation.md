@@ -43,7 +43,7 @@ Object(Magento\Indexer\Model\Resource\Indexer\State\Collection), 'indexer_config
 
 ## 解決策
 
-をクリア `<magento_root>/generated/code` およびその下にあるその他のディレクトリ `var` および `generated` 次のように設定します。
+`var` および `generated` の下にある `<magento_root>/generated/code` およびその他のディレクトリを次のように消去します。
 
 ```bash
 rm -rf <magento_root>/generated/code/* <magento_root>/generated/metadata/* <magento_root>/var/cache/*

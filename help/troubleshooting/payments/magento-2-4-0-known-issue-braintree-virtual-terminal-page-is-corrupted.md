@@ -24,31 +24,31 @@ ht-degree: 0%
 
 ### シナリオ 1:Braintree支払方法が構成される
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-Commerce Admin で、に移動します。 **売上** > **Braintreeバーチャル端末** .** **
+Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。** **
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
-この **Braintreeバーチャル端末** 適切な UI でページが読み込まれます。
+**Braintree仮想ターミナル** ページが適切な UI で読み込まれます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
-の UI **Braintreeバーチャル端末** ページが破損している。
+**Braintree仮想ターミナル** ページの UI が壊れています。
 
 ### シナリオ 2:Braintree支払方法が設定される
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-Commerce Admin で、に移動します。 **売上** > **Braintreeバーチャル端末** .** **
+Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。** **
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
-この **Braintreeバーチャル端末** 適切な UI でページが読み込まれ、Braintreeがまだ設定されていないことを示す警告が表示されます。
+**Braintree仮想ターミナル** ページが適切な UI で読み込まれ、Braintreeがまだ設定されていないことを示す警告が表示されます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
-の UI **Braintreeバーチャル端末** ページが破損しており、警告は表示されません。
+**Braintree バーチャル ターミナル** ページの UI が壊れているため、警告は表示されません。
 
 ## 解決策
 
@@ -69,6 +69,6 @@ Commerce Admin で、に移動します。 **売上** > **Braintreeバーチャ�
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 説明を参照してください。
+手順については、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

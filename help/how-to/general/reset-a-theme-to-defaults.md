@@ -14,7 +14,7 @@ ht-degree: 0%
 
 テーマをカスタマイズしてストアを開発する際に発生する可能性のある問題によっては、Commerce管理者からアクセスできない場合があります。 管理者にアクセスすることなく、テーマを消去してデフォルトにリセットできます。 テーマをクリアすると、デフォルトの Luma テーマが適用されます。
 
-Adobe Commerce（すべてのデプロイメント）およびMagento Open Sourceコンポーネント（モジュール、テーマおよび言語パッケージ）を開発する際に、急速に変化する環境では特定のディレクトリおよびキャッシュを定期的にクリアする必要があります。 そうしないと、コードは例外で実行され、正しく機能しません。 詳しくは、を参照してください [開発時にディレクトリをクリア](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) 開発者向けドキュメントを参照してください。
+Adobe Commerce（すべてのデプロイメント）およびMagento Open Sourceコンポーネント（モジュール、テーマおよび言語パッケージ）を開発する際に、急速に変化する環境では特定のディレクトリおよびキャッシュを定期的にクリアする必要があります。 そうしないと、コードは例外で実行され、正しく機能しません。 詳しくは、開発者向けドキュメントの [ 開発中のディレクトリのクリア ](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) を参照してください。
 
 ## 環境とテクノロジー
 
@@ -30,7 +30,7 @@ Adobe Commerce（すべてのデプロイメント）およびMagento Open Sourc
 
 ストアテーマをリセットする必要があるが、管理パネルにアクセスできない場合は、次の手順を実行してデータベース内でテーマをリセットできます。
 
-1. 次のようなデータベースツールを使用します [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) または、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。 `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
+1. [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。`UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
 1. 次のディレクトリをクリアします。
    * `pub/static/frontend`
    * `var/view_preprocessing`
@@ -41,4 +41,4 @@ Adobe Commerce（すべてのデプロイメント）およびMagento Open Sourc
 
 ## 追加情報
 
-* [開発時にディレクトリをクリア](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) 開発者向けドキュメントで
+* 開発者向けドキュメントの [ 開発時のディレクトリのクリア ](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html)

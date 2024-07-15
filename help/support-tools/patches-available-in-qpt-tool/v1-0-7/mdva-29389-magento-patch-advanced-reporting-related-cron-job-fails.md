@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-29389：詳細レポートに関連する cron ジョブが失敗する
 
-MDVA-29389 パッチは、高度なレポートで次の場所にある問題を修正します。 `analytics_collect_data` cronjob は次のように述べています。*ポートは、ホストパラメーター（localhost:3306 など）内で設定する必要があります*」と入力します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 がインストールされています。 パッチ ID は MDVA-29389。 この問題は、Adobe Commerce 2.4.2 で修正されました。
+MDVA-29389 パッチでは、Advanced Reporting で `analytics_collect_data` cronjob に「*Port must be configured within host parameter （like localhost:3306）*」と表示される問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.7 がインストールされている場合に使用できます。 パッチ ID は MDVA-29389。 この問題は、Adobe Commerce 2.4.2 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,11 +27,11 @@ MDVA-29389 パッチは、高度なレポートで次の場所にある問題を
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. お使いのAdobe Commerce インスタンスで、詳細レポートを有効にします。
 1. 次のクエリを実行して、分析/一般/トークン値を DB に挿入します。
@@ -40,30 +40,30 @@ MDVA-29389 パッチは、高度なレポートで次の場所にある問題を
    INSERT INTO core_config_data VALUES(NULL,'default',0,'analytics/general/token','ABCDE',now());
    ```
 
-1. env.php を開き、次の形式で DB 設定のホストパラメーターにポートを追加します。 `'host' => 'hostname:port',`
+1. env.php を開き、次の形式で DB 設定の host パラメータにポートを追加します。`'host' => 'hostname:port',`
 1. キャッシュをクリアします。
-1. を実行 `analytics_collect_data` cron ジョブ。
+1. `analytics_collect_data` cron ジョブを実行します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-この `analytics_collect_data` env.php で MySQL に接続するためにデフォルトまたは非デフォルトのポートを使用している場合、ジョブは正常に実行されます。
+env.php で MySQL に接続するためにデフォルトまたは非デフォルトのポートを使用する場合、`analytics_collect_data` ジョブは正常に実行されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この `analytics_collect_data` ジョブがエラー「」をスロー&#x200B;*ポートは、ホストパラメーター（localhost:3306 など）内で設定する必要があります*&#x200B;デフォルト以外のポートを使用して env.php の MySQL に接続する場合。
+env.php でデフォルト以外のポートを使用して MySQL に接続すると、`analytics_collect_data` ジョブが「*Port must be configured within host parameter （like localhost:3306）*」というエラーをスローする。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

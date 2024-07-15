@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # 同名の製品の CSV 製品情報の読み込みに失敗します
 
-この記事では、を読み込もうとした際のエラーに関する、Adobe Commerce 2.2.3 の既知の問題のパッチを提供します。 `.csv` 同じ名前の製品がある場合は、製品情報を含むファイル。
+ここでは、同じ名前の商品が存在する場合に、商品情報を含む `.csv` ファイルを読み込もうとするとエラーが発生する、Adobe Commerce 2.2.3 の既知の問題に対するパッチを提供します。
 
 ## 問題
 
-条件 `.csv` 商品情報を含むファイルが読み込まれ、同じ名前の商品が存在する場合、データを確認手順で次のエラーが発生します。 *“`URL Key XYZ was already generated for an item with the SKU %sku%"`*. この問題は、読み込んだ内に製品の URL の列がない場合でも、読み込み中に製品の URL を書き換えることで発生します `.csv` ファイル。
+商品情報を含む `.csv` ファイルが読み込まれたとき、同じ名前の商品がある場合、データを確認手順で「*」`URL Key XYZ was already generated for an item with the SKU %sku%"`* というエラーが発生します。 この問題は、読み込んだ `.csv` ファイルに製品の URL の列がない場合でも、読み込み中に製品の URL を書き換えることで発生します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. Commerce Admin で、同じ名前の 2 つの設定可能な商品を作成します。
-1. を作成 `.csv` これらの製品のデータをインポートするためのファイル。例えば、次の列があります。 `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
-1. に移動 **システム** > **データ転送** > **インポート** を選択し、 `.csv` ファイル。
-1. クリック **データを確認**.
+1. `.csv` ファイルを作成して、これらの製品のデータを読み込みます。例えば、次の列があります。`sku` | `product_type` | `name` | `product_websites` | `store_view_code`
+1. **システム**/**データ転送**/**インポート** に移動し、`.csv` ファイルを選択します。
+1. **データを確認** をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-問題は見つかりませんでした。をインポートしてください `.csv` ファイルは正常に作成されました。
+問題は見つかりませんでした。`.csv` ファイルを正常にインポートできます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-次のエラーメッセージが表示されます。 *「URL キー XYZ は、SKU が %sku% の項目に対して既に生成されています」*&#x200B;ファイルを読み込めません。
+次のエラーメッセージが表示されます。*「URL キー XYZ は、SKU が %sku% の項目に対して既に生成されました」* ファイルを読み込めません。
 
 ## パッチ
 
@@ -53,10 +53,10 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-参照： [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+手順については、サポートナレッジベースの [Adobe Commerceが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 役に立つリンク
 
-[クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html)
+[ クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用 ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html)
 
 ## 添付ファイル

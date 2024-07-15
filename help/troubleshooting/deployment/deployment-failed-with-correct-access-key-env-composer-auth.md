@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します
 
-この記事では、次のようなエラーでデプロイメントが失敗した場合の問題の解決策を提供します。 [デプロイメントログ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+この記事では、[ デプロイメントログ ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に次のようなエラーが表示されてデプロイメントが失敗した場合の問題の解決策を説明します。
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -26,34 +26,34 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 デプロイを試みます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 正常にデプロイされました。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 >[!NOTE]
 >
 >これはエラーの例です。 （デプロイするAdobe Commerceのバージョンに応じて）別のファイルを示すエラーが発生する場合があります。
 
-デプロイに失敗しました。 のようなエラーが表示されます *「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 が見つかりません）* が含まれる [デプロイメントログ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+デプロイに失敗しました。 *デプロイメントログ ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に、「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 エラー）* などのエラーが [ 表示されます。
 
 ### 原因：
 
 次のいずれかの場所にある指定されたコンポーザーのアクセス キーは、コードにアクセスできない可能性があります：
 
-* が含まれる `env:COMPOSER_AUTH` プロジェクトレベルでの変数
-* が含まれる `auth.json file`。この方が `env:COMPOSER_AUTH` 変数。
+* プロジェクトレベルでの `env:COMPOSER_AUTH` 変数
+* `auth.json file` では、`env:COMPOSER_AUTH` 変数よりも優先されます。
 
 ### 解決策
 
-を更新 `env:COMPOSER_AUTH` プロジェクトレベルの変数で、コードへのアクセス権を持つキーで設定されていることを確認します。
+プロジェクトレベルで `env:COMPOSER_AUTH` 変数を更新し、コードへのアクセス権を持つキーで設定されていることを確認します。
 
-手順については、次を参照してください [変数レベル](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) （クラウドインフラストラクチャー上のCommerceに関するガイド）を参照してください。
+手順については、Cloud Infrastructure のCommerce ガイドの [ 変数レベル ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) を参照してください。
 
 ## 関連資料
 

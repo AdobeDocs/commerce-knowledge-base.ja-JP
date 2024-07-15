@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Composer インストール コマンドが.gitignore ファイル、Adobe Commerceを上書きする
 
-この記事では、トラッキングする際の解決策を説明します `.gitignore` ファイルは、cloud infrastructure 2.4.2-p1 および 2.3.7 上のAdobe Commerce上の composer によって上書きされます。
+ここでは、トラッキング対象の `.gitignore` ファイルが、cloud infrastructure 2.4.2-p1 および 2.3.7 上のAdobe Commerce上の composer によって上書きされる場合の解決策について説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## 問題
 
-`.gitignore` composer のインストール コマンドを実行中にファイルが上書きされる。
+composer`.gitignore` インストール コマンドを実行すると、ファイルが上書きされます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 
 1. ワークスペースに空のディレクトリを作成します。
@@ -56,17 +56,17 @@ ht-degree: 0%
       -/this/line/should/stay
       ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-`.gitignore` は、作曲家によって上書きされません。
+`.gitignore` は作曲家によって上書きされません。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 `.gitignore` は、composer のインストールを実行するたびに上書きされます。
 
 ## 解決策
 
-カスタムを保持するには `.gitignore file` で無視する必要があります。 `magento-deploy-ignore` セクション。
+カスタム `.gitignore file` を保持するには、`magento-deploy-ignore` の節で無視する必要があります。
 
 ```git
 {
@@ -84,4 +84,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [トラッキングされる.gitignore ファイルが composer によって上書きされます。](https://github.com/magento/magento2/issues/32888) （Magento2 GitHub 内）。
+* [ トラッキングされる.gitignore ファイルが composer によって上書きされます。Magento2 GitHub を ](https://github.com/magento/magento2/issues/32888) きます。

@@ -15,5 +15,5 @@ ht-degree: 0%
 
 クラウドインフラストラクチャ上のAdobe Commerceに提供される SSL/TLS 証明書について最も関連性の高い情報については、次の記事を参照してください。
 
-* [クラウドインフラストラクチャー上のAdobe Commerceに対する SSL （TLS）証明書](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) サポートナレッジベースで
-* [SSL/TLS 証明書のプロビジョニング](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) 開発者向けドキュメントで
+* [ クラウドインフラストラクチャ上のAdobe Commerceの SSL （TLS）証明書 ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) アドビのサポートナレッジベースに記載されています
+* 開発者向けドキュメントの [SSL/TLS 証明書のプロビジョニング ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates)

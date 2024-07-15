@@ -21,22 +21,22 @@ ht-degree: 0%
 
 ## 問題
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-クラウドライセンスは、連絡先 A （メールアドレス : *<u>first@e.mail</u>*）
+クラウド ライセンスは連絡先 A （E メール アドレス：*<u>first@e.mail</u>*）に関連付けられています
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. A 担当者のアカウントに作成したAdobe Commerce アクセスキー（キー X）に連絡して、クラウドにインストールする。
-1. 連絡先 B （メールアドレス： *<u>second@e.mail</u>*）を購入し、拡張機能をインストールするためのアクセスキー（キー Y）を作成しました。
+1. B 担当者（メールアドレス : *<u>second@e.mail</u>*）が自分のアカウントを使用して拡張機能を購入し、拡張機能をインストールするためのアクセスキーを作成しました（キー Y）。
 1. A に連絡して会社を辞め、ライセンス（所有権）は B に転送されました。
 1. システムインテグレーターは、キー X を使用してクラウド環境に拡張機能をインストールしようとします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 拡張機能が正常にインストールされました。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 展開が失敗したため、拡張機能はインストールされません。
 
@@ -50,18 +50,18 @@ ht-degree: 0%
 
 ### アクセスキーを無効にする方法
 
-へのアクセス権がない場合 [Commerce Marketplace](https://marketplace.magento.com/) 古いキーに関連付けられたアカウント、 [Adobe Commerce サポートに連絡する](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) キーを無効にします。
+古いキーに関連付けられた [Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポートにお問い合わせ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してキーを無効にしてください。
 
 古いキーに関連付けられた Marketplace アカウントにアクセスできる場合は、次の手順を実行してキーを無効にします。
 
-1. にログインします [Commerce Marketplace](https://marketplace.magento.com/) 古いアカウントの資格情報を使用します。
-1. ページの右上にあるアカウント名をクリックし、以下を選択します。 **マイプロファイル**.
-1. クリック **アクセスキー** 「Marketplace」タブで、次の操作を行います。
+1. 古いアカウントの資格情報を使用して ](https://marketplace.magento.com/)[ Commerce Marketplaceにログインします。
+1. ページの右上にあるアカウント名をクリックし、「**マイプロファイル**」を選択します。
+1. 「Marketplace」タブの **アクセスキー** をクリックします。
 
    ![magento_products_access_keys_2.4.1.png](/help/troubleshooting/miscellaneous/assets/magento_products_access_keys_2.4.1.png)
 
-1. クリック **無効** アクセス キーの隣です。
+1. アクセスキーの横にある **無効** をクリックします。
 
 ## 関連資料
 
-* [認証キーの取得](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) 開発者向けドキュメントを参照してください。
+* [ 認証キーの取得 ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) については、開発者向けドキュメントを参照してください。

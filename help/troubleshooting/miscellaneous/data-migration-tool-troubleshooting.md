@@ -15,7 +15,7 @@ ht-degree: 0%
 
 この記事では、データ移行ツールの実行時に発生する可能性のあるエラーの解決策について説明します。
 
-## マッピングされていないソースドキュメント/フィールド {#source-documents-fields-not-mapped}
+## Source ドキュメント/フィールドがマッピングされていない {#source-documents-fields-not-mapped}
 
 ### エラーメッセージ
 
@@ -40,15 +40,15 @@ Destination fields
 
 一部のAdobe Commerce バージョン 1 エンティティ（ほとんどの場合、拡張機能から取得）は、Adobe Commerce バージョン 2 データベースに存在しません。
 
-このメッセージが表示されるのは、データ移行ツールが内部テストを実行して、テーブルとフィールドが間で一致していることを確認するからです *ソース* （Adobe Commerce 1）と *宛先* （Adobe Commerce 2）データベース。
+このメッセージが表示されるのは、Data Migration Tool が内部テストを実行して、テーブルとフィールドが *source* （Adobe Commerce 1）および *destination* （Adobe Commerce 2）データベース間で一致していることを確認するためです。
 
 ### 可能な解決策
 
-* 対応するAdobe Commerce 2 拡張機能をからインストールします。 [Commerce Marketplace](https://marketplace.magento.com/).     競合するデータの発行元が独自のデータベース構造要素を追加する拡張機能の場合、同じ拡張機能のAdobe Commerce 2 バージョンは、対象の（Adobe Commerce 2） データベースにこのような要素を追加し、問題を解決する可能性があります。
-* の使用 `-a` エラーを自動解決し、移行が停止するのを防ぐためのツール実行時の引数。
+* 対応するAdobe Commerce 2 拡張機能を [Commerce Marketplace](https://marketplace.magento.com/) からインストールします。     競合するデータの発行元が独自のデータベース構造要素を追加する拡張機能の場合、同じ拡張機能のAdobe Commerce 2 バージョンは、対象の（Adobe Commerce 2） データベースにこのような要素を追加し、問題を解決する可能性があります。
+* ツールを実行する際は `-a` 引数を使用して、エラーを自動解決し、移行が停止しないようにします。
 * 問題のあるデータを無視するようにツールを設定します。
 
-データベースエンティティを無視するには、 `<ignore>` でエンティティにタグ付け `map.xml` ファイル。例：
+データベースエンティティを無視するには、次のように、`<ignore>` タグを `map.xml` ファイル内のエンティティに追加します。
 
 ```xml
 ...
@@ -71,7 +71,7 @@ Destination fields
 
 >[!WARNING]
 >
->マップファイルを使用してエンティティを無視する前、または `-a` オプションとして、影響を受けるデータをAdobe Commerce 2 ストアで必要としていないことを確認します。
+>マップファイルまたは「`-a`」オプションを使用してエンティティを無視する前に、影響を受けるデータをAdobe Commerce 2 ストアに置く必要がないことを確認してください。
 
 ## クラスがレコードにマッピングされていません {#class-does-not-exist-but-mentioned}
 
@@ -83,13 +83,13 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### 原因：
 
-の間、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした [EAV 移行手順](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) 開発者向けドキュメントを参照してください。 ほとんどの場合、不足しているクラスは [拡張子](https://glossary.magento.com/extension).
+開発者向けドキュメントの [EAV 移行手順 ](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://glossary.magento.com/extension) に属しています。
 
 ### 可能な解決策
 
 * 対応するAdobe Commerce 2 拡張機能をインストールします。
-* 問題の原因となった属性を無視します。    この場合、属性をに追加します `ignore` グループの検索条件 `eav-attribute-groups.xml.dist` ファイル。
-* を使用したクラスマッピングの追加 `class-map.xml.dist` ファイル。
+* 問題の原因となった属性を無視します。    この場合は、`eav-attribute-groups.xml.dist` ファイルの `ignore` グループに属性を追加します。
+* `class-map.xml.dist` ファイルを使用して、クラスマッピングを追加します。
 
 ## 外部キー制約に失敗します
 
@@ -101,13 +101,13 @@ Foreign key <KEY_NAME> constraint fails on source database. Orphan records id: <
 
 ### 原因：
 
-にデータベースレコードがありません `parent_table` に対する `field_id` の `child_table` はを指しています。
+`child_table` の `field_id` が指している `parent_table` にデータベース レコードがありません。
 
 ### 考えられる解決策
 
-からのレコードの削除 `child_table` 必要ない場合は、
+レコードが必要ない場合は、`child_table` から削除します。
 
-レコードを保持するには、を無効にします `Data Integrity Step` データ移行ツールの `config.xml` .
+レコードを保持するには、データ移行ツールの `config.xml` を変更して `Data Integrity Step` を無効にします。
 
 ## URL リライトの重複
 
@@ -119,13 +119,13 @@ Request path: towel.html Store ID: 2 Target path: catalog/product/view/id/12
 
 ### 原因：
 
-この `Target path` url 書き換えでは、次の一意のペアで指定する必要があります `Request path` + `Store ID` . このエラーは、同じを使用する 2 つのエントリを報告します `Request path` + `Store ID` 2 つの異なるペア `Target path` 値。
+URL 書き換えの `Target path` は、`Request path` + `Store ID` の一意のペアで指定する必要があります。 このエラーは、同じ `Request path` と `Store ID` のペアを 2 つの異なる `Target path` 値で使用する 2 つのエントリを報告します。
 
 ### 考えられる解決策
 
-を有効にする `auto_resolve_urlrewrite_duplicates` のオプション `config.xml` ファイル。
+`config.xml` ファイルで「`auto_resolve_urlrewrite_duplicates`」オプションを有効にします。
 
-この設定により、の競合するレコードにハッシュ文字列が追加されます。 [URL](https://glossary.magento.com/url) コマンドラインインターフェイスに書き換えて、解像度の結果を表示します。
+この設定は、競合する [URL](https://glossary.magento.com/url) 書き換えのレコードにハッシュ文字列を追加し、コマンドラインインターフェイスに解決結果を表示します。
 
 ## エンティティの不一致 {#mismatch-of-entities}
 
@@ -143,7 +143,7 @@ Mismatch of entities in the document: <DOCUMENT> Source: <COUNT_ITEMS_IN_SOURCE_
 
 ### 考えられる解決策
 
-でデータ移行ツールを実行する `Delta` 増分の変更を転送するモード。
+データ移行ツールを `Delta` モードで実行して、増分変更を転送します。
 
 ## Deltalog がインストールされていません {#deltalog-is-not-installed}
 
@@ -155,9 +155,9 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### 原因：
 
-このエラーは次の場合に発生します [増分移行](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) （開発者向けドキュメントの） データの変更。 これは、テーブルを削除することを意味します（プレフィックス付き） `m2_cl_*`）がAdobe Commerce 1 データベースに見つかりませんでした。 ツールは、次の期間にこれらのテーブルをインストールします [データ移行](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) （開発者向けドキュメントを参照）と、変更内容を追跡して差分テーブルに入力するデータベーストリガー。
+このエラーは、（開発者向けドキュメントの [ 増分移行 ](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) データに対する変更の際に発生します。 つまり、deltalog テーブル（プレフィックス `m2_cl_*` を含む）がAdobe Commerce 1 データベースに見つかりませんでした。 このツールは、（アドビの開発者向けドキュメントの [data migration](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) 中にこれらのテーブルをインストールするだけでなく、変更内容を追跡して deltalog テーブルに値を入力するデータベーストリガーもインストールします。
 
-エラーの理由の 1 つは、から移行しようとしていることです。 *コピー* ライブストア自体からではなく、ライブのAdobe Commerce 1 ストアの。 一度も移行されていないライブ Adobe Commerce 1 ストアからコピーを作成すると、そのコピーには、差分マイグレーションを行うのに必要なトリガーや追加の差分テーブルが含まれないので、マイグレーションが失敗します。 データ移行ツールでは、AC1 と AC2 の DB を比較して相違点を移行しません。 代わりに、最初のマイグレーション時にインストールされたトリガーテーブルとデルタ・テーブルを使用して、後続のデルタ・マイグレーションを実行します。 その場合、ライブ Adobe Commerce 1 DB のコピーには、Data Migration Tool が移行の実行に使用するトリガーテーブルおよび差分テーブルは含まれません。
+このエラーの理由の 1 つは、ライブストア自体からではなく、ライブ Adobe Commerce 1 ストアの *コピー* から移行しようとしていることです。 一度も移行されていないライブ Adobe Commerce 1 ストアからコピーを作成すると、そのコピーには、差分マイグレーションを行うのに必要なトリガーや追加の差分テーブルが含まれないので、マイグレーションが失敗します。 データ移行ツールでは、AC1 と AC2 の DB を比較して相違点を移行しません。 代わりに、最初のマイグレーション時にインストールされたトリガーテーブルとデルタ・テーブルを使用して、後続のデルタ・マイグレーションを実行します。 その場合、ライブ Adobe Commerce 1 DB のコピーには、Data Migration Tool が移行の実行に使用するトリガーテーブルおよび差分テーブルは含まれません。
 
 ### 考えられる解決策
 

@@ -15,27 +15,27 @@ ht-degree: 0%
 
 この記事では、ページキャッシュがウォームアップ中で、エラーで失敗した場合の解決策を説明します。
 
-*エラー：ウォーミングアップに失敗しました：`<website link>`*
+*エラー：ウォームアップに失敗しました：`<website link>`*
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
 キャッシュウォームアップに失敗しました。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 キャッシュのウォームアップ操作を開始します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 ページまたはサイト全体の読み込み。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-サイトが利用できないか、応答時間が長すぎます。 *エラー：ウォーミングアップに失敗しました：`<website link>`*
+サイトが利用できないか、応答時間が長すぎます。 *エラー：ウォームアップに失敗しました：`<website link>`*
 
 ## 原因：
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 ## 解決策
 
-アクセス制御が有効になっていないことを確認します。特定のブランチ/環境に移動し、 **設定** アイコンをクリックし、 **HTTP アクセス制御** 設定 – このシナリオではキャッシュウォームアップを行えず、アクセス制御を無効にする必要があります。
+アクセス制御が有効になっていないことを確認します。特定のブランチまたは環境に移動して「**設定**」アイコンをクリックし、「**HTTP アクセス制御**」設定を確認します。このシナリオではキャッシュウォームアップを行えず、アクセス制御を無効にする必要があります。
 
 ## 関連資料
 
-* [Adobe Commerce ユーザーガイド / フルページキャッシュ](https://docs.magento.com/user-guide/system/cache-full-page.html) を参照してください。
-* [Adobe Commerceでキャッシュのウォーミングアップとサイトを使用できない](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) サポートナレッジベースで。
+* ユーザーガイドの [Adobe Commerce ユーザーガイド/フルページキャッシュ ](https://docs.magento.com/user-guide/system/cache-full-page.html)。
+* [Adobe Commerceでキャッシュウォーミングアップとサイトを利用できません ](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) という内容をサポートナレッジベースに記載しています。

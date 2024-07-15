@@ -17,18 +17,18 @@ Adobe Commerceでのスタックしたデプロイメントと失敗したデプ
 
 ## 手順 1 - サービスが実行中であることを確認 {#step-1}
 
-+++**Adobe Commerce on cloud infrastructure service は稼働していますか？**
++++**クラウドインフラストラクチャサービス上のAdobe Commerceは稼働していますか？**
 
-デプロイメントの停止 – クラウドインフラストラクチャサービス上でAdobe Commerceは稼働していますか。 チェック [Adobe Commerce Cloud](https://status.adobe.com/products/3350/).
+デプロイメントの停止 – クラウドインフラストラクチャサービス上でAdobe Commerceは稼働していますか。 [Adobe Commerce Cloud](https://status.adobe.com/products/3350/) を確認してください。
 
-a.はい – に進みます。 [手順 2](#step-2).\
+a.はい – [ 手順 2](#step-2) に進みます。\
 b. NO - メンテナンスまたはグローバルな障害。 推定期間と更新を確認します。
 
 +++
 
 ## 手順 2 – 他の環境でのデプロイメントの確認 {#step-2}
 
-+++**既存の環境でデプロイメントをブロックしているデプロイメントが他の環境にありますか？**
++++**既存の環境のデプロイメントをブロックしているデプロイメントが他の環境にありますか？**
 
 進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。
 
@@ -42,16 +42,16 @@ magento-cloud --state=in_progress
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-既存のデプロイメントアクティビティに関する情報を検索するには、以下を参照してください [Cloud UI に「ログのスニペット」エラーがあるかどうかをデプロイメントログで確認しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+既存のデプロイメントアクティビティに関する情報を見つけるには（[Cloud UI で「ログがスニップされた」エラーがある場合のデプロイメントログの確認」を参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
 詳しくは、次のコマンドを実行して、そのアクティビティの実行ログを取得してください。
 
 ```bash
 magento-cloud activity:log <activity-id> [OPTIONAL: <-p project-id or project-url>]
 ```
 
-a.はい – 既存の環境でデプロイメントがブロックされている他の環境のトラブルシューティングを行います。 次の手順に進みます。 [手順 3](#step-3).
+a.はい – 既存の環境でデプロイメントがブロックされている他の環境のトラブルシューティングを行います。 [ 手順 3](#step-3) に進みます。
 
-b.いいえ – 現在の環境のトラブルシューティングを行います。 次の手順に進みます。 [手順 3](#step-3).
+b.いいえ – 現在の環境のトラブルシューティングを行います。 [ 手順 3](#step-3) に進みます。
 
 +++
 
@@ -60,8 +60,8 @@ b.いいえ – 現在の環境のトラブルシューティングを行いま�
 
 +++**すべてのノードで SSH に成功しますか？**
 
-a.はい – に進みます。 [手順 4](#step-4).\
-b.いいえ –  [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+a.はい – [ 手順 4](#step-4) に進みます。\
+b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++
 
@@ -69,17 +69,17 @@ b.いいえ –  [サポートチケットを送信](/help/help-center-guide/hel
 
 +++**すべてのサービスが実行中ですか？**
 
-a.はい – に進みます。 [手順 5](#step-5).\
-b.いいえ –  [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+a.はい – [ 手順 5](#step-5) に進みます。\
+b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++
 
 ## 手順 5 - ビットバケットの実行状態の確認 {#step-5}
 
-+++**Bitbucket を使用しますか？**
++++**Bitbucket の使用**
 
-a.はい – 確認 [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NO – のデプロイメントログエラーを確認する [ログの作成とデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html). 次の手順に進みます。 [手順 6](#step-6).
+a.はい – [status.bitbucket.com](https://bitbucket.status.atlassian.com/) をチェックします。\
+b.いいえ – [ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) でデプロイメントログエラーを確認します。 [ 手順 6](#step-6) に進みます。
 
 +++
 
@@ -87,26 +87,26 @@ b. NO – のデプロイメントログエラーを確認する [ログの作�
 
 +++**エラーコードが報告されていますか？**
 
-a.はい – に進みます。 [手順 7](#step-7).\
-b.いいえ – に進みます。 [手順 8](#step-8).
+a.はい – [ 手順 7](#step-7) に進みます。\
+b.いいえ – [ 手順 8](#step-8) に進みます。
 
 +++
 
 ## 手順 7 - 403 Forbidden エラー {#step-7}
 
-+++**403 禁断？**
++++**403 Forbidden?**
 
-a.はい – に進みます。 [手順 16](#step-16).
-b.いいえ – に進みます。 [手順 9](#step-9).
+a.はい – [ 手順 16](#step-16) に進みます。
+b.いいえ – [ 手順 9](#step-9) に進みます。
 
 +++
 
 ## 手順 8 – 実行中の cron ジョブの確認 {#step-8}
 
-+++**cron ジョブは現在実行中ですか？** ブランチで ssh を使用してログインし、 `ps aufxx |grep cron`.
++++**cron ジョブは現在実行中ですか？** 分岐に ssh でログインし、`ps aufxx |grep cron` を実行します。
 
-a.はい – 該当するブランチ（プライマリなど）で ssh でログインします。 Cron ジョブを強制終了してロックを解除します。 これにより、cron ジョブが強制終了し、ステータスがリセットされます。 実行 `php vendor/bin/ece-tools cron:kill` その後 `php vendor/bin/ece-tools cron:unlock`. ある環境を別の環境に結合する処理を行っている場合は、両方の環境で cron が動作しているかどうかを確認します。\
-b.いいえ – に進みます。 [手順 17](#step-17).
+a.はい – 該当するブランチ（プライマリなど）で ssh でログインします。 Cron ジョブを強制終了してロックを解除します。 これにより、cron ジョブが強制終了し、ステータスがリセットされます。 `php vendor/bin/ece-tools cron:kill` を実行し、次に `php vendor/bin/ece-tools cron:unlock` を実行します。 ある環境を別の環境に結合する処理を行っている場合は、両方の環境で cron が動作しているかどうかを確認します。\
+b.いいえ – [ 手順 17](#step-17) に進みます。
 
 +++
 
@@ -114,44 +114,44 @@ b.いいえ – に進みます。 [手順 17](#step-17).
 
 +++**リモートクラスターにアプリケーションをアップロードできないというエラーが発生しましたか？**
 
-a.はい – に進みます。 [手順 10](#step-10).\
-b.いいえ – に進みます。 [手順 11](#step-11).
+a.はい – [ 手順 10](#step-10) に進みます。\
+b.いいえ – [ 手順 11](#step-11) に進みます。
 
 +++
 
 ## 手順 10 – 十分なストレージの確認 {#step-10}
 
-+++**使用可能なストレージは問題ない？**
++++**使用可能なストレージは問題ありませんか？**
 
-a.はい – 次に進みます。 [手順 11](#step-11).\
-b.いいえ – レビュー [ディスク容量の管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html).
+a.はい – [ 手順 11](#step-11) に進みます。\
+b. NO - レビュー [ ディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html)。
 
 +++
 
 ## 手順 11 - ディスク容量の確認 {#step-11}
 
-+++**_ファイルに警告を書き込めませんでした&#x200B;_?**
++++**_ファイルに警告を書き込めませんでした _?**
 
-a.はい – お願いします [.magento.app.yaml のディスク値を増やす](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) を実行して再デプロイします。 これが機能しない場合、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b.いいえ – 続行します。 [手順 12](#step-12).
+a.はい。[.magento.app.yaml のディスク値を増やして ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) 再デプロイしてください。 それでもうまくいかない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
+b.いいえ – [ 手順 12](#step-12) に進みます。
 
 +++
 
 ## 手順 12 – 環境の再デプロイメントに失敗しましたエラー {#step-12}
 
-+++**環境の再デプロイメントに失敗しましたエラーですか？**
++++**環境の再デプロイメントに失敗しましたエラー？**
 
-a.はい – 次に進みます。 [手順 13](#step-13).\
-b.いいえ – 続行します。 [手順 8](#step-8).
+a.はい – [ 手順 13](#step-13) に進みます。\
+b.いいえ – [ 手順 8](#step-8) に進みます。
 
 +++
 
 ## 手順 13 - Elasticsearchのアップグレードに失敗したかどうかを確認する {#step-13}
 
-+++**アップグレードまたはデプロイするElasticsearchですか？**
++++**アップグレード中または展開中のElasticsearch**
 
-a.はい – Elasticsearchがアップグレード手順に失敗しました。 こちらを参照してください [Elasticsearchソフトウェアの互換性](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). それでもElasticsearchのアップグレードが機能しない場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **注意**: クラウドインフラストラクチャー上のAdobe Commerceの場合、インフラストラクチャチームに 48 営業時間通知しなければ、サービスアップグレードを実稼動環境にプッシュすることはできません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要があるのは、48 時間前までということになります。 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 必要なサービスのアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。\
-b.いいえ – に進みます。 [手順 14](#step-14).
+a.はい – Elasticsearchがアップグレード手順に失敗しました。 [Elasticsearch ソフトウェアの互換性 ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 それでもElasticsearchのアップグレードが機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。 **注意**：クラウドインフラストラクチャー上のAdobe Commerceでは、インフラストラクチャチームに 48 営業時間通知しないと、実稼動環境にサービスアップグレードをプッシュできないことに注意してください。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある場合は、48 時間前に [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、必要なサービスアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。\
+b.いいえ – [ 手順 14](#step-14) に進みます。
 
 +++
 
@@ -159,8 +159,8 @@ b.いいえ – に進みます。 [手順 14](#step-14).
 
 +++**ファイル・システムの inode またはスペースが不足している場合**
 
-a.はい – を参照 [ディスク容量の管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space).\
-b.いいえ – に進みます。 [手順 15](#step-15).
+a.はい。[ ディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) を参照してください。\
+b.いいえ – [ 手順 15](#step-15) に進みます。
 
 +++
 
@@ -168,61 +168,61 @@ b.いいえ – に進みます。 [手順 15](#step-15).
 
 +++**Elasticseach バージョンに関するエラー**
 
-a.はい – に進みます。 [手順 16](#step-16).\
-b.いいえ – に進みます。 [手順 21](#step-21).
+a.はい – [ 手順 16](#step-16) に進みます。\
+b.いいえ – [ 手順 21](#step-21) に進みます。
 
 +++
 
 ## 手順 16 - Composer 設定の確認 {#step-16}
 
-+++**コンポーザーの構成は正しいですか？**
++++**Composer の設定は正しいですか？**
 
-a.はい – に進みます。 [手順 10](#step-10).\
-b.いいえ – レビュー [Composer に関するトラブルシューティングの web ページ](https://getcomposer.org/doc/articles/troubleshooting.md).
+a.はい – [ 手順 10](#step-10) に進みます。\
+b.いいえ – [Composer トラブルシューティング Web ページ ](https://getcomposer.org/doc/articles/troubleshooting.md) を確認します。
 
 +++
 
 ## 手順 17 – 長時間実行されているプロセスの確認 {#step-17}
 
-+++**長時間実行されているプロセスは？**
++++**長時間実行されているプロセス**
 
 a.はい。長時間実行されているプロセスを特定し、プロセスを強制終了します。
-1. ターミナルで次のコマンドを実行します。 `ps aufx`.
+1. ターミナルで次のコマンドを実行します：`ps aufx`。
 1. 長時間実行されているプロセスの PID を見つけます。
-1. を使用してプロセスを終了する `kill -9 <PID>`.
+1. `kill -9 <PID>` を使用してプロセスを終了します。
 
 再び発生する展開を監視します。
 
-b.いいえ – に進みます。 [手順 18](#step-18).
+b.いいえ – [ 手順 18](#step-18) に進みます。
 
 +++
 
 ## 手順 18 - ポストフックの失敗を確認する {#step-18}
 
-+++**フック後のエラー/ハング？**
++++**Post フックの失敗/ハング？**
 
-a.はい – データベース： [空きディスク容量](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space)、破損、不完全/破損したテーブル。\
-b.いいえ – に進みます。 [手順 19](#step-19).
+a.はい – データベース：[ 空きディスク領域 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space)、破損、不完全/破損したテーブル。\
+b.いいえ – [ 手順 19](#step-19) に進みます。
 
 +++
 
 ## 手順 19 - サードパーティの拡張機能でデプロイメントがブロックされているかどうかを確認する {#step-19}
 
-+++**サードパーティの拡張機能を使用している場合は、**
++++**サードパーティの拡張機能を使用しますか？**
 
-a.はい – 試す [サードパーティの拡張機能の無効化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) デプロイメントを実行します（問題の原因であるかどうかを確認するため）（特にエラーで拡張機能名がある場合）。\
-b.いいえ – に進みます。 [手順 20](#step-20).
+回答：はい [ サードパーティの拡張機能を無効にする ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) を試して、特にエラーに拡張機能名がある場合は、デプロイメントを実行します（問題の原因がサードパーティの拡張機能であるかどうかを確認します）。\
+b.いいえ – [ 手順 20](#step-20) に進みます。
 
 +++
 
 ## 手順 20 – 処理に時間のかかるクエリの確認 {#step-20}
 
-+++**長時間実行されているクエリは？**
++++**長時間実行中のクエリ**
 
-[低速のクエリログと MySQL 表示プロセスリストを確認](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md).
+[ 低速のクエリログと MySQL show processlist を確認してください ](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)。
 
-a.はい – 長時間実行中のクエリを強制終了します。 レビュー [MySQL Kill 構文。](https://dev.mysql.com/doc/refman/8.0/en/kill.html)\
-b.いいえ –  [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+a.はい – 長時間実行中のクエリを強制終了します。 [MySQL Kill 構文。](https://dev.mysql.com/doc/refman/8.0/en/kill.html) を確認します。\
+b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++
 
@@ -230,8 +230,8 @@ b.いいえ –  [サポートチケットを送信](/help/help-center-guide/hel
 
 +++**Elasticsearchのバージョンをダウングレードしますか？**
 
-a.はい – 設定では実行できません。 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b.いいえ –  [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+a.はい – 設定では実行できません。 [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。\
+b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++
 

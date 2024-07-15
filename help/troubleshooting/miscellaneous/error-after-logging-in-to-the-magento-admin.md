@@ -19,14 +19,14 @@ ht-degree: 0%
 
 リクエストされた URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/がこのサーバーに見つかりませんでした。
 
-間にスラッシュ文字がないことに注意してください `magento2` および `index.php` を URL 内に挿入します。
+URL の `magento2` と `index.php` の間にスラッシュ文字がないことに注意してください。
 
 ## 解決策
 
 ベース URL が正しくありません。 ベース URL には次の条件があります。
 
-* 次から開始 `http://` または `https://`
-* スラッシュ（ `/` ）
-* の大文字と小文字を一致させる `web/unsecure/base_url` のレコード `core_config_data` データベーステーブル
+* `http://` または `https://` で開始
+* スラッシュ（`/`）で終わる
+* `core_config_data` データベーステーブル内の `web/unsecure/base_url` レコードの大文字と小文字を一致させる
 
 有効な値を使用してインストールを再実行します。

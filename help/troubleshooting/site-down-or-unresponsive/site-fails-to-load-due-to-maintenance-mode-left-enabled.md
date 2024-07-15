@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # メンテナンスモードが有効なままになっているため、サイトの読み込みに失敗します
 
-この記事では、メンテナンスモードが有効なままになっていたり、自動的に無効になっていたりすることが原因でサイトが読み込まれない場合に適用される修正について説明します。 次のエラーメッセージが表示される場合があります。 *サービスの一時的な利用不可サーバーは、メンテナンスのダウンタイムまたは処理能力の問題が原因で、一時的にリクエストに対応できません。*
+この記事では、メンテナンスモードが有効なままになっていたり、自動的に無効になっていたりすることが原因でサイトが読み込まれない場合に適用される修正について説明します。 次のエラーメッセージが表示される場合があります。*サービスが一時的に利用できませんサーバーは、メンテナンスのダウンタイムまたは処理能力の問題が原因で、一時的にリクエストに対応できません。*
 
 ## 影響を受けるバージョンと製品
 
@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## 関連資料
 
-メンテナンスモードを使用するタイミングについては、を参照してください。 [メンテナンスモードの有効化または無効化](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) 開発者向けドキュメントを参照してください。
+メンテナンスモードを使用するタイミングについては、開発者ドキュメントの [ メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) を参照してください。

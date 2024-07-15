@@ -14,11 +14,11 @@ ht-degree: 0%
 
 クラウドインフラストラクチャ環境の各Adobe Commerceに空き容量を確認するには、次の手順を実行します。
 
-1. にログインします [クラウドコンソール](https://console.adobecommerce.com).
-1. 日 **[!UICONTROL All projects]** ダッシュボードで、関連するプロジェクトを選択します。 下隅の「ディスク容量の可用性」を参照してください。
+1. [Cloud Console](https://console.adobecommerce.com) にログインします。
+1. **[!UICONTROL All projects]** ダッシュボードで、関連するプロジェクトを選択します。 下隅の「ディスク容量の可用性」を参照してください。
 
    ![project_space.png](/help/how-to/general/assets/project_space.png)
 
 ## 関連資料
 
-[ディスク容量の管理](https://devdocs.magento.com/cloud/project/manage-disk-space.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ ディスク容量の管理 ](https://devdocs.magento.com/cloud/project/manage-disk-space.html) を参照してください。

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。こちらを参照してください [Elasticsearchのインストールと設定](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) を参照してください。
 
-この記事では、Elasticsearchインデックスのステータスが「」でない場合の修正点を説明します&#x200B;*緑*&#39;. &#39;*黄*&#39;は標準を示し、&#39;*赤*&#39;は無効を示します。 「黄」または「赤」ステータスは、製品が見つからない場合や、古い製品情報が表示される場合に発生する可能性があります。
+この記事では、Elasticsearchインデックスのステータスが「*green*」でない場合の解決策を提供します。 「*yellow*」は正常を示し、「*red*」は不良を示します。 「黄」または「赤」ステータスは、製品が見つからない場合や、古い製品情報が表示される場合に発生する可能性があります。
 
 ## 影響を受けるバージョンと製品
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 問題
 
-Elasticsearchカタログ検索インデックスが遅いため、「」のステータスになります&#x200B;*黄*&#39;または&#39;*赤*「」ではなく「」*緑*&#39;. また、フロントエンドで変更が見つからない可能性もあります。
+Elasticsearchカタログ検索インデックスが遅いため、ステータスが「*green*」ではなく「*yellow*」または「*red*」になります。 また、フロントエンドで変更が見つからない可能性もあります。
 
 ## 原因：
 
@@ -55,8 +55,8 @@ Elasticsearchカタログ検索インデックスが遅いため、「」のス�
    curl --silent -X GET localhost:9200/_cat/indices?v
    ```
 
-これらの手順が機能しない場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+これらの手順が機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
 
 ## 関連資料
 
-詳しくは、次を参照してください [Elasticsearchクラスターヘルス API](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html).
+詳しくは、[Elasticsearchクラスターヘルス API](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html) を参照してください。

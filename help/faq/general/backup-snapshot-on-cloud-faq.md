@@ -24,13 +24,13 @@ ht-degree: 0%
 ### ステージング環境と実稼動環境
 
 * 手動スナップショットは、Pro プランのステージング環境および実稼動環境では使用できません。
-* 自動スナップショットが作成される **ライブ状態に関係なく** （まだ起動されていないサイト用にスナップショットも作成されます） 自動バックアップは、別のシステムに保存されているので、公開ではアクセスできません。 次のことができます [Adobe Commerce サポートチケットを送信](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) チケットに日付、時刻、タイムゾーンを指定して、特別なバックアップを要求したり、特定のバックアップからリストアしたりすること。 また、データベースのロールバックやリストアはサポートによって実行されず、スナップショットが取得されますが、データベースは自分でリストアする必要があります。
-* バックアップは、 **暗号化されたAmazon Web Services Elastic Block Store （AWS EBS）スナップショット**.
+* 自動スナップショットは、サイトの **ライブ状態に関係なく** 作成されます（まだ起動されていないサイトに対してもスナップショットが作成されます）。 自動バックアップは、別のシステムに保存されているので、公開ではアクセスできません。 [Adobe Commerce サポートチケットを送信 ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) して、特別なバックアップをリクエストしたり、チケットに日付、時刻、タイムゾーンを指定した特定のバックアップから復元したりできます。 また、データベースのロールバックやリストアはサポートによって実行されず、スナップショットが取得されますが、データベースは自分でリストアする必要があります。
+* バックアップは、**暗号化されたAmazon Web Services Elastic Block Store （AWS EBS）スナップショット** を使用して作成されます。
 * 環境スナップショットには、完全なシステム（ファイルシステムとデータベース）が含まれます。
-* 自動スナップショットのリテンション時間 **が異なる** およびが続きます [スケジュール](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery).
+* 自動スナップショットのリテンション時間 **異なる** と [ スケジュール ](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery) に従います。
 
 >[!NOTE]
->Cloud Console には常に以下が表示されます。 [!UICONTROL No backup] ステージング環境および実稼動環境で使用します。 バックアップを作成できるのは、統合環境からのみです。 を選択 **[!UICONTROL Backup]** 「。..」ドロップダウンメニューで、をクリックします。
+>Cloud Console は、ステージング環境と実稼動環境では常に [!UICONTROL No backup] を表示します。 バックアップを作成できるのは、統合環境からのみです。 省略記号ドロップダウンメニューの「**[!UICONTROL Backup]**」を選択します。
 >![cloud_console_backup.png](assets/cloud_console_backup.png)
 
 
@@ -39,37 +39,37 @@ ht-degree: 0%
 
 ### 統合（開発）環境
 
-* あなたの [統合環境](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) 等しい **自動的にバックアップされない**&#x200B;ただし、スナップショットを作成することはできます **手動**.
+* [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) は **自動的にバックアップされていません** が、スナップショットを **手動** 作成できます。
 * 非ライブストアの統合環境に対して、手動スナップショットを作成できます。
-* 以下が含まれる場合があります。 **複数のスナップショット** 手動でトリガーされたもの
-* 手動でトリガーされたスナップショットは、 **7 日間**.
+* 手動でトリガーされた **複数のスナップショット** がある場合があります。
+* 手動でトリガーしたスナップショットは、**7 日間** 保存されます。
 
-**開発者向けドキュメントの関連記事：**
+**関連記事については、開発者向けドキュメントを参照してください。**
 
 * [バックアップと障害回復](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
 * [スナップショットの作成](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html)
 
 ## 環境スナップショット、スタータープラン
 
-* すべてのタイプの環境（統合、ステージング、実稼動） **自動的にバックアップされない**&#x200B;ただし、スナップショットは手動で作成できます。
-* 手動スナップショットを作成できます **ライブ状態に関係なく** （まだ起動されていないサイト用にスナップショットも作成されます）
-* 手動でトリガーされたスナップショットは、 **7 日間**.
+* すべてのタイプの環境（統合、ステージング、実稼動） **自動的にバックアップされるわけではありません** で、スナップショットを手動で作成することもできます。
+* サイトの **ライブ状態に関係なく** 手動のスナップショットを作成できます（まだ起動されていないサイト用のスナップショットも作成されます）。
+* 手動でトリガーしたスナップショットは、**7 日間** 保存されます。
 
 ## 環境スナップショットの復元
 
-既存のスナップショットを復元するには（サポート対象の環境：統合、ステージング、スタータープランの実稼動または Pro プランの統合）、次の手順に従います [バックアップ管理：手動バックアップの復元](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
+Commerce既存のスナップショットを復元するには（サポート対象の環境：統合、ステージング、スタータープランの実稼動または Pro プランの統合）、Cloud Infrastructure ガイドの [ バックアップ管理：手動バックアップの復元 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) の手順に従ってください。
 
 ## データベース（DB）のバックアップ
 
 DB バックアップは、クラウドスナップショットの一部です。
 
 >>
-スナップショットは、環境の完全なバックアップであり、実行中のすべてのサービス（など）からのすべての永続的なデータが含まれます **mysql データベース**、Redis など）と、マウントされたボリュームに保存されているファイル。
+スナップショットは、環境の完全なバックアップです。このバックアップには、実行中のすべてのサービス（**MySQL データベース**、Redis など）のすべての永続的なデータと、マウントされたボリュームに保存されているファイルが含まれます。
 
 >[!NOTE]
 >
->マウントされたボリュームは、 [書き込みマウント](/docs/commerce-cloud-service/user-guide/configure/app/properties/properties.html?lang=en#mounts) とは/app ディレクトリのすべてが含まれるわけではありません。 その他のファイルの場合は、によって作成または生成されます。 [ビルドおよびデプロイメントプロセス](/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=en#deployment-workflow)また、残りのファイルを Git リポジトリからチェックアウトする必要もあります。
+>マウントされたボリュームには [ 書き込み可能なマウント ](/docs/commerce-cloud-service/user-guide/configure/app/properties/properties.html?lang=en#mounts) のみが含まれ/参照され、/app ディレクトリの一部は含まれません。 その他のファイルの場合は、[ ビルドおよびデプロイメントプロセス ](/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=en#deployment-workflow) によって作成および生成されます。また、Git リポジトリから残りのファイルをチェックアウトする必要もあります。
 
-[スナップショットとバックアップ管理](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ スナップショットとバックアップ管理 ](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html)。
 
-のみを送信 [サポートリクエスト](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 特定の時点からの DB が必要な場合、実稼動環境およびステージング環境からの DB スナップショット用。 （任意の環境で） DB の現在のバックアップのみが必要な場合は、ナレッジベースの記事を参照してください。 [クラウドでのデータベースダンプの生成](/help/how-to/general/create-database-dump-on-cloud.md).
+特定の時点から DB が必要な場合は、実稼動環境およびステージング環境から DB スナップショットの [ サポートリクエスト ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) を送信するだけです。 （任意の環境で）現在の DB のバックアップのみが必要な場合は、ナレッジベースの記事 [ クラウドでのデータベースダンプの生成 ](/help/how-to/general/create-database-dump-on-cloud.md) を参照してください。

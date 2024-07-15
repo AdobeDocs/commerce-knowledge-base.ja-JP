@@ -21,23 +21,23 @@ Adobe Commerce（すべてのデプロイメントオプション） 2.3.x
 
 ## 問題
 
-お客様が詳細レポートにアクセスしようとすると、404 エラーが発生し、に関連付けられたログにエラーがあります `analytics_collect_data job` .
+顧客が詳細レポートにアクセスしようとすると、404 エラーが発生し、に関連付けられているログにエラーがあ `analytics_collect_data job` ます。
 
 ## 互換性のあるMagentoのバージョン：
 
 パッチは、次のAdobe Commerceのバージョンとエディションと互換性があります（ただし、問題が解決しない可能性があります）。
 
-* [MDVA-19391\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip):Adobe Commerce（すべてのデプロイメントオプション） 2.3.1-2.3.4-p2
-* [MDVA-18980\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip):Adobe Commerce（すべてのデプロイメントオプション） 2.3.0
-* [MDVA-15136\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip):Adobe Commerce（すべてのデプロイメントオプション） 2.3.0
+* [MDVA-19391\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip): Adobe Commerce（すべてのデプロイメントオプション） 2.3.1-2.3.4-p2
+* [MDVA-18980\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip): Adobe Commerce（すべてのデプロイメントオプション） 2.3.0
+* [MDVA-15136\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip): Adobe Commerce（すべてのデプロイメントオプション） 2.3.0
 
 ## **解決策**
 
 この問題を修正するには、この記事に添付されている関連パッチを適用してください。 ダウンロードするには、次のリンクをクリックします。
 
-* Download [MDVA-19391\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip)
-* Download [MDVA-15136\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip)
-* Download [MDVA-18980\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip)
+* [MDVA-19391\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip) のダウンロード
+* [MDVA-15136\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip) をダウンロード
+* [MDVA-18980\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip) のダウンロード
 
 使用するパッチを確認するには、次の手順に従います。
 
@@ -52,21 +52,26 @@ Adobe Commerce（すべてのデプロイメントオプション） 2.3.x
 </tr>
 <tr>
 <td>
-<pre>report.CRITICAL: cron ジョブ実行中のエラー {"exception":"[object] （RuntimeException （コード：0）: /srv/public_html/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php:327, TypeError （コード：0）: substr_count （）では、パラメーター 1 が文字列であることが想定されます。/srv/public_html/vendor/magento/module-page-builder-analytics/Model/ContentTypeUsageReportProvider.php:106）"} []</pre>または<pre>report.ERROR: Cron ジョブ analytics_collect_data にエラーがあります。substr_count （）は、パラメータ 1 が文字列であること、指定された null であることを想定しています。 統計：{"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384}
+<pre>report.CRITICAL: cron ジョブ {"exception":"[object] （RuntimeException （コード：
+  0）:/srv/public_html/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php:327 で cron ジョブを実行中にエラーが発生する。
+  TypeError （code: 0）: substr_count （）は、パラメータ 1 が文字列であること、指定された null であることを想定しています
+  at /srv/public_html/vendor/magento/module-page-builder-analytics/Model/ContentTypeUsageReportProvider.php:106）"}
+  []</pre>または<pre>report.ERROR: Cron ジョブ analytics_collect_data にエラーがあります：substr_count （）は
+  パラメータ 1 を文字列に指定する場合は、null を指定します。 統計：{"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384}
   [] []</pre>
 <p> </p>
 </td>
-<td>適用<a href="assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch">MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip</a>、キャッシュをクリアし、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。</td>
+<td>Apply<a href="assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch">MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip</a>、キャッシュをクリアし、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。</td>
 </tr>
 <tr>
 <td>
 <p><em>ファイル「/tmp/analytics/tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/.../tmp/.../tmp/../tmp/.../tmp/.../tmp/.../tmp/.../tmp/.../tmp/.../tmp/.../tmp/.../tmp/../tmp/.../tmp/../tmp/../tmp/../tmp/../tmp/.../tmp/../tmp/</em></p>
 </td>
-<td>適用<a href="assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch">MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip</a>、キャッシュをクリアし、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。</td>
+<td>Apply<a href="assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch">MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip</a>、キャッシュをクリアし、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。</td>
 </tr>
 <tr>
 <td><em>有効な暗号ではありません</em></td>
-<td>適用<a href="assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch">MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip</a>、キャッシュをクリアし、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。</td>
+<td>Apply<a href="assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch">MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip</a>、キャッシュをクリアし、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。</td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +79,7 @@ Adobe Commerce（すべてのデプロイメントオプション） 2.3.x
 
 ## パッチの適用方法
 
-ファイルを解凍し、の指示に従います。 [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+ファイルを解凍し、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) の手順に従います。
 
 ## 関連資料
 

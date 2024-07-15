@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-27239：クロスセル製品が表示されない
 
-MDVA-27239 パッチを適用すると、クロスセル製品が表示されない問題が修正されます。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 がインストールされています。 この問題はAdobe Commerce 2.3.6 で修正されました。
+MDVA-27239 パッチを適用すると、クロスセル製品が表示されない問題が修正されます。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.7 がインストールされている場合に使用できます。 この問題はAdobe Commerce 2.3.6 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,13 +27,13 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.3.5-p2�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 クロスセル製品は、買い物かごページのクロスセルブロックには表示されません。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 1. Layout_TargetRule モジュールを無効化するか、Magentoブロック Magento\TargetRule\Block\Checkout\Cart\Crosssellから削除します。
 1. 製品 1 を作成します。
@@ -42,16 +42,16 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.3.5-p2�
 1. 製品 4 のクロスセルとして製品 3 を設定します。
 1. 製品 4 を製品 2 のクロスセルとして設定します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 商品 4 と商品 2 を買い物かごに追加します。
 1. 買い物かごページを確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 製品 3 はクロスセルブロックで表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 クロスセルブロックが空です。
 
@@ -59,14 +59,14 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.3.5-p2�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

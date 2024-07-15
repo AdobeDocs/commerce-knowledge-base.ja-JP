@@ -19,12 +19,12 @@ ht-degree: 0%
 
 この問題を解決する方法は、設定が 1 ユーザーか 2 ユーザーかによって異なります。
 
-* *1 人のユーザー* つまり、web サーバーも実行しているユーザーとしてAdobe Commerce サーバーにログインします。 このタイプの設定は、共有ホスティング環境で一般的です。
-* *2 人のユーザー* は通常、を意味します *できません* web サーバーユーザーとしてログインするか、に切り替えます。 通常は、1 人のユーザーとしてログインし、別のユーザーとして web サーバーを実行します。 これは、プライベートホスティングの場合や、独自のサーバーがある場合に典型的です。
+* *1 人のユーザー* とは、web サーバーも実行しているのと同じユーザーとしてAdobe Commerce サーバーにログインすることを意味します。 このタイプの設定は、共有ホスティング環境で一般的です。
+* *2 人のユーザー* とは、通常、web サーバーユーザーとしてログインしたり、web サーバーユーザーに切り替えたりすることは *できません* ことを意味します。 通常は、1 人のユーザーとしてログインし、別のユーザーとして web サーバーを実行します。 これは、プライベートホスティングの場合や、独自のサーバーがある場合に典型的です。
 
 ## 1 ユーザーによる解決
 
-コマンドラインでアクセスできる場合は、Adobe Commerceがにインストールされていると仮定して、次のコマンドを入力します。 `/var/www/html/magento2`:
+コマンドラインでアクセスできる場合は、Adobe Commerceが `/var/www/html/magento2` にインストールされていると仮定して、次のコマンドを入力します。
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+w {} + && chmod u+x bin/magento
@@ -34,13 +34,13 @@ $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -typ
 
 ## 2 ユーザーによる解決
 
-オプションで 1 行にすべてのコマンドを入力するには、Adobe Commerceがにインストールされている場合は、次のように入力します `/var/www/html/magento2` web サーバーグループ名はです。 `apache`:
+オプションで 1 行にすべてのコマンドを入力するには、Adobe Commerceが `/var/www/html/magento2` にインストールされており、web サーバーグループ名が `apache` の場合は、次のように入力します。
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-ファイルシステムの権限が不適切に設定され、Adobe Commerce ファイルシステムのオーナーが変更できない場合は、 `root` 権限：
+ファイルシステムの権限が不適切に設定され、Adobe Commerce ファイルシステムのオーナーが変更できない場合は、`root` の権限を持つユーザーとしてコマンドを入力できます。
 
 ```bash
 $ cd /var/www/html/magento2 && sudo find var vendor

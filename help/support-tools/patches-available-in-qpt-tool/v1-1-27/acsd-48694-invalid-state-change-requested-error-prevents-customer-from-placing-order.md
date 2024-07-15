@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48694: *無効な状態変更が要求されました* エラーにより、お客様が注文できない
+# ACSD-48694: *無効な状態変更が要求されました* エラーにより、お客様は注文できません
 
-ACSD-48694 パッチは、エラーが発生する問題を修正します *無効な状態変更が要求されました* 顧客が注文できないようにします。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 がインストールされています。 パッチ ID は ACSD-48694 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-48694 パッチでは、エラー *無効な状態変更がリクエストされました* により、お客様が注文できない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 がインストールされている場合に使用できます。 パッチ ID は ACSD-48694 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,17 +27,17 @@ ACSD-48694 パッチは、エラーが発生する問題を修正します *無�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-エラー *無効な状態変更が要求されました* 顧客が注文できないようにします。
+エラー *無効な状態変更がリクエストされました* により、お客様は注文できません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. の間にわずかな遅延を追加 `/estimate-shipping-methods` を含めることによるリクエスト `sleep()` 時刻 `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()` 関数なので、 `/estimate-shipping-methods` リクエストは、次の期間の後に完了します： `/shipping-information` チェックアウト中に配送手順から支払い手順に進む場合。
-1. 使用するセッションの設定 [!DNL Redis] （を使用） *disable_locking: 1* の設定値。
-1. 開く **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** および有効化 *[!UICONTROL Persistent Shopping Cart]*.
+1. 関数に `sleep()` を含めることで、`/estimate-shipping-methods` リクエストの間にわずかな遅延を加え `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()`、チェックアウト中に配送手順から支払い手順に進む `/shipping-information` の後に `/estimate-shipping-methods` リクエストが完了するようにします。
+1. *disable_locking: 1* 設定で [!DNL Redis] を使用するようにセッションを設定します。
+1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Customers]** を開き、*[!UICONTROL Persistent Shopping Cart]* を有効にします。
 1. 顧客としてログインし、商品を買い物かごに追加します。
 1. カスタマーセッションの有効期限が切れるようにします。 永続的な Cookie と買い物かごは引き続き保存されます。
 1. チェックアウトに移動し、配送先住所を追加して、支払いセクションに移動します。
@@ -46,27 +46,27 @@ ACSD-48694 パッチは、エラーが発生する問題を修正します *無�
 1. 次に、チェックアウトページに直接移動し、支払い手順に移動します。
 1. 注文してみてください。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 * エラーはありません。
-* 注文が正常に行われ、 *ありがとうございました* ページが表示されます。
+* 注文が完了すると、「ありがとうございました *ページが表示され* す。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-エラー *無効な状態変更が要求されました* が表示されますが、注文が行われます。
+「*無効な状態変更がリクエストされました*」というエラーが表示されますが、注文は行われます。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

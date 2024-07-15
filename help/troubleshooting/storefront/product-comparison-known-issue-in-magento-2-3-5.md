@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.3.5 の製品比較の既知の問題
 
-この記事では、既知のを回避する方法に関する推奨事項を提供します [製品比較](https://docs.magento.com/user-guide/marketing/product-compare.html) Adobe Commerce オンプレミス 2.3.5 およびAdobe Commerce on cloud infrastructure 2.3.5 の問題。
+この記事では、Adobe Commerce オンプレミス 2.3.5 およびAdobe Commerce on cloud infrastructure 2.3.5 の既知の [ 製品比較 ](https://docs.magento.com/user-guide/marketing/product-compare.html) 問題を回避する方法に関する推奨事項を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品の属性は、 **ストアフロントで同等** 設定。 詳しくは、を参照してください [製品属性の作成](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) を参照してください。
+>製品属性は、「ストアフロントで比較 **設定を使用した比較に使用されるように** 定されています。 詳しくは、製品ユーザーガイドの [ 製品属性の作成 ](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) を参照してください。
 
 修正は、2020 年 Q4 にリリースされるAdobe Commerce 2.3.6 で利用できるようになります。
 
-この修正は GitHub で確認できます（この修正は回帰テストを経ておらず、公式のホットフィックスではないことを考慮してください）。 <https://github.com/magento/magento2/pull/27662>
+この修正は GitHub で確認できます（この修正は回帰テストを経ておらず、公式のホットフィックスではないことを考慮してください）。<https://github.com/magento/magento2/pull/27662>
 
 ## 関連資料
 
@@ -53,4 +53,4 @@ ht-degree: 0%
 <p title="Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ</a></p>
 </li>
 </ul>
-</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Adobe Commerce 2.3.5 の既知の問題</a> 開発者向けドキュメントで</li></ul>
+</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Adobe Commerce 2.3.5 の既知の問題 </a> については、開発者向けドキュメントを参照してください。</li></ul>

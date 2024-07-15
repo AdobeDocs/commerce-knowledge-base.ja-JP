@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0 の既知の問題 – 輸出税率が機能しない
 
-この記事では、が発生したAdobe Commerce 2.4.0 の既知の問題の解決策を提供します。 **輸出税率** ボタンが機能しない。
+この記事では、「**輸出税率**」ボタンが機能しない、Adobe Commerce 2.4.0 の既知の問題の解決策を提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-1. Commerce管理パネルに移動します。 **ストア** > **税務処理基準**.
-1. 「」をクリックします **新しい税務処理基準を追加** ボタン。
-1. のテキストをクリックします **輸出税率** ボタン。
+1. Commerce管理パネル/**ストア**/**税務ルール** に移動します。
+1. 「**新規税務処理基準の追加**」ボタンをクリックします。
+1. 「税率の書き出し **ボタンのテキストをクリック** ます。
 
    ![magento_export_tax_rates.png](assets/mceclip0.png)
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-A `tax_rates.csv` 税率を含むファイルのダウンロード。
+税率を含む `tax_rates.csv` ファイルがダウンロードされます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 .csv ファイルはダウンロードされません。
 
@@ -42,7 +42,7 @@ A `tax_rates.csv` 税率を含むファイルのダウンロード。
 
 回避策：
 
-の左下エッジをクリックします **輸出税率** を書き出すためのボタン `tax_rates.csv` ファイル。
+「税率のエクスポート **ボタンの左下にあるボタンをクリックして**`tax_rates.csv` ファイルをエクスポートします。
 
 ![magento_export_tax_rates.png](assets/mceclip1.png)
 
@@ -52,8 +52,8 @@ A `tax_rates.csv` 税率を含むファイルのダウンロード。
 
 サポートナレッジベースでは、
 
-* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintree支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md).
-* [Adobe Commerce 2.4.0 での配送ラベル作成の既知の問題](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md).
-* [Adobe Commerce 2.4.0 の既知の問題 – 顧客のアクティビティの更新が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md).
-* [Adobe Commerce 2.4.0 の既知の問題：ストアフロントに生のメッセージデータが表示される](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md).
-* [Adobe Commerce 2.4.0 の既知の問題：「買い物かごに選択項目を追加」ボタンが機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md).
+* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeによるお支払い方法が表示されません ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)。
+* [Adobe Commerce 2.4.0 での配送ラベル作成の既知の問題 ](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md)。
+* [Adobe Commerce 2.4.0 の既知の問題 – 顧客のアクティビティの更新が機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)。
+* [Adobe Commerce 2.4.0 の既知の問題：ストアフロントに生のメッセージデータが表示される ](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)。
+* [Adobe Commerce 2.4.0 の既知の問題：「選択項目を買い物かごに追加」ボタンが機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)。

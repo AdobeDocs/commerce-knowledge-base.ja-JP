@@ -1,6 +1,6 @@
 ---
-title: 新規設定のチェックリスト [!DNL domain]
-description: これは、新規設定方法のチェックリストです。 [!DNL domain] クラウドインフラストラクチャー上のAdobe Commerceで。
+title: 新規設定のチェックリスト  [!DNL domain]
+description: これは、クラウドインフラストラクチャー上に新しいAdobe Commerceをセットアップする方法を  [!DNL domain]  すチェックリストです。
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
 source-git-commit: 625ed2c7ab79f7bca9a979903e97c44c875e607c
@@ -10,58 +10,58 @@ ht-degree: 0%
 
 ---
 
-# 新規設定のチェックリスト [!DNL domain]
+# 新しい [!DNL domain] の設定のチェックリスト
 
-これは、新規設定方法のチェックリストです。 [!DNL domain] クラウドインフラストラクチャー上のAdobe Commerceで。 これは、新しいドメインを追加しようとしているか、現在のドメインを新しいドメインに置き換えようとしているかに関係なく適用されます。
+これは、クラウドインフラストラクチャー上のAdobe Commerceで新しい [!DNL domain] を設定する方法を示したチェックリストです。 これは、新しいドメインを追加しようとしているか、現在のドメインを新しいドメインに置き換えようとしているかに関係なく適用されます。
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 新しいドメインの設定方法
 
-### 手順 1 – このは [!DNL Integration, Staging]、または [!DNL Production environment]?
+### 手順 1 - [!DNL Integration, Staging] 用ですか、[!DNL Production environment] 用ですか。
 
-* **[!DNL Integration]**: [!DNL Custom domains] はサポートされていません。 代わりに、次の方法を使用する必要があります。 [複数の web サイトまたはストアの設定：ローカルインストールの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) を参照してください。
-* **[!DNL Staging]**：に移動します **手順 2**.
-* **[!DNL Production]**：に移動します **手順 3**.
+* **[!DNL Integration]**: [!DNL Custom domains] はサポートされていません。 ユーザーガイドでは、この方法を代わりに使用する必要があります。[ 複数の web サイトまたはストアを設定する：ローカルインストールを設定する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains)。
+* **[!DNL Staging]**: **手順 2** に移動します。
+* **[!DNL Production]**: **手順 3** に移動します。
 
-### 手順 2 - [!DNL Staging environment]：を担当しています [!DNL Pro] または [!DNL Starter]?
+### 手順 2 - [!DNL Staging environment]:[!DNL Pro] または [!DNL Starter] を使用していますか？
 
-* **[!DNL Pro]**: **リクエストの送信** ドメインの追加先 [!DNL Fastly, Nginx]を作成し、を設定します [!DNL SSL certificate] （および [!DNL Sendgrid domain]（必要に応じて）。 設定が完了したら、 [を更新 [!DNL DNS] を使用した設定 [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings).
-
->[!NOTE]
->
->新しいを追加できます [!DNL domain] 対象： [!DNL Fastly] で設定を更新することにより、自分で行うことができます。 [!DNL Admin] 。対象： **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** 例： [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) を参照してください。
->
->ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
->
->1. 独自に設定されたクラウド環境にドメインを移行しようとしています [!DNL Fastly] サービス。 この場合は、リクエストを送信し、ドメインのデリゲーションをリクエストします。
->1. ドメインを Starter から Pro に移行します。 この場合は、さらに支援を求める要求を送信します。
-
-* **[!DNL Starter]**: [!DNL Custom domains] は、ステージング環境ではサポートされていません。
-
-### 手順 3 - [!DNL Production environment]：を担当しています [!DNL Pro] または [!DNL Starter]?
-
-* **[!DNL Pro]**: **リクエストの送信** ドメインの追加先 [!DNL Fastly, Nginx]を作成し、を設定します [!DNL SSL certificate] （例： [!DNL Sendgrid domain]（必要に応じて）。 設定が完了したら、次に進みます。 **手順 4**.
+* **[!DNL Pro]**: **リクエストを送信** してドメインを [!DNL Fastly, Nginx] に追加し、[!DNL SSL certificate] を設定（必要に応じて [!DNL Sendgrid domain] も設定）。 設定が完了したら、[ [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings) を使用して  [!DNL DNS]  設定を更新します。
 
 >[!NOTE]
 >
->新しいを追加できます [!DNL domain] 対象： [!DNL Fastly] で設定を更新することにより、自分で行うことができます。 [!DNL Admin] 。対象： **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) を参照してください。
+>ユーザーガイドの [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) に [!DNL Fastly] すように、**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!DNL Fastly Configuration]**/**[!UICONTROL Domains]** の [!DNL Admin] で設定を更新することで、新しい [!DNL domain] を自分に追加できます。
+>
+>ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
+>
+>1. 独自の [!DNL Fastly] サービスに設定されたクラウド環境にドメインを移行しようとしています。 この場合は、リクエストを送信し、ドメインのデリゲーションをリクエストします。
+>1. ドメインを Starter から Pro に移行します。 この場合は、さらに支援を求める要求を送信します。
+
+* **[!DNL Starter]**: [!DNL Custom domains] はステージング環境ではサポートされていません。
+
+### 手順 3 - [!DNL Production environment]:[!DNL Pro] または [!DNL Starter] を使用していますか？
+
+* **[!DNL Pro]**: **リクエストを送信** してドメインを [!DNL Fastly, Nginx] に追加し、[!DNL SSL certificate] を（必要に応じて [!DNL Sendgrid domain] として）設定します。 設定が完了したら、**手順 4** に進みます。
+
+>[!NOTE]
+>
+>ユーザーガイドの **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!DNL Fastly Configuration]**/**[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) の [!DNL Admin] で設定を更新することで、新しい [!DNL domain] を自分に追加で [!DNL Fastly] ます。
 >
 >
 >ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
 >
->1. ドメインをオンプレミスからクラウド環境に移行しようとしています。この環境は、独自に設定されています [!DNL Fastly] サービス。 この場合は、リクエストを送信し、ドメインのデリゲーションをリクエストします。
+>1. ドメインをオンプレミスからクラウド環境に移行しようとしています。この環境は、独自の [!DNL Fastly] サービスで構成されています。 この場合は、リクエストを送信し、ドメインのデリゲーションをリクエストします。
 >1. ドメインを Starter から Pro に移行します。 この場合は、さらに支援を求める要求を送信します。
 
-* **[!DNL Starter]**：を追加 [!DNL domain] をプロジェクトに追加する **[!DNL Domains]** タブをクリックし、 **リクエストの送信** を提供する **[!DNL ACME Challenge Key]** の場合 [!DNL SSL certificate].
+* **[!DNL Starter]**:「リク [!DNL domain] スト」タブでプロジェクトにリク **[!DNL Domains]** ストを追加し、**リクエストを送信** してリク [!DNL SSL certificate] ストの **[!DNL ACME Challenge Key]** を指定します。
 
-### 手順 4 – は [!DNL domain] ライブ？
+### 手順 4 - [!DNL domain] はライブですか？
 
-* **はい**: [を更新 [!DNL DNS] を使用した設定 [!UICONTROL production] 設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html#update-dns-configuration-with-production-settings).
-* **不可**: [を更新 [!DNL DNS] を使用した設定 [!UICONTROL development] 設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings).
+* **はい**: [[!UICONTROL production] 設定で  [!DNL DNS]  設定を更新 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html#update-dns-configuration-with-production-settings)。
+* **いいえ**: [[!UICONTROL development] 設定で  [!DNL DNS]  設定を更新 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings)。
 
 ## 関連資料
 
-* [複数の web サイトまたはストアの設定：新規追加 [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) を参照してください。
+* ユーザーガイドの [ 複数の web サイトまたはストアを設定：新規追加  [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains)。

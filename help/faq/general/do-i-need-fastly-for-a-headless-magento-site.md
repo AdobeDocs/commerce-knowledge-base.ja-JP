@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->すべてのお客様は、実稼動環境とステージング環境に Fastly を使用する必要があります。 Fastly は、フルページキャッシュ、画像の最適化、セキュリティサービス（DDoS と WAF）をクラウドインフラストラクチャプロジェクト上のAdobe Commerceの一部として提供するコンテンツ配信ネットワーク（CDN）です。 これらは、Adobe Commerce ソリューションのコアコンポーネントであり、パフォーマンスとセキュリティを向上させます。 これらの機能は、Adobeの PCI コンプライアンスの一部です。 これらの Fastly サービスは、スターター環境、ステージング環境、ステージング環境、実稼動マスターでセットアップする必要があります。 ヘッドレスデプロイメントでAdobe Commerceを使用している場合、パブリックインターネットからのすべての API トラフィックは Fastly を経由する必要があります。Fastly を使用してGraphQLの応答をキャッシュすることを強くお勧めします。 参照： [GraphQL開発者ガイド > Fastly でのキャッシュ](https://devdocs.magento.com/guides/v2.3/graphql/caching.html#caching-with-fastly) 開発者向けドキュメントを参照してください。
+>すべてのお客様は、実稼動環境とステージング環境に Fastly を使用する必要があります。 Fastly は、フルページキャッシュ、画像の最適化、セキュリティサービス（DDoS と WAF）をクラウドインフラストラクチャプロジェクト上のAdobe Commerceの一部として提供するコンテンツ配信ネットワーク（CDN）です。 これらは、Adobe Commerce ソリューションのコアコンポーネントであり、パフォーマンスとセキュリティを向上させます。 これらの機能は、Adobeの PCI コンプライアンスの一部です。 これらの Fastly サービスは、スターター環境、ステージング環境、ステージング環境、実稼動マスターでセットアップする必要があります。 ヘッドレスデプロイメントでAdobe Commerceを使用している場合、パブリックインターネットからのすべての API トラフィックは Fastly を経由する必要があります。Fastly を使用してGraphQLの応答をキャッシュすることを強くお勧めします。 開発者向けドキュメントの [GraphQL開発者ガイド > Fastly でのキャッシュ ](https://devdocs.magento.com/guides/v2.3/graphql/caching.html#caching-with-fastly) を参照してください。
 
-## **Question**
+## **質問**
 
 Adobe Commerceのヘッドレス実装を開発中です。 それでも、Fastly を CDN サービスとして使用する必要がありますか？
 
@@ -25,7 +25,7 @@ Adobe Commerceのヘッドレス実装を開発中です。 それでも、Fastl
 いいえ、言ってません。この場合、少なくとも開発の最初は、Fastly の使用をスキップすることができます。
 
 有効にしたくない状況は、ヘッドレスデプロイメントの場合のみです。
-参照： [Cloud for Adobe Commerce > Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [Cloud for Adobe Commerce > Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) を参照してください。
 
 それでも、ほとんどの場合、SSL 証明書を使用するには Fastly が必要になります。
 
@@ -33,5 +33,5 @@ Adobe Commerceのヘッドレス実装を開発中です。 それでも、Fastl
 
 ## 詳細情報
 
-* [ヘッドレス Web サイト：分離されたアーキテクチャに関する大きな問題は何ですか？](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) 作成者： [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) 開発者向けドキュメントを参照してください。
+* [ ヘッドレス Web サイト：分離されたアーキテクチャに関する大きな問題は何ですか？[Josh Koenig](https://pantheon.io/team/josh-koenig) による ](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture)。
+* [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) については、開発者向けドキュメントを参照してください。

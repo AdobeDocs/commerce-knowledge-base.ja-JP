@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52929: デフォルトのソース項目の再インデックスを実行する冗長リクエスト
 
-ACSD-52929 パッチは、インベントリインデクサーが非同期モードで設定されている場合、デフォルトのソース項目を再インデックス化するリクエストの冗長性がある問題を修正しました。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.38 がインストールされています。 パッチ ID は ACSD-52929 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-52929 パッチは、インベントリインデクサーが非同期モードで設定されている場合、デフォルトのソース項目を再インデックス化するリクエストの冗長性がある問題を修正しました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.38 がインストールされている場合に使用できます。 パッチ ID は ACSD-52929 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,27 +27,27 @@ ACSD-52929 パッチは、インベントリインデクサーが非同期モー
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 在庫インデクサーが非同期モードで設定されている場合、デフォルトのソース項目のインデックスを再作成するリクエストは冗長になります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 設定 [!DNL RabbitMQ].
-1. に移動して、非同期のインデックス再作成戦略を有効にします。 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Inventory Indexer Setting]** およびを設定 **[!UICONTROL Stock/Source reindex strategy]=[!UICONTROL Asynchronous]**.
+1. [!DNL RabbitMQ] の設定
+1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]**/**[!UICONTROL Inventory]**/**[!UICONTROL Inventory Indexer Setting]** に移動して、**[!UICONTROL Stock/Source reindex strategy]=[!UICONTROL Asynchronous]** を設定し、非同期のインデックス再作成戦略を有効にします。
 1. カスタム在庫ソースを作成します。
-1. にログイン [!DNL RabbitMQ] ダッシュボードで、「キュー」タブに移動します。
-1. チェック `inventory.indexer.sourceItem` キューに入れ、メッセージがないことを確認します。
-1. バックエンドからシンプルな製品を開き、次を追加します *[!UICONTROL stock only]* をカスタムソースに追加して、製品を保存します。
-1. を読み込みます `inventory.indexer.sourceItem` キュー内 [!DNL RabbitMQ] ダッシュボードでメッセージを確認します。
+1. [!DNL RabbitMQ] ダッシュボードにログインし、「キュー」タブに移動します。
+1. キュー `inventory.indexer.sourceItem` チェックし、メッセージがないことを確認します。
+1. バックエンドから単純な製品を開き、カスタムソースに *[!UICONTROL stock only]* を追加して、製品を保存します。
+1. [!DNL RabbitMQ] ダッシュボードで `inventory.indexer.sourceItem` キューを読み込み、メッセージを確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 カスタムソースのキューにはメッセージが 1 つしかありません。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 キューには 2 つのメッセージが表示されます。1 つはデフォルトソース用で、もう 1 つはカスタムソース用です。
 
@@ -55,14 +55,14 @@ ACSD-52929 パッチは、インベントリインデクサーが非同期モー
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 顧客は商品を買い物かごに追加し、チェックアウトに進みます。
 1. 顧客が支払方法として店舗クレジットを指定します。
 1. 顧客が店舗クレジットを削除し、支払い方法を変更します。
 1. お客様はチェックアウトを通じて進行します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 すべての注文情報が正しく表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 Adobe Commerceが、「注文」ページの「注文の概要」セクションでエラーをスローする。
 
@@ -59,4 +59,4 @@ Adobe Commerceが、「注文」ページの「注文の概要」セクション
 
 開発者向けドキュメントでは、
 
-* [Adobe Commerce 2.3.5 の既知の問題](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Adobe Commerce 2.3.5 の既知の問題 ](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

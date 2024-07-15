@@ -55,7 +55,7 @@ Adobe Commerce（すべてのデプロイメント方法）およびMagento Open
 
 #### Google reCAPTCHA のインストールとフォームのアップデートのチェックアウト
 
-この `magento/module-paypal-recaptcha` パッケージには、Google reCAPTCHA および Payflow Pro 支払いフォームのアップデートとの統合が含まれています。 reCAPTCHA モジュールをインストールして設定している場合でも、このパッケージをインストールすることをお勧めします。
+`magento/module-paypal-recaptcha` パッケージには、Google reCAPTCHA および Payflow Pro 支払いフォームのアップデートとの統合が含まれています。 reCAPTCHA モジュールをインストールして設定している場合でも、このパッケージをインストールすることをお勧めします。
 
 次のコマンドを実行してインストールします。
 
@@ -86,7 +86,7 @@ bin/magento cache:clean
 
 #### CAPTCHA のチェックアウトフォームのアップデートのインストール
 
-この `magento/module-paypal-captcha` パッケージには、ネイティブのAdobe Commerce CAPTCHA モジュールとの統合が含まれています。
+`magento/module-paypal-captcha` パッケージには、ネイティブのAdobe Commerce CAPTCHA モジュールとの統合が含まれています。
 
 次のコマンドを実行してインストールします。
 
@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 パッケージのインストール後、次のドキュメントに示すように、Google reCAPTCHA （推奨）または CAPTCHA を設定します。
 
-* [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html) を参照してください。
-* [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html) を参照してください。
+* ユーザーガイドの [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)。
+* ユーザーガイドの [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html)。
 
 新しいチェックアウトフォームオプションは次のとおりです。
 
@@ -129,11 +129,11 @@ bin/magento cache:clean
 
 ## PayPal サポートおよび連絡先
 
-不正防止サービスの詳細については、PayPal Payflow マーチャントサポートにお問い合わせください。 PayPal サポートチームに有効化をリクエストできます [基本的な不正保護サービス](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) フィルターを使用すると、支払いを最も厳密に制御できるので、不正な取引につながる可能性の高い支払いを自動的に拒否し、通常は問題とならない支払いを受け入れることができます。 PayPal 不正防止サービスフィルターを有効にすると、取引が決済されるまで最大 2 時間かかることがあります。
+不正防止サービスの詳細については、PayPal Payflow マーチャントサポートにお問い合わせください。 PayPal サポートチームに対して [Basic Fraud Protection Services](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) フィルターを有効にして、支払いに関して可能な限り厳密な制御を提供するようにリクエストできます。これにより、不正な取引につながる可能性のある支払いを自動的に拒否し、通常は問題とならない支払いを受け入れることができます。 PayPal 不正防止サービスフィルターを有効にすると、取引が決済されるまで最大 2 時間かかることがあります。
 
 >[!NOTE]
 >
->詳しくは、PayPal の KB を参照してください [「Adobeから、Payflow Pro との統合について連絡がありました。 必要な手順は何ですか？」というエラーメッセージが表示されます。](https://www.paypal.com/us/smarthelp/article/ts2242).
+>詳しくは、PayPal の KB [ 「Adobeから Payflow Pro との連携について連絡がありました。 どうすれば良いですか？」 ](https://www.paypal.com/us/smarthelp/article/ts2242)。
 
 **PayPal Payflow マーチャントサポートの詳細**
 
@@ -141,10 +141,10 @@ Payflow マーチャントサポートの営業時間は、月曜日から金曜
 
 * 電話：1-888-883-9770 （プロンプト 2 を選択）
 * 海外のお客様：1-408-967-0191
-* メール： [payflow-support@paypal.com](mailto:payflow-support@paypal.com)
+* メール：[payflow-support@paypal.com](mailto:payflow-support@paypal.com)
 
 オーストラリアのサポート
 
 * 月曜日～金曜日の午前 8:00～午後 7:00 （アフリカ時間）
 * 電話：+61 2 8288 0198
-* メール： [gateway-ausupport@paypal.com](mailto:gateway-ausupport@paypal.com)
+* メール：[gateway-ausupport@paypal.com](mailto:gateway-ausupport@paypal.com)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-* デプロイプロセスが失敗し、デプロイログ（コマンドラインと UI ログ）に次のエラーが記録されます。  ```bash    Re-deploying environment abcdefghijklm-master-7rqtwti         E: Environment redeployment failed    ```
+* デプロイプロセスが失敗し、デプロイログ（コマンドラインと UI ログ）に次のエラーが記録されます。```bash    Re-deploying environment abcdefghijklm-master-7rqtwti         E: Environment redeployment failed    ```
 * Adobe Commerceが 503 エラーで応答し、次のエラーメッセージがアプリケーションログに表示されます。    ```bash    SQLSTATE[HY000] [2006] MySQL server has gone away    ```    MySQL サーバーに接続すると、次のエラーが表示されます。    ```bash    ERROR 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0 "Internal error/check (Not system error)"    ```
 
 ## 原因：
@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ### MySQL に十分な容量があるかどうかを確認します
 
-クラウドインフラストラクチャー上のすべてのAdobe Commerce スタータープランアーキテクチャ環境の場合 [統合環境](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの [環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) 次のコマンドを実行します。
+クラウドインフラストラクチャー上のすべてのAdobe Commerce スタータープランアーキテクチャ環境、およびクラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) の場合は、環境に [SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) で次のコマンドを実行します。
 
 ```bash
 magento-cloud db:size
 ```
 
-Pro アーキテクチャのステージング環境または実稼動環境の場合、 [環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)を実行します `df -h`   `| grep mysql` コマンド。 結果は次のようになります。
+Pro アーキテクチャのステージング環境または実稼動環境の場合は、[ 環境に SSH 接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) し、`df -h` を実行します   `| grep mysql` コマンド。 結果は次のようになります。
 
 ```bash
 sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
@@ -47,7 +47,7 @@ sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
 
 ### この問題を解決するには、MySQL 用により多くの領域を割り当てる必要があります。
 
-すべてのスターターアーキテクチャおよび Pro アーキテクチャ統合環境では、これは `.magento/services.yaml` ファイル（を増やすことで） `mysql: disk:` パラメーター。 例：
+すべての Starter アーキテクチャおよび Pro アーキテクチャ統合環境では、`mysql: disk:` パラメーターを増やして `.magento/services.yaml` ファイルで行います。 例：
 
 ```yaml
 mysql:
@@ -55,10 +55,10 @@ mysql:
     disk: 2048
 ```
 
-を参照してください。 [MySQL サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) 参照用の記事。
+詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) の記事を参照してください。
 
-Pro アーキテクチャのステージング環境または実稼動環境用にこれらの変更を行うには、 [サポートチケット](https://support.magento.com). ただし、通常は、Adobe Commerceがこれらのパラメーターをモニタリングし、アラートを送信したり、契約に従ってアクションを実行したりするので、Pro アーキテクチャのステージング/実稼動で対処する必要はありません。
+Pro アーキテクチャのステージング環境または実稼動環境用にこれらの変更を行うには、[ サポートチケット ](https://support.magento.com) を作成する必要があります。 ただし、通常は、Adobe Commerceがこれらのパラメーターをモニタリングし、アラートを送信したり、契約に従ってアクションを実行したりするので、Pro アーキテクチャのステージング/実稼動で対処する必要はありません。
 
 ### 変更の適用
 
-を変更したら、 `.magento/services.yaml` ファイルの場合、変更を適用するには、それをコミットしてプッシュする必要があります。 プッシュはデプロイメントプロセスをトリガーします。
+`.magento/services.yaml` ファイルを変更したら、変更を適用するために、コミットしてプッシュする必要があります。 プッシュはデプロイメントプロセスをトリガーします。

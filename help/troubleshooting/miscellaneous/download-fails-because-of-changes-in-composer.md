@@ -48,9 +48,9 @@ Composer version 1.0-dev (2b14f0a047dd4f3545ec82381f65c36ea93a4c81) 2015-11-25 1
 
 1. Composer のバージョンを変更し、次のいずれかの操作を行ってAdobe Commerce ソフトウェアをダウンロードできるようにします。
 
-   * 次のコマンドを使用して、Composer をダウングレードします。 `composer self-update 1.0.0-alpha11`.
-   * Composer を 2015 年 11 月 26 日（PT）以降のバージョンにアップグレード： `composer self-update`.
+   * 次のコマンドを使用して Composer をダウングレードします：`composer self-update 1.0.0-alpha11`。
+   * Composer を 2015 年 11 月 26 日（PT）以降のバージョンにアップグレード：`composer self-update`
 
 1. Adobe Commerce ディレクトリとサブディレクトリを削除します。
-1. 次のいずれかを使用して、ダウンロードを再試行してください `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` または `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
-1. Adobe Commerce ソフトウェアのダウンロードが完了したら、Composer を更新します。 `composer self-update`.
+1. `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` または `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)` を使用して、もう一度ダウンロードしてみてください。
+1. Adobe Commerce ソフトウェアのダウンロードが完了したら、Composer を更新します。`composer self-update`

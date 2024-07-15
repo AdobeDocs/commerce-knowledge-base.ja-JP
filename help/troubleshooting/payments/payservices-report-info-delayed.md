@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* [支払いサービス](https://marketplace.magento.com/magento-payment-services.html) は、Adobe Commerce バージョン 2.4.0～2.4.4 と互換性を持つようになりました。
+* [ 支払いサービス ](https://marketplace.magento.com/magento-payment-services.html) は、Adobe Commerce バージョン 2.4.0 から 2.4.4 と互換性を持つようになりました。
 
 ## 問題
 
@@ -25,38 +25,40 @@ ht-degree: 0%
 
 注文に対して請求（キャプチャ）を行った後、または注文に関するクレジット・メモを発行した後は、注文のステータスがすぐに利用できなくなる場合があります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 前提条件：支払いサービス機能を使用して注文が行われます。
 
-1. 注文は [請求済](https://docs.magento.com/user-guide/sales/invoice-create.html) （または [キャンセル済み](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) または [クレジットメモによる払戻](https://docs.magento.com/user-guide/sales/credit-memos.html)） [Admin](https://docs.magento.com/user-guide/stores/admin.html).
+1. 注文は、[ 管理者 ](https://docs.magento.com/user-guide/sales/invoice-create.html) で [ 請求 ](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) （またはキャンセル [ または ](https://docs.magento.com/user-guide/stores/admin.html) クレジットメモによる払い戻し ](https://docs.magento.com/user-guide/sales/credit-memos.html)[ されます。
 1. 注文支払ステータスレポートに移動して、その注文に関する情報を表示します。
-1. ステータスの表示内容 `AUTHORIZED`（請求またはその他の注文アクションの前の注文ステータス）。
+1. ステータスは `AUTHORIZED` と表示されます。これは、請求またはその他の注文アクションの前の注文ステータスです。
 
    Commerceはデータを同期して支払いサービスに送信していないので、新しい注文ステータスはまだレポートで認識されません。
 
 >[!NOTE]
 >
->これは、一般的なユースケースの 1 つにすぎません。 以下のような場合に、他の使用例が考えられます。 [注文アクション](https://docs.magento.com/user-guide/sales/order-actions.html) が発生し、該当するレポートでデータがすぐに使用できなくなる。
+>これは、一般的なユースケースの 1 つにすぎません。 [ 注文アクション ](https://docs.magento.com/user-guide/sales/order-actions.html) が発生し、該当するレポートですぐにデータを使用できない場合は、他のユースケースが考えられます。
 
-<u>期待される結果</u>：レポートデータは、注文に対するアクションの直後に入力されます。
+<u> 期待される結果 </u>:
+レポートデータは、注文に対するアクションが発生した直後に入力されます。
 
-<u>実際の結果</u>：完了したばかりの注文アクションの場合、表示されるレポートデータに遅延が生じる場合があります。 支払いレポートには、24～48 時間の遅延が発生する場合があります。 注文支払いステータスレポートには、数時間の遅延が発生する場合があります。
+<u> 実際の結果 </u>:
+完了したばかりの注文アクションの場合、表示されるレポートデータに遅延が生じる場合があります。 支払いレポートには、24～48 時間の遅延が発生する場合があります。 注文支払いステータスレポートには、数時間の遅延が発生する場合があります。
 
 ## 原因：
 
 管理画面に表示されるデータのこの遅延に影響する要因は 2 つあります。
 
-* を介してCommerceからデータを同期（エクスポートおよび永続化）する頻度 [管理者の設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html).
+* [ 管理者の設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html) を使用して、Commerceからデータを同期（書き出しと保持）する頻度。
 * PayPal がレポートデータを公開する期間。
 
 ## 解決策
 
 注文支払いステータスレポートの場合：
 
-1. に移動します。 **売上** > **支払いサービス**.
-1. クリック **注文支払いステータス** 注文支払ステータスレポート テーブルを表示します。
-1. をクリックして再同期を強制する **再同期を強制** 「レポート」 テーブルの右上隅にあるアイコン。
+1. **営業**/**支払いサービス** に移動します。
+1. **注文支払ステータス** をクリックして、注文支払ステータスレポートテーブルを表示します。
+1. 再同期を強制するには、「レポート」テーブルの右上隅にある **再同期を強制** アイコンをクリックします。
 1. 最後に更新されたタイムスタンプの変更と新しいトランザクションがレポートテーブルに読み込まれているのが確認できます。
 
 PayPal の支払いレポートの場合、PayPal のデータ公開期間に依存しているため、予想結果は 24～48 時間の遅延となります。

@@ -22,16 +22,16 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-1. に移動 **新しいアカウントを作成** ストアフロントのページ。
+1. ストアフロントの **新規アカウントを作成** ページに移動します。
 1. 登録済みのメールを使用して新しいアカウントを作成します。 次のメッセージが表示されます。
 
 `There+is+already+an+account+with+this+email+address.+If+you+are+sure+that+it+is+your+email+address,+click+here+to+get+your+password+and+access+your+account.`
 
 ## 原因：
 
-この問題は、set\\read cookie に関連する PHP 7.4.2 の問題によって発生します。 参照： [PHP のバグ \#79174 setcookie （）はスペースを\&#39;+\&#39;としてエンコードしますが、$\_COOKIE ではもはやデコードされません](https://bugs.php.net/bug.php?id=79174).
+この問題は、set\\read cookie に関連する PHP 7.4.2 の問題によって発生します。 [PHP のバグ \#79174 setcookie （）はスペースを\&#39;+\&#39;としてエンコードしますが、$\_COOKIE はスペースをデコードしなくなりました ](https://bugs.php.net/bug.php?id=79174) を参照してください。
 
 ## 解決策
 

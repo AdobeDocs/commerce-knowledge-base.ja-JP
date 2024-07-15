@@ -23,15 +23,15 @@ ht-degree: 0%
 
 ## 問題
 
-に新規登録した場合は、New Relicでアラートが届きます [Adobe Commerceの管理アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) 1 つ以上のアラートしきい値を超えています。 これらのアラートは、サポートとエンジニアリングのインサイトを使用して、マーチャントに標準のアラートセットを提供するために、Adobeで開発されました。
+[Adobe Commerceの Managed アラート ](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) にサインアップし、1 つ以上のアラートしきい値を超えた場合、New Relicでアラートが届きます。 これらのアラートは、サポートとエンジニアリングのインサイトを使用して、マーチャントに標準のアラートセットを提供するために、Adobeで開発されました。
 
 **<u>動け！</u>**
 
 * このアラートがクリアされるまで、スケジュールされているデプロイメントを中止することをお勧めします。
-* サイトが完全に応答しなくなった場合、または完全に応答しなくなった場合は、直ちにサイトをメンテナンスモードにします。 手順については、次を参照してください [インストールガイド/メンテナンスモードの有効化または無効化](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#enable-or-disable-maintenance-mode-1) インストールガイドをご覧ください。
-* トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、次を参照してください [除外 IP アドレスの一覧を管理します](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#maintain-the-list-of-exempt-ip-addresses) インストールガイドをご覧ください。
+* サイトが完全に応答しなくなった場合、または完全に応答しなくなった場合は、直ちにサイトをメンテナンスモードにします。 手順については、インストールガイドの [ インストールガイド/メンテナンスモードの有効/無効 ](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#enable-or-disable-maintenance-mode-1) を参照してください。
+* トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、インストール ガイドの [ 除外 IP アドレスのリストを管理する ](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#maintain-the-list-of-exempt-ip-addresses) を参照してください。
 
-**<u>止めて！</u>**
+**<u>やめて！</u>**
 
 * 追加のマーケティングキャンペーンを開始すると、サイトに追加のページビューが表示される場合があります。
 * CPU やディスクに追加の負荷がかかる可能性のあるインデクサーや追加のクローンを実行します。
@@ -42,14 +42,14 @@ ht-degree: 0%
 
 原因の特定とトラブルシューティングを行うには、次の手順に従います。
 
-1. Redis Used Memory が増加しているか減少しているかを確認するには、次の手順に従います。 [one.newrelic.com](https://login.newrelic.com/login) > **インフラストラクチャ** > **サードパーティのサービス** ページで、Redis ダッシュボードを選択します。 安定しているか増加している場合、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) クラスタをアップサイズするには、または `maxmemory` 次のレベルに制限します。
+1. [one.newrelic.com](https://login.newrelic.com/login)/**インフラストラクチャ**/**サードパーティサービス** ページに移動して、Redis の使用メモリが増加または減少しているかどうかを確認し、Redis ダッシュボードを選択します。 安定しているか増加している場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、クラスターをアップサイズするか、`maxmemory` 限を次のレベルに上げます。
 1. Redis メモリ消費量が増加した原因を特定できない場合は、最近の傾向を確認して、最近のコードのデプロイメントまたは構成の変更に関する問題（新しい顧客グループやカタログの大幅な変更など）を特定します。 コードのデプロイメントまたは変更における相関関係について、過去 7 日間のアクティビティを確認することをお勧めします。
 1. サードパーティの拡張機能の動作が正しくないことを確認します。
    * 最近インストールしたサードパーティの拡張機能と、問題が発生した時刻との相関関係を確認します。
    * Adobe Commerceのキャッシュに影響を与え、キャッシュが急速に大きくなる可能性がある拡張機能を確認します。 例えば、カスタムレイアウトブロック、キャッシュ機能の上書き、キャッシュへの大量データの保存などです。
-1. 動作が誤っている証拠がない場合、 [クラウドインフラストラクチャー上のAdobe Commerceの Redis の問題を修正するための最新のパッチをインストールします。](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md). 上記の手順で問題の原因を特定またはトラブルシューティングできない場合は、L2 キャッシュを有効にして、アプリと Redis 間のネットワークトラフィックを減らすことを検討してください。 L2 キャッシュの一般的な情報については、次を参照してください [Adobe Commerce アプリケーションでの L2 キャッシュ](/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) 設定ガイドをご覧ください。 クラウドインフラストラクチャの L2 キャッシュを有効にするには、次の操作を試します。
+1. 拡張機能の動作に誤りがある証拠がない場合は、[ クラウドインフラストラクチャ上のAdobe Commerceの Redis の問題を修正するための最新のパッチをインストールする ](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md) を参照してください。 上記の手順で問題の原因を特定またはトラブルシューティングできない場合は、L2 キャッシュを有効にして、アプリと Redis 間のネットワークトラフィックを減らすことを検討してください。 L2 キャッシュの概要については、設定ガイドの [Adobe Commerce アプリケーションの L2 キャッシュ ](/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) を参照してください。 クラウドインフラストラクチャの L2 キャッシュを有効にするには、次の操作を試します。
    * 2002.1.2 バージョン未満の場合は、ECE ツールをアップグレードします。
-   * を使用した L2 キャッシュの設定 [REDIS\_BACKEND 変数の使用](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) と更新 `.magento.env.yaml` ファイル：
+   * [REDIS\_BACKEND 変数を使用 ](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) を使用し、ファイルを更新して、L2 キャッシュ `.magento.env.yaml` 設定します。
 
    ```yaml
    stage:

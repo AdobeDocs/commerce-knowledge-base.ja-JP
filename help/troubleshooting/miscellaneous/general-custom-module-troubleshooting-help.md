@@ -21,32 +21,32 @@ ht-degree: 0%
 
 ## 解決策
 
-ログを調べ、カスタムモジュールの名前を持つエントリがエラー内にあるかどうかを確認します。  関連するエラーに応じて、ソリューションは自動的に表示される場合もあれば、ログを開く場合に、役立つAdobe Commerce ログ情報を含める必要が生じる場合もあります。 [サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). ログの場所と考えられる解決策に関する情報については、次の段落を参照してください。
+ログを調べ、カスタムモジュールの名前を持つエントリがエラー内にあるかどうかを確認します。  発生したエラーに応じて、ソリューションが自動的に表示される場合もあれば、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を開く場合に、役立つAdobe Commerce ログ情報を含める必要が生じる場合もあります。 ログの場所と考えられる解決策に関する情報については、次の段落を参照してください。
 
 ### Adobe Commerce（すべてのデプロイメント方法）、Magento Open Source、すべての 2.X バージョン
 
 1. ログの場所：
-   * [クラウドインフラストラクチャー上のAdobe Commerceスタータープランアーキテクチャログ](/help/how-to/general/log-locations-directories-for-starter-plan.md) サポートナレッジベースで。
-   * [Adobe Commerce on cloud infrastructure Pro プランアーキテクチャログ](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) サポートナレッジベースで。
+   * [ クラウドインフラストラクチャー上のAdobe Commerce スタータープランアーキテクチャログ ](/help/how-to/general/log-locations-directories-for-starter-plan.md) アドビのサポートナレッジベースに記載されています。
+   * [ クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャログ ](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) アドビのサポートナレッジベースに記載されています。
 1. 見つかったエラーに応じて、カスタムモジュールを有効、無効またはアンインストールする場合は、次の記事でアクションの詳細を説明します。
-   * [モジュールの有効化または無効化](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) 開発者向けドキュメントを参照してください。
-   * [モジュールのアンインストール](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) 開発者向けドキュメントを参照してください。
+   * 開発者向けドキュメントの [ モジュールの有効化または無効化 ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) を参照してください。
+   * 開発者向けドキュメントの [ モジュールをアンインストールする ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) を参照してください。
 
 ### クラウドインフラストラクチャー上のAdobe Commerce、すべてのバージョン
 
-1. ログの場所： [クラウドインフラストラクチャログのAdobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) 開発者向けドキュメントを参照してください。
+1. ログの場所：[ クラウドインフラストラクチャログのAdobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) に関する情報については、開発者向けドキュメントを参照してください。
 1. 見つかったエラーに応じて、カスタムモジュールを有効、無効、またはアンインストールする場合は、開発者ドキュメントの次の記事でアクションの詳細を説明しています。
-   * [拡張機能のインストール、管理、アップグレード](https://devdocs.magento.com/guides/v2.3/cloud/howtos/install-components.html).
-   * [コンポーネントのデプロイメントの失敗](https://devdocs.magento.com/guides/v2.3/cloud/trouble/trouble_comp-deploy-fail.html).
+   * [ 拡張機能のインストール、管理、アップグレード ](https://devdocs.magento.com/guides/v2.3/cloud/howtos/install-components.html)。
+   * [ コンポーネントのデプロイメントに失敗しました ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/trouble_comp-deploy-fail.html)。
 
 ## 関連資料
 
 開発者向けドキュメントでは、
 
-* [モジュールの概要](https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [オプションのサンプルデータのインストール中にエラーが発生しました](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_sample-data.html)
-* [例外処理](https://devdocs.magento.com/guides/v2.3/graphql/develop/exceptions.html)
-* [インストール中の例外](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_exceptions.html)
-* [モジュールマネージャーの実行](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-checklist.html)
-* [モジュール設定ファイル](https://devdocs.magento.com/guides/v2.3/config-guide/config/config-files.html)
-* [メモリ不足エラー](https://devdocs.magento.com/guides/v2.3/comp-mgr/trouble/cman/out-of-memory.html)
+* [ モジュールの概要 ](https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html)
+* [ オプションのサンプルデータをインストール中にエラーが発生する ](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_sample-data.html)
+* [ 例外処理 ](https://devdocs.magento.com/guides/v2.3/graphql/develop/exceptions.html)
+* [ インストール中の例外 ](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_exceptions.html)
+* [ モジュールマネージャーの実行 ](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-checklist.html)
+* [ モジュール設定ファイル ](https://devdocs.magento.com/guides/v2.3/config-guide/config/config-files.html)
+* [ メモリ不足エラー ](https://devdocs.magento.com/guides/v2.3/comp-mgr/trouble/cman/out-of-memory.html)

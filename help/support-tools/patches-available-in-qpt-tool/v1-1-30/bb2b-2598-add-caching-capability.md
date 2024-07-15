@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# BB2B-2598：にキャッシュ機能を追加 `storeConfig`, `currency`, `country`, `countries`、および `availableStores` GraphQl クエリ
+# BB2B-2598:`storeConfig`、`currency`、`country`、`countries` および `availableStores` GraphQl クエリにキャッシュ機能を追加します
 
-BB2B-2598 パッチは、次のキャッシュ機能を追加します。 `storeConfig`, `currency`, `country`, `countries`、および `availableStores` GraphQl クエリ このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 がインストールされています。 パッチ ID は BB2B-2598 です。 この問題はAdobe Commerce 2.4.7-beta1 で修正される予定であることに注意してください。
+BB2B-2598 パッチは、`storeConfig`、`currency`、`country`、`countries`、および `availableStores` GraphQl クエリにキャッシュ機能を追加します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 がインストールされている場合に使用できます。 パッチ ID は BB2B-2598 です。 この問題はAdobe Commerce 2.4.7-beta1 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,35 +27,35 @@ BB2B-2598 パッチは、次のキャッシュ機能を追加します。 `store
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-`availableStores`, `countries`, `country`, `currency`, `storeConfig`、および `customAttributeMetadata` GraphQL クエリはキャッシュできません。
+`availableStores`、`countries`、`country`、`currency`、`storeConfig` および `customAttributeMetadata` GraphQLの各クエリはキャッシュできません。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-* サーバーが次を指している [!DNL Varnish] Adobe Commerce バックエンドへのプロキシ化。
-* 設定 `system/full_page_cache/caching_application` はに設定されています。 *2* （[!DNL Varnish]）、または、Adobe Commerce管理者/に移動します。 **[!UICONTROL Stores]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Caching Application]** > に設定し、に設定します [!DNL Varnish].
+* サーバーは、Adobe Commerce バックエンドへ [!DNL Varnish] プロキシを指しています。
+* 構成設定 `system/full_page_cache/caching_application` が *2* （[!DNL Varnish]）に設定されているか、Adobe Commerce管理/**[!UICONTROL Stores]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!UICONTROL Caching Application]** に移動して、[!DNL Varnish] に設定してください。
 
 パッチを適用した後、次の手順を実行して、キャッシュ機能が使用可能になっていることを確認します。
 
-1. 送信 `GET` 任意のフィールドを使用して、上記のGraphQL クエリのいずれかにリクエストします。
-1. 変更を加えずにリクエストを再送信します。ずっと速くなっていることがわかります。 リクエストはバックエンドに送信されませんが、によって完全に処理されます。 [!DNL Varnish] キャッシュヒットとして。
-1. さらにプルーフが必要な場合は、未設定をコメントアウトします。 `X-Magento-Debug` ヘッダーがに存在する [VCL](https://github.com/magento/magento2/blob/026e5b29a5edfd619bbdea62d636b3cab2ea03b4/app/code/Magento/PageCache/etc/varnish6.vcl#L227)を選択してから、再起動します [!DNL Varnish] そして、上記の手順を再度実行します。
+1. 任意 `GET` フィールドを使用して、上記のGraphQL クエリのいずれかにリクエストを送信します。
+1. 変更を加えずにリクエストを再送信します。ずっと速くなっていることがわかります。 リクエストはバックエンドに送信されませんが、キャッシュヒットとして [!DNL Varnish] で完全に処理されます。
+1. さらにプルーフが必要な場合は、[VCL](https://github.com/magento/magento2/blob/026e5b29a5edfd619bbdea62d636b3cab2ea03b4/app/code/Magento/PageCache/etc/varnish6.vcl#L227) に存在する `X-Magento-Debug` ヘッダーの未設定をコメントアウトし、[!DNL Varnish] を再起動して、上記の手順を再実行します。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

@@ -18,11 +18,11 @@ ht-degree: 0%
 ## 影響を受ける製品とバージョン
 
 
-* Adobe Commerce 2.4.0 ～ 2.4.4、すべてのデプロイメントオプション（） [支払いサービス](https://marketplace.magento.com/magento-payment-services.html)
+* Adobe Commerce 2.4.0 ～ 2.4.4、すべてのデプロイメントオプション、[ 支払いサービス ](https://marketplace.magento.com/magento-payment-services.html)
 
 ## 問題
 
-テスト用 Visa クレジットカード使用時 `4111 1111 1111 1111` paypal から、次のエラーで PayPal 不正ポリシーが原因で失敗する場合があります。
+PayPal からテスト用の Visa クレジットカード `4111 1111 1111 1111` ードを使用する場合、PayPal の不正ポリシーが原因で次のエラーで失敗することがあります。
 
 ```terminal
 Error happened when processing the request. Please try again later.
@@ -36,6 +36,6 @@ Error happened when processing the request. Please try again later.
 
 別のテストクレジットカードを使用します。 モッククレジットカードを生成するために、テストに使用できます。
 
-1. PayPal 開発者ポータルに移動 [クレジット カード ジェネレータ](https://developer.paypal.com/developer/creditCardGenerator/) ページ。
+1. PayPal 開発者ポータル [ クレジットカード生成 ](https://developer.paypal.com/developer/creditCardGenerator/) ページに移動します。
 1. PayPal 開発者ポータルダッシュボードにログインします。
 1. テストクレジットカードを生成します。

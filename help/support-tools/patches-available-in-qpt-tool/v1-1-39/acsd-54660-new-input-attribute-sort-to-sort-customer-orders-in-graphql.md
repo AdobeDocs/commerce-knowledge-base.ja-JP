@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-54660：顧客の注文を並べ替える新しい入力属性ソート [!DNL GraphQL]'
-description: ACSD-54660 パッチを適用すると、で顧客の注文を並べ替えるために新しい入力属性「sort」が追加されたAdobe Commerceの問題が修正されます [!DNL GraphQL] 'sort_field'および'sort_direction'による並べ替え。
+title: 「ACSD-54660：顧客の注文を並べ替える新しい入力属性ソート  [!DNL GraphQL]」
+description: ACSD-54660 パッチを適用すると、新しい入力属性「sort」が追加され、顧客注文が「sort_field」および「sort [!DNL GraphQL] direction」で並べ替えられるAdobe Commerceの問題が修正されます。
 feature: GraphQL, Orders
 role: Admin, Developer
 exl-id: 29869139-e5e2-4b00-a090-e2c6673ff9ca
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54660：顧客の注文をで並べ替えるために追加された新しい入力属性の並べ替え [!DNL GraphQL]
+# ACSD-54660:[!DNL GraphQL] で顧客注文を並べ替えるために追加された新しい入力属性ソート
 
-ACSD-54660 パッチは、新しい入力属性が `sort` で顧客の注文を並べ替えるために追加されました [!DNL GraphQL] 作成者： `sort_field` および `sort_direction`. このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.39 がインストールされています。 パッチ ID は ACSD-54660 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-54660 パッチでは、顧客の注文を `sort_field` と `sort_direction` で並べ替えるために新しい入力属性 `sort` 追加 [!DNL GraphQL] れる問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.39 がインストールされている場合に使用できます。 パッチ ID は ACSD-54660 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,15 +27,15 @@ ACSD-54660 パッチは、新しい入力属性が `sort` で顧客の注文を�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-新規入力属性 `sort` で顧客の注文を並べ替えるために追加されました [!DNL GraphQL] 作成者： `sort_field` および `sort_direction`.
+[!DNL GraphQL] 内の顧客の注文を `sort_field` と `sort_direction` で並べ替えるための新しい入力属性 `sort` 追加されました。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-を使用した顧客注文のクエリ [!DNL GraphQL]:
+[!DNL GraphQL] を使用して顧客注文をクエリします。
 
 ```
   {
@@ -51,26 +51,26 @@ ACSD-54660 パッチは、新しい入力属性が `sort` で顧客の注文を�
   }
 ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-このパッチはを追加します `sort` および `sort_direction` に対する引数 `customer.orders`.
+このパッチは、`sort` および `sort_direction` 引数を `customer.orders` に追加します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-を使用して並べ替えることはできません [!DNL GraphQL].
+[!DNL GraphQL] を使用して注文を並べ替えることはできません。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## データベースと SaaS の統合
 
-データベースおよび SaaS 統合のリストについては、次を参照してください。 [統合を使用した外部データの接続](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) 開発者向けドキュメントを参照してください。 （ページを開く場合は、左側の目次をナビゲーションに使用します）。
+データベースおよび SaaS 統合のリストについては、開発者向けドキュメントの [ 統合を使用した外部データの接続 ](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) を参照してください。 （ページを開く場合は、左側の目次をナビゲーションに使用します）。
 
 ## 接続に問題がありますか？
 
@@ -29,10 +29,10 @@ ht-degree: 0%
 * 管理者アカウントに加えられた変更
 * または MBI 内の内部問題
 
-すべての統合のステータスは、統合ページ（ **データを管理/統合** ）:
+すべての統合のステータスは統合ページ（**データを管理/統合**）に表示されます。
 
 ![Integrations_page.png](assets/Integrations_page.png)
 
 再認証するには、アカウント資格情報を再入力する必要がある場合があります。 場合によっては、問題を統合するために新しい API キーの生成が必要になることもあります。 問題の統合の名前をクリックして、再認証プロセスを開始します。
 
-問題が解決しない場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+問題が解決しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。

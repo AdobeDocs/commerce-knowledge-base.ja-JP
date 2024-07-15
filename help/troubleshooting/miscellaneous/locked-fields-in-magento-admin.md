@@ -22,36 +22,36 @@ ht-degree: 0%
 
 ## 問題
 
-設定に対する変更をに保存したら、 `app/etc/env.php` または `app/etc/config.php`ただし、管理者の設定を変更することはできません。
+設定に対する変更を `app/etc/env.php` または `app/etc/config.php` に保存すると、管理者の設定を変更できなくなります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 メモ：これは例です。この問題は、保存されたすべての設定に影響を与える可能性があります。
 
-1. マーチャントは、ターミナルで次のコマンドを使用して、配信方法の資格情報を保存します。 `./vendor/bin/ece-tools config:dump`. これにより、資格情報がに保存されます `app/etc/env.php` ファイル。
+1. マーチャントは、ターミナルで次のコマンドを使用して、配信方法の資格情報を保存します。`./vendor/bin/ece-tools config:dump`。 これにより、資格情報が `app/etc/env.php` ファイルに保存されます。
 1. その後、マーチャントは後で資格情報の変更を試みます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 マーチャントは、管理者フィールドの設定で値を設定して保存できます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 管理者のフィールドはロックされています。または、値を変更できますが、管理者には保存されません。
 
 ## 原因：
 
-設定の保存先 `env.php` または `config.php`の場合、管理者の設定を変更することはできません。 設定の編集を許可するには、以下から設定を削除する必要があります。 `env.php` または `config.php`.
+設定が `env.php` または `config.php` に保存されると、管理者の設定を変更できなくなります。 設定の編集を許可するには、`env.php` または `config.php` から設定を削除する必要があります。
 
 ## 解決策
 
-設定がに保存されていないことを確認します `app/etc/env.php` または `app/etc/config.php`. 保存されている場合は、次の手順を試してください。
+設定が `app/etc/env.php` または `app/etc/config.php` に保存されていないことを確認します。 保存されている場合は、次の手順を試してください。
 
-* `config.php`  – 設定を削除してから、再デプロイします。
-* `env.php` - サーバー上で直接変更し、設定を削除してから、を実行します `bin/magento app:config:import`.
+* `config.php` – 設定を削除してから、再デプロイします。
+* `env.php` - サーバー上で直接変更し、設定を削除してから、`bin/magento app:config:import` を実行します。
 
 ## 関連資料
 
-* [設定のエクスポート](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) 開発者向けドキュメントを参照してください。
-* [設定値を設定](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) 開発者向けドキュメントを参照してください。
-* [クラウドインフラストラクチャー上のAdobe Commerce：構成管理を使用したデプロイメントのダウンタイムの短縮](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) サポートナレッジベースで。
+* 開発者向けドキュメントの [ 設定を書き出す ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) を参照してください。
+* 開発者向けドキュメントの [ 設定値を設定 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) します。
+* [ クラウドインフラストラクチャー上のAdobe Commerce:Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) を使用して、デプロイメントのダウンタイムを短縮できます。

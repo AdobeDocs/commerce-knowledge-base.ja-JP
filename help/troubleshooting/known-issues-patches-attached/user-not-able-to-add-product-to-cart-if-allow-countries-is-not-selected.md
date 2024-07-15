@@ -23,19 +23,19 @@ Adobe Commerce 2.4.4 と PHP 8.1
 
 「国を許可」が選択されていない場合、ユーザーは買い物かごに製品を追加できません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. Commerce Admin にログインします。
-1. に移動 **ストア** > **設定** > **一般** > **国オプション**
-1. のすべてのオプションを選択解除します。 **国を許可** フィールド。
-1. クリック **設定を保存** をクリックして、設定を保存します。
+1. **ストア**/**設定**/**一般**/**国オプション** に移動します。
+1. **国を許可** フィールドですべてのオプションを選択解除します。
+1. 「**設定を保存**」をクリックして、設定を保存します。
 1. ストアフロントに移動して、買い物かごに製品を追加してみてください。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 買い物かごに製品を追加できます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 買い物かごに製品を追加することはできません。 次のコンソールエラーが表示されます。
 
@@ -51,7 +51,7 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## 原因：
 
-Adobe Commerce設定は、を取得します。 `null` 複数選択の設定で、選択した項目がない場合。 この設定は、8.1 より前の PHP バージョンで正常に処理された場合に有効になります。ただし、PHP 8.1 では、エラーが原因で&#39;&#39;[PHP 8.1 では、内部関数の null を nullable でない引数に渡すことは推奨されません](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)」と入力します。
+複数選択設定で選択した項目がない場合、Adobe Commerce設定は `null` を取得します。 この設定は、8.1 より前の PHP バージョンで正常に処理された場合に有効になります。しかし、PHP 8.1 では、「[PHP 8.1 の内部関数の nullable でない引数に null を渡すのは非推奨にする」というエラーが原因で正しく動作しません ](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)
 
 ## 解決策
 
@@ -61,8 +61,8 @@ Adobe Commerce設定は、を取得します。 `null` 複数選択の設定で�
 
 ## パッチの適用方法
 
-参照： [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+手順については、サポートナレッジベースの [Adobe Commerceが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 役に立つリンク
 
-[クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+[ クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用する ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) については、開発者向けドキュメントを参照してください。

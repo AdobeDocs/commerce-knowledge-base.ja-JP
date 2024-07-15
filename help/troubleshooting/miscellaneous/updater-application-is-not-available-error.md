@@ -29,4 +29,4 @@ ht-degree: 0%
 
 ## 解決策
 
-この問題を解決するには、がであるかどうかを確認します。 `<magento_root>/update` ファイルおよびサブディレクトリを含むディレクトリ。 それ以外の場合は、を参照してください [アップデーターの設定](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) 開発者向けドキュメントを参照してください。
+この問題を解決するには、ファイルおよびサブディレクトリを含んだ `<magento_root>/update` ディレクトリがあるかどうかを確認します。 それ以外の場合は、開発者向けドキュメントの [ アップデーターの設定 ](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) を参照してください。

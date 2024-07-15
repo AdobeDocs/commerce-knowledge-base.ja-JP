@@ -14,11 +14,11 @@ ht-degree: 0%
 # Adobe Commerceの管理アラート
 
 
-サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 を参照してください。 [New Relic通知チャネルの設定](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) 開発者向けドキュメントを参照してください。
+サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 開発者向けドキュメントの [New Relic通知チャネルの設定 ](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) を参照してください。
 
 >[!NOTE]
 >
->Adobe Commerce アラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、New Relicが最近設定された可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、 [Adobe Commerce サポートリクエストの送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) さらに、プロジェクト ID を含めます。
+>Adobe Commerce アラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、New Relicが最近設定された可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) し、プロジェクト ID を含めます。
 
 これらのアラートのトラブルシューティング手順を示すナレッジベース記事へのリンクについては、以下の表を参照してください。
 

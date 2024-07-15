@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-をインポートした後 [データベース ダンプ](/help/how-to/general/create-database-dump-on-cloud.md) 実稼動環境からステージング環境または統合環境に至るまで、保存されたクレジットカード番号が間違って表示されるか、マーチャント資格情報の使用が必要な支払い統合で支払いが失敗します。
+実稼動環境からステージング環境または統合環境に [ データベースダンプ ](/help/how-to/general/create-database-dump-on-cloud.md) を読み込むと、保存されたクレジットカード番号が間違って表示されるか、マーチャント資格情報の使用が必要な支払い統合で支払いが失敗します。
 
 ## 原因：
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 暗号化キーをコピーするには：
 
-1. データベース ダンプのソースとなったプロジェクトに SSH で接続します（を参照）。 [環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) 開発者向けドキュメントを参照してください。
-1. 開く `app/etc/env.php` テキストエディター。
-1. の値をコピーします `key` （用） `crypt`.
+1. 開発者向けドキュメントの [ 環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) に記載されているように、データベースダンプのソースとなったプロジェクトに SSH で接続します。
+1. `app/etc/env.php` をテキストエディターで開きます。
+1. `crypt` の `key` の値をコピーします。
 
 ```php
 return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
@@ -43,13 +43,13 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 
 宛先プロジェクトのキー値を設定するには：
 
-1. を開きます [クラウドコンソール](https://console.adobecommerce.com) をクリックして、プロジェクトを探します。
-1. の値を [暗号化\_キー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) （開発者ドキュメントの）変数（「」を参照） [プロジェクトの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) 開発者向けドキュメントを参照してください。 これにより、デプロイメントプロセスがトリガーされ、 `CRYPT_KEY` はで上書きされます `app/etc/env.php` デプロイメントごとにファイルをアップロードします。
+1. [Cloud Console](https://console.adobecommerce.com) を開き、プロジェクトを探します。
+1. 開発者向けドキュメントの [ プロジェクトの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) の説明に従って、（開発者向けドキュメントの [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) 変数の値を設定します。 これにより、デプロイメントプロセスがトリガーさ `CRYPT_KEY`、デプロイメントのたびに `app/etc/env.php` ファイルで上書きされます。
 
-オプションで、で手動で暗号化キーを上書きできます `app/etc/env.php` ファイル：
+オプションで、`app/etc/env.php` ファイルの暗号化キーを手動で上書きできます。
 
 1. 宛先環境に SSH で接続します。
-1. 開く `app/etc/env.php` テキストエディター。
-1. コピーしたデータをとして貼り付けます。 `key` の値 `crypt`.
-1. 編集済みのを保存 `env.php`.
-1. 次を実行して、宛先環境のキャッシュをクリーンアップします `bin/magento cache:clean` または、の下のCommerce管理で確認できます。 **システム** > **ツール** > **キャッシュ管理**.
+1. `app/etc/env.php` をテキストエディターで開きます。
+1. コピーしたデータを `crypt` の `key` 値として貼り付けます。
+1. 編集した `env.php` を保存します。
+1. `bin/magento cache:clean` を実行するか、Commerce管理の **システム**/**ツール**/**キャッシュ管理** で、宛先環境のキャッシュをクリーンアップします。

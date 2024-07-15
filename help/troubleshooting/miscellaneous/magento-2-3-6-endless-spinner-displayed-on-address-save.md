@@ -31,5 +31,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [VertexAddress クレンジングを使用して「請求先と配送先住所が同じです」を選択解除すると、異なる住所は使用できません](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) サポートナレッジベースで。
-* [Adobe Commerce 2.4.1 Vertex Address の検証メッセージ後住所の更新](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) サポートナレッジベースで。
+* サポートナレッジベースで [VertexAddress クレンジングを使用して「請求先と配送先住所が同じです」を選択解除する場合、異なる住所は使用できません ](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md)。
+* [Adobe Commerce 2.4.1 Vertex Address validation message post address update](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) （サポートナレッジベース）。

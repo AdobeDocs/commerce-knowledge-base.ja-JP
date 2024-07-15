@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # MDVA-41229：設定可能な製品の読み込み後、バックエンドで使用可能な画像がフロントエンドに表示されない
 
-MDVA-41229 パッチは、設定可能な製品の読み込み後に、バックエンドで利用可能な画像がフロントエンドに表示されない問題を解決します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 がインストールされています。 パッチ ID は MDVA-41229。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-41229 パッチは、設定可能な製品の読み込み後に、バックエンドで利用可能な画像がフロントエンドに表示されない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.12 がインストールされている場合に使用できます。 パッチ ID は MDVA-41229。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,16 +27,16 @@ MDVA-41229 パッチは、設定可能な製品の読み込み後に、バック
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 設定可能な製品の読み込み後、バックエンドで使用可能な画像はフロントエンドに表示されません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. クリーンなAdobe Commerceをインストールします。
-1. に移動してカスタム属性を追加 **ストア** > **属性** > **製品** > **新しい属性を追加** 次の設定を使用します。
+1. **ストア**/**属性**/**製品**/**新規属性を追加** に移動して、以下の設定を使用してカスタム属性を追加します。
    * プロパティ：
       * 属性プロパティ：
          * デフォルトのラベル：サイズを設定
@@ -73,29 +73,29 @@ MDVA-41229 パッチは、設定可能な製品の読み込み後に、バック
       * ストアフロントのカタログページに表示：はい
       * 製品リストでの使用可：はい
       * 製品リストでの並べ替えに使用：いいえ
-1. この属性を製品詳細グループ内のデフォルト属性セットに追加します（**ストア** > **属性** > **属性セット**）に設定します。
+1. この属性を製品詳細グループ（**ストア**/**属性**/**属性セット**）内のデフォルト属性セットに追加します。
 1. Adobe Commerce ルートディレクトリ内の var フォルダーに設定された画像をダウンロードします。
-1. に移動 **システム** > **データ転送** > を選択し、以下のオプションを使用してファイルを読み込みます。
+1. **システム**/**データ転送**/に移動し、以下のオプションを使用してファイルを読み込みます。
    * 読み込み設定：
       * エンティティタイプ：Products
    * 読み込み動作：
       * 読み込みの動作：追加/更新
       * 検証方法：エラー時に停止
       * 許可されたエラー数：1
-      * フィールド区切り記号： `;`
-      * 複数の値の区切り記号： `,`
+      * フィールド区切り記号：`;`
+      * 複数の値の区切り記号：`,`
       * 属性値の定数：EMPTYVALUE
       * フィールドの囲い文字：オフ
    * インポートするファイル：
       * 読み込むファイルを選択
       * 画像ファイルディレクトリ：空のままにします
-1. ストアフロントに移動して `/product-set.html` ページを切り替えて、異なるセットサイズに切り替えます。 セットサイズ 24 の場合、ギャラリーはありません。
+1. ストアフロントに移動してページ `/product-set.html` 移動し、異なるセットサイズを切り替えます。 セットサイズ 24 の場合、ギャラリーはありません。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 設定可能な製品内のすべてのシンプルな製品のギャラリーは、関連するすべての画像で表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 商品のギャラリーはありません。
 
@@ -103,14 +103,14 @@ MDVA-41229 パッチは、設定可能な製品の読み込み後に、バック
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

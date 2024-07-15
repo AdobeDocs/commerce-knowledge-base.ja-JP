@@ -30,25 +30,25 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 そのために、 [環境に SSH で接続する](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) さらに、次のコマンドを実行します。
+1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) 接続し、次のコマンドを実行します。
 
    ```bash
    php bin/magento cache:status
    ```
 
-   これにより、各キャッシュタイプのステータスが表示されます（無効の場合は「0」、有効の場合は「1」）。 または、この情報を `app/etc/env.php` ファイル。
+   これにより、各キャッシュタイプのステータスが表示されます（無効の場合は「0」、有効の場合は「1」）。 または、この情報を `app/etc/env.php` ファイルで取得できます。
 
 1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にしてください。 サードパーティの拡張機能では、Adobe Commerceのキャッシュを無効にする必要はありません。
-1. 調査により、一部のキャッシュタイプが誤って無効になっていることが確認された場合は、各キャッシュタイプに対して次のコマンドを実行して、それらを有効にします。 `php bin/magento cache:enable <your_disabled_cache_type>`
+1. 調査により、一部のキャッシュタイプが誤って無効になっていることが確認された場合は、各キャッシュタイプに対して次のコマンドを実行して、それらを有効にします。`php bin/magento cache:enable <your_disabled_cache_type>`
 
-特定のAdobe Commerce キャッシュタイプを無効にすることができるのか、無効にすべきなのかについて懸念や疑問がある場合、 [Adobe Commerce サポートに連絡する](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) お勧めを尋ねる。
+特定のAdobe Commerce キャッシュタイプを無効にできるか無効にすべきかとの懸念や質問がある場合は、[Adobe Commerce サポートにお問い合わせ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、レコメンデーションを求めてください。
 
 ## 関連資料
 
 開発者向けドキュメントのAdobe Commerce キャッシュのドキュメント：
 
-* [Adobe Commerce キャッシュの概要](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html)
-* [キャッシュの管理](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cache.html)
+* [Adobe Commerce キャッシュの概要 ](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html)
+* [ キャッシュの管理 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cache.html)
 
 パフォーマンスの問題が発生するその他の理由と解決策：
 

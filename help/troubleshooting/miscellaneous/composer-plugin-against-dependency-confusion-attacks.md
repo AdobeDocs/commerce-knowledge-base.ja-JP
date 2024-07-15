@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## 問題
 
-に定義された直接または間接の依存関係の少なくとも 1 つを介して、アクティブな依存関係の混乱攻撃の潜在的なケースが検出されます。 `composer.json` composer プラグイン `magento/composer-dependency-version-audit-plugin` composer のインストール/アップデート中。
+Composer のインストールまたはアップデート時に composer プラグインによって `composer.json` で定義された直接または間接の依存関係の少なくとも 1 つを介して、アクティブな依存関係の混乱攻撃が発生し `magento/composer-dependency-version-audit-plugin` 可能性があるケースが検出されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 Composer をインストール/アップデートすると、Dependency Confusion 攻撃の可能性が検出された場合、Composer プラグインはプロセスを停止します。 その場合、Composer のインストール/アップデートは失敗し、次のようなエラーメッセージが表示されます。
 
@@ -47,5 +47,5 @@ Composer をインストール/アップデートすると、Dependency Confusio
 
 ### 拡張機能開発者からの期待
 
-* 公開リポジトリから入手したプラグインのパッケージが侵害されているかどうかを確実に把握する方法はありません。 このプラグインは、packagist.orgにあるパッケージの公開バージョンが、などのプライベートリポジトリから入手できるバージョンよりも新しい場合に検出します [repo.magento.com](https://repo.magento.com). 拡張機能開発者には、このような状況を避け、で利用可能なバージョンよりも新しいバージョンを公開しないことを強くお勧めします [repo.magento.com](https://repo.magento.com).
+* 公開リポジトリから入手したプラグインのパッケージが侵害されているかどうかを確実に把握する方法はありません。 このプラグインは、packagist.orgにあるパッケージの公開バージョンが、[repo.magento.com](https://repo.magento.com) などのプライベートリポジトリから入手できるバージョンよりも高い場合に検出します。 拡張機能の開発者は、このような状況を避け、[repo.magento.com](https://repo.magento.com) で入手できるバージョンよりも新しいバージョンを公開しないことを強くお勧めします。
 * Adobe Commerceは、Marketplace レビュープロセスによって拡張機能リリースの提供が遅れる可能性があることを理解しています。ただし、マーチャントの安全を維持し、拡張機能の開発者が誤って見逃した可能性のあるミスを見つけやすくするために、このプロセスが存在しています。

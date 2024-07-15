@@ -23,7 +23,7 @@ ht-degree: 0%
 
 この問題の一般的な原因は次のとおりです。
 
-* の PHP 設定 [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
+* [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time) の PHP 設定
 * Nginx と Varnish のタイムアウト値
 
 ## 解決策：
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ### すべての Web サーバーとワニス {#all-web-servers-and-varnish}
 
-1. を見つけます。 `php.ini` の使用 [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) ファイル。
-1. を使用した As a ユーザー `root` 権限、開く `php.ini` テキストエディター。
-1. を見つけます。 `max_execution_time` の設定値。
-1. 値をに変更します `18000` .
-1. 変更をに保存します。 `php.ini` をクリックして、テキストエディターを終了します。
+1. [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) ファイルを使用して `php.ini` を見つけます。
+1. `root` 権限を持つユーザーとして、`php.ini` をテキストエディターで開きます。
+1. `max_execution_time` 設定を見つけます。
+1. その値を `18000` に変更します。
+1. `php.ini` への変更を保存し、テキストエディターを終了します。
 1. Apache を再起動します。
 
    * CentOS: `service httpd restart`
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### nginx のみ {#nginx-only}
 
-nginx をご利用の場合は、含まれているを使用してください `nginx.conf.sample` または、nginx ホスト設定ファイルのタイムアウト設定を `location ~ ^/setup/index.php` セクションを次のように設定します。
+nginx を使用する場合は、次のように、付属の `nginx.conf.sample` を使用するか、nginx ホスト構成ファイルのタイムアウト設定を `location ~ ^/setup/index.php` セクションに追加します。
 
 ```php
 location ~ ^/setup/index.php {
@@ -56,11 +56,11 @@ location ~ ^/setup/index.php {
 }
 ```
 
-nginx を再起動します。 `service nginx restart`
+nginx を再起動します：`service nginx restart`
 
 ### ワニスのみ {#varnish-only}
 
-ニスを使用する場合は、次のように編集します。 `default.vcl` にタイムアウト制限値を追加します。 `backend` stanza は次のように記述します。
+Varnish を使用する場合は、次のように `default.vcl` を編集し、`backend` のスタンザにタイムアウト制限値を追加します。
 
 ```php
 backend default {

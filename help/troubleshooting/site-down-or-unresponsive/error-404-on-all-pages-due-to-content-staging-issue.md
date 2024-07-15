@@ -24,9 +24,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事は、を実行しようとすると 404 エラーが発生する場合には適用されません [ステージング更新をプレビュー](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). その問題が発生した場合は、を開いてください [サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+>この記事は、[ ステージング更新のプレビュー ](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change) を試みると 404 エラーが発生する状況には適用されません。 その問題が発生した場合は、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を開いてください。
 
-ストアフロントページまたは管理者にアクセスすると、を使用してストアコンテンツアセットのスケジュールされた更新を含む操作を実行した後、404 エラー（「Whoops, our bad..」ページ）が発生する [コンテンツのステージング](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) （を使用してスケジュールされたストアコンテンツアセットの更新） [Magento\_ステージングモジュール](https://developer.adobe.com/commerce/php/module-reference/)）に設定します。 例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
+ストアフロントページまたは管理者にアクセスすると、[ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) を使用してストアコンテンツアセットのスケジュールされた更新で操作を実行した後、404 エラー（「Whoops, our bad...」ページ）が発生します（[Module\_Staging Magento](https://developer.adobe.com/commerce/php/module-reference/) を使用してスケジュールされたストアコンテンツアセットの更新）。 例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
 
 ストアのコンテンツアセットには、次のものが含まれます。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 原因：
 
-この `flag` データベース （DB）のテーブルに、への無効なリンクが含まれています `staging_update` テーブル。
+データベース （DB）の `flag` テーブルに、`staging_update` テーブルへの無効なリンクが含まれています。
 
 問題はコンテンツのステージングに関連しています。 次に、2 つの具体的な状況を示します。この問題をトリガーとする状況が他にもある可能性があることに注意してください。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 同時に、削除されたアセットにスケジュールされた更新の終了日がない場合、問題が発生しない可能性があります。
 
-**シナリオ 2:** スケジュールされている更新の終了日時を削除しています。
+**シナリオ 2:** スケジュールされた更新の終了日時の削除。
 
 ### イシューが関連しているかどうかを特定する
 
@@ -68,19 +68,19 @@ ht-degree: 0%
    -> WHERE flag_code = 'staging';
 ```
 
-クエリがテーブルを返す場合 `update_exists` 値は「0」で、への無効なリンクです `staging_update` テーブルがデータベースに存在する場合は、で説明されている手順も同様です。 [ソリューション セクション](#solution) が問題の解決に役立ちます。 を使用したクエリ結果の例を次に示します `update_exists` 「0」に等しい値：
+クエリが値「0」のテーブル `update_exists` 返す場合、`staging_update` のテーブルへの無効なリンクがデータベースに存在し、[ 解決策 ](#solution) で説明している手順が問題の解決に役立ちます。 次に、値が「0」に等しいクエリ結果 `update_exists` 例を示します。
 
 ![update_exists_0.png](assets/update_exists_0.png)
 
-クエリがテーブルを返す場合 `update_exists` 値が「1」または空の結果である場合、イシューがステージングの更新に関連していないことを意味します。 を使用したクエリ結果の例を次に示します `update_exists` 「1」に等しい値：
+クエリが、値が「1」 `update_exists` あるテーブルまたは空の結果を返す場合は、イシューがステージングの更新に関連していないことを意味します。 次に、値が「1」に等しいクエリ結果 `update_exists` 例を示します。
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-この場合、を参照してください。 [サイト停止のトラブルシューティング](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) アイデアのトラブルシューティング用。
+この場合、トラブルシューティングのアイデアについては、[ サイトのダウンのトラブルシューティング ](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) を参照してください。
 
 ## 解決策
 
-1. 次のクエリを実行して、への無効なリンクを削除します `staging_update` テーブル：
+1. 次のクエリを実行して、`staging_update` テーブルへの無効なリンクを削除します。
 
    ```sql
    DELETE FROM flag WHERE flag_code = 'staging';
@@ -88,4 +88,4 @@ ht-degree: 0%
 
 1. cron ジョブが実行されるまで待ちます（適切に設定されている場合は最大 5 分実行されます）。または、cron が設定されていない場合は手動で実行します。
 
-無効なリンクを修正した後、問題を直ちに解決する必要があります。 問題が解決しない場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+無効なリンクを修正した後、問題を直ちに解決する必要があります。 問題が解決しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。

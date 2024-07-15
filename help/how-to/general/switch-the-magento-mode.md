@@ -13,5 +13,5 @@ ht-degree: 0%
 
 開発者向けドキュメントで次の記事を参照してください。
 
-* Adobe Commerce 2.3: [操作モードの設定](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html)
-* Adobe Commerce 2.4: [操作モードの設定](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html)
+* Adobe Commerce 2.3: [ 操作モードを設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html)
+* Adobe Commerce 2.4: [ 操作モードを設定 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html)

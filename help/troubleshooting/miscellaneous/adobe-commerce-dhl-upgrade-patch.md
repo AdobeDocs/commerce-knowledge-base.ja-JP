@@ -28,7 +28,8 @@ DHL は 6.2 スキーマバージョンを導入しており、2022 年 7 月末
 
 ## パッチ
 
-パッチ ID は、Quality Patches Tool バージョン 1.1.16 で使用可能な AC-3022 です。を参照してください。 [品質向上パッチツール（QPT）/使用方法](https://devdocs.magento.com/quality-patches/usage.html) qpt の使用方法とパッチのインストール方法については、開発者用ドキュメントの記事を参照してください。
+パッチ ID は、Quality Patches Tool バージョン 1.1.16 で使用可能な AC-3022 です。
+QPT の使用方法とパッチのインストール方法については、開発者向けドキュメントの [Quality Patches Tool （QPT） > Usage](https://devdocs.magento.com/quality-patches/usage.html) の記事を参照してください。
 
 このパッチは、次のAdobe Commerce バージョンに適用されます。
 
@@ -37,5 +38,5 @@ DHL は 6.2 スキーマバージョンを導入しており、2022 年 7 月末
 
 ## 関連資料
 
-* [配送業者 > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) ユーザーガイドの
-* [配信方法](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) ユーザーガイドの
+* [ 配送業者 > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) ユーザーガイド
+* ユーザーガイドの [ 配信方法 ](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html)

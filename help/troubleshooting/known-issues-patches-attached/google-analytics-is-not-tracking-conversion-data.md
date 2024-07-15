@@ -23,19 +23,19 @@ ht-degree: 0%
 
 Google Analytics コンポーネントコードのエラーにより、コンバージョンデータがGoogle Analyticsで追跡されませんでした。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. の下のCommerce Admin でGoogle Analytics機能を有効にして設定します。 **ストア** > **設定** > **設定** > **売上** > **GOOGLE API** > **Google Analytics**.
-1. クリック **設定を保存**.
+1. **Stores**/**Settings**/**Configuration**/**Sales**/8}Google API **/** Google Analytics **のCommerce管理で、Google Analytics機能を有効にして設定します。**
+1. 「**設定を保存**」をクリックします。
 1. 店頭で注文します。
-1. に移動 **Google Analyticsダッシュボード** > **コンバージョン** > **概要**.
+1. **Google Analyticsダッシュボード**/**コンバージョン**/**概要** に移動します。
 1. 日付範囲を現在の日付に設定します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 この順序は、コンバージョンデータに表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 順序は、コンバージョンデータには表示されません。
 
@@ -62,6 +62,6 @@ Google Analytics コンポーネントコードのエラーにより、コンバ
 
 ## パッチの適用方法
 
-参照： [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 説明を参照してください。
+手順については、[Adobe Commerceが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

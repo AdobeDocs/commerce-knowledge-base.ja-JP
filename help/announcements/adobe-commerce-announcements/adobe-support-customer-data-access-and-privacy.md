@@ -21,12 +21,12 @@ Adobeのテクニカルサポートでは、サポートを提供するために
 
 アクセスを認証するには：
 
-1. [ログイン](https://account.magento.com/customer/account/login) プライマリユーザーという資格を持つサポートとして。
-1. 日 **[!UICONTROL My Account]** ページ > **[!UICONTROL Account Settings]**&#x200B;を作成します。が完了していることを確認してください [アカウントプロファイル](https://account.magento.com/customer/account/edit) をクリックして、 **[!UICONTROL Save]**.
-1. 日 **[!UICONTROL My Account]** ページ > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Adobeのテクニカルサポート担当者にデータへのアクセスを許可するための同意フォームが表示されます。
-1. プライバシー設定に関する情報を確認したら、の横にあるチェックボックスをオンにするかどうかを選択します **私は以下の期間、自分のデータへのアクセスを許可します。**.
+1. プライマリユーザーという権限を持つサポートとして [ ログイン ](https://account.magento.com/customer/account/login) します。
+1. **[!UICONTROL My Account]** ページ/**[!UICONTROL Account Settings]** で、「[ アカウントプロファイル ](https://account.magento.com/customer/account/edit) を完了していることを確認し、「**[!UICONTROL Save]**」をクリックします。
+1. **[!UICONTROL My Account]** ページ/**[!UICONTROL Account Settings]**/**[!UICONTROL Privacy Settings]** で以下の操作を行います。 Adobeのテクニカルサポート担当者にデータへのアクセスを許可するための同意フォームが表示されます。
+1. プライバシー設定に関する情報を確認したら、「**データへのアクセスを次の期間だけ許可する：**」の横にあるチェックボックスをオンにするかどうかを選択します。
 1. 期間ドロップダウンで、Adobeのテクニカルサポート担当者がカスタマーデータにアクセスできる期間を選択します。 7 日、30 日、1 年または無期限を選択できます。
-1. クリック **[!UICONTROL Save]**. これにより、の下のページの下部にある開始日と終了日が更新されます **次の期間に同意しました** （スクリーンショット）。 同意が得られると、権限を持つプライマリユーザーには、画面の下部に同意を取り消すオプションが表示されます。
+1. 「**[!UICONTROL Save]**」をクリックします。 これにより、ページの下部にある **次の期間に対する同意を与えました** （スクリーンショット）の開始日と終了日が更新されます。 同意が得られると、権限を持つプライマリユーザーには、画面の下部に同意を取り消すオプションが表示されます。
    ![magento-account-privacy-settings.png](assets/magento-account-privacy-settings.png)
 
-次のいずれかをクリックできます。 **同意を撤回** Adobeサポート担当者がお客様のデータにアクセスすることに対するお客様の同意を取り消す場合は、いつでも可能です。
+**同意を取り消す** をクリックすると、いつでもAdobeサポート担当者がデータにアクセスすることに対する同意を取り消すことができます。

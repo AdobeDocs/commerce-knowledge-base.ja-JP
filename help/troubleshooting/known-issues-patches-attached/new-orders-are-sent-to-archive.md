@@ -23,17 +23,17 @@ ht-degree: 0%
 
 顧客が注文すると、通常の注文グリッドではなく、アーカイブ済み注文グリッドに表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 商品をストアフロントのカートに追加し、チェックアウトを進め、注文します。
-1. Commerce Admin で、に移動します。 **売上** > **運用** > **順序**. グリッドに表示される順序を確認します。
-1. に移動します。 **売上** > **アーカイブ** > **注文件数**. グリッドに新しい順序が表示されます。
+1. Commerce Admin で、**Sales**/**Operations**/**Order** に移動します。 グリッドに表示される順序を確認します。
+1. **Sales**/**Archive**/**Orders** に移動します。 グリッドに新しい順序が表示されます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 注文は注文グリッドにのみ表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 注文は [ 注文 ] グリッドと [ 注文アーカイブ ] グリッドに表示されます。
 
@@ -59,10 +59,10 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-手順については、を参照してください [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+手順については、サポートナレッジベースの [Adobe Commerceが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## ユーザーガイドの便利なリンク
 
-* [アーカイブ済み注文の管理](https://docs.magento.com/user-guide/sales/order-archive.html)
+* [ アーカイブ済み注文の管理 ](https://docs.magento.com/user-guide/sales/order-archive.html)
 
 ## 添付ファイル

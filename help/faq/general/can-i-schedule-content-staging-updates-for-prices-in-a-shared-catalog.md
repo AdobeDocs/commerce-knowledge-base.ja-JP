@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？
 
-Adobe Commerceには、価格更新をスケジュールする機能はありません（[コンテンツのステージング](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)）を選択します。
+Adobe Commerceには、共有カタログ内の 1 つ以上の商品の価格更新をスケジュールする機能（[ コンテンツステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)）はありません。
 
-つまり、 **価格と構造の設定** Commerce管理パネルのメニュー（ありません） **新しい更新をスケジュール** このメニューのボタン）。
+つまり、Commerce管理パネルの **価格と構造を設定** メニューから直接価格の更新をスケジュールすることはできません（このメニューには **新規更新をスケジュール** ボタンはありません）。
 
 それでも、別の方法を使用して、次の項目の価格アップデートをスケジュールすることができます。
 
@@ -23,12 +23,12 @@ Adobe Commerceには、価格更新をスケジュールする機能はありま
 
 ## 顧客グループの価格更新をスケジュール
 
-1. 開始 [新しい製品アップデートのスケジュール設定](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html).
-1. にスクロール ダウンします。 **価格** フィールドでクリック **詳細価格**.
+1. [ 新しい製品アップデートのスケジュール設定 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html) を開始します。
+1. 「**価格**」フィールドまでスクロールし、「**詳細価格**」をクリックします。
 
    ![advanced_pricing.png](assets/advanced_pricing.png){width="600"}
 
-1. が含まれる **顧客グループ価格セクション**&#x200B;を選択し、必要な顧客グループを選択して、更新された価格を設定します。
+1. **顧客グループ価格セクション** で、必要な顧客グループを選択し、更新された価格を設定します。
 
    ![customer_group_price.png](assets/customer_group_price.png){width="700"}
 
@@ -40,9 +40,9 @@ Adobe Commerceには、価格更新をスケジュールする機能はありま
 
 **関連ドキュメント**
 
-* [更新のスケジュール設定（コンテンツのステージング）](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html) を参照してください。
-* [詳細価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) を参照してください。
+* ユーザーガイドの [ 更新のスケジュール （コンテンツのステージング） ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html)。
+* ユーザーガイドの [ 詳細価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。
 
 ## 基本価格の予定価格更新
 
-関連する記事： [基本価格の変更は共有カタログ価格にどのような影響を与えますか？](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) サポートナレッジベースで。
+関連記事：[ 基本価格の変更は共有カタログ価格にどのような影響を与えるか？](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) しくは、サポートナレッジベースを参照してください。

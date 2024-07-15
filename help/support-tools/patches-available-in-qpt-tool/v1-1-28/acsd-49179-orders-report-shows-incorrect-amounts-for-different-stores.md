@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-49179：注文レポートに、様々な店舗に対して誤った金額が表示される
 
-ACSD-49179 パッチは、異なる店舗で異なる通貨が使用されている場合に、注文レポートに誤った金額が表示される問題を修正します。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.28 がインストールされています。 パッチ ID は ACSD-49179 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-49179 パッチは、異なる店舗で異なる通貨が使用されている場合に、注文レポートに誤った金額が表示される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.28 がインストールされている場合に使用できます。 パッチ ID は ACSD-49179 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,17 +27,17 @@ ACSD-49179 パッチは、異なる店舗で異なる通貨が使用されてい
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 注文レポートには、店舗ごとに異なる通貨の場合に誤った金額が表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. に移動 **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Catalog]** > **[!UICONTROL Price]** およびを設定 [!UICONTROL Catalog Price Scope] = [!UICONTROL Website].
+1. **[!UICONTROL Stores]**/**[!UICONTROL Config]**/**[!UICONTROL Catalog]**/**[!UICONTROL Price]** に移動し、[!UICONTROL Catalog Price Scope]=[!UICONTROL Website] を設定します。
 1. 追加の web サイト、ストア、ストア表示を作成します。
-1. に移動 **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL General]** > **[!UICONTROL Currency Setup]** > **[!UICONTROL Currency Options]** さらに、次のように設定します。
+1. **[!UICONTROL Stores]**/**[!UICONTROL Config]**/**[!UICONTROL General]**/**[!UICONTROL Currency Setup]**/**[!UICONTROL Currency Options]** に移動し、次のように設定します。
    * デフォルトの設定：
       * 基準通貨：USD
       * 既定の表示通貨：USD
@@ -50,24 +50,24 @@ ACSD-49179 パッチは、異なる店舗で異なる通貨が使用されてい
       * 基準通貨：THB （タイバーツ）
       * 既定の表示通貨：THB （タイ バーツ）
       * 使用可能な通貨：THB （タイバーツ）
-1. に移動 **[!UICONTROL Stores]** > **[!UICONTROL Currency]** > **[!UICONTROL Currency Rates]** そして、THB の空のコンバージョン率を設定します（レートを 1.0000 に設定）。
+1. **[!UICONTROL Stores]**/**[!UICONTROL Currency]**/**[!UICONTROL Currency Rates]** に移動して、THB の空のコンバージョン率を設定します（率を 1.0000 に設定します）。
 1. 製品を作成して両方の web サイトに割り当て、以前に作成した追加の web サイトでこの製品を注文します。
-1. 注文が行われていることを確認します。 *処理* ステータス （請求書）。
-1. バックエンドで、に移動します。 **[!UICONTROL Reports]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-1. 「」をクリック **[!UICONTROL Yellow]** 統計の更新を警告しています。
+1. 注文が *処理中* ステータスであることを確認します（請求書）。
+1. バックエンドで、**[!UICONTROL Reports]** / **[!UICONTROL Sales]** / **[!UICONTROL Orders]** に移動します。
+1. 統計を更新するには、**[!UICONTROL Yellow]** の警告をクリックします。
 1. 作成済みの追加 web サイトでレポートの範囲を設定し、次のようにフィルターを設定します。
    * [!UICONTROL Date Used]: [!UICONTROL Created]
    * [!UICONTROL Period]: [!UICONTROL Day]
-   * [!UICONTROL From and To]：テストオーダーを行った同じ日
+   * [!UICONTROL From and To]: テスト注文を行った同じ日
    * [!UICONTROL Order Status]: [!UICONTROL Any]
    * [!UICONTROL Empty rows]: [!UICONTROL No]
    * [!UICONTROL Show Actual Values]: [!UICONTROL No]
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 売上高の合計は、Web サイトの通貨に変換された正しい金額を示します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 合計はゼロです。
 
@@ -75,14 +75,14 @@ ACSD-49179 パッチは、異なる店舗で異なる通貨が使用されてい
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

@@ -36,7 +36,7 @@ ht-degree: 0%
 
 Magento Open Source 1.X の場合、
 
-* 次の SSH コマンドを実行します。 `h SUPEE_patch --revert `
+* 次の SSH コマンドを実行します：`h SUPEE_patch --revert `
 
 ### Adobe Commerce オンプレミス、Magento Open Source、すべての 2.x バージョン
 
@@ -48,15 +48,15 @@ Adobe Commerce オンプレミスおよびMagento Open Source 2.x バージョ�
    patch -p1 -R %patch_name%.composer.patch
    ```
 
-   （上記のコマンドが機能しない場合は、を使用してみてください。 `-p2` の代わりに `-p1`）
+   （上記のコマンドが機能しない場合は、`-p1` ではなく `-p2` を使用してみてください）
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/**キャッシュ管理** でキャッシュを更新します。
 
 ### クラウドインフラストラクチャー上のAdobe Commerce、すべてのバージョン
 
 クラウドインフラストラクチャー上のAdobe Commerceの場合、すべてのバージョン、
 
-1. を削除 `%patch_name%.composer.patch` 個のファイル （から） `m2-hotfixes` ディレクトリ。
+1. `m2-hotfixes` ディレクトリから `%patch_name%.composer.patch` ファイルを削除します。
 1. コードの変更をコミットしプッシュします。
 
    ```
@@ -65,4 +65,4 @@ Adobe Commerce オンプレミスおよびMagento Open Source 2.x バージョ�
 
 ## 関連資料
 
-* [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)。

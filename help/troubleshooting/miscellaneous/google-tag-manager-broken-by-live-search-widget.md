@@ -1,6 +1,6 @@
 ---
-title: Google Tag Manager が以下によって機能しない： [!DNL Live Search] ウィジェット
-description: この記事では、次の問題の解決策を提供します [!DNL Live Search Product Listing Widget] 原因 [!DNL Google Tag Manager] 機能を停止します。
+title: Google タグマネージャーが  [!DNL Live Search] widget によって機能しない
+description: この記事では、 [!DNL Live Search Product Listing Widget]  の原因  [!DNL Google Tag Manager]  機能が停止した場合の解決策について説明します。
 feature: Install, Search, Best Practices
 role: Admin, Developer
 exl-id: 485f8ccb-cba2-4785-a8e1-a1e98c88b21e
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Tag Manager] が次によって壊されている [!DNL Live Search] ウィジェット
+# [!DNL Google Tag Manager] は [!DNL Live Search] ウィジェットによって壊されています
 
-この記事では、次の問題の解決策を提供します [!DNL Live Search Product Listing Widget] 原因 [!DNL Google Tag Manager] 機能を停止します。
+この記事では、[!DNL Google Tag Manager] の機能が停止する原因となっている [!DNL Live Search Product Listing Widget] の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 ## 問題
 
-この [!DNL Live Search Product Listing Widget] 原因 [!DNL Google Tag Manager] 機能を停止します。
+[!DNL Live Search Product Listing Widget] が原因で [!DNL Google Tag Manager] の機能が停止する。
 
 ## 解決策
 
-を確実に行うために、 [!DNL Google Tag Manager] との連携 [!DNL Live Search]、を使用します *アダプターの検索*.
+[!DNL Google Tag Manager] が [!DNL Live Search] で動作することを確認するには、*検索アダプター* を使用します。
 
-これを行うには、管理者でウィジェットを無効にします。 [!DNL Live Search] その後、デフォルトで次を使用します *アダプターの検索*.
+これを行うには、管理者でウィジェットを無効にします。 [!DNL Live Search] の後、デフォルトで *Search Adapter* を使用します。
 
 ## 関連資料
 
-* [[!DNL Live Search] ガイドの概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) Adobe Commerce Live Search ドキュメント
+* Adobe Commerce Live Search ドキュメントの [[!DNL Live Search]  ガイドの概要 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
 
-* [インストール中 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) Adobe Commerce Live Search ドキュメント
+* Adobe Commerce Live Search ドキュメントの [ インストール  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html)

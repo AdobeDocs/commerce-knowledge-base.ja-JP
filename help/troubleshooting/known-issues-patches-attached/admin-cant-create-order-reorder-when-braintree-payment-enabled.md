@@ -23,18 +23,18 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. コアBraintreeの統合が使用されます（**ストア** > **設定** > **売上** > **支払い方法** > **Braintree**）に設定します。
+1. コアBraintreeの統合が使用されます（**Stores**/**Configurations**/**Sales**/**Payment Method**/**8}Braintree）。**
 1. Luma ストアフロントを使用して、注文します。
-1. 管理 UI に移動します。 **売上**.
-1. 顧客の新しい注文を作成するか、以前に注文した注文に移動してクリックします。 **並べ替え**.
+1. 管理 UI / **営業** に移動します。
+1. 顧客の新しい注文を作成するか、以前に注文した注文に移動して、「**並べ替え**」をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 管理者ユーザーは、Braintree支払い方法が有効になっている場合、顧客の注文と並べ替えを正常に作成できます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 Braintree支払い方法が有効な場合、管理者ユーザーは顧客の注文の作成や並べ替えをおこなうことができず、次のエラーが返されます。
 
@@ -58,7 +58,7 @@ report.CRITICAL: Error: Call to a member function getMethodInstance() on null in
 
 >[!NOTE]
 >
->さらに、クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce バージョン 1.0.18 のクラウドパッチの修正が含まれています。を参照してください。 [Commerceのクラウドパッチ リリースノート](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) 最新のパッケージの適用手順については、開発者向けドキュメントを参照してください。
+>さらに、クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce バージョン 1.0.18 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ ](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) を参照してください。
 
 ### 互換性のあるAdobe Commerceのバージョン：
 
@@ -74,4 +74,4 @@ report.CRITICAL: Error: Call to a member function getMethodInstance() on null in
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。

@@ -35,24 +35,24 @@ Web サイトの動作が遅くなる原因としては、サーバーの動作�
 ## ソリューションの手順
 
 1. Adobe Commerceのログを調べて、DDoS 攻撃以外の何かが発生していないかどうかを確認します。 詳しくは、開発者向けドキュメントの次の記事を参照してください。
-   * [Adobe CommerceとMagento Open Sourceログの場所](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html)
-   * [クラウドインフラストラクチャログ上のAdobe Commerceの場所](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html)
-1. CLI の使用を開始し、を使用して現在のすべてのインターネット接続を確認します。 `netstat` コマンド： `netstat -na`. サーバーへのアクティブな確立済み接続がすべて表示されます。 この場合、同じ IP アドレスからの接続が多すぎると気付くことがあります。
-1. 確立された接続をポート 80 （Web サイトの http ポート）で接続するものだけに絞り込んで、1 つの IP アドレスまたは IP アドレスのグループからの接続数が多すぎるかどうかを並べ替えて認識できるようにするには、次のコマンドを使用します。 `netstat -an | grep :80 | sort`. ポート 443 の https に対しても、同じコマンドを繰り返すことができます。 `netstat -an | grep :443 | sort`. もう 1 つのオプションは、元のコマンドをポート 80 と 443 の両方に拡張することです。 `netstat -an | egrep ":80|:443" | sort`.
-1. 多数のアクティブな `SYNC_REC` サーバー上で実行されている場合は、次のコマンドを使用します。     `netstat -n -p|grep SYN_REC | wc -l`     これは通常 5 未満ですが、DDoS 攻撃でははるかに高くなる可能性がありますが、サーバーによっては、通常の状態である可能性が高い場合もあります。
-1. 送信するすべての IP アドレスをリストアップするには、次の手順に従います `SYNC_REC` ステータスを取得するには、次のコマンドを使用します。 `netstat -n -p | grep SYN_REC | sort -u`.
-1. を送信しているすべての一意の IP アドレスをさらに一覧表示するには `SYNC_REC` ステータスを取得するには、次のコマンドを使用します。 `netstat -n -p | grep SYN_REC | awk ‘{print $5}’ | awk -F: ‘{print $1}’`.
-1. を使用することもできます `netstat` 各 IP アドレスがサーバーに対して行う接続数をカウントして計算するコマンド： `netstat -ntu | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -n`.
-1. サーバーに接続されている UDP または TCP プロトコル接続の数を一覧表示するには、次のコマンドを使用します。 `netstat -anp |grep ‘tcp|udp’ | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -n`.
-1. すべての接続ではなく、確立された接続を確認し、各 IP アドレスの接続数を表示するには、次のコマンドを使用します。 `netstat -ntu | grep ESTAB | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -nr`.
-1. IP アドレスごとにポート 80 への接続数を表示するには、次のコマンドを使用します。 `netstat -plan|grep :80|awk {‘print $5’}|cut -d: -f 1|sort|uniq -c|sort -nk 1`.
+   * [Adobe CommerceとMagento Open Sourceログの場所 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html)
+   * [ クラウドインフラストラクチャログ上のAdobe Commerceの場所 ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html)
+1. CLI の使用を開始し、`netstat` のコマンドを使用して現在のすべてのインターネット接続を確認します：`netstat -na`。 サーバーへのアクティブな確立済み接続がすべて表示されます。 この場合、同じ IP アドレスからの接続が多すぎると気付くことがあります。
+1. 確立された接続をポート 80 （Web サイトの http ポート）で接続するものだけに絞り込んで、1 つの IP アドレスまたは IP アドレスのグループからの接続数が多すぎるかどうかを並べ替えて認識できるようにするには、次のコマンドを使用します。`netstat -an | grep :80 | sort` ポート 443 の https に対しても、同じコマンドを繰り返すことができます：`netstat -an | grep :443 | sort`。 もう 1 つのオプションは、元のコマンドをポート 80 と 443 の両方に拡張することです。`netstat -an | egrep ":80|:443" | sort`。
+1. サーバーでアクティブな `SYNC_REC` が多数発生しているかどうかを確認するには、次のコマンドを使用します。     `netstat -n -p|grep SYN_REC | wc -l`     これは通常 5 未満ですが、DDoS 攻撃でははるかに高くなる可能性がありますが、サーバーによっては、通常の状態である可能性が高い場合もあります。
+1. `SYNC_REC` のステータスを送信するすべての IP アドレスを一覧表示するには、コマンド `netstat -n -p | grep SYN_REC | sort -u` を使用します。
+1. ステータスを送信する一意の IP アドレスをすべて `SYNC_REC` らに一覧表示するには、コマンド `netstat -n -p | grep SYN_REC | awk ‘{print $5}’ | awk -F: ‘{print $1}’` を使用します。
+1. また、`netstat` コマンドを使用して、各 IP アドレスがサーバーに対して行った接続数をカウントし計算することもできます。このコマンドは `netstat -ntu | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -n` です。
+1. サーバーに接続されている UDP または TCP プロトコル接続の数を一覧表示するには、コマンド `netstat -anp |grep ‘tcp|udp’ | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -n` を使用します。
+1. すべての接続ではなく、確立された接続を確認し、各 IP アドレスの接続数を表示するには、コマンド `netstat -ntu | grep ESTAB | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -nr` を使用します。
+1. ポート 80 への IP アドレス別の接続数を表示するには、コマンド `netstat -plan|grep :80|awk {‘print $5’}|cut -d: -f 1|sort|uniq -c|sort -nk 1` を使用します。
 
-実際に DDoS 攻撃を受けているかどうかを判断するために、見つかったデータを適切に分析する担当者がいることを確認します。 使用， `netstat` 上記の手順でサーバー CLI のコマンドを使用すると、DDoS 攻撃が発生しているかどうかを分析できますが、DDoS 攻撃の特定に役立つように特別に設計されたソフトウェア分析製品を使用すると、適切な分析とともに、DDoS の脅威を特定するのに最適なツールとなります。
+実際に DDoS 攻撃を受けているかどうかを判断するために、見つかったデータを適切に分析する担当者がいることを確認します。 上記の手順でサーバ CLI から `netstat` コマンドを使用すると、DDoS 攻撃が発生しているかどうかを分析できますが、DDoS 攻撃を特定するために特別に設計されたソフトウェア分析製品を使用すると、適切な分析とともに、DDoS の脅威を特定する最適なツールとなります。
 
 DDoS 攻撃を受けている場合は、ネットワーク構成や DDoS 攻撃の発生状況に応じて実行できる手順が異なりますが、一般的には、ISP に問い合わせたり、サーバーの新しい IP アドレスを取得したり、DDoS の問題の処理に長けた IT 担当者に問い合わせて、特定の状況を分析しアドバイスしたりすることをお勧めします。
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [DDoS 保護](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-fastly.html#ddos-protection)
-* [CLI コマンドの使用](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/example/cli.html)
+* [DDoS 保護 ](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-fastly.html#ddos-protection)
+* [CLI コマンドの使用 ](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/example/cli.html)
 * [Commerce用の Cloud CLI](https://devdocs.magento.com/guides/v2.3/cloud/reference/cli-ref-topic.html)

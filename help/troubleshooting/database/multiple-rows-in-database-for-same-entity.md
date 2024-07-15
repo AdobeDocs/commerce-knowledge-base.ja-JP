@@ -29,7 +29,7 @@ ht-degree: 0%
 SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 ```
 
-ここで、 `$entityID = ID` カテゴリ /製品/ カート価格ルール / カタログ価格ルール / CMS ページの。
+カテゴリ/製品/買い物かご価格ルール/カタログ価格ルール/CMS ページの `$entityID = ID`。
 
 | Entity | $entityTable | 列（$C） |
 |------------------|-----------------------------------|------------------|
@@ -41,9 +41,9 @@ SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 
 これは想定されている動作です。 コンテンツのステージング機能によって、複数の行が作成されます。
 
-* 終了日を指定せずに開始日を指定した場合、同じエンティティ/ルール/ページ ID を持つ行が少なくとも 2 つ存在します。 1 つの行は、エンティティの元の状態を示します（の行） `created_in=1`）を選択します。1 つの行は、を示します *スケジュールされた更新の終了*.
+* 終了日を指定せずに開始日を指定した場合、同じエンティティ/ルール/ページ ID を持つ行が少なくとも 2 つ存在します。 1 つの行はエンティティの元の状態（`created_in=1` の行）を示し、1 つの行は *スケジュールされた更新の終了* を示します。
 
-* 開始日と終了日を指定した場合、同じエンティティ/ルール/ページ ID を持つ行が少なくとも 3 つ存在することになります。 1 つの行は、エンティティの元の状態を示します（の行） `created_in=1`）、1 つの行はに対応します *スケジュールされた更新の開始*&#x200B;を選択すると、1 行がに設定されます *スケジュールされた更新の終了*.
+* 開始日と終了日を指定した場合、同じエンティティ/ルール/ページ ID を持つ行が少なくとも 3 つ存在することになります。 1 つの行はエンティティの元の状態（`created_in=1` の行）、1 つの行は *予定更新の開始*、1 つの行は *予定更新の終了* を示します。
 
 例えば、次のクエリの場合：
 
@@ -53,13 +53,13 @@ SELECT row_id, entity_id, created_in, updated_in FROM catalog_product_entity WHE
 
 ![multiple_rows_in_database.png](assets/multiple_rows_in_database.png)
 
-* この `created_in` および `updated_in` 値は、次のパターンに従う必要があります：は `created_in` 現在の行の値は次と等しい `updated_in` 前の行の値。 また、最初の行にはを含める必要があります `created_in = 1` 最後の行にはが含まれます `updated_in = 2147483647`. （行が 1 つしかない場合は、次を確認する必要があります `created_in=1` および `updated_in=2147483647`）に設定します。
+* `created_in` と `updated_in` の値は、次のパターンに従う必要があります。現在の行の `created_in` 値は、前の行の `updated_in` 値と等しくなります。 また、最初の行には `created_in = 1` を、最後の行には `updated_in = 2147483647` を含める必要があります。 （行が 1 つしかない場合は、`created_in=1` と `updated_in=2147483647` が表示されます）。
 
 ### 2 つ目の DB エントリ（および次のエントリすべて）が同じエンティティの DB に表示されるのはなぜですか？
 
-* 影響を受けるエンティティの 2 つ目の DB レコード（場合によっては次のレコード）は、を使用してコンテンツステージングの更新がスケジュールされていることを意味します `Magento_Staging` 各テーブル内のエンティティに対して追加のレコードを作成するモジュール。
+* 影響を受けるエンティティの 2 つ目の DB レコード（場合によっては次のレコード）は、`Magento_Staging` モジュールを使用してコンテンツステージングの更新がスケジュールされていることを意味します。これにより、各テーブルのエンティティに対して追加のレコードが作成されます。
 
-問題は、レコードの値がと同じ場合にのみ発生します。 `created_in` または `updated_in` 列。
+問題は、レコードの `created_in` 列または `updated_in` 列の値が同じ場合にのみ発生します。
 
 ## 解決策
 
@@ -67,5 +67,5 @@ SELECT row_id, entity_id, created_in, updated_in FROM catalog_product_entity WHE
 
 ## 関連資料
 
-* [カテゴリへの変更が保存されない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) サポートナレッジベースで。
-* [スケジュール更新の終了日を編集した後、カタログのルール テーブルのエントリが重複する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) サポートナレッジベースで。
+* [ カテゴリに対する変更は保存されません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) が、サポートナレッジベースに表示されます。
+* [ スケジュール更新の終了日を編集した後、カタログルールテーブルのエントリを複製 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) ます。サポートナレッジベースを参照してください。

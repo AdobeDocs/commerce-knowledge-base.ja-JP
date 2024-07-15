@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # スタータープランのログの場所（ディレクトリ）
 
-参照： [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) が含まれる *クラウドインフラストラクチャー上のCommerce ガイド* クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクトのビルド、デプロイ、アプリケーション、サービスのログの場所について説明します。
+クラウドインフラストラクチャー上にデプロイされたAdobe Commerce プロジェクトのビルド、デプロイ、アプリケーション、サービスのログの場所については、{2 *クラウドインフラストラクチャーのCommerceガイドの [ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) を参照してください。*

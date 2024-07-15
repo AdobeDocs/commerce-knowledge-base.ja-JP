@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-32655: &quot;quoteItemCleaner&quot; コンシューマーは、実行ごとに 1 つのメッセージを実行します
 
-MDVA-32655 パッチにより、誤った「進行中」メッセージ ステータスが、コンシューマー向けの正しい「完了」メッセージに修正されます `quoteItemCleaner` 複数の製品を削除した後。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.18 がインストールされています。 パッチ ID は 32655 です。 この問題はAdobe Commerce 2.4.3 で修正される予定であることに注意してください。
+MDVA-32655 パッチは、複数の製品を削除した後に、コンシューマー `quoteItemCleaner` ーザーに対して誤った「進行中」メッセージのステータスを、正しい「完了」メッセージに修正します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.18 がインストールされている場合に使用できます。 パッチ ID は 32655 です。 この問題はAdobe Commerce 2.4.3 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,34 +27,34 @@ Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミ�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-この `quoteItemCleaner` コンシューマーは、各実行で 1 つのメッセージのみを実行します。
+`quoteItemCleaner` コンシューマーは、各実行で 1 つのメッセージのみを実行します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. を確認します `queue_message_status` データベーステーブルを使用し、既存のすべてのキューメッセージが「完了」状態（ステータス ID 4）であることを確認します。
+1. `queue_message_status` データベース テーブルをチェックし、既存のすべてのキューメッセージが「完了」状態（ステータス ID 4）であることを確認します。
 1. 自動Adobe Commerce cron 実行を停止します。
 1. 2 つまたは 3 つの簡単な製品を作成します。
 1. これら 3 つの簡単な製品を一括削除します。
-1. が含まれる `queue_message_status` の新しいレコードが 3 つあることがわかります。 `catalog_product_removed_queue` トピック、状態 ID 2 （新しいレコード）。
-1. 次のコマンドを実行して、これらを保留中に処理します `catalog_product_removed_queue` メッセージ：
+1. `queue_message_status` の表では、ステータス ID 2 （新規レコード）の `catalog_product_removed_queue` トピックに対して 3 つの新規レコードが表示されます。
+1. 次のコマンドを実行して、これらの保留中の `catalog_product_removed_queue` メッセージを処理します。
 
    ```bash
    bin/magento queue:consumers:start quoteItemCleaner --single-thread --max-messages=100
    ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 ```sql
 select * from queue_message_status s join queue q on s.queue_id = q.id where q.name = "catalog_product_removed_queue";
 ```
 
-すべての `catalog_product_removed_queue` メッセージのステータスが「完了」（ID=4）に更新されます。
+`catalog_product_removed_queue` のすべてのメッセージのステータスが更新され、完了します（ID=4）。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 3 つのうち 1 つのレコードのみが「完了」ステータスに更新されます（ID = 4）。 他の 2 つのメッセージのステータスは、ステータス ID = 3 （処理中）です。 未処理のキューメッセージを含んだバックログが生成される。
 
@@ -62,14 +62,14 @@ select * from queue_message_status s join queue q on s.queue_id = q.id where q.n
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

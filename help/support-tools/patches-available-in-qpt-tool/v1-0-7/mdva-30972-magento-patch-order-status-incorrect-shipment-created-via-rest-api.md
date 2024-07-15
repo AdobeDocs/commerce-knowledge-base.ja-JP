@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30972:REST API を使用して作成された注文ステータスの誤った出荷
 
-MDVA-30972 パッチは、REST API を使用した出荷作成時に注文ステータスが正しく変更されない問題を解決します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 がインストールされています。
+MDVA-30972 パッチは、REST API を使用した出荷作成時に注文ステータスが正しく変更されない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.7 がインストールされている場合に使用できます。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,23 +27,23 @@ MDVA-30972 パッチは、REST API を使用した出荷作成時に注文ステ
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-を使用して、注文の部分出荷が REST API を介して管理者から作成された場合 *詐欺の疑い* 注文ステータス、注文ステータスが「」に変更されます *処理*. それはにとどまるべきです *詐欺の疑い*.
+*不正の疑い* 注文ステータスの注文について、管理者が REST API を使用して部分出荷を作成すると、注文ステータスが *処理中* に変更されます。 *不正行為の疑い* にとどまる必要があります。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 * PayPal EC またはその他のオンライン支払い方法が設定されています。
 * REST API の統合が設定されました。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 2 つ以上の項目で注文を作成します。
-1. へのログイン **Admin** > **売上** > **注文件数**. 作成した注文を開きます。
-1. 注文の詳細ページで、「」まで下にスクロールします **注文の合計**. 「」をクリック **ステータス** ドロップダウンして選択 *詐欺の疑い*. 次に、 **コメントを送信** ボタン。
-1. 注文のステータスを確認 *詐欺の疑い* 現在の状態。
+1. **管理者**/**営業**/**注文** にログインします。 作成した注文を開きます。
+1. 注文詳細ページで、「注文合計 **までスクロールダウンし** す。 **ステータス** ドロップダウンをクリックし、*不正行為の疑い* を選択します。 次に、「**コメントを送信**」ボタンをクリックします。
+1. 注文のステータスが *不正の疑い* であることを確認します。
 1. REST API を使用して、注文から 1 つの品目の出荷を作成します。
 
    ```
@@ -58,27 +58,27 @@ MDVA-30972 パッチは、REST API を使用した出荷作成時に注文ステ
 
 1. Admin で注文を再度開き、ステータスを確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-* 注文ステータス = *詐欺の疑い*.
+* 注文ステータス = *不正の疑い*。
 * 同じ出荷が管理者から作成された場合、注文ステータスは変更されません。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-注文ステータス = *処理*.
+注文ステータス = *処理中*。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

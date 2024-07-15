@@ -1,6 +1,6 @@
 ---
 title: 「ACSD-56741：カスタム MySQL トリガーを使用したデータベース設定エラーのトラブルシューティング」
-description: ACSD-56741 パッチを適用すると、「setup:upgrade」の間に、インデックス化およびAdobe Commerceに関連しないデータベースのカスタム MySQL トリガーにより、「null 型の値で配列オフセットにアクセスしようとしています」というエラーメッセージが表示される AEM の問題を修正できます。 [!DNL MView].
+description: ACSD-56741 パッチを適用すると、「setup:upgrade」の間、インデックスおよび  [!DNL MView] に関連しないデータベース内のカスタム MySQL トリガーが原因で、「null 型の値で配列オフセットにアクセスしようとしています」というエラーメッセージが表示されるAdobe Commerceの問題を修正できます。
 feature: Install
 role: Admin, Developer
 exl-id: 97839140-03c5-44f0-ba75-935d62f5bf90
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-56741：カスタム MySQL トリガーを使用したデータベース設定エラーのトラブルシューティング
 
-ACSD-56741 パッチは、エラーメッセージが表示される問題を修正します *型 null の値の配列オフセットにアクセスしようとしています* 表示期間 `setup:upgrade` インデックス化に関連しないデータベース内のカスタム MySQL トリガーが原因で、および [!DNL MView]. このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 がインストールされています。 パッチ ID は ACSD-56741 です。 この問題はAdobe Commerce 2.5.0 で修正される予定です
+ACSD-56741 パッチでは、インデックスおよび [!DNL MView] に関連しないデータベース内のカスタム MySQL トリガーが原因で、`setup:upgrade` 行中にエラーメッセージ *null 型の値で配列オフセットにアクセスしようとしています* が表示される問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 がインストールされている場合に使用できます。 パッチ ID は ACSD-56741 です。 この問題はAdobe Commerce 2.5.0 で修正される予定です
 
 ## 影響を受ける製品とバージョン
 
@@ -27,15 +27,15 @@ ACSD-56741 パッチは、エラーメッセージが表示される問題を修
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-エラーメッセージ *型 null の値の配列オフセットにアクセスしようとしています* 表示期間 `setup:upgrade` インデックス化に関連しないデータベース内のカスタム MySQL トリガーが原因で、および [!DNL MView].
+インデックスおよび [!DNL MView] に関連しないデータベース内のカスタム MySQL トリガーが原因で、`setup:upgrade` 行中にエラーメッセージ *型 null の値で配列オフセットにアクセスしようとしています* が表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 実行 `php bin/magento indexer:set-mode schedule`.
+1. `php bin/magento indexer:set-mode schedule` を実行します。
 
    ```
    DELIMITER //
@@ -45,31 +45,31 @@ ACSD-56741 パッチは、エラーメッセージが表示される問題を修
        -> END //
    ```
 
-1. 実行 `php bin/magento c:f`.
-1. 実行 `php bin/magento setup:upgrade`.
+1. `php bin/magento c:f` を実行します。
+1. `php bin/magento setup:upgrade` を実行します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 セットアップのアップグレードはエラーなしで完了します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 セットアップのアップグレードが終了し、次のエラーメッセージが表示されます。
 
-*警告：null 型の値の配列オフセットにアクセスしようとしています*.
+*警告：null 型の値の配列オフセットにアクセスしようとしています*。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

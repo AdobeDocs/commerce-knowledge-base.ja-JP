@@ -18,11 +18,11 @@ ht-degree: 0%
 * [データの食い違い診断チェックリスト](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [書き出しを使用したデータの不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-また、正しいことを確認することをお勧めします [レプリケーション方法](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) および [再チェック](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) 相違に含まれるテーブルと列に対して設定されています。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
+また、不一致に関わるテーブルと列に正しい [ レプリケーション方法 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) と [ 再確認 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) が設定されていることを確認することをお勧めします。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
 
 ## まだ助けが必要だ！
 
-それでもレポートが不正確な場合は、心配しないでください。アドビのサポートチームがお手伝いします。 [私たちに連絡してください](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) （次の情報を使用）。
+それでもレポートが不正確な場合は、心配しないでください。アドビのサポートチームがお手伝いします。 [ お問い合わせください ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) とともに、以下の情報をお知らせください。
 
 * その不一致が表示されたレポートの名前は何ですか？
 * レポートに表示される誤った値はどれですか？
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 関連資料
 
 * [計算される列](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [構造データベースの変更](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [ 構造データベースの変更 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)

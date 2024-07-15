@@ -21,16 +21,16 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. サイトのメンテナンスモードを有効にします。
 1. ストアフロントに移動します。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 メンテナンスページが表示されます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 ストアフロントページは通常どおり表示されます。
 
@@ -41,8 +41,8 @@ ht-degree: 0%
 ## メンテナンスモードであるにもかかわらず、サイトに対して可視のソリューション
 
 1. 環境に SSH で接続します。
-1. を実行 `php bin/magento cache:clean` コマンド。
+1. `php bin/magento cache:clean` コマンドを実行します。
 
 ## 関連資料
 
-[メンテナンスモードの有効化または無効化](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) を参照してください。

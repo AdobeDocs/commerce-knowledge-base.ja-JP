@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37362:GraphQL応答で設定可能な商品オプションが空になる
 
-MDVA-37362 パッチを適用すると、GraphQL応答で設定可能な商品オプション値とバリアント属性値が空になる問題が解決されます。 このパッチは、 [品質向上パッチツール（QPT）](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.23 がインストールされている。 この問題はAdobe Commerce バージョン 2.4.3 で修正される予定であることに注意してください。
+MDVA-37362 パッチを適用すると、GraphQL応答で設定可能な商品オプション値とバリアント属性値が空になる問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.23 がインストールされている場合に使用できます。 この問題はAdobe Commerce バージョン 2.4.3 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,14 +22,14 @@ MDVA-37362 パッチを適用すると、GraphQL応答で設定可能な商品�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. 新しいソースと、この新しいソースに割り当てる新しい在庫を作成します。
-1. **ストア** > *設定* > **設定** > **カタログ** > **在庫** > *製品ストックオプション* > 在庫を管理： *はい*.
+1. **ストア**/*設定*/**設定**/**カタログ**/**在庫**/*製品在庫オプション*/在庫の管理：*はい*。
 1. 設定可能な製品を作成し、手順 1 で作成した新しい在庫を使用して製品の数量を割り当てます。
 1. 再インデックス。
 1. GraphQL リクエストを行います。
@@ -100,11 +100,11 @@ MDVA-37362 パッチを適用すると、GraphQL応答で設定可能な商品�
 }
 ```
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 オプションの値と属性が応答に存在している必要があります。
 
-<u>実際の結果：</u>
+<u> 実績：</u>
 
 ```java
 {
@@ -219,14 +219,14 @@ MDVA-37362 パッチを適用すると、GraphQL応答で設定可能な商品�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe Commerce オンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe Commerce オンプレミス：開発者向けドキュメントの [ ソフトウェアアップデートガイド/パッチを適用する方法 ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)。
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT ツールで使用可能なその他のパッチについては、を参照してください。 [QPT ツールで使用可能なパッチ](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) セクション。
+QPT ツールで使用可能なその他のパッチについては、[QPT ツールで使用可能なパッチ ](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) の節を参照してください。

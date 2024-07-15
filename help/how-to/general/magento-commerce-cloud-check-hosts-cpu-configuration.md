@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ## 記事のダウンロード
 
-クリック [Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf](assets/Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf) 記事をダウンロードします。
+[Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf](assets/Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf) をクリックして、記事をダウンロードします。

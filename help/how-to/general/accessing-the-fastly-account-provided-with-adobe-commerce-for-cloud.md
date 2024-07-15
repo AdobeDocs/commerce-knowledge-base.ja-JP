@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ## Fastly 資格情報の表示方法
 
-を参照してください [Fastly 資格情報の取得](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) の節（開発者向けドキュメント）を参照してください。
+詳しくは、開発者向けドキュメントの [Fastly 資格情報の取得 ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) の節を参照してください。
 
 ## Fastly 資格情報のテスト方法
 
-を参照してください [Fastly 資格情報のテスト](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) の節（開発者向けドキュメント）を参照してください。
+詳しくは、開発者向けドキュメントの [Fastly 資格情報のテスト ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) の節を参照してください。
 
 ## 関連資料
 
-[Fastly on Cloud のアカウント所有者の変更（API トークンを使用したアクセス認証情報）](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) サポートナレッジベースで。
+サポートナレッジベースで [Fastly on Cloud のアカウント所有者を変更する（API トークンを使用したアクセス資格情報） ](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md)。

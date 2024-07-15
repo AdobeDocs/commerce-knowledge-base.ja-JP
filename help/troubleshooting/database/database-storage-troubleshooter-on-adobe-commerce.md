@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ## 手順 1 - スペースの問題があるディレクトリの特定 {#step-1}
 
-+++**持っていますか。 `/tmp` スペースの不足によって発生する問題**
++++**スペースの不足によって発生する `/tmp` しい問題はありますか？**
 
-これは、次のような様々な症状で示されます `/tmp` マウントがフルであるか、サイトがダウンしているか、ノードに SSH 接続できない。 次のようなエラーが発生している場合もあります。 _デバイスにスペースが残っていません（28）_. から生じるエラーのリストの場合 `/tmp` フルである、確認する [/tmp mount full](/help/troubleshooting/miscellaneous/tmp-mount-full.md).
+これは、`/tmp` マウントが満杯、サイトダウン、ノードに SSH 接続できないなど、様々な症状で示される可能性があります。 また、「デバイスに空き容量がありません _（28）_ などのエラーが発生している可能性があります。 `/tmp` がいっぱいになったことによるエラーのリストについては、[/tmp mount full](/help/troubleshooting/miscellaneous/tmp-mount-full.md) を参照してください。
 
-または、 `/data/mysql` スペースの不足によって発生する問題 これは、サイトの停止、顧客が買い物かごに製品を追加できない、データベースへの接続に失敗した、Galeria の次のようなエラーなど、様々な症状でも示されます _SQLSTATE\[08S01\]：通信リンク エラー：1047 WSREP_. MySQL のディスク容量不足によるエラーのリストについては、を参照してください。 [クラウドインフラストラクチャー上のAdobe Commerceで MySQL のディスク領域が不足している](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
+または、スペースの不足が原因で `/data/mysql` の問題が発生していますか？ これは、サイトの停止、買い物かごに製品を追加できない、データベースへの接続に失敗した、_SQLSTATE\[08S01\]: Communication link failure: 1047 WSREP_ のような Galeria エラーなど、さまざまな現象でも示されます。 MySQL のディスク容量が少ないことが原因で発生したエラーのリストについては、[ クラウドインフラストラクチャ上のAdobe Commerceの MySQL のディスク容量が少ない ](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) を参照してください。
 
-ディスク容量に関する問題が発生しているかどうか、およびNew Relic アカウントをお持ちの場合は、 [「New Relic インフラストラクチャ監視ホスト」ページ](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). そこから、 **ストレージ** タブで、 **グラフ表示** 5～20 の結果をドロップダウンし、[Disk Used %] グラフまたは表でディスクの使用率が高いかどうかを表で確認します。 詳細な手順については、次を参照してください [New Relic インフラストラクチャの監視/「ストレージ」タブ]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage）に設定します。
+ディスク容量に関する問題が発生しているかどうか、およびNew Relic アカウントがあるかどうかが不明な場合は、[New Relic Infrastructure monitoring Hosts ページ ](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/) にアクセスしてください。 そこから、[**ストレージ**] タブをクリックし、[**グラフの表示**] ドロップダウン・リストを 5 から 20 に変更して、[ ディスク使用率 %] グラフまたはテーブルでディスクの使用率が高いかどうかを確認します。 詳しい手順については、[New Relic インフラストラクチャの監視/「ストレージ」タブ ]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage）を参照してください。
 
 上記の現象が発生した場合は、inode の状態を調べて、ファイル番号の問題が原因でないことを確認してください。 これを行うには、CLI/ターミナルで次のコマンドを実行します。\
 `df -ih`
 
 IUse% は 90% を超えていますか。
 
-a.はい。これは、ファイルが多すぎることが原因です。 でファイルを安全に削除する手順を確認します。 [クラウドインフラストラクチャー上のAdobe Commerceのディスク容量不足に対してファイルを安全に削除](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). 次の手順に進みます。 [手順 2](#step-2) これらの手順を完了したら、 さらに容量を要求する場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NO - スペースを確認します。 実行 `df -h | grep mysql` その後 `df -h | grep tmp` CLI/ターミナルでを使用して、でのディスク容量の使用状況を確認します。 `/tmp` および `/data/mysql` ディレクトリ。 次の手順に進みます。 [手順 3](#step-3).
+a.はい。これは、ファイルが多すぎることが原因です。 [ クラウドインフラストラクチャー上のAdobe Commerceのディスク容量不足の場合に、ファイルを安全に削除する手順 ](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md) を確認します。 これらの手順を完了したら [ 手順 2](#step-2) に進みます。 さらに多くのスペースをリクエストする場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
+b. NO - スペースを確認します。 `df -h | grep mysql` を実行し、CLI/ターミナルで `df -h | grep tmp` を実行して、`/tmp` ディレクトリと `/data/mysql` ディレクトリのディスク容量の使用状況を確認します。 [ 手順 3](#step-3) に進みます。
 
 +++
 
@@ -39,25 +39,25 @@ b. NO - スペースを確認します。 実行 `df -h | grep mysql` その後 
 
 +++**ディスク領域の使用状況を確認しますか？**
 
-ファイルの数を減らしたら、を実行します。 `df -h | grep mysql` その後 `df -h | grep tmp` CLI/ターミナルで、のディスク容量の使用状況を確認します。 `/tmp` および `/data/mysql`. 次に対して 70% を超えて使用 `/tmp` または `/data/mysql`?
+ファイルの数を減らしたら、`df -h | grep mysql` を実行し、CLI/ターミナルで `df -h | grep tmp` を実行して、`/tmp` と `/data/mysql` のディスク・スペースの使用状況を確認します。 70% を超える値が `/tmp` または `/data/mysql` に使用されていますか？
 
-a.はい – に進みます。 [手順 3](#step-3).
-b. NO - クエリによって使用可能なストレージが使い果たされる可能性があります。 これにより、ノードがクラッシュして、クエリが強制終了し、 `tmp` ファイル。 の出力を確認します `SHOW PROCESSLIST;` MySQL CLI で、問題の原因となっている可能性のあるクエリを検索します。 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、より多くのスペースを要求しています。
+a.はい – [ 手順 3](#step-3) に進みます。
+b. NO - クエリによって使用可能なストレージが使い果たされる可能性があります。 これにより、ノードがクラッシュして、クエリが強制終了し、`tmp` ファイルが削除される可能性があります。 MySQL CLI の `SHOW PROCESSLIST;` の出力を調べて、問題の原因となっている可能性のあるクエリを探します。 [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) すると、空き容量を増やすことが必要になります。
 
 +++
 
 ## 手順 3 – 使用率の高いディレクトリの特定 {#step-3}
 
-+++**70% を超える使用率を持つディレクトリはどれですか。**
++++**70% を超える値が使用されているディレクトリはどれですか？**
 
-70% を超える使用率を持つディレクトリはどれですか。 `/tmp` または `/data/mysql`?
+70% を超える使用率を持つディレクトリはどれですか。 `/tmp` か `/data/mysql` か？
 
 >[!NOTE]
 >
->デフォルトでは、データベース tmpdir は以下に書き込みます。 `/tmp`. データベース設定がこのデフォルトのままであることを確認するには、MySQL CLI で次のコマンドを実行します。 `SHOW VARIABLES LIKE "TMPDIR";` データベース tmpdir がまだ書き込み中の場合 `/tmp`表示されます `/tmp` 「値」列に値を入力します。
+>デフォルトでは、データベース tmpdir は `/tmp` に書き込みます。 データベース設定がこのデフォルトのままであることを確認するには、MySQL CLI で次のコマンドを実行します。`SHOW VARIABLES LIKE "TMPDIR";` データベース tmpdir がまだ `/tmp` に書き込み中の場合は、「値」列に `/tmp` が表示されます。
 
-a. `/tmp`  – に進みます。 [手順 4](#step-4). \
-b. `/data/mysql`  – に進みます。 [手順 5](#step-5).
+a. `/tmp` - [ 手順 4](#step-4) に進みます。 \
+b. `/data/mysql` - [ 手順 5](#step-5) に進みます。
 
 +++
 
@@ -65,15 +65,15 @@ b. `/data/mysql`  – に進みます。 [手順 5](#step-5).
 
 +++**/tmp mount full のトラブルシューティング**
 
-[Adobe Commerceの/tmp mount full のトラブルシューティング](/help/troubleshooting/miscellaneous/tmp-mount-full.md)の場合は、記事を下にスクロールしてソリューションとベストプラクティスを試してみてください。 次を実行 `df -h | grep mysql` その後 `df -h | grep tmp` CLI/ターミナルで、のディスク容量の使用状況を確認します。 `/tmp` および `/data/mysql` ディレクトリ\
+[Adobe Commerceの/tmp mount full のトラブルシューティング ](/help/troubleshooting/miscellaneous/tmp-mount-full.md)、記事を下にスクロールして、ソリューションとベストプラクティスを試します。 次に、`df -h | grep mysql` を実行し、CLI/ターミナルで `df -h | grep tmp` を実行して、`/tmp` ディレクトリと `/data/mysql` ディレクトリのディスク容量の使用状況を確認します\
   70% 未満を使用していますか？
 
 >[!NOTE]
 >
->のソリューション [Adobe Commerceの/tmp mount full のトラブルシューティング](/help/troubleshooting/miscellaneous/tmp-mount-full.md) は、データベース tmpdir の変数を変更していないマーチャント向けに設計されています。デフォルトでは、この変数は次の場所に書き込まれます。 `/tmp`. tmpdir の値を変更した場合は、次の手順に従います。 [Adobe Commerceの/tmp mount full のトラブルシューティング](/help/troubleshooting/miscellaneous/tmp-mount-full.md) 役に立ちません。
+>[Adobe Commerceの/tmp mount full のトラブルシューティング ](/help/troubleshooting/miscellaneous/tmp-mount-full.md) のソリューションは、データベース tmpdir の変数を変更していないマーチャント向けに設計されています。この変数は、デフォルトでは `/tmp` に書き込まれます。 tmpdir の値を変更した場合、「[Adobe Commerceの/tmp mount full のトラブルシューティング ](/help/troubleshooting/miscellaneous/tmp-mount-full.md) の手順は役に立ちません。
 
 回答：はい、問題は解決しました。 \
-b.いいえ –  [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、より多くのスペースを要求しています。
+b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、空き容量を増やします。
 
 +++
 
@@ -81,12 +81,12 @@ b.いいえ –  [サポートチケットを送信](/help/help-center-guide/hel
 
 +++**デフォルトをオン**
 
-データベースの設定が元のデフォルトの状態でなくなる場合があります。 MySQL CLI でを実行して、データベース tmpdir 設定を見つけます。 `SELECT @@DATADIR;`. 次の場合 `/data/mysql/` が出力され、データベース tmpdir が書き込み中である `/data/mysql/`. 次の手順に従って、このディレクトリの容量を増やしてみてください。 [クラウドインフラストラクチャ上のAdobe Commerceで、MySQL のディスク容量が少ない](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md). 次を実行 `df -h | grep mysql` その後 `df -h | grep tmp` CLI/ターミナルで、のディスク容量の使用状況を確認します。 `/data/mysql` および `/tmp`.\
+データベースの設定が元のデフォルトの状態でなくなる場合があります。 MySQL CLI: `SELECT @@DATADIR;` でを実行して、データベースの tmpdir 設定を見つけます。 `/data/mysql/` が出力された場合、データベース tmpdir は `/data/mysql/` に書き込み中です。 [ クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少なくなっています ](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) の手順に従って、このディレクトリの容量を増やしてみてください。 次に、`df -h | grep mysql` を実行し、CLI/ターミナルで `df -h | grep tmp` を実行して、`/data/mysql` と `/tmp` でディスク容量の使用状況を確認します。\
   70% 未満を使用していますか？
 
 回答：はい、問題は解決しました。 \
-b.いいえ –  [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、より多くのスペースを要求しています。
+b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、空き容量を増やします。
 
 +++
 
-[手順 1 に戻る](#step-1)
+[ 手順 1 に戻る ](#step-1)

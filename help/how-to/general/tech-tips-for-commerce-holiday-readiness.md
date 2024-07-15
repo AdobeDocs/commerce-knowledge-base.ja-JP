@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
 
 ## PDF をダウンロード
 
-クリック [Commerceの休日に備えるテクニカルヒント.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf) pdf をダウンロードします。
+[Commerce holiday readiness.pdf のテクニカルヒント ](assets/tech-tips-for-commerce-holiday-readiness.pdf) をクリックして、PDF をダウンロードします。

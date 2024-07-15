@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-47666：での検索 [!UICONTROL User Roles] 動作しない'
-description: ACSD-47666 パッチを適用して、フィルターが機能するAdobe Commerceの問題を修正してください [!UICONTROL User Roles] が期待どおりに動作しない。
+title: 「ACSD-47666:[!UICONTROL User Roles] の検索が機能しない」
+description: ACSD-47666 パッチを適用すると、[!UICONTROL User Roles] のフィルター関数が期待どおりに動作しないAdobe Commerceの問題を修正できます。
 exl-id: c1b6d3ab-e132-4b09-8692-2b82f9ca6864
 feature: Roles/Permissions, Search
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47666：での検索 **[!UICONTROL User Roles]** 動作しない
+# ACSD-47666:**[!UICONTROL User Roles]** の検索が機能しない
 
-ACSD-47666 パッチは、での検索の問題を解決します。 **[!UICONTROL User Roles]** は動作していません。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.23 がインストールされています。 パッチ ID は ACSD-47666 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-47666 パッチを使用すると、**[!UICONTROL User Roles]** の検索が機能しない問題を解決できます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.23 がインストールされている場合に使用できます。 パッチ ID は ACSD-47666 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,40 +27,40 @@ ACSD-47666 パッチは、での検索の問題を解決します。 **[!UICONTR
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-フィルター関数： **[!UICONTROL User Roles]** が期待どおりに動作しない。
+**[!UICONTROL User Roles]** のフィルター関数が期待どおりに動作しません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. Adobe Commerce管理者にログインします。 **[!UICONTROL System]** > **[!UICONTROL Permissions]** > **[!UICONTROL User Roles]**.
+1. Adobe Commerce管理者/ **[!UICONTROL System]** / **[!UICONTROL Permissions]** / **[!UICONTROL User Roles]** にログインします。
 1. リストから既存の役割を開きます。
-1. を開きます **[!UICONTROL Role Users]** タブ。
+1. 「**[!UICONTROL Role Users]**」タブを開きます。
 1. 列にクエリを入力します。
 1. Enter キーを押します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-この **[!UICONTROL User Roles]** filter 関数は、クエリに基づいて結果をフィルタリングする必要があります。
+**[!UICONTROL User Roles]** のフィルター関数では、クエリに基づいて結果がフィルタリングされます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-コンソールエラーを伴う無限読み込み _（インデックス）:9 キャッチされない TypeError: NULL のプロパティを読み取れません（&#39;down&#39;を読み取ります）_.
+コンソールエラー _（インデックス）:9 を含む無限読み込みがキャッチされない TypeError : null のプロパティを読み取れません（「down」を読み取ります）_。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。 
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。 
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

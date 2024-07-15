@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 「クラスをコードディレクトリに保存できません」エラー
 
-この記事では、依存関係を指定した方法により、クラスがその場で自動生成されなくなる問題を修正する方法を説明します。その結果、 *「生成された/コードディレクトリにクラスを保存できません」* エラーメッセージ。
+この記事では、依存関係を指定した方法によりクラスがその場で自動生成されなくなり、「生成/コードディレクトリにクラスを保存できません *というエラーメッセージが表示される問題を修正する方法を説明し* す。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,28 +21,28 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 1. ローカル環境で、自動生成されたクラスに依存するカスタムクラスを作成します。
 1. カスタムクラスがトリガーされるシナリオを実行し、正しく機能していることを確認します。
 1. 変更をコミットして統合環境にプッシュします。 これにより、デプロイメントプロセスがトリガーになります。 デプロイメントに成功しました。
-1. が含まれる [統合環境](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md)、カスタムクラスがトリガーされるシナリオを実行します。
+1. [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) で、カスタムクラスがトリガーされるシナリオを実行します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 ローカル環境と同様に、すべてが正しく機能します。
 
-<u>実際の結果</u>
+<u> 実際の結果 </u>
 
-クラスをに保存できないというエラーメッセージで失敗 `generated/code` ディレクトリ。
+クラスを `generated/code` ディレクトリに保存できないというエラーメッセージで失敗しました。
 
 ## 原因：
 
-この問題の原因は、依存関係が存在するクラスは、デプロイメント中に生成されず、クラスがトリガーされたときに後で生成することができないためです `generated/code` 配置が完了した後、ディレクトリを書き込めません。
+この問題の原因は、依存関係が存在するクラスがデプロイメント中に生成されず、クラスがトリガーされたときに後でその場で生成できないためです。デプロイが完了すると、`generated/code` ディレクトリを書き込むことができなくなります。
 
 この問題が発生する主な理由は次の 2 つです。
 
-* ケース 1：自動生成されたクラスに依存するクラスは、エントリポイント（ `index.php` ）に設定します。これは、デプロイメント時に依存関係のスキャンを行いません。
+* ケース 1：自動生成されたクラスに依存関係を持つクラスは、デプロイメント中に依存関係をスキャンされないエントリポイント（`index.php` など）にあります。
 * ケース 2：自動生成クラスへの依存関係が直接指定されている（依存関係を宣言するためのコンストラクターの推奨使用方法と比較）。
 
 ## 解決策
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 クラス コードをエントリ ポイントから別のモジュールに移動し、エントリ ポイントで使用します。
 
-<u>例</u>
+<u> 例 </u>
 
-内の元のコード（例：） `index2.php` :
+内の元のコード（例：`index2.php`）。
 
 ```php
 <?php
@@ -85,7 +85,7 @@ $someObject = $bootstrap->getObjectManager()->create(SomeClass::class);
 
 次の手順を実行する必要があります。
 
-1. クラス定義をに移動します `app/code/YourVendor/YourModule`:
+1. クラス定義を `app/code/YourVendor/YourModule` に移動します。
 
    ```php
       <?php
@@ -103,7 +103,7 @@ $someObject = $bootstrap->getObjectManager()->create(SomeClass::class);
        }
    ```
 
-1. エントリポイントを編集 `my_api/index.php` 次のように表示されます。
+1. エントリ ポイント `my_api/index.php` を次のように編集します。
 
    ```php
      <?php
@@ -118,7 +118,7 @@ $someObject = $bootstrap->getObjectManager()->create(SomeClass::class);
 
 依存関係の宣言をコンストラクターに移動します。
 
-<u>例</u>
+<u> 例 </u>
 
 元のクラス宣言：
 
@@ -170,4 +170,4 @@ class YourClass
 
 ## 関連資料
 
-* [コードの生成](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/code-generation.html) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [ コードの生成 ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/code-generation.html)。

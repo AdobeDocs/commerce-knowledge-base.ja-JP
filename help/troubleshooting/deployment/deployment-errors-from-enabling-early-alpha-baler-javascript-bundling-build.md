@@ -28,18 +28,18 @@ ht-degree: 0%
 
 現在アルファ開発の初期の段階にあるので、マーチャントが実稼動環境で Baler モジュールを使用することはお勧めしません。 使用すると、デプロイメントエラーが発生する場合があります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 商人はカードを挿入しようとします **SCD\_USE\_BALER** のビルドステージの変数 `.magento.env.yaml` ファイル。Baler JavaScript バンドル パッケージを有効にします。
-1. マーチャントは、Baler Composer の依存関係も追加します。 `"magento/module-baler": "1.0.0-alpha"` 対象： `require` セクション `composer.json`.
+1. マーチャントは、`.magento.env.yaml` ファイルのビルド段階で **SCD\_USE\_BALER** 変数を挿入しようと試みます。これにより、Baler JavaScript バンドル パッケージが有効になります。
+1. また、マーチャントは、Baler Composer の依存関係 `"magento/module-baler": "1.0.0-alpha"` を `composer.json` の `require` のセクションに追加します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 正常なデプロイメント。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-マーチャントは、クラウドのデプロイメントログに次のようなエラーメッセージを表示します。 `<project home>/var/log/cloud.log`静的コンテンツのデプロイステージで、次の操作をおこないます。
+マーチャントは、静的コンテンツのデプロイメントステージで、クラウドのデプロイメントログ（`<project home>/var/log/cloud.log`）に次のエラーメッセージを表示します。
 
 ```
 [2020-08-19 12:06:12] WARNING: [1007] Baler JS bundling cannot be used because of the following issues:
@@ -52,9 +52,9 @@ Baler モジュールは現在、アルファ開発の初期段階にあり、Ba
 
 ## 解決策
 
-既存の BalerAlphaドキュメントは、次の場所で確認できます。 [Github/Magento/Baler/アルファの基本を学ぶ](https://github.com/magento/baler/blob/master/docs/ALPHA.md). ただし、実稼動での使用の準備は整っておらず、自己責任で使用します。 代わりに、ファイルの最適化のために、Adobe Commerceの組み込みバンドル（基本バンドル）を使用して、JavaScript （JS）ファイルを結合またはバンドルすることをお勧めします。
+既存の Baler Alphaのドキュメントは、[Github/Magento/Baler/Getting with the alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md) で確認できます。 ただし、実稼動での使用の準備は整っておらず、自己責任で使用します。 代わりに、ファイルの最適化のために、Adobe Commerceの組み込みバンドル（基本バンドル）を使用して、JavaScript （JS）ファイルを結合またはバンドルすることをお勧めします。
 
-* 管理者で結合またはバンドルをオンにできます（結合とバンドルは同時に有効にできません）。 **ストア** > **設定** > **設定** > **詳細** > **開発者** > **JavaScript 設定**.
-* コマンドラインからAdobe Commerceの組み込みバンドル（基本バンドル）を有効にすることもできます。 `php -f bin/magento config:set dev/js/enable_js_bundling 1`
+* 管理者で結合またはバンドルをオンにできます（結合とバンドルを同時に有効にすることはできません）。**ストア**/**設定**/**設定**/**詳細**/**開発者**/**10}JavaScript設定。**
+* コマンドラインからAdobe Commerceの組み込みバンドル（基本バンドル）を有効にすることもできます。`php -f bin/magento config:set dev/js/enable_js_bundling 1`
 
-詳しくは、次を参照してください [クラウドインフラストラクチャー上のAdobe CommerceおよびオンプレミスのAdobe Commerceでの CSS と JavaScript ファイルの最適化](https://support.magento.com/hc/en-us/articles/360044482152).
+詳しくは、[ クラウドインフラストラクチャー上のAdobe Commerceおよびオンプレミス上のAdobe Commerceでの CSS と JavaScript ファイルの最適化 ](https://support.magento.com/hc/en-us/articles/360044482152) を参照してください。

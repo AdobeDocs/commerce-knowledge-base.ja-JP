@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-38827：顧客がメールで注文出荷エラーを受信する
 
-MDVA-38827 パッチでは、お客様が次のエラーメッセージを含む注文出荷メールを受け取る問題が修正されています。 *このコンテンツの生成中にエラーが発生しました*. このパッチは、 [品質向上パッチツール（QPT）](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.0 がインストールされています。 パッチ ID は MDVA-38827。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-38827 パッチは、次のエラーメッセージが記載された注文出荷メールが顧客に届く問題を修正します。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。 このパッチは、[Quality Patches Tool （QPT） ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp)1.1.0 がインストールされている場合に使用できます。 パッチ ID は MDVA-38827。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,47 +27,47 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.3-p1 - 2.4.2-p1
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-出荷について「メールで顧客に通知」オプションが選択されている場合、顧客は次のエラーメッセージを含むメールを受け取ります。 *このコンテンツの生成中にエラーが発生しました*.
+出荷について「メールで顧客に通知」オプションを選択すると、顧客は次のエラーメッセージを含むメールを受け取ります。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. に移動 **Marketing** > **通信** > **メールテンプレート** を選択して、 **新規テンプレートを追加**.
-   * を選択 **Magento販売** > **新しい出荷**.
-   * クリックする **テンプレートの読み込み**.
-   * テンプレート名（例：コア出荷テンプレート）を追加し、 **保存**.
-1. に移動 **ストア** > 設定 > **設定** > **売上** > **営業 E メール**:
-   * Enable （有効） **出荷コメント**.
-   * を選択 **コア出荷テンプレート** （手順 1 の「テンプレート名の追加」の部分を参照） ゲストの出荷コメントメールテンプレートおよび出荷コメントメールテンプレートの下にあります。
-1. 注文します。 管理パネルに移動します。 **売上** > **順序**&#x200B;を選択し、 **表示**&#x200B;を選択し、注文を出荷します。
+1. **マーケティング**/**コミュニケーション**/**メールテンプレート** に移動し、「**新しいテンプレートを追加**」を選択します。
+   * **Magento売上** / **新規出荷** を選択します。
+   * 「**テンプレートを読み込み**」をクリックします。
+   * テンプレート名（コアシッピングテンプレートなど）を追加し、「**保存**」をクリックします。
+1. **Store**/設定/**構成**/**Sales**/**Sales Email** に移動します。
+   * **出荷注釈** を有効にします。
+   * ゲストの出荷コメントメールテンプレートおよび出荷コメントメールテンプレートで、「**コア出荷テンプレート**」（手順 1 の「テンプレート名の追加」の部分を参照）を選択します。
+1. 注文します。 管理パネル/**営業**/**注文** に移動し、「**表示**」をクリックして注文を出荷します。
 1. 注文の状態が「保留」から「処理中」に変わります。
-1. クリック **出荷** 左側のサイドバーメニューのをクリックし、 **表示** 注文を確認します。
-1. にコメントを追加 **コメント テキスト** 下 **出荷履歴** チェックボックスをオンにします **メールで顧客に通知**.
-1. クリック **コメントを送信**.
+1. 左側のサイドバーメニューで **出荷** をクリックし、**表示** をクリックして注文を確認します。
+1. **出荷履歴** の下の **コメントテキスト** にコメントを追加し、「**メールで顧客に通知**」チェックボックスをオンにします。
+1. **コメントを送信** をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 出荷コメント付きの販売メールが生成されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-メールに次のエラーメッセージが表示されます。 *申し訳ありませんが、このコンテンツの生成中にエラーが発生しました。*
+メールに次のエラーメッセージが表示されます：*申し訳ありません。このコンテンツの生成中にエラーが発生しました。*
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

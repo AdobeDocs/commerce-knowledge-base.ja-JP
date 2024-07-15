@@ -29,5 +29,5 @@ Adobeでは、一般入手可能な Quality Patches Tool をリリースしま�
 
 詳しくは、開発者向けドキュメントを参照してください。
 
-* [品質向上パッチツールで使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [品質向上パッチツールのリリースノート](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [ 品質向上パッチツールで使用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
+* [ 品質向上パッチツールのリリースノート ](https://devdocs.magento.com/quality-patches/release-notes.html)

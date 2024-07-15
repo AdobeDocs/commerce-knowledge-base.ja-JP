@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分割データベースソリューションの高度なレポート 404 エラー
 
-この記事では、を使用するAdobe Commerce 2.3.x ユーザー向けのパッチを提供します。 [データベース分割ソリューション](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) 高度なレポートを使用しようとすると、404 エラーが発生する。
+この記事では、Adobe Commerce 2.3.x で [split database solution](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) を使用していて、高度なレポートを使用しようとすると 404 エラーが発生するパッチを提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -25,7 +25,7 @@ Adobe Commerce 2.3.0 - 2.3.5-p1
 
 ## 解決策
 
-を適用 [パッチ](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) この条に規定する。
+この記事で提供されている [ パッチ ](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) を適用します。
 
 ## パッチ
 
@@ -35,4 +35,4 @@ Adobe Commerce 2.3.0 - 2.3.5-p1
 
 ## パッチの適用方法
 
-ファイルを解凍し、の指示に従います。 [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+ファイルを解凍し、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) の手順に従います。

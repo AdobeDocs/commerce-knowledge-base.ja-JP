@@ -1,6 +1,6 @@
 ---
-title: 「ACSD-48262：次の場合、ストアフロントに製品が表示されない [!UICONTROL Allow All Products Per Page] 設定済み [!UICONTROL Yes]'
-description: 次の場合に ACSD-48262 パッチを適用して、Adobe Commerceの問題を修正してください [!UICONTROL Allow All Products Per Page] はに設定されています。 [!UICONTROL Yes].
+title: 「ACSD-48262:[!UICONTROL Allow All Products Per Page] が [!UICONTROL Yes] に設定されている場合、ストアフロントに製品が表示されない」
+description: '[!UICONTROL Allow All Products Per Page] 設定が [!UICONTROL Yes] に設定されている場合にストアフロントに商品が表示されないAdobe Commerceの問題を修正するために、ACSD-48262 パッチを適用してください。'
 exl-id: 327cad03-441d-4adb-8a10-802f06d3fcd1
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48262：次の場合、ストアフロントに製品が表示されない [!UICONTROL Allow All Products Per Page] 設定済み *[!UICONTROL Yes]*
+# ACSD-48262:[!UICONTROL Allow All Products Per Page] が *[!UICONTROL Yes]* に設定されている場合、ストアフロントに製品が表示されない
 
-ACSD-48262 パッチは、の場合にストアフロントに製品が表示されない問題を修正しました。 [!UICONTROL Allow All Products Per Page] はに設定されています。 *[!UICONTROL Yes]*. このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 がインストールされています。 パッチ ID は ACSD-48262 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+[!UICONTROL Allow All Products Per Page] 設定が *[!UICONTROL Yes]* に設定されている場合、ACSD-48262 パッチにより、ストアフロントに製品が表示されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 がインストールされている場合に使用できます。 パッチ ID は ACSD-48262 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,26 +27,26 @@ ACSD-48262 パッチは、の場合にストアフロントに製品が表示さ
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-ACSD-48262 パッチは、の場合にストアフロントに製品が表示されない問題を修正しました。 [!UICONTROL Allow All Products Per Page] はに設定されています。 *[!UICONTROL Yes]*.
+[!UICONTROL Allow All Products Per Page] 設定が *[!UICONTROL Yes]* に設定されている場合、ACSD-48262 パッチにより、ストアフロントに製品が表示されない問題が修正されました。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. テストカテゴリを作成します。
 1. テストカテゴリでテスト製品を作成します。
 1. 製品を参照してストアフロントのカテゴリページをテストし、製品が表示されていることを確認します。
-1. に移動 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** を設定して、 [!UICONTROL Allow All Products Per Page] をに設定しています *[!UICONTROL Yes]*.
+1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]** に移動し、[!UICONTROL Allow All Products Per Page] 設定を *[!UICONTROL Yes]* に設定します。
 1. キャッシュをクリアします。
 1. ストアフロントのカテゴリページをご確認ください。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 商品が表示されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 商品が表示されません。
 
@@ -54,15 +54,15 @@ ACSD-48262 パッチは、の場合にストアフロントに製品が表示さ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

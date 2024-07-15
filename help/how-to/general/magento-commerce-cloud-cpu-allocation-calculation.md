@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ## 添付ファイル
 
-「」をクリック [添付された.pdf](assets/CPU_Allocation.pdf) ファイルを開いて記事をダウンロードします。
+[ 添付の.pdf](assets/CPU_Allocation.pdf) ファイルをクリックして、記事をダウンロードします。

@@ -34,11 +34,11 @@ Next exception 'ReflectionException' with message 'Class Magento\CatalogRule\Mod
 
 ### 解決策
 
-[ファイルシステムの所有権と権限を再度設定します](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) as a のユーザー `root` 権限。
+[ ファイルシステムの所有権と権限を、`root` 権限を持つユーザーとして ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) 再度設定します。
 
 ## 症状（実稼動モード）
 
-現在の設定対象 [実稼動モード](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html)を使用すると、サンプルデータのインストールが失敗します。 [magento sampledata：デプロイ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) コマンド：
+現在 [ 実稼動モード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) に設定している場合、[magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) コマンドを使用すると、サンプルデータのインストールが失敗します。
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -46,9 +46,9 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 ### 解決策
 
-実稼動モードでサンプルデータをインストールしないでください。 開発者モードに切り替えて、一部をクリアします `var` ディレクトリを作成し、もう一度試してください。
+実稼動モードでサンプルデータをインストールしないでください。 開発者モードに切り替え、`var` のディレクトリの一部をクリアして、もう一度試してください。
 
-次のコマンドを、に示された順序で入力します [Adobe Commerce ファイルシステムの所有者](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
+次のコマンドを、[Adobe Commerce ファイルシステムの所有者 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html) として表示されている順序で入力します。
 
 ```php
 cd <magento_root>
@@ -70,7 +70,7 @@ PHP Fatal error: Call to undefined method Magento\Catalog\Model\Resource\Product
 サンプルデータのインストール中に、次のようなリソースを使用して SELinux を無効にします。
 
 * [www.ibm.com](https://www.ibm.com/docs/ja/ahts/4.0?topic=t-disabling-selinux)
-* [CentOS ドキュメント](https://docs.centos.org/en-US/docs/)
+* [CentOS のドキュメント ](https://docs.centos.org/en-US/docs/)
 
 ## 症状（発達分枝）
 
@@ -107,15 +107,15 @@ Installing data...
 
 ### 解決策
 
-を使用した As a ユーザー `root` 権限、変更 `php.ini` 価値を高める `max_execution_time` を 600 以上にする。 （600 秒は 10 分 値は任意に増やすことができます）。 変更する必要があります `max_execution_time` インストールが成功したら、以前の値に戻ります。
+`root` 権限を持つユーザーとして、`php.ini` を変更して `max_execution_time` の値を 600 以上に増やします。 （600 秒は 10 分 値は任意に増やすことができます）。 インストールが正常 `max_execution_time` 完了したら、を以前の値に戻す必要があります。
 
-不明な場合は、 `php.ini` を探すには、次のコマンドを入力します。
+`php.ini` の場所がわからない場合は、次のコマンドを入力します。
 
 ```php
 php --ini
 ```
 
-次の値 `Loaded Configuration File` が `php.ini` 変更が必要です。
+`Loaded Configuration File` の値は、変更する必要がある `php.ini` です。
 
 >[!NOTE]
 >

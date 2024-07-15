@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # サイトおよび API のパフォーマンスの低下
 
-この記事では、書き込みに長い時間がかかることが原因で発生したサイトと API のパフォーマンスの低下に関連する、Adobe Commerce on cloud infrastructure 2.2.1 の既知の問題に対するパッチを提供します `debug.log`.
+この記事では、`debug.log` ータの書き込みに長い時間がかかることが原因で発生したサイトと API のパフォーマンスの低下に関連する、Adobe Commerce on cloud infrastructure 2.2.1 の既知の問題に対するパッチを提供します。
 
 ## 問題
 
-サイトのパフォーマンスが遅い。 API 操作の実行に時間がかかる（例： `PUT` メソッド。 New Relicを使用した操作を詳しく見ると、ほとんどのメモリと CPU は、に書き込むことで消費されています。 `/var/log/debug.log`.
+サイトのパフォーマンスが遅い。 API 操作は、`PUT` メソッドを使用して製品を更新するなど、実行に時間がかかります。 New Relicを使用した操作を詳しく見ると、ほとんどのメモリと CPU は `/var/log/debug.log` に書き込むことで消費されます。
 
 ## 解決策
 
@@ -42,6 +42,6 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-参照： [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+手順については、サポートナレッジベースの [Adobe Commerceが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

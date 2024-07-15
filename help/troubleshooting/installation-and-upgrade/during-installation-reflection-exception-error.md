@@ -25,9 +25,9 @@ ht-degree: 0%
 
 ## 解決策 {#solution}
 
-Adobe Commerceでされているすべてのディレクトリとファイルをクリアします。 `var` サブディレクトリを開き、Adobe Commerce ソフトウェアを再度インストールします。
+Adobe Commerce サブディレクトリの下のすべてのディレクトリとファイル `var` クリアし、Adobe Commerce ソフトウェアを再度インストールします。
 
-として [Adobe Commerce ファイルシステムの所有者](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) または、を持つユーザーとして `root` 権限を設定するには、次のコマンドを入力します。
+[Adobe Commerce ファイルシステムのオーナー ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) または `root` 権限を持つユーザーとして、次のコマンドを入力します。
 
 ```bash
 $ cd <your Magento install directory>/var

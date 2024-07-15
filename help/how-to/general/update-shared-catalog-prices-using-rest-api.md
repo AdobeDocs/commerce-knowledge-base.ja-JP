@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # REST API を使用した共有カタログ価格の更新
 
-API を使用して共有カタログの価格を追加または更新するには、 `TierPriceStorageInterface` サービス（で説明） [階層価格の管理](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) 開発者向けドキュメントの REST API リファレンス。 共有カタログ価格については、階層価格と顧客グループを使用します。
+API を使用して共有カタログに価格を追加または更新するには、アドビの開発者ドキュメントの [ 階層価格の管理 ](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) REST API リファレンスに記載されている `TierPriceStorageInterface` サービスを使用することをお勧めします。 共有カタログ価格については、階層価格と顧客グループを使用します。

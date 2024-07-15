@@ -25,16 +25,16 @@ MDVA-43395 パッチを適用できません。
 
 ## 原因：
 
-Cloud マーチャントは、以下の条件を満たす場合、MDVA-43395 パッチを個別に適用する必要はありません [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) インストール済み。パッチは既に含まれています。
+クラウドマーチャントは、[magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) がインストールされていて、既にパッチが含まれている場合は、MDVA-43395 パッチを個別に適用する必要はありません。
 
 ## 解決策
 
-この問題を解決するには、から MDVA-43395 および MDVA-43443 パッチを削除します `m2-hotfixes` ディレクトリを作成して、再デプロイします。
+この問題を解決するには、`m2-hotfixes` ディレクトリから MDVA-43395 および MDVA-43443 パッチを削除し、再デプロイします。
 
-MDVA-43443 パッチを経由して適用できた場合 `m2-hotfixes` ディレクトリを削除する必要があります（前述）。 今後のバージョンのAdobe Commerceでは、これらのパッチが既に含まれるので、後でアップグレードすると、デプロイメントが失敗する可能性があります。
+`m2-hotfixes` ディレクトリを介して MDVA-43443 パッチを適用できた場合でも、前述のように削除する必要があります。 今後のバージョンのAdobe Commerceでは、これらのパッチが既に含まれるので、後でアップグレードすると、デプロイメントが失敗する可能性があります。
 
-パッチが適用されているかどうかを確認するには、 `vendor/bin/magento-patches -n status |grep 43443` コマンド。
-このような複数の結果が表示される場合は、から MDVA-43443 パッチを削除してください。 `m2-hotfixes` フォルダー：
+パッチが適用されているかどうかを確認するには、`vendor/bin/magento-patches -n status |grep 43443` コマンドを実行します。
+このような複数の結果が表示される場合は、`m2-hotfixes` のフォルダから MDVA-43443 パッチを削除する必要があります。
 
 ```bash
 $ vendor/bin/magento-patches -n status |grep 43443
@@ -44,5 +44,5 @@ $ vendor/bin/magento-patches -n status |grep 43443
 
 ## 関連資料
 
-* [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
-* [Commerceのクラウドパッチ](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) 開発者向けドキュメントを参照してください。
+* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)。
+* 開発者向けドキュメントの [Commerceのクラウドパッチ ](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016)。

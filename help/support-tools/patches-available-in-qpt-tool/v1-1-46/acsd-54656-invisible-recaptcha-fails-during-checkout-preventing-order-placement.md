@@ -1,6 +1,6 @@
 ---
-title: 非表示 [!DNL reCAPTCHA] チェックアウト中に失敗し、注文を送信できない
-description: が非表示になるAdobe Commerceの問題を修正するには、ACSD-54656 パッチを適用します [!DNL reCAPTCHA] がチェックアウト時に正しく機能しないので、注文の配置が妨げられます。
+title: チェックアウト中に非表示  [!DNL reCAPTCHA]  失敗し、注文を行えなくなる
+description: ACSD-54656 パッチを適用して、チェックアウト時に非表示のが正しく機能せず  [!DNL reCAPTCHA]  注文の発注が妨げられるAdobe Commerceの問題を修正してください。
 feature: Checkout, Gift
 role: Admin, Developer
 exl-id: dc26659e-ca34-461e-af91-b230c5afa919
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54656：非表示 [!DNL reCAPTCHA] がチェックアウト時に正しく機能しないので、注文の配置が妨げられます。
+# ACSD-54656：チェックアウト時に非表示の [!DNL reCAPTCHA] が正しく機能せず、注文の配置が妨げられている。
 
-ACSD-54656 パッチは、が非表示になる問題を修正します [!DNL reCAPTCHA] がチェックアウト時に正しく機能しないので、注文の配置が妨げられます。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 がインストールされています。 パッチ ID は ACSD-54656 です。 この問題はAdobe Commerce 2.4.6 で修正されました。
+ACSD-54656 パッチは、チェックアウト時に非表示の [!DNL reCAPTCHA] が正しく機能せず、注文の配置が妨げられる問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 がインストールされている場合に使用できます。 パッチ ID は ACSD-54656 です。 この問題はAdobe Commerce 2.4.6 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,39 +27,39 @@ ACSD-54656 パッチは、が非表示になる問題を修正します [!DNL re
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-非表示 [!DNL reCAPTCHA] がチェックアウト時に正しく機能しないので、注文の配置が妨げられます。
+チェックアウト中に非表示の [!DNL reCAPTCHA] が正しく機能せず、注文の配置が妨げられます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. あらゆるタイプの [!DNL reCAPTCHA] ギフトカード用 [!UICONTROL Checkout] ページ。
-1. 買い物かごに製品を追加して、に移動する **[!UICONTROL Checkout]** ページ。
+1. [!UICONTROL Checkout] ページでギフトカードに対して任意のタイプの [!DNL reCAPTCHA] を有効にします。
+1. 買い物かごに製品を追加して、**[!UICONTROL Checkout]** のページに移動します。
 1. ギフトカードフォームを展開し、有効なギフトカードクーポンを入力します。
-1. クリックする **[!UICONTROL See balance and apply]** ボタン。
+1. ボタンをクリ **[!UICONTROL See balance and apply]** クします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 ギフト カードが正常に適用されました。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-エラーメッセージが表示されます。 *[!DNL reCAPTCHA]検証に失敗しました。再試行してください。*.
+エラーメッセージ「*[!DNL reCAPTCHA]検証に失敗しました。もう一度試してください*」が表示されます。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

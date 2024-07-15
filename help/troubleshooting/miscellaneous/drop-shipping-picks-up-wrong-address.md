@@ -29,4 +29,4 @@ Magento在庫は現在、チェックアウト時の発送元住所に基づく�
 
 ## 関連資料
 
-* [Magentoインベントリに関するよくある質問](https://github.com/magento/inventory/wiki/MSI-FAQs) （GitHub 内）。
+* GitHub の [Magentoインベントリ FAQ](https://github.com/magento/inventory/wiki/MSI-FAQs)。

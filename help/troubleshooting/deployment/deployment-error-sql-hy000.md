@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 展開エラー：SQLSTATE[000 HY]
+# 配置エラー：SQLSTATE[HY000]
 
-この記事では、SQLSTATE が原因でデプロイが失敗する問題の解決策を提供します[000 HY] エラー。
+この記事では、SQLSTATE[HY000] エラーが原因でデプロイが失敗する問題の解決策を提供します。
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce [すべてのデプロイメント方法](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce[ すべてのデプロイメント方法 ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
@@ -35,4 +35,4 @@ SQLSTATE[HY000]: General error: 23 Out of resources when opening file '/tmp/#sql
 ## 解決策
 
 この問題を解決するには、コマンドラインを開いて次のコマンドを実行して、cron が実行されていないことを停止します。
-`./vendor/bin/ece-tools cron:disable`.
+`./vendor/bin/ece-tools cron:disable`。

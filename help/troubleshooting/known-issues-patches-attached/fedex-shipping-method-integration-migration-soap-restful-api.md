@@ -1,7 +1,7 @@
 ---
-title: '''[!DNL FedEx] soap から RESTful API への発送方法の統合の移行'
+title: 'SOAPから RESTful API への [!DNL FedEx] shipping method integration の移行'
 promoted: true
-description: に対処するためのパッチを適用する [!DNL FedEx] Adobe Commerce 2.4.4-p4 - 2.4.6-pX の SOAP から RESTful API への出荷方法の統合の移行。
+description: Adobe Commerce 2.4.4-p4 - 2.4.6-pX のSOAPから RESTful API への  [!DNL FedEx] shipping method integration の移行に対処するためのパッチを適用します。
 feature: Shipping/Delivery
 role: Developer
 exl-id: 7e11a171-6924-41d0-a5c7-7b794d0da84c
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 ---
 
-# [!DNL FedEx] soap から RESTful API への発送方法の統合の移行
+# SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行
 
-この記事では、の問題を解決するためのパッチを提供します [!DNL FedEx] Adobe Commerce 2.4.4-p4 - 2.4.6-pX の SOAP から RESTful API への出荷方法の統合の移行。
+この記事では、SOAPからAdobe Commerce 2.4.4-p4 - 2.4.6-pX の RESTful API への [!DNL FedEx] Shipping Method integration の移行に関する問題を解決するためのパッチを提供します。
 
-[!DNL FedEx Web Services] トラッキング、住所の検証、郵便番号の検証 Web サービス定義言語（WSDLS）は、2024 年 5 月 15 日（PT）に廃止されます。 SOAP ベース [!DNL FedEx Web Services] は開発抑制の対象であり、に置き換えられました [!DNL FedEx] RESTFUL API。 詳しくは、次を参照してください [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+[!DNL FedEx Web Services] トラッキング、住所の検証、郵便番号の検証 Web サービス定義言語（WSDLS）は、2024 年 5 月 15 日（PT）に廃止されます。 SOAP ベースの [!DNL FedEx Web Services] は開発時に統合対象となり、[!DNL FedEx] の RESTFUL API に置き換えられました。 詳しくは、[[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html) を参照してください。
 
-この変更は現在のに影響します [!DNL FedEx] Adobe Commerceにおける shipping method integration の実装。現在の実装を修正し、非推奨の SOAP API から最新の API に移行する必要があります。 [!DNL FedEx] RESTFUL API。
+この変更は、Adobe Commerceにおける現在の [!DNL FedEx] shipping method integration の実装に影響を与え、現在の実装を修正して、廃止されたSOAP API から最新の [!DNL FedEx] RESTFUL API に移行する必要があります。
 
-2024 年 5 月 15 日（PT）以降、Adobe Commerceのお客様はアドビのサービスを利用できなくなります [!DNL FedEx] 発送方法の統合により、Adobeでは、Adobe Commerce 2.4.4 以降のお客様が最新のを使用できるようにするこのホットフィックスをリリースしました [!DNL FedEx] 非推奨（廃止予定）の SOAP API ではなく、RESTFUL API
+2024 年 5 月 15 日（PT）以降、Adobe Commerceのお客様は現在の [!DNL FedEx] 発送方式の統合を使用できなくなります。そのため、Adobeでは、Adobe Commerce 2.4.4 以降のお客様が、非推奨のSOAPの代わりに最新の [!DNL FedEx] RESTFUL API を使用できるようにするこのホットフィックスをリリースしています。
 
 
 ## 影響を受ける製品とバージョン
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 原因：
 
-この [!DNL FedEx] soap ベースの API を非推奨（廃止予定）にし、代わりに RESTful API に置き換えました。 こちらを参照してください [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+[!DNL FedEx] はSOAP ベースの API を非推奨（廃止予定）にし、代わりに RESTful API に置き換えました。 [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html) を参照。
 
 ## 解決策
 
@@ -64,22 +64,22 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、次�
 
 ## パッチの適用方法
 
-ファイルを解凍し、以下を確認します [Adobeが提供する composer パッチの適用方法](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) 手順については、サポートナレッジベースを参照してください。
+ファイルを解凍し、サポートナレッジベースで [Adobe提供の Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照して手順を確認します。
 
 ## パッチが適用されているかどうかを知る方法
 
-問題にパッチが適用されたかどうかを簡単に確認できないのであれば、そのパッチが正常に適用されたかどうかを確認することをお勧めします。 用途（例： *AC-9363*）をチェックするパッチとして使用します。
+問題にパッチが適用されたかどうかを簡単に確認できないのであれば、そのパッチが正常に適用されたかどうかを確認することをお勧めします。 チェックするパッチとして（例：*AC-9363*）を使用します。
 
-<u>これは、次の手順で実行できます</u>:
+<u> これは、次の手順で実行できます </u>。
 
-1. [のインストール [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [ をインストールします  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
 1. 次のコマンドを実行します。
 
    ```bash
    vendor/bin/magento-patches -n status |grep "9363|Status"
    ```
 
-1. AC-9363 がを返す場合、次のような出力が表示されます *適用日* ステータス :
+1. AC-9363 が *Applied* ステータスを返す場合、次のような出力が表示されます。
 
    ```bash
    ║ Id            │ Title                                                        │ Category        │ Origin                 │ Status      │ Details                                          ║ ║ N/A           │ ../m2-hotfixes/AC-9363_USPS_Ground_Advantage_shipping_method_COMPOSER_patch.patch      │ Other           │ Local                  │ Applied     │ Patch type: Custom                                

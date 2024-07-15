@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ### 問題
 
-キャッシュ可能である必要があるが、に設定されているページにキャッシュブロックがあるので、サイトのパフォーマンスが低下します。 `cacheable="false"` .
+キャッシュ可能である必要があるが `cacheable="false"` に設定されているキャッシュブロックがページに存在するため、サイトのパフォーマンスが低下します。
 
 ### 原因：
 
@@ -36,7 +36,7 @@ Adobe Commerceでキャッシュする必要があるページがあります。
 
 キャッシュ可能およびキャッシュ不可は、ページをキャッシュするかどうかを示すために使用される用語です。 デフォルトでは、すべてのページがキャッシュ可能です。 ただし、レイアウト内のいずれかのブロックがキャッシュ不可と指定されている場合、ページ全体をキャッシュできません。
 
-以下のスクリーンショットは、設定を含むブロックを示しています `cacheable="false”`  キャッシュ**きないページを作成する**。
+以下のスクリーンショットは、キャッシュ不可のページを作成する** **`cacheable="false”` 設定を持つブロックを示しています。
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 
@@ -46,15 +46,15 @@ Adobe Commerceでキャッシュする必要があるページがあります。
 
 ### 解決策
 
-上記のファイルに設定が含まれているかどうかを確認します。 `cacheable="false”` . 使用されている場合は、この設定が必要か必須かを確認します。
+上記の指定したファイルにという設定が `cacheable="false”` まれているかどうかを確認します。 使用されている場合は、この設定が必要か必須かを確認します。
 
-* 必要に応じて、キャッシュ不可ブロックをに移動することを検討します [プライベートコンテンツのメカニズム](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=private%20co) その代わり。
-* 不要な場合は、属性を削除します `cacheable="false”` を実行し、レイアウトキャッシュをフラッシュします。
+* 必要に応じて、代わりに、キャッシュ不可ブロックを [ プライベートコンテンツメカニズム ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=private%20co) に移動することを検討します。
+* 不要な場合は、属性 `cacheable="false”` を削除し、レイアウトキャッシュをフラッシュします。
 
 >[!NOTE]
 >
->クラウドインフラストラクチャー 2.4.1 以降でのAdobe Commerceの場合は、を使用できます。 [サイト全体分析ツール](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) を使用して、フルページキャッシュが正しく設定されているかどうかを自動的に確認できます。
+>Cloud infrastructure 2.4.1 以降のAdobe Commerceでは、[Site-Wide Analysis Tool](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) を使用して、フルページキャッシュが正しく設定されていないかどうかを自動的に確認できます。
 
 ### 関連資料
 
-[Adobe Commerce キャッシュの概要](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=cacheable%2) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [Adobe Commerce キャッシュの概要 ](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=cacheable%2)。

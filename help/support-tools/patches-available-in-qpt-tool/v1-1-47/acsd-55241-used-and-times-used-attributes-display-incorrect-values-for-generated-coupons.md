@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-55241: **使用済み** および **使用回数** 属性に表示されるクーポンの値が正しくない
+# ACSD-55241:**使用中** および **使用回数** 属性には、生成されたクーポンの誤った値が表示される
 
-ACSD-55241 パッチは、 **使用済み** および **使用回数** 属性に表示されるクーポンの値が正しくない。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.47 がインストールされています。 パッチ ID は ACSD-55241 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-55241 パッチでは、「**Used**」属性と「**Times Used** 属性に表示されるクーポンの値が正しくない問題が修正されています。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.47 がインストールされている場合に使用できます。 パッチ ID は ACSD-55241 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,49 +27,49 @@ ACSD-55241 パッチは、 **使用済み** および **使用回数** 属性に
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-**使用済み** および **使用回数** 属性に表示されるクーポンの値が正しくない。
+**使用済み** 属性と **使用回数** 属性には、生成されたクーポンに間違った値が表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 作成 **[!UICONTROL Cart Price Rules]** から **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Promotion]** 注文の際に一致する条件を追加します（例：よりも大きい小計） *5$*）
+1. **[!UICONTROL Admin]**/**[!UICONTROL Marketing]**/**[!UICONTROL Promotion]** から **[!UICONTROL Cart Price Rules]** を作成し、注文の際に一致する条件を追加します（例：小計が *5$* を超える）
 
 * 割引を適用します。
-* を選択 **[!UICONTROL Auto Coupon]**.
-* からクーポンコードをいくつか生成します **クーポンコードの管理**.
+* 「**[!UICONTROL Auto Coupon]**」を選択します。
+* **Manage クーポンコード** からいくつかのクーポンコードを生成します。
 * キャッシュの再インデックスとクリーンアップを行います。
 
-1. を作成 **[!UICONTROL customer account]** フロントエンドにログインします。
-1. 複数のを含む 1 つの製品を追加 *2* 買い物かごの数量を入力し、1 つのクーポンを適用します。
-1. クリックする **[!UICONTROL Check Out with Multiple Addresses]**.
+1. **[!UICONTROL customer account]** を作成し、フロントエンドにログインします。
+1. 買い物かごに *2* を超える数量の製品を 1 つ追加し、1 つのクーポンを適用します。
+1. 「**[!UICONTROL Check Out with Multiple Addresses]**」をクリックします。
 1. 数量ごとに個別の所在地を選択し、発注して精算プロセスを完了します。
 1. 管理者から注文の合計を確認し、適用された割引を確認します。
 1. 別のクーポンで別の注文を行います。
-1. を実行 `php81 bin/Magento queue:consumers: start sales.rule.update.coupon.usage &` クーポン コードの使用状況を更新するコマンドです。
+1. `php81 bin/Magento queue:consumers: start sales.rule.update.coupon.usage &` コマンドを実行して、クーポンコードの使用状況を更新します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-に正しい数が表示されます。 **使用時間** および **使用済み** を含む列 **はい** の値 **[!UICONTROL manage coupon]** が含まれる **[!UICONTROL cart price rule]** admin.
+正しい数は、管理者の **[!UICONTROL cart price rule]** の **[!UICONTROL manage coupon]** の **Yes** 値を持つ **使用時間** 列と **使用** 列に表示される必要があります。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-使用されたクーポンコード数がで更新されません **使用時間** クーポングリッドの列、および **使用済み** 列には *不可* 複数の配送先住所で注文する場合の値。
+複数の配送先住所で注文を行った場合、クーポングリッドの **使用時間** 列の使用済みクーポンコード数が更新されず、**使用** 列には *いいえ* 値が表示されます。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

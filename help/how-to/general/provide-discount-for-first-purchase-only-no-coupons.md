@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 初回購入のみの割引を提供（クーポンなし）
 
-を参照してください [初回購入による割引](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) ユーザーガイドの記事。
+ユーザーガイドの [ 初回購入で割引 ](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) の記事を参照してください。

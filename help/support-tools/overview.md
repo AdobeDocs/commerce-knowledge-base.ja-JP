@@ -37,4 +37,4 @@ Adobe Commerceには、e コマースストアのエクスペリエンスを向�
    * [Adobe Commerceの管理アラート：Apdex 警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    * [Adobe Commerceの管理アラート：CPU 警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 * Commerce サイト評価ツール
-   * [Commerce サイトの評価](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)
+   * [Commerce サイト評価 ](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)

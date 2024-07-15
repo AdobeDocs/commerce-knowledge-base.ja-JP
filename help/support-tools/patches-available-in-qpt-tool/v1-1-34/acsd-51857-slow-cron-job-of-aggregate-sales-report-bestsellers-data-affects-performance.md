@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51857：の cron ジョブが遅い `aggregate_sales_report_bestsellers_data` パフォーマンスに影響する
+# ACSD-51857:`aggregate_sales_report_bestsellers_data` の cron ジョブが遅いとパフォーマンスに影響する
 
-ACSD-51857 パッチは、cron ジョブが遅い問題を修正します `aggregate_sales_report_bestsellers_data` 大きな影響を与える `sales_order` および `sales_order_item` データベーステーブル。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.34 がインストールされています。 パッチ ID は ACSD-51857 です。 この問題はAdobe Commerce 2.4.7 で修正されました。
+ACSD-51857 パッチを適用すると、低速な cron ジョブ `aggregate_sales_report_bestsellers_data` が大きな `sales_order` および `sales_order_item` のデータベーステーブルに影響を与える問題が修正されます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.34 がインストールされている場合に使用できます。 パッチ ID は ACSD-51857 です。 この問題はAdobe Commerce 2.4.7 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -25,45 +25,45 @@ ACSD-51857 パッチは、cron ジョブが遅い問題を修正します `aggre
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-の Cron ジョブパフォーマンス `aggregate_sales_report_bestsellers_data` が遅い `sales_order` および `sales_order_item` データベーステーブル。
+`sales_order` および `sales_order_item` のデータベーステーブルでは、`aggregate_sales_report_bestsellers_data` の Cron ジョブのパフォーマンスが遅い。
 
 これを解決するために、レポートのデータを取得するメインのデータクエリを、より効率的なフォームに書き直しました。 サブクエリを使用してデータのサブセットを決定するようになりました。
 
-サブクエリをできるだけ早く機能させるために、に新しいインデックスを追加しました `sales_order` データベース テーブル： `SALES_ORDER_STORE_STATE_CREATED` 基準： `store_id`, `state`、および `created_at` 列。
+サブクエリができるだけ速く機能するように、`store_id`、`state`、`created_at` の列に基づいて `SALES_ORDER_STORE_STATE_CREATED` という新しいインデックスが `sales_order` データベーステーブルに追加されました。
 
-<u>前提条件</u>
+<u> 前提条件 </u>
 
 毎日多数の注文を確認してください。
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
-1. を実行 `aggregate_sales_report_bestsellers_data` cron ジョブ。
-1. 管理ダッシュボードの下に表示するデータを **[!UICONTROL Bestsellers]** タブ。
+1. `aggregate_sales_report_bestsellers_data` cron ジョブを実行します。
+1. 管理ダッシュボードの「**[!UICONTROL Bestsellers]**」タブに表示するデータを確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-*[!UICONTROL Quantity per source]* の下 **[!UICONTROL Configuration]** タブは空にしないでください。
+「**[!UICONTROL Configuration]**」タブの *[!UICONTROL Quantity per source]* は空にしないでください。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-*[!UICONTROL Quantity per source]* の下 **[!UICONTROL Configuration]** タブが空です。
+「**[!UICONTROL Configuration]**」タブの *[!UICONTROL Quantity per source]* が空です。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

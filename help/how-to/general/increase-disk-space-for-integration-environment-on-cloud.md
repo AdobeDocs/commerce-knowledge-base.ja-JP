@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウド上の統合環境のディスク容量を増やす
 
-を参照してください。 [ディスク容量の管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
+Commerce on Cloud Infrastructure ガイドの [ ディスク容量の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) を参照してください。

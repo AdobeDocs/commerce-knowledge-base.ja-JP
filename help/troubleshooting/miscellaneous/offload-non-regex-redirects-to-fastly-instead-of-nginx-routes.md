@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce（すべてのバージョン） `Master/Production/Staging` fastly を活用した環境
+* Fastly を活用したクラウドインフラストラクチャー上のAdobe Commerce（すべてのバージョン） `Master/Production/Staging` 環境
 
 ## 問題
 
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 ## 原因：
 
-この `routes.yaml` 内のファイル `.magento/routes.yaml` ディレクトリは、クラウドインフラストラクチャ上のAdobe Commerceのルートを定義します。
+`.magento/routes.yaml` ディレクトリの `routes.yaml` ファイルは、クラウドインフラストラクチャ上のAdobe Commerceのルートを定義します。
 
-のサイズ `routes.yaml` ファイルが 32 KB 以上です。非正規表現のリダイレクト/書き換えを Fastly にオフロードする必要があります。
+`routes.yaml` ファイルのサイズが 32 KB 以上の場合は、非正規表現のリダイレクト/書き換えを Fastly にオフロードする必要があります。
 
 この Nginx レイヤーは、多数の非正規表現リダイレクト/書き換えを処理できません。処理しないと、パフォーマンスの問題が発生します。
 
@@ -37,13 +37,13 @@ ht-degree: 0%
 
 以下の手順では、Nginx ではなく Fastly にリダイレクトを設定する方法について詳しく説明します。
 
-1. エッジ辞書を作成します。
+1. Edge Dictionary を作成します。
 
-   まず、を使用できます。 [Adobe Commerceの VCL スニペット](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) エッジディクショナリを定義する場合。 これはリダイレクトを含みます。
+   まず、Adobe Commerceの [VCL スニペット ](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を使用して、エッジディクショナリを定義できます。 これはリダイレクトを含みます。
 
    いくつかの注意点を次に示します。
 
-   * Fastly では、辞書のエントリに対して正規表現を行うことはできません。 完全に一致するだけです。 これらの制限について詳しくは、 [エッジ辞書の制限に関する Fastly のドキュメント](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
+   * Fastly では、辞書のエントリに対して正規表現を行うことはできません。 完全に一致するだけです。 これらの制限について詳しくは、[ エッジ辞書の制限に関する Fastly のドキュメント ](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations) を参照してください。
    * Fastly には、1 つの辞書に入力できるエントリは 1000 個までに制限されています。 Fastly はこの制限を拡大できますが、それは 3 番目の注意事項につながります。
    * エントリを更新し、更新された VCL をすべてのノードに配置するたびに、ディクショナリの拡張によりジオメトリのロード時間が長くなります。つまり、2000 エントリのディクショナリのロードは、1000 エントリのディクショナリのロードより 3 倍～4 倍遅くなります。 ただし、これは VCL をデプロイする（ディクショナリを更新する、または VCL 関数コードを変更する）場合にのみ問題になります。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    URL 検索が発生すると、一致するものが見つかった場合に、カスタムエラーコードを適用するように比較が行われます。
 
-   別の VCL スニペットを使用して、次のようなものをに追加します。 `vcl_recv`:
+   別の VCL スニペットを使用して、次のようなものを `vcl_recv` に追加します。
 
    ```
         declare local var.redir-path STRING;
@@ -74,9 +74,9 @@ ht-degree: 0%
 
 1. リダイレクトの管理。
 
-   一致が見つかると、に定義されているアクションが実行されます `obj.status`、この場合は 301 永続的な移動リダイレクトになります。
+   一致が見つかった場合は、その `obj.status` に対して定義されているアクション（この場合は 301 永続的な移動リダイレクト）が実行されます。
 
-   で最終的なスニペットを使用する `vcl_error` 301 エラーコードをクライアントに送り返すには、次の手順に従います。
+   `vcl_error` で最終的なスニペットを使用して、301 エラーコードをクライアントに送り返します。
 
    ```
      if (obj.status == 912) {
@@ -87,7 +87,7 @@ ht-degree: 0%
           }
    ```
 
-   このブロックを使用して、から渡されたエラーコードを確認しています `vcl_recv` が一致する場合は、渡されたエラーメッセージの場所を設定し、ステータスコードを 301 に、メッセージを「永続的に移動」に変更します。 この時点で、応答はクライアントに戻る準備ができているはずです。
+   このブロックでは、`vcl_recv` から渡されたエラーコードが一致するかどうかを確認しています。一致する場合は、渡されたエラーメッセージの場所を設定し、ステータスコードを 301 に、メッセージを「永続的に移動」に変更します。 この時点で、応答はクライアントに戻る準備ができているはずです。
 
 ### ステージサービス
 
@@ -99,7 +99,7 @@ Adobe Commerce ステージング環境を実行しないが、これらのリ�
 
 ## 関連資料
 
-* [Fastly VCL 参照](https://docs.fastly.com/vcl/)
-* [ルートの設定](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) 開発者向けドキュメントを参照してください。
-* [Fastly の設定](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) 開発者向けドキュメントを参照してください。
-* [VCL 正規表現チートシート](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) 開発者向けドキュメントを参照してください。
+* [Fastly VCL リファレンス ](https://docs.fastly.com/vcl/)
+* 開発者向けドキュメントの [ ルートの設定 ](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) を参照してください。
+* [Fastly の設定 ](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) については、開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [VCL 正規表現チートシート ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)。

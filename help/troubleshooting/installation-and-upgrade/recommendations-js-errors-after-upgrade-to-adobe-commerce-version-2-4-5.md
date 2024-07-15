@@ -1,6 +1,6 @@
 ---
-title: '''[!UICONTROL Recommendations] [!DNL JS] Adobe Commerce バージョン 2.4.5''へのアップグレード後にエラーが発生しました'
-description: この記事では、Adobe Commerceにアップグレードした後（すべてのデプロイメント方法）、次の状況に対する修正を提供します [!DNL JS] 製品に関連するコンソールのエラー [!UICONTROL Recommendations] モジュール。
+title: '[!UICONTROL Recommendations] [!DNL JS] Adobe Commerce バージョン 2.4.5 へのアップグレード後にエラーが発生する'
+description: この記事では、Adobe Commerce（すべてのデプロイメント方法）にアップグレードした後、[!UICONTROL Recommendations] 品モジュールに関連するエラーがコンソールに表示される場合に対処する  [!DNL JS]  策を説明します。
 feature: Install, Upgrade
 role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Recommendations] [!DNL JS] Adobe Commerce バージョン 2.4.5 へのアップグレード後にエラーが発生する
+# Adobe Commerce バージョン 2.4.5 へのアップグレード後に [!UICONTROL Recommendations] [!DNL JS] エラーが発生する
 
-この記事では、Adobe Commerceにアップグレードした後（すべてのデプロイメント方法）、次の状況に対する修正を提供します [!DNL JS] 製品に関連するコンソールのエラー [!UICONTROL Recommendations] モジュール/ユニット。
+この記事では、Adobe Commerce（すべてのデプロイメント方法）にアップグレードした後、製品またはモジュール/ユニットに関連するエラーがコンソールに表示され [!DNL JS] い場合に [!UICONTROL Recommendations] いて対処方法を説明します。
 
 現在、今後のバージョンでこの問題に対処する予定はありません。
 
@@ -23,24 +23,24 @@ ht-degree: 0%
 
 ## 問題
 
-この問題は、ストアフロントの web ページで、削除された製品がまだ参照されていることで発生します [!UICONTROL Recommendations] ホームページ上のモジュール/ユニット（ブロックやウィジェット） [!DNL CMS].
+この問題は、ストアフロントの web ページで、のホームページページの一部の削除された製品 [!UICONTROL Recommendations] モジュール/ユニット（ブロックやウィジェット）が引き続き参照されている [!DNL CMS] とが原因です。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. Adobe Commerce 2.4.5 へのアップグレード。
 1. ストアフロントの Web ページにアクセスします。
-1. マウスを右クリックし、を選択します。 **Inspect** をクリックして、web ブラウザーで web インスペクターを開きます。
-1. 「」をクリックします **[!UICONTROL Console]** タブ。
-1. をレビュー [!DNL JS] エラー。
+1. マウスを右クリックし、**Inspect** を選択して、web ブラウザーで web インスペクターを開きます。
+1. 「**[!UICONTROL Console]**」タブをクリックします。
+1. [!DNL JS] のエラーを確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-アップグレードは正常に終了しました（はありません） [!DNL JS] エラー。
+[!DNL JS] エラーなしでアップグレードが成功しました。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-複数の異なるタイプの [!DNL JS] エラーは web ブラウザーコンソールに表示されます。
+Web ブラウザーコンソールには、様々なタイプの [!DNL JS] エラーが表示されます。
 
 ## 回避策
 
-回避策として、すべての [!UICONTROL Recommendations] ページで使用した単位を削除し、削除した単位を削除します。
+回避策として、ページで使用したすべての [!UICONTROL Recommendations] ユニットを確認し、削除したユニットを削除できます。

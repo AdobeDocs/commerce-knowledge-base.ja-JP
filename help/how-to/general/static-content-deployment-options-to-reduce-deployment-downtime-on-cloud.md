@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドでのデプロイメントのダウンタイムを短縮する静的コンテンツデプロイメントオプション
 
-を参照してください [静的コンテンツのデプロイメント戦略](https://devdocs.magento.com/guides/v2.3/cloud/deploy/static-content-deployment.html) アドビの開発者向けドキュメントでは、デプロイメントプロセスを迅速化し、クラウドインフラストラクチャ上のAdobe Commerceのメンテナンスタイムのダウンタイムを短縮するのに役立つ、静的コンテンツのデプロイメント（SCD）オプションについて詳しく説明しています。
+デプロイメントプロセスを迅速に実行し、クラウドインフラストラクチャ上のAdobe Commerceのメンテナンスダウンタイムを短縮するのに役立つ静的コンテンツデプロイメント（SCD）オプションについて詳しくは、開発者向けドキュメントの [ 静的コンテンツデプロイメント戦略 ](https://devdocs.magento.com/guides/v2.3/cloud/deploy/static-content-deployment.html) を参照してください。

@@ -28,10 +28,10 @@ ElasticSuite 2.8.0 より前のバージョンでは、トラッキングイン�
 ElasticSuite サードパーティプラグインがインストールされている場合、Elasticsearchメモリの問題が発生し、ElasticSuite トラッキングインデックスが原因でElasticsearchサービスがクラッシュする可能性があります。 症状は次のとおりです。
 
 * メモリエラーが発生せずにElasticsearchがクラッシュする。
-* health コマンドを実行する場合 `curl -m1 localhost:9200/_cluster/health?pretty` または `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` （スターターアカウントの場合）数は数百または数千です `unassigned_shards`
+* （スターターアカウントに対して）ヘルスコマンド `curl -m1 localhost:9200/_cluster/health?pretty` または `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` を実行すると、数百または数千の `unassigned_shards` ーザーが存在します
 * Elasticsearchまたはサイトのパフォーマンスが著しく低下している。
-* *「クラスターにアライブなノードが見つかりません」* Elasticsearchで deploy エラーまたは log エラーが発生しました。
-* *「へのマッピングの更新を却下します [&lt;\*>_ tracking_log_event _&lt;\*>]“* デプロイまたはログのエラーで。
+* Elasticsearchのデプロイまたはログエラーの *「クラスターにアライブノードが見つかりません」* を参照してください。
+* デプロイまたはログのエラーで *&quot;[&lt;\*>_ tracking_log_event _&lt;\*>]&quot;へのマッピングの更新を拒否しています*。
 
 ## 原因：
 
@@ -43,7 +43,7 @@ ElasticSuite には、トラッキングインデックスを作成する新機�
 
 ElasticSuite プラグインを 2.8.0 より上のバージョンにアップグレードしたら、インデックスの定期的なクリーニングを設定できます。
 
-に移動 **ストア** > **設定** > **トラッキング** > **グローバル設定** > **リテンション遅延**
+**ストア**/**設定**/**トラッキング**/**グローバル設定**/**保持遅延** に移動します。
 
 デフォルトの保持期間は 365 日です。 30 日または 15 日に減らすことができます。
 
@@ -53,7 +53,7 @@ ElasticSuite プラグインをバージョン > 2.9.8 / 2.10.7 にアップグ�
 
 引き続き、保持期間を短縮できます。
 
-に移動 **ストア** > **設定** > **トラッキング** > **グローバル設定** > **リテンション遅延**
+**ストア**/**設定**/**トラッキング**/**グローバル設定**/**保持遅延** に移動します。
 
 デフォルトの保持期間は 12 か月です（12 個のインデックスが生成されます）。 3 か月または 6 か月に減らすことができます。
 
@@ -68,5 +68,5 @@ Cron ジョブを作成して、トラッキングインデックスを削除し
 
 設定された時間頻度でインデックスを削除する場合は、開発者向けドキュメントの以下の記事を参照して、cron ジョブを作成します。
 
-* [カスタム cron ジョブと cron グループの設定（チュートリアル）](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [cron ジョブの設定](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [ カスタム cron ジョブと cron グループの設定（チュートリアル） ](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
+* [cron ジョブの設定 ](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)

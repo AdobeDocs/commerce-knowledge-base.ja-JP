@@ -23,18 +23,18 @@ ht-degree: 0%
 
 https:/&#x200B;/mydomain.com.c.&lt;projectid>.magento.cloud/にはアクセスできなくなりました。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. プロジェクトにログインします。
-1. クリック **プロジェクトへのアクセス** URL と SSH のリストについては、を参照してください。
+1. URL と SSH のリストを表示するには、「**プロジェクトにアクセス**」をクリックします。
 
-<u>実際の結果：</u>
+<u> 実績：</u>
 
 次のエラーでページの読み込みに失敗します。
 
-*NET::ERR\_CERT\_INVALID*  *TLS アラート、不正な証明書（554）:*
+*NET::ERR\_CERT\_INVALID**TLS アラート、不正な証明書（554）:*
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 ページが正常に読み込まれました。
 
@@ -47,8 +47,8 @@ https:/&#x200B;/mydomain.com.c.&lt;projectid>.magento.cloud/にはアクセス�
 ## 解決策
 
 * クラウドサイトがライブの場合は、https://mydomain.com/に切り替えます。
-* アクティブなサイト（クラウド以外）がある場合は、https://mydomain.com/ ドメインを使用してサブドメインを設定します `mcprod.mydomain.com` を更新します **ベース URL** 対象： *https://mcprod.mydomain.com* 代わりに、 [dns を Fastly に指定する](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* アクティブなサイト（クラウド以外）がある場合は、https://mydomain.com/ ドメインを使用してサブドメイン `mcprod.mydomain.com` を設定し、**ベース URL** を *https://mcprod.mydomain.com* に更新して、[DNS を Fastly に指定 ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings) ます。
 
 ## 関連資料
 
-[Fastly オリジンクローク有効化に関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) サポートナレッジベースで。
+[Fastly オリジンクローキングのイネーブルメントに関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) （サポートナレッジベース内）

@@ -25,7 +25,7 @@ SendGrid クレジットとは、送信可能なメールの数を指します�
 
 ## クレジットが超過したかどうかを確認する方法：
 
-クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャ：を確認してください。 `/var/log/mail.log`  – 次のようなメッセージが表示されます。
+クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャ：`/var/log/mail.log` を確認してください。次のようなメッセージが表示される場合があります。
 
 `May 28 21:13:00 <i-node> postfix/error[21335]: BC7941A2BBF: to=<to@email.com>, relay=none, delay=4642, delays=4642/0.56/0/0.03, dsn=4.0.0, status=deferred (delivery temporarily suspended: SASL authentication failed; server smtp.sendgrid.net[ip address] said: 451 Authentication failed: Maximum credits exceeded).`
 
@@ -35,9 +35,9 @@ SendGrid クレジットとは、送信可能なメールの数を指します�
 
 ## 解決策
 
-* 実稼動環境でこのメッセージが表示された場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) そして、上記のメッセージを提供し、クレジットの増加をリクエストします。
-* このメッセージが表示されない場合や、Adobe Commerce on cloud infrastructure スタータープランアーキテクチャを使用している場合は、 [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) そして次のことに触れます `mail.log` ファイルは、クレジットが超過したことを示すものではありません。
+* このメッセージが実稼動環境に表示された場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、上記のメッセージを入力して、クレジットの増加をリクエストします。
+* このメッセージが表示されない場合、またはAdobe Commerce on cloud infrastructure スタータープランアーキテクチャを使用している場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、`mail.log` ファイルに、クレジットが超過したことを示していないことに注意してください。
 
 ## 関連資料
 
-* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html)。

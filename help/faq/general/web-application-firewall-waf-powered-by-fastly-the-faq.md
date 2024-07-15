@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Managed Cloud WAF （Fastly を活用）はどのように機能しますか？
 
-Web アプリケーションファイアウォール（WAF）による防止 [悪意のあるトラフィック](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) 一連のセキュリティ規則に対してトラフィックをフィルタリングしてサイトとネットワークに入る場合から。 いずれかの規則をトリガーするトラフィックは、サイトやネットワークに損害を与える前にブロックされます。
+Web アプリケーションファイアウォール（WAF）は、一連のセキュリティルールに対してトラフィックをフィルタリングすることで、[ 悪意のあるトラフィック ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) がサイトやネットワークに入るのを防ぎます。 いずれかの規則をトリガーするトラフィックは、サイトやネットワークに損害を与える前にブロックされます。
 
 Adobe Commerceの Cloud WAF は、Adobe Commerce web アプリケーションを様々な攻撃から保護するように設計されたルールセットを含む WAF ポリシーを提供します。
 
@@ -50,7 +50,7 @@ WAF は、1 つのクラウドアカウント下のすべてのドメインに�
 
 ## WAF ルールセットを更新するにはどうすればよいですか？ WAF ルールを変更または更新して、実稼動環境にグローバルに適用するには、どの程度の時間がかかりますか？
 
-Fastly は、クラウド WAF サービスの一部として、商用サードパーティ、Fastly のリサーチ、オープンソースからのルール更新を管理しています。 必要に応じて、またはルールの変更がそれぞれのソースから使用可能な場合に、公開されたルールをポリシーに更新します。 ルールの公開済みクラスに一致する新しいルールも、有効にすると任意のサービスの WAF インスタンスに挿入されます。 これにより、新しい攻撃や進化する攻撃に迅速に対応できます。 情報を確認できます [ルールの更新とメンテナンスについて](https://docs.fastly.com/guides/web-application-firewall/fastly-waf-rule-set-updates-maintenance#rule-set-maintenance) を Fastly ドキュメントサイトに追加します。
+Fastly は、クラウド WAF サービスの一部として、商用サードパーティ、Fastly のリサーチ、オープンソースからのルール更新を管理しています。 必要に応じて、またはルールの変更がそれぞれのソースから使用可能な場合に、公開されたルールをポリシーに更新します。 ルールの公開済みクラスに一致する新しいルールも、有効にすると任意のサービスの WAF インスタンスに挿入されます。 これにより、新しい攻撃や進化する攻撃に迅速に対応できます。 情報 [ ルールの更新とメンテナンスについて ](https://docs.fastly.com/guides/web-application-firewall/fastly-waf-rule-set-updates-maintenance#rule-set-maintenance) は、Fastly ドキュメントサイトで確認できます。
 
 ## Adobe Commerceの Cloud WAF は、Fastly が直接顧客に提供する WAF ソリューションとどう違いますか？
 
@@ -83,8 +83,8 @@ Fastly が直接販売する WAF ソリューションは、ルールのカス�
 <td style="width: 497.5px;">ネットワーク攻撃、またはネットワークインフラストラクチャをターゲットとする攻撃は、Fastly によって自動的に管理されます。 Fastly は DNS をオリジンに渡さず、狭い HTTP、HTTPS、DNS プロファイルに一致しないトラフィックはネットワークのエッジで破棄されます。 制御プロトコルを標的とする攻撃は、ネットワーク全体のエンドポイントの認証を通じて防御されます。 さらに、Fastly ネットワーク内で使用されるネットワークプロトコルは、増幅やリフレクションの手段として利用できないように強化されています。 お客様には、CDN サービスのコンポーネントとしてお客様に公開されている Fastly キャッシュ IP アドレス空間を活用して、Fastly ネットワークを迂回する攻撃から保護する責任があります。 バイパス攻撃でこれらのアドレスをターゲットとして使用できないように、発信元 IP アドレス空間をパブリック DNS で公開しないことをお勧めします。</td>
 </tr>
 <tr>
-<td style="width: 145.5px; vertical-align: top;">JavaScript インジェクション攻撃</td>
-<td style="width: 497.5px;">WAF ルールは、Web サービスとのクライアント通信に挿入される悪意のある JavaScript コードから保護します。 一般的なエクスプロイトパターンやスコアは、接触チャネルサービスの整合性を確保するために WAF でフィルタリングされます。</td>
+<td style="width: 145.5px; vertical-align: top;">JavaScript注射攻撃</td>
+<td style="width: 497.5px;">WAF ルールは、悪意のあるJavaScript コードが web サービスとのクライアント通信に挿入されるのを防ぎます。 一般的なエクスプロイトパターンやスコアは、接触チャネルサービスの整合性を確保するために WAF でフィルタリングされます。</td>
 </tr>
 </tbody>
 </table>
@@ -104,11 +104,11 @@ Adobe Commerceの WAF 製品には、PCI 要件の一環として OWASP Top-10 �
 
 ## お客様は、IP ブラックリストを作成および変更してトラフィックをブロックすることはできますか。
 
-はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューでHTMLをアップロードすることで、カスタムエラーページを作成できます。 参照： [カスタムのエラー/メンテナンスページの作成](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) 開発者向けドキュメントを参照してください。
+はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューでHTMLをアップロードすることで、カスタムエラーページを作成できます。 開発者向けドキュメントの [ カスタムエラー/メンテナンスページの作成 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) を参照してください。
 
 ## WAF サービスの運用状況はどこで確認できますか？
 
-WAF サービスの全体的な可用性は、 [Fastly ステータスページ](https://status.fastly.com/). 個々のお客様の WAF の可用性レポートは提供されていません。
+WAF サービスの全体的な可用性は、[Fastly ステータスページ ](https://status.fastly.com/) で報告されます。 個々のお客様の WAF の可用性レポートは提供されていません。
 
 ## Adobe Commerceは WAF サービスのインシデント管理を提供しますか？
 
@@ -118,7 +118,7 @@ WAF サービスの全体的な可用性は、 [Fastly ステータスページ]
 
 Adobe Commerceにはセキュリティオペレーションセンターがありませんが、適切な人材を採用してセキュリティインシデントにリアルタイムで対応できるセキュリティオペレーションプロセスを用意しています。 2035 年 7 月 24 日のサポートも提供しています。
 
-Adobe Commerce関連のセキュリティニュースや最新情報は、からも取得できます。 [セキュリティセンター](https://helpx.adobe.com/security.html).
+また、Adobe Commerce関連のセキュリティニュースや最新情報を [ セキュリティセンター ](https://helpx.adobe.com/security.html) から取得することもできます。
 
 ## どのようなサポートがありますか？
 
@@ -128,11 +128,11 @@ WAF サポートでは、不要なリクエストや悪意のあるリクエス�
 * WAF が正当なトラフィックをブロックするインスタンスに対処するために継続的に行われる偽陽性のトリアージ
 * WAF バージョンのアップグレードの一環として導入された新しい標準ルールの設定
 
-を参照してください。 [クラウド SLA](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) 重要度の定義、応答時間、チャネル、可用性など、追加のサポート情報に関する用語。
+重要度の定義、応答時間、チャネル、可用性など、追加のサポート情報については、[ クラウド SLA](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) の用語を参照してください。
 
 ## WAF が正規のトラフィックをブロックしている場合、またはその他の問題を引き起こしている場合、どうすればサポートを受けられますか。
 
-[サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 時刻 [Adobe Commerceヘルプセンター](https://support.magento.com). チケットが WAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
+[2}Adobe Commerce ヘルプセンター ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) で ](https://support.magento.com) サポートチケットを送信 } します。 [チケットが WAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
 
 Adobe Commerceのサポートチケット発行システムは、アドビのサポートエンジニアとお客様の担当者とのコミュニケーションをトラッキングします。 チケットの更新に合わせて、お客様やAdobe Commerceのスタッフにメールを送信し、お知らせのタイムスタンプ付きトランスクリプトを提供します。
 
@@ -160,12 +160,12 @@ Adobe Commerceのサポートチケット発行システムは、アドビのサ
 </tr>
 <tr>
 <td>緊急エスカレーション*</td>
-<td>こちらを参照してください <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Adobe Commerce P1 通知ホットライン</a> 米国および国際番号の記事。</td>
+<td>米国および国際電話番号については、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Adobe Commerce P1 通知ホットライン </a> の記事を参照してください。</td>
 </tr>
 </tbody>
 </table>
 
-*\* Adobe Commerceのフリーダイヤルのサポート電話回線は、優先度 1 のインシデントにのみ予約されています。 優先度 1 以外の呼び出しがあると、問題への全体的な応答が遅くなります*
+*\* Adobe Commerceのフリーダイヤルのサポート電話回線は、優先度 1 のインシデントにのみ予約されています。 優先度 1 以外の呼び出しがあると、問題に対する全体的な応答が遅くなります*
 
 ## 偽陽性はどのようにトリアージされますか。
 

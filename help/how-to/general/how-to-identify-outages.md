@@ -18,4 +18,4 @@ ht-degree: 0%
 * システム停止の可能性がある問題を特定するための一般的な手順
 * 問題が本当に停止、小規模の停止、一時的な障害のいずれであるかを特定する方法
 
-記事をダウンロードするには、 [Stolapse_how_to_identify_and_measure_effect_Adobe_Commerce.pdf](assets/Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf)
+記事をダウンロードするには、[Stolps_how_to_identify_and_measure_effect_Adobe_Commerce.pdf](assets/Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf) をクリックしてください

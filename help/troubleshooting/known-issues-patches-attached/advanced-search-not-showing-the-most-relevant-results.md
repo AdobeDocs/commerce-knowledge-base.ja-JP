@@ -24,17 +24,17 @@ ht-degree: 0%
 
 高度な検索機能では、クイック検索のように、最も関連性の高い結果が最初に返されることはありません。 問題は、選択した検索エンジンのタイプには依存しません。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. 店頭でクイック検索に進み、「Fitted Jacket」を検索します。
 1. 「Orion Two-Tone Fitted Jacket」が最初の結果であることに注意してください。
 1. 詳細検索に移動し、「名前」フィールドで「Fitted Jacket」を検索します。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 「Orion Two-Tone Fitted Jacket」は、高度な検索を使用した場合の最初の結果であり、最も関連性の高い結果です。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 「Orion Two-Tone Fitted Jacket」は、最も関連性が高いものの、最初の結果ではありません。
 
@@ -50,6 +50,6 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-手順については、を参照してください [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ログを確認して、Adobe Commerceの 500 および 503 エラーのトラブルシューティングを行います
 
-この記事では、を確認する方法を説明します `access.log` および関連ログを使用して、トラフィックやサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行うことができます。 の表示 `access.log` および関連するログは、クラウドインフラストラクチャー上のAdobe Commerceに関連して、何が問題を引き起こしているかに関する情報を提供できます。
+この記事では、`access.log` と関連ログを確認して、トラフィックまたはサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行う方法について説明します。 `access.log` と関連ログを確認すると、クラウドインフラストラクチャー上のAdobe Commerceに関連して、何が問題を引き起こしているかに関する情報を得ることができます。
 
 <!--
 Bob - not in TOC
@@ -20,17 +20,17 @@ Bob - not in TOC
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)。
 
-これらのサーバーエラーのログを表示するには、 `access.log` web サーバー上（例：） `<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`
+これらのサーバーエラーのログを表示するには、web サーバーの `access.log` （例：`<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`）を確認します
 
 関連ログを確認するには：
 
-1. 次のコマンドを CLI で実行します（クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの場合）。 または、過去の特定の時点（クラウドインフラストラクチャー上のAdobe Commerce Starter プランアーキテクチャの場合）まで。ログのカバー期間は限られており、ログのローテーションは使用できません。 `grep -r "\" [50[0-9]" /path/to/access.log` 過去にエラーが発生した場合は、CLI で次のコマンドを実行します（Pro アーキテクチャのみ）。 `zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
-1. 次に、 `exception.log` および `error.log` または同等の [回転ログ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達した場合に自動的に回転および圧縮されるログ）同じタイムスタンプを使用して、潜在的なエラーを見つけ、そのエラーを引き起こしている可能性があるものを確認します。 メモ：を確認するには `exception.log` および `error.log` 上記のコマンドを CLI で実行するが、 `access.log` （を使用） `exception.log` または `error.log`.
+1. 次のコマンドを CLI で実行します（クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの場合）。 または、過去の特定の時点（Adobe Commerce on cloud infrastructure スタータープランアーキテクチャの場合）まで、ログのカバレッジの期間が限られ、ログのローテーションは使用できません。`grep -r "\" [50[0-9]" /path/to/access.log` 過去にエラーが発生した場合は、CLI で次のコマンドを実行します（Pro アーキテクチャのみ）。`zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
+1. 次に、`exception.log` と `error.log`、または同等の [ ローテーションされたログ ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達すると自動的にローテーションされ圧縮されるログ）で、同じタイムスタンプを確認して、潜在的なエラーを見つけ、そのエラーを引き起こしている可能性のあるものを確認します。 注：`exception.log` をチェックし、`error.log` に CLI で上記のコマンドを実行し、`access.log` を `exception.log` または `error.log` に置き換えます。
 
 ## 関連資料
 
-* 参照： [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) が含まれる *クラウドインフラストラクチャー上のAdobe Commerce ガイド*.
-* 参照： [503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) サポートナレッジベースで。
-* 参照： [Magentoサイトのダウンのトラブルシューティング](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) サポートナレッジベースで。
+* [2}Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) ログの表示と管理 *を参照してください。*
+* サポートナレッジベースの [503 エラーのトラブルシューティング ](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) を参照してください。
+* サポートナレッジベースの [Magentoサイトのダウンのトラブルシューティング ](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) を参照してください。

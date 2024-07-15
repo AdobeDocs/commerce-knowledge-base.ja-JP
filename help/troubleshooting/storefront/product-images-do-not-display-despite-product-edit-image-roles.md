@@ -15,9 +15,9 @@ ht-degree: 0%
 
 この記事では、製品の編集ページで画像の役割が設定されているにもかかわらず、製品画像がストアフロントに表示されない場合の解決策について説明します。
 
-**原因：** 複数のストアを持つAdobe Commerce インスタンスでは、一部の商品画像に `no_selection` 画像の役割属性の値 `image`, `small_image`, `thumbnail`, `swatch`. その `no_selection` 値が出現するのは、製品イメージの役割が、特定のストアのスコープ（つまり、 **すべてのストア表示** 特定のものの代わりに **ストア表示**）に設定します。 これがあなたのケースかどうかを理解するには、から SQL スクリプトを実行します **原因：** セクションを下にします。
+**原因：** 複数のストアを持つAdobe Commerce インスタンスでは、一部の商品画像に image role 属性 `image`、`small_image`、`thumbnail`、`swatch` の `no_selection` 値が含まれる場合があります。 このような `no_selection` 値は、製品イメージの役割が特定のストアのスコープではなく、グローバルなすべてのストアのスコープで設定される場合（つまり、特定の **ストア表示** ではなく、**すべてのストア表示**）に出現します。 これがあなたのケースかどうかを理解するには、以下の **原因** セクションから SQL スクリプトを実行してください。
 
-**解決策：** を使用して行を削除 `no_selection` 以下の「解決策」セクションの SQL スクリプトを使用して、このような画像の値を指定します。
+**解決策：** 次の「解決策」セクションの SQL スクリプトを使用して、このような画像の `no_selection` 値を持つ行を削除します。
 
 ## 影響を受けるバージョン
 
@@ -28,21 +28,21 @@ ht-degree: 0%
 
 管理パネルの製品ページで画像の役割（ベース、小、サムネール、スウォッチ）が正しく設定されていても、製品画像がストアフロントに表示されない場合があります。
 
-製品ページを次のように確認した場合 **ストア表示** をに設定 **すべてのストア表示**&#x200B;の役割が設定されています。 **画像の詳細** 画面。
+**ストア表示** を **すべてのストア表示** に設定した製品ページを確認すると、**画像の詳細** 画面で役割が設定された画像になります。
 
 ![all_store_views.png](assets/all_store_views.png)
 
 ![image_roles.png](assets/image_roles.png)
 
-ただし、ストアフロントでは画像が表示されません。特定のストアレベルで製品ページを確認する場合（ **ストア表示**）を選択します。画像は表示されますが、役割が設定されていません。
+ただし、ストアフロントでは画像は表示されません。特定のストアレベルで製品ページを確認すると（**ストア表示** を切り替えると）、画像は表示されますが、役割は設定されません。
 
 ![image_roles_not_set.png](assets/image_roles_not_set.png)
 
 ## 原因：
 
-（複数のストアを持つ）マルチストアAdobe Commerceインスタンスでは、一部の商品画像に次の記号が表示されることがあります `no_selection` 属性値 `image`, `small_image`, `thumbnail`, `swatch` （これらの属性は画像の役割に対応します）。 その `no_selection` 値が出現するのは、製品イメージの役割が、特定のストアのスコープ（つまり、 **すべてのストア表示** 特定のものの代わりに **ストア表示**）に設定します。
+（複数のストアを含む）マルチストアAdobe Commerceインスタンスでは、一部の商品画像に、属性 `image`、`small_image`、`thumbnail`、`swatch` の `no_selection` 値が設定される場合があります（これらの属性は画像ロールに対応しています）。 このような `no_selection` 値は、製品イメージの役割が特定のストアのスコープではなく、グローバルなすべてのストアのスコープで設定される場合（つまり、特定の **ストア表示** ではなく、**すべてのストア表示**）に出現します。
 
-技術的には、次の通りです。 `store_id=0` （Adobe Commerce インスタンス上のすべてのストアに対するグローバル設定を保持します）。product image roles が設定されている場合もあります。つまり、次の属性があります。 `image`, `small_image`, `thumbnail`, `swatch` 有効な値（画像へのパス）がある。 同時に、 `store_id=1` （特定のストア表現です）。これらの属性の値は次のとおりです `no_selection`.
+技術的には、`store_id=0` （Adobe Commerce インスタンス上のすべてのストアに対するグローバル設定を保持する）では、product image roles が設定される場合があります。これは、属性 `image`、`small_image`、`thumbnail`、`swatch` に有効な値（image へのパス）があることを意味します。 同時に、`store_id=1` （特定のストア表現）では、これらの属性の値は `no_selection` になります。
 
 ### これが問題であることを確認する方法
 
@@ -75,11 +75,11 @@ SELECT `cpev_s`.*, `cpev_0`.`value` AS `store_value` FROM `catalog_product_entit
 
 Adobe Commerce アプリケーションに複数のストアがある場合、特定のストアとグローバルストア設定の間でデータが同期されない場合があります。
 
-の値 `store_id=1` デフォルト（グローバル）ストア（`store_id=0`）に設定します。 したがって、アプリケーションはグローバル画像設定を無視して、ストアスコープ設定（`no_selection` （画像の役割の属性の場合）。画像を表示する場合に選択します。
+`store_id=1` の値は、デフォルト（グローバル）ストア（`store_id=0`）よりも優先されます。 したがって、アプリケーションは画像を表示する際に、グローバル画像設定を無視して、ストアスコープ設定（画像の役割属性の `no_selection`）を使用する場合があります。
 
 ## 解決策 {#solution}
 
-を使用して属性を削除する `no_selection` この SQL スクリプトを使用する値：
+次の SQL スクリプトを使用して、`no_selection` の値を持つ属性を削除します。
 
 ```
 DELETE `cpev_s`.* FROM `catalog_product_entity_varchar` `cpev_s` JOIN `eav_attribute` `ea` ON `cpev_s`.`attribute_id` = `ea`.`attribute_id` LEFT JOIN `catalog_product_entity_varchar` `cpev_0` ON `cpev_0`.`row_id` = `cpev_s`.`row_id` AND `cpev_0`.`attribute_id` = `cpev_s`.`attribute_id` AND `cpev_0`.`store_id` = 0 WHERE `cpev_s`.`value` = 'no_selection' AND `ea`.`attribute_code` IN ('image', 'small_image', 'thumbnail') AND `cpev_s`.`store_id` > 0 AND `cpev_s`.`value` != `cpev_0`.`value` AND `cpev_s`.`value` = 'no_selection';
@@ -91,19 +91,19 @@ DELETE `cpev_s`.* FROM `catalog_product_entity_varchar` `cpev_s` JOIN `eav_attri
 
 Adobe Commerce インスタンスでフルページキャッシュが有効になっている場合、すぐに修正結果を確認することはできません。
 
-変更を表示するには、次を使用してページキャッシュを更新します。 **キャッシュ管理** 管理パネルのメニュー。
+変更を表示するには、管理パネルの **キャッシュ管理** メニューを使用して、ページキャッシュを更新します。
 
 ## 詳細情報
 
 ### ストアと範囲
 
-[ストアとストアの範囲](/docs/commerce-admin/stores-sales/site-store/stores.html) ユーザーガイドの
+ユーザーガイドの [ ストアとストアの範囲 ](/docs/commerce-admin/stores-sales/site-store/stores.html)
 
 ### 画像
 
-[製品画像のアップロード](/docs/commerce-admin/catalog/products/digital-assets/product-image.html#upload-an-image) ユーザーガイドの
+ユーザーガイドの [ 製品画像のアップロード ](/docs/commerce-admin/catalog/products/digital-assets/product-image.html#upload-an-image)
 
 ### キャッシュ
 
-* [キャッシュ管理](/docs/commerce-admin/systems/tools/cache-management.html) （ユーザー管理システムガイド）を参照してください。
-* [キャッシュの管理](/docs/commerce-operations/configuration-guide/cli/manage-cache.html) 開発者向けドキュメントで
+* ユーザー管理システムガイドの [ キャッシュ管理 ](/docs/commerce-admin/systems/tools/cache-management.html)。
+* 開発者向けドキュメントの [ キャッシュの管理 ](/docs/commerce-operations/configuration-guide/cli/manage-cache.html)

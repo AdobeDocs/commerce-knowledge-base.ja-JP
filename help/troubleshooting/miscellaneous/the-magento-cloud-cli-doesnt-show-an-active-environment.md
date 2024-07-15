@@ -1,6 +1,6 @@
 ---
-title: 「Magento雲」 [!DNL CLI] はアクティブな環境を表示しません
-description: この記事では、「Magentoクラウド」という既知のAdobe Commerceの問題について説明します [!DNL CLI] （コマンドラインツール）アクティブな環境は表示されません。
+title: 「Magentoクラウド」  [!DNL CLI]  アクティブな環境は表示されません
+description: この記事では、「Magentoクラウド」  [!DNL CLI]  （コマンドラインツール）にアクティブな環境が表示されない、既知のAdobe Commerceの問題について説明します。
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# この `Magento-cloud` [!DNL CLI] はアクティブな環境を表示しません
+# `Magento-cloud` [!DNL CLI] にアクティブな環境が表示されていません
 
 ## 問題
 
-いくつかのアクティブな環境があり、 `Magento-cloud` [!DNL CLI] （コマンドラインツール）コマンド。 （例： `ssh`, `db:size`, `db:sql`等）
+複数のアクティブな環境があり、`Magento-cloud` [!DNL CLI] （コマンドラインツール）コマンドを実行して環境を操作しようとしています。 （例：`ssh`、`db:size`、`db:sql` など）
 ただし、目的の環境を選択するプロンプトには、この環境は表示されません。 （例：統合環境）
 
 ```
@@ -34,7 +34,7 @@ Default: master
 
 ## 解決策
 
-を使用して、環境を手動で指定する必要があります。 `e|-environment` フラグ。
+`e|-environment` フラグを使用して、環境を手動で指定する必要があります。
 
 1. アクティブな環境のリストを見つけて、環境名をメモします。
 

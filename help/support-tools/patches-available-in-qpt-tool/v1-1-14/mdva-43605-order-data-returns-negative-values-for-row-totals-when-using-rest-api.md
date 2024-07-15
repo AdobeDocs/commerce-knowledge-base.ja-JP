@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-43605:Rest API を使用している場合、注文データが行の合計に対して負の値を返す
 
-MDVA-43605 パッチでは、Rest API を使用する際に、注文データが行の合計に対して負の値を返す問題が修正されています。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 がインストールされています。 パッチ ID は MDVA-43605。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-43605 パッチでは、Rest API を使用する際に、注文データが行の合計に対して負の値を返す問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-43605。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,17 +27,17 @@ MDVA-43605 パッチでは、Rest API を使用する際に、注文データが
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 Rest API を使用する場合、注文データは行の合計に対して負の値を返します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 送料無料を有効にします。
-1. に移動します。 **設定** > **カタログ** > **価格** > and set Catalog Price Scope = Website.（カタログの価格範囲= ウェブサイト）を選択します。
-1. に移動します。 **設定** > **売上** > **税** を更新します。
+1. **Configuration**/**Catalog**/**Price** に移動し、「Catalog Price Scope = Website」と設定します。
+1. **Configuration**/**Sales**/**Tax** に移動して、次の項目を更新します。
    * 出荷の税金区分=課税品
    * 計算設定：
       * カタログ価格=税込
@@ -59,26 +59,26 @@ Rest API を使用する場合、注文データは行の合計に対して負�
    GET rest/V1/orders/1
    ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-の値 `base_row_total` および `base_row_total_incl_tax` 応答のがゼロです。
+応答内の `base_row_total` と `base_row_total_incl_tax` の値はゼロです。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この `base_row_total` および `base_row_total_incl_tax` 応答のフィールドに負の値があります。
+応答内の `base_row_total` フィールドと `base_row_total_incl_tax` フィールドには負の値が指定されています。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 前提条件：環境に SSH で接続する
 
-この記事で説明したバリアントを使用してクラウドインフラストラクチャ上のAdobe Commerceに DB をダンプするには、最初に以下を行う必要があります [環境に SSH で接続する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+この記事で説明されているバリアントを使用してクラウドインフラストラクチャ上のAdobe Commerceに DB をダンプするには、まず [ 環境に SSH 接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) する必要があります。
 
 >[!WARNING]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## オプション 1:db-dump （**ece-tools；推奨**）
 
-を使用して DB をダンプできます。 [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) コマンド：
+[ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) コマンドを使用して DB をダンプできます。
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 これは推奨される最も安全なオプションです。
 
-参照： [データベースのダンプ（ECE-Tools）](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
+クラウドインフラストラクチャー上のCommerce ガイドの [ データベースのダンプ（ECE-Tools） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) を参照してください。
 
 ## オプション 2:mysqldump
 
@@ -42,7 +42,7 @@ vendor/bin/ece-tools db-dump
 >
 >データベースクラスタに対してこのコマンドを実行しないでください。 クラスターは、データベースのプライマリに対して実行されるか、セカンダリに対して実行されるかを区別しません。 クラスターがプライマリに対してこのコマンドを実行すると、ダンプが完了するまでデータベースは書き込みを実行できず、パフォーマンスとサイトの安定性に影響を与える可能性があります。
 
-ネイティブの MySQL を使用して DB をダンプできます。 `mysqldump` コマンド。
+ネイティブの MySQL `mysqldump` コマンドを使用して DB をダンプできます。
 
 コマンド全体は次のようになります。
 
@@ -50,9 +50,9 @@ vendor/bin/ece-tools db-dump
 mysqldump -h <host> -u <username> -p <password> --single-transaction <db_name> | gzip > /tmp/<dump_name>.sql.gz
 ```
 
-を実行して作成されたデータベースのバックアップ `mysqldump` コマンドと保存済みファイル `\tmp`、をこの場所から移動する必要があります。 のストレージスペースを消費しないようにします `\tmp` （問題が発生する可能性があります）。
+`mysqldump` コマンドを実行して作成し、`\tmp` に保存したデータベースのバックアップは、この場所から移動する必要があります。 `\tmp` のストレージスペースを消費しないでください（問題が発生する可能性があります）。
 
-DB の資格情報（ホスト、ユーザー名、パスワード）を取得するには、 `MAGENTO_CLOUD_RELATIONSHIPS` 環境変数：
+DB 資格情報（ホスト、ユーザー名およびパスワード）を取得するには、`MAGENTO_CLOUD_RELATIONSHIPS` の環境変数を呼び出します。
 
 ```
 echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
@@ -60,5 +60,5 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 
 **関連ドキュメント：**
 
-* [mysqldump - データベースバックアッププログラム](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) の公式 MySQL ドキュメントを参照してください。
-* [クラウド固有の変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) （を参照） `MAGENTO_CLOUD_RELATIONSHIPS`）を参照してください。Commerce on Cloud Infrastructure ガイドをご覧ください。
+* [mysqldump - データベースバックアッププログラム ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) 公式の MySQL ドキュメントにあります。
+* [ クラウド固有の変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) （`MAGENTO_CLOUD_RELATIONSHIPS` を参照） – Commerce on Cloud Infrastructure ガイドを参照してください。

@@ -53,20 +53,20 @@ PayPal は支払いを処理して注文を完了することはできません�
 
 PayPal プロファイルを変更して、請求書 ID ごとに複数の支払いを許可します。 これらの変更は、PayPal を通じて行う必要があります。
 
-1. からアカウントにログインします [https://www.paypal.com](https://www.paypal.com/).
-1. クリック **Profile** > **プロファイルと設定** （右上隅）。
-1. に移動 **担当販売ツール**.
-1. に移動します。 **支払いを受けリスクを管理** > **支払のブロック** をクリックして、 **更新**.
-1. **販売設定**&#x200B;を選択し、 **支払い受信設定**.
-1. 次の下 **偶発的支払いをブロック**、を選択 **いいえ、請求書 ID ごとに複数支払を許可します**.    ![paypal_allow_multiple_payments_per_invoice_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
-1. 一番下までスクロールして、 **保存**.
+1. [https://www.paypal.com](https://www.paypal.com/) でアカウントにログインします。
+1. **プロファイル**/**プロファイルと設定** （右上隅）をクリックします。
+1. **販売ツール** に移動します。
+1. **支払いを受け取り、リスクを管理**/**支払いをブロック** に移動し、「**更新**」をクリックします。
+1. **販売環境設定**、「**支払い受信環境設定**」をクリックします。
+1. 「**偶発支払のブロック**」で、「**いいえ、請求書 ID ごとに複数支払を許可します** を選択します。    ![paypal_allow_multiple_payments_per_invoice_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
+1. 一番下までスクロールして、「**保存**」をクリックします。
 
 ## 詳細情報
 
-* [偶発的な支払いをブロック](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) （PayPal 開発者向けドキュメント）
+* PayPal デベロッパードキュメントの [ 偶発的な支払いをブロック ](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments)。
 * ユーザーガイドの PayPal でのお支払い：
    * [PayPal Express チェックアウト](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html)
    * [その他の PayPal ソリューション](/docs/commerce-admin/stores-sales/payments/paypal/paypal.html)
 * 開発者向けドキュメントでは、
    * [クラウドインフラストラクチャ上のAdobe Commerce用に PayPal 支払い方法を設定](/docs/commerce-cloud-service/user-guide/configure-store/paypal.html)
-   * [支払い統合](https://developer.adobe.com/commerce/php/development/payments-integrations/)
+   * [Payments Integrations](https://developer.adobe.com/commerce/php/development/payments-integrations/)

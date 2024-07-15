@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # GitHub コミットからAdobe Commerce Composer インストール用のパッチを作成する
 
-を参照してください。 [「パッチの適用」の「カスタムパッチ」セクション](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [ パッチの適用」の「カスタムパッチ ](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) の節を参照してください。

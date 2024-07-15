@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # robots.txt が更新されない、またはデフォルト設定が表示されない
 
-この記事では、を設定した場合の解決策を説明します `robots.txt` 正しく、例：に従う [Adobe Commerce robots.txt のベストプラクティス](https://support.magento.com/hc/en-us/articles/360048754931) しかし、 `robots.txt` が更新されないか、デフォルト設定が表示される。
+この記事では、例えば [Adobe Commerce robots.txt のベストプラクティス ](https://support.magento.com/hc/en-us/articles/360048754931) に従って `robots.txt` を正しく設定したものの、`robots.txt` が更新されない、またはデフォルト設定が表示される場合の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ## 問題
 
-デフォルトを変更できません `robots.txt` の設定値。
+既定の `robots.txt` 設定を変更できません。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. 管理パネルにアクセスします。
-1. コンテンツの追加先 **コンテンツ** > デザイン > **設定** > **のカスタム指示を編集`robots.txt`** テキスト「hello」などのファイルに入力し、変更内容を保存します。
-1. にアクセスします `robots.txt` url。
+1. **コンテンツ**/デザイン/**設定**/**ファイルのカスタム命令（「hello」というテキストなど）`robots.txt`** 編集し、変更内容を保存します。
+1. `robots.txt` の URL にアクセスします。
 
-<u>期待される結果：</u>
-`robots.txt` には、保存されたテキストがあります。
+<u> 期待される結果：</u>
+`robots.txt` に保存されたテキストがあります。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
-`robots.txt` ファイルは変更されません。
+ファ `robots.txt` ルは変更されません。
 
 ## 原因：
 
@@ -42,8 +42,8 @@ ht-degree: 0%
 
 ## 解決策
 
-検索エンジンによるインデックス作成を有効にします。 参照： [検索エンジンによるインデックス作成の設定](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) 開発者向けドキュメントを参照してください。
+検索エンジンによるインデックス作成を有効にします。 開発者向けドキュメントの [ 検索エンジンによるインデックス作成の設定 ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) を参照してください。
 
 ## 関連資料
 
-* [サイトマップと検索エンジンロボットを追加](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) 開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) を参照してください。

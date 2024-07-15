@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される
 
-このトピックでは、web ブラウザーに「」と表示される場合の解決策について説明します&#x200B;*にプロキシできません*」と表示され、コンソールに
+このトピックでは、web ブラウザーに「*プロキシ不可*」と表示され、コンソールに以下が表示される場合の解決策について説明します
 
 ```
 ENOTFOUND
@@ -27,17 +27,17 @@ ENOTFOUND
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 * ブラウザーでAdobe Commerce ストアを読み込みます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 * Adobe Commerce ストアは、ブラウザーで通常どおり読み込まれます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-* Web ブラウザーに「」と表示されます&#x200B;*にプロキシできません*「エラーが発生し、コンソールに次のようなエラーが表示されます。
+* Web ブラウザーに「*プロキシ不可*」エラーが表示され、コンソールに次のようなエラーが表示されます。
 
 ```
     ENOTFOUND
@@ -51,9 +51,9 @@ NodeJS がAdobe Commerce ストアのホスト名を解決できません。
 ## 解決策
 
 1. Adobe Commerce ストアが複数の web ブラウザーに読み込まれていることを確認してください。
-1. ローカルの DNS サーバーまたは VPN を実行している場合は、次の場所にあるホストファイルにエントリを追加します `/etc/hosts`）を選択し、このドメインを手動でマッピングします（[ホストファイル編集の一般的な手順](https://linuxize.com/post/how-to-edit-your-hosts-file/)）に設定する必要があります。これにより、NodeJS が解決できます。
+1. ローカルの DNS サーバーまたは VPN を実行している場合は、ホストファイル（`/etc/hosts` にある）にエントリを追加し、このドメインを手動でマッピングして（[ ホストファイル編集に関する一般的な手順 ](https://linuxize.com/post/how-to-edit-your-hosts-file/)）、NodeJS が解決できるようにします。
 
 ## 関連資料
 
 * [Adobe Commerce ドキュメントのPWA Studio](https://magento.github.io/pwa-studio/)
-* [ツールとライブラリ](https://magento.github.io/pwa-studio/technologies/tools-libraries/)
+* [ ツールとライブラリ ](https://magento.github.io/pwa-studio/technologies/tools-libraries/)

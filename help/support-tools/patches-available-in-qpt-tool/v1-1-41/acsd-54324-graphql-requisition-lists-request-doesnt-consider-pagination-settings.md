@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54324:GraphQL `requisition_lists` リクエストがページネーションの設定を考慮しない
+# ACSD-54324:GraphQL `requisition_lists` リクエストでページネーションの設定が考慮されない
 
-ACSD-54324 パッチにより、GraphQLが原因で発生していた問題が修正されました `requisition_lists` リクエストがページネーションの設定を考慮せず、すべての結果を返します。 このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.41 がインストールされています。 パッチ ID は ACSD-54324 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-54324 パッチでは、GraphQL `requisition_lists` リクエストがページネーションの設定を考慮せず、すべての結果を返す問題を修正しています。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.41 がインストールされている場合に使用できます。 パッチ ID は ACSD-54324 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,20 +27,20 @@ ACSD-54324 パッチにより、GraphQLが原因で発生していた問題が�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-GraphQL `requisition_lists` リクエストがページネーションの設定を考慮せず、すべての結果を返します。
+GraphQL `requisition_lists` リクエストは、ページネーションの設定を考慮せず、すべての結果を返します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 管理者にログインし、に移動します。 **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+1. 管理者にログインし、**[!UICONTROL Admin]** / **[!UICONTROL Store]** / **[!UICONTROL Configuration]** / **[!UICONTROL General]** / **[!UICONTROL B2B Features]** に移動します。
 
-   * を設定 *[!UICONTROL Enable Requisition List]* 対象： *はい*.
+   * *[!UICONTROL Enable Requisition List]* を *はい* に設定します。
 
-1. フロントエンドにログインし、に移動します **[!UICONTROL My Requisition Lists]** トップメニューから、または **[!UICONTROL My Account]**&#x200B;を選択し、複数の購買依頼を作成します（例：7）。
-1. カスタマートークンを生成したら、以下のGraphQLを実行します `requisition_lists` 顧客のをクエリします。
+1. フロントエンドにログインし、トップメニューまたは **[!UICONTROL My Account]** から **[!UICONTROL My Requisition Lists]** に移動し、複数の購買依頼を作成します（例：7）。
+1. カスタマートークンを生成した後、以下のGraphQL `requisition_lists` クエリを実行して、カスタマーを検索します。
 
    * ページ・サイズが、作成した購買依頼リストの合計数より少ないことを確認します（例：4）
 
@@ -57,31 +57,31 @@ GraphQL `requisition_lists` リクエストがページネーションの設定�
    }
    ```
 
-1. の値 `total_count` フィールドには 7 と表示されますが、4 と表示されます。
+1. `total_count` フィールドの値が 7 を示し、4 を示す必要があることを確認します。
 
-   また、項目数が同じである必要がある場合は、7 と表示されます。 *ページサイズ*.
+   また、項目数が *ページサイズ* と同じである必要がある場合は、7 と表示されます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-* としてリストされた数 *ページサイズ* は次の場所で返されます `total_count` レコードの合計数ではありません。
-* 項目の数は *ページサイズ*.
+* *ページサイズ* としてリストされた数は、レコードの合計数ではなく、`total_count` の下に返されます。
+* 項目数は *ページサイズ* と同じです。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-レコードの合計数は、次の場所で返されます `total_count`次の場合でも *ページサイズ* が記載されています。
+*ページサイズ* が記載されている場合でも、レコードの合計数は `total_count` 下に返されます。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

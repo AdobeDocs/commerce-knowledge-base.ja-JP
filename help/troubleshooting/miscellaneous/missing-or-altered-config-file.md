@@ -21,22 +21,22 @@ ht-degree: 0%
 
 ## 問題
 
-設定ファイル `config.php` および/または `env.php` が誤って変更されたか、見つかりません。
+設定ファイル `config.php` や `env.php` が誤って変更されたか、見つかりません。
 
 ## 解決策
 
 デプロイメントプロセスでは、設定ファイルごとにバックアップファイルが作成されます。
 
-* `app/etc/config.php.bak` — システム固有の設定を含み、存在しない場合はビルド時に自動生成されます
-* `app/etc/env.php.bak`  – 機密の構成データを含む
+* `app/etc/config.php.bak` - システム固有の設定を含み、存在しない場合はビルド時に自動生成されます
+* `app/etc/env.php.bak` – 機密の構成データを含む
 
-ECE ツールを使用して復元できます `backup:restore` コマンド。
+ECE-tools `backup:restore` コマンドを使用して復元できます。
 
 BAK ファイルは、デプロイメントプロセスの産物です。 デプロイ後に手動で設定ファイルを変更した場合、変更内容は既存の BAK ファイルには反映されません。
 
 設定ファイルを復元するには：
 
-1. を使用してリモートリポジトリにログインします。 [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+1. [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) を使用してリモートリポジトリにログインします。
 1. 使用可能なバックアップファイルのリストを表示します。
 
    ```
@@ -62,7 +62,7 @@ BAK ファイルは、デプロイメントプロセスの産物です。 デプ
    app/etc/config.php file exists! If you want to rewrite existed files use --force
    ```
 
-1. の使用 `--force` すべてのファイルを上書きするオプション。
+1. `--force` オプションを使用して、すべてのファイルを上書きします。
 
    ```
    ./vendor/bin/ece-tools backup:restore --force

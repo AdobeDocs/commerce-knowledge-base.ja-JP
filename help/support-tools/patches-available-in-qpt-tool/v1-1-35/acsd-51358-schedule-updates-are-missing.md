@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-51358: スケジュールの更新がありません
 
-ACSD-51358 パッチでは、終了日を指定せずにスケジュールされた更新で変更を行うと、同じエンティティ上の他のスケジュールされた更新が削除される問題が修正されています。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.35 がインストールされています。 パッチ ID は ACSD-51358 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-51358 パッチでは、終了日を指定せずにスケジュールされた更新で変更を行うと、同じエンティティ上の他のスケジュールされた更新が削除される問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.35 がインストールされている場合に使用できます。 パッチ ID は ACSD-51358 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,38 +27,38 @@ ACSD-51358 パッチでは、終了日を指定せずにスケジュールされ
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 終了日を指定せずにスケジュール済み更新を変更すると、同じエンティティ上の他のスケジュール済み更新が削除されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. を作成 **[!UICONTROL scheduled update]** 終了日（*更新 1*）に設定します。
-1. 新規作成 **[!UICONTROL scheduled update]** 開始日が最初の更新と同じ、ただし翌日と終了日を追加する（*更新 2*）に設定します。
-1. 編集 **[!UICONTROL scheduled update]** 手順 1 で作成（*更新 1*）を選択して、変更内容を保存します。
+1. 終了日のない **[!UICONTROL scheduled update]** を作成します（*更新 1*）。
+1. 最初の更新と同じ開始日で、次の日と終了日（*更新 2*）を追加する新しい **[!UICONTROL scheduled update]** を作成します。
+1. 手順 1 （*更新 1*）で作成した **[!UICONTROL scheduled update]** を編集して、変更を保存します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
-この（*更新 2*）は、に残す必要があります。 **[!UICONTROL schedule update]** リスト条件（*更新 1*）が編集されました。
+（*update 1*）を編集した場合、（*update 2*）は **[!UICONTROL schedule update]** のリストに残ります。
 
-<u>実際の結果</u>
+<u> 実績 </u>
 
-この（*更新 2*）がから削除されました **[!UICONTROL schedule update]** リスト条件（*更新 1*）が編集されました。
+（*update 2*）は、（*update 1*）が編集されたときに、**[!UICONTROL schedule update]** のリストから削除されました。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>)」を参照してください。

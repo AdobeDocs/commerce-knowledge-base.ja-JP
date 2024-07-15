@@ -25,12 +25,12 @@ ht-degree: 0%
 
 プロジェクトからユーザーを削除して通知を停止するには、次の 2 つの方法があります。
 
-* 方法 1：クラウドの使用 [!DNL Project URL]. こちらを参照してください [ユーザーアクセスの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) 手順については、クラウドインフラストラクチャー上のCommerce ガイドを参照してください。
-* 方法 2:magento-cloud の使用 [!DNL CLI]. こちらを参照してください [を使用したユーザー管理 [!DNL CLI]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-with-the-cli) 手順については、クラウドインフラストラクチャー上のCommerce ガイドを参照してください。
+* 方法 1:Cloud [!DNL Project URL] の使用。 手順については、クラウドインフラストラクチャー上のCommerce ガイドの [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) を参照してください。
+* 方法 2:magento-cloud [!DNL CLI] の使用。 手順については、クラウドインフラストラクチャー上のCommerce ガイドの [ を使用したユーザーの管理  [!DNL CLI]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-with-the-cli) を参照してください。
 
-この操作が既に実行されているのに、これらのユーザーが引き続きメール通知に含まれる場合は、サポートチケットを送信して、 *[!UICONTROL Always CC]* アカウントの設定。
+この操作が既に実行されていて、さらにメール通知にこれらのユーザーが引き続き含まれる場合は、サポートチケットを送信して、アカウントの *[!UICONTROL Always CC]* 設定からユーザーを削除するようにリクエストします。
 
 ## 関連資料
 
-* [ユーザーのプロジェクトの役割を表示する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user&#39;s-project-role) （クラウドインフラストラクチャーに関するCommerceのガイド）を参照してください。
-* [サポート通知にチームメンバーを含める方法](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html) （Commerce KB 内）
+* Commerce on cloud infrastructure ガイドの [ ユーザーのプロジェクトの役割を表示 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user&#39;s-project-role) します。
+* Commerce KB で [ サポート通知にチームメンバーを含める方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html)

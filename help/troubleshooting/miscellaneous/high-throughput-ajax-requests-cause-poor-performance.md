@@ -36,22 +36,22 @@ ht-degree: 0%
 
 次の 3 つの解決策があります。
 
-* [バージョン 2.3.4 へのアップグレード](https://devdocs.magento.com/cloud/project/project-upgrade.html). これが現在不可能な場合、 [問題を修正するパッチをインストールします](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md).
+* [ バージョン 2.3.4 へのアップグレード ](https://devdocs.magento.com/cloud/project/project-upgrade.html)。 これが現在不可能な場合は、[ 問題を修正するパッチをインストールしてください ](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md)。
 * 軽いリクエスト（キャッシュリクエストまたは顧客のプライベートコンテンツへの移動）を確保します。
 * リクエストの数を減らします。
 
-<u>リクエストの軽減（リクエストのキャッシュまたは顧客のプライベートコンテンツへの移動）</u>
+<u> 軽量なリクエストの確保（キャッシュリクエストまたは顧客のプライベートコンテンツへの移動） </u>
 
-各ページでトリガーされるサードパーティのAJAX リクエストがある場合は、これらのリクエストをキャッシュするか、顧客のプライベートコンテンツに移動しようとします。 これを行うには、マーチャントがGET HTTP メソッドを使用してカスタム AJAX リクエストを呼び出すようにします。 これにより、これらのリクエストが Fastly でキャッシュできるようになります。 キャッシュしてはいけないカスタム AJAX リクエストがある場合は、プライベートコンテンツ機能に従ってリファクタリングする必要があります。 手順については、を参照してください。 [非公開コンテンツ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html) 開発者向けドキュメントを参照してください。
+各ページでトリガーされるサードパーティのAJAX リクエストがある場合は、これらのリクエストをキャッシュするか、顧客のプライベートコンテンツに移動しようとします。 これを行うには、マーチャントがGET HTTP メソッドを使用してカスタム AJAX リクエストを呼び出すようにします。 これにより、これらのリクエストが Fastly でキャッシュできるようになります。 キャッシュしてはいけないカスタム AJAX リクエストがある場合は、プライベートコンテンツ機能に従ってリファクタリングする必要があります。 手順については、開発者向けドキュメントの [ 非公開コンテンツ ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html) を参照してください。
 
-<u>リクエストの数を減らす</u>
+<u> リクエストの数を減らす </u>
 
-* 永続的な買い物かごを無効にすると、の数が増える可能性があります。 `customer/section/load` リクエスト。 の手順に従います [永続的な買い物かごパス](https://devdocs.magento.com/guides/v2.3/config-guide/prod/config-reference-most.html#persistent-shopping-cart-paths) アドビの開発者向けドキュメントで、永続的な買い物かごが有効になっているかどうかを確認します。
-* でコンテンツの再読み込みまたは無効化が必要な場合 `sections.xml` の手順に従います [プライベートコンテンツ：プライベートコンテンツを無効にします](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html#invalidate-private-content) 開発者向けドキュメントを参照してください。 を使用していないことを確認してください `customerData.reload()` メソッドをカスタマイズ内で直接実行します。
-* 同じページ上の他のPOST AJAX リクエストを確認します。 Google Chrome ブラウザーで、Google Chrome デベロッパーツールを開きます。 「」をクリック **ネットワーク** tab キーを押してから、 **XHR** タブをクリックすると、特定のページからのすべてのAJAX リクエストのリストが表示されます。 次に、各リクエストをクリックし、フィールドでリクエストメソッドをGETリクエストにする必要があります。 メモ：Google Chrome は例として使用され、他のブラウザーでも同様に実行できます。
+* 永続的な買い物かごを無効にすると、`customer/section/load` リクエストの数が増える可能性があります。 アドビの開発者ドキュメントの [ 永続的な買い物かごのパス ](https://devdocs.magento.com/guides/v2.3/config-guide/prod/config-reference-most.html#persistent-shopping-cart-paths) の手順に従って、永続的な買い物かごが有効になっているかどうかを確認します。
+* でコンテンツの再読み込みまたは無効化が必要な場合は `sections.xml` 開発者向けドキュメントの [ プライベートコンテンツ：プライベートコンテンツの無効化 ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html#invalidate-private-content) の手順に従ってください。 カスタマイズで `customerData.reload()` メソッドを直接使用していないことを確認してください。
+* 同じページ上の他のPOST AJAX リクエストを確認します。 Google Chrome ブラウザーでGoogle Chrome開発者ツールを開きます。 「**Network**」タブをクリックしてから「**XHR**」タブをクリックすると、特定のページからのすべてのAJAX リクエストのリストが表示されます。 次に、各リクエストをクリックし、フィールドでリクエストメソッドをGETリクエストにする必要があります。 メモ：Google Chromeは例として使用され、他のブラウザーでも同様に実行できます。
 * Google Tag Manager （GTM）機能を確認します。これは特定のAJAX リクエストです。 ユーザーはこのAJAXを削除し、プライベート機能を使用してカスタマイズをリファクタリングして、サーバーへのリクエストの合計数を減らすことができます。
-* Adobe Commerceのバナーが有効になっているが、使用されていないことを確認します。 次が必要になる場合があります [サイトのパフォーマンスを向上させるために、Adobe Commerce バナーの出力を無効にします](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md).
+* Adobe Commerceのバナーが有効になっているが、使用されていないことを確認します。 サイトのパフォーマンスを向上させるには、[Adobe Commerce バナーの出力を無効にする ](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) ことが必要になる場合があります。
 
 ### 関連資料
 
-個人顧客コンテンツの詳細については、を参照してください。 [非公開コンテンツ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=ajax%20requests) 開発者向けドキュメントを参照してください。
+非公開の顧客コンテンツについて詳しくは、開発者向けドキュメントの [ 非公開コンテンツ ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=ajax%20requests) を参照してください。

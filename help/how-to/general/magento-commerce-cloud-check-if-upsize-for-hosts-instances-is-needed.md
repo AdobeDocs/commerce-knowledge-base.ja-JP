@@ -20,4 +20,4 @@ ht-degree: 0%
 
 ## 記事のダウンロード
 
-クリック [Check_if_an_upsize_is_needed.pdf](assets/Check_whether_an_upsize_is_needed.pdf) 記事をダウンロードします。
+[Check_if_an_upsize_is_needed.pdf](assets/Check_whether_an_upsize_is_needed.pdf) をクリックして、記事をダウンロードします。

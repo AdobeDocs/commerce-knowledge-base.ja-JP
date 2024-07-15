@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-50345：チェックアウト中の reCAPTCHA の問題
 
-ACSD-50345 パッチは、注文処理中およびチェックアウト中に reCAPTCHA v2 と v3 の検証が失敗する問題を修正します。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.31 がインストールされています。 パッチ ID は ACSD-50345 です。 この問題はAdobe Commerce 2.4.6 で部分的に修正され、Adobe Commerce 2.4.7 で完全に修正される予定であることに注意してください。
+ACSD-50345 パッチは、注文処理中およびチェックアウト中に reCAPTCHA v2 と v3 の検証が失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.31 がインストールされている場合に使用できます。 パッチ ID は ACSD-50345 です。 この問題はAdobe Commerce 2.4.6 で部分的に修正され、Adobe Commerce 2.4.7 で完全に修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ ACSD-50345 パッチは、注文処理中およびチェックアウト中に re
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -35,51 +35,51 @@ ACSD-50345 パッチは、注文処理中およびチェックアウト中に re
 
 Google reCAPTCHA v2 が、支払いに失敗した後、リロードされない。
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
-1. 設定 **[!UICONTROL Google reCAPTCHA v2]** （*私はロボットではありません*）に設定します。
-1. を有効にする **[!UICONTROL reCAPTCHA]** チェックアウト用。
-1. をクリックせずに注文してみてください **[!UICONTROL reCAPTCHA]**.
-1. ユーザーが、欠落している reCAPTCHA （*reCAPTCHA 検証に失敗しました。再試行してください*）、をクリックします。 **[!UICONTROL reCAPTCHA]** その後、注文してみてください。
+1. **[!UICONTROL Google reCAPTCHA v2]** を設定します *私はロボットではありません*）。
+1. チェックアウトの **[!UICONTROL reCAPTCHA]** を有効にします。
+1. **[!UICONTROL reCAPTCHA]** をクリックせずに注文してみてください。
+1. ユーザーが欠落している reCAPTCHA に関するエラーメッセージを受け取ったら（*reCAPTCHA 検証に失敗しました。もう一度試してください*）、**[!UICONTROL reCAPTCHA]** をクリックして注文を試します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 間違った reCAPTCHA で注文されることはありません。
 
-<u>実際の結果</u>
+<u> 実績 </u>
 
-エラーが発生しました –  *reCAPTCHA 検証に失敗しました。再試行してください* および *ID = 4 のカートがありません*
+エラーがスローされました – *reCAPTCHA 検証に失敗しました。もう一度試してください* と *ID = 4 のそのような買い物かごはありません*
 
 **事例#2**
 
-Google reCAPTCHA v3 Invisible がチェックアウト時に機能せず、注文できません。 `PlaceOrder` イベントがトリガーされない。
+Google reCAPTCHA v3 Invisible がチェックアウト時に機能せず、注文できません。 `PlaceOrder` イベントはトリガーされません。
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
-1. の設定 **[!UICONTROL reCAPTCHA v3 Invisible]** から **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]**.
-1. Enable （有効） **[!UICONTROL reCAPTCHA v3 Invisible]** の下でのチェックアウト/注文 **[!UICONTROL Storefront]** タブ。
-1. を使用して注文してみてください [!UICONTROL Check/Money order] 支払い方法。
+1. **[!UICONTROL Store]**/**[!UICONTROL Configuration]**/**[!UICONTROL Security]** から **[!UICONTROL reCAPTCHA v3 Invisible]** を設定します。
+1. 「**[!UICONTROL Storefront]**」タブで、注文のチェックアウト/発注の **[!UICONTROL reCAPTCHA v3 Invisible]** を有効にします。
+1. [!UICONTROL Check/Money order] の支払い方法で注文してみてください。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
-注文は、 **[!UICONTROL reCAPTCHA]** オン。
+**[!UICONTROL reCAPTCHA]** をオンにして注文する必要があります。
 
-<u>実際の結果</u>
+<u> 実績 </u>
 
-をクリックした後 **[!UICONTROL Place Order]** ボタンをクリックすると無効になり、それ以上何も起こりません。
+**[!UICONTROL Place Order]** ボタンをクリックすると、無効になり、それ以上何も起こりません。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

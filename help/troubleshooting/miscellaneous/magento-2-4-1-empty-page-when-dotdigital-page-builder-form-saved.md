@@ -22,19 +22,19 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
-1. に移動 **管理パネル** > **コンテンツ** > **ページ**&#x200B;を選択し、 **編集** （任意のページ）。
-1. に移動 **コンテンツ** 「」をクリックします。 **ページビルダーで編集** ボタン。
-1. をドラッグ **dotdigital フォーム** ブロックして選択 **編集**.
-1. いずれかのテストフォームを選択してから、選択します **埋め込み** モードしてフォームを保存します。
+1. **管理パネル**/**コンテンツ**/**ページ** に移動し、任意のページの **編集** を選択します。
+1. **コンテンツ** に移動し、「**ページビルダーで編集** ボタンをクリックします。
+1. **dotdigital フォーム** ブロックをドラッグして、「**編集**」を選択します。
+1. テストフォームの 1 つを選択してから、**埋め込み** モードを選択してフォームを保存します。
 1. ページ変更を保存します。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 Web ページは正常に保存されます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 Web ページは空です。 Web ページを再読み込みすると、変更が適用されます。
 
@@ -44,7 +44,7 @@ Web ページは空です。 Web ページを再読み込みすると、変更�
 
 ## 関連資料
 
-* [ページビルダーとは](https://devdocs.magento.com/page-builder/docs/) 開発者向けドキュメントを参照してください。
-* [ページビルダーの設定](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) 開発者向けドキュメントを参照してください。
-* [ページビルダー](https://docs.magento.com/user-guide/cms/page-builder.html) を参照してください。
-* [ページビルダー – 要素](https://docs.magento.com/user-guide/cms/page-builder-elements.html) を参照してください。
+* [ ページビルダーとは？開発者向けドキュメントを ](https://devdocs.magento.com/page-builder/docs/) 照してください。
+* 開発者向けドキュメントの [ ページビルダーの設定 ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html)。
+* ユーザーガイドの [ ページビルダー ](https://docs.magento.com/user-guide/cms/page-builder.html)。
+* ユーザーガイドの [ ページビルダー – 要素 ](https://docs.magento.com/user-guide/cms/page-builder-elements.html)。

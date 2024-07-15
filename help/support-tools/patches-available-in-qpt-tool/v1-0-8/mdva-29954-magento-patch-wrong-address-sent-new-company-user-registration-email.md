@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-29954：間違ったアドレスが新しい会社ユーザー登録メールを送信しました
 
-MDVA-29954 パッチを使用すると、「新しい会社の登録リクエスト」と「会社へのリンクが完了しました」というメールが、誤ったメールアドレスから送信される問題を解決できます。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.8 がインストールされています。 この問題はAdobe Commerce 2.4.2 で修正されました。
+MDVA-29954 パッチを使用すると、「新しい会社の登録リクエスト」と「会社へのリンクが完了しました」というメールが、誤ったメールアドレスから送信される問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.8 がインストールされている場合に使用できます。 この問題はAdobe Commerce 2.4.2 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,46 +27,46 @@ MDVA-29954 パッチを使用すると、「新しい会社の登録リクエス
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-B2B と共にAdobe Commerceをインストール **B2B の機能** および **会社** 有効。
+**B2B 機能を備え、** 会社 **が有効になっている B2B** Adobe Commerceをインストールします。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 「」をクリック **アカウントを作成** ストアフロントのドロップダウンで、 **新しい会社アカウントを作成**.
+1. ストアフロントの **アカウントを作成** ドロップダウンをクリックし、**新しい会社アカウントを作成** を選択します。
 1. 必須フィールドに入力し、アカウントを登録します。
-1. を有効にする **会社** バックエンドから（**顧客** > **会社**）に設定します。
+1. バックエンド（**顧客**/**会社**）から **会社** を有効にします。
 1. 登録に使用したメールアドレスを確認します。
-1. を **会社の管理者パスワード** メールで送信された手順に従います。
-1. でフロントエンドにログインします。 **会社の管理者パスワード**.
-1. 新しいを作成 **会社ユーザー** 。対象： **マイアカウント** > **会社のユーザー** > **新規ユーザーの追加**.
-1. に移動 **ストア** > **設定** > **一般ストアのメールアドレス** > **一般連絡先**、およびチェック **送信者のメール**.
-1. の登録に使用したメールに移動します **新規ユーザー** 手順 7 の場合。
+1. メールで送信された手順に従って、**会社管理者パスワード** を設定します。
+1. **会社管理者パスワード** を使用して、フロントエンドにログインします。
+1. **マイアカウント**/**会社ユーザー**/**新しいユーザーの追加** に新しい **会社ユーザー** を作成します。
+1. **ストア**/**設定**/**一般ストアのメールアドレス**/**一般連絡先** に移動し、「**送信者のメール**」にチェックを入れます。
+1. 手順 7 で **新規ユーザー** の登録に使用したメールに移動します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-「あなたは会社にリンクされています」というメールが、と同じ値のメールアドレスから送信されます **送信者のメール** 手順 8 の場合。
+「あなたが会社にリンクされている」メールは、手順 8 の **送信者メール** と同じ値を持つメールアドレスから送信されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-「あなたは会社にリンクされています」というメールが **会社管理者** 電子メール。
+「あなたは会社にリンクされています」というメールが **会社管理者** メールから送信されます。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

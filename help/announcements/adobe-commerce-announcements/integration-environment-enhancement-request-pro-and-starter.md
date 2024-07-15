@@ -19,19 +19,19 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのお�
 >
 > 拡張統合にアップグレードすると、サードパーティの統合やカスタマイズを含むインストールの総リソース要件に応じてパフォーマンス上の問題がすべて解決されるわけではありません。
 >
-> また、統合環境でのベストパフォーマンスを得るために、ベストプラクティスに従っていることを確認する必要があります。さらに、それがエンドオールのソリューションではない場合もあります。 詳しくは、次のドキュメントを参照してください。 [Pro アーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) および [スターターアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) （Commerce on Cloud Infrastructure ガイド）を参照してください。
+> また、統合環境でのベストパフォーマンスを得るために、ベストプラクティスに従っていることを確認する必要があります。さらに、それがエンドオールのソリューションではない場合もあります。 Commerce on Cloud Infrastructure ガイドのガイダンス「[Pro アーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) および [ スターターアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)」については、次のドキュメントを参照してください。
 
 ## プロ
 
-1. Pro を使用している場合をアップグレードするには、統合ブランチの数を 2 に減らす必要があります（**main Integration ブランチが合計に含まれます**）に設定します。 **注意：この合計にプライマリ・ブランチはカウントしないでください。 プライマリブランチは統合ブランチとは見なされません。** の手順に従います [Cloud Console を使用したブランチの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) 開発者向けドキュメントを参照してください。
-1. 商人は必要があります [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 連絡先理由「」を使用して、拡張統合環境へのアップグレードをリクエストする&#x200B;*クラウド設定変更のリクエスト*」と入力します。
+1. Pro を使用している場合をアップグレードするには、統合ブランチの数を 2 つに減らす必要があります（**メインの統合ブランチが合計に含まれます**）。 **注意：この合計でプライマリ・ブランチはカウントしないでください。 プライマリブランチは統合ブランチとは見なされません。** 開発者向けドキュメントの [Cloud Console を使用したブランチの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) の手順に従います。
+1. マーチャントは、問い合わせ理由 [ クラウド設定の変更をリクエスト ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)」を使用して、拡張統合環境へのアップグレードをリクエスト *サポートチケットを送信* する必要があります。
 1. Adobeカスタマー・エンジニアリング・チームが統合環境の数を確認し、変更を開始します。
 1. アップグレードが完了すると、マーチャントにチケットで通知されます。
-1. マーチャントは統合環境をデプロイします。 の手順に従います [ブランチの結合](https://devdocs.magento.com/cloud/env/environments-start.html#merge) 開発者向けドキュメントを参照してください。 *注意*：デプロイメントは次を実行すると自動的に行われます。 <pre>git プッシュオリジン <branch-name></pre>
+1. マーチャントは統合環境をデプロイします。 開発者向けドキュメントの [ ブランチの結合 ](https://devdocs.magento.com/cloud/env/environments-start.html#merge) の手順に従います。 *注意*：デプロイメントは次の場合に自動的に行われます。 <pre>git プッシュオリジン <branch-name></pre>
 
 パフォーマンスが向上した場合は、拡張統合環境に正常にアップグレードされたことを示します。
 
-**備考**:
+**注**:
 
 * 標準サイズと拡張サイズの 2 種類しか使用できません。
 * 特定のストアのすべての統合環境のサイズは同じなので、個別にサイズ変更することはできません。
@@ -39,15 +39,15 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのお�
 
 ## スターター
 
-1. スタータープランには統合分岐を含めることはできません。マーチャントは統合環境を削除し、ステージング環境のみから移動する必要があります。 の手順に従います [Cloud Console を使用したブランチの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) 開発者向けドキュメントを参照してください。 利用可能な環境の数が減り、最大 1 つの統合環境が可能になります。
-1. 商人は必要があります [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 連絡先理由を使用して、拡張統合環境へのアップグレードをリクエストする *「クラウド設定の変更をリクエスト」* -  **ステージング環境は名前付き統合環境です**.
+1. スタータープランには統合分岐を含めることはできません。マーチャントは統合環境を削除し、ステージング環境のみから移動する必要があります。 開発者向けドキュメントの [Cloud Console を使用したブランチの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) の手順に従います。 利用可能な環境の数が減り、最大 1 つの統合環境が可能になります。
+1. マーチャントは、問い合わせ理由 [ 「クラウド設定の変更をリクエスト ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)」 *-**ステージング環境は名前付き統合環境です* を使用して、拡張統合環境へのアップグレードをリクエストするサポートチケットを送信** する必要があります。
 1. Adobeカスタマー・エンジニアリング・チームが統合環境の数を確認し、変更を開始します。
 1. アップグレードが完了すると、マーチャントにチケットで通知されます。
-1. マーチャントは統合環境をデプロイします。 の手順に従います [ブランチの結合](https://devdocs.magento.com/cloud/env/environments-start.html#merge) 開発者向けドキュメントを参照してください。 *注意*：デプロイメントは次を実行すると自動的に行われます。 <pre>git プッシュオリジン <branch-name></pre>
+1. マーチャントは統合環境をデプロイします。 開発者向けドキュメントの [ ブランチの結合 ](https://devdocs.magento.com/cloud/env/environments-start.html#merge) の手順に従います。 *注意*：デプロイメントは次の場合に自動的に行われます。 <pre>git プッシュオリジン <branch-name></pre>
 
 パフォーマンスが向上した場合は、拡張統合環境に正常にアップグレードされたことを示します。
 
-**備考**:
+**注**:
 
 * 標準サイズと拡張サイズの 2 種類しか使用できません。
 * 特定のストアのすべての統合環境のサイズは同じなので、個別にサイズ変更することはできません。

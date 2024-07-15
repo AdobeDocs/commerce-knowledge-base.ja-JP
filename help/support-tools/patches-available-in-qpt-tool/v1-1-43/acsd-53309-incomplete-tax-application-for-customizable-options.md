@@ -1,6 +1,6 @@
 ---
-title: 「ACSD-53309：カスタマイズ可能なオプションの不完全な税金適用および [!UICONTROL Regular Price] ラベル`
-description: ACSD-53309 パッチを適用して、「」に税金が完全には適用されないAdobe Commerceの問題を修正してください[!UICONTROL Regular Price]カスタマイズ可能なオプションが選択された場合の「ラベル。
+title: 「ACSD-53309：カスタマイズ可能なオプションと [!UICONTROL Regular Price] ラベルの不完全な税金適用」
+description: カスタマイズ可能なオプションが選択されている場合に、「[!UICONTROL Regular Price]」ラベルに税金が完全に適用されないAdobe Commerceの問題を修正するために、ACSD-53309 パッチを適用します。
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
 exl-id: de9b151e-6f92-4231-9e9f-4818c2961782
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-53309：カスタマイズ可能なオプションおよび「」の不完全な税金適用[!UICONTROL Regular Price]ラベル
+# ACSD-53309：カスタマイズ可能なオプションと「[!UICONTROL Regular Price]」ラベルの不完全な税金適用
 
-ACSD-53309 パッチは、「」で税金が完全に適用されない問題を修正しました[!UICONTROL Regular Price]カスタマイズ可能なオプションが選択された場合の「ラベル。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.43 がインストールされています。 パッチ ID は ACSD-53309 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-53309 パッチは、カスタマイズ可能なオプションが選択されている場合に、「[!UICONTROL Regular Price]」ラベルに税金が完全に適用されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.43 がインストールされている場合に使用できます。 パッチ ID は ACSD-53309 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,16 +27,16 @@ ACSD-53309 パッチは、「」で税金が完全に適用されない問題を
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-税金が「」に完全に反映されていません[!UICONTROL Regular Price]カスタマイズ可能なオプションが選択された場合の「ラベル。
+カスタマイズ可能なオプションが選択された場合、税金は「[!UICONTROL Regular Price]」ラベルに完全に反映されません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 管理パネルにログインします。
-1. に移動します。 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** 税金設定を構成します。
+1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Tax]** に移動して、税金設定を構成します。
 
    * [!UICONTROL Tax Classes]:
 
@@ -64,9 +64,9 @@ ACSD-53309 パッチは、「」で税金が完全に適用されない問題を
       * [!UICONTROL Display Subtotal] = [!UICONTROL Including Tax]
       * [!UICONTROL Display Shipping Amount] = [!UICONTROL Including Tax]
 
-1. を設定 **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** > **[!UICONTROL Country]** = *英国*.
+1. **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** > **[!UICONTROL Country]** = *英国* を設定します。
 
-1. 以下を作成します *[!UICONTROL Tax Rate]* および *[!UICONTROL Tax Rules]*:
+1. 次の *[!UICONTROL Tax Rate]* と *[!UICONTROL Tax Rules]* を作成します。
 
    * [!UICONTROL Country] =米国
    * [!UICONTROL Zip Code] = *
@@ -77,30 +77,30 @@ ACSD-53309 パッチは、「」で税金が完全に適用されない問題を
    * [!UICONTROL Special Price = 100]
    * ドロップダウンで、「タイプ」を「カスタムオプション」に設定し、価格を 15% に設定します
 1. ストアフロントで作成されたシンプルなアイテムの製品ページに移動します。
-1. 作成したカスタムオプションを選択します。 *15%*.
+1. 作成したカスタム オプション *15%* を選択します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 * 選択したカスタムオプションに 20% の税金が適用されます。
-* &#39;[!UICONTROL Regular Price]&#39; = 151.80。
+* 「[!UICONTROL Regular Price]」 = 151.80。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 * 選択したカスタムオプションには 20% の税金は適用されません。
-* &#39;[!UICONTROL Regular Price]&#39; = 148.50。
+* 「[!UICONTROL Regular Price]」 = 148.50。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

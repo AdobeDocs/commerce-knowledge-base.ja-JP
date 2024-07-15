@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウド上のスタータープラン用に Fastly を設定する
 
-を参照してください。 [Fastly の設定](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [Fastly の設定 ](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html) を参照してください。

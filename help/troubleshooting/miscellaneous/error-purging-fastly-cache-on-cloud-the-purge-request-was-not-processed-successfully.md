@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # クラウド上の Fastly キャッシュをパージする際にエラーが発生しました（パージリクエストが正常に処理されませんでした）
 
-この記事では、Fastly パージオプションを使用し、次のエラーが表示された場合の修正方法を説明します。 *パージリクエストが正常に処理されませんでした*. Fastly は、クラウドインフラストラクチャーのプランと実装に関するAdobe Commerceに含まれる CDN およびキャッシュサービスです。 Fastly のパージオプションを使用しようとして、処理されない場合、環境に間違った Fastly 資格情報が存在するか、問題が発生した可能性があります。
+この記事では、Fastly パージオプションを使用し、「*パージリクエストが正常に処理されませんでした* というエラーが表示される場合の修正方法を説明します。 Fastly は、クラウドインフラストラクチャーのプランと実装に関するAdobe Commerceに含まれる CDN およびキャッシュサービスです。 Fastly のパージオプションを使用しようとして、処理されない場合、環境に間違った Fastly 資格情報が存在するか、問題が発生した可能性があります。
 
 この情報は、ライブサイトおよびオリジンサーバーの Fastly ヘッダーを検証およびテストするのに役立ちます。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 お使いの環境に正しい Fastly サービス ID と API トークンがあるかどうかを確認します。 実稼動環境にステージング資格情報がある場合、パージが正しく処理されないか、正しく処理されない可能性があります。
 
 1. 管理者として、ローカルのCommerce管理者にログインします。
-1. クリック **ストア** > 設定 > **設定** > **詳細** > **システム** を展開します **フルページキャッシュ**.    ![magento_full_page_cache_2.4.1.png](assets/magento_full_page_cache_2.4.1.png)
+1. **ストア**/設定/**設定**/**詳細**/**システム** をクリックし、「**フルページキャッシュ**」を展開します。    ![magento_full_page_cache_2.4.1.png](assets/magento_full_page_cache_2.4.1.png)
 1. Fastly 設定を展開し、お使いの環境の Fastly サービス ID と API トークンを確認します。
 1. 値を変更する場合は、「認証情報をテスト」をクリックします。
 
@@ -49,12 +49,12 @@ ht-degree: 0%
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-VCL のリストを確認します。 Fastly のデフォルト VCL に問題がある場合は、もう一度アップロードするか、以下に従ってコンテンツを確認することができます。 [Fastly のデフォルト VCL](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). カスタム VCL の編集については、を参照してください [カスタム Fastly VCL スニペット](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) （Commerce on Cloud Infrastructure ガイド）を参照してください。
+VCL のリストを確認します。 Fastly のデフォルト VCL に問題がある場合は、再度アップロードするか、[Fastly のデフォルト VCL](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) に従ってコンテンツを確認することができます。 Commerce カスタム VCL の編集については、『 Cloud Infrastructure ガイド』の [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を参照してください。
 
 ## 詳細情報
 
 開発者向けドキュメントでは、
 
-* [Fastly について](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Fastly の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [カスタム Fastly VCL スニペット](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Fastly について ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Fastly のセットアップ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

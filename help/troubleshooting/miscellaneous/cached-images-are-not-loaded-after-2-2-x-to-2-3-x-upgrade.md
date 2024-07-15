@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Adobe Commerceを 2.2.X から 2.3.X にアップグレードすると、キャッシュされた商品画像は使用できなくなり、代わりに 404 ページが表示されます。
 
-この問題は、で設定された Nginx 設定が正しくないことが原因です `.magento.app.yaml`: `index.php` は（またはなにも）使用されません `"/media"` 場所 `passthru: /get.php`.
+この問題は、`.magento.app.yaml` に設定された Nginx の設定が正しくないことが原因です。`passthru: /get.php` の代わりに `"/media"` の場所に `index.php` （またはなし）が使用されます。
 
 ## 解決策
 
-1. を確認 `.magento.app.yaml` 設定ファイル（） `"/media"` 場所。 正しい設定は次のようになります。
+1. `"/media"` の場所にある `.magento.app.yaml` 設定ファイルを確認します。 正しい設定は次のようになります。
 
    ```yaml
    "/media":
@@ -38,13 +38,13 @@ Adobe Commerceを 2.2.X から 2.3.X にアップグレードすると、キャ�
        passthru: "/get.php"
    ```
 
-1. 次の場合 `passthru` はに設定されていません `"/get.php"` および `expires` が設定されていない場合は、次の手順を実行します。
+1. `passthru` が `"/get.php"` に設定されておらず、`expires` も設定されていない場合は、次の手順に従います。
 1. 設定ファイルを修正します。
    * スタータープラン：自分でファイルを修正し、変更をプッシュします。
    * Pro プラン：
    * 統合：自分でファイルを修正して、変更をプッシュします。
-   * ステージングと実稼動：自分でファイルを修正し、変更をプッシュして、 [Adobe Commerce サポートチケット](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 適用する。
+   * ステージングと実稼動：自分でファイルを修正し、変更をプッシュし、[Adobe Commerce サポートチケットを作成して ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 適用させます。
 
-1. の説明に従って、Commerce Admin で Fastly 画像の最適化を有効にします（Fastly を事前に設定する必要があります）。 <https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-image-optimization.html>.
+1. <https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-image-optimization.html> の説明に従って、Commerce Admin で Fastly 画像の最適化を有効にします（Fastly は事前に設定する必要があります）。
 
-設定が正しいにもかかわらず、まだ問題が発生している場合は、調査または問い合わせを続行します [Adobe Commerce サポート](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+設定が正しいにもかかわらず問題が解決しない場合は、調査を続行するか、[Adobe Commerce サポート ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にお問い合わせください。

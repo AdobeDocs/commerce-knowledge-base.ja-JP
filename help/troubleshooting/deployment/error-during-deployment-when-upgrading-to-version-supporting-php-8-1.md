@@ -41,8 +41,8 @@ PHP 8.1 には既に JSON のサポートが含まれており、拡張機能を
 
 ## 解決策
 
-から JSON を削除 **ランタイム** > **拡張機能** のセクション `.magento.app.yaml` を実行して再デプロイします。
+`.magento.app.yaml` の **Runtime**/**Extensions** セクションから JSON を削除し、再デプロイします。
 
 ## 関連資料
 
-[PHP アプリケーション](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [PHP アプリケーション ](https://devdocs.magento.com/cloud/project/magento-app-php-application.html)。

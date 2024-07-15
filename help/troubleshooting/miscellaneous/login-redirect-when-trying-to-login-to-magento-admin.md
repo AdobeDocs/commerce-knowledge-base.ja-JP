@@ -21,16 +21,16 @@ Adobe Commerceのすべてのバージョンとエディション。
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. Commerce管理者ページに移動します。
 1. 資格情報を入力し、「ログイン」をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 Commerce管理者にログインします。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 エラーメッセージを表示せずにログインフォームにリダイレクトされます。
 
@@ -52,7 +52,7 @@ Commerce管理者にログインします。
 管理者セッションの有効期間を延長するには、次の手順に従います。
 
 1. データベースバックアップを作成します。
-1. 次のようなデータベースツールを使用します [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)または、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Commerce管理者にログインします。
 Cookie の設定値を確認してクリアするには、次の手順に従います。
 
 1. データベースバックアップを作成します。
-1. 次のようなデータベースツールを使用します [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)または、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");
@@ -89,5 +89,5 @@ Cookie の設定値を確認してクリアするには、次の手順に従い�
 
 ## 関連記事
 
-* [「アカウントが一時的に無効になっています」というエラーが表示された管理者ログインフォームにリダイレクトし直します](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) サポートナレッジベースで。
-* [「現在のセッションの有効期限が切れました」というエラーが表示されて管理者ログインフォームにリダイレクトします](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) サポートナレッジベースで。
+* サポートナレッジベースで [ 「アカウントが一時的に無効になっています」というエラーが表示されて ](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) 管理者ログインフォームにリダイレクトし直します。
+* サポートナレッジベースで [ 「現在のセッションは期限切れです」というエラーが表示された管理者ログインフォームにリダイレクトし ](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) す。

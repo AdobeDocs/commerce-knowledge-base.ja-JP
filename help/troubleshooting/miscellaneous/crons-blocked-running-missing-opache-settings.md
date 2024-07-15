@@ -1,6 +1,6 @@
 ---
-title: Cron が設定の誤りや欠落によって停止する [!DNL OpCache] 設定
-description: この記事では、設定の誤りや欠落が原因で cron の動作が停止した場合の解決策を示します [!DNL OpCache] 設定。
+title: 設定の誤りや設定の欠落が原因で Cron が停止  [!DNL OpCache]  る
+description: この記事では、設定の誤りや欠落が原因で cron の動作が停止した場合のソリューショ  [!DNL OpCache]  を示します。
 exl-id: 30643ea9-969f-41c8-8e62-b24e56d690cf
 feature: Cache
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Cron が設定の誤りや欠落により停止した [!DNL OpCache] 設定
+# [!DNL OpCache] 設定が正しくないか、または見つからないため、Cron が停止しました
 
-この記事では、Cron が設定の欠落や誤りが原因で動作を停止した場合の解決策を示します [!DNL OpCache] 設定。
+この記事では、[!DNL OpCache] 設定が見つからないか設定が誤っているために cron が動作を停止した場合の解決策を示します。
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+クラウドインフラストラクチャー上のAdobe Commerce[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## 問題
 
@@ -25,7 +25,7 @@ cron が動作しなくなった。
 
 ## 原因：
 
-この [!DNL OpCache] モジュールは、を導入した新しいバージョンに更新されました [!DNL GraphQL] を書き換えるプラグイン `env.php` 実行時に、が cron 設定をオーバーライドする可能性があるので、が問題の原因である可能性があります。 この [!DNL OpCache] の問題を回避するには、設定を更新する必要があります `env.php file`、およびで解決されました [バージョン 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) の [!DNL ECE Tools] パッケージ。
+[!DNL OpCache] モジュールは、実行時に `env.php` を書き換える [!DNL GraphQL] プラグインを導入した新しいバージョンに更新され、cron 設定を上書きする可能性があり、問題が発生した可能性があります。 `env.php file` の問題を回避するには [!DNL OpCache] の設定を更新する必要があります。これは、[!DNL ECE Tools] パッケージの [ バージョン 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) で解決されました。
 
 ## 解決策
 
@@ -37,7 +37,7 @@ bin/magento cron:run
 
 Cron が無効であることを示すメッセージが表示される場合があります。
 
-オプション 2：を開く `app/etc/env.php` ファイル – 以下に示す場合は、cron が手動で無効になっているか、デプロイメントに失敗したために再度有効になっていないか、に関連して問題が発生しています [!DNL OpCache] 設定。
+オプション 2:`app/etc/env.php` ファイルを開く – 以下が表示される場合は、cron が手動で無効になっているか、デプロイメントに失敗したために再度有効になっていないか、問題が [!DNL OpCache] 設定に関連しています。
 
 ```php
   'cron' =>
@@ -46,13 +46,13 @@ Cron が無効であることを示すメッセージが表示される場合が
   ),
 ```
 
-1. Cron が無効になっている場合は、次のコマンドを実行して cron を再度有効にします。 `vendor/bin/ece-tools cron:enable`
-1. の最新バージョンであることを確認してください [!DNL ECE Tools]. そうでない場合は、をアップグレード（または項目 3 にスキップ）します。 既存のバージョンを確認するには、次のコマンドを実行します。
+1. cron が無効になっている場合は、次のコマンドを実行して cron を再度有効にします。`vendor/bin/ece-tools cron:enable`
+1. 最新バージョンの [!DNL ECE Tools] を使用していることを確認してください。 そうでない場合は、をアップグレード（または項目 3 にスキップ）します。 既存のバージョンを確認するには、次のコマンドを実行します。
    `composer show magento/ece-tools`
-1. 既にの最新バージョンを使用している場合 [!DNL ECE Tools]、が存在するかどうかを確認します `op-exclude.txt` ファイル。 それには、次のコマンドを実行します。
-   `ls op-exclude.txt`.
+1. 既に最新バージョンの [!DNL ECE Tools] を使用している場合は、`op-exclude.txt` ファイルが存在するかどうかを確認します。 それには、次のコマンドを実行します。
+   `ls op-exclude.txt`。
 このファイルが存在しない場合は、https://github.com/magento/magento-cloud/blob/master/op-exclude.txtをリポジトリに追加してから、変更をコミットして再デプロイします。
-1. アップグレードする必要がありません [!DNL ECE Tools]また、リポジトリでhttps://github.com/magento/magento-cloud/blob/master/op-exclude.txtを追加または変更したあと、変更をコミットして再デプロイすることもできます。
+1. [!DNL ECE Tools] をアップグレードしなくても、リポジトリでhttps://github.com/magento/magento-cloud/blob/master/op-exclude.txtを追加または変更し、その変更をコミットして再デプロイすることもできます。
 
 ## 関連資料
 

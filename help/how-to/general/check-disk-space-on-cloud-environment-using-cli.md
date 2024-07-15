@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャ環境のAdobe Commerceで CLI を使用してディスク容量を確認する
 
-を参照してください [ディスク容量の管理](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) 開発者向けドキュメントの記事。
+開発者向けドキュメントの [ ディスク容量の管理 ](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) の記事を参照してください。

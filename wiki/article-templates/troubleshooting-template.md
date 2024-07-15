@@ -14,7 +14,7 @@ ht-degree: 0%
 タイトルは問題を簡単に説明する必要があります。最大 70 文字が推奨されます。<br/>
 （例：「Out of memory error during install or upgrade」）。
 
-参照： [投稿/ メタデータ](../../CONTRIBUTING.md#metadata) を参照してください。
+メタデータについて詳しくは、[ コントリビューション/メタデータ ](../../CONTRIBUTING.md#metadata) を参照してください。
 
 導入段落または 2 つの段落：問題の簡単な概要。 最初の 140 文字は、SEO の目的で重要です。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 * Adobe Commerce オンプレミス x.x.x
 * クラウドインフラストラクチャー x.x.x 上のAdobe Commerce
 
-（*また、クラウドまたはオンプレミスの同じバージョンが影響を受ける場合は、次のように言うこともできます。*）
+（*または、クラウドまたはオンプレミスの同じバージョンが影響を受ける場合は、次のように言うことができます。*）
 
 Adobe Commerce（すべてのデプロイメント方法） x.x.x
 
@@ -38,7 +38,7 @@ Adobe Commerce（すべてのデプロイメント方法） x.x.x
 
 問題が非常に具体的な状況で発生した場合は、再現する詳細な手順、予想される結果、実際の結果を次の形式で指定します。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 前提条件：... （存在する場合）。
 
@@ -46,11 +46,11 @@ Adobe Commerce（すべてのデプロイメント方法） x.x.x
 1. 2 番目の手順
 1. ....
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 Adobe Commerceがこれを行います。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 Adobe Commerceがこれを行います。
 
@@ -67,7 +67,7 @@ Adobe Commerceがこれを行います。
 
 ## 関連資料
 
-* [記事トピック](https://docs.magento.com/user-guide/) を参照してください。
-* [記事トピック](https://devdocs.magento.com) 開発者向けドキュメントを参照してください。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別することもできます。[記事トピック](https://devdocs.magento.com) （クラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメント）を参照してください。 と``[記事トピック](https://devdocs.magento.com) （Adobe Commerce オンプレミスの開発者向けドキュメント）を参照してください。
-* [記事トピック](https://support.magento.com/hc/en-us) サポートナレッジベースで。
+* [ 記事のトピック ](https://docs.magento.com/user-guide/)」を参照してください。
+* 開発者向けドキュメントの [ 記事のトピック ](https://devdocs.magento.com)。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別する方法として、「[ 記事のトピック ](https://devdocs.magento.com)」をクラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントに記載しています。 と [ 記事のトピック ](https://devdocs.magento.com) を参照してください（Adobe Commerce オンプレミス開発者向けドキュメント）。
+* サポートに関するナレッジベースの [ 記事のトピック ](https://support.magento.com/hc/en-us)。
 * 関連リソース（ブログ、フォーラム、StackOverflow など）

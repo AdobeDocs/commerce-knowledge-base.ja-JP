@@ -17,34 +17,34 @@ ht-degree: 0%
 
 ## 問題
 
-ストアのコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新開始直後はストアフロントに表示されません。 この問題は、 [コンテンツのステージング](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) 機能。
+ストアのコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新開始直後はストアフロントに表示されません。 これは、「コンテンツのステージング [ 機能を使用して更新がスケジュールされている場合 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) 発生します。
 
 ## 原因：
 
-Fastly のソフトパージ機能（デフォルトで有効）により、Adobe Commerce ストアフロントは送信時に古い（古い）キャッシュされたコンテンツを引き続き受け取ります **第 1** 更新されたアセットの Fastly へのリクエスト。 Fastly では、サイトデータを再生成するための 2 つ目のリクエストが必要です。
+Fastly のソフトパージ機能（デフォルトで有効）により、更新されたアセットに対する **最初の** リクエストを Fastly に送信する際に、Adobe Commerce ストアフロントは古い（古い）キャッシュされたコンテンツを引き続き受け取ります。 Fastly では、サイトデータを再生成するための 2 つ目のリクエストが必要です。
 
 その結果、更新されたコンテンツに対する 2 回目のリクエストが行われるまで、Fastly は古いコンテンツを提供する場合があります。
 
-**予想されるキャッシュ：** コンテンツステージングを使用してコンテンツアセットの更新をスケジュールすると、Adobe Commerceから Fastly にキャッシュを更新するリクエストが送信されます。 Fastly は、以前にキャッシュされたコンテンツを（コンテンツを削除せずに）無効にし、更新されたコンテンツの提供を開始します。
+**予想されるキャッシュ：** コンテンツステージングを使用してコンテンツアセットの更新をスケジュールした後、Adobe Commerceは Fastly にキャッシュを更新するリクエストを送信します。 Fastly は、以前にキャッシュされたコンテンツを（コンテンツを削除せずに）無効にし、更新されたコンテンツの提供を開始します。
 
-**実際のキャッシュ：** 受信時に Fastly が古いコンテンツを引き続き提供する場合 **第 1** 更新されたコンテンツのリクエストの場合、再生済みの正しいコンテンツが受信された後にのみ送信されます **第 2** リクエスト。 この動作は、Web サイト全体のキャッシュを再生成せずに、トラフィックが証明済みの領域でのみキャッシュを更新することで、サーバーの負荷を軽減するために実装されました。 Fastly は、キャッシュを徐々に更新して、アプリケーションリソースを節約します。
+**実際のキャッシュ：** 更新されたコンテンツに対する **最初の** リクエストを受信したときに Fastly が古いコンテンツを提供する場合、**2 番目の** リクエストを受信した後にのみ、再生成された正しいコンテンツが送信されます。 この動作は、Web サイト全体のキャッシュを再生成せずに、トラフィックが証明済みの領域でのみキャッシュを更新することで、サーバーの負荷を軽減するために実装されました。 Fastly は、キャッシュを徐々に更新して、アプリケーションリソースを節約します。
 
 ## 解決策
 
 最初のリクエストでも古いコンテンツを提供することが許容できない場合は、ソフトパージを無効にして、CMS ページをパージを有効にできます。
 
 1. 管理者として、ローカルのCommerce管理者にログインします。
-1. に移動 **ストア** > **設定** > **詳細** > **システム** > **フルページキャッシュ**.
-1. を展開 **Fastly 設定**&#x200B;を展開します **詳細**.
-1. を設定 **ソフトパージを使用** 対象： *不可*.
-1. を設定 **CMS ページをパージ** 対象： *はい*.
-1. クリック **設定を保存** ページの上部
+1. **ストア**/**設定**/**詳細**/**システム**/**フルページキャッシュ** に移動します。
+1. **Fastly 設定** を展開し、**詳細** を展開します。
+1. **ソフト消去を使用** を *いいえ* に設定します。
+1. 「**CMS ページをパージ**」を *はい* に設定します。
+1. ページ上部にある「**設定を保存**」をクリックします。
 
 
 ![purge_options.png](assets/purge_options.png)
 
 ## 関連ドキュメント
 
-* [パージオプションを設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) （Commerce on Cloud Infrastructure ガイド）を参照してください。
-* [コンテンツのステージング](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) （コンテンツとデザインのドキュメント）
-* [古いコンテンツの提供](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) （Fastly のドキュメント）。
+* Commerce on Cloud Infrastructure ガイドの [ パージオプションの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
+* [ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) - コンテンツとデザインに関するドキュメント。
+* Fastly ドキュメントの [ 古いコンテンツの提供 ](https://docs.fastly.com/guides/performance-tuning/serving-stale-content)。

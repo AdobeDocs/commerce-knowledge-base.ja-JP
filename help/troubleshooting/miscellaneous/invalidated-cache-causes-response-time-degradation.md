@@ -41,23 +41,23 @@ Adobe Commerceには次の 2 種類のキャッシュがあります。
 
 ### キャッシュが無効になっていないかどうかを確認します
 
-無効化されたキャッシュタイプに関する情報は、 `<install_directory>/var/log/debug.log` ファイル。
+無効化されたキャッシュタイプに関する情報は、`<install_directory>/var/log/debug.log` ファイルで確認できます。
 
 手順は次のとおりです。
 
-1. 開く `<install_directory>/var/log/debug.log`
-1. 「」を検索 *cache\_invalidate* 」というメッセージが表示されます。
+1. Open `<install_directory>/var/log/debug.log`
+1. 「*cache\_invalidate*」メッセージを検索します。
 1. 次に、指定したタグを確認します。 フラッシュされたキャッシュを示します。 特定のエンティティ ID が指定されていないタグが表示された場合、キャッシュが無効になっていることが原因で問題が生じる可能性があります。次に例を示します。
    * `cat_p` - カタログ製品キャッシュを表します。
    * `cat_c` - カタログカテゴリのキャッシュ。
    * `FPC` - フルページキャッシュ。
-   * `CONFIG`  – 設定キャッシュ。
+   * `CONFIG` – 設定キャッシュ。
 
-   そのうちの 1 つでもフラッシュすると、web サイトの応答が遅くなります。 タグにエンティティ ID が含まれている場合（例：） `category_product_1258`（例：特定の製品またはカテゴリのキャッシュを示します）。 特定の製品またはカテゴリのキャッシュをフラッシュしても、応答時間が大幅に短縮されることはありません。
+   そのうちの 1 つでもフラッシュすると、web サイトの応答が遅くなります。 タグにエンティティ ID （例：`category_product_1258`）が含まれる場合は、特定の製品またはカテゴリのキャッシュが示されます。 特定の製品またはカテゴリのキャッシュをフラッシュしても、応答時間が大幅に短縮されることはありません。
 
-以下は、 `debug.log` に関するレコードが含まれていること `cat_p` および `category_product_15044` キャッシュがフラッシュされています：
+次に、フラッシュされた `cat_p` および `category_product_15044` キャッシュに関するレコードを含む `debug.log` の例を示します。
 
-![debug.log コンテンツのサンプル](assets/debug_log_sample.png)
+![debug.log コンテンツのサンプル ](assets/debug_log_sample.png)
 
 通常、キャッシュは次の理由で無効になります。
 
@@ -67,4 +67,4 @@ Adobe Commerceには次の 2 種類のキャッシュがあります。
 ## 推奨事項
 
 1. Commerce CLI からキャッシュをフラッシュしないでください。
-1. へのインデクサーの設定 **スケジュールで更新** の代わりに **保存モードの更新** 後者のトリガーでは完全なインデックス再作成が行われるからです。 詳しくは、を参照してください [インデクサーの管理/インデクサーの設定](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) 開発者向けドキュメントを参照してください。
+1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [ インデクサーの管理/インデクサーの設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) を参照してください。

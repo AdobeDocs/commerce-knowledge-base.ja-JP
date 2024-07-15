@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30889: バンドル製品のバーチャルおよびシンプルな請求書を発行できません
 
-MDVA-30889 パッチは、仮想オプションと単純オプションの両方でバンドル製品を請求した後にエラーが発生する問題を解決します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.9 がインストールされています。 この問題はAdobe Commerce 2.4.2 で修正されました。
+MDVA-30889 パッチは、仮想オプションと単純オプションの両方でバンドル製品を請求した後にエラーが発生する問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.9 がインストールされている場合に使用できます。 この問題はAdobe Commerce 2.4.2 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,32 +27,32 @@ MDVA-30889 パッチは、仮想オプションと単純オプションの両方
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-とAdobe Commerceのインストール [Inventory management](https://devdocs.magento.com/guides/v2.4/inventory/).
+[Inventory management](https://devdocs.magento.com/guides/v2.4/inventory/) と共にAdobe Commerceをインストールします。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. に移動 **Admin**.
+1. **Admin** に移動します。
 1. シンプルな製品を作成します。
 1. 仮想製品を作成します。
-1. バンドル製品を作成します（子製品用に 2 つのドロップダウンオプションを作成し、仮想製品とシンプル製品を割り当てます）。 を設定 **ダイナミック価格** = *不可*.
+1. バンドル製品を作成します（子製品用に 2 つのドロップダウンオプションを作成し、仮想製品とシンプル製品を割り当てます）。 **Dynamic Price** = *No* を設定します。
 1. ストアフロントに移動します。
 1. 製品ページに移動します。
 1. 商品を買い物かごに追加します。
 1. チェックアウトに進み、商品を注文します。
-1. に移動 **管理者/注文**.
+1. **管理者/注文** に移動します。
 1. 作成した注文を開き、請求書を発行します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 （シンプル製品と仮想製品の両方を含む）バンドル製品の請求書が作成されます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 請求書が作成されず、次のようなエラーが表示されます。
 
@@ -64,14 +64,14 @@ TypeError: Return value of Magento\InventorySourceSelection\Model\Request\Invent
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

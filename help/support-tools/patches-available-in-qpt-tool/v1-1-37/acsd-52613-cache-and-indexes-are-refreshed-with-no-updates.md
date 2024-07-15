@@ -1,6 +1,6 @@
 ---
 title: 「ACSD-52613：更新なしでキャッシュとインデックスが更新される」
-description: ACSD-52613 パッチを適用すると、によって「Inventory_source」項目が更新されなかった場合にキャッシュとインデックスが更新されるAdobe Commerceの問題を修正できます [!DNL REST API].
+description: ACSD-52613 パッチを適用すると、 [!DNL REST API] によって「Inventory_source」項目が更新されなかった場合にキャッシュとインデックスが更新されるAdobe Commerceの問題を修正できます。
 feature: REST
 role: Admin
 exl-id: 78f23fee-a48e-4ee2-bc75-e98e3dd1ac44
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52613：更新がなくてもキャッシュとインデックスが更新される
 
-ACSD-52613 パッチでは、Adobe Commerceの問題が修正されています。この問題では、が更新されないとキャッシュとインデックスが更新されます `Inventory_source` 項目別 [!DNL REST API]. このパッチは、 [!DNL Quality Patches Tool (QPT)] 1.1.37 がインストールされています。 パッチ ID は ACSD-52613 です。 この問題はAdobe Commerce 2.4.7 で修正されました。
+ACSD-52613 パッチは、[!DNL REST API] によって `Inventory_source` の項目が更新されなかった場合にキャッシュとインデックスが更新されるAdobe Commerceの問題を修正しました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.37 がインストールされている場合に使用できます。 パッチ ID は ACSD-52613 です。 この問題はAdobe Commerce 2.4.7 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,19 +27,19 @@ ACSD-52613 パッチでは、Adobe Commerceの問題が修正されています�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-に対して更新が行われないと、キャッシュとインデックスが更新されます。 `Inventory_source` 項目別 [!DNL REST API].
+[!DNL REST API] によって `Inventory_source` 項目が更新されなかった場合、キャッシュとインデックスは更新されます。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 インストール済み在庫モジュール
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. 開発者モードを有効にする `debug.log`.
+1. 開発者モードを `debug.log` に切り替えます。
 1. 100 個の製品を含む読み込みファイルを準備 – import.csv:
 
    ```
@@ -50,13 +50,13 @@ ACSD-52613 パッチでは、Adobe Commerceの問題が修正されています�
    test_sku_100    test_sku_100    simple    Default    10
    ```
 
-1. 製品のインポート元 `import.csv`
-1. という名前の新しい在庫とソースの作成 **test_stock** および **test_source**.
+1. `import.csv` からの商品のインポート
+1. **test_stock** および **test_source** という新しい在庫とソースを作成します。
 1. 新しい Stock を Web サイトに割り当て、ソースを Stock に割り当てます。
 1. すべてにアクセスする新しい統合を作成してアクティブ化し、アクセストークンをコピー&amp;ペーストします。
-1. に移動 **ストア** > **設定** > **サービス** > **Oauth** > **コンシューマー設定** および有効化 **OAuth アクセストークンをスタンドアロンのベアラートークンとして使用できるようにする**.
+1. **ストア**/**設定**/**サービス**/**Oauth**/**コンシューマー設定** に移動し、「**OAuth アクセストークンをスタンドアロンの Bearer トークンとして使用できるようにする** を有効にします。
 1. キャッシュをフラッシュします。
-1. インデクサーを次のように設定 **スケジュールで更新**
+1. インデクサーをに設定 **スケジュールに従って更新**
 1. API リクエストを実行
 
    `POST ../rest/V1/inventory/source-items`
@@ -670,30 +670,30 @@ ACSD-52613 パッチでは、Adobe Commerceの問題が修正されています�
    }
    ```
 
-1. すべてのログの削除対象： `var/log`
-1. を実行 [!DNL REST API] もう一度リクエストします。
-1. を確認します `var/log/debug.log`.
+1. `var/log` からすべてのログを削除します
+1. [!DNL REST API] リクエストを再度実行します。
+1. `var/log/debug.log` を確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 何も変更されなかったので、キャッシュをクリーンアップしたり、2 回目の実行後にインデックスを実行したりしないでください。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この `var/log/debug.log` キャッシュ消去に関連するエントリが含まれます。
+`var/log/debug.log` には、キャッシュ消去に関連するエントリが含まれます。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

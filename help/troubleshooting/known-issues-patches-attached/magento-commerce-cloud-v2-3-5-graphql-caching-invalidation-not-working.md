@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャー上のAdobe Commerce v2.3.5 GraphQL キャッシュの無効化が機能しない
 
-この記事では、GraphQLの問題に対するパッチを提供します `GET` 顧客が商品情報を変更すると、リクエストは古い情報を返します。
+この記事では、お客様が商品情報を変更した場合に、GraphQL `GET` リクエストが古い情報を返す問題に対するパッチを提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 GraphQL リクエストは Fastly によってキャッシュされ、キャッシュされたバージョンは、Fastly からの後続のリクエストごとに取得されます。 商品がAdobe Commerce バックエンドで再保存されると、商品が更新されたときに Fastly キャッシュが無効になります。 ただし、引き続き有効です。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 次のGraphQL リクエストにトリガーを設定して、次のような特定のカテゴリの商品を取得します。
    <pre><magento2-server>
@@ -31,13 +31,13 @@ GraphQL リクエストは Fastly によってキャッシュされ、キャッ�
 1. 上記のリクエストで取得した商品の 1 つをCommerce管理者に再保存します。
 1. リクエストを再度トリガーします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-この `X-Cache` ヘッダーにを含める `MISS`.
+`X-Cache` ヘッダーに `MISS` が含まれています。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この `X-Cache` ヘッダーにを含める `HIT`：応答がキャッシュされます。
+`X-Cache` ヘッダーには `HIT` が含まれます。これは、応答がキャッシュされることを意味します。
 
 ## 解決策
 
@@ -73,6 +73,6 @@ GraphQL リクエストは Fastly によってキャッシュされ、キャッ�
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) composer パッチの適用方法については、を参照してください。
+Composer パッチの適用方法については、[Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## 問題
 
-Adobe Commerceでは、次のメッセージが表示されて、ログインを促すメッセージが表示されます。 *「この記事は確かではありません。 確認メールを再送信するには、ここをクリックしてください」*. この **ここをクリック** リンクは、確認リンクを送信ページを開く必要がありますが、非アクティブです。
+Adobe Commerceでログインを求めるメッセージが「*」と表示されるので、ユーザーはログインしてください。「このアカウントは認証されていません。 確認メールを再送信するには、ここをクリックしてください」*。 **ここをクリック** リンクをクリックすると、確認リンクを送信ページが開きますが、非アクティブです。
 
 ## 解決策
 
-この問題のパッチは、Adobe Commerce テクニカルリソースで入手できます。 [Adobe Commerce 2.3.5 のアカウント再送信確認メールのリンクに関する問題パッチ](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). 永続的な修正は、2020 年 Q4 にリリースされるAdobe Commerce 2.3.6 で利用できるようになります。
+この問題のパッチは、Adobe Commerce テクニカルリソース [Adobe Commerce 2.3.5 のアカウント確認用メールリンク問題パッチを再送信 ](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368) で入手できます。 永続的な修正は、2020 年 Q4 にリリースされるAdobe Commerce 2.3.6 で利用できるようになります。
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) composer パッチの適用方法については、を参照してください。
+Composer パッチの適用方法については、[Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 関連資料
 
@@ -39,4 +39,4 @@ Adobe Commerce 2.3.5 の既知の問題に関するサポートナレッジベ�
 * [Adobe Commerceで、無効なリンクでログインすることを顧客に求める](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 * [Adobe Commerce 2.3.5 の一括アクション製品数の既知の問題](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 * [Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-* [Adobe Commerce 2.3.5 の既知の問題](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Adobe Commerce 2.3.5 の既知の問題 ](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

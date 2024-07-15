@@ -35,16 +35,16 @@ ERROR 2013 (HY000): Lost connection to MySQL server at 'reading initial communic
 
 ## 解決策
 
-ディスク容量が不足していないかどうかを確認します。 これを行うには、 `netcat` データベース・ポート 3306 に対して CLI でコマンドを実行します。ディスクがいっぱいになると、ディスク容量超過のメッセージが表示されます。
+ディスク容量が不足していないかどうかを確認します。 これを行うには、データベース・ポート 3306 に対して CLI で `netcat` コマンドを実行します。このコマンドがフルの場合、ディスク・フル・メッセージが表示されます。
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-データベースに割り当てる領域を増やす必要があります。 `services.yaml` 未使用のスペースがある場合は、をデプロイします。 手順については、を参照してください [サービスディスク容量](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+未使用のスペースがある場合は、`services.yaml` ージ内のデータベースに割り当てるスペースを増やし、をデプロイする必要があります。 手順については、「[ サービスディスク容量 ](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space)」を参照してください。
 
-注：Pro アーキテクチャ計画では、次のコマンドを実行して、パーティションの割り当て済み領域を確認できます。 `df -h`
+注：Pro アーキテクチャ計画では、次のコマンドを実行して、パーティションの割り当て済み領域を確認できます。`df -h`
 
 次のような出力が期待されます。 この例では、割り当てられた 25 GB のうち 10 GB が使用され、15 GB の MySQL 領域は使用されません。
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## 関連資料
 
-[ディスク容量の管理](https://devdocs.magento.com/cloud/project/manage-disk-space.html) 開発者向けドキュメントで
+開発者向けドキュメントの [ ディスク容量の管理 ](https://devdocs.magento.com/cloud/project/manage-disk-space.html)

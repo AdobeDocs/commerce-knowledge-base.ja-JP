@@ -1,6 +1,6 @@
 ---
 title: 2024 年および 2023 年Adobe Commerce リリース戦略およびライフサイクルポリシーに関する FAQ
-description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4 以降のバージョンのサポートウィンドウをバージョンから**3 年に拡大しています [!DNL GA] 日付**. サポートには、**セキュリティパッチとクオリティパッチの両方**が含まれます。 タイミングの詳細については、新しい [ リリースカレンダー ] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html）をご覧ください。
+description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4 以降のバージョンのサポートウィンドウをバージョン  [!DNL GA] date**から**3 年に拡大しています。 サポートには、**セキュリティパッチとクオリティパッチの両方**が含まれます。 タイミングの詳細については、新しい [ リリースカレンダー ] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html）をご覧ください。
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
 source-git-commit: 81dd81ecbb0a208dbac5d3cbdc4c994556661fb0
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ### 2023 年と 2024 年、Adobe Commerceのソフトウェアライフサイクルポリシーはどのように変わりますか？
 
-Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4 以降のバージョンのサポートウィンドウを次の範囲に拡大します。 **バージョンから 3 年後 [!DNL GA] 日付**. サポートの内容 **セキュリティパッチとクオリティパッチの両方**.
+Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4 以降のバージョンのサポートウィンドウをバージョン [!DNL GA] 日から **3 年** に拡大しています。 サポートには、**セキュリティパッチとクオリティパッチの両方** が含まれます。
 
 ### これらの変更は、お客様にどのようなメリットをもたらしますか。
 
@@ -24,64 +24,64 @@ Adobe Commerceのお客様のミッションクリティカルなニーズを満
 
 ### 現在のライフサイクルポリシーについて、お客様はどこで確認できますか？
 
-この [Adobe Commerce ソフトウェアのライフサイクルポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) はオンラインで利用できます。
+[Adobe Commerce ソフトウェア ライフサイクル ポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) はオンラインで利用できます。
 
 ### 2.4.4、2.4.5、2.4.6 のお客様が、この新しいポリシーのサポート終了に到達するのはいつですか。
 
-Adobe Commerce 2.4.4 以降を使用しているお客様は、バージョンから 3 年間、セキュリティと品質の修正を受け取ります [!DNL GA] 以下のタイムラインに示す日付。 を参照してください。 [リリース済みバージョン](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) のページ [!DNL Experience League] （特定のサポート終了日）。
+Adobe Commerce 2.4.4 以降のお客様は、以下のタイムラインに示すように、バージョン [!DNL GA] 日から 3 年間、セキュリティと品質の修正を受け取ります。 特定のサポート終了日については、[!DNL Experience League] の [ リリース済みバージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) ページを参照してください。
 
-![グラフ 1](assets/MSKB-1978-1.jpg)
+![ グラフ 1](assets/MSKB-1978-1.jpg)
 
 ### Adobe Commerceのリリーススケジュールはどのように変更されますか？
 
-イノベーションを促進し、総所有コストを削減するために、コンポーザブルとして提供される新しい機能を備えたコアアプリケーションパッチが年間 1 つリリースされます [!DNL SaaS] いつでも追加できるサービス。 また、今年に予定されているセキュリティパッチリリースの数も 3 から 4 に増えており、お客様のセキュリティを維持するのに役立ちます。 追加 [!DNL beta] 2024 年コアアプリケーションパッチリリース（2.4.7）のリリースも、パートナーおよびお客様が次回のリリースの準備をできるように、今年利用可能になる予定です。
+イノベーションを促進し、総所有コストを削減するために、年に 1 回、コアアプリケーションパッチがリリースされます。新機能は、いつでも追加できる構成可能な [!DNL SaaS] サービスとして提供されます。 また、今年に予定されているセキュリティパッチリリースの数も 3 から 4 に増えており、お客様のセキュリティを維持するのに役立ちます。 2024 年コアアプリケーションパッチリリース（2.4.7）の追加の [!DNL beta] リリースも、パートナーおよびお客様が次のリリースの準備をできるように、今年利用可能になる予定です。
 
 ### 新しいリリーススケジュールは、お客様にどのようなメリットがありますか？
 
-構成可能な機能として新しい機能を提供 [!DNL SaaS] サービスにより、お客様は新しいツールにすばやくアクセスできるようになり、売上の増加に役立ちます。 機能は、コア Adobe Commerce アプリケーションをアップグレードしなくても、いつでも採用できます。 また、これらのサービスは、Adobeによって継続的に更新され、機能とパフォーマンスに最新の進歩をもたらします。 コアアプリケーションのパッチリリースが年に 1 回あると、アップグレードコストの削減、アップグレードの計画の容易化、コマースエクスペリエンスのカスタマイズと最適化の時間の増加に役立ちます。 その他の軽量なセキュリティパッチにより、お客様のセキュリティを維持できます。
+構成可能な [!DNL SaaS] サービスとして新しい機能を提供することで、お客様は新しいツールへの迅速なアクセスが可能になり、売上の増加に役立ちます。 機能は、コア Adobe Commerce アプリケーションをアップグレードしなくても、いつでも採用できます。 また、これらのサービスは、Adobeによって継続的に更新され、機能とパフォーマンスに最新の進歩をもたらします。 コアアプリケーションのパッチリリースが年に 1 回あると、アップグレードコストの削減、アップグレードの計画の容易化、コマースエクスペリエンスのカスタマイズと最適化の時間の増加に役立ちます。 その他の軽量なセキュリティパッチにより、お客様のセキュリティを維持できます。
 
 ### プレリリースアクセスとは
 
 2023 年には、一般公開の約 2 週間前にAdobe Commerce パッチリリースにアクセスできます。
 
-2024 年以降、Adobeはパッチへの「プレリリース」アクセスを提供しなくなりました。 代わりに、2.4.7 以降では、を使用できます [ベータ版リリース](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html) テストおよび開発目的で事前一般提供コードにアクセスする場合 次の 2023 リリースでも、プレリリースへのアクセスが引き続きスケジュールされています。
+2024 年以降、Adobeはパッチへの「プレリリース」アクセスを提供しなくなりました。 代わりに、2.4.7 以降では、[ ベータリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html) を使用して、テストや開発の目的で一般提供より前のコードにアクセスできます。 次の 2023 リリースでも、プレリリースへのアクセスが引き続きスケジュールされています。
 
 * 2023 年 8 月 8 日（PT）プレリリースアクセスは 2023 年 7 月 25 日（PT）です
 * 2023 年 10 月 10 日（PT）プレリリースアクセスは 2023 年 9 月 26 日（PT）です
 
 ### Adobe Commerce リリーススケジュールはどこに投稿されますか？
 
-を確認してください。 [Adobe Commerce リリーススケジュール](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 日付： [!DNL Experience League] を参照してください。
+詳しくは、[!DNL Experience League] の [Adobe Commerce リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
 
 ### スケジュールに含まれるリリースには、どのようなタイプがありますか？
 
 * **コアアプリケーションのパッチリリース**：セキュリティ、パフォーマンス、優先度の高い品質修正を含むコアアプリケーションのアップグレード。
-* **[!DNL Beta]バージョンのパッチリリース**：以外[!DNL General Availability] セキュリティ、コンプライアンス、パフォーマンス、優先度の高い品質修正など、Adobe Commerceのコアアプリケーションに対するコードのアップデート。 これにより、パッチリリース前に、コードと影響を受けるコンポーネントを確認する時間を追加できます [!DNL GA].
-* **拡張機能、インフラストラクチャ、サービスのリリース**：構成可能なサービスとして提供される新機能と機能アップデートのリリースです。パッチ リリースとは別のものです。 例えば、次のようなサービスがあります [!DNL Product Recommendations] および [!DNL Live Search]、のような独立したモジュール [!DNL PWA Studio] および [!DNL Inventory Management] （MSI）、およびクラウドサービスとインフラストラクチャの更新。
-* **セキュリティパッチリリース**：顧客のセキュリティとコンプライアンスを確保するためにリリースされた、コアアプリケーションのセキュリティ専用アップデート。
+* **[!DNL Beta]バージョンのパッチリリース**：セキュリティ、コンプライアンス、パフォーマンス、優先度の高い品質修正など、Adobe Commerceのコアアプリケーションに対する [!DNL General Availability] 以外のコードのアップデート。 これにより、パッチリリース [!DNL GA] ートの前に、コードと影響を受けるコンポーネントを確認する時間を追加できます。
+* **拡張機能、インフラストラクチャおよびサービスリリース**：パッチリリースとは別に、構成可能なサービスとして提供される新機能と機能アップデートのリリース。 例えば、[!DNL Product Recommendations] や [!DNL Live Search] などのサービス、[!DNL PWA Studio] や [!DNL Inventory Management] （MSI）などの独立したモジュール、クラウドサービスやインフラストラクチャのアップデートなどがあります。
+* **セキュリティパッチリリース**：お客様のセキュリティとコンプライアンスを確保するためにリリースされた、コアアプリケーションのセキュリティ専用アップデート。
 
 ### お客様は品質向上パッチを入手するにはどうしたらよいでしょうか。
 
-品質向上パッチは、個々の品質問題に対する修正を配布する方法です。 お客様は、Adobeサポートに連絡するか、 [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html) 品質向上パッチを検索します。
+品質向上パッチは、個々の品質問題に対する修正を配布する方法です。 お客様は、Adobeサポートに問い合わせるか、[[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html) を使用して高品質のパッチを検索できます。
 
 ### 一般的な計画、予算、アップグレードに役立つリソースにはどのようなものがありますか？
 
-利用可能なリソースには、包括的な 2.4 アップグレードガイド、テクニカルアップグレードワークショップの録画、 [!DNL Upgrade Compatibility Tool]. リソースの包括的なリストは、次で参照できます。 [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html).
+利用可能なリソースには、包括的な 2.4 アップグレードガイド、テクニカルアップグレードワークショップの録画、[!DNL Upgrade Compatibility Tool] が含まれます。 リソースの包括的な一覧は、[Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html) にあります。
 
 ### Managed Servicesをご利用のお客様は、カスタマーエンジニアリング部門は 2.4.4 へのアップグレードにどう役立つか+？教えてください。
 
-Managed Servicesのお客様は、アップグレードプロセスのいくつかのコンポーネント（分析、クラウドサービスのアップグレード、品質テストおよびユーザー受け入れテストなど）について、アドビのカスタマーエンジニアリングチームと協力してサポートを受けることができます（[!DNL QA] および [!DNL UAT]）、実稼動の立ち上げ。
+Managed Servicesのお客様は、アップグレードプロセスのいくつかのコンポーネント（分析、クラウドサービスのアップグレード、品質とユーザー受け入れテスト（[!DNL QA] および [!DNL UAT]）、実稼動の立ち上げなど）で、アドビのカスタマーエンジニアリングチームと協力して支援を受けることができます。
 
 ## 拡張サポートオプション
 
 ### バージョン 2.3.7 および 2.4.0～2.4.3 のお客様向けの拡張サポート・オプションはありますか。
 
-お客様には、できるだけ早くアップグレードを推奨しますが、次のバージョンに基づく有料拡張サポートプランを利用できます [!DNL PHP] 7.4 （2.3.7 および 2.4.0-2.4.3 のお客様） これらの計画には、コアアプリケーションの品質パッチとセキュリティパッチの両方が含まれています。 [!DNL PHP] 最長 1 年間。
+お客様には、できるだけ早くアップグレードを推奨しますが、[!DNL PHP] 7.4 をベースとしたバージョン（2.3.7 および 2.4.0-2.4.3 を使用しているお客様）では、有料の拡張サポートプランを利用できます。 これらの計画には、コアアプリケーションの品質パッチとセキュリティパッチの両方が含まれ、最長 1 年間の [!DNL PHP] が含まれます。
 
 * 2.3.7 の拡張サポートは 2022 年 9 月 8 日（PT）に開始され、2023 年 9 月 8 日（PT）まで受け取ることができます。
 * 2.4.0～2.4.3 のサポートの拡張は、2022 年 11 月 28 日（PT）に開始され、2023 年 11 月 28 日（PT）まで受け取ることができます。
 
-### 拡張サポートにより、 [!DNL PCI] コンプライアンス？
+### 拡張サポートによって [!DNL PCI] のコンプライアンスが保証されますか。
 
-延長サポートの下、アドビのカスタマーエンジニアリングチームは、範囲を低下させることなく、引き続き通常と同じ品質およびセキュリティパッチを提供します。 ただし、お客様がそこに留まるためには、さらに対策を講じる必要があります [!DNL PCI]基盤となるサードパーティのテクノロジー（例：）に準拠 [!DNL MySQL]を選択し、サポート終了に到達してください。 Adobeは、サポート終了に達したサードパーティテクノロジーには対応していません **次を除く [!DNL PHP] のバージョンのサポート [!DNL PHP] サポートサービスまたは拡張サポートの対象となるバージョンのAdobe Commerceで使用されます**. Adobeでは、のお客様が自社の [PCI アセスメント](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors) コンプライアンスの確保 こちらを参照してください [Adobe Commerceの必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、を参照してください。
+延長サポートの下、アドビのカスタマーエンジニアリングチームは、範囲を低下させることなく、引き続き通常と同じ品質およびセキュリティパッチを提供します。 ただし、[!DNL MySQL] などの基盤となるサードパーティテクノロジーがサポート終了に達した場合に、[!DNL PCI] ーザーの準拠を維持するには、追加の対策を講じる必要があります。 Adobeでは、サポート終了に達したサードパーティテクノロジーには対応していません **ただし、サポートサービスまたは拡張サポートの対象となる、Adobe Commerceのバージョンで使用される [!DNL PHP] のバージョンに対する [!DNL PHP] サポートを除きます**。 Adobeでは、コンプライアンスを確保するために、[PCI 評価担当者 ](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors) と協力することをお勧めします。 テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、{0](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)Adobe Commerceの必要システム構成 } を参照してください。[
 

@@ -26,23 +26,23 @@ ht-degree: 0%
 
 ## 問題
 
-この問題は、PHP 8 のみの関数を使用する新しいAdobe Commerce 2.4.3 および 2.3.7-p1 によって引き起こされます `str_contains`. Adobe Commerce 2.4.3 および 2.3.7-p1 は PHP 7.4 とのみ互換性があるため、この関数は使用できません。
+この問題は、PHP 8 のみを使用するAdobe Commerce 2.4.3 および 2.3.7-p1 の新しいバージョンによって引き起こされ `str_contains` す。 Adobe Commerce 2.4.3 および 2.3.7-p1 は PHP 7.4 とのみ互換性があるため、この関数は使用できません。
 
-<u>再現手順</u> :
+<u> 再現手順 </u> :
 
 Adobe Commerce 2.4.3 または 2.3.7-p1 へのアップグレードを試みます。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 アップグレードに成功しました。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 PHP の致命的なエラー。
 
 ## 解決策
 
-回避策として、CLI/ターミナルで次のコマンドを実行します。 `composer require symfony/polyfill-php80` Magentoのルート フォルダから、または composer パッチをインストールします。
+対応策として、CLI/ターミナルでMagentoのルート フォルダから `composer require symfony/polyfill-php80` コマンドを実行するか、Composer パッチをインストールします。
 
 2.4.3 の問題を修正するには、Adobe Commerce（すべてのデプロイメント方法）とMagento Open Sourceマーチャントにパッチを適用する必要があります。
 
@@ -54,8 +54,8 @@ PHP の致命的なエラー。
 
 ## パッチの適用方法
 
-参照： [Magentoが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 説明を参照してください。
+手順については、[Magentoが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 関連資料
 
-GitHub [Magento 2.4.3 EE #33680 でサポートされていない PHP 8 コマンド](https://github.com/magento/magento2/issues/33680)
+GitHub [Magento 2.4.3 でサポートされていない PHP 8 コマンド EE #33680](https://github.com/magento/magento2/issues/33680)

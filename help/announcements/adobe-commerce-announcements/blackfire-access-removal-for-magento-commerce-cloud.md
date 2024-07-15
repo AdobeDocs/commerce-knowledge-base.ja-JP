@@ -18,14 +18,14 @@ ht-degree: 0%
 **Blackfireを引き続き使用する場合**:
 
 1. Blackfireのライセンスを直接購入する必要があります。
-1. 次に、これらを使用してBlackfireを設定します [手順](https://blackfire.io/docs/integrations/paas/magentocloud).
-1. インストールで問題が発生した場合は、次の操作を実行できます [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) お問い合わせください。 Blackfireに関するご質問については、Blackfireサポート （）までお問い合わせください。 [support@blackfire.io](mailto:support@blackfire.io).
+1. 次に、以下の [ 手順 ](https://blackfire.io/docs/integrations/paas/magentocloud) を使用してBlackfireを設定します。
+1. インストールで問題が発生した場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してサポートをリクエストできます。 Blackfireに関するご質問は、Blackfireサポート （[support@blackfire.io](mailto:support@blackfire.io)）までお問い合わせください。
 
 ## デプロイメントの実行時にエラーが発生した場合：
 
 のデプロイメントを実行すると、Blackfire関連のエラーが発生する場合は、次の操作を行います。
 
-1. 設定からBlackfireを削除します。 を編集する `.magento.app.yaml` ファイルを作成し、ランタイムセクションからBlackfireを削除します。
+1. 設定からBlackfireを削除します。 `.magento.app.yaml` ファイルを編集し、ランタイムセクションからBlackfireを削除します。
 
    ```YAML
    ...
@@ -42,12 +42,12 @@ ht-degree: 0%
 
 1. これをローカル開発環境で完了させ、クラウドにプッシュします。
 
-のみ [サポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) デプロイメントの実行後に次のエラーが表示される場合：
+デプロイメントの実行後に次のエラーが表示された場合のみ [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
-*PHP の警告：PHP Startup: ダイナミックライブラリ「blackfire.so」を読み込めない（試行済：/usr/lib/php/20180731-zts/blackfire.so （/usr/lib/php/20180731-zts/blackfire.so：共有オブジェクトファイルを開けない：そのようなファイルやディレクトリがない）、/usr/lib/php/20180731-zts/blackfire.so.so （/usr/lib/php/20180731-zts/blackfire.so.so：共有オブジェクトファイルを開けない：そのようなファイルやディレクトリがない）） 0 行目の Unknown*
+*PHP 警告：PHP 起動：ダイナミックライブラリ「blackfire.so」をロードできません（試行済：/usr/lib/php/20180731-zts/blackfire.so （/usr/lib/php/20180731-zts/blackfire.so：共有オブジェクトファイルを開けません：そのようなファイルやディレクトリはありません）、/usr/lib/php/20180731-zts/blackfire.so.so （/usr/lib/php/20180731-zts/blackfire.so.so：共有オブジェクトファイルを開けません：そのようなファイルやディレクトリはありません））行 0 の「不明」で*。
 
 つまり、Blackfireプラグインを更新し、読み込みを停止する必要があります。
 
 **New Relic インフラストラクチャを使用する場合**:
 
-New Relic インフラストラクチャへのアクセス方法については、以下を参照してください。 [New Relicへのアクセス](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) サポートナレッジベースで。
+New Relic インフラストラクチャへのアクセス方法については、サポートナレッジベースの [New Relicへのアクセス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) を参照してください。

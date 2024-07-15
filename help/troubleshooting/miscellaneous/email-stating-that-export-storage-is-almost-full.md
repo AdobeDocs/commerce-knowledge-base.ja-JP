@@ -1,9 +1,10 @@
 ---
-title: 「書き出しストレージがほぼ満杯であることを示すメール」
+title: 書き出しストレージがほとんどいっぱいであることを示すメール
 description: この記事では、書き出しストレージがほぼいっぱいであることを示すメールが届く問題の解決策を説明します。
 feature: Cloud, Storage, Media
 role: Developer
-source-git-commit: 8f783cb4245911bded5e9946917e2f2c3e78a705
+exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
+source-git-commit: 89f985b832545f1fbccf94aac1d60f1e767b5bc4
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -20,15 +21,15 @@ ht-degree: 0%
 
 ## 問題
 
-次の内容のメールが届きますが、が見つかりません *エクスポート* フォルダー：
+次の内容のメールが届きますが、*exports* フォルダーが見つかりません。
 
 *監視により、クラスター XXX の「エクスポート」ストレージがおよそ「85%」いっぱいであることが検出されました。*
 *必要に応じて、使用状況を確認したり、クリーンアップを実行したり、アップサイズをリクエストしたりします。*
-*また、ストレージが重大しきい値レベルに達すると、アップサイズが自動的に試行されることに注意してください。*
+*また、ストレージが重大しきい値レベルに達すると、自動的にアップサイズが試行されることに注意してください。*
 
 ## 原因：
 
-メールはを参照しています **エクスポート** ストレージ。ファイル/メディアに割り当てられているディスクの容量で、という名前の特定のフォルダではありません。 *エクスポート*.
+メールは、**書き出し** ストレージを参照しています。これは、ファイルやメディアに割り当てられたディスクの量であり、*書き出し* という特定のフォルダーではありません。
 
 ## 解決策
 
@@ -36,12 +37,12 @@ ht-degree: 0%
 
 `df -h |grep data`
 
-ファイルストレージが一杯になる一般的な場所は、次のとおりです。 *pub/media/catalog/product/cache* または *var/log* フォルダー。 ファイルが使用しているディスク領域を調べるには、適切なパスを指定してこのコマンドを実行します */path/to/folder*:
+ファイルのストレージがいっぱいになる可能性が高い一般的な場所は、*pub/media/catalog/product/cache* または *var/log* フォルダーです。 ファイルが使用しているディスク領域を調べるには、次のコマンドを適切なパス */path/to/folder* で実行します。
 
 `du -shc` */path/to/folder*
 
-メディア・ディスクの使用量がディスク領域全体の大部分を占める場合は、有効にすることを検討してください [Fastly Deep Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization)に保存されているファイルを削除します *pub/media/catalog/product/cache* サーバー上のフォルダーを手動で設定します。
+メディアディスク使用量が合計ディスク容量の大きな割合を占める場合は、[Fastly Deep Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) を有効にしてから、サーバー上の *pub/media/catalog/product/cache* フォルダーのファイルを手動で削除することを検討してください。
 
 ## 関連資料
 
-[専用クラスターの確認](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) サポートナレッジベースで。
+サポートナレッジベースで [ 専用クラスターを確認 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) してください。

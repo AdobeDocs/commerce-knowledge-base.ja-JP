@@ -23,17 +23,17 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
 ストアフロントまたは管理ページを開きます。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 ページが開きます。
 
-<u>実際の結果</u>
+<u> 実際の結果 </u>
 
-ページが空白になるか、 *「この web ページにはリダイレクトループがあります」* エラーメッセージ。
+ページが空白になるか、「この Web ページにはリダイレクトループがあります *というエラーメッセージが表示* れます。
 
 ## 原因：
 
@@ -45,15 +45,16 @@ ht-degree: 0%
 
 これが問題の原因であることを確認するには、次の手順に従います。
 
-1. を確認します `web/secure/enable_upgrade_insecure` , `web/secure/use_in_adminhtml` （管理者に空白/ループのリダイレクトの問題がある場合）または `web/secure/use_in_frontend` （ストアフロントに空白/ループリダイレクトの問題がある場合）の値が `'core_config_data'` DB テーブル。
-   * 次の場合 `web/secure/enable_upgrade_insecure` が「1」に設定されている場合、Adobe Commerceは `Content-Security-Policy: upgrade-insecure-requests`そのため、ブラウザーは HTTPS を使用するように指示し、HTTP 経由で送信されるすべてのクエリは管理者とストアフロントの両方について HTTPS にリダイレクトされます。
-   * 次の場合 `web/secure/use_in_adminhtml` が「1」に設定されている場合、Adobe Commerceは、管理ページのすべての HTTP リクエストに対して HTTPS リダイレクトを返します。
-   * 次の場合 `web/secure/use_in_frontend` が「1」に設定されている場合、Adobe Commerceは、ストアフロントページのすべての HTTP リクエストに対して HTTPS リダイレクトを返します。
-1. を確認します `web/secure/base_url` および `web/unsecure/base_url` の値 `'core_config_data'` テーブル。 両方の言語が次の語句で始まる場合    `http`次に、「セキュア」値を修正する必要があります。
+1. `'core_config_data'` DB テーブルの `web/secure/enable_upgrade_insecure`、`web/secure/use_in_adminhtml` （管理者に空白/ループリダイレクトの問題がある場合）または `web/secure/use_in_frontend` （ストアフロントに空白/ループリダイレクトの問題がある場合）の値を確認します。
+   * `web/secure/enable_upgrade_insecure` を「1」に設定すると、Adobe Commerceは応答ヘッダー `Content-Security-Policy: upgrade-insecure-requests` を追加するように設定されます。これにより、ブラウザーは HTTPS を使用して、HTTP を経由するすべてのクエリをリダイレクトするようになります
+https （管理者とストアフロントの両方について）
+   * `web/secure/use_in_adminhtml` を「1」に設定すると、Adobe Commerceは、管理ページのすべての HTTP リクエストに対して HTTPS リダイレクトを返します。
+   * `web/secure/use_in_frontend` を「1」に設定すると、Adobe Commerceは、ストアフロントページのすべての HTTP リクエストに対して HTTPS リダイレクトを返します。
+1. `'core_config_data'` テーブルの `web/secure/base_url` と `web/unsecure/base_url` の値を確認します。 両方の言語が次の語句で始まる場合    `http` の後、「安全な」値を修正する必要があります。
 
 問題の修正：
 
-1. で始まる値を設定します `https` （用） `web/secure/base_url.`
+1. `web/secure/base_url.` に `https` で始まる値を設定します
 1. 変更を適用するには、次のコマンドを実行して、設定キャッシュをクリーンアップします。
 
    ```bash

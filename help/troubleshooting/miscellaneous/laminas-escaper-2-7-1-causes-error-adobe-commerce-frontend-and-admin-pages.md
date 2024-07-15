@@ -23,17 +23,17 @@ ht-degree: 0%
 
 ラミナス/ラミナス – エスケープ：2.7.1 に更新すると、エラーメッセージがページに表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 Laminas/laminas-escaper を 2.7.1 に更新します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 エラーはありません。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-ラミナス/ラミナス – エスケープ：2.7.1 に更新すると、エラーメッセージが製品の編集（または製品管理）ページに表示されます。 *TypeError: rawurlencode （）は、パラメータ 1 が文字列である必要があります。/var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246 で指定された整数です*
+laminas/laminas-escaper:2.7.1 に更新すると、製品編集（または製品管理）ページにエラーメッセージが表示されます。*TypeError: rawurlencode （）は、/var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246 で指定された int のパラメータ 1 が文字列であることを想定し* す。
 このエラーは、フロントエンドページと管理ページで発生し、ページのコンテンツが歪みます。
 
 ## 原因：
@@ -42,8 +42,8 @@ laminas/laminas-escaper 2.7.1 では、Escaper クラスの厳密な型検証を
 
 ## 解決策
 
-実行 `composer require laminas/laminas-escaper:2.7.0` 各プロジェクトのルートディレクトリ。
+各プロジェクトのルートディレクトリで `composer require laminas/laminas-escaper:2.7.0` を実行します。
 
 ## 関連資料
 
-laminas のドキュメント： [ラミナスエスケーパー](https://docs.laminas.dev/laminas-escaper/)
+laminas ドキュメント：[laminas-escaper](https://docs.laminas.dev/laminas-escaper/)

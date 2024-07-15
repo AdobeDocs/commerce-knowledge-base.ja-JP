@@ -40,24 +40,24 @@ proc_open(): fork failed - Cannot allocate memory
 
 ## 解決策 {#solution}
 
-お勧めです [2GB のメモリを PHP に割り当てる](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) 開発者向けドキュメントで、インストールまたはアップグレードが正常に完了したことを確認します。
+アドビの開発者向けドキュメントでは、インストールまたはアップグレードが正常に完了するように ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)2 GB のメモリを PHP に割り当てる [ を推奨しています。
 
-既に設定されている場合は、スワップファイルをマシン上に作成します。 Linux マシンでは、を使用します *スワップ領域* より多くのメモリリソースが必要で、RAM がいっぱいである場合。 スワップ領域は、メモリ内の非アクティブなページに使用されます。
+既に設定されている場合は、スワップファイルをマシン上に作成します。 Linux マシンは、より多くのメモリリソースが必要で、RAM がいっぱいであれば *スワップ領域* を使用します。 スワップ領域は、メモリ内の非アクティブなページに使用されます。
 
-次に示すのは、提案のみです。その他のオプションも利用できる場合があります。 続行する前に、ネットワーク管理者またはその他の知識のあるリソースに問い合わせてください。 スワップファイルをユーザーとして作成するには、次のコマンドを実行する必要があります。 `root` 権限。
+次に示すのは、提案のみです。その他のオプションも利用できる場合があります。 続行する前に、ネットワーク管理者またはその他の知識のあるリソースに問い合わせてください。 スワップファイルを `root` 権限を持つユーザーとして作成するには、これらのコマンドを実行する必要があります。
 
 ### Ubuntu でファイルをスワップ {#swap-file-on-ubuntu}
 
-の使用 `fallocate` 以下の参照で説明されているコマンド。
+以下の参照で説明されているように、`fallocate` コマンドを使用します。
 
-* [Ubuntu 14.04 でスワップを追加する方法（Digitalocean）](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
-* [Ubuntu 16.04 でスワップ領域を追加する方法（Digitalocean）](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
-* [SwapFaq （help.ubuntu.com）](https://help.ubuntu.com/community/SwapFaq)
+* [Ubuntu 14.04 でスワップを追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+* [Ubuntu 16.04 でスワップ領域を追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
+* [SwapFaq （help.ubuntu.com） ](https://help.ubuntu.com/community/SwapFaq)
 
 ### CentOS でファイルをスワップ {#swap-file-on-centos}
 
-の使用 `mkswap` 以下の参照で説明されているコマンド。
+以下の参照で説明されているように、`mkswap` コマンドを使用します。
 
-* [CentOS 6 でスワップを追加する方法（Digitalocean）](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
-* [CentOS 7 でスワップを追加する方法（Digitalocean）](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
-* [スワップ領域（RedHat カスタマーポータル）](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
+* [CentOS 6 でスワップを追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
+* [CentOS 7 でスワップを追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
+* [ スワップ領域（RedHat カスタマーポータル） ](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-47027：低速クエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] 更新'
-description: ACSD-47027 パッチを適用して、クエリ B2B が遅いAdobe Commerceの問題を修正してください [!UICONTROL CompanyRole] [!DNL GraphQL] 更新。
+title: 'ACSD-47027：低速クエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] update'
+description: ACSD-47027 パッチを適用して、クエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] update が遅いAdobe Commerceの問題を修正してください。
 exl-id: 478ae16b-7722-4469-8f8a-a38820e61ae4
 feature: B2B, Companies, GraphQL, Roles/Permissions
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47027：低速クエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] 更新
+# ACSD-47027：低速クエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] の更新
 
-ACSD-47027 パッチは、低速のクエリ B2B が発生する問題を解決します [!UICONTROL CompanyRole] [!DNL GraphQL] 更新が期待どおりに動作しません。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.23 がインストールされています。 パッチ ID は ACSD-47027 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-47027 パッチを使用すると、低速のクエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] アップデートが期待どおりに動作しない問題を解決できます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.23 がインストールされている場合に使用できます。 パッチ ID は ACSD-47027 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -25,23 +25,23 @@ ACSD-47027 パッチは、低速のクエリ B2B が発生する問題を解決�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-低速クエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] 更新が期待どおりに動作しません。
+低速のクエリ B2B [!UICONTROL CompanyRole] [!DNL GraphQL] の更新が期待どおりに動作しません。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 B2B モジュールをインストールします。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. Adobe Commerce Admin で、に移動します。 **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configurations]** > **[!UICONTROL B2B Features]** およびを設定 **[!UICONTROL Enable Company]** 対象： _はい_.
+1. Adobe Commerce管理者で、**[!UICONTROL Stores]** / **[!UICONTROL Settings]** / **[!UICONTROL Configurations]** / **[!UICONTROL B2B Features]** に移動し、「**[!UICONTROL Enable Company]**」を _はい_ に設定します。
 1. フロントエンドに移動し、会社を作成します。
-1. 会社ユーザーとしてログインしたら、次の場所に移動します **[!UICONTROL My Account]** > **[!UICONTROL Roles and Permissions]** 新しい役割を追加します。
-1. Enable （有効） [!UICONTROL dev] を使用したクエリログ `bin/magento dev:que:enab`.
-1. 次を送信します [!DNL GraphQL] リクエスト （id は [!UICONTROL base64] エンコードされた役割 id）:
+1. 会社ユーザーとしてログインしたら、**[!UICONTROL My Account]**/**[!UICONTROL Roles and Permissions]** に移動し、新しい役割を追加します。
+1. `bin/magento dev:que:enab`[!UICONTROL dev] 使用してクエリログを有効にします。
+1. 次に、以下の [!DNL GraphQL] リクエストを送信します（ID は [!UICONTROL base64] でエンコードされた役割 ID です）。
 
    <pre><code>
    mutation {
@@ -84,13 +84,13 @@ B2B モジュールをインストールします。
    </code></pre>
 
 1. クエリログを確認します。
-1. 上記のクエリが実行されていることがわかります。 このクエリの実行場所 `app/code/Magento/CompanyGraphQl/Model/Company/Role/ValidateRole.php::validateResources`.
+1. 上記のクエリが実行されていることがわかります。 このクエリは `app/code/Magento/CompanyGraphQl/Model/Company/Role/ValidateRole.php::validateResources` で実行されます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-この `app/code/Magento/CompanyGraphQl/Model/Company/Role/ValidateRole.php::validateResources` で利用可能なすべてのデータを読み込まないように最適化する必要があります。 **[!UICONTROL company_permissions]** DB テーブル。
+**[!UICONTROL company_permissions]** DB テーブルで使用可能なすべてのデータを読み込まないように、`app/code/Magento/CompanyGraphQl/Model/Company/Role/ValidateRole.php::validateResources` を最適化する必要があります。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 Adobe Commerceは、フィルターなしでクエリを実行します。 レコード数が多い場合、Adobe Commerceでのデータ収集の準備に多くの時間がかかります。
 
@@ -98,14 +98,14 @@ Adobe Commerceは、フィルターなしでクエリを実行します。 レ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。 
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。 
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

@@ -17,28 +17,28 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce オンプレミス、 [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce オンプレミス、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. 顧客は商品をストアフロントの買い物かごに追加し、チェックアウトに進みます。
 1. お客様は、支払い/発送またはその他の情報/サービスのためにサードパーティのサイトにリダイレクトされます。
 1. ユーザーはストアにリダイレクトされます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 お客様が空の買い物かごまたは空白のページにリダイレクト。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 お客様は、チェックアウトデータと進行状況を失わずに、成功支払いページ（または他の成功ページ）にリダイレクトされました。
 
 ## 原因：
 
-SameSite cookie 属性はに設定されます。 *Lax* 指定されていない（に設定されたものとして扱われます） *Lax* ）に設定します。 持つ `SameSite` = *Lax* を介した外部 URL への cookie の転送を無効にします `POST` リクエスト。
+SameSite cookie 属性が *Lax* に設定されているか、指定されていない（*Lax* に設定されていると見なされます）。 `SameSite` = *Lax* を指定すると、`POST` リクエストを介した外部 URL への cookie の転送が無効になります。
 
 ## 解決策
 
@@ -46,4 +46,4 @@ SameSite cookie 属性はに設定されます。 *Lax* 指定されていない
 
 ## 関連資料
 
-[Chrome SameSite アップデート](https://www.chromestatus.com/feature/5088147346030592)
+[Chrome SameSite の更新 ](https://www.chromestatus.com/feature/5088147346030592)

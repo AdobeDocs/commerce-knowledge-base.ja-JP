@@ -16,21 +16,21 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-の手順を参照してください。 [管理者サインインの [ パスワードのリセット ] セクション](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) を参照してください。
+ユーザーガイドの [ 管理者ログインのパスワードのリセット ](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) の手順をお読みください。
 
 重要な使用上の注意を以下に示します。
 
 ### 送信メールを有効にする
 
-使用する前に **パスワードを忘れた場合** フォーム、 [送信メールを有効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) の使用 [クラウドコンソール](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+**パスワードを忘れた場合** フォームを使用する前に、[Cloud Console[ を使用して ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) 送信メールを有効にする ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) を行います。
 
 ### 迷惑メール フォルダーの確認
 
-パスワードのリセットリンクを含んだメッセージが見つからない場合は、 *迷惑メール* フォルダー。 メールの名前はです *管理者ユーザー名のパスワードリセットの確認*.
+パスワードのリセットリンクを含んだメッセージが見つからない場合は、「迷惑メール *フォルダーを確認し* ください。 メールの名前は *管理者ユーザー名のパスワードリセットの確認* です。
 
 ## 方法 2：新しい管理者ユーザーを追加する
 
 既存のユーザーのパスワードを復元またはリセットできない場合は、新しい管理者ユーザーを作成して、このユーザーのパスワードを設定できます。 これを行うには、次の手順に従います。
 
-1. 使用方法 [リモート環境にログインするための SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
-1. 次のコマンドを実行します。 `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`
+1. [SSH を使用して、リモート環境にログインします ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. 次のコマンドを実行します：`bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`

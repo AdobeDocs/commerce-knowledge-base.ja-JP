@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-環境全体にコードをデプロイする場合は、ビルドスクリプトとデプロイスクリプトで `master/production/staging` ブランチは、Google Analyticsを有効にしておくためにデプロイされます。 マスターの開発（または子）ブランチを開発環境（Integration）にデプロイする場合、デプロイスクリプトでGoogle Analyticsが無効になります。
+環境全体にコードをデプロイする場合は、ビルドスクリプトとデプロイスクリプトによって `master/production/staging` ブランチがデプロイされ、Google Analyticsが有効に保たれるかどうかが検証されます。 マスターの開発（または子）ブランチを開発環境（Integration）にデプロイする場合、デプロイスクリプトでGoogle Analyticsが無効になります。
 
 ## 原因：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 解決策
 
-Google Analyticsを常に有効にする場合は、deploy 変数を設定します `ENABLE_GOOGLE_ANALYTICS = true`（を参照） [変数のデプロイ](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) 開発者向けドキュメントを参照してください。
+変数を常に有効にする場合は、開発者向けドキュメントの [Google Analyticsのデプロイ ](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) の説明に従って、デプロイ変数を `ENABLE_GOOGLE_ANALYTICS = true` 定します。
 
 >[!NOTE]
 >

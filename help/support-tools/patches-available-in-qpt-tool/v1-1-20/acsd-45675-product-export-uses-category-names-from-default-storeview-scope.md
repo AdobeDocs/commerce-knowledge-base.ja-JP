@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-45675：製品のエクスポートで、既定のストア表示範囲のカテゴリ名が使用されます
 
-ACSD-45675 パッチでは、製品の書き出しにデフォルトのストア表示範囲のカテゴリ名が使用される問題が修正されています。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20 がインストールされています。 パッチ ID は ACSD-45675 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-45675 パッチでは、製品の書き出しにデフォルトのストア表示範囲のカテゴリ名が使用される問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20 がインストールされている場合に使用できます。 パッチ ID は ACSD-45675 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,47 +27,47 @@ ACSD-45675 パッチでは、製品の書き出しにデフォルトのストア
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 製品の書き出しでは、デフォルトのストア表示範囲のカテゴリ名が使用されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. カスタムストア表示の作成 **[!UICONTROL Thai]** 本店の中。
-1. 作成 **[!UICONTROL Thai]** メイン web サイトのデフォルトのストア表示。
-1. 次のカテゴリ構造をの下に作成します。 **[!UICONTROL Default Category]**:
+1. カスタムストア表示 **[!UICONTROL Thai]** をメインストア内に作成します。
+1. **[!UICONTROL Thai]** をメイン web サイトのデフォルトのストア表示にします。
+1. **[!UICONTROL Default Category]** の下に、次のカテゴリ構造を作成します。
 
    *[!UICONTROL Default category/Tea/Black]*
 
-1. カテゴリの選択 **[!UICONTROL Tea]** を変更できます **[!UICONTROL Scope]** 対象： **[!UICONTROL Thai]**.
-1. を **[!UICONTROL Category Name]** as **[!UICONTROL ชาดำ]**.
-1. シンプルな製品の作成 **[!UICONTROL SP001]** カテゴリを割り当てます **[!UICONTROL Black]**.
+1. カテゴリ **[!UICONTROL Tea]** を選択し、**[!UICONTROL Scope]** を **[!UICONTROL Thai]** に変更します。
+1. **[!UICONTROL Category Name]** を **[!UICONTROL ชาดำ]** に設定します。
+1. シンプルな製品 **[!UICONTROL SP001]** を作成し、カテゴリ **[!UICONTROL Black]** を割り当てます。
 1. cron が実行されていないことを確認します。
-1. 製品を書き出します。 SKU でフィルタリングして選択 **[!UICONTROL SP001]**.
-1. を確認します **[!UICONTROL categories]** 書き出された CSV の列。
+1. 製品を書き出します。 SKU でフィルタリングして、「**[!UICONTROL SP001]**」を選択します。
+1. 書き出された CSV の「**[!UICONTROL categories]**」列を確認します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-書き出し時にストアが選択されていなかったので、次のようなカテゴリパスが得られます。 *[!UICONTROL Default Category/Tea/Black]*.
+書き出し時にストアが選択されていなかったので、次のようなカテゴリパスが得られます。*[!UICONTROL Default Category/Tea/Black]*
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-カテゴリパスには混合言語があります： *[!UICONTROL Default Category/ชาดำ/Black]*.
+カテゴリ パスには複数の言語が混在しています：*[!UICONTROL Default Category/ชาดำ/Black]*。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tools] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 『品質向上パッチツール』マニュアルの「」を参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tools] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the Quality Patches Tool Guide
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) サポートナレッジベースで確認します。
 
-で利用可能なその他のパッチについて [!DNL QPT]を参照してください。 [で使用可能なパッチ [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 『品質向上パッチツール』マニュアルの「」を参照してください。
+[!DNL QPT] で使用可能なその他のパッチの詳細については、『品質向上パッチツールガイド』の [ で使用可能なパッチ  [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を参照してください。

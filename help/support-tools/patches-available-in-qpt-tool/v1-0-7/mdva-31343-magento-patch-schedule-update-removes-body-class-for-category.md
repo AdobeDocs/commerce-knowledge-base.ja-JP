@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-31343 パッチ：スケジュール更新でカテゴリの本文クラスが削除される
 
-MDVA-31343 パッチは、スケジュールされた更新中に、カテゴリに割り当てられたレイアウト本文の CSS クラスが削除される問題を修正します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 がインストールされています。 この問題はAdobe Commerce 2.4.2 で修正される予定です。
+MDVA-31343 パッチは、スケジュールされた更新中に、カテゴリに割り当てられたレイアウト本文の CSS クラスが削除される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.0.7 がインストールされている場合に使用できます。 この問題はAdobe Commerce 2.4.2 で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,16 +27,16 @@ Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミ�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 スケジュールされた更新後、レイアウト本文クラスがカテゴリから削除されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. Commerce Admin で、カテゴリを作成します。
-1. を設定 **レイアウト** = *Category — Full width* が含まれる **デザイン** セクション。
+1. **デザイン** セクションで、*レイアウト* = **カテゴリ – 全幅** を設定します。
 1. カテゴリの保存。
 1. カテゴリフロントエンドページに移動します。 ページソースに、
 
@@ -45,11 +45,11 @@ Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミ�
    ```
 
    CSS クラス。
-1. 次の下 **カタログ** > **カテゴリ**&#x200B;を選択し、 **新しい更新をスケジュール** が含まれる *スケジュールされた変更* 新しいカテゴリの「」セクション
+1. **カタログ**/**カテゴリ** で、新しいカテゴリの **スケジュールされた変更** セクションの *新しい更新をスケジュール* をクリックします。
 1. スケジュールされた更新が開始されるのを待ち、cron を実行してキャッシュをフラッシュします。
 1. フロントエンドのカテゴリページに移動し、ページソースを調べます。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 ページ本文には、
 
@@ -59,7 +59,7 @@ page-layout-category-full-width
 
 CSS クラス。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 ページ本文には、
 
@@ -73,14 +73,14 @@ CSS クラス（カテゴリページのデフォルト）。
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

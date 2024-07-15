@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# クラウド UI が次の条件を満たしているかどうかをデプロイメントログで確認する *ログが切り取られました* エラー
+# クラウド UI に *log snipped* エラーがあるかどうかをデプロイメントログで確認しています
 
-この記事では、クラウドインフラストラクチャー上のAdobe Commerceの UI でが表示される問題の解決策について説明します *長すぎるためログが切り取られました* クラウドプロジェクト UI でデプロイメントログを表示しようとすると、エラーメッセージが表示される。 （次には適用されません： [Adobe Commerce Cloud コンソール](https://console.adobecommerce.com/).）
+この記事では、クラウドプロジェクト UI でデプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI のAdobe Commerceで *ログのスニペットが長すぎるので* というエラーメッセージが表示される問題の解決策について説明します。 （[Adobe Commerce Cloud コンソール ](https://console.adobecommerce.com/) には適用されません。）
 
 ## 対象製品
 
@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ## 問題
 
-クラウドプロジェクト UI でデプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI 上のAdobe Commerceに次のエラーメッセージが表示されます。 *長すぎるためログが切り取られました*.
+クラウドプロジェクト UI でデプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI 上のAdobe Commerceに、「*ログが長すぎるので切り抜かれました* というエラーメッセージが表示されます。
 
 ## 再現手順
 
-1. プロジェクト URL に移動し、 **ステータス** 対象のデプロイメントの。
-1. ログが長すぎて UI に表示されない場合は、次のエラーメッセージが表示されます。 *長すぎるためログが切り取られました*.
+1. プロジェクト URL に移動し、該当するデプロイメントの **ステータス** をクリックします。
+1. ログが長すぎて UI に表示できない場合は、「*ログが長すぎるのでスニペットされました*」というエラーメッセージが表示されます。
 
 ## 原因：
 
-UI に表示されるログは、特に、デプロイメントが成功ステータスでリストされた後、サイトが応答しないか、正しく動作していないことが判明した場合には、信頼できるソースとして扱わないでください。 また、サーバー上のログでも確認する必要があります。 こちらを参照してください [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) 開発者向けドキュメントを参照してください。
+UI に表示されるログは、特に、デプロイメントが成功ステータスでリストされた後、サイトが応答しないか、正しく動作していないことが判明した場合には、信頼できるソースとして扱わないでください。 また、サーバー上のログでも確認する必要があります。 開発者向けドキュメントの [ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) を参照してください。
 
 ## 解決策
 
-1. 次が揃っていることを確認します [MagentoCloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) ローカル環境にインストールされていること。
+1. ローカル環境に [Magentoの Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) がインストールされていることを確認します。
 1. 次のコマンドを実行します。
 
    ```bash
@@ -66,5 +66,5 @@ UI に表示されるログは、特に、デプロイメントが成功ステ�
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [クラウドインフラストラクチャー上のAdobe Commerce/ビルドとデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [クラウドインフラストラクチャー上のAdobe Commerce/ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [ クラウドインフラストラクチャー上のAdobe Commerce/ビルドとデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
+* [ クラウドインフラストラクチャー上のAdobe Commerce/ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)

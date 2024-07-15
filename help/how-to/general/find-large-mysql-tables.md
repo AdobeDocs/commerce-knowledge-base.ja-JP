@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 大きな MySQL テーブルの検索
 
-大きいテーブルを識別するには、の説明に従って、データベースに接続します [データベースへの接続](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) を作成し、次のコマンドを実行します。このコマンドの条件は次のとおりです。 `project_id` はクラウドプロジェクト ID :
+大きいテーブルを識別するには、[ データベースへの接続 ](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) の記事の説明に従ってデータベースに接続し、次のコマンドを実行します。ここで、`project_id` はクラウドプロジェクト ID です。
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

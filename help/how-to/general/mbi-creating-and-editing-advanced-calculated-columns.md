@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # MBI：高度な計算列の作成と編集
 
-[管理者ユーザー](https://docs.magento.com/mbi/administrator/user-management/user-management.html) Data Warehouseマネージャーで特定の計算列を作成および編集できる。 これらの計算列を使用すると、ビジネス上の主要な質問に回答するために探しているレポートを設定できます。
+[ 管理者ユーザー ](https://docs.magento.com/mbi/administrator/user-management/user-management.html) は、Data Warehouseマネージャーで特定の計算列を作成および編集できます。 これらの計算列を使用すると、ビジネス上の主要な質問に回答するために探しているレポートを設定できます。
 
 Data Warehouseマネージャーで作成できる計算列のリストと、正しく設定されていることを確認するためのガイダンスについては、ユーザーガイドの次の記事を参照してください。
 
-* [計算列の作成](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
-* [集計列の種類](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/calc-column-types.html)
-* [テーブルの関係の理解と評価](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
-* [計算列のパスの作成](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
+* [ 計算列の作成 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
+* [ 計算列のタイプ ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/calc-column-types.html)
+* [ テーブルの関係の理解と評価 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
+* [ 計算列のパスの作成 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
 
 ## まだ助けが必要だ！
 
-通常の集計列の作成に関するヘルプが必要な場合、または高度な集計列を作成または編集する場合、 [我々のチームに連絡を取る](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) また、次も含まれます。
+通常の計算列の作成に関するヘルプが必要な場合や、高度な計算列を作成または編集する場合は [ チームに問い合わせて ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、次を含めてください。
 
 * あなたは何をしようとしているのですか。
 * 新しい列を作成する必要があるテーブルは何ですか？
@@ -35,7 +35,7 @@ Data Warehouseマネージャーで作成できる計算列のリストと、正
 
 ## 関連資料
 
-* [MBI ユーザーガイド](https://docs.magento.com/mbi)
+* [MBI ユーザーガイド ](https://docs.magento.com/mbi)
 * [MBI：データの不一致](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [MBI：データアナリスト](https://docs.magento.com/mbi/data-analyst.html)
-* [MBI:Magento BI のヘルプ](https://docs.magento.com/mbi/getting-started/support.html)
+* [MBI：データアナリスト ](https://docs.magento.com/mbi/data-analyst.html)
+* [MBI:Magento BI のヘルプ ](https://docs.magento.com/mbi/getting-started/support.html)

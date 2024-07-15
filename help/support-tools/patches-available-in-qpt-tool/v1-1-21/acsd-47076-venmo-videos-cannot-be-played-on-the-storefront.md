@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-47076: [!DNL Vimeo] 「動画をストアフロントで再生できない」'
-description: Adobe Commerceの問題を修正するために ACSD-47076 パッチを適用してください。この問題の場所は次のとおりです。 [!DNL Vimeo] ストアフロントでは動画の再生はできません。
+title: 'ACSD-47076: [!DNL Vimeo]  ビデオをストアフロントで再生できない'
+description: ACSD-47076 パッチを適用すると、ストアフロントで  [!DNL Vimeo]  ビデオを再生できないAdobe Commerceの問題を修正できます。
 exl-id: 52161c0d-3d51-45a3-ba41-36f955df0bea
 feature: Storefront
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47076: [!DNL Vimeo] ストアフロントでビデオを再生できない
+# ACSD-47076:[!DNL Vimeo] ビデオをストアフロントで再生できない
 
-ACSD-47076 パッチは、次の問題を修正します。 [!DNL Vimeo] ストアフロントでは動画の再生はできません。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 がインストールされています。 パッチ ID は ACSD-47076 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-47076 パッチにより、ストアフロントで [!DNL Vimeo] ビデオを再生できない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 がインストールされている場合に使用できます。 パッチ ID は ACSD-47076 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,37 +27,37 @@ ACSD-47076 パッチは、次の問題を修正します。 [!DNL Vimeo] スト�
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-[!DNL Vimeo] ストアフロントでは動画の再生はできません。
+ストアフロントでは [!DNL Vimeo] の動画は再生できません。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. を追加 [!DNL Vimeo] Commerceの製品に対するビデオ [!UICONTROL Admin] > **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > 製品編集ページ > **[!UICONTROL Images and Videos]**.
+1. Commerce [!UICONTROL Admin]/**[!UICONTROL Catalog]**/**[!UICONTROL Products]**/製品編集ページ/**[!UICONTROL Images and Videos]** で、[!DNL Vimeo] ビデオを製品に追加します。
 1. ストアフロントで製品を開き、ビデオを再生します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
-この [!DNL Vimeo] ビデオを再生できます。
+[!DNL Vimeo] のビデオを再生できます。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
-この [!DNL Vimeo] ストアフロントでビデオを再生できません。
+ストアフロントで [!DNL Vimeo] ビデオを再生できません。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

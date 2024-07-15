@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-28202 パッチ：在庫切れの製品が適切にフィルタリングされない
 
-MDVA-28202 パッチは、在庫切れの製品がを使用して適切にフィルタリングされない問題を解決します **価格** Adobe Commerce ストアのフロントエンドに対してフィルターを適用します。 このパッチは、 [品質向上パッチツール（QPT）](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.6 がインストールされている。
+MDVA-28202 パッチは、在庫切れの商品がAdobe Commerce ストアのフロントエンドで **価格** フィルターを使用して適切にフィルタリングされない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.6 がインストールされている場合に使用できます。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,33 +22,33 @@ MDVA-28202 パッチは、在庫切れの製品がを使用して適切にフィ
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-在庫切れ製品が、を使用して適切にフィルタリングされない **価格** Commerce Admin でフィルターします。
+在庫切れ商品が、Commerce管理の **価格** フィルターを使用して適切にフィルタリングされない。
 
-<u>前提条件：</u>
+<u> 前提条件：</u>
 
-* を設定 **在庫切れ商品の表示** = &quot;*はい*&#x200B;の下の **「格納」 > 「構成」 > 「カタログ」 > 「在庫」 > 「在庫オプション」**.
+* **ストア/設定/カタログ/在庫/在庫オプション** で、*在庫切れ商品を表示&#x200B;**=「* はい**」を設定します。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
-1. 2 つのシンプルな製品を使用して設定可能な製品を作成します（例：set **価格** = *1,500 ドル*）に設定します。
+1. 2 つのシンプルな製品を使用して設定可能な製品を作成します（例：set **Price** = *$1500*）。
 1. 設定可能な製品を作成する際は、単純な製品はどちらも「在庫切れ」になっている必要があります。
 1. この設定可能な製品をカテゴリに割り当てます。
-1. 再インデックスとチェック `catalog_product_index_price` 上記の設定可能な商品のエンティティ id を使用するテーブル。
-1. すべての製品価格を保存= *$0*.
+1. 上記の設定可能な商品 `catalog_product_index_price` エンティティ ID を使用して、テーブルのインデックスを再作成して確認します。
+1. すべての製品価格= *$0* を保存します。
 1. カテゴリを読み込んで、商品の可用性を確認します。
-1. を開きます **価格** 階層型ナビゲーションからフィルタリングします。
-1. 次のことに注意してください **価格** フィルターには「」のオプションがあります *0.00～9.99 ドル* 」と入力します。
-1. 上でクリックしてください **価格** 「」オプションをフィルタリングして、 **価格** = *1,500 ドル*&#x200B;を選択すると、上記で作成した設定可能な製品が取得されます。
+1. レイヤーナビゲーションから **価格** フィルターを開きます。
+1. **価格** フィルターのオプションは「*$0.00 - 9.99*」であることに注意してください。
+1. 上記の **価格** フィルターオプションをクリックして、**価格** = *$1500* を設定すると、上記で作成した設定可能な製品が取得されます。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 製品は、期待どおりに正しい価格範囲でフィルタリングされます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 製品が間違った価格範囲フィルターに該当します。
 
@@ -56,16 +56,16 @@ MDVA-28202 パッチは、在庫切れの製品がを使用して適切にフィ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [品質向上パッチツールを使用したパッチの適用](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Quality Patches Tool を使用したパッチの適用 ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)。
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [ 品質パッチツールがリリースされました：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT ツールで使用可能なその他のパッチについては、を参照してください。 [QPT ツールで使用可能なパッチ](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) セクション。
+QPT ツールで使用可能なその他のパッチについては、[QPT ツールで使用可能なパッチ ](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) の節を参照してください。
 
-設定可能な製品について詳しくは、開発者向けドキュメントのこの記事を参照してください。 [設定可能な製品チュートリアルの作成](https://devdocs.magento.com/guides/v2.4/rest/tutorials/configurable-product/config-product-intro.html) 開発者向けドキュメントを参照してください。
+設定可能な製品について詳しくは、開発者向けドキュメントの次の記事を参照してください。[ 設定可能な製品の作成 ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/configurable-product/config-product-intro.html) チュートリアルについては、開発者向けドキュメントを参照してください。

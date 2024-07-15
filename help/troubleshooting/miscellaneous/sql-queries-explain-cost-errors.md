@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # SQL クエリ：コストエラーの説明
 
-この記事では、失敗した SQL クエリを実行した際の EXPLAIN コストエラーの解決策を説明します。 PostgreSQL はという関数を使用します [EXPLAIN コマンド](https://www.postgresql.org/docs/9.5/static/using-explain.html) SQL クエリのコストを特定します。 また、このコマンドを使用するように SQLReport Builderを構築しました。つまり、コストが高すぎると見なされる場合（クエリの実行に必要なリソース量がしきい値を超える場合）、クエリは実行されず、EXPLAIN メッセージが表示されます。
+この記事では、失敗した SQL クエリを実行した際の EXPLAIN コストエラーの解決策を説明します。 PostgreSQL は EXPLAIN コマンド [ と呼ばれるものを使用して SQL 問い合わせのコストを決定します ](https://www.postgresql.org/docs/9.5/static/using-explain.html) また、このコマンドを使用するように SQLReport Builderを構築しました。つまり、コストが高すぎると見なされる場合（クエリの実行に必要なリソース量がしきい値を超える場合）、クエリは実行されず、EXPLAIN メッセージが表示されます。
 
 これが発生する理由はいくつかあります。 受信するメッセージ、その意味およびトラブルシューティング方法を次に示します。
 
 ## クエリを実行できません。 EXPLAIN のコスト値\[xxx\] は、このクエリを実行するには高すぎます。
 
-このメッセージが表示された場合は、クエリの実行にコストがかかりすぎていると見なされたことを意味します。 この状況に対しては、2 つの推奨事項があります。1 つは、コストのかかる操作であるため、クエリから ORDER BY 句を排除することです。 2 つ目は、のヒントに従うことです [最適化記事](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) をクリックしてクエリを調整します。
+このメッセージが表示された場合は、クエリの実行にコストがかかりすぎていると見なされたことを意味します。 この状況に対しては、2 つの推奨事項があります。1 つは、コストのかかる操作であるため、クエリから ORDER BY 句を排除することです。 2 つ目は、[ 最適化の記事 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) のヒントに従って、クエリを調整することです。
 
 ## クエリを実行できません。 このクエリは、10,000 の制限を超える\[xxx\] 行を返します
 

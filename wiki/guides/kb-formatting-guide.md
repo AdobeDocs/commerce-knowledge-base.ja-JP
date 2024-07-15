@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Markdown での作成者
 
-一般的には、を使用します [Adobe Experience League Markdown 構文スタイルガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en)しかし、いくつかの違いと例外があります。 また、場合によっては、特定のHTMLタグが必要です。
+通常、[Adobe Experience League Markdown 構文スタイルガイド ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en) を使用しますが、いくつかの違いがあり、例外があります。 また、場合によっては、特定のHTMLタグが必要です。
 
 リポジトリーで最も一般的に使用される Markdown フォーマットの例を以下に示します。
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 `This text will be *italics*`
 
-テキストを下線付きとして書式設定するには、 `<ins>` タグ :
+テキストを下線付きとして書式設定するには、`<ins>` のタグを使用します。
 
 `<ins>This text will be underlined</ins>`
 
-改行を追加するには、を使用します `<br>` HTMLタグ。
+改行を追加するには、`<br>` のHTMLタグを使用します。
 
 
 ## ヘッダー
@@ -54,8 +54,11 @@ H2 から H5 のヘッダーには、次の書式を使用します。 記事の
 
 \&#39;\&#39;\&#39; sql
 
-TABLE_NAME をとして選択します `Table`, ROUND （（DATA_LENGTH + INDEX_LENGTH） / 1024 / 1024） AS `Size (MB)`
-FROM information_schema.TABLES WHERE TABLE_SCHEMA = &quot;%project_id%&quot; ORDER BY （DATA_LENGTH + INDEX_LENGTH） DESC;
+TABLE_NAME を `Table` として選択します。
+ROUND （（DATA_LENGTH + INDEX_LENGTH） / 1024 / 1024） AS `Size (MB)`
+FROM information_schema.TABLES
+TABLE_SCHEMA = &quot;%project_id%&quot;
+（DATA_LENGTH + INDEX_LENGTH）降順；
 
 \&#39;\&#39;\&#39;
 
@@ -81,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-ここで、 ``%language-code%`` は、で定義されるコードです。 [Prism.js がサポートする言語](https://prismjs.com/#supported-languages).
+ここで、``%language-code%`` は [Prism.js でサポートされる言語 ](https://prismjs.com/#supported-languages) で定義されるコードです。
 
 ## リスト
 
@@ -130,7 +133,7 @@ your code here
 
 あらゆる種類の添付ファイルは、.png、.jpg および.jpeg 形式である必要があります。 セキュリティ上の目的で、3 つの形式のいずれかの添付ファイルのみを受け入れます。
 
-画像を挿入するには、画像をに配置します *アセット* サブフォルダー（記事と同じセクションフォルダー内）。次の構文を使用して画像を記事に挿入します。
+画像を挿入するには、画像を記事と同じセクションフォルダーの *assets* サブフォルダーに配置し、次の構文を使用して画像を記事に挿入します。
 
 ```markdown
 ![alt text](assets/image.png)
@@ -162,17 +165,17 @@ your code here
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-header 以外の要素を参照する必要がある場合は、element を使用してHTMLを定義し、を使用して追加を行います [id 属性](https://www.w3schools.com/html/html_id.asp). その後、Markdown またはHTMLを使用して、この ID を参照できます。
+header 以外の要素を参照する必要がある場合は、HTMLを使用して、追加する要素を定義し、[id 属性 ](https://www.w3schools.com/html/html_id.asp) を使用します。 その後、Markdown またはHTMLを使用して、この ID を参照できます。
 
 ### 他の記事への相対リンクとリンク
 
-サポートナレッジベースの記事を参照するために相対リンクを使用しないでください。 記事がで公開されると、これらのリンクは機能しません [Adobe Commerceヘルプセンター](https://support.magento.com/hc/en-us).
-から完全なハイパーリンクを使用してください [Adobe Commerceヘルプセンター](https://support.magento.com/hc/en-us).
+サポートナレッジベースの記事を参照するために相対リンクを使用しないでください。 記事が [Adobe Commerce ヘルプセンター ](https://support.magento.com/hc/en-us) で公開されると、これらのリンクは機能しません。
+[Adobe Commerce ヘルプ センター ](https://support.magento.com/hc/en-us) のハイパーリンクをすべて使用してください。
 
 
 ## テーブル
 
-使用方法 [テーブルのHTML形式](https://www.w3schools.com/html/html_tables.asp).
+テーブルには [HTML形式を使用 ](https://www.w3schools.com/html/html_tables.asp) ます。
 
 
 ## 警告および情報ブロック

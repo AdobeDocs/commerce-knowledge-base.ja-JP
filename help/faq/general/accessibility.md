@@ -16,12 +16,12 @@ ht-degree: 0%
 
 Adobe Commerceは詳細なカスタマイズが可能なので、お客様は Luma テーマを拡張し、アクセシビリティモジュールを作成し、Commerce Marketplaceにアクセスして、アクセシビリティ要件を満たす拡張機能を見つけることができます。
 
-お客様の多くは、 [W3C アクセシビリティ標準](https://www.w3.org/WAI/standards-guidelines/) を使用します [Adobe CommerceのAdobeアクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
+お客様の多くは、{W3C Accessibility Standards[ を利用しており ](https://www.w3.org/WAI/standards-guidelines/)Adobe Commerceの [Adobeのアクセシビリティ準拠レポート ](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html) を利用しています。
 
 業界標準のデベロッパーツールを使用すると、主要なアクセシビリティパートナーと協力したり、お客様固有の要件やAdobe適合性レポートに基づいてCommerce Marketplaceの拡張機能を実装したりできます。
 
-ソリューションは、次で確認できます [Commerce Marketplace](https://marketplace.magento.com/).
+ソリューションは [Commerce Marketplace](https://marketplace.magento.com/) にあります。
 
 ## 関連資料
 
-* [Adobeのアクセシビリティ](https://www.adobe.com/accessibility.html)
+* [Adobeのアクセシビリティ ](https://www.adobe.com/accessibility.html)

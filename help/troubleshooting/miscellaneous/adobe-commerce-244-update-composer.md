@@ -25,18 +25,18 @@ ht-degree: 0%
 
 2022 年 7 月以降にAdobe Commerce 2.4.4 以降にアップデートすると、プラグインに関して composer から警告が表示される場合があります。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 前提条件：Adobe Commerce 2.4.3 以前がインストールされている。
 
-1. の説明に従って、アップグレードを開始します [アップグレードの実行](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
-1. を実行 `composer update` Adobe Commerce アプリケーションをアップグレードするコマンド。
+1. [ アップグレードの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) の説明に従って、アップグレードを開始します。
+1. `composer update` コマンドを実行して、Adobe Commerce アプリケーションをアップグレードします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 アップグレードが正常に終了しました。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 インストールが失敗し、次のようなエラーが表示されます。
 
@@ -58,13 +58,13 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
 
 ## 原因：
 
-2022 年 7 月以降、Composer はのデフォルト値を変更します。 [`allow-plugins` オプション](https://getcomposer.org/doc/06-config.md#allow-plugins) 対象： `{}` 許可されていない場合、およびプラグインは読み込まれません。
+2022 年 7 月以降、Composer は [`allow-plugins` オプションのデフォルト値を `{}` に変更し ](https://getcomposer.org/doc/06-config.md#allow-plugins) 許可されない限りプラグインは読み込まれません。
 
 ## 解決策
 
-以下のを `composer.json` ファイル（Adobe Commerceのインストール方法に応じて異なります）。
+Adobe Commerceのインストール方法に応じて、`composer.json` ファイルに次の内容を追加します。
 
-* プロジェクトが作成されている場合 [の使用 `composer create-project` コマンド](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
+* プロジェクトが作成されている場合 [`composer create-project` コマンドを使用 ](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
 
   ```json
   "config": {
@@ -76,7 +76,7 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
   }
   ```
 
-* プロジェクトが別の方法で作成され、次のものが含まれていない場合 `"dealerdirect/phpcodesniffer-installer"` 。対象： `"require-dev"` セクション：
+* プロジェクトが別の方法で作成され、`"require-dev"` のセクションに `"dealerdirect/phpcodesniffer-installer"` がない場合：
 
   ```json
   "config": {
@@ -87,4 +87,4 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
   }
   ```
 
-の更新後 `composer.json` ファイル、を実行 `composer update` コマンドを実行し、アップグレードプロセスを再開します。
+`composer.json` ファイルを更新した後、`composer update` コマンドを実行し、アップグレードプロセスを再開します。

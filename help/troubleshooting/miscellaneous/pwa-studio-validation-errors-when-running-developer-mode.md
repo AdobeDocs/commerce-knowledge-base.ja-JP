@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 * Adobe CommerceのPWA Studioで開発者モードを実行します。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 * PWA Studioサーバーは正常に起動します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 * 検証エラーが表示されます。次のような内容になります。
 
@@ -54,4 +54,4 @@ npx @magento/pwa-buildpack create-env-file packages/venia-concept
 ## 関連資料
 
 * [Adobe Commerce ドキュメントのPWA Studio](https://magento.github.io/pwa-studio/)
-* [Venia ストアフロント（概念）](https://magento.github.io/pwa-studio/venia-pwa-concept/)
+* [Venia ストアフロント（概念） ](https://magento.github.io/pwa-studio/venia-pwa-concept/)

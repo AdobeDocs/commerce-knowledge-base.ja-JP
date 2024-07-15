@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # サポートチケットの連絡理由の説明
 
-この記事では、サポートチケットの一覧を示します **連絡先の理由** フィールドオプションと、各フィールドオプションの詳細な説明。
+この記事では、サポートチケット **連絡先** フィールドオプションと、それぞれの詳細な説明を示します。
 
 ## 連絡先の理由
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## Adobe Commerceの適用理由
 
-次の場合に表示されるオプションです **Adobe Commerce アプリケーション** がとして選択されました **連絡先の理由**:
+次は、**Adobe Commerce アプリケーション** が **連絡先の理由** として選択された場合に表示されるオプションです。
 
 <table class="tg">
 <thead>
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Cloud インフラストラクチャの理由
 
-次の場合に表示されるオプションです **Adobe Commerce Cloud インフラストラクチャ** がとして選択されました **連絡先の理由**:
+次は、**Adobe Commerce Cloud インフラストラクチャ** が **連絡先の理由** として選択された場合に表示されるオプションです。
 
 <table class="tg">
 <thead>
@@ -150,4 +150,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-こちらを参照してください [ヘルプセンターガイド/サポートチケットフィールドの説明](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) をクリックして、他のチケット取り込みフォームフィールドの詳細を確認します。
+他のチケット取り込みフォームフィールドについて詳しくは、[ ヘルプセンターガイド/サポートチケットフィールドの説明 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) を参照してください。

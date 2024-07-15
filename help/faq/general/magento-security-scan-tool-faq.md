@@ -40,14 +40,14 @@ Security Scan Tool のマーチャントは、Adobe Commerceの Security Scan To
 
 ## セキュリティスキャンツールの仕組み {#how-does-the-magento-security-scan-tool-work}
 
-セキュリティスキャンツールは web ベースで、マーチャントのオンラインAdobe Commerceアカウント（[account.magento.com](https://account.magento.com/)）に設定します。 セキュリティスキャンは、HTTP と HTTPS の両方で動作します。 セキュリティに関する既知の問題がないかどうかを確認し、Adobe Commerceのパッチやアップデートが見つからないかどうかを特定します。
+セキュリティスキャンツールは Web ベースで、マーチャントのオンラインAdobe Commerceアカウント（[account.magento.com](https://account.magento.com/)）からアクセスします。 セキュリティスキャンは、HTTP と HTTPS の両方で動作します。 セキュリティに関する既知の問題がないかどうかを確認し、Adobe Commerceのパッチやアップデートが見つからないかどうかを特定します。
 
 ## セキュリティ スキャン ツールを使用するには、サインアップ方法を教えてください。 {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
 
-マーチャントは、セキュリティスキャンツールを使用してAdobe Commerce アカウントから web ストアをスキャンするように登録できます（[account.magento.com](https://account.magento.com)）に設定します。 セキュリティ スキャン ツールにサインアップするには、リンクに従ってください [こちら](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
+マーチャントは、セキュリティスキャンツールを使用してAdobe Commerce アカウント（[account.magento.com](https://account.magento.com)）から web ストアをスキャンするように登録できます。 リンクに従って、セキュリティ スキャン ツール [ ここ ](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686) にサインアップします。
 
 ## スキャンレポートで偽陽性が表示された場合はどうすればよいですか？ {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
 すべてのスキャンに失敗したことを調査し、問題を解決するために適切な措置を講じることをマーチャントにお勧めします。 調査後、スキャン結果が偽陽性と思われる場合は、マーチャントに対し、Adobeに適切な対応を取るように通知するよう依頼します。
 
-偽陽性レポートを送信するには、Adobe Commerce マーチャントサポートにチケットを入れます。これにより、偽陽性の評価、必要な変更、および今後そのような通知が表示されないようにするための推奨事項の提供が可能になります。 マーチャントは、次のアドレスに電子メールを送信して、偽陽性を報告することもできます： [securityscan@magento.com](mailto:securityscan@magento.com).
+偽陽性レポートを送信するには、Adobe Commerce マーチャントサポートにチケットを入れます。これにより、偽陽性の評価、必要な変更、および今後そのような通知が表示されないようにするための推奨事項の提供が可能になります。 マーチャントは、[securityscan@magento.com](mailto:securityscan@magento.com) 宛てに電子メールで偽陽性を報告することもできます。

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # インストール中、例外 SessionHandler::read （）
 
-この記事では、例外の解決策について説明します **SessionHandler::read （）** Adobe Commerceのインストール中にエラーが発生しました。
+この記事では、Adobe Commerceのインストール中に発生した例外 **SessionHandler::read （）** エラーを修正します。
 
 ## 問題
 
@@ -25,20 +25,20 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->このエラーは、2015 年 9 月 28 日（PT）より前のコードバージョンでのみ発生します。 9 月 29 日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redis の設定オプションの詳細については、を参照してください。 [Redis の設定](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) 開発者向けドキュメントを参照してください。 コマンドラインインストーラーを使用して Redis を指定する方法については、を参照してください。 [インストールトピック](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-install.html) または [デプロイメント設定トピック](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp) 開発者向けドキュメントを参照してください。
+>このエラーは、2015 年 9 月 28 日（PT）より前のコードバージョンでのみ発生します。 9 月 29 日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redis の設定オプションについて詳しくは、開発者向けドキュメントの [Redis の設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) を参照してください。 コマンドラインインストーラーを使用して Redis を指定する方法については、開発者向けドキュメントの [ インストールトピック ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-install.html) または [ デプロイメント設定トピック ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp) を参照してください。
 
 ## 原因：
 
-これは、 `session.save_handler` PHP パラメータは、次の値とは別のセッションストレージに設定されます。 `files` （例： `redis`, `memcached`など）。 これは、解決に向けて取り組んでいる既知の問題です。
+これは、`session.save_handler` の PHP パラメータが `files` 以外のセッションストレージ（たとえば、`redis`、`memcached` など）に設定されている場合に発生します。 これは、解決に向けて取り組んでいる既知の問題です。
 
 ## ソリューション：
 
-* Adobe Commerce コードをアップグレードします。 こちらを参照してください [インストールガイド / Adobe Commerce ソフトウェアのアップデート](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update) 開発者向けドキュメントを参照してください。
+* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの [ インストールガイド/Adobe Commerce ソフトウェアのアップデート ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update) を参照してください。
 * 既存のコードで次の回避策を使用します。
 
-## を見つける `php.ini` {#locate-php-ini}
+## `php.ini` を見つけます {#locate-php-ini}
 
-を見つける `php.ini` 次のコマンドを入力します。
+次のコマンドを入力して、`php.ini` を見つけます。
 
 ```php
 php -i | grep "Loaded Configuration File"
@@ -51,8 +51,8 @@ php -i | grep "Loaded Configuration File"
 
 ## 回避策 {#workaround}
 
-1. を使用した As a ユーザー `root` 権限、開く `php.ini` テキストエディター。
-1. を見つける `session.save_handler`
+1. `root` 権限を持つユーザーとして、`php.ini` をテキストエディターで開きます。
+1. `session.save_handler` を見つけます
 1. 次のいずれかの方法で設定します。
    * コメントアウトするには：
 

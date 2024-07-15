@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ## 問題
 
-Cron が 1 分ごとに実行されるように設定されている場合、管理で 3 つのスケジュールされたタスクの時間変数を編集すると、 `cron_schedule` データベース テーブルには、同時に実行するようにスケジュールされた複数のタスクのグループが表示されます。
+毎分実行するように cron が設定されている場合、Admin で 3 つのスケジュールされたタスクの時間変数を編集すると、`cron_schedule` のデータベーステーブルには、同時に実行するようにスケジュールされた複数のタスクのグループが表示されます。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
-1. Commerce Admin で、に移動します。 **ストア** > 設定 > **設定** > **詳細** > **システム** > **Cron （スケジュールされたタスク）** > **グループの Cron 設定オプション : デフォルト。**
+1. Commerce管理で、**ストア**/設定/**設定**/**詳細**/**システム**/**Cron （スケジュールされたタスク）**/**グループの Cron 設定オプション：デフォルト** に移動します。
 1. 次のオプションを設定します。
-   * **履歴クリーンアップ間隔**：をクリアします **システムを使用** チェックボックス、に設定 *1440*.
-   * **成功履歴の有効期間**：をクリアします **システムを使用** チェックボックス、に設定 *1440*.
-   * **失敗履歴の有効期間**：をクリアします **システムを使用** チェックボックス、に設定 *1440*.
+   * **履歴クリーンアップ間隔**: **システムを使用** チェックボックスをオフにして、*1440* に設定します。
+   * **成功履歴の有効期間**:「**システムを使用**」チェックボックスをオフにして、「*1440*」に設定します。
+   * **エラー履歴の有効期間**:「**システムを使用**」チェックボックスをオフにして、「*1440*」に設定します。
 
-1. クリック **設定を保存**.
-1. SSH で、 `crontab -e` コマンド。
+1. 「**設定を保存**」をクリックします。
+1. SSH で `crontab -e` コマンドを実行します。
 1. cron を毎分実行するように設定します。
 1. 3 つのターミナルタブ/ウィンドウを開きます。
-1. Adobe Commerceに移動 `root/base/project` 各ターミナルウィンドウのディレクトリ。
+1. 各ターミナルウィンドウのAdobe Commerce `root/base/project` ディレクトリに移動します。
 1. 各タブ/ウィンドウで次のコマンドを実行します。
 
    ```bash
@@ -46,13 +46,13 @@ Cron が 1 分ごとに実行されるように設定されている場合、管
 
 1. 同時に実行するようにスケジュールされたタスクのグループを参照してください。
 
-<u>期待される結果</u>:1 つの cron `job_code` は、特定の期間にスケジュールされる必要があります。
+<u> 期待される結果 </u>：特定の期間に 1 つの Cron `job_code` をスケジュールする必要があります。
 
-<u>実際の結果</u>：同じ期間に対してスケジュールされた cron ジョブが複数あります。
+<u> 実際の結果 </u>：同じ期間に対してスケジュールされた複数の Cron ジョブがあります。
 
 ## 解決策
 
-クラウドインフラストラクチャー上のAdobe Commerceのマーチャントの場合、 [ece-tools の更新](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) が問題を解決します。
+クラウドインフラストラクチャー上のAdobe Commerceのマーチャントの場合、[ECE ツールを更新する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) ことで問題が解決します。
 
 Adobe Commerce オンプレミスのマーチャントは、問題を解決するために、接続されたパッチの 1 つを適用する必要があります。
 
@@ -74,23 +74,23 @@ Adobe Commerce オンプレミスのマーチャントは、問題を解決す�
 
 パッチは、次のバージョンとも互換性があります。
 
-* Adobe Commerce オンプレミス 2.1.0～2.1.4 の場合： [MDVA-11304\_EE\_2.1.4\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.1.4_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
+* Adobe Commerce オンプレミス 2.1.0～2.1.4 の場合：[MDVA-11304\_EE\_2.1.4\_COMPOSER\_v1.patch をダウンロードします ](assets/MDVA-11304_EE_2.1.4_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerce バージョンおよびエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
    * クラウドインフラストラクチャー上のAdobe Commerce 2.1.0～2.1.4
-* Adobe Commerce オンプレミス 2.1.5～2.1.12 の場合： [MDVA-11304\_EE\_2.1.5\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.1.5_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
+* Adobe Commerce オンプレミス 2.1.5-2.1.12 の場合：[MDVA-11304\_EE\_2.1.5\_COMPOSER\_v1.patch をダウンロードし ](assets/MDVA-11304_EE_2.1.5_COMPOSER_v1.patch.zip) す。このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
    * クラウドインフラストラクチャー上のAdobe Commerce 2.1.5-2.1.12
-* クラウドインフラストラクチャー 2.1.13 上のAdobe Commerceの場合： [MDVA-11304\_EE\_2.1.13\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.1.13_COMPOSER_v1.patch.zip)
-* Adobe Commerce オンプレミス 2.1.14-2.1.17 の場合： [MDVA-11304\_EE\_2.1.14\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.1.14_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
+* Cloud Infrastructure 2.1.13 でのAdobe Commerceの場合：[MDVA-11304\_EE\_2.1.13\_COMPOSER\_v1.patch をダウンロードします ](assets/MDVA-11304_EE_2.1.13_COMPOSER_v1.patch.zip)
+* Adobe Commerce オンプレミス 2.1.14-2.1.17 の場合：[MDVA-11304\_EE\_2.1.14\_COMPOSER\_v1.patch をダウンロード ](assets/MDVA-11304_EE_2.1.14_COMPOSER_v1.patch.zip) ます。このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
    * Adobe Commerce オンプレミス 2.1.18
    * クラウドインフラストラクチャー上のAdobe Commerce 2.1.14-2.1.18
-* Adobe Commerce オンプレミス 2.2.0～2.2.1 の場合： [MDVA-11304\_EE\_2.2.0\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.2.0_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
+* Adobe Commerce オンプレミス 2.2.0-2.2.1 の場合：[MDVA-11304\_EE\_2.2.0\_COMPOSER\_v1.patch をダウンロード ](assets/MDVA-11304_EE_2.2.0_COMPOSER_v1.patch.zip) ます。このパッチは、次のAdobe Commerce バージョンおよびエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
    * クラウドインフラストラクチャー上のAdobe Commerce 2.2.0-2.2.1
-* Adobe Commerce オンプレミス 2.2.0～2.2.3 の場合： [MDVA-11304\_EE\_2.2.2\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.2.2_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
+* Adobe Commerce オンプレミス 2.2.0～2.2.3 の場合：[MDVA-11304\_EE\_2.2.2\_COMPOSER\_v1.patch をダウンロード ](assets/MDVA-11304_EE_2.2.2_COMPOSER_v1.patch.zip) ます。このパッチは、次のAdobe Commerce バージョンおよびエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
    * クラウドインフラストラクチャー上のAdobe Commerce 2.2.0-2.2.3
-* Adobe Commerce オンプレミス 2.2.4 の場合： [MDVA-11304\_EE\_2.2.4\_COMPOSER\_v1.patch のダウンロード](assets/MDVA-11304_EE_2.2.4_COMPOSER_v1.patch.zip) このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
+* Adobe Commerce オンプレミス 2.2.4 の場合：[MDVA-11304\_EE\_2.2.4\_COMPOSER\_v1.patch をダウンロードし ](assets/MDVA-11304_EE_2.2.4_COMPOSER_v1.patch.zip) す。このパッチは、次のAdobe Commerceのバージョンとエディションとも互換性があります（ただし、問題が解決しない可能性があります）。
    * クラウドインフラストラクチャー 2.2.4 上のAdobe Commerce
 
 ## パッチの適用方法
 
-参照： [Adobe Commerceが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで、の手順を確認します。
+手順については、サポートナレッジベースの [Adobe Commerceが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

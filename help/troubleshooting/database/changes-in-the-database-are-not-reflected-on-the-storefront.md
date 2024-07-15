@@ -26,13 +26,13 @@ ht-degree: 0%
 
 ## 原因：
 
-インデクサーが [スケジュールに従って更新するように設定](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)この問題は、変更ログが大きすぎる、または MySQL トリガーが設定されていない 1 つ以上のテーブルが原因である可能性があります。
+インデクサーが [ スケジュールに従って更新するように設定されている ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) 場合、変更ログが大きすぎる、または MySQLトリガーが設定されていない 1 つ以上のテーブルが原因で問題が発生している可能性があります。
 
 ### 変更ログテーブルのサイズ超過
 
-変更ログテーブルは、 `indexer_update_all_views` cron ジョブが複数回正常に完了しません。
+変更ログテーブルは、`indexer_update_all_views` cron ジョブが複数回正常に完了されなかった場合、そのサイズが大きくなります。
 
-変更ログテーブルは、エンティティに対する変更が追跡されるデータベーステーブルです。 変更が適用されない限り、レコードは変更ログテーブルに保存されます。変更が適用されるのは、 `indexer_update_all_views` cron ジョブ。 Adobe Commerce データベースには複数の変更ログテーブルがあり、INDEXER\_TABLE\_NAME + &#39;\_cl&#39;というパターンに従って名前が付けられています。例： `catalog_category_product_cl`, `catalog_product_category_cl`. データベースでの変更の追跡方法の詳細については、次を参照してください [インデックス作成の概要/Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) 開発者向けドキュメントの記事。
+変更ログテーブルは、エンティティに対する変更が追跡されるデータベーステーブルです。 変更が適用されない限り、レコードは変更ログテーブルに保存されます。変更は、`indexer_update_all_views` cron ジョブによって実行されます。 Adobe Commerce データベースには複数の変更ログテーブルがあり、INDEXER\_TABLE\_NAME + &#39;\_cl&#39;というパターンに従って名前が付けられます（例：`catalog_category_product_cl`、`catalog_product_category_cl`）。 データベースでの変更の追跡方法について詳しくは、開発者向けドキュメントの [ インデックス作成の概要/Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) に関する記事を参照してください。
 
 ### MySQL データベーストリガーが設定されていない
 
@@ -46,19 +46,19 @@ ht-degree: 0%
 
 ### 変更ログテーブルのサイズが超過するのを防ぐ
 
-必ずを `indexer_update_all_views` cron ジョブは常に正常に完了する。
+`indexer_update_all_views` cron ジョブが常に正常に完了することを確認します。
 
-次の SQL クエリを使用すると、の失敗したすべてのインスタンスを取得できます `indexer_update_all_views` cron ジョブ :
+次の SQL クエリを使用して、`indexer_update_all_views` cron ジョブで失敗したすべてのインスタンスを取得できます。
 
 ```sql
 select * from cron_schedule where job_code = "indexer_update_all_views" and status
   <> "success" and status <> "pending";
 ```
 
-または、以下を検索して、ログでそのステータスを確認できます。 `indexer_update_all_views` エントリ：
+または、`indexer_update_all_views` のエントリを検索して、ログでそのステータスを確認できます。
 
 * `<install_directory>/var/log/cron.log` - バージョン 2.3.1 以降および 2.2.8 以降
-* `<install_directory>/var/log/system.log`  – 以前のバージョン
+* `<install_directory>/var/log/system.log` – 以前のバージョン用
 
 ### MySQL テーブルトリガーを再設定
 
@@ -71,7 +71,7 @@ select * from cron_schedule where job_code = "indexer_update_all_views" and stat
 
 >[!WARNING]
 >
->インデクサーモードを切り替える前に、web サイトを次の場所に配置することをお勧めします。 [整備](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) モードと [cron ジョブの無効化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) データベースのロックを回避します。
+>インデクサーモードを切り替える前に、データベースのロックを避けるために、web サイトを [ メンテナンス ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) モードおよび [cron ジョブを無効 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) にすることをお勧めします。
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,5 +83,5 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## 関連資料
 
-<ul><li title="MySQL テーブルが大きすぎます"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL テーブルが大きすぎます</a> サポートナレッジベースで。</li>
-<li title="MySQL テーブルが大きすぎます"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">インデクサーの概要/Mview</a> 開発者向けドキュメントを参照してください。</li></ul>
+<ul><li title="MySQL テーブルが大きすぎます"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL テーブルが大きすぎます </a>。サポートナレッジベースを参照してください。</li>
+<li title="MySQL テーブルが大きすぎます">開発者向けドキュメントの <a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Indexer の概要/Mview</a>。</li></ul>

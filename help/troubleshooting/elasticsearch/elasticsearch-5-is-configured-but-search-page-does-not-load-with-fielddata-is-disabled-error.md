@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 原因：
 
-デフォルトでは、レイヤーナビゲーションで使用できるのは、特定のタイプの製品属性のみです。 「Yes/No」、「Dropdown」、「Multipleselect」、「Price」です。 そのため、Commerce Admin では、他のタイプの属性をとして設定できません **レイヤーナビゲーションでの使用** = *フィルタリング可能* または **検索結果のレイヤー化されたナビゲーションでの使用** = *はい*. ただし、を直接変更することで、この制限を回避できる技術的可能性があります `is_filterable` および `is_filterable_in_search` データベース内の値。 これが発生し、日付やテキストなどの他の属性タイプがレイヤーナビゲーションで使用されるように設定されている場合、Elasticsearch 5 は例外をスローします。
+デフォルトでは、レイヤーナビゲーションで使用できるのは、特定のタイプの製品属性のみです。 「Yes/No」、「Dropdown」、「Multipleselect」、「Price」です。 そのため、Commerce Admin では、他のタイプの属性を **レイヤーナビゲーションで使用** = *フィルタリング可能* または **検索結果レイヤーナビゲーションで使用** = *はい* に設定することはできません。 ただし、データベース内の `is_filterable` と `is_filterable_in_search` の値を直接変更することで、この制限を回避する技術的な可能性があります。 これが発生し、日付やテキストなどの他の属性タイプがレイヤーナビゲーションで使用されるように設定されている場合、Elasticsearch 5 は例外をスローします。
 
 これを実現するには、レイヤーナビゲーションで使用するように設定されている Dropdown、Multipleselect、Price 以外の属性があるかどうかを確認する必要があります。 次のクエリを実行して、これらの属性を検索します。
 
@@ -53,10 +53,10 @@ SELECT ea.attribute_code, ea.frontend_input, cea.is_filterable, cea.is_filterabl
 
 ## 解決策
 
-この問題を修正するには、を設定する必要があります `is_filterable` （レイヤー化されたナビゲーションで使用される）と `filterable_in_search` （つまり、検索結果の階層型ナビゲーションで使用されます）。「0」（使用されません）。 これを行うには、次の手順を実行します。
+この問題を修正するには、`is_filterable` （レイヤーナビゲーションで使用）および `filterable_in_search` （検索結果レイヤーナビゲーションで使用）を「0」（使用しない）に設定する必要があります。 これを行うには、次の手順を実行します。
 
 1. データベースバックアップを作成します。
-1. 次のようなデータベースツールを使用します [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)または、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    UPDATE catalog_eav_attribute AS cea
@@ -79,6 +79,6 @@ SELECT ea.attribute_code, ea.frontend_input, cea.is_filterable, cea.is_filterabl
    bin/magento cache:clean
    ```
 
-または、の下のCommerce管理で確認できます。 **システム** > **ツール** > **キャッシュ管理**.
+または、Commerce管理の **システム**/**ツール**/**キャッシュ管理** で設定します。
 
 これで、問題なくカタログ検索を実行できるようになります。

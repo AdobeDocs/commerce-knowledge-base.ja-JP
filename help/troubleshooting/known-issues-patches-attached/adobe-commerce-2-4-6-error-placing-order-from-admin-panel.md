@@ -19,16 +19,16 @@ ht-degree: 0%
 
 管理パネルから注文を行うと、ストアの選択が行き詰まります。
 
-<u>再現手順</u>
+<u> 再現手順 </u>
 
-1. に移動 **[!UICONTROL Sales]** > **[!UICONTROL Orders]** を選択し、注文を作成する顧客を選択します。
+1. **[!UICONTROL Sales]**/**[!UICONTROL Orders]** に移動し、注文を作成する顧客を選択します。
 2. 店舗セレクター画面から注文する店舗を選択します。
 
-<u>期待される結果</u>
+<u> 期待される結果 </u>
 
 ストアを選択したら、注文を完了できます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 ストアを選択すると、ストアセレクターページにリダイレクトされ、注文を作成できなくなります。
 
@@ -44,5 +44,5 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-* クラウドインフラストラクチャにAdobe Commerceのパッチを適用する方法については、次を参照してください。 [パッチの適用](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
-* オンプレミスでAdobe Commerceのパッチを適用する方法については、次を参照してください。 [パッチの適用](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) （Commerce アップグレードガイド）を参照してください。
+* クラウドインフラストラクチャー上でAdobe Commerceにパッチを適用する方法については、クラウドインフラストラクチャー上のCommerce ガイドの [ パッチの適用 ](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) を参照してください。
+* オンプレミスでAdobe Commerceにパッチを適用する方法については、アドビのCommerce アップグレードガイドの [ パッチの適用 ](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) を参照してください。

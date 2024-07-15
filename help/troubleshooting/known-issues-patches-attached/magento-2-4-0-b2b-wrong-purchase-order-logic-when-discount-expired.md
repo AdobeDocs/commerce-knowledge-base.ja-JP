@@ -22,20 +22,20 @@ ht-degree: 0%
 
 ## 問題
 
-<u>前提条件</u>：割引クーポンが作成され、発注が自動的に処理されない承認ルールが存在する。
+<u> 前提条件 </u>：割引クーポンが作成され、発注が自動的に処理されない承認ルールが存在します。
 
-<u>再現手順：</u>
+<u> 再現手順：</u>
 
 1. ディスカウントが適用された発注を行います。
 1. 割引クーポンを無効にします。
 1. マネージャーとして発注を承認します。
 1. 結果として作成された注文を確認します。
 
-<u>期待される結果：</u>
+<u> 期待される結果：</u>
 
 注文は割引合計で作成されます。
 
-<u>実際の結果：</u>
+<u> 実際の結果：</u>
 
 注文が全額作成されます。
 
@@ -49,8 +49,8 @@ ht-degree: 0%
 
 [B2B-709-composer.patch](assets/B2B-709-composer.patch.zip)
 
-このパッチは、次の場所からダウンロードすることもできます。 `.git` および `.composer` 、形式 [Adobe Commerce ダウンロード](https://magento.com/tech-resources/download) ページ、下 **パッチ** 左の列のナビゲーションで上書きできます。 XXX パッチを検索します。
+このパッチは、[Adobe Commerce ダウンロード ](https://magento.com/tech-resources/download) ページの左側の列のナビゲーションにある **パッチ** の下にある `.git` と `.composer` の両方の形式でダウンロードすることもできます。 XXX パッチを検索します。
 
 ## パッチの適用方法
 
-参照： [Adobeが提供する composer パッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) 手順については、サポートナレッジベースを参照してください。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。

@@ -12,5 +12,5 @@ ht-degree: 0%
 
 # Fastly on Cloud のアカウント所有者の変更（API トークンを使用したアクセス認証情報）
 
-を参照してください [Fastly サービスアカウントと資格情報](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
+Commerce on Cloud Infrastructure ガイドの [Fastly サービスアカウントと資格情報 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) を参照してください。
 

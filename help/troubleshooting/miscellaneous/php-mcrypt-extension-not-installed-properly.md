@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->注意：mcrypt ライブラリ機能は [php 7.1 から非推奨となり、PHP 7.2 から削除されました。](https://www.php.net/manual/en/intro.mcrypt.php).
+>注意：mcrypt ライブラリ機能は [PHP 7.1 から非推奨となり、PHP 7.2 から削除されました ](https://www.php.net/manual/en/intro.mcrypt.php)。
 
 ## 詳細
 
@@ -51,13 +51,13 @@ Fatal error: Uncaught exception 'Exception' with message 'Module 'Magento_Core' 
 
 mcrypt 拡張機能が次のいずれかの方法で読み込まれているかどうかを確認します。
 
-* を設定 [phpinfo.php](http://kb.mediatemple.net/questions/764/How+can+I+create+a+phpinfo.php+page%3F#gs) ファイル （web サーバーのルートディレクトリ内）を開き、web ブラウザーで出力を調べます。
+* Web サーバーのルートディレクトリに [phpinfo.php](http://kb.mediatemple.net/questions/764/How+can+I+create+a+phpinfo.php+page%3F#gs) ファイルをセットアップし、web ブラウザーで出力を調べます。
 * 次のコマンドを実行します。    `$ php -r "phpinfo();" | grep mcrypt`
 
-mcrypt が *ではない* インストール済みで、次のようなメッセージが表示されます。
+mcrypt がインストールされて *ない* 場合、次のようなメッセージが表示されます。
 
 ```php
 PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open shared object file: No such file or directory in Unknown on line 0
 ```
 
-場合によっては、からAdobe Commerce ソフトウェアをインストールする必要があります [コマンドライン](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html) mcrypt がインストールされている LAMP スタックへのフル パスを指定します。
+場合によっては、[ コマンドライン ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html) からAdobe Commerce ソフトウェアをインストールし、mcrypt がインストールされている LAMP スタックへのフルパスを指定する必要があります。

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # robots.txt で、クラウドインフラストラクチャー上に 404 エラーのAdobe Commerceが表示される
 
-この記事では、次の場合の修正方法を説明します `robots.txt` クラウドインフラストラクチャー上のAdobe Commerceで、ファイルが 404 エラーをスローする。
+この記事では、クラウドインフラストラクチャ上のAdobe Commerceで `robots.txt` ファイルが 404 エラーをスローする場合の修正方法を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-この `robots.txt` ファイルが機能せず、Nginx 例外をスローします。 この `robots.txt` ファイルは「その場」で動的に生成されます。 この `robots.txt` からファイルにアクセスできません `/robots.txt` Nginx にはすべて強制的にリダイレクトする書き換えルールがあるため、URL です `/robots.txt` に対するリクエスト `/media/robots.txt` 存在しないファイルです。
+`robots.txt` ファイルが機能せず、Nginx 例外がスローされる。 `robots.txt` ファイルは、「その場」で動的に生成されます。 Nginx には、存在しない `/robots.txt` ファイルにすべての `/robots.txt` リクエストを強制的にリダイレクトする書き換えルールがあるため、`/media/robots.txt` URL から `robots.txt` ファイルにアクセスできません。
 
 ## 原因：
 
@@ -29,14 +29,14 @@ ht-degree: 0%
 
 ## 解決策
 
-解決策は、リダイレクトする Nginx ルールを無効にすることです `/robots.txt` に対するリクエスト `/media/robots.txt` ファイル。 セルフサービスが有効なマーチャントは自分で実行でき、セルフサービスが有効でないマーチャントはサポートチケットを作成する必要があります。
+解決策は、`/robots.txt` 要求を `/media/robots.txt` ファイルにリダイレクトする Nginx ルールを無効にすることです。 セルフサービスが有効なマーチャントは自分で実行でき、セルフサービスが有効でないマーチャントはサポートチケットを作成する必要があります。
 
-セルフサービスが有効になっていない場合（または有効かどうかわからない場合）、 [Magentoサポートチケットを送信](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) から Nginx リダイレクト ルールの削除を要求しています `/robots.txt` に対するリクエスト `/media/robots.txt`.
+セルフサービスが有効になっていない場合（または有効かどうかわからない場合）は、[Magentoサポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、Nginx リダイレクトルールの `/robots.txt` リクエストから `/media/robots.txt` リクエストへの削除をリクエストします。
 
-セルフサービスを有効にしている場合は、ECE-Tools を 2002.0.12 以上にアップグレードし、の Nginx リダイレクトルールを削除してください `.magento.app.yaml` ファイル。 以下を参照してください。 [サイトマップと検索エンジンロボットを追加](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) 詳しくは、開発者ドキュメントを参照してください。
+セルフサービスを有効にしている場合は、ECE-Tools を 2002.0.12 以上にアップグレードし、`.magento.app.yaml` ファイルの Nginx リダイレクトルールを削除してください。 詳しくは、開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) を参照してください。
 
 ## 関連資料
 
-* [Fastly レベルでMagento Commerce Cloudのために悪意のあるトラフィックをブロックする方法](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) サポートナレッジベースで。
-* [サイトマップと検索エンジンロボットを追加](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) 開発者向けドキュメントを参照してください。
-* [検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) を参照してください。
+* [ 悪意のあるトラフィックをブロックして、Fastly レベルでMagento Commerce Cloudする方法 ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) については、サポートナレッジベースを参照してください。
+* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) を参照してください。
+* ユーザーガイドの [ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)。

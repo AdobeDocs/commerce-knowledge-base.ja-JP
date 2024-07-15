@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce（すべてのデプロイメント方法）すべて  [サポートされているバージョン](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
@@ -31,8 +31,8 @@ ht-degree: 0%
 
 ## 解決策
 
-公式の拡張機能を個別にインストールまたは購入します。 これらはで利用できます [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+公式の拡張機能を個別にインストールまたは購入します。 これらは [Commerce Marketplace](https://marketplace.magento.com/extensions.html) で利用できます。
 
 ## 関連資料
 
-[ベンダーバンドルの拡張機能](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) Adobe Commerceのドキュメント / リリース情報/ Adobe Commerce 2.4.4 リリースノート。
+[ ベンダーバンドルの拡張機能 ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions): Adobe Commerce ドキュメント / リリース情報/ Adobe Commerce 2.4.4 リリースノート。

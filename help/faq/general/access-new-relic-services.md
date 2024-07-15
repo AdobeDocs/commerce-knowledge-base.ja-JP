@@ -18,18 +18,18 @@ ht-degree: 0%
 
 **Adobe Commerce on cloud infrastructure Pro プランアーキテクチャを使用するお客様で、New Relic インフラストラクチャの使用を希望されるお客様：**
 
-Pro アーキテクチャを使用しているお客様は、サブスクリプションが自動インストールされたNew Relic インフラストラクチャサービスを利用できます。 これらのユーザーには、Adobe Commerce プロジェクトの作成時に、New Relicからアクティベーションリンクが記載されたメールが届いています。 メールの指示に従ってNew Relic アカウントを登録すると、ユーザーは以下にログインできます。 [New Relic ログイン](https://login.newrelic.com/login) ページにその時点で作成したユーザー名とパスワードを入力します。
+Pro アーキテクチャを使用しているお客様は、サブスクリプションが自動インストールされたNew Relic インフラストラクチャサービスを利用できます。 これらのユーザーには、Adobe Commerce プロジェクトの作成時に、New Relicからアクティベーションリンクが記載されたメールが届いています。 メールによるNew Relic アカウント登録手順に従えば、その時点で作成したユーザー名とパスワードで [New Relic login](https://login.newrelic.com/login) ページにログインできます。
 
-**注意** : Pro アーキテクチャを使用しているお客様は、New Relic インフラストラクチャサービスに加えて、New Relic アプリケーションパフォーマンスモニタリング（APM）を利用できます。
+**メモ** :Pro アーキテクチャを使用しているお客様には、New Relic インフラストラクチャサービスに加えて、New Relic アプリケーションパフォーマンスモニタリング（APM）が利用されます。
 
-**Pro アーキテクチャを使用していて、パスワードを忘れた場合や、New Relic インフラストラクチャアカウントを有効にしなかった場合：**
+**Pro アーキテクチャを使用しているお客様で、パスワードを忘れた場合や、New Relic インフラストラクチャアカウントを有効にしなかった場合：**
 
-New Relicからアクティベーションリンクが記載されたメールを受け取ってNew Relic アカウントを登録した後、ユーザー資格情報を忘れた場合は、をクリックする必要があります。 [New Relic ログイン](https://login.newrelic.com/login) ページで「パスワードを忘れた場合」をクリックします。 ユーザー名はメールアドレスです。 New Relicにログインし直すには、パスワードをリセットする必要があります。 メールの受信を覚えておらず、New Relic インフラストラクチャを使用する場合も、次の手順に従う必要があります。
+一部のお客様が、New Relicからアクティベーションリンクが記載されたメールを受け取ってNew Relic アカウントを登録した後、ユーザー資格情報を忘れた場合は、[New Relicのログイン ](https://login.newrelic.com/login) ページをクリックし、「パスワードを忘れた場合」をクリックする必要があります。 ユーザー名はメールアドレスです。 New Relicにログインし直すには、パスワードをリセットする必要があります。 メールの受信を覚えておらず、New Relic インフラストラクチャを使用する場合も、次の手順に従う必要があります。
 
-**クラウドインフラストラクチャー上のAdobe Commerce スタータープランアーキテクチャ New Relicを使用する顧客：**
+**クラウドインフラストラクチャー上のAdobe Commerceスタータープランアーキテクチャ New Relicを利用したいお客様：**
 
-スターターアーキテクチャのお客様は、サブスクリプションの一部としてNew Relic インフラストラクチャサービスを提供されていません。 ただし、手順に従ってライセンスを追加すれば、New Relic Application Performance Monitoring （APM）を使用できます [New Relicへの接続](https://devdocs.magento.com/cloud/project/new-relic.html#connect-to-new-relic) 開発者向けドキュメントを参照してください。
+スターターアーキテクチャのお客様は、サブスクリプションの一部としてNew Relic インフラストラクチャサービスを提供されていません。 ただし、アドビの開発者向けドキュメントの [New Relicへの接続 ](https://devdocs.magento.com/cloud/project/new-relic.html#connect-to-new-relic) 手順に従ってライセンスを追加する場合は、New Relic Application Performance Monitoring （APM）を使用できます。
 
 ## 関連資料
 
-New Relic サービスについては、次を参照してください。 [パフォーマンスの調査](https://devdocs.magento.com/cloud/project/new-relic.html#investigate-performance) 開発者向けドキュメントを参照してください。 次の内容も確認できます [クラウドインフラストラクチャー上のAdobe CommerceのNew Relicを使用したパフォーマンスのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) サポートナレッジベースで。
+New Relic サービスについて詳しくは、開発者向けドキュメントの [ パフォーマンスの調査 ](https://devdocs.magento.com/cloud/project/new-relic.html#investigate-performance) を参照してください。 サポートナレッジベースでは、[ クラウドインフラストラクチャ上のAdobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) を参照することもできます。

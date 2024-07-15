@@ -15,7 +15,7 @@ ht-degree: 0%
 
 この記事では、クラウドインフラストラクチャー上のAdobe Commerceの問題に対するトラブルシューティング手順を説明します。新しく作成した統合環境にアクセスしようとすると、代わりに親環境に移動します。
 
-これを修正するには、データベースの base\_url の値を修正し、 `UPDATE_URLS` 変数値はに設定されます。 `true`. 詳しくは、以下の節を参照してください。
+これを修正するには、データベースの base\_url 値を修正し、`UPDATE_URLS` 変数の値が `true` に設定されていることを確認する必要があります。 詳しくは、以下の節を参照してください。
 
 影響を受けるバージョンとエディション：
 
@@ -23,22 +23,22 @@ ht-degree: 0%
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 既存の統合ブランチをクローンします。
 1. 新しい環境にアクセスするための URL をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 新しく作成された環境に移動します。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 親ブランチの環境にリダイレクトされます。
 
 ## 解決策
 
-この問題を修正するには、 `base_url` 値（セキュアおよび非セキュア）をカスタム環境データベースに追加して、 `UPDATE_URL` 内の変数 `.magento.env.yaml` ファイル。
+この問題を修正するには、カスタム環境データベースで `base_url` の値（secure と unsecure）を修正し、`.magento.env.yaml` ファイルで `UPDATE_URL` 変数を設定する必要があります。
 
 ### データベースの base\_url の値を修正する
 
@@ -59,7 +59,7 @@ update core_config_data set value = %your_new_environment_secure_url% where path
 
 #### Adobe Commerce CLI （バージョン 2.2.X で使用可能）を使用してデータベースを修正します。
 
-1. としてログインするか、に切り替える [Adobe Commerce ファイルシステムの所有者](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
+1. [Adobe Commerce ファイルシステムの所有者としてログインするか、](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html) に切り替えます。
 1. 次のコマンドを実行します。
 
 ```bash
@@ -67,9 +67,9 @@ php <your_magento_install_dir>/bin/magento config:set web/unsecure/base_url http
 php <your_magento_install_dir>/bin/magento config:set web/secure/base_url https://example.com
 ```
 
-### を `UPDATE_URLS` 変数
+### `UPDATE_URLS` 変数を設定します
 
-ローカルコードベース、 `.magento.env.yaml` ファイル セット：
+ローカルコードベースの `.magento.env.yaml` ファイルで、次のように設定します。
 
 ```
  stage:
@@ -87,4 +87,4 @@ php <your_magento_install_dir>/bin/magento cache:clean config
 
 ## 開発者向けドキュメントの関連記事：
 
-[変数のデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)
+[ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)

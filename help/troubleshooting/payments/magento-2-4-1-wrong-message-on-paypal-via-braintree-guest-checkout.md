@@ -24,20 +24,20 @@ ht-degree: 0%
 
 バックエンドからゲストのチェックアウトが無効になり、ミニ買い物かごまたは買い物かごから「Braintree決済で PayPal を使用」オプションが選択されると、特定できないエラーが表示されます。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
-1. Commerce管理画面で、の下の **ストア** > **設定** > **売上** > **チェックアウト**、設定 **ゲストのチェックアウトを許可** = *不可*.
-1. の説明に従って、Braintreeで PayPal を有効にします [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) を参照してください。
+1. Commerce管理者の **Stores**/**Configuration**/**Sales**/**Checkout** で、**Allow Guest Checkout**= *No* を設定します。
+1. ユーザーガイドの [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) の説明に従って、Braintreeで PayPal を有効にします。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. 製品をゲストとして買い物かごに追加します。
-1. を選択 **ミニカート** をクリックして、 **PayPal で支払う**.
+1. 「**ミニカート**」を選択し、「**PayPal で支払う**」をクリックします。
 1. Paypal のチェックアウトを完了すると、注文レビューページに移動します。
-1. を選択 **発送方法**.
-1. クリック **注文する**.
+1. **発送方法** を選択します。
+1. **Place Order** をクリックします。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 顧客がミニカートまたは買い物かごページの PayPal ボタンをクリックすると、次のメッセージが顧客に表示されます。
 
@@ -47,7 +47,7 @@ Braintreeを使用せずにダイレクト Paypal を有効にすると、この
 
 <pre><code class="language-bash">To check out, please sign in with your email address.</code></pre>
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 顧客は買い物かごページにリダイレクトされ、次のメッセージが表示されます。
 
@@ -59,6 +59,6 @@ Braintreeを使用せずにダイレクト Paypal を有効にすると、この
 
 ## 関連資料
 
-* [Adobe Commerceにおける買い物かごへの商品数のベストプラクティス](https://support.magento.com/hc/en-us/articles/360048550332) サポートナレッジベースで。
-* [注文処理のチュートリアル：手順 1. 買い物かごへのアイテムの追加](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) 開発者向けドキュメントで
-* [GraphQLのチェックアウトチュートリアル：手順 1. 買い物かごへの製品の追加](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) 開発者向けドキュメントで
+* [Adobe Commerceの買い物かご内の製品数のベストプラクティス ](https://support.magento.com/hc/en-us/articles/360048550332) に関するサポートナレッジベースを参照してください。
+* [ 注文処理のチュートリアル：手順 1. 開発者ドキュメントで ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) 買い物かごに項目を追加する
+* [GraphQLのチェックアウトチュートリアル：手順 1. 開発者ドキュメントで ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) 買い物かごに製品を追加する

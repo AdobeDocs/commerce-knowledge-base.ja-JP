@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce オンプレミス、すべて [サポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [サポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce オンプレミス、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 品質向上パッチツールとは
 
-この [品質向上パッチツール](https://github.com/magento/quality-patches) （QPT）は、AdobeとMagento Open Sourceコミュニティが開発した個別のパッチです。
+[Quality Patches Tool](https://github.com/magento/quality-patches) （QPT）は、AdobeおよびMagento Open Sourceコミュニティが開発した個別のパッチです。
 
 次の操作が可能です。
 
@@ -32,17 +32,17 @@ ht-degree: 0%
 
 使用可能なパッチを表示するために取得できるステータステーブルの例を次に示します。
 
-![Magento_パッチ_リスト](assets/status_table.png)
+![Magento_パッチ_リスト ](assets/status_table.png)
 
 このツールの目的は、Adobe Commerceで発生する可能性のある問題のパッチをセルフサービスで提供できるようにしたり、Adobe Commerce サポートから提案されたパッチを簡単に適用できるようにすることです。
 
 >[!NOTE]
 >
->QPT は品質向上パッチ専用です。 セキュリティパッチは、で入手できます。 [Magento警備センター](https://magento.com/security/patches).
+>QPT は品質向上パッチ専用です。 セキュリティ パッチは、[Magento セキュリティ センター ](https://magento.com/security/patches) で入手できます。
 
 ## 品質向上パッチツールで使用可能なパッチ
 
-を参照してください。 [品質向上パッチツール](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 使用可能なパッチのリストについては、開発者向けドキュメントを参照してください。
+使用可能なパッチのリストについては、開発者向けドキュメントの [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。
 
 ## 品質向上パッチツールのインストール方法と使用方法
 
@@ -50,13 +50,13 @@ Adobe Commerce オンプレミスの場合と、クラウドインフラスト�
 
 ### Adobe Commerce オンプレミスで QPT をインストールして使用する方法
 
-を参照してください。 [ソフトウェア更新ガイド > パッチ適用](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) パッチを適用して元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントを参照してください。
+パッチの適用と元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントの [ ソフトウェア更新ガイド/パッチ適用 ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) を参照してください。
 
 ### クラウドインフラストラクチャーにAdobe Commerce用 QPT をインストールして使用する方法
 
-を参照してください。 [Cloud for Adobe Commerce/パッチの適用](https://devdocs.magento.com/cloud/project/project-patch.html) クラウドインフラストラクチャー上で QPT をインストールして使用し、Adobe Commerceにパッチを適用して元に戻す方法について詳しくは、開発者向けドキュメントを参照してください。
+クラウドインフラストラクチャで QPT をインストールして使用し、Adobe Commerceにパッチを適用したり元に戻したりする方法について詳しくは、開発者向けドキュメントの [Cloud for Adobe Commerce/パッチを適用 ](https://devdocs.magento.com/cloud/project/project-patch.html) を参照してください。
 
 ## 関連資料
 
-* [品質向上パッチツールのリリースノート](https://devdocs.magento.com/quality-patches/release-notes.html) 開発者向けドキュメントを参照してください。
-* [Adobeが提供する composer パッチを適用する方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) サポートナレッジベースで。
+* 開発者向けドキュメントの [ 品質向上パッチツールのリリースノート ](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) をサポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート情報に含めます。

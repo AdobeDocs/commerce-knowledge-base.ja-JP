@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません
 
-を参照してください [Elasticsearchサービス/Elasticsearchソフトウェアの互換性の設定](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) 開発者向けドキュメントを参照してください。
+開発者向けドキュメントの [Elasticsearchサービスの設定/Elasticsearchソフトウェアの互換性 ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) を参照してください。

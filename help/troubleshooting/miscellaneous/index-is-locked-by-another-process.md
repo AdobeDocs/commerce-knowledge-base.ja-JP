@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-CLI で完全なインデックス再作成中に、Adobe Commerceに次のエラーメッセージが表示されます。 *&#39;インデックスは、別の再インデックスプロセスによってロックされています。 スキップしています。&#39;* つまり、プロセスまたはインデックスタイプがロックされている場合、ロックされた特定のインデックスタイプを再インデックス化することはできません。 再インデックスは、常にそのインデックスタイプをスキップします。
+CLI での完全なインデックス再作成中に、Adobe Commerceで「*&#39;Index is locked by another reindex process. スキップしています。&#39;* つまり、プロセスまたはインデックスタイプがロックされている場合、ロックされた特定のインデックスタイプを再インデックス化することはできません。 再インデックスは、常にそのインデックスタイプをスキップします。
 
 ## 原因：
 
@@ -35,7 +35,7 @@ CLI で完全なインデックス再作成中に、Adobe Commerceに次のエ�
 ## 再現手順
 
 1. 例えば、    ```bash    cataloginventory_stock ```    インデックスタイプがロックされています。
-1. CLI コマンドを実行してすべてのデータを再インデックスする場合    ```bash    php bin/magento indexer:reindex    ```の場合、次の出力結果が得られます。    ```bash    customer_grid index has been rebuilt successfully in 00:00:09    catalog_category_product index has been rebuilt successfully in 00:00:07    catalog_product_category index has been rebuilt successfully in 00:00:00    catalogrule_rule index has been rebuilt successfully in 00:00:05    catalog_product_attribute index has been rebuilt successfully in 00:00:04    cataloginventory_stock index is locked by another reindex process. Skipping.    catalog_product_price index has been rebuilt successfully in 00:00:01    catalogrule_product has been rebuilt successfully in 00:00:00    catalogsearch_fulltext index has been rebuilt successfully in 00:00:01    ```
+1. CLI コマンドを実行してすべてのデータを再インデックスする場合    ```bash    php bin/magento indexer:reindex    ``` の場合、次の出力結果が得られます。    ```bash    customer_grid index has been rebuilt successfully in 00:00:09    catalog_category_product index has been rebuilt successfully in 00:00:07    catalog_product_category index has been rebuilt successfully in 00:00:00    catalogrule_rule index has been rebuilt successfully in 00:00:05    catalog_product_attribute index has been rebuilt successfully in 00:00:04    cataloginventory_stock index is locked by another reindex process. Skipping.    catalog_product_price index has been rebuilt successfully in 00:00:01    catalogrule_product has been rebuilt successfully in 00:00:00    catalogsearch_fulltext index has been rebuilt successfully in 00:00:01    ```
 1. 上記のように、    ```bash    cataloginventory_stock```    インデックスプロセスはスキップされました。
 
 
@@ -77,12 +77,12 @@ bin/magento indexer:reset catalogsearch_fulltext;
 
 このユーザーガイドで、
 
-* [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html?itm_source=merchdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=reindexing)
+* [ インデックスの管理 ](https://docs.magento.com/user-guide/system/index-management.html?itm_source=merchdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=reindexing)
 
 開発者向けドキュメントでは、
 
-* [インデックス作成の概要](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
-* [インデクサーのベストプラクティス](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
-* [Cron の設定と実行](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
-* [インデクサーの管理](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
-* [インデクサーの最適化](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)
+* [ インデックス作成の概要 ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
+* [ インデクサーのベストプラクティス ](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
+* [Cron の設定と実行 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
+* [ インデクサーの管理 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
+* [ インデクサーの最適化 ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)

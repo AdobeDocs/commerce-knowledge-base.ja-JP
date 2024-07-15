@@ -28,13 +28,13 @@ ht-degree: 0%
 <tr>
 <td>
 <p><u>New Relicでプロジェクトを表示できません。</u></p>
-<p>にログインしました <em>New Relic</em> ただし、表示/アクセス権が必要なプロジェクトが表示されません。</p>
+<p><em>New Relicにログインしましたが </em> 表示/アクセス権が必要なプロジェクトを表示できません。</p>
 </td>
 <td>
 <p>その場合は、管理者ユーザーがプロジェクトにユーザーを追加する必要があります。</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">New Relic サービスへのアクセス</a> サポートナレッジベースで。</p>
+<p>サポートナレッジベースの <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">New Relic サービスへのアクセス </a>。</p>
 </td>
 </tr>
 <tr>
@@ -43,7 +43,7 @@ ht-degree: 0%
 <tr>
 <td>
 <p><u>インストール後のデータが欠落しています。</u></p>
-<p>の使用 <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic診断ユーティリティ</a> 原因を特定しようとする。 それでも問題が解決しない場合は、エージェント固有のソリューションを検討してください。 これらのソリューションに関する記事へのリンクは、右側の列にあります。</p>
+<p>原因を特定するには </a><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic診断ユーティリティを使用します。 それでも問題が解決しない場合は、エージェント固有のソリューションを検討してください。 これらのソリューションに関する記事へのリンクは、右側の列にあります。</p>
 </td>
 <td>
 <p>データの欠落の原因は異なる可能性があります。 次が必要になる場合があります。</p>
@@ -66,7 +66,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td>
-<p><u>トランザクションのタイムスタンプに不一致があります。</u> New Relic UI を使用すると、長いトランザクションを（5 分以上）見つけるのに苦労する場合があります。 また、トランザクションが想定された時間枠外に表示される場合もあります。</p>
+<p><u> トランザクションのタイムスタンプに不一致があります。</u> New Relic UI を使用して、長いトランザクションを（5 分以上）見つけるのに苦労する場合があります。 また、トランザクションが想定された時間枠外に表示される場合もあります。</p>
 </td>
 <td>
 <p>New Relic UI には、トランザクションの開始時刻ではなく、トランザクションの終了時刻が表示されます。</p>
@@ -77,13 +77,13 @@ ht-degree: 0%
 </tr>
 <tr>
 <td>
-<p><u>NerdGraph GraphQL <code>curl</code> 特殊文字を使用したクエリ（例：） <code>|</code> および <code>%</code> 動作しない</u>.</p>
+<p><u>NerdGraph GraphQL<code>curl</code>、<code>|</code> や <code>%</code> などの特殊文字を使用したクエリが機能しません </u>。</p>
 </td>
 <td>
-<p>New Relicの NerdGraph の「カールにコピー」機能には、現在、次のような特殊文字を処理する機能はありません <code>|</code> および <code>%</code>.</p>
+<p>New Relicの NerdGraph の「カールにコピー」機能には、現在、<code>|</code> や <code>%</code> などの特殊文字を処理する機能はありません。</p>
 </td>
 <td>
-<p>別の API ライブラリを使用して、特殊文字の問題を解決します。 例えば、Python で使用する Graphql API 用の GraphQLClient ライブラリや、Java 言語呼び出しを使用する Apache.commons などです。 に関するクライアントライブラリの確認 <a href="https://graphql.org/code/">GraphQL</a>.</p>
+<p>別の API ライブラリを使用して、特殊文字の問題を解決します。 例えば、Python で使用する Graphql API 用の GraphQLClient ライブラリや、Java 言語呼び出しを使用する Apache.commons などです。 <a href="https://graphql.org/code/">GraphQL</a> でクライアントライブラリを確認します。</p>
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ ht-degree: 0%
 <p>New Relic ドメインをブラウザーに追加するか、許可リストー拡張機能をアンインストールして、不足しているグラフを解決し、問題を解決します。</p>
 </td>
 <td>
-<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">New Relic ドキュメント / グラフが見つからない、または表示されない</a> </p>
+<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">New Relic ドキュメント/グラフが見つからない、または表示されない </a> </p>
 </td>
 </tr>
 <tr>
@@ -108,7 +108,7 @@ ht-degree: 0%
 <p>インスタンスの数は、バックエンドプロセスとスループットに応じて増える可能性があります。 サーバー値の違いは、一方のサーバーではプロセスが実行され、もう一方のサーバーでは実行されないことが原因である可能性があります。</p>
 </td>
 <td>
-<p><a href="https://docs.newrelic.com/docs/agents/php-agent/troubleshooting/troubleshoot-php-agent-instance-count">New Relic ドキュメント &gt; PHP エージェントインスタンス数のトラブルシューティング</a> </p>
+<p><a href="https://docs.newrelic.com/docs/agents/php-agent/troubleshooting/troubleshoot-php-agent-instance-count">New Relic ドキュメント &gt; PHP エージェントインスタンス数のトラブルシューティング </a> </p>
 </td>
 </tr>
 </tbody>

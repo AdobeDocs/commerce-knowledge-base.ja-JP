@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39993: API を使用して行われたインベントリの変更がストアフロントに反映されない
 
-MDVA-39993 パッチは、API を介して行われたインベントリの変更がストアフロントに反映されない問題を解決します。 このパッチは、 [品質向上パッチツール（QPT）](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 がインストールされています。 パッチ ID は MDVA-39993。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-39993 パッチは、API を介して行われたインベントリの変更がストアフロントに反映されない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.12 がインストールされている場合に使用できます。 パッチ ID は MDVA-39993。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,22 +27,22 @@ MDVA-39993 パッチは、API を介して行われたインベントリの変�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
 API を通じて行われた在庫の変更は、ストアフロントの製品ページには反映されません。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 インストール済みのインベントリモジュール。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. キューが cron で実行するように設定され、cron がインストールされ実行中であることを確認します。
 1. 2 つの色（黒と赤）、2 つのサイズ（M と L）を持つ設定可能な製品（COC001）を作成します。
 1. 在庫切れ（COC001-Red-M）を 1 つ作成します。
-1. 設定可能な製品ページをストアフロントに読み込んで、各色をクリックしてみてください。 クリックした場合 **赤**、サイズ **M** 在庫切れなので、在庫切れにする必要があります。
+1. 設定可能な製品ページをストアフロントに読み込んで、各色をクリックしてみてください。 **赤** をクリックすると、在庫切れのため **M** サイズが消えます。
 1. 次の API エンドポイントとペイロードを使用して、COC001-Red-M を在庫にします。
 
    ```json
@@ -61,13 +61,13 @@ API を通じて行われた在庫の変更は、ストアフロントの製品�
    ```
 
 1. バックエンドからこの単純な製品をチェックし、それが In Stock に更新されていることを確認します。
-1. フロントエンドから設定可能な製品を読み込み、各色をクリックします。 サイズに注目してください **M** クリックした場合 **赤**.
+1. フロントエンドから設定可能な製品を読み込み、各色をクリックします。 **赤** をクリックすると、サイズ **M** に注目してください。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 API を使用して在庫に更新したので、COC001-Red-M オプションは廃止されません。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 COC001-Red-M オプションは、在庫があるにもかかわらず、まだ取り消されています。
 
@@ -75,14 +75,14 @@ COC001-Red-M オプションは、在庫があるにもかかわらず、まだ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[ ソフトウェア アップデート ガイド ] > [ パッチを適用 ]](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) 開発者向けドキュメントを参照してください。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://devdocs.magento.com/cloud/project/project-patch.html) 開発者向けドキュメントを参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [品質向上パッチツールのリリース：品質向上パッチをセルフサービスで提供する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [QPT で使用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 開発者向けドキュメントを参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。

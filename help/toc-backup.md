@@ -16,9 +16,9 @@ ht-degree: 0%
    * [概要](/help/support-tools/overview.md)
    * Site-wide Analysis tool {#site-wide-analysis-tool}
       * [Adobe別 Site-Wide Analysis Tool：概要](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
-   * Adobe Commerceの監視 {#observation}
+   * Adobe Commerce {#observation} の監視
       * [Adobe Commerceの監視の概要](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
-   * Adobe Commerceの管理アラート {#managed-alerts}
+   * Adobe Commerce {#managed-alerts} の管理アラート
       * [Adobe Commerceの管理アラート：Redis メモリクリティカルアラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
       * [Managed alerts for Adobe Commerce:disk warning アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
       * [Adobe Commerceの管理アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -31,7 +31,7 @@ ht-degree: 0%
       * [Adobe Commerceの管理アラート：MariaDB アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
       * [Adobe Commerceの管理アラート：Apdex 警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
       * [Adobe Commerceの管理アラート：CPU 警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-   * QPT ツールで使用可能なパッチ {#patches}
+   * QPT ツール {#patches} で使用可能なパッチ
       * [MDVA-24201: カタログ価格ルールが機能しない](/help/support-tools/patches-available-in-qpt-tool/mdva-24201-magento-patch-catalog-price-rules-don-t-work.md)
       * [MDVA-33281 パッチ：インベントリ不整合の問題](/help/support-tools/patches-available-in-qpt-tool/mdva-33281-magento-patch-inventory-inconsistency-issues.md)
       * [MDVA-42950：製品ページでビデオが再生されない](/help/support-tools/patches-available-in-qpt-tool/mdva-42950-videos-dont-play-on-the-product-page.md)
@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Realpath のキャッシュ・サイズのベスト・プラクティス](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Adobe Commerceでの CSS ファイルと JS ファイルの最適化](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * データベース {#database}
-      * [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト化](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+      * [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
       * [トリガー使用のベストプラクティス](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+      * [ クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
       * [MySQL スレーブ接続用のクラウドインフラストラクチャー上のAdobe Commerceのベストプラクティス](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+      * [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
    * 一般 {#general}
       * [プライベートコンテンツブロック内の_isScopePrivate は、Adobe Commerceのパフォーマンスを低下させる](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceに関するトラブルシューティングのベストプラクティス](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,14 +370,14 @@ ht-degree: 0%
       * [クラウドインフラストラクチャー上のAdobe Commerceにおける画像のベストプラクティス](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Adobe Commerceのベストプラクティス：管理者での重要なアクションの実行](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Adobe Commerceのベストプラクティス：を使用しない場合はレポートを無効にする](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [インデクサーの「スケジュールに従った更新」により、Adobe Commerceのパフォーマンスが最適化されます](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+      * [ インデクサーの「スケジュールに従って更新」は、Adobe Commerceのパフォーマンスを最適化します ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
       * [ベストプラクティス Adobe Commerce製品のバリエーション](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Adobe Commerceの注文パフォーマンスのベストプラクティス](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [Adobe Commerceのベストプラクティス：非同期注文処理を有効にする](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
       * [Adobe Commerceのレンダリングブロッキングリソースのベストプラクティス](/help/best-practices/performance/best-practices-for-render-blocking-resources-in-magento.md)
       * [Adobe Commerceにおける買い物かごへの商品数のベストプラクティス](/help/best-practices/performance/best-practice-for-number-of-products-in-cart-in-magento.md)
       * [Adobe Commerce製品属性オプションのベストプラクティス](/help/best-practices/performance/best-practices-for-magento-product-attribute-options.md)
-* トラブルシューティング {#troubleshooting}
+* {#troubleshooting} のトラブルシューティング
    * [概要](/help/troubleshooting/overview.md)
    * 一般的なトラブルシューティング {#general}
       * [Adobe Commerceの製品Recommendationsモジュールのトラブルシューティング](/help/troubleshooting/general/troubleshoot-product-recommendations-module-in-magento-commerce.md)
@@ -480,7 +480,7 @@ ht-degree: 0%
       * [データの相違の診断](/help/troubleshooting/general/diagnosing-a-data-discrepancy.md)
       * [配置エラー：SQLSTATE[HY000]](/help/troubleshooting/general/deployment-error-sql-hy000.md)
       * [「現在のセッションの有効期限が切れました」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します](/help/troubleshooting/general/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Redis のシリアル化解除エラー設定:static-content:deploy](/help/troubleshooting/general/redis-unserialize-error-setup-static-content-deploy.md)
+      * [Redis のシリアル化解除エラー setup:static-content:deploy](/help/troubleshooting/general/redis-unserialize-error-setup-static-content-deploy.md)
       * [インストールが失敗し、install.log を作成できない](/help/troubleshooting/general/installation-fails-cannot-create-install-log.md)
       * [メンテナンスモードになっているが、顧客が使用できるサイト](/help/troubleshooting/general/site-in-maintenance-mode-but-available-to-customers.md)
       * [Adobe Commerce 2.3.5 のチェックアウト中の店舗のクレジットの問題](/help/troubleshooting/general/store-credit-issue-during-checkout-in-magento-2-3-5.md)
@@ -554,7 +554,7 @@ ht-degree: 0%
       * [キャッシュが無効化されると、レスポンス・タイムが低下する](/help/troubleshooting/general/invalidated-cache-causes-response-time-degradation.md)
       * [Github トークンの問題と Composer の主要手順](/help/troubleshooting/general/github-token-issue-and-composer-key-procedures.md)
       * [サンドボックス環境でクレジットカードの支払いが失敗しました](/help/troubleshooting/general/payservices-cc-sandbox-failure.md)
-      * [Adobe Commerce 2.4.1 の問題：Chrome でAmazon アカウントを変更できない](/help/troubleshooting/general/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
+      * [Adobe Commerce 2.4.1 の問題：ChromeでAmazon アカウントを変更できない](/help/troubleshooting/general/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ECE ツールとパッチアップデートエラーAdobe Commerce Cloud Infrastructure 2.2.x.、2.3.x](/help/troubleshooting/general/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
       * [PWA Studio: コンパイルを開始する前に webpack がハングします](/help/troubleshooting/general/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [ElasticSuite のクラッシュまたはメモリ不足によるElasticsearch](/help/troubleshooting/general/elasticsearch-with-elasticsuite-crashes-or-out-of-memory.md)
@@ -598,7 +598,7 @@ ht-degree: 0%
       * [スループットの高いAJAX リクエストが原因で、パフォーマンスが低下する](/help/troubleshooting/general/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/general/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [Adobe Commerce 2.4.0 の既知の問題：Klarna オンサイトメッセージングの空白ページ](/help/troubleshooting/general/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [セットアップの実行:static-content:deploy_version.txt の問題](/help/troubleshooting/general/run-setup-static-content-deploy-deployed-version-txt-issue.md)
+      * [setup:static-content:deploy deployed_version.txt の実行の問題](/help/troubleshooting/general/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [1 回限りのクーポンが複数回使用されている、Adobe Commerce](/help/troubleshooting/general/coupon-code-used-more-than-once-adobe-commerce.md)
       * [「アカウントが一時的に無効になっています」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します](/help/troubleshooting/general/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [デプロイ後にGoogle Analyticsが無効になる](/help/troubleshooting/general/google-analytics-gets-disabled-after-deployment.md)
@@ -614,12 +614,12 @@ ht-degree: 0%
       * [Commerce Admin でのキャッシュのパージ中のエラー](/help/troubleshooting/general/error-purging-cache-in-admin.md)
       * [Adobe Commerceで SendGrid クレジットを超えてもメールが送信されない](/help/troubleshooting/general/emails-not-being-sent-sendgrid-credits-exceeded.md)
       * [Adobe Commerce 2.4.1:dotdigital ページビルダーフォームを保存した際に、ページが空になる](/help/troubleshooting/general/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
-   * 既知の問題 {#known-issues}
+   * の既知 {#known-issues} 問題
       * [ミニ買い物かごからチェックアウトを複数クリックした際の空の買い物かご問題](/help/troubleshooting/known-issues-patches-attached/empty-shopping-cart-issue-when-multiple-click-on-checkout-from-mini-cart.md)
       * [2.3.4 PayPal 問題のホットフィックス](/help/troubleshooting/known-issues-patches-attached/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.4：部分請求書を作成できない](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
       * [新しい注文がアーカイブに送信される](/help/troubleshooting/known-issues-patches-attached/new-orders-are-sent-to-archive.md)
-      * [MD5 から SHA-512 への Authorize.Net Direct Post の更新](/help/troubleshooting/known-issues-patches-attached/update-authorize.net-direct-post-from-md5-to-sha-512.md)
+      * [MD5 から SHA-512 への Authorize.Net Direct Postの更新](/help/troubleshooting/known-issues-patches-attached/update-authorize.net-direct-post-from-md5-to-sha-512.md)
       * [高度なレポート cron ジョブエラーAdobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md)
       * [失敗したログイン試行をデータベースから削除](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md)
       * [独自の cron グループで実行するように詳細レポートを更新](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md)
@@ -731,7 +731,7 @@ ht-degree: 0%
    * [MBI：高度な計算列の作成と編集](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceのディスク容量制限を確認](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceに対する SSL （TLS）証明書](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [最新のベータ版にアクセスできません](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [最新バージョンのBetaにアクセスできません](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [アプリケーションモードの切り替え](/help/how-to/general/switch-the-magento-mode.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで提供される Fastly アカウントへのログイン方法](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Fastly 503 エラーの代わりにAdobe Commerce エラーレポート番号を表示](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
@@ -963,7 +963,7 @@ ht-degree: 0%
    * [Adobe Commerceを使用する際の時間別Amazon E メールを無効にする](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
    * [キャッシュが無効化されると、レスポンス・タイムが低下する](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
    * [Github トークンの問題と Composer の主要手順](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
-   * [Adobe Commerce 2.4.1 の問題：Chrome でAmazon アカウントを変更できない](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
+   * [Adobe Commerce 2.4.1 の問題：ChromeでAmazon アカウントを変更できない](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
    * [ECE ツールとパッチアップデートエラーAdobe Commerce Cloud Infrastructure 2.2.x.、2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
    * [PWA Studio: コンパイルを開始する前に webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
    * [Adobe Commerce Redis の問題を修正するための最新のパッチをインストールします。](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
@@ -1058,7 +1058,7 @@ ht-degree: 0%
    * [ACSD-45488：複数のソースを持ち、在庫に自動的に戻されない設定可能な製品](/help/support-tools/patches-available-in-qpt-tool/acsd-45488-configurable-product-with-multiple-sources-not-returned-to-in-stock.md)
    * [ACSD-46146：管理者から注文した後に 2 通の注文確認メールが送信される](/help/support-tools/patches-available-in-qpt-tool/acsd-46146-two-order-confirmation-emails-are-sent-after-placing-order-from-admin.md)
    * [MDVA-43824：注文のキャンセル操作が失敗し、「アイテムがキャンセルされていません」というエラーが表示される](/help/support-tools/patches-available-in-qpt-tool/mdva-43824-order-cancellation-action-failed-with-error.md)
-   * [MDVA-39605: Redis キャッシュ TTL （有効期限）の値が間違っています]（/help/support-tools/patches-available-in-qpt-tool/mdva-39605-redis-cache-ttl-expiration date-has-wrong-value.md）
+   * [MDVA-39605: Redis キャッシュ TTL （有効期限）の値が間違っています ] （/help/support-tools/patches-available-in-qpt-tool/mdva-39605-redis-cache-ttl-expiration date-has-wrong-value.md）
    * [MDVA-30599: customer_is_guest が正しく設定されていません](/help/support-tools/patches-available-in-qpt-tool/mdva-30599-magento-patch-customer_is_guest-is-set-incorrectly.md)
    * [MDVA-44100：すべての FPT が買い物かごの最後の製品に割り当てられる](/help/support-tools/patches-available-in-qpt-tool/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart-and-reset-for-other-product.md)
    * [MDVA-21095: INSERT INTO &quot;search_tmp...&quot;が属性の一括更新後に終了しない](/help/support-tools/patches-available-in-qpt-tool/mdva-21095-insert-into-search_tmp...-never-ends-after-mass-attribute-update.md)

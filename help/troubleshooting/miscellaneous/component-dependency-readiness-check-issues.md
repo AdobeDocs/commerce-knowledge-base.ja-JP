@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### 競合する依存関係 {#trouble-depend-conflict}
 
-メッセージ *競合するコンポーネント依存関係が見つかりました* インストールまたは更新するコンポーネントを Composer が特定できない場合に表示されます。 コンポーネントの依存関係の問題を解決するには、Composer の仕組みを十分に理解している技術担当者である必要があります。
+インストールまたは更新するコンポーネントを Composer で判断できない場合は、メッセージ *競合するコンポーネントの依存関係が見つかりました* が表示されます。 コンポーネントの依存関係の問題を解決するには、Composer の仕組みを十分に理解している技術担当者である必要があります。
 
 次に、失敗メッセージの例を示します。
 
@@ -40,7 +40,7 @@ We found conflicting component dependencies.
 >
 >表示されるメッセージは異なる可能性があります。
 
-こちらを参照してください [ソリューションに対するコンポーネントの依存関係が競合しています](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) サポートナレッジベースで。
+サポートナレッジベースで [ ソリューションに対するコンポーネントの依存関係の競合 ](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) を参照してください。
 
 ## ファイルシステム権限の問題 {#trouble-depend-permission}
 
@@ -51,10 +51,10 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-記事の説明に従って、ファイルシステムの権限を必ず設定してください [所有権と権限の概要](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) 開発者向けドキュメントを参照してください。
+アドビの開発者ドキュメントの記事 [ 所有権と権限の概要 ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) の説明に従って、ファイルシステムの権限を設定してください。
 
 ## コンポーネントの依存関係チェックのステータスは変更されません {#trouble-depend-state}
 
-問題を修正しようとしても、コンポーネントの依存関係チェックのステータスが変更されない場合があります。 その場合、という名前のファイルを削除または名前変更できます。 `<magento_root>/var/.update_cronjob_status` および `<magento_root>/var/.setup_cronjob_status` もう一度コンポーネントマネージャーを実行してみてください。
+問題を修正しようとしても、コンポーネントの依存関係チェックのステータスが変更されない場合があります。 その場合、`<magento_root>/var/.update_cronjob_status` および `<magento_root>/var/.setup_cronjob_status` という名前のファイルを削除または名前変更して、コンポーネントマネージャーを再実行できます。
 
 これらのファイルの名前を変更または削除すると、コンポーネントマネージャーで再びチェックが実行されます。

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Adobe Commerce クラウドプロジェクトにユーザーを追加できない
 
-この記事では、クラウドプロジェクトにユーザーを追加しようとして、次のエラーで失敗した場合の解決策を説明します。 *ユーザー XXX が存在しません*.
+この記事では、クラウドプロジェクトにユーザーを追加しようとして、*ユーザー XXX が存在しません* というエラーが発生して追加できない場合の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce [すべてのサポートされているバージョン](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
@@ -29,11 +29,12 @@ ht-degree: 0%
 
 ## 解決策
 
-1. https://accounts.magento.cloudで自分のアカウントにログインするようにユーザーに依頼します（ユーザーは、そのメールアドレスでadobe.comのアカウントに既に登録している必要があります）。 https://account.adobe.comにアカウントを作成または持っていることは、ユーザーがhttps://accounts.magento.cloudにアカウントを持っていることを自動的には意味しません）注：ユーザーが 2022 年 8 月より前にaccount.magento.comまたは accounts.magento.cloud にアカウントを持っている場合、2022 年 8 月以降に作成していなければ、adobe.comにアカウントを持っていない可能性があります。 Adobeアカウントをお持ちでログインできない場合は、以下のアドレスにメールをお送りください： [Grp-Magento-HelpCenterLoginIssues@adobe.com](mailto:Grp-Magento-HelpCenterLoginIssues@adobe.com) と詳細を説明しました。
+1. https://accounts.magento.cloudで自分のアカウントにログインするようにユーザーに依頼します（ユーザーは、そのメールアドレスでadobe.comのアカウントに既に登録している必要があります）。 https://account.adobe.comでアカウントを作成または持っていることは、ユーザーがhttps://accounts.magento.cloudでアカウントを持つことを自動的に意味するものではありません）
+メモ：2022 年 8 月より前に、ユーザーがaccount.magento.comまたは accounts.magento.cloud にアカウントを持っている場合、2022 年 8 月以降に作成した場合を除き、ユーザーがadobe.comにアカウントを持っていない可能性があります。 Adobeアカウントをお持ちでログインできない場合は、[Grp-Magento-HelpCenterLoginIssues@adobe.com](mailto:Grp-Magento-HelpCenterLoginIssues@adobe.com) まで詳細をお知らせください。
 1. 次に、https://accounts.magento.cloudに移動します。
-1. 完了したら、ユーザーをプロジェクトに追加できます。 手順については、次を参照してください [ユーザーの追加とアクセスの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-users-and-manage-access) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
+1. 完了したら、ユーザーをプロジェクトに追加できます。 手順については、Cloud Infrastructure のCommerce ガイドの [ ユーザーの追加とアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-users-and-manage-access) を参照してください。
 
 ## 関連資料：
 
-* [ユーザーアクセスの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) クラウドインフラストラクチャーに関するCommerceのガイドを参照してください。
-* [Adobe Commerce サポートまたは Cloud アカウントにログインできない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html)
+* Commerce on Cloud Infrastructure ガイドの [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)。
+* [Adobe Commerce サポートまたは Cloud アカウントにログインできない ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html)

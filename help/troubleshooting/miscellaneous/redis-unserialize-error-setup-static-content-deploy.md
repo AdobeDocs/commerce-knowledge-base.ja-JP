@@ -1,6 +1,6 @@
 ---
-title: Redis のシリアル化解除エラー'設定:static-content:デプロイ'
-description: この記事では、「magento セットアップ」の実行時に発生する Redis のシリアル化解除エラーを修正します:static-content:デプロイ'.
+title: Redis のシリアル化解除エラー'setup:static-content:deploy'
+description: この記事では、「magento setup:static-content:deploy」を実行する際の Redis のシリアル化解除エラーを修正します。
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Redis のシリアル化解除エラー `setup:static-content:deploy`
 
-この記事では、の実行時の Redis のシリアル化解除エラーを修正します `magento setup:static-content:deploy`.
+この記事では、`magento setup:static-content:deploy` を実行する際の Redis のシリアル化解除エラーの修正について説明します。
 
-実行中 `magento setup:static-content:deploy` Redis エラーを引き起こします。
+`magento setup:static-content:deploy` を実行すると、Redis エラーが発生します。
 
 ```
 [Exception]
@@ -25,13 +25,13 @@ Notice: unserialize(): Error at offset 0 of 1 bytes in
 
 この問題は、Redis 接続の並列干渉プロセスによって発生します。
 
-解決するには、を実行します `setup:static-content:deploy` シングルスレッドモードでは、次の環境変数を設定します。
+解決するには、次の環境変数を設定して、`setup:static-content:deploy` をシングルスレッドモードで実行します。
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-または、 `setup:static-content:deploy` コマンドの後に `-j 1` （または `--jobs=1` ）引数。
+または、`setup:static-content:deploy` コマンドに続いて `-j 1` （または `--jobs=1`）引数を実行します。
 
 マルチスレッドを無効にすると、静的なアセットをデプロイするプロセスが遅くなります。
 
@@ -43,7 +43,7 @@ STATIC_CONTENT_THREADS =1
 
 ## 問題
 
-の実行 `setup:static-content:deploy` コマンドが原因で Redis エラーが発生します。
+`setup:static-content:deploy` コマンドを実行すると、Redis エラーが発生します。
 
 ```php
 )
@@ -79,17 +79,17 @@ Command php ./bin/magento setup:static-content:deploy --jobs=3  en_US  returned 
 
 この問題は、Redis 接続上のプロセスが並行して干渉することが原因です。
 
-ここでは、のプロセスです `App/Config/Type/System.php` は、に対する応答を期待していました `system_defaultweb`が、次の応答を受信しました： `system_cache_exists` それは別の工程で作られた。 詳しくは、で説明を参照してください [ジェイソン・ウッズの地位](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
+ここでは、`App/Config/Type/System.php` のプロセスが `system_defaultweb` に対する応答を期待していましたが、別のプロセスが行った `system_cache_exists` に対する応答を受け取りました。 詳しくは [Jason Woods&#39; post](https://github.com/magento/magento2/issues/9287#issuecomment-302362283) を参照してください。
 
 ## 解決策
 
-並列処理を無効にして実行 `setup:static-content:deploy` シングルスレッドモードでは、次の環境変数を設定します。
+次の環境変数を設定して、並列処理を無効にし、シングルスレッドモードで `setup:static-content:deploy` を実行します。
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-を実行することもできます。 `setup:static-content:deploy` コマンドの後に `-j 1` （または `--jobs=1`）引数。
+また、`setup:static-content:deploy` コマンドの後に `-j 1` （または `--jobs=1`）引数を指定して実行することもできます。
 
 >[!NOTE]
 >
@@ -99,5 +99,5 @@ STATIC_CONTENT_THREADS =1
 
 開発者向けドキュメントでは、
 
-* [Redis の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [コマンドラインアップグレード](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Redis の設定 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
+* [ コマンドラインアップグレード ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)

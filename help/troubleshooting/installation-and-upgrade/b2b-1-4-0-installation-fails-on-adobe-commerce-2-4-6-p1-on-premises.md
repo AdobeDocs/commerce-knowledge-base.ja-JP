@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL B2B] Adobe Commerce 2.4.6-p1 オンプレミスで 1.4.0 のインストールが失敗する'
-description: この記事では、Adobe Commerce 2.4.6-p1 オンプレミスの問題の回避策として、次の内容を説明します [!DNL B2B] バージョン 1.4.0 のインストールに失敗します。
+title: 「Adobe Commerce 2.4.6-p1 オンプレミスで [!DNL B2B] 1.4.0 のインストールが失敗する」
+description: この記事では、バージョン 1.4.0 のインストールに失敗したオンプレミス環境のAdobe Commerce 2 [!DNL B2B] 4.6-p1 の問題の回避策を提供します。
 feature: Install, Upgrade, B2B
 role: Developer
 exl-id: 4a557c13-7ec2-4cfe-b86e-bb0d1a441658
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL B2B] Adobe Commerce 2.4.6-p1 オンプレミスで 1.4.0 のインストールが失敗する
+# Adobe Commerce 2.4.6-p1 オンプレミスで [!DNL B2B] 1.4.0 のインストールが失敗する
 
-この記事では、Adobe Commerce 2.4.6-p1 オンプレミスの問題の回避策として、次の内容を説明します [!DNL B2B] バージョン 1.4.0 のインストールに失敗します。
+この記事では、バージョン 1.4.0 のインストールに失敗したオンプレミス環境のAdobe Commerce 2.4.6-p1[!DNL B2B] 問題の回避策を提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL B2B] バージョン 1.4.0 はに正常にインストールされました **Adobe Commerce Cloud 2.4.6-p1**.
+>[!DNL B2B] バージョン 1.4.0 が **Adobe Commerce Cloud 2.4.6-p1** に正常にインストールされました。
 
 ## 問題
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. Adobe Commerce 2.4.6-p1 をインストールします。
 
@@ -34,17 +34,17 @@ ht-degree: 0%
    m2install.sh -s composer --ee -v 2.4.6-p1
    ```
 
-1. インストールしてみる [!DNL B2B] バージョン 1.4.0。
+1. [!DNL B2B] バージョン 1.4.0 をインストールしてみます。
 
    ```terminal
    composer require magento/extension-b2b:1.4.0
    ```
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 [!DNL B2B] バージョン 1.4.0 がAdobe Commerce 2.4.6-p1 に正常にインストールされました。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 インストールが失敗し、次のエラーが表示されます。
 
@@ -61,9 +61,9 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## 回避策
 
-へのインストールまたはアップグレードに成功しました [!DNL B2B] Adobe Commerce 2.4.6-p1 上のバージョン 1.4.0。手動で依存させる [!DNL B2B] を含むセキュリティパッケージ [安定性タグ](https://getcomposer.org/doc/04-schema.md#package-links).
+[stability tag](https://getcomposer.org/doc/04-schema.md#package-links) を含む [!DNL B2B] セキュリティパッケージの手動依存関係を追加して、Adobe Commerce 2.4.6-p1 に [!DNL B2B] バージョン 1.4.0 を正常にインストールまたはアップグレードした。
 
-1. Adobe Commerce インストールディレクトリから、を更新します `composer.json` 必要な依存関係を備えたもの：
+1. Adobe Commerce インストールディレクトリから、必要な依存関係を使用して `composer.json` を更新します。
 
    ```terminal
    composer require magento/module-re-captcha-company=1.0.3-beta1@beta magento/security-package-b2b=1.0.4-beta1@beta
@@ -92,7 +92,7 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
    No security vulnerability advisories found
    ```
 
-1. 更新 `composer.json` 追加 [!DNL B2B] バージョン 1.4.0。
+1. `composer.json` を更新して [!DNL B2B] バージョン 1.4.0 を追加します。
 
    ```terminal
    composer require magento/extension-b2b=1.4.0
@@ -114,5 +114,5 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 1. インストールまたはアップグレードのプロセスを完了します。
 
-   * [インストール [!DNL B2B] クラウドインフラストラクチャー上](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
-   * [オンプレミスでのインストール](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)
+   * [ クラウドインフラストラ  [!DNL B2B]  チャへのインストール ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
+   * [ オンプレミスでのインストール ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)

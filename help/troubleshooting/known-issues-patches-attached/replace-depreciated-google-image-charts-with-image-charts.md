@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 非推奨（廃止予定）のGoogleのイメージチャートをイメージチャートに置き換える
 
-現在、ほとんどのAdobe Commerce エディションとバージョンでを使用しています [Google画像グラフ](https://developers.google.com/chart/image/) 管理ダッシュボードで静的グラフをレンダリングする。 2019 年 3 月 14 日（PT）をもって、GoogleはGoogle イメージチャートのサポートを停止します。 この問題を解決するために、Google画像グラフをで置き換えるパッチを提供しています [Image-Chart](https://www.image-charts.com/) 無料サービス。
+現在、ほとんどのAdobe Commerceのエディションとバージョンでは、管理ダッシュボードで静的なグラフをレンダリングするために ](https://developers.google.com/chart/image/)0}Google画像グラフ } を使用しています。 [2019 年 3 月 14 日（PT）をもって、GoogleはGoogle イメージチャートのサポートを停止します。 この問題を解決するために、Googleの画像グラフを [ 画像グラフ ](https://www.image-charts.com/) フリーサービスに置き換えるパッチを提供しています。
 
 ## 影響を受けるバージョン
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 問題
 
-Googleは、2019 年 3 月 14 日（PT）をもって、Google イメージチャートのサポートを終了しました。 Adobe Commerce 1.X およびAdobe Commerce 2.2.X を使用する場合は、パッチをダウンロードして適用しない限り、静的なグラフを表示できません。Googleの画像グラフを画像グラフソリューションに置き換えてください。 表示されるグラフは、と同じデザインと機能を持ちます。Google画像グラフは、 [GDPR](https://www.image-charts.com/data-processing-addendum.html) コンプライアンスプライバシーポリシー。 その他のオプションについては、を参照してください。 [Image-Chart](https://www.image-charts.com/).
+Googleは、2019 年 3 月 14 日（PT）をもって、Google イメージチャートのサポートを終了しました。 Adobe Commerce 1.X およびAdobe Commerce 2.2.X を使用する場合は、パッチをダウンロードして適用しない限り、静的なグラフを表示できません。Googleの画像グラフを画像グラフソリューションに置き換えてください。 表示されるグラフは、[GDPR](https://www.image-charts.com/data-processing-addendum.html) 準拠のプライバシーポリシーを備えた Image-Charts フリーアカウントサービスを通じて、Google画像グラフと同じデザインおよび機能を持ちます。 その他のオプションについては、[ 画像グラフ ](https://www.image-charts.com/) を参照してください。
 
 ## 解決策
 
@@ -34,25 +34,25 @@ Commerce管理者で静的グラフを表示できるようにするには、Ado
 
 ### Adobe Commerce オンプレミス
 
-1. を保存します [attached MAGETWO-98833\_composer\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) パッチを適用して、Adobe Commerce ルートディレクトリにアップロードします。
+1. [attached MAGETWO-98833\_composer\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) パッチを保存して、Adobe Commerceのルートディレクトリにアップロードします。
 1. パッチ名を実際のパッチ名に置き換えて、次の SSH コマンドを実行します。
 
    ```git
    patch -p1 < MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch
    ```
 
-   上記のコマンドが機能しない場合は、を使用してみてください。 `-p2` の代わりに `-p1`.）
+   上記のコマンドが機能しない場合は、`-p1` の代わりに `-p2` を使用してみてください。）
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/**キャッシュ管理** でキャッシュを更新します。
 
 ### クラウドインフラストラクチャー上のAdobe Commerce
 
 Cloud マーチャントの場合、パッチは最も近い ECE ツールのアップデートに含まれます。
 
-### Magento2 オープンソース
+### Magento 2 オープン Source
 
-1. に移動 [https://magento.com/tech-resources/download\#download2291](https://magento.com/tech-resources/download#download2291).
-1. が含まれる **形式を選択** ドロップダウン リストから composer のバージョンを選択し、 **Download**.
+1. [https://magento.com/tech-resources/download\#download2291](https://magento.com/tech-resources/download#download2291) に移動します。
+1. **形式を選択** ドロップダウンリストで、Composer のバージョンを選択し、**ダウンロード** をクリックします。
 1. パッチをAdobe Commerceのルートディレクトリにアップロードします。
 1. パッチ名を実際のパッチ名に置き換えて、次の SSH コマンドを実行します。
 
@@ -60,37 +60,37 @@ Cloud マーチャントの場合、パッチは最も近い ECE ツールのア
    patch -p1 < MAGETWO-98833_composer_patch-2019-04-15-04-37-48.patch
    ```
 
-   （上記のコマンドが機能しない場合は、を使用してみてください。 `-p2` の代わりに `-p1`.）
+   （上記のコマンドが機能しない場合は、`-p1` の代わりに `-p2` を使用してみてください。）
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/**キャッシュ管理** でキャッシュを更新します。
 
 ### Adobe Commerce 1 オンプレミス
 
 次の手順に従って、パッチをダウンロードして適用します。
 
-1. を保存します [添付 MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) パッチを適用して、Adobe Commerce ルートディレクトリにアップロードします。
+1. [attached MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) パッチを保存して、Adobe Commerce ルートディレクトリにアップロードします。
 1. 次の SSH コマンドを実行します。
 
    ```git
    patch -p1 < MPERF-10509-EE-2019-03-13-06-32-19.diff
    ```
 
-   （上記のコマンドが機能しない場合は、を使用してみてください。 `-p2` の代わりに `-p1`.）
+   （上記のコマンドが機能しない場合は、`-p1` の代わりに `-p2` を使用してみてください。）
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/**キャッシュ管理** でキャッシュを更新します。
 
-### Magento 1 オープンソース
+### Magento 1 オープン Source
 
 次の手順に従って、パッチをダウンロードして適用します。
 
-1. クリック [**このリンク**](https://magento.com/tech-resources/download#download2283) 管理ダッシュボードチャート パッチを探すには、次の手順に従います。
+1. [**このリンク**](https://magento.com/tech-resources/download#download2283) をクリックして、管理ダッシュボードグラフのパッチを見つけます。
 1. を選択
 
    ```git
    MPERF-10509.diff
    ```
 
-   から **形式を選択** ドロップダウンで「ダウンロード」をクリックします。
+   **形式を選択** ドロップダウンから「ダウンロード」をクリックします。
 
 1. Adobe Commerceのルートディレクトリにファイルをアップロードします。
 1. 次の SSH コマンドを実行します。
@@ -99,9 +99,9 @@ Cloud マーチャントの場合、パッチは最も近い ECE ツールのア
    patch -p1 < MPERF-10509.diff
    ```
 
-   （上記のコマンドが機能しない場合は、を使用してみてください。 `-p2` の代わりに `-p1`.）
+   （上記のコマンドが機能しない場合は、`-p1` の代わりに `-p2` を使用してみてください。）
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/**キャッシュ管理** でキャッシュを更新します。
 
 ## 添付ファイル
 

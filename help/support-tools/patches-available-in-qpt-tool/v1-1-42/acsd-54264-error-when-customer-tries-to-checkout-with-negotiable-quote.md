@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-54264：お客様が交渉可能な見積もりでチェックアウトしようとすると、エラーが表示される
 
-ACSD-54264 パッチは、エラーメッセージが表示される問題を修正します *リクエストされた属性を更新することはできません。 行 ID: store_id* 顧客が別のストア表示から交渉可能な見積もりでチェックアウトを試みたときに表示されます。 このパッチは、 [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.42 がインストールされています。 パッチ ID は ACSD-54264 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-54264 パッチでは、エラーメッセージ *要求された属性を更新できません。 行 ID:store_id* は、顧客が別のストアビューから交渉可能な見積もりでチェックアウトしようとすると表示されます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.42 がインストールされている場合に使用できます。 パッチ ID は ACSD-54264 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,32 +27,32 @@ ACSD-54264 パッチは、エラーメッセージが表示される問題を修
 
 >[!NOTE]
 >
->パッチは、新しいを含む他のバージョンにも適用される可能性があります。 [!DNL Quality Patches Tool] リリース。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、 `magento/quality-patches` を最新バージョンにパッケージ化し、 [[!DNL Quality Patches Tool]：パッチの検索ページ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-エラーメッセージ *リクエストされた属性を更新することはできません。 行 ID: store_id* 顧客が別のストア表示から交渉可能な見積もりでチェックアウトを試みたときに表示されます。
+エラーメッセージ *リクエストされた属性を更新できません。 行 ID:store_id* は、顧客が別のストアビューから交渉可能な見積もりでチェックアウトしようとすると表示されます。
 
-<u>前提条件</u>:
+<u> 前提条件 </u>:
 
 Adobe Commerce B2B モジュールがインストールされ、有効になっています。
 
-<u>再現手順</u>:
+<u> 再現手順 </u>:
 
 1. デフォルトの web サイト用に、追加のストア表示を作成します。
-1. を有効にする *[!UICONTROL B2B Quote]* 設定で指定します。
+1. 設定で *[!UICONTROL B2B Quote]* を有効にします。
 1. ストア表示のいずれかで会社の顧客としてログインします。
-1. に製品を追加する *[!UICONTROL Shopping Cart]*.
+1. *[!UICONTROL Shopping Cart]* に製品を追加します。
 1. 見積をレビュー用に発行します。
-1. 管理者ユーザーとして、に移動します。 **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** 承認された見積もりを送信します。
+1. 管理者ユーザーとして、**[!UICONTROL Sales]** / **[!UICONTROL Quotes]** に移動し、承認済みの見積もりを送信します。
 1. 会社の顧客として、ストア表示を別のストア表示に変更します。
 1. チェックアウトしてみてください。
 
-<u>期待される結果</u>:
+<u> 期待される結果 </u>:
 
 顧客はこの見積もりで注文を行います。
 
-<u>実際の結果</u>:
+<u> 実際の結果 </u>:
 
 * エラーは、配送情報の保存中に発生します。
 
@@ -66,14 +66,14 @@ Adobe Commerce B2B モジュールがインストールされ、有効になっ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス： [[!DNL Quality Patches Tool] > 使用状況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) が含まれる [!DNL Quality Patches Tool] ガイド。
-* クラウドインフラストラクチャー上のAdobe Commerce: [「アップグレードとパッチ」 > 「パッチの適用」](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （クラウドインフラストラクチャーのCommerce ガイド）を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
-について詳しくは、 [!DNL Quality Patches Tool]を参照してください。
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool] リリース済み：品質パッチをセルフサービスで適用する新しいツール](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) サポートナレッジベースで。
-* [次を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) アドビのサポートナレッジベースに含まれています。
+* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) サポートナレッジベースで確認します。
 
-QPT で使用可能なその他のパッチについては、を参照してください。 [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) が含まれる [!DNL Quality Patches Tool] ガイド。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
