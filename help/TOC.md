@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: c75a1ecbf5d89ede71eb3f873c75a5e7d8720a2b
+source-git-commit: 202f5edcef114a1d16177b05328803aca81c11e2
 workflow-type: tm+mt
-source-wordcount: '11069'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -1031,7 +1031,6 @@ ht-degree: 0%
       * [クラウドサイトが遅い](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
       * [クラウド上の Fastly キャッシュをパージする際にエラーが発生しました（パージリクエストが正常に処理されませんでした）](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
       * [カスタム SSL 証明書の有効期限情報](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
-      * [Adobe Commerceに関する Redis のトラブルシューティング](/help/troubleshooting/miscellaneous/redis-troubleshooter.md)
       * [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Adobe Commerceを使用する際の時間別Amazon E メールを無効にする](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [キャッシュが無効化されると、レスポンス・タイムが低下する](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
