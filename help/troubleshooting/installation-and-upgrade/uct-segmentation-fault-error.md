@@ -4,7 +4,7 @@ description: この記事では、アップグレード互換性ツールの使�
 exl-id: 1cce1146-942e-46cb-a395-8da9e472cd39
 feature: Customer Service, Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -49,7 +49,7 @@ bin/uct upgrade:check --current-version=2.4.4 path/to/the/module
 
 1. 唯一の出力は `Upgrade compatibility tool` です。
 
-   ```terminal
+   ```bash
    bin/uct upgrade:check /var/www/project/magento/ -c 2.4.1
    Upgrade compatibility tool
    ```

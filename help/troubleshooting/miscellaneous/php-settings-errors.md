@@ -4,7 +4,7 @@ description: この記事では、PHP の設定エラーに対する解決策を
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -44,7 +44,7 @@ PHP のメモリ制限を増やすには、次の手順に従います。
 
 レビュー、製品、属性、オプションの数が多い設定では、設定された PHP の制限を超えるフォームが生成される場合があります。 送信された値の数が `php.ini` 内に設定された `max-input-vars` 限値を超えた場合（デフォルトは 1000）、残りのデータは転送されず、これらのデータベースの値は更新されません。 この場合、PHP ログに次の警告が表示されます。
 
-```terminal
+```bash
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
@@ -58,7 +58,7 @@ PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase th
 
 通常、エラーテキストは次のようになります。
 
-```terminal
+```bash
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 

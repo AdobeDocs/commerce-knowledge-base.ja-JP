@@ -4,7 +4,7 @@ description: この記事では、バックアップ作成の問題に対して�
 exl-id: 1a6204ad-bd5a-46dc-8a8e-39655a174e09
 feature: Storage, Data Import/Export
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Adobe Commerce バックアップ機能が起動しない場合や、次のメッセージが表示される場合は、バックアップの前に機能を有効にする必要があります。
 
-```terminal
+```bash
 Backup functionality is disabled.
 Backup functionality is currently disabled. Please use other means for backups.
 ```
