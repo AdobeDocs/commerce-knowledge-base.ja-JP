@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 202f5edcef114a1d16177b05328803aca81c11e2
+source-git-commit: d3b832d2f8a0ef35e8a8e8899ccdaffeec8029ff
 workflow-type: tm+mt
-source-wordcount: '11064'
+source-wordcount: '11066'
 ht-degree: 0%
 
 ---
@@ -1180,7 +1180,7 @@ ht-degree: 0%
       * [MySQL とElasticsearchで異なる結果が表示される](/help/troubleshooting/elasticsearch/mysql-and-elasticsearch-show-different-results.md)
       * [OpenSearch のインストールにもかかわらず、Elasticsearchが検索エンジンとして表示される](/help/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search.md)
 * ヘルプセンターガイド {#help-center-guide}
-   * [Adobe Commerce ヘルプセンターユーザーガイド](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
+   * [Adobe CommerceのExperience Leagueサポートユーザーガイド](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Adobe Commerce サポートチケットのライフサイクルポリシーの更新](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * ハウツー {#how-to}
    * [ハウツーの概要](/help/how-to/overview.md)
