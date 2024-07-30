@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: d3b832d2f8a0ef35e8a8e8899ccdaffeec8029ff
+source-git-commit: a520ef45f1c55dbf34a98c4f4d3ab49814535434
 workflow-type: tm+mt
-source-wordcount: '11066'
+source-wordcount: '11073'
 ht-degree: 0%
 
 ---
@@ -1054,6 +1054,7 @@ ht-degree: 0%
       * [エラー：クラウドインフラストラクチャ上のAdobe Commerceでウォーミングアップに失敗しました](/help/troubleshooting/miscellaneous/error-warming-up-failed-on-magento-commerce-cloud.md)
       * [Magento GitHub リポジトリを複製できません](/help/troubleshooting/miscellaneous/cannot-clone-the-magento-github-repository.md)
       * [ライブ検索カタログが同期されていません](/help/troubleshooting/miscellaneous/live-search-catalog-data-sync.md)
+      * [Experience Platformに顧客プロファイルが表示されない](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio: ブラウザーが.local.pwadev サイトを解決できません](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [ページビルダーに製品Recommendationsが表示されない](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
       * [Adobe Commerce Fastly に関するトラブルシューティング](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
