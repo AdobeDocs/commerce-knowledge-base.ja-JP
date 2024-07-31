@@ -4,10 +4,10 @@ description: Commerce Store のトラブルシューティングと管理に必�
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: 95509b717d41436b68ad94c3c28ac72e1887fdfc
+source-git-commit: 738a5455267647d294d222d5bb6149254dcb93dd
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 1%
+source-wordcount: '1394'
+ht-degree: 0%
 
 ---
 
@@ -45,57 +45,193 @@ ht-degree: 1%
 
 <tr>
     <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-update-the-cloud-account-profile"> クラウドアカウントプロファイルを更新する方法：</a> この記事では、クラウドアカウントでプロファイルを変更する手順を説明します。
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment"><code>Magento-cloud</code> CLI でアクティブな環境が表示されない：</a> 複数のアクティブな環境があり、Magentoクラウド CLI （コマンドラインツール）コマンドを実行して環境を操作しようとしています。 ただし、目的の環境を選択するプロンプトには、この環境は表示されません。
     </td>
     <td>新しい記事</td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
   </tr>
 
 <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/admin-create-order-page-in-csp-restricted-mode">CSP 制限モードでの注文ページ作成のトラブルシューティング：</a> この記事では、CSP 制限モードが <em> 有効 </em> の場合に管理者側で注文を作成する際に発生するAdobe Commerce 2.4.7 の問題に関する説明と修正を提供します。  
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches"> セキュリティパッチの取得および適用方法：</a> この記事では、リリース済みのセキュリティパッチを取得および適用する方法について説明しますが、説明は入手できません。  
     </td>
     <td>新しい記事</td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/storefront-checkout-page-in-csp-restricted-mode">CSP 制限モードでのストアフロントのチェックアウトページのトラブルシューティング：</a><em> この記事では、CSP 制限モードでチェックアウトページを表示する際に発生するAdobe Commerce 2.4.7 の問題について、ブラウザーコンソールログに「Content Security Policy ディレクティブ："script-src ..."</em> に違反しているので、インラインスクリプトの実行を拒否されました。 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch"> 検索エンジンが Opensearch に設定されている場合のElasticsearch7 へのフォールバック：</a> この記事では、検索エンジンがAdobe Commerceで OpenSearch に設定されている場合にElasticsearch7 へのフォールバックエラーが発生する問題の解決策を提供します。 
     </td>
     <td>新しい記事 </td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-54656-invisible-recaptcha-fails-during-checkout-preventing-order-placement">ACSD-54656：チェックアウト時に非表示の reCAPTCHA が機能せず、注文の配置が妨げられる：</a> ACSD-54656 パッチは、チェックアウト時に非表示の reCAPTCHA が正しく機能せず、注文の配置が妨げられる問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 がインストールされている場合に使用できます。 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error"> デプロイに失敗しました：'cache'名前空間エラーに定義されたコマンドがありません：</a> この記事では、デプロイメントが失敗し、ログに示されているいずれかのエラーが <em>cache'名前空間に定義されたコマンドがありません </em> の場合の問題の解決策を説明します。 
     </td>
     <td>新しい記事 </td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes">ACSD-46767：在庫数が変更されると、カテゴリページのキャッシュが無効になります：</a> ACSD-46767 パッチは、製品がまだ在庫にある場合でも、在庫数が変更されるとカテゴリページのキャッシュが無効になる問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 がインストールされている場合に使用できます。  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response">ACSD-55566:GraphQL response で内部サーバーエラーが発生して <code>mergeCart</code> mutation が失敗する：</a> ACSD-55566 パッチは、GraphQL response で内部サーバーエラーが発生して <code>mergeCart</code> mutation が失敗する問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。  
     </td>
     <td>新しい記事 </td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query">ACSD-56415:DELETEークエリが原因で部分価格インデックス作成のパフォーマンスが低下する：</a> ACSD-56415 パッチは、データベースに部分価格データインデックスがたくさんある場合に、DELETEークエリが原因で部分価格インデックス作成のパフォーマンスが低下する問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.45 がインストールされている場合に使用できます。  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront">ACSD-56546：設定可能な製品とバンドル製品がストアフロントに在庫切れとして表示される：</a> ACSD-56546 パッチは、設定可能な製品とバンドル製品がストアフロントに在庫切れとして表示される問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。  
     </td>
     <td>新しい記事 </td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel">ACSD-56858:B2B 会社管理者の役割の権限の不一致：</a> ACSD-56858 パッチは、B2B 環境の制限された会社管理者に対して役割の権限が正しく表示されない問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 がインストールされている場合に使用できます。 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information">ACSD-57565：注文ダッシュボードに間違った注文情報が表示される：</a> ACSD-57565 パッチは、期間が更新されるまで注文ダッシュボードに間違った注文情報が表示される問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
     </td>
     <td>新しい記事 </td>
-    <td>2024 年 4 月 22 日（Pt）</td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql">ACSD-57394:GraphQLで複数の並べ替え属性を使用した商品の並べ替えが正しくありません：</a> ACSD-57394 パッチは、GraphQLで複数の並べ替え属性を使用した際に商品が正しく並べ替えられない問題を修正しました。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations">ACSD-57854:GraphQL応答に、カテゴリ集計にリストされるべきでない無効なカテゴリが含まれています：</a> ACSD-57854 パッチは、GraphQL応答に、カテゴリ集計にリストされるべきでない無効なカテゴリが含まれている問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-57074-yes-no-custom-attribute-does-not-work-with-indexing">ACSD-57074:<code>attribute_code</code> 属性に <code>price_*</code> のプレフィックスを持つカスタム属性が、インデックス作成で機能しない：</a> ACSD-57074 パッチは、<code>attribute_code</code> 属性に <code>price_*</code> のプレフィックスを持つ <em>Yes/No</em> カスタム属性がインデックス作成で機能しない問題を修正しました。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-55241-used-and-times-used-attributes-display-incorrect-values-for-generated-coupons">ACSD-55241：使用された属性と使用された時間の属性に生成されたクーポンの誤った値が表示される：</a> ACSD-55241 パッチは、使用された属性と使用された時間の属性に生成されたクーポンの誤った値が表示される問題を修正しました。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56760-admin-user-is-restricted-to-a-specific-website-and-is-unable-to-sort-or-add-new-products">ACSD-56760：管理者ユーザーが特定の web サイトに制限され、新しい製品を並べ替えまたは追加できない：</a> ACSD-56760 パッチは、特定の web サイトに制限され、web ストアに独自のルートカテゴリがある場合にカテゴリ内で新しい製品を並べ替えまたは追加できない管理者ユーザーの問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address">ACSD-56635：アカウント共有をグローバルに設定すると、インポートされた顧客が同じメールアドレスで重複します。</a>ACSD-56635 パッチは、アカウント共有をグローバルに設定してインポートを使用すると、インポートされた顧客が同じメールアドレスで重複する問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked">ACSD-57315：取得ボタンがクリックされるたびに PayPal Payflow Pro に新しいトランザクションが作成される：</a> ACSD-57315 パッチは、管理者のトランザクション表示画面で取得ボタンがクリックされるたびに PayPal Payflow Pro に新しいトランザクションが作成される問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger">ACSD-56741：カスタム MySQL トリガーに関するデータベース設定エラーのトラブルシューティング：</a>ACSD-56741 パッチは、インデックスおよび MView に関連しないデータベース内のカスタム MySQL トリガーが原因で、<code>setup:upgrade</code> ージ中にエラーメッセージ <em>null 型の値で配列オフセットにアクセスしようとしています </em> が表示される問題を修正します。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear">ACSD-58008：終了日を空として編集すると、スケジュールの更新が消える：</a> ACSD-58008 パッチは、終了日を空として編集すると、スケジュールの更新が消える問題を修正しました。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies">ACSD-57337：アクセス制限を持つ管理者ユーザーが、会社グリッド内のすべての会社を表示できる：</a> ACSD-57337 パッチは、特定の web サイトへのアクセス制限を持つ管理者ユーザーが会社グリッド内のすべての web サイトの会社を表示できる問題を修正しました。 このパッチは、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 がインストールされている場合に使用できます。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth"><code>env:COMPOSER_AUTH</code> または <code>auth.json</code> の正しいアクセス キーで展開が失敗する：</a> この記事では、展開ログなどのエラーで展開が失敗した場合の問題の解決策を示します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-bypass-waf-for-graphql-requests">GraphQL リクエストでWAFをバイパスする方法：</a> この記事では、Fastly WAFがGraphQL リクエストをブロックしている場合に、GraphQL リクエストでWAFをバイパスする方法について説明します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full"> 書き出しストレージがほぼ満杯であることを示すメール：</a> この記事では、書き出しストレージがほぼ満杯であることを示すメールが届く問題の解決策を説明します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud"> クラウド上のAdobe Commerce用に MariaDB を 10.4 から 10.5 にアップグレード：</a> この記事では、クラウドインフラストラクチャで引き続きAdobe Commerceを使用するために MariaDB を 10.4 から 10.5 にアップグレードする方法について説明します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions"> すべてのAdobe Commerce バージョンでGoogle マップのアクセス損失に関する修正パッチ：</a> この記事では、3.54 以降の最新のAdobe Commerce マップ バージョンと互換性のないGoogle マーチャントを対象に修正を提供します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102">Adobe Commerceのセキュリティアップデートについて – APSB24-40:</a> この記事では、CVE-2024-34102 に関連するアップデートについて説明します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
+ </tr>
+
+<tr>
+    <td>
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/poor-performance-in-integration-environments"> 統合環境でのパフォーマンスの低下：</a> この記事では、Pro 統合環境とスターターのステージング環境のパフォーマンスが低下している問題の解決策を提供します。 
+    </td>
+    <td>新しい記事 </td>
+    <td>2024 年 7 月 30 日（Pt）</td>
  </tr>
 </table>
 
