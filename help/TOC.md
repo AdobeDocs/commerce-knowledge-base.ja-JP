@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 29564ab62b8d82384092a1db6ac170666ec4acde
+source-git-commit: f66220fe81660120aef8cd324163f34a8d75917b
 workflow-type: tm+mt
-source-wordcount: '11084'
+source-wordcount: '11087'
 ht-degree: 0%
 
 ---
@@ -1117,6 +1117,7 @@ ht-degree: 0%
       * [env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * の既知 {#known-issues-patches-attached} 問題
       * [暗号化キーのローテーションのトラブルシューティング： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
+      * [非表示のダウンロードテスト](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102-hidden-test.md)
       * [Adobe Commerceで利用可能なセキュリティアップデート - [!DNL CVE-2024-34102] の独立したパッチを含むように改訂 [!DNL APSB24-40] れました。](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] 出荷方法の統合の移行  [!DNL SOAP]  から  [!DNL RESTful API] へ](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [AC-9182 の [!DNL USPS] Ground Advantage 出荷方法サポートのホットフィックス](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
