@@ -4,9 +4,9 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 84b4ca4c4144381f0b404d2eae6684e7b21755df
+source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ b.いいえ – [ 手順 4](#step-4) に進みます。
 
 +++**詳細レポートは有効になっていますか？**
 
-**管理者**/**ストア**/**設定**/**設定**/**一般**/**詳細** をオンにします。 詳細な手順については、[ 詳細レポート：詳細レポートを有効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) を参照してください。
+**管理者**/**ストア**/**設定**/**設定**/**一般**/**詳細レポート** をオンにします。 詳細な手順については、[ 詳細レポート：詳細レポートを有効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) を参照してください。
 
 a.はい – [ 手順 5](#step-5) に進みます。\
 b.いいえ – [ 詳細レポートを有効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) を選択して保存し、Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 データが読み込まれるかどうかを確認します。 問題が解決した場合。 [ ステップ 5](#step-5) に進まない場合。
