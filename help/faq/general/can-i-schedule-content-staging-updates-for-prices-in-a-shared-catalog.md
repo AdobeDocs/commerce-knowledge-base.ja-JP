@@ -3,16 +3,16 @@ title: 共有カタログの価格に対してコンテンツのステージン�
 description: Adobe Commerceには、共有カタログ内の 1 つ以上の商品の価格アップデート （[ コンテンツのステージング ] （https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html））をスケジュールする機能はありません。
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # 共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？
 
-Adobe Commerceには、共有カタログ内の 1 つ以上の商品の価格更新をスケジュールする機能（[ コンテンツステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)）はありません。
+Adobe Commerceは、共有カタログ内の 1 つ以上の商品の価格アップデート（[ コンテンツステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)）をスケジュールする機能を提供していません。
 
 つまり、Commerce管理パネルの **価格と構造を設定** メニューから直接価格の更新をスケジュールすることはできません（このメニューには **新規更新をスケジュール** ボタンはありません）。
 
