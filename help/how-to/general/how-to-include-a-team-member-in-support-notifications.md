@@ -4,9 +4,9 @@ description: この記事では、サポート通知にチームメンバーを�
 feature: Cloud, Support, Admin Workspace
 role: Admin, Developer
 exl-id: 63ea3f60-a509-447c-ac3d-bb2133141c80
-source-git-commit: 1c568d75534bbfe322d9f980b40c5dd64fc5b7a2
+source-git-commit: 771793d45000e65c1bf41137cd984d2977b0a9ff
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ ht-degree: 0%
 
 1. **[!DNL Cloud Project URL]** に移動します（例：`https://us-3.magento.cloud/projects/xxxxxx/edit`）。
 1. チームメンバーがプロジェクトに追加されたかどうか、および [!DNL Super User] ーザーであるかどうかを確認します。
-
-[!DNL cloud project] のアクセスが必要ない場合は、[Adobe Commerce サポートセンターでのサポートリクエスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信して、すべてのチケットで自動的に CC：を実行し、**[!DNL MAGE ID]** ールも提供します（利用可能な場合）。
 
 アセットがプロジェクトに追加されていない場合は、アセットを [!DNL Super User] として追加し、[!DNL Shared Access] の権限を付与する必要があります。
 
