@@ -4,9 +4,9 @@ description: この記事では、暗号化キーが DB ダンプと一緒に他
 exl-id: 34410da0-1bd5-421e-9cd7-d3ee75ad8ed7
 feature: Cache, Variables
 role: Developer
-source-git-commit: bee0263da487399ab07bf9158c4d60ab316d6ea1
+source-git-commit: 0458b37e2af4c9ad2ec92a1fdd6844ef222ef84a
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce 2.2.x、2.3.x
+* クラウドインフラストラクチャー 2.4.x 上のAdobe Commerce
 
 ## 問題
 
