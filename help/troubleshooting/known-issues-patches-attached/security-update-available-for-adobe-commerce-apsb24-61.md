@@ -4,21 +4,21 @@ promoted: true
 description: Adobe Commerce 2.4.7-p2、2.4 [!DNL CVE-2024-39397] 6-p7、2.4.5-p9、2.4.4-p10、およびそれ以前のバージョンのインスタンスのみで実行されている場合は、個別パッチを適用して修正してください  [!DNL Apache]
 feature: Compliance, Security
 role: Developer
-source-git-commit: 2038e766d65c81172391091a0cdff4abb04e84d5
+source-git-commit: 76ff7669a0a57925a176e08031e0789ced0a7f0e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-61]
 
-2024 年 8 月 13 日（PT）に、Adobeは、Adobe Commerce、Magento Open Source、Adobe Commerce Webhook プラグインのセキュリティ更新をリリースしました。
+2024 年 8 月 13 日（PT）に、Adobeは、Adobe Commerce、Magento Open Source、Adobe Commerce Webhook プラグインのセキュリティ更新を定期的にスケジュールしてリリースしました。
 この更新により、[[!DNL critical, important] および  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) の脆弱性が解決されます。 不正利用に成功すると、任意のコードの実行、任意のファイルシステムの読み取り、セキュリティ機能のバイパス、権限のエスカレーションが発生する可能性があります。 掲示板は [Adobeセキュリティ速報（[!DNL APSB24-61]） ](https://helpx.adobe.com/security/products/magento/apsb24-61.html) です。
 
 >[!NOTE]
 >
->**[!DNL CVE-2024-39397]は、[!DNL Apache] web サーバーを使用する場合にのみ適用されます。** この脆弱性に対する修正をできる限り迅速に適用できるように、Adobeでは、[!DNL CVE-2024-39397] れを解決する分離パッチもリリースしました。
+>上記のセキュリティ速報に記載されている **[!DNL CVE-2024-39397]は、[!DNL Apache] web サーバーを使用する場合にのみ適用されます。** この脆弱性に対する修正をできる限り迅速に適用できるように、Adobeでは、[!DNL CVE-2024-39397] れを解決する分離パッチもリリースしました。
 
 **最新のセキュリティ更新プログラムを早急に適用してください。 そうしないと、これらのセキュリティ上の問題に対して脆弱になり、Adobeは修正を支援する手段が限られてしまいます。**
 
