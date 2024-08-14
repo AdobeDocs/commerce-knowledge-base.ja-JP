@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 23f19c3b8fff3b31bb42625d210c5330292b79b3
+source-git-commit: 38e67144f337c8359a5602e49d8a0ee91cd20b53
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,11 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 
    ![open-support-page](assets/click_support.png)
 
-1. サポートの取り込みプロセスを開始するには、左側のメニューの **[!UICONTROL Open Ticket]** をクリックするか、カードの **[!UICONTROL Get Started]** をクリック *[!UICONTROL Open a support ticket]* ます。
+1. 類似の名前を持つ複数の組織がそれぞれ独自の使用権限を持つ場合があるので、サポートの取り込みプロセスを開始するには、（利用可能な場合は）ドロップダウンリストから適切な組織が選択されていることを確認します。
+
+   ![ 画像 ](https://git.corp.adobe.com/storage/user/38345/files/230d6ecd-bce2-4170-b377-3989fa8be615)
+
+1. 左側のメニューの **[!UICONTROL Open Ticket]** をクリックするか、カードの **[!UICONTROL Get Started]** をクリック *[!UICONTROL Open a support ticket]* ます。
 
    ![open-support-case](assets/open_support_case.png)
 
