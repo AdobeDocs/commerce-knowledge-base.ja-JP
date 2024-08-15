@@ -4,9 +4,9 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
+source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -117,10 +117,10 @@ c.はい – レコードが存在するにもかかわらずエラーが発生�
 
 +++**ファイル `data.tgz` はシステムに存在し、アクセスログにレコードがありますか？**
 
-ファイル `data.tgz` が存在するかどうかを確認するには、次のコマンドを実行します。
+ファイル `data.tgz` が存在することを確認するには、次のコマンドを実行します。このコマンドは、ハッシュ名を持つディレクトリを返します。
 
 ```
-ls -ltr pub/media/analytics/<there should be a directory with hash name>/
+ls -ltr pub/media/analytics/
 ```
 
 access.logs にレコードがあることを確認するには、次のコマンドを実行します。
