@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: a1b049dab989d5d8594d86b64b778e6e277a9f41
+source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ API キーが変更されたため、エクスポートされたカタログを�
 1. `catalog_data_exporter_products` に正しいデータが表示された場合は、次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
 
    ```sql
-   select * from flag where flag_code = 'products-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. タイムスタンプが古い場合は、次の cron 実行を待つか、次のコマンドを使用して自分でトリガーすることができます。
@@ -111,7 +111,7 @@ API キーが変更されたため、エクスポートされたカタログを�
 1. 次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
 
    ```sql
-   select * from flag where flag_code = 'product-attributes-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. タイムスタンプが古い場合は、次の cron 実行を待つか、次のコマンドを使用して自分でトリガーすることができます。
@@ -133,4 +133,5 @@ bin/magento saas:resync --feed productattributes
 
 ## 関連資料
 
-ユーザードキュメントの [Live Search のオンボーディング ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) を参照してください。
+* ユーザードキュメントの [Live Search のオンボーディング ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) を参照してください。
+* Adobe Commerce SaaS データ書き出しガイドの [ ログの確認とAdobe Commerce SaaS データの書き出しと同期のトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) を参照してください。
