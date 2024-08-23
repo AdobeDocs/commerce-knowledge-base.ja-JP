@@ -3,16 +3,20 @@ title: フィールドがグレー表示されている場合に、magento.com �
 description: この記事では、フィールドがグレー表示されている場合に [Magento.com] （https://account.magento.com） アカウントのメールアドレスを変更する方法について説明します。
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # フィールドがグレー表示されている場合に、magento.com アカウントのメールアドレスを変更する方法
 
-この記事では、フィールドがグレー表示されている場合に、[Magento.com](https://account.magento.com) アカウントのメールアドレスを変更する方法について説明します。
+この記事では、次のような状況でフィールドがグレー表示されている場合に、[Magento.com](https://account.magento.com) アカウントのメールアドレスを変更する方法について説明します。
+
+* あなたまたは元のユーザーが会社を退社しました。
+* あなたの会社は新しいメールドメインに移行されました。
+* 配布リストまたはキャッチオール E メール アドレスに切り替えています。
 
 ## 影響を受ける製品とバージョン
 
@@ -30,7 +34,7 @@ ht-degree: 0%
 
 <u> 解決策 </u>
 
-1. 次の内容を記載したメールをGrp-magento-HelpCenterLoginIssues@adobe.comに送信します。
+1. https://experienceleague.adobe.com/home#supportで次の内容を [ サポート依頼を送信 ](https://experienceleague.adobe.com/home#support) します。
 
    * 更新する既存のメールアドレス
    * 新しいメールアドレス
@@ -59,3 +63,4 @@ ht-degree: 0%
 ## 関連資料
 
 Creative Cloudユーザーガイドの「[ パスワードを忘れた場合のリセット ](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html)」を参照してください。
+Creative Cloudユーザーガイドの [ アカウントプロファイルを更新する ](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) を参照してください。
