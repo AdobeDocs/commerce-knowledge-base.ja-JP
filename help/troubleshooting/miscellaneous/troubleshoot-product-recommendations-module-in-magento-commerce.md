@@ -1,17 +1,17 @@
 ---
-title: Adobe Commerceの製品Recommendationsモジュールのトラブルシューティング
-description: この記事では、のトラブルシューティングの提案について説明します
+title: Adobe Commerceの [!UICONTROL Product Recommendations] モジュールのトラブルシューティング
+description: この記事では、Adobe Commerceの [!UICONTROL Product Recommendations] モジュールに関するトラブルシューティングの提案について説明します。
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: b20ad74194bacb09116131f4a8da1006da75738a
+source-git-commit: af9ee28c5819a9d1b97411210816bfe8a9522614
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerceの製品Recommendationsモジュールのトラブルシューティング
+# Adobe Commerceの [!UICONTROL Product Recommendations] モジュールのトラブルシューティング
 
 この記事では、のトラブルシューティングの提案について説明します
 
@@ -25,7 +25,7 @@ magento/product-recommendations
 saas-export
 ```
 
-モジュール :Adobe Commerceで Product Recommendations ツールを使用するには、両方のモジュールを動作させる必要があります。
+モジュール :Adobe Commerceで [!UICONTROL Product Recommendations] ツールを使用するには、両方のモジュールを動作させる必要があります。
 
 ## 影響を受ける製品とバージョン
 
@@ -39,21 +39,21 @@ saas-export
 magento/product-recommendations
 ```
 
-モジュールは正しく（アドビの開発者向けドキュメントで [ 製品Recommendations - Recommendationsのインストールと設定 ](https://devdocs.magento.com/recommendations/install-configure.html) を確認してください）、推奨事項が表示されていないので、次を試してください。
+モジュールが正しく設定されています（開発者向けドキュメントで [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) を確認してください）。 ただし、レコメンデーションが表示されません。次をお試しください。
 
-* 行動データを収集するのに十分な時間がモジュールにない可能性があります。 システムを 24 時間実行して、データの収集を開始できるようにします。 行動データを必要としないレコメンデーションタイプのデプロイを検討します（例：「More like this」）。
+* 行動データを収集するのに十分な時間がモジュールにない可能性があります。 システムを 24 時間実行して、データの収集を開始できるようにします。 行動データを必要としないレコメンデーションタイプのデプロイを検討します（例：「*その他の関連リソース*」）。
 
 * 設定したレコメンデーションが表示されない場合は、ユーザーのレコメンデーションを作成するのに十分なデータがない可能性があります。
 
-* SaaS データ空間または API キーが有効であることを確認してください。 製品レコメンデーションの初期化中に SaaS データ領域または API キーを指定した後、エラーが発生した場合は、（アドビのユーザーガイドに記載されている） [SaaS データ領域と API キー ](https://docs.magento.com/user-guide/configuration/services/saas.html) が正しく入力されていることを確認します。 MageID と API キーが確実にリンクされるようにするには、MageID を所有するユーザー（通常はAdobe Commerce ライセンスを所有するユーザー）が、API キーを生成するユーザーと同じである必要があります。 使用した MageID を変更する必要がある場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
+* [!DNL SaaS] Data Space または [!DNL API] Key が有効であることを確認します。 製品レコメンデーションの初期化中に、[!DNL SaaS] Data Space または [!DNL API] キーを指定した後にエラーが発生した場合は、（ユーザーガイドの） [[!DNL SaaS] Data Space and [!DNL API] key](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) を正しく入力したことを確認します。 [!DNL MageID] と [!DNL API] キーが確実にリンクされるようにするには、[!DNL MageID] を所有するユーザー（通常はAdobe Commerce ライセンスを所有するユーザー）が、[!DNL API] キーを生成するユーザーと同じユーザーである必要があります。 使用された [!DNL MageID] を変更する必要がある場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
 
 >[!NOTE]
 >
->[Cookie 制限モード ](https://docs.magento.com/m2/ce/user_guide/stores/compliance-cookie-restriction-mode.html) （アドビのユーザーガイド内）が有効になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) （ユーザーガイド内）が *有効* になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。**[!UICONTROL Cookie Restriction Mode]**が *無効* になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
 
-## カタログ SaaS エクスポート モジュール
+## カタログ [!DNL SaaS] 書き出しモジュール
 
-カタログの SaaS 書き出しに関連する問題（
+カタログの書き出しに関連する問題 [!DNL SaaS] ついて（
 
 ```php
 saas-export
@@ -61,20 +61,25 @@ saas-export
 
 ） モジュール：
 
-1. （開発者向けドキュメントで）ジョブが実行されている [cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html) を確認します。
-1. （開発者向けドキュメントで [ インデクサー ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html) が実行され、    ```php    Product Feed    ```    インデクサーはに設定されています。    ```php    Update by Schedule    ```    .
-1. モジュールが有効になっていることを確認します。 この    ```php    saas-export    ```    metapackage は以下のモジュールをインストールします。これらのモジュールを全て有効にしておく必要があります：    ```php    "magento/module-catalog-data-exporter"      "magento/module-catalog-inventory-data-exporter"      "magento/module-catalog-url-rewrite-data-exporter"      "magento/module-configurable-product-data-exporter"      "magento/module-data-exporter"      "magento/module-saas-catalog"    ```
-1. （開発者向けドキュメントの [logs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html) を確認します。 上記のモジュールに関連するエラーがないことを確認します。
-1. 設定キャッシュを更新します。 **システム**/**ツール**/**キャッシュ管理** に移動し、設定キャッシュをクリアします。
-1. にデータがあることを確認します    ```php    catalog_data_exporter_products    ```    データベーステーブル。
+1. （開発者向けドキュメントで） [[!DNL cron]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブが実行されていることを確認します。
+1. （開発者向けドキュメントで） [[!UICONTROL indexers]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) が実行されていること、    ```php    Product Feed    ```    [!UICONTROL indexer] はに設定されています。    ```php    Update by Schedule    ```    .
+1. モジュールが *有効* になっていることを確認します。 この    ```php    saas-export    ```    metapackage は以下のモジュールをインストールします。これらのモジュールは全て *有効* でなければなりません。    ```php    "magento/module-catalog-data-exporter"      "magento/module-catalog-inventory-data-exporter"      "magento/module-catalog-url-rewrite-data-exporter"      "magento/module-configurable-product-data-exporter"      "magento/module-data-exporter"      "magento/module-saas-catalog"    ```
+1. （開発者向けドキュメントの [logs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging) を確認します。 上記のモジュールに関連するエラーがないことを確認します。
+1. [!UICONTROL Configuration cache] を更新します。 **システム**/**ツール**/**キャッシュ管理** に移動し、[!UICONTROL Configuration cache] をクリアします。
+1. `cde_products_products_feed` データベーステーブルにデータがあることを確認します。
+
+   >[!NOTE]
+   >
+   >そのテーブルが見つからない場合は、`catalog_data_exporter_products` のテーブルを確認します。 テーブル名は、[!DNL Data Export] バージョン 103.3.0 リリースで変更されました。
 
 ## イベント
 
-[ レコメンデーションイベント ](https://devdocs.magento.com/recommendations/verify.html) では、Adobe Commerceに送信される行動イベントについて説明しています。開発者向けドキュメントです。
+開発者向けドキュメントの [ イベント収集の検証 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/verify) では、Adobe Commerceに送信される行動イベントについて説明しています。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 製品Recommendations – 概要 ](https://devdocs.magento.com/recommendations/product-recs.html)
-* [ 製品Recommendations - Recommendationsのインストールと設定 ](https://devdocs.magento.com/recommendations/install-configure.html) に関する開発者向けドキュメント
-* ユーザーガイドの [ マーケティング – 製品Recommendations](https://docs.magento.com/m2/ee/user_guide/marketing/product-recommendations.html)
-* ユーザーガイドの [ 製品Recommendationsを作成 ](https://docs.magento.com/m2/ee/user_guide/marketing/create-new-rec.html)
+* 開発者向けドキュメントの [Product Recommendations Administrator Development](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)
+* 製品Recommendationsガイドの [ 製品Recommendationsの概要 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview)
+* 製品Recommendationsガイドの [ 製品Recommendationsを作成 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create)
+* [!DNL SaaS] Data Export Guide の [ ログの確認とトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
+* [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes)
