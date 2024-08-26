@@ -3,9 +3,9 @@ title: 「ACSD-56979：ステージングアップデートの削除後に製品
 description: ACSD-56979 パッチを適用すると、ステージングアップデートを削除した後に商品イメージが削除されるAdobe Commerceの問題が修正されます
 feature: Products
 role: Admin, Developer
-source-git-commit: e97850bcaa98b1ccc1522fb6ee0046cd38bf1c93
+source-git-commit: 8e916feab8be9d92d047fae8861a479070d448e8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ACSD-56979 パッチは、ステージング環境の更新を削除した後に
 
 **Adobe CommerceおよびMagento Open Sourceバージョンと互換性あり：**
 
-* Adobe Commerce（すべてのデプロイメント方法） >=2.4.3 &lt;2.4.7
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.6-p7
 
 >[!NOTE]
 >
