@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 683473a9a6b7ccc87c190d1cdc83453aa0734961
+source-git-commit: 7cda7f53226b878e8900b79443c4be28ff056862
 workflow-type: tm+mt
-source-wordcount: '11136'
+source-wordcount: '11141'
 ht-degree: 0%
 
 ---
@@ -1062,6 +1062,7 @@ ht-degree: 0%
       * [Magento GitHub リポジトリを複製できません](/help/troubleshooting/miscellaneous/cannot-clone-the-magento-github-repository.md)
       * [ライブ検索カタログが同期されていません](/help/troubleshooting/miscellaneous/live-search-catalog-data-sync.md)
       * [ダッシュボ [!DNL Live Search] ドと検索結果のランキングが正しくありません](/help/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect.md)
+      * [[!DNL Live Search] ファセットはアルファベット順に並べ替えられていません](/help/troubleshooting/miscellaneous/live-search-facets-not-sorted.md)
       * [Experience Platformに顧客プロファイルが表示されない](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio: ブラウザーが.local.pwadev サイトを解決できません](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [ページビルダーに製品Recommendationsが表示されない](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
