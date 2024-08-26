@@ -3,9 +3,9 @@ title: 「[!DNL Live Search] ファセットがアルファベット順に並べ
 description: この記事では、 [!DNL Live Search]  ファセットがアルファベット順に並べ替えられていない場合のトラブルシューティング情報を提供します。
 feature: Admin Workspace, Categories, Search
 role: Developer
-source-git-commit: 5387edb46281fc536402f8ce0a5e2a77c1bd4193
+source-git-commit: b20a98e44cfad6667b9fe0ab232b0020ed834ca2
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,15 @@ ht-degree: 0%
 
 Adobe Commerce バージョン 2.4.x 以降
 
+## 問題
+
 すべてのAdobe Commerce ストアフロントファセットは、対応する属性に割り当てられた入力タイプに関係なく、単一選択オプションを使用してアルファベット順に並べ替えられます。
 
-ただし、エッジケースによっては、ファセットが [[!DNL Live Search]  ファセットワークスペース ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) で設定されているようにアルファベット順に並べ替えられない場合があります。 回避策として、「製品属性」セクションで製 [!UICONTROL Admin] 属性を並べ替えることができます。
+## 回避策
+
+ただし、エッジケースによっては、ファセットが [[!DNL Live Search]  ファセットワークスペース ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) で設定されているようにアルファベット順に並べ替えられない場合があります。
+
+回避策として、「製品属性」セクションで製 [!UICONTROL Admin] 属性を並べ替えることができます。
 
 1. **[!UICONTROL Admin]** サイドバーで、**ストア**/*属性*/**製品** に移動します。
 1. テーブルから属性を選択します。
