@@ -4,7 +4,7 @@ description: ACSD-55241 パッチを適用すると、**Used**属性と**Times U
 feature: Price Rules
 role: Admin, Developer
 exl-id: cfe0f8af-423a-4e12-a332-053392cbabed
-source-git-commit: 5d0b4743fe49d22c099102490f93dc4065ab4413
+source-git-commit: f830486ab3b00fca92dda897bbf0bfbae41543c1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -37,10 +37,10 @@ ACSD-55241 パッチでは、「**Used**」属性と「**Times Used** 属性に�
 
 1. **[!UICONTROL Admin]**/**[!UICONTROL Marketing]**/**[!UICONTROL Promotion]** から **[!UICONTROL Cart Price Rules]** を作成し、注文の際に一致する条件を追加します（例：小計が *5$* を超える）
 
-* 割引を適用します。
-* 「**[!UICONTROL Auto Coupon]**」を選択します。
-* **Manage クーポンコード** からいくつかのクーポンコードを生成します。
-* キャッシュの再インデックスとクリーンアップを行います。
+   * 割引を適用します。
+   * 「**[!UICONTROL Auto Coupon]**」を選択します。
+   * **Manage クーポンコード** からいくつかのクーポンコードを生成します。
+   * キャッシュの再インデックスとクリーンアップを行います。
 
 1. **[!UICONTROL customer account]** を作成し、フロントエンドにログインします。
 1. 買い物かごに *2* を超える数量の製品を 1 つ追加し、1 つのクーポンを適用します。
