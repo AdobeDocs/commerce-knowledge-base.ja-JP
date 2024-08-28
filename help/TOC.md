@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 575227bda74b12a7ae4c75a7e6b45cb80aa79e19
+source-git-commit: 1c3eadc58ce70ac8f70078e4d88705386477f6ae
 workflow-type: tm+mt
-source-wordcount: '11162'
+source-wordcount: '11172'
 ht-degree: 0%
 
 ---
@@ -808,6 +808,7 @@ ht-degree: 0%
          * [ACSD-56979：ステージングアップデートの削除後に製品画像が削除される](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
       * v1.1.50 {#v1-1-50}
          * [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
+         * [ACSD-46938：セットアップ：アップグレード中に DB トリガーでパフォーマンスの問題が発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       * [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * お知らせ {#announcements}
    * [お知らせの概要](/help/announcements/overview.md)
