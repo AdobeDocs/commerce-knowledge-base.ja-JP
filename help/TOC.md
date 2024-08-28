@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: b59572c37b12d14e40ec70cb09e8f998a773d988
+source-git-commit: 575227bda74b12a7ae4c75a7e6b45cb80aa79e19
 workflow-type: tm+mt
-source-wordcount: '11153'
+source-wordcount: '11162'
 ht-degree: 0%
 
 ---
@@ -803,6 +803,7 @@ ht-degree: 0%
          * [ACSD-57565：注文ダッシュボードに間違った注文情報が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
       * v1.1.49 {#v1-1-49}
          * [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.49](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/overview.md)
+         * [ACSD-57643：カスタムオプションを持つ製品が誤って追加される](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
          * [ACSD-57588：複数のアドレスに送信する際に、地域 ID 処理でエラーが発生しました](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          * [ACSD-56979：ステージングアップデートの削除後に製品画像が削除される](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
       * v1.1.50 {#v1-1-50}
