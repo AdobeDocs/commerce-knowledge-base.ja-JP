@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 1c3eadc58ce70ac8f70078e4d88705386477f6ae
+source-git-commit: 4d6785ce0c0624f62105a5f1541344c989439c40
 workflow-type: tm+mt
-source-wordcount: '11172'
+source-wordcount: '11180'
 ht-degree: 0%
 
 ---
@@ -806,6 +806,7 @@ ht-degree: 0%
          * [ACSD-57643：カスタムオプションを持つ製品が誤って追加される](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
          * [ACSD-57588：複数のアドレスに送信する際に、地域 ID 処理でエラーが発生しました](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          * [ACSD-56979：ステージングアップデートの削除後に製品画像が削除される](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
+         * [ACSD-58054：非アクティブな顧客の API トークン生成](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
       * v1.1.50 {#v1-1-50}
          * [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
          * [ACSD-46938：セットアップ：アップグレード中に DB トリガーでパフォーマンスの問題が発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
