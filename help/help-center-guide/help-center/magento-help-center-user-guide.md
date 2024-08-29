@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 88a9fad5d4a38a82001175af4a1611acf6d4e413
+source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -89,14 +89,20 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 
 >[!INFO]
 >
->1. 複数の組織に属している場合は、ドロップダウンから適切な組織を選択する必要があります。
->1. ケースを提出するには、サポートを受ける資格が必要です。 追加されていない場合は、組織でサポート資格を持つユーザーではないことを示すバーがページ上部に表示されます。
+>1. ケースを送信するには、適切な製品（Adobe Commerce、Adobe Commerce Intelligence、Experience Platformなど）のサポートを受ける資格を有している必要があります。 サポートを受ける資格がない場合は、組織内でサポートを受ける資格のあるユーザーではないことを示すバーがページ上部に表示されます。
+>1. 複数の組織に属している場合や、似た名前を持つ複数の組織がある場合（それぞれが、組織が購読している他のAdobe商品を表します）、最初にドロップダウンから適切な組織を選択する必要があります。
+
+>[!NOTE]
+>
+>ケースを送信する前に正しい組織を選択していること、および選択した組織が、サポートをリクエストする製品に適した資格を持っていることを確認します。 例えば、イシューがAdobe Commerceに関係しているものの、商品としてExperience Platformを選択していて、ケースが正常に送信された場合、ケースのルーティング間違いや応答時間の遅延につながる可能性があります。
+>
+>また、間違った組織が選択されている場合、チームは適切または正しい組織の [!UICONTROL My Cases] の下のケースを表示できません。 サポートチームには、今後、ケースに関連付けられた組織を変更する機能はありません。
 
 1. ヘッダーの **サポート** をクリックします。 サポートホームページが開きます。
 
    ![open-support-page](assets/click_support.png)
 
-1. 類似の名前を持つ複数の組織がそれぞれ独自の使用権限を持つ場合があるので、サポートの取り込みプロセスを開始するには、（利用可能な場合は）ドロップダウンリストから適切な組織が選択されていることを確認します。
+1. サポートの取り込みプロセスを開始するには、（表示されている場合は）組織ドロップダウンリストから適切な組織が選択されていることを確認します。
 
    ![select_appropriate_org](assets/select_appropriate_org.png)
 
@@ -104,7 +110,7 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 
    ![open-support-case](assets/open_support_case.png)
 
-1. ドロップダウンメニューから製品を選択し、ケースのタイトルと説明を入力します。
+1. ドロップダウンメニューから製品を選択し、ケースのタイトルと説明を入力します。 メモ：ドロップダウンに商品が表示されない場合や、Commerceが使用できない場合は、左側の列の「組織」を切り替えて、もう一度確認します。
 
    ![select_product](assets/support_case_product.png)
 
@@ -123,6 +129,18 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 >1. 組織ドロップダウンメニューから組織を選択します。 
 >1. それでも組織が表示されない場合は、Commerce管理者に問い合わせて、サポート委任権限を取得してください。 詳しくは、[Commerce アカウント共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) のヘルプ記事を参照してください。 
 
+>[!NOTE]
+>
+>組織/製品が重要な理由
+>
+>**例 A**:1 つの会社に対してのみ共有アクセスがあり、その会社は 2 つのAdobe製品（Product1 および Product2）の権限を持っています。
+>1. 各組織は 1 つの製品を表すので、ドロップダウンには「OrgA-Product1」と「OrgB-Product2」という 2 つの組織が表示されます。
+>1. Product = Product1 を選択した場合、問題が Product2 に関係しているときは、ケースは Product2 サポートにルーティングされ、ケースを Product1 サポートに転送する際に遅延が生じます。
+>1. OrgA-Product1 のケースを発行し、今後その組織の [!UICONTROL My Cases] をレビューする場合、組織として OrgA-Product2 を選択すると表示されません（例 B と比較して、その他の組織を選択する必要があります）。
+>
+>**例 B**:2 つの会社に対して共有アクセス権があり、各会社はAdobe Commerceの使用権限のみを持っています。
+>1. 組織 A に対してケースを送信したが、その問題が実際に組織 B に影響を与えている場合、組織 B のメンバーは将来、[!UICONTROL My Cases] の下でこのケースを表示することはできません。
+>1. さらに、OrgA のメンバーは、実際には OrgB 向けの [!UICONTROL My Cases] のケースを確認できるので、プライバシーの問題が発生する可能性があります。
 
 サポートケースを送信するには、Experience Leagueにログインするためのアカウントがhttps://account.adobe.comとhttps://account.magento.comの両方に必要です。 サインインするまでサポート ケースを送信できません。
 
