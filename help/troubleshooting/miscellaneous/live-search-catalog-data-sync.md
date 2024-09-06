@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
+source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 ## 問題
 
 カタログデータが正しく同期されていないか、新しい製品が追加されたが検索結果に表示されません。
+
+>[!NOTE]
+>
+>[!DNL Live Search] バージョン 4.2.1 以降、テーブル名 `catalog_data_exporter_products` と `catalog_data_exporter_product_attributes` は `cde_products_feed` と `cde_product_attributes_feed` になりました。4.2.1 より前のバージョンのマーチャントの場合、古いテーブル名 `catalog_data_exporter_products` および `catalog_data_exporter_product_attributes` でデータを探します。
 
 <u> 再現手順 </u>
 
@@ -59,20 +63,20 @@ API キーが変更されたため、エクスポートされたカタログを�
 1. 次の SQL クエリを使用して、期待するデータが `feed_data` 列にあることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
 
    ```sql
-   select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で SQL クエリを再実行してデータを確認します。
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_products
+   bin/magento indexer:reindex cde_products_feed
    ```
 
 1. それでも正しいデータが表示されない場合は、[ サポートチケットを作成 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
 
 ### 前回の製品書き出しのタイムスタンプを確認
 
-1. `catalog_data_exporter_products` に正しいデータが表示された場合は、次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
+1. `cde_products_feed` に正しいデータが表示された場合は、次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -93,20 +97,20 @@ API キーが変更されたため、エクスポートされたカタログを�
 1. 次の SQL クエリを使用して、期待するデータが `feed_data` 列にあることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
 
    ```sql
-   select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で SQL クエリを再実行してデータを確認します。
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_product_attributes
+   bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
 1. それでも正しいデータが表示されない場合は、[ サポートチケットを作成 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
 
 ### 最後の製品属性エクスポートのタイムスタンプを確認します
 
-`catalog_data_exporter_product_attributes` に正しいデータが表示される場合：
+`cde_product_attributes_feed` に正しいデータが表示される場合：
 
 1. 次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
 
