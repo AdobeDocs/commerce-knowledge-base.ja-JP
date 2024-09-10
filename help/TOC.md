@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: f309e4cde788475ae624520a76abaca1cc784f93
+source-git-commit: 605a45ed14faed7f3283a7146e4193bf2d26b251
 workflow-type: tm+mt
-source-wordcount: '11297'
+source-wordcount: '11329'
 ht-degree: 0%
 
 ---
@@ -811,12 +811,14 @@ ht-degree: 0%
          * [ACSD-58739：部分的なインデックス再作成でエラーがスローされる](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846:GraphQL商品の検索結果が返されない価格ゼロのフィルターを使用した検索](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054：非アクティブな顧客の API トークン生成](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
+         * [ACSD-58375:YouTube API キーの設定が正しくない場合、ストアビューレベルでビデオを追加するとエラーが発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
          * [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
          * [ACSD-59036：製品価格の読み込み時に例外が発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59036-exception-occurs-when-loading-product-prices.md)
          * [ACSD-45049：顧客 [!UICONTROL Is required] 属性の設定が、管理者の web サイト範囲に応じて機能しない](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
          * [ACSD-59378：読み込み中にストアレベルの書き換えが正しく更新され  [!DNL URL]  せんでした ](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          * [ACSD-46938：セットアップ：アップグレード中に DB トリガーでパフォーマンスの問題が発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         * [ACSD-58141:L2 Redis キャッシュが有効な場合、ログインしているユーザーのPOSTーリクエストで PHPSESSID が再生成される](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229：古い X-Magento変動値が原因で、お客様グループのデータが誤って割り当てられている](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441:V1/customers [!DNL REST] API エンドポイントを介して顧客を更新すると、エラーがスローされる](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          * [ACSD-59280: 2.4.4-pX インストールでの ReflectionUnionType::getName （） エラー](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
