@@ -3,7 +3,7 @@ title: 「ACSD-57045:URL の書き換えを使用すると、[!UICONTROL Hierarc
 description: ACSD-57045 パッチを適用して、URL の書き換えによって [!UICONTROL Hierarchy] からオフにした後に無限ページループが発生す [!UICONTROL Website Root]Adobe Commerceの問題を修正してください。
 feature: CMS
 role: Admin, Developer
-source-git-commit: df6cfc392f6afa4639a1ab9da52a85b8b15878d2
+source-git-commit: a39e5c857aae398a0b0ba44308ea417525a410d3
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
