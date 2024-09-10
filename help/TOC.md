@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 8906fbf4830d8e1612af296efa83f7856f6ccec2
+source-git-commit: ed15e986088286c075953049dbadf329edccca51
 workflow-type: tm+mt
-source-wordcount: '11391'
+source-wordcount: '11408'
 ht-degree: 0%
 
 ---
@@ -823,6 +823,7 @@ ht-degree: 0%
          * [ACSD-58141:L2 Redis キャッシュが有効な場合、ログインしているユーザーのPOSTーリクエストで PHPSESSID が再生成される](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229：古い X-Magento変動値が原因で、お客様グループのデータが誤って割り当てられている](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441:V1/customers [!DNL REST] API エンドポイントを介して顧客を更新すると、エラーがスローされる](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         * [ACSD-58790: [!DNL Chrome] のモバイル表示の製品詳細ページ画像のピンチを修正してズーム機能を追加しました。](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page-images-in-mobile-view-on-chrome.md)
          * [ACSD-58442：幅 768 px のデバイスがモバイルとして扱われ、メニューとヘッダーがデスクトップではなくモバイルビューに読み込まれる問題を修正しました](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          * [ACSD-48210：ストア表示固有のスコープ属性がグローバル値を上書きする](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          * [ACSD-59280: 2.4.4-pX インストールでの ReflectionUnionType::getName （） エラー](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
