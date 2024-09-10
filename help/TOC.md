@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 3ed9838bfb117888b3e4cfef052d39d7ada35b4b
+source-git-commit: 7bfbf1853dddc10199dcb97135535b9e8ee79293
 workflow-type: tm+mt
-source-wordcount: '11346'
+source-wordcount: '11357'
 ht-degree: 0%
 
 ---
@@ -811,6 +811,7 @@ ht-degree: 0%
          * [ACSD-58739：部分的なインデックス再作成でエラーがスローされる](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846:GraphQL商品の検索結果が返されない価格ゼロのフィルターを使用した検索](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054：非アクティブな顧客の API トークン生成](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
+         * [ACSD-57045:URL の書き換えを [!UICONTROL Hierarchy] からオフにすると、無限ページのループ [!UICONTROL Website Root] 発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          * [ACSD-58446:GraphQLを使用してチームを子ユーザーまたはチームと削除すると、未情報のエラーメッセージが表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message.md)
          * [ACSD-58375:YouTube API キーの設定が正しくない場合、ストアビューレベルでビデオを追加するとエラーが発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
