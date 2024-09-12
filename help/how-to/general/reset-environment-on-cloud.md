@@ -3,9 +3,9 @@ title: クラウドインフラストラクチャー上のAdobe Commerceで環�
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境をロールバックする様々なシナリオについて説明します。
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
+source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,9 @@ ht-degree: 0%
 
 <u> 変更日 </u>:
 
-1. Web サイトを [!UICONTROL Maintenance Mode] に配置します。<br>
+1. Web サイトを [!UICONTROL Maintenance Mode] に配置します。
 [ ユーザーガイドで [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) を有効または無効にする」および「アップグレードのオプションを [[!UICONTROL Maintenance Mode] 定する ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) について詳しくは、アップグレードガイドを参照してください。
+1. cron ジョブを無効にします。 Cron ジョブの無効化について詳しくは、[cron プロパティガイド ](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>) を参照してください。
 1. 地元の [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html) を取る。
 
 <u>[!UICONTROL Rollback] が必要な場合 </u>:
@@ -123,7 +124,7 @@ Adobe Commerce ソフトウェアをアンインストールするには、次�
 1. ローカル開発環境に環境のクローンを作成します。 Cloud Console で次のコマンドをコピーできます。    ![copy_git_clone.png](assets/copy_git_clone.png)
 1. コミット履歴にアクセスします。 `--reverse` を使用して履歴を逆の順序で表示すると、より便利です：`git log --reverse`
 1. 正常に動作しているコミットハッシュを選択します。 コードを本物の状態（Vanilla）にリセットするには、ブランチ（環境）を作成した最初のコミットを見つけます。
-   ![Git コンソールでのコミットハッシュの選択 ](assets/select_commit_hash.png)
+   ![ 代替テキスト ](image.png)
 1. ハード [!DNL git] リセットの適用：`git reset --h <commit_hash>`
 1. 変更をサーバーにプッシュ：`git push --force <origin> <branch>`
 
