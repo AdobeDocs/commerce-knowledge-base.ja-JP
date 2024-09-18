@@ -4,9 +4,9 @@ description: この記事では、クラウドインフラストラクチャ上�
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,12 @@ ht-degree: 0%
    ```
 
    * 結果が返されない場合は、送信者アドレスが設定されていないことを意味します。
+管理者へのアクセス権がないので、設定をデータベースに挿入する必要があります。 適切なメールアドレスを差し込み、MySQL 文を実行します。
+
+   ```
+   insert into core_config_data (scope,scope_id,path,value) values ('default',0,'trans_email/ident_general/email', your-email@here.com)
+   ```
+
    * 結果が返された場合は、**手順 2** に進みます。
 
 1. メールがスパムフォルダーに表示された場合は、メール内のリンクをクリックします。 リンクの有効期限が切れてから再度ログインして、このプロセスを繰り返します。
