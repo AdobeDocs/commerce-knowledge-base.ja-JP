@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
+source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerceのサポートは、Adobe Commerce ヘルプセンターからExperience Leagueに移行されました。 [ こちら ](#what-is-experience-support) で説明しているExperience Leagueケースのフォームフローを使用して、サポートケースを送信します。
+
+>[!NOTE]
+>
+>この時点で、以前にAdobe Commerce ヘルプセンターで送信したケースを表示するには、https://support.magento.com/hc/en-us/requestsに移動する必要があります。これらのケースは新しいサポートチケットシステムに移行されていないからです。 ヘルプセンターは読み取り専用になりました。元の問題のサポートを引き続き受けるには、[Experience Leagueサポート ](https://experienceleague.adobe.com/home#support) にフォローアップチケットを送信する必要があります。
 
 >[!NOTE]
 >
