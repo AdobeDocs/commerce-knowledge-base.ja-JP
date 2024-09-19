@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 7ece2f2dd578fc455bc2d584ffa401f25f561630
+source-git-commit: 82313d2444230de7f4ea426a255bf0462a136334
 workflow-type: tm+mt
-source-wordcount: '11443'
+source-wordcount: '11456'
 ht-degree: 0%
 
 ---
@@ -825,6 +825,7 @@ ht-degree: 0%
          * [ACSD-58141:L2 Redis キャッシュが有効な場合、ログインしているユーザーのPOSTーリクエストで PHPSESSID が再生成される](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229：古い X-Magento変動値が原因で、お客様グループのデータが誤って割り当てられている](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441:V1/customers [!DNL REST] API エンドポイントを介して顧客を更新すると、エラーがスローされる](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         * [ACSD-58352：デフォルトストアの戻り値の属性ラベルは、 [!DNL GraphQL] API を使用して返されます](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          * [ACSD-59514：ブラウザーコンソールの管理者のFormsで  [!DNL Page Builder]  スローエラーが発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          * [ACSD-58790: [!DNL Chrome] のモバイル表示の製品詳細ページ画像のピンチを修正してズーム機能を追加しました。](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page-images-in-mobile-view-on-chrome.md)
          * [ACSD-58442：幅 768 px のデバイスがモバイルとして扱われ、メニューとヘッダーがデスクトップではなくモバイルビューに読み込まれる問題を修正しました](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
