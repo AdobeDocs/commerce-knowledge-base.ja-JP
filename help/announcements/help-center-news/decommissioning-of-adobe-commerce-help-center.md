@@ -3,9 +3,10 @@ title: Adobe Commerce ヘルプセンターの廃止
 description: Adobe Commerce ヘルプセンターサイトの廃止措置について知る必要のあるすべて。
 feature: Support
 role: Admin
-source-git-commit: 243319f2e9cad48b6259698928e3c97239400fc0
+exl-id: 1dd74f62-9a05-4bd6-aefb-3c9083122d9e
+source-git-commit: 631bd27880bfebd63d2897915ea981587a770466
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -17,13 +18,19 @@ Adobeソリューションファミリーとの連携を強化するために、
 
 >[!NOTE]
 >
->Adobe Commerceのサポートは、Adobe Commerce ヘルプセンターからAdobe Experience Leagueに移行されました。<br>**サポートケースを送信するには、[ ここ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) で説明されているExperience Leagueケースのフォームフローを使用します。**
+>**サポートケースを送信するには、[ ここ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) で説明されているExperience Leagueケースのフォームフローを使用します。**
+
+## Adobe Commerce ヘルプセンターでの過去のケースの表示
+
+Adobeでは、Adobe Commerce ヘルプセンターの過去のケースの表示期間を 2025 年 5 月 1 日（PT）に延長しました。
+
+**2025 年 5 月 1 日（PT）をもって、Adobe Commerce ヘルプセンターにアクセスできなくなります。また、ユーザーは、システム内で作成された過去のサポートケースを表示できなくなります。**
 
 ## Adobe Commerce ヘルプセンターサイトはいつ廃止されますか？
 
-**2024 年 9 月 3 日（PT）をもって、Adobe Commerce ヘルプセンターにアクセスできなくなります** また、そのシステムで作成された過去のサポートケースを表示できなくなります。
-**<u>2024 年 9 月 3 日（PT）までに、お使いのブラウザーのPDFにサポートケースや保存したい情報を保存してください。</u>**
-2024 年 9 月 3 日（PT）以降にAdobe Commerce ヘルプセンターで作成された過去のサポートケースを確認する場合は、Adobe Experience Leagueでサポートケースを開いて、サポートチームからその情報をリクエストする必要があります。
+**<u>2025 年 5 月 1 日（PT）より前に、サポートケースまたは保持したい情報を、ブラウザーのPDFに保存してください。</u>**
+
+2025 年 5 月 1 日（PT）以降にAdobe Commerce ヘルプセンターで作成された過去のサポートケースを確認する場合は、Adobe Experience Leagueでサポートケースを開いて、サポートチームにその情報をリクエストする必要があります。
 
 >[!NOTE]
 >
