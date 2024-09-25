@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 82313d2444230de7f4ea426a255bf0462a136334
+source-git-commit: f3d662d8843eded65eade4732d2016bf34ccd6a5
 workflow-type: tm+mt
-source-wordcount: '11456'
+source-wordcount: '11462'
 ht-degree: 0%
 
 ---
@@ -1166,6 +1166,7 @@ ht-degree: 0%
       * [サイトおよび API のパフォーマンスの低下](/help/troubleshooting/known-issues-patches-attached/low-site-and-api-performance.md)
       * [非推奨（廃止予定）のGoogleのイメージチャートをイメージチャートに置き換える](/help/troubleshooting/known-issues-patches-attached/replace-depreciated-google-image-charts-with-image-charts.md)
       * [詳細検索で最も関連性の高い結果が表示されない](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
+      * [管理者で注文をフィルタリング中にエラーが発生する](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
       * [管理の注文グリッドに表示されない注文](/help/troubleshooting/known-issues-patches-attached/orders-not-displayed-in-the-orders-grid-in-the-admin.md)
       * [VAT 番号を検証できません – クラウドインフラストラクチャー上のAdobe Commerce](/help/troubleshooting/known-issues-patches-attached/unable-to-validate-vat-number-magento-commerce-cloud.md)
