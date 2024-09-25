@@ -4,9 +4,9 @@ description: Adobe CommerceとMagento Open Sourceのセキュリティスキャ�
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe CommerceとMagento Open Sourceのセキュリティスキャンツール�
 
 1. 52.87.98.44、34.196.167.176、および 3.218.25.102 IP が 80 および 443 ポートでブロックされていないことを確認します。
 1. 送信した URL でリダイレクトが行われていないかどうかを確認します（例えば、`https://www.mystore.com` へのリダイレクト `https://mystore.com` その逆のリダイレクト、他のドメイン名へのリダイレクトなど）。
-1. WAF/Web サーバーのアクセスログで、却下されたリクエストまたは実行されなかったリクエストを調査します。 HTTP 403 `Forbidden` と HTTP 500 `Internal server error` は、空のレポート生成を引き起こす一般的なサーバー応答です。 ユーザーエージェントによる要求をブロックする確認コードの例を次に示します。
+1. WAFまたは web サーバーのアクセスログで、却下されたリクエストまたは実行されなかったリクエストについて調べます。 HTTP 403 `Forbidden` と HTTP 500 `Internal server error` は、空のレポート生成を引き起こす一般的なサーバー応答です。 ユーザーエージェントによる要求をブロックする確認コードの例を次に示します。
 
 ```code block
 if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent_allowlist)
@@ -100,8 +100,12 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 
 ### Adobe Commerceは、セキュリティスキャンレポートをどのくらいの期間保持しますか？
 
-以前の 10 件のレポートを最後から生成できます。 古いレポートが必要な場合は、Adobe Commerce サポートにお問い合わせください。 最大 1 年前のセキュリティスキャンレポートを取得できます。
+以前の 10 件のレポートを最後から生成できます。 古いレポートが必要な場合は、Adobe Commerce サポートにお問い合わせください。
 
 ### サポートチケットを送信する際には、どのような情報が必要ですか？
 
 ドメイン名を必ず指定してください。
+
+### スキャン ツールのスキャンからストアを削除するとどうなりますか？
+
+ストアの送信を削除すると、スキャンレポートを含むすべての関連データが削除されます。 この操作は元に戻せません。 削除後にストアドメインを送信すると、新しい送信が作成されます。
