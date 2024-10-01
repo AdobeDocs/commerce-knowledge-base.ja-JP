@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
+source-git-commit: 3cddfcb136147a5c0602a62585438313b3162900
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
@@ -82,10 +82,10 @@ Adobe Experience League サポートにログインするには、次の手順�
 
 ### サポートケースの送信 {#support-case}
 
-正常にログインしたら、Adobe Experience Leagueのホームページ、Adobe Commerceのアカウントページ、Adobe Commerce Cloudのアカウントページを使用して、サポートケースを送信できます。
+アカウントオーナーまたは Shared Access ユーザーとして正常にログインしたら、Adobe Experience Leagueのホームページ、Adobe Commerceのアカウントページ、Adobe Commerce Cloudのアカウントページを使用して、サポートケースを送信できます。
 
-* アカウント所有者の場合は、次の手順に従います。
-* 共有アクセスのユーザーの場合、最初にアカウントを切り替える必要があります。 [ 共有アカウントへのアクセス（アカウントの切り替え） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) を参照してください。次の手順に進むことができます。
+* アカウント所有者または再来訪する共有アクセスユーザーの場合は、次の手順に従います。
+* 共有アクセスのユーザーで、アカウントの所有者が [ 共有アクセスを提供した ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access) 直後の場合は、次の手順に進む前に、最初にアカウントを切り替える必要があります。 詳しくは、[ 共有アカウントへのアクセス（スイッチアカウント） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) を参照してください。
 
 #### Adobe Experience League開始ページ {#experience-league-start-page}
 
