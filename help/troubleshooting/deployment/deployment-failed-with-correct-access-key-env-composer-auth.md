@@ -4,16 +4,16 @@ description: この記事では、「https://repo.magento.com/archives/magento/m
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 9f9dc8374bb681398ed1c295ac15679553cfc74e
+source-git-commit: 2a1c97c65282d03010bffabbcd2d1be7fb9ff9a6
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
 # env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します
 
-この記事では、[ デプロイメントログ ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に次のようなエラーが表示されてデプロイメントが失敗した場合の問題の解決策を説明します。
+この記事では、[ デプロイメントログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に次のようなエラーが表示されてデプロイメントが失敗した場合の問題の解決策を説明します。
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 >
 >これはエラーの例です。 （デプロイするAdobe Commerceのバージョンに応じて）別のファイルを示すエラーが発生する場合があります。
 
-デプロイに失敗しました。 *デプロイメントログ ](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に、「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 エラー）* などのエラーが [ 表示されます。
+デプロイに失敗しました。 *デプロイメントログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に、「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 エラー）* などのエラーが [ 表示されます。
 
 ### 原因：
 
