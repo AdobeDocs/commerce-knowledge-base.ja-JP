@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: d7940db29941e39ee6a664115095c7512a7f8d54
+source-git-commit: 9a93f596b5196a9da61e9698a7e6456c650c2b42
 workflow-type: tm+mt
-source-wordcount: '9794'
+source-wordcount: '9723'
 ht-degree: 0%
 
 ---
@@ -975,25 +975,18 @@ ht-degree: 0%
       * [Adobe Commerce 2.3.5、2.3.5-p1 パッチ：国の支払いの問題](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
       * [Adobe Commerce 2.4.0 パッチ：配送ラベル作成の問題が返される](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-patch-returns-shipping-label-creation-issue.md)
       * [買い物かごで「リンクを削除」をダブルクリックした後に「500 エラー」が発生する](/help/troubleshooting/known-issues-patches-attached/500-error-after-double-clicking-remove-link-in-shopping-cart.md)
-      * [Web API が、配列に 20 個を超える項目を含むリクエストを処理できない](/help/troubleshooting/known-issues-patches-attached/web-api-resources-limit.md)
       * [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [カタログのページネーションがElasticsearch 6.x で機能しない](/help/troubleshooting/known-issues-patches-attached/catalog-pagination-doesn-t-work-when-elasticsearch-6-x-is-used.md)
-      * [Adobe Commerce APSB22-12 で利用可能なセキュリティアップデート](/help/troubleshooting/known-issues-patches-attached/0-day-vulnerability-patch.md)
-      * [404 カタログ価格ルール スケジュールの更新が実行されると、店舗フロントでエラーが発生します](/help/troubleshooting/known-issues-patches-attached/404-error-on-store-front-once-catalog-price-rule-schedules-update-is-performed.md)
       * [Adobe Commerce 2.3.6、2.4.1 チェックアウト時の CAPTCHA が機能しない](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
-      * [チェックアウト時にページ更新の後、配送先住所が保存されない](/help/troubleshooting/known-issues-patches-attached/shipping-address-not-saved-post-page-refresh-on-checkout.md)
-      * [同名の製品の CSV 製品情報の読み込みに失敗します](/help/troubleshooting/known-issues-patches-attached/import-csv-product-information-for-same-name-product-fails.md)
       * [サーバーの E メール アドレスから送信された注文 E メール](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [分割データベースソリューションの高度なレポート 404 エラー](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md)
       * [過剰な Ajax リクエストによるパフォーマンスの問題](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md)
       * [ステージング更新を削除すると、関連エンティティが削除されます](/help/troubleshooting/known-issues-patches-attached/removing-staging-update-deletes-related-entity.md)
       * [Google Analyticsがコンバージョンデータをトラッキングしていない](/help/troubleshooting/known-issues-patches-attached/google-analytics-is-not-tracking-conversion-data.md)
-      * [Adobe Commerce 2.4.0 の既知の問題：統合テストが失敗する](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-known-issue-integration-tests-fail.md)
       * [特別価格の日付が間違っています](/help/troubleshooting/known-issues-patches-attached/wrong-date-for-special-price.md)
       * [Adobe Commerce 2.4.1 および 2.3.6 「アカウントを作成」ボタンが無効になっているホットフィックス](/help/troubleshooting/known-issues-patches-attached/2-4-1-and-2-3-6-create-an-account-button-disabled-hotfix.md)
       * [管理でテーマ設定を保存する際に「領域は既に設定されています」エラーが発生する](/help/troubleshooting/known-issues-patches-attached/area-already-set-error-when-saving-theme-configuration-in-admin.md)
       * [Adobe Commerceで、無効なリンクでログインすることを顧客に求める](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
-      * [Adobe Commerce 2.4.0 での配送ラベル作成の既知の問題](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md)
       * [B2B：企業がストアフロントのプロファイルページにアクセスできない](/help/troubleshooting/known-issues-patches-attached/b2b-companies-cannot-access-profile-pages-on-store-front.md)
       * [管理パネルからのAdobe Commerce 2.4.6 エラー](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [バージョン &lt; 2.4.5 からアップグレードする際の [!UICONTROL salesRule] ラベルの問題](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
