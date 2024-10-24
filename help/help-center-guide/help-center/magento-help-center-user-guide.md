@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 3cddfcb136147a5c0602a62585438313b3162900
+source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -189,6 +189,10 @@ Adobe Commerce アカウントのページを使用して新しいサポート�
 左側のメニューで「**[!UICONTROL My Cases]**」をクリックすると、自分が送信したケースを表示できます。
 
 ![view-support-cases](assets/view_support_cases.png)
+
+#### Adobe Commerce ヘルプセンターで過去の事例を確認する
+
+Adobe Commerce ナレッジベースにあるAdobe Commerce ヘルプセンター **Adobe Commerce ヘルプセンターの廃止措置** から [ 過去のケースを表示 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) する方法について詳しく説明します。
 
 #### 監視ケースの表示
 
