@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9a93f596b5196a9da61e9698a7e6456c650c2b42
+source-git-commit: a2f113e6d9123fd9058cce34a199a90484523862
 workflow-type: tm+mt
-source-wordcount: '9723'
+source-wordcount: '9692'
 ht-degree: 0%
 
 ---
@@ -951,9 +951,6 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.3-p2 - 2.4.5 CVE-2022-35698 のセキュリティホットフィックス](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
       * [Adobe Commerce 2.4.4：部分請求書を作成できない](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
       * [新しい注文がアーカイブに送信される](/help/troubleshooting/known-issues-patches-attached/new-orders-are-sent-to-archive.md)
-      * [高度なレポート cron ジョブエラーAdobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md)
-      * [失敗したログイン試行をデータベースから削除](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md)
-      * [独自の cron グループで実行するように詳細レポートを更新](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md)
       * [サイトおよび API のパフォーマンスの低下](/help/troubleshooting/known-issues-patches-attached/low-site-and-api-performance.md)
       * [非推奨（廃止予定）のGoogleのイメージチャートをイメージチャートに置き換える](/help/troubleshooting/known-issues-patches-attached/replace-depreciated-google-image-charts-with-image-charts.md)
       * [詳細検索で最も関連性の高い結果が表示されない](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
@@ -969,7 +966,6 @@ ht-degree: 0%
       * [管理者で一括削除中に、開始されたよりも多くの製品が削除されました](/help/troubleshooting/known-issues-patches-attached/not-selected-rows-are-deleted-during-mass-action-deletion.md)
       * [クラウドインフラストラクチャー上のAdobe Commerce v2.3.5 GraphQL キャッシュの無効化が機能しない](/help/troubleshooting/known-issues-patches-attached/magento-commerce-cloud-v2-3-5-graphql-caching-invalidation-not-working.md)
       * [Braintree支払いが有効な場合、管理者が注文の作成/並べ替えを行うことはできません](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
-      * [Magento Commerce時の Advanced Reporting 404 エラー](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-magento-commerce.md)
       * [Adobe Commerce 2.4.0 B2B：値引の失効時の誤った発注ロジック](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-b2b-wrong-purchase-order-logic-when-discount-expired.md)
       * [スケジュール更新の終了日を編集した後、カタログのルール テーブルのエントリが重複する](/help/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.md)
       * [Adobe Commerce 2.3.5、2.3.5-p1 パッチ：国の支払いの問題](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)

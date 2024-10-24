@@ -4,7 +4,7 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
+source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -94,7 +94,7 @@ b.いいえ – クエリから何も返されない場合は、次の手順に�
 
 次のクエリを実行して、ジョブ `analytics_collect_data` が実行されたことを確認します：`SELECT * FROM cron_schedule WHERE job_code LIKE 'analytics_collect_data' \G`
 
-回答：はい。レコードが存在し、**status** 列に _missed_ と表示されている場合は、このサポート情報記事 [ 詳細レポートを更新して独自の cron グループで実行する ](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md) のパッチを使用します。\
+a.はい。レコードが存在し、**status** 列に _missed_ と表示されている場合は、このサポート情報記事の Update Advanced Reporting のパッチを使用して、独自の cron グループで実行します。\
 b.はい – レコードが存在し、**ステータス** 列が _成功_ と表示されている場合は、[ 手順 9](#step-9) に進みます。\
 c.はい – レコードが存在し、**ステータス** 列が _エラー_ になっている場合は、[ 手順 8.](#step-8) に進みます\
 d.いいえ – レコードがない場合は、[ 手順 8](#step-8) に進みます。
@@ -151,7 +151,7 @@ b.いいえ – [ 手順 11](#step-11) に進みます。
 
 例：`report.ERROR: Cron Job analytics_collect_data has an error: substr_count() expects parameter 1 to be string, null given. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384} [] []`
 
-回答：はい。[Adobe Commerceの一般的な詳細レポート cron ジョブエラー ](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md) の MDVA-19391 パッチを使用して、ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。\
+回答：はい。Adobe Commerceの一般的な詳細レポートの cron ジョブエラーで MDVA-19391 パッチを使用し、ジョブが実行されるまで 24 時間待ってから、もう一度試してください。\
 b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++
