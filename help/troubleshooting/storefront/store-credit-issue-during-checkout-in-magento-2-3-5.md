@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce 2.3.5 のチェックアウト�
 exl-id: a0cca226-4d95-40b3-bd37-f13d28591366
 feature: Checkout, Orders, Storefront
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ Adobe Commerceが、「注文」ページの「注文の概要」セクション
 
 * [Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミス 2.3.5 および 2.3.5-p1 における国の支払い方法の問題](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
 
-* [Adobe Commerceでユーザーにログインを求めるが、無効なリンクが表示される](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 
 * [Adobe Commerce 2.3.5 の一括アクション製品数の既知の問題](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 

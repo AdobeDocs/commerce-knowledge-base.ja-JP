@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce オンプレミス 2.3.5 およ
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,6 @@ ht-degree: 0%
 <li><a href="/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md">Adobe Commerce 2.3.5 の一括アクション製品数の既知の問題</a></li>
 <li>
 <p title="Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミス 2.3.5 および 2.3.5-p1 における国の支払い方法の問題"><a href="/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md">Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミス 2.3.5 および 2.3.5-p1 における国の支払い方法の問題</a></p>
-</li>
-<li>
-<p title="Adobe Commerceでユーザーにログインを求めるが、無効なリンクが表示される"><a href="/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md">Adobe Commerceでユーザーにログインを求めるが、無効なリンクが表示される</a></p>
 </li>
 <li>
 <p title="Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ</a></p>
