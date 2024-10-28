@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
+source-git-commit: 8ee52f47d9e230ecd633ead3429d864f9df7c33e
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,6 @@ Adobe Experience League サポートにログインするには、次の手順�
 
 アカウントオーナーまたは Shared Access ユーザーとして正常にログインしたら、Adobe Experience Leagueのホームページ、Adobe Commerceのアカウントページ、Adobe Commerce Cloudのアカウントページを使用して、サポートケースを送信できます。
 
-* アカウント所有者または再来訪する共有アクセスユーザーの場合は、次の手順に従います。
-* 共有アクセスのユーザーで、アカウントの所有者が [ 共有アクセスを提供した ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access) 直後の場合は、次の手順に進む前に、最初にアカウントを切り替える必要があります。 詳しくは、[ 共有アカウントへのアクセス（スイッチアカウント） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) を参照してください。
-
 #### Adobe Experience League開始ページ {#experience-league-start-page}
 
 Adobe Experience Leagueの「スタート」ページを使用して新しいサポートケースを送信するには、次の手順に従います。
@@ -106,7 +103,7 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 
    ![open-support-page](assets/click_support.png)
 
-1. サポートの取り込みプロセスを開始するには、（表示されている場合は）組織ドロップダウンリストから適切な組織が選択されていることを確認します。
+1. サポートの取り込みプロセスを開始するには、（表示されている場合は）組織ドロップダウンリストから適切な組織が選択されていることを確認します。 Adobe Commerceのケースを送信するには、末尾が *[!DNL Commerce]* の組織の名前を選択します。
 
    ![select_appropriate_org](assets/select_appropriate_org.png)
 
