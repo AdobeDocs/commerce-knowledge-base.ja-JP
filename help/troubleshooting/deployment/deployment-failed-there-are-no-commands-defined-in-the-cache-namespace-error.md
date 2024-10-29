@@ -1,17 +1,17 @@
 ---
-title: 「'デプロイメントに失敗しました：'キャッシュ'名前空間エラーで定義されたコマンドがありません'」
+title: 「'キャッシュのフラッシュ時にデプロイメントに失敗しました：'キャッシュ'名前空間エラー'にコマンドが定義されていません」
 description: この記事では、次のエラーでデプロイメントが失敗した場合の問題の解決策を説明します。**キャッシュ名前空間にコマンドが定義されていません**。
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: 1a8a4e1eada859a6712a43536d7bad26d1ce1244
+source-git-commit: e13be3ef9daa17b9463c8251933f68f6a35fedd2
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# デプロイメントに失敗しました：「キャッシュ」名前空間エラーで定義されたコマンドがありません
+# キャッシュフラッシュでデプロイメントに失敗しました：「「キャッシュ」名前空間エラーで定義されたコマンドがありません」
 
 >[!WARNING]
 >
