@@ -4,7 +4,7 @@ promoted: true
 description: Adobe Commerce 2.4.7-p2、2.4 [!DNL critical, important, and moderate vulnerabilities] 6-p7、2.4.5-p9、2.4.4-p10、およびそれ以前のバージョンのインスタンスのみを実行している場合は、個別パッチを適用して修正  [!DNL B2B]  ます。
 feature: Compliance, Security
 role: Developer
-source-git-commit: 694cb7519733e950b55006866e585097bc2429f4
+source-git-commit: 483589be81e55f818f5cf93cccff2ffcbb5763cf
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
