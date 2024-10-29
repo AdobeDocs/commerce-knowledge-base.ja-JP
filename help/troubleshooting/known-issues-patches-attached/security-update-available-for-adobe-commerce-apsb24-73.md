@@ -1,19 +1,19 @@
 ---
 title: Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-73]
 promoted: true
-description: Adobe Commerce 2.4.7-p3、2.4.6 [!DNL critical, important, and moderate vulnerabilities] p8、2.4.5-p10、2.4.4-p11 およびそれ以前のバージョンのインスタンスのみを実行している場合は、個別パッチを適用して修正し  [!DNL B2B]  す。
+description: Adobe Commerce 2.4.7-p2、2.4 [!DNL critical, important, and moderate vulnerabilities] 6-p7、2.4.5-p9、2.4.4-p10、およびそれ以前のバージョンのインスタンスのみを実行している場合は、個別パッチを適用して修正  [!DNL B2B]  ます。
 feature: Compliance, Security
 role: Developer
-source-git-commit: 181316dc0bd42feae0a857ff52edd80dbfd492ad
+source-git-commit: 694cb7519733e950b55006866e585097bc2429f4
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-73]
 
-2024 年 10 月 8 日（PT）に、Adobeは、Adobe Commerce、Magento Open Sourceおよび [!DNL Adobe Commerce Webhooks Plugin] のセキュリティ更新を定期的にスケジュールしてリリースしました。
+2024 年 10 月 8 日（PT）に、Adobeは、Adobe Commerceおよび [!DNL Adobe Commerce Webhooks Plugin] のセキュリティ更新を定期的にスケジュールしてリリースしました。
 この更新により、[[!DNL critical, important] および  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) の脆弱性が解決されます。 不正利用に成功すると、任意のコードの実行、任意のファイルシステムの読み取り、セキュリティ機能のバイパス、権限のエスカレーションが発生する可能性があります。 掲示板は [Adobeセキュリティ速報（[!DNL APSB24-73]） ](https://helpx.adobe.com/security/products/magento/apsb24-73.html) です。
 
 >[!NOTE]
@@ -28,14 +28,22 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce on Cloud、Adobe Commerce オンプレミスおよびMagento Open Source:
+Adobe Commerce on Cloud およびAdobe Commerce オンプレミス：
 
-* 2.4.7-p3 以前
-* 2.4.6-p8 以前
-* 2.4.5-p10 以前
-* 2.4.4-p11 以前
+* 2.4.7-p2 以前
+* 2.4.6-p7 以前
+* 2.4.5-p9 以前
+* 2.4.4-p10 以前
 
-## Adobe Commerce on Cloud、Adobe Commerce オンプレミスのソフトウェアおよびMagento Open Sourceのソリューション
+B2B:
+
+* 1.4.2-p2 以前
+* 1.3.5-p7 以前
+* 1.3.4-p9 以前
+* 1.3.3-p10 以前
+
+
+## Adobe Commerce on Cloud およびAdobe Commerce オンプレミス ソフトウェアのソリューション
 
 影響を受ける製品およびバージョンの脆弱性を解決するには、[!DNL CVE-2024-45115] Isolated パッチを適用する必要があります。
 
@@ -43,7 +51,7 @@ Adobe Commerce on Cloud、Adobe Commerce オンプレミスおよびMagento Open
 
 アタッチされた分離パッチを使用します。
 
-[vuln-25610-composer-patch.zip](assets/vuln-25610-composer-patch.zip)
+[vuln-26510-composer-patch.zip](assets/vuln-26510-composer-patch.zip)
 
 ## 分離パッチの適用方法
 
