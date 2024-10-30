@@ -1,17 +1,18 @@
 ---
-title: 「'キャッシュのフラッシュ時にデプロイメントに失敗しました：'キャッシュ'名前空間エラー'にコマンドが定義されていません」
+title: 「キャッシュフラッシュでデプロイメントに失敗しました：「キャッシュ」名前空間エラーで定義されたコマンドがありません」
 description: この記事では、次のエラーでデプロイメントが失敗した場合の問題の解決策を説明します。**キャッシュ名前空間にコマンドが定義されていません**。
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: e13be3ef9daa17b9463c8251933f68f6a35fedd2
+source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# キャッシュフラッシュでデプロイメントに失敗しました：「「キャッシュ」名前空間エラーで定義されたコマンドがありません」
+
+# キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー
 
 >[!WARNING]
 >
@@ -30,11 +31,11 @@ ht-degree: 0%
 
 クラウドインフラストラクチャー 2.4.x 上のAdobe Commerce
 
-## 問題  
+## 問題
 
 <u> 再現手順 </u>:
 
-デプロイを試みます。 
+デプロイを試みます。
 
 <u> 期待される結果 </u>:
 
@@ -66,16 +67,16 @@ ht-degree: 0%
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. この MySql クエリを実行して、手順 2 のエラーメッセージで示されるストアが見つからないことを確認します。 
+1. この MySql クエリを実行して、手順 2 のエラーメッセージで示されるストアが見つからないことを確認します。
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. 次の MySql ステートメントを実行して、無効な行を削除します。 
+1. 次の MySql ステートメントを実行して、無効な行を削除します。
 
    ```sql
-   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store); 
+   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
 1. もう一度このコマンドを実行します。
