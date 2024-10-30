@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 61b3cc2fc40b320c3c657a7dd0c6ea2b9db71c75
+source-git-commit: a0b8fdf0e04cad2260a04af7c1049c6831d2921b
 workflow-type: tm+mt
-source-wordcount: '9626'
+source-wordcount: '9617'
 ht-degree: 0%
 
 ---
@@ -639,7 +639,6 @@ ht-degree: 0%
       * [Adobe Commerceの Apache log4j2 の脆弱性](/help/announcements/adobe-commerce-announcements/apache-log4j2-adobe-commerce.md)
       * [クラウドインフラストラクチャー上のAdobe CommerceのBlackfireアクセスの削除](/help/announcements/adobe-commerce-announcements/blackfire-access-removal-for-magento-commerce-cloud.md)
       * [品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツールです](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
-      * [2.4 2022 年 1 月 26 日（PT）のAdobe Commerce アップグレードワークショップ](/help/announcements/adobe-commerce-announcements/2-4-upgrade-webinar.md)
       * [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobeは、顧客データのアクセスとプライバシーをサポートします](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS API の廃止](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
@@ -938,7 +937,7 @@ ht-degree: 0%
       * [デプロイメントエラー：「ダウンロード中にエラー 7 が発生しました… ポート 443：接続が拒否されました」](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [間違ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
-      * [キャッシュのフラッシュ時にデプロイメントに失敗しました：「cache」名前空間エラーで定義されたコマンドがありません](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * の既知 {#known-issues-patches-attached} 問題
       * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
