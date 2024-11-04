@@ -3,7 +3,7 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 529bfc97ab05b839fca6d76f2d2f2f3dc040c9b9
+source-git-commit: 8438978de04746c8a66816fe4f03d5f0d2d11521
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 
 >[!INFO]
 >
->1. ケースを提出するには、適切な商品（Adobe Commerce、Adobe Commerce レポート、Adobe Commerce支払いサービス、Experience Platformなど）のサポートを受ける資格を有している必要があります。 サポートを受ける資格がない場合は、組織内でサポートを受ける資格のあるユーザーではないことを示すバーがページ上部に表示されます。 Commerce関連の問題のケースを送信するには、まず *[!DNL Commerce]* で終わる適切な組織名を選択する必要があります。
+>1. ケースを提出するには、適切な商品（Adobe Commerce、Adobe Commerce レポート、Adobe Commerce支払いサービス、Experience Platformなど）のサポートを受ける資格を有している必要があります。 サポートを受ける資格がない場合は、組織内でサポートを受ける資格のあるユーザーではないことを示すバーがページ上部に表示されます。 Commerce関連の問題のケースを送信するには、まず *[!DNL (Commerce)]* で終わる適切な組織名を選択する必要があります。
 >1. 複数の組織に属している場合や、似た名前を持つ複数の組織がある場合（それぞれが、組織が購読している他のAdobe商品を表します）、最初にドロップダウンから適切な組織を選択する必要があります。
 >1. [!UICONTROL Select a product] ドロップダウンに「Adobe Commerce」が表示されない場合は、まずCommerce アカウントオーナーから [ 共有アクセス ](#shared-access) を取得する必要があります。 共有アクセスが付与されたら、ケースを送信する前に、プロセスを完了するために [ アカウントを同期 ](#switch-accounts) する必要があります。
 
