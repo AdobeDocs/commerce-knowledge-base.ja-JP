@@ -4,9 +4,9 @@ description: この記事では、次のエラーでデプロイメントが失�
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 原因：
 
-**core_config_data** テーブルには、データベースに存在しなくなったストア ID または web サイト ID の設定が含まれています。 この問題は、別のインスタンスまたは環境からデータベースバックアップをインポートした場合に、関連するストアまたは web サイトが削除されていても、これらのスコープの設定はデータベースに残ります。
+**`core_config_data`** テーブルには、データベースに存在しなくなったストア ID または web サイト ID の設定が含まれています。 この問題は、別のインスタンスまたは環境からデータベースバックアップをインポートした場合に、関連するストアまたは web サイトが削除されていても、これらのスコープの設定はデータベースに残ります。
 
 ### 解決策
 
@@ -67,13 +67,13 @@ ht-degree: 0%
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. この MySql クエリを実行して、手順 2 のエラーメッセージで示されるストアが見つからないことを確認します。
+1. この [!DNL MySQL] クエリを実行して、手順 2 のエラーメッセージで示されるストアが見つからないことを確認します。
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. 次の MySql ステートメントを実行して、無効な行を削除します。
+1. 次の [!DNL MySQL] ステートメントを実行して、無効な行を削除します。
 
    ```sql
    delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
@@ -91,13 +91,13 @@ ht-degree: 0%
    The website with id X that was requested wasn't found. Verify the website and try again.
    ```
 
-   次の MySql クエリを実行して、web サイトが見つからないことを確認します。
+   次の [!DNL MySQL] クエリを実行し、Web サイトが見つからないことを確認します。
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. 次の MySql ステートメントを実行して、web サイト設定から無効な行を削除します。
+1. 次の [!DNL MySQL] ステートメントを実行して、Web サイト設定から無効な行を削除します。
 
    ```sql
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
@@ -107,5 +107,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [Adobe Commerce導入のトラブルシューティング](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html)
-* [Cloud UI に「ログのスニペット」エラーがあるかどうかをデプロイメントログで確認しています](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+* [Adobe Commerce デプロイメントのトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
+* [Cloud UI に「ログのスニッピング」エラーがあるかどうかをデプロイメントログで確認する ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -1,19 +1,19 @@
 ---
-title: 「現在のセッションの有効期限が切れました」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します
-description: 「この記事では、Commerce管理者のログインの問題に対して考えられる解決策を提供します。この問題では、次のエラーメッセージでログインフォームにリダイレクトされます。*「現在のセッションの有効期限が切れました」*。 解決策には、サーバー時間設定の問題の確認や、セッションストレージ設定の変更が含まれます。'
+title: 「[!UICONTROL Commerce Admin] ログインフォームに「現在のセッションの有効期限が切れました」というエラーが表示されてリダイレクトし直す」
+description: 「この記事では、[!UICONTROL Commerce Admin] のログインの問題に対して考えられる解決策を提供します。この問題では、次のエラーメッセージでログインフォームにリダイレクトされます。*「現在のセッションの有効期限が切れました」*。 解決策には、サーバー時間設定の問題の確認や、セッションストレージ設定の変更が含まれます。'
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# 「現在のセッションの有効期限が切れました」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します
+# 「現在のセッションの有効期限が切れました」というエラーが表示されて [!UICONTROL Commerce Admin] ログインフォームにリダイレクトし直します
 
-この記事では、Commerce管理者のログインの問題に対して考えられる解決策を示します。この問題では、次のエラーメッセージが表示されてログインフォームにリダイレクトされます。*「Your current session has been expired」*。 解決策には、サーバー時間設定の問題の確認や、セッションストレージの設定の変更が含まれます。
+この記事では、[!UICONTROL Commerce Admin] のログインの問題に対して考えられる解決策を示します。この問題では、次のエラーメッセージでログインフォームにリダイレクトされます。*「現在のセッションの有効期限が切れました」*。 解決策には、サーバー時間設定の問題の確認や、セッションストレージの設定の変更が含まれます。
 
 ## 影響を受けるエディションとバージョン：
 
@@ -23,12 +23,12 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. Commerceの「管理者」ページに移動します。
-1. 資格情報を入力し、「ログイン」をクリックします。
+1. **[!UICONTROL Commerce Admin]** のページに移動します。
+1. 資格情報を入力し、「**ログイン**」をクリックします。
 
 <u> 期待される結果 </u>:
 
-Commerce管理者にログインします。
+[!UICONTROL Commerce Admin] にログインします。
 
 <u> 実際の結果 </u>:
 
@@ -70,6 +70,8 @@ Commerce管理者にログインします。
 ## 関連資料
 
 * 開発者向けドキュメントの [ 設定ファイルからデータを読み込む ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html)
-* アドビの開発者向けドキュメントの [Redis の設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
-* サポートナレッジベースで [ 「アカウントが一時的に無効になっています」というエラーが表示されて ](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)Commerce管理者ログインフォームにリダイレクトし直します
-* [Commerce管理者にログインしようとすると、エラーが発生せずにログインフォームにリダイレクトし直します ](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)。サポートナレッジベースを参照
+* 開発者向けドキュメントの [ 設定  [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* サポート技術情報で [ 「アカウントが一時的に無効になっています」というエラーが表示された [!UICONTROL Commerce Admin] ログインフォームにリダイレクト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) る
+* [ サポートナレッジベースで [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) にログインしようとすると、エラーが発生せずにログインフォームに戻ります
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+

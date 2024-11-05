@@ -3,9 +3,10 @@ title: Experience Platformに顧客プロファイルが表示されない
 description: この記事では、拡張機能の使用時に顧客プロファイルデータがExperience Platformに表示されない場合のトラブルシューティ  [!DNL Data Connection]  グ手順を説明します。
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
-source-git-commit: a520ef45f1c55dbf34a98c4f4d3ab49814535434
+exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -95,7 +96,7 @@ Commerce管理者で、次のフィールドが設定されていることを確
 
 ### クエリイベントデータの SaaS テーブル
 
-次の SQL クエリに接続して実行し、顧客プロファイルレコードがに表示されることを確認します。
+次の [!DNL SQL] クエリに接続して実行し、顧客プロファイルレコードがに表示されることを確認します
 テ `event_data_saas` ブルとエラーがないことを確認します。
 
 ```sql
@@ -124,4 +125,5 @@ select * from event_data_saas;
 
 ## 関連資料
 
-詳しくは、Commerce サービスユーザーガイドの [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) 拡張機能を参照してください。
+* Commerce サービスユーザーガイドの [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) 拡張機能
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

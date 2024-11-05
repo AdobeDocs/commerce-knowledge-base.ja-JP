@@ -1,65 +1,65 @@
 ---
-title: 非正規表現のオフロードにより、Nginx （ルート）ではなく Fastly にリダイレクトされる
-description: このトピックでは、クラウドインフラストラクチャ上のAdobe Commerceで非正規表現リダイレクトを Nginx ではなく Fastly にオフロードする場合に発生する可能性がある、一般的なリダイレクトパフォーマンスの問題に対する解決策を示します。
+title: 「[!DNL regex] 以外のリダイレクトを  [!DNL Nginx]  ではなく  [!DNL Fastly]  （routes）にオフロードする」
+description: ここでは、[!DNL regex] 以外のリダイレクトをクラウドインフラストラクチャのAdobe Commerceではなく  [!DNL Fastly]  にオフロードする場合に発生する可能性がある、一般的なリダイレク  [!DNL Nginx]  パフォーマンスの問題の解決策について説明します。
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# 非正規表現のオフロードにより、Nginx （ルート）ではなく Fastly にリダイレクトされる
+# [!DNL regex] 以外のリダイレクトを [!DNL Nginx] ではなく [!DNL Fastly] にオフロードする（ルート）
 
-このトピックでは、クラウドインフラストラクチャ上のAdobe Commerceで非正規表現リダイレクトを Nginx ではなく Fastly にオフロードする場合に発生する可能性がある、一般的なリダイレクトパフォーマンスの問題に対する解決策を示します。
+ここでは、クラウドインフラストラクチャー上のAdobe Commerceで、[!DNL regex] 以外のリダイレクトを [!DNL Nginx] ではなく [!DNL Fastly] にオフロードする場合に発生する可能性のある、一般的なリダイレクトパフォーマンスの問題の解決策について説明します。
 
 ## 影響を受ける製品とバージョン
 
-* Fastly を活用したクラウドインフラストラクチャー上のAdobe Commerce（すべてのバージョン） `Master/Production/Staging` 環境
+* [!DNL Fastly] を活用した環境のクラウドインフラストラクチャー上のAdobe Commerce（すべてのバージョン） `Master/Production/Staging`
 
 ## 問題
 
-クラウドインフラストラクチャー上のAdobe Commerceでは、Nginx レイヤーで多数の非正規表現リダイレクト/書き換えを行うことができず、その結果、パフォーマンスの問題が発生する可能性があります。
+クラウドインフラストラクチャー上のAdobe Commerceでは、[!DNL regex] 以外による大量のリダイレクトや書き換えを [!DNL Nginx] レイヤーで行うことができず、その結果、パフォーマンスの問題が発生する可能性があります。
 
 ## 原因：
 
 `.magento/routes.yaml` ディレクトリの `routes.yaml` ファイルは、クラウドインフラストラクチャ上のAdobe Commerceのルートを定義します。
 
-`routes.yaml` ファイルのサイズが 32 KB 以上の場合は、非正規表現のリダイレクト/書き換えを Fastly にオフロードする必要があります。
+`routes.yaml` ファイルのサイズが 32 KB 以上の場合、[!DNL regex] 以外のリダイレクトや書き換えを [!DNL Fastly] にオフロードする必要があります。
 
-この Nginx レイヤーは、多数の非正規表現リダイレクト/書き換えを処理できません。処理しないと、パフォーマンスの問題が発生します。
+この [!DNL Nginx] レイヤーは、[!DNL regex] 以外のリダイレクトや書き換えの数が多いと処理できません。そうしないと、パフォーマンスの問題が発生します。
 
 ## 解決策
 
-解決策は、これらの非正規表現リダイレクトを Fastly にオフロードすることです。 Fastly にリダイレクトする汎用のエラーパスを作成します。
+解決策は、[!DNL regex] 以外のリダイレクトを [!DNL Fastly] にオフロードすることです。 [!DNL Fastly] にリダイレクトする汎用のエラーパスを作成します。
 
-以下の手順では、Nginx ではなく Fastly にリダイレクトを設定する方法について詳しく説明します。
+以下の手順では、[!DNL Nginx] ではなく [!DNL Fastly] にリダイレクトを配置する方法について詳しく説明します。
 
 1. Edge Dictionary を作成します。
 
-   まず、Adobe Commerceの [VCL スニペット ](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を使用して、エッジディクショナリを定義できます。 これはリダイレクトを含みます。
+   まず、Adobe Commerceの [[!DNL VCL]  スニペット ](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を使用して、エッジディクショナリを定義できます。 これはリダイレクトを含みます。
 
    いくつかの注意点を次に示します。
 
-   * Fastly では、辞書のエントリに対して正規表現を行うことはできません。 完全に一致するだけです。 これらの制限について詳しくは、[ エッジ辞書の制限に関する Fastly のドキュメント ](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations) を参照してください。
-   * Fastly には、1 つの辞書に入力できるエントリは 1000 個までに制限されています。 Fastly はこの制限を拡大できますが、それは 3 番目の注意事項につながります。
-   * エントリを更新し、更新された VCL をすべてのノードに配置するたびに、ディクショナリの拡張によりジオメトリのロード時間が長くなります。つまり、2000 エントリのディクショナリのロードは、1000 エントリのディクショナリのロードより 3 倍～4 倍遅くなります。 ただし、これは VCL をデプロイする（ディクショナリを更新する、または VCL 関数コードを変更する）場合にのみ問題になります。
+   * 辞書のエントリに対して [!DNL regex] を実行で [!DNL Fastly] ません。 完全に一致するだけです。 これらの制限について詳しくは、edge 辞書の制限に関する [[!DNL Fastly] のドキュメントを参照してください ](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations)。
+   * [!DNL Fastly] には、1 つの辞書に対するエントリが 1000 個までに制限されています。 この制限は拡大で [!DNL Fastly] ますが、3 つ目の注意点があります。
+   * エントリを更新し、その更新を [!DNL VCL] のすべてのノードにデプロイするたびに、辞書の拡張に伴ってジオメトリの読み込み時間が長くなります。つまり、2000 エントリの辞書は実際には 1,000 エントリの辞書よりも 3 倍～4 倍遅く読み込まれます。 ただし、これは [!DNL VCL] をデプロイする（ディクショナリを更新する、または [!DNL VCL] 関数コードを変更する）場合にのみ問題となります。
 
-     リクエストの処理に Fastly にかかる時間には影響しません。新しい設定のプッシュに Fastly にかかる時間に影響するだけです。
+     リクエストの処理に要する時間には影響 [!DNL Fastly] ません。新しい設定のプッシュに要する時間 [!DNL Fastly] 影響するだけです。
 
      一般的に、設定の変更には平均して数秒かかり、通常は 5～10 秒以内です。 したがって、ディクショナリ項目の 2 倍の増加は、設定がロールアウトされるまで 30 秒以上かかります。 4 倍の増加には 2 分近くかかります。 これにより、4 つ目の注意事項が追加されます。
 
    * エッジディクショナリへのエントリは 10,000 個というかなり厳しい制限があります。
 
-   リダイレクトリストを整理することを強くお勧めします。 複数の辞書を使用できますが、VCL に対して行う更新は、Fastly 全体で実際に入力されるまでに数分かかることに注意してください。
+   リダイレクトリストを整理することを強くお勧めします。 複数の辞書を使用できますが、[!DNL VCL] ージに対して行う更新は、[!DNL Fastly] ージ全体で実際に入力されるまでに数分かかることに注意してください。
 
-1. URL を辞書と比較します。
+1. [!DNL URL] を辞書と比較してください。
 
-   URL 検索が発生すると、一致するものが見つかった場合に、カスタムエラーコードを適用するように比較が行われます。
+   [!DNL URL] 検索が発生すると、一致が見つかった場合は比較が行われ、カスタムエラーコードが適用されます。
 
-   別の VCL スニペットを使用して、次のようなものを `vcl_recv` に追加します。
+   別の [!DNL VCL] スニペットを使用して、次のようなものを `vcl_recv` に追加します。
 
    ```
         declare local var.redir-path STRING;
@@ -70,7 +70,7 @@ ht-degree: 0%
         }
    ```
 
-   ここでは、URL がテーブルエントリに存在するかどうかを確認しています。 その場合、内部 Fastly エラーを呼び出し、そのエラーにテーブルからのリダイレクト URL を渡します。
+   ここでは、[!DNL URL] がテーブルエントリに存在するかどうかを確認しています。 発生した場合は、内部 [!DNL Fastly] エラーを呼び出し、そのエラーにリダイレクト [!DNL URL] テーブルから渡されます。
 
 1. リダイレクトの管理。
 
@@ -93,13 +93,14 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->これらの手順をすべて試す場合は、Adobe Commerce ステージング環境を設定することを強くお勧めします。 これにより、Fastly サービスに対してテストを実行し、すべてが期待どおりに動作することを確認できます。
+>これらの手順をすべて試す場合は、Adobe Commerce ステージング環境を設定することを強くお勧めします。 これにより、[!DNL Fastly] サービスに対してテストを実行し、すべてが期待どおりに動作することを確認できます。
 
-Adobe Commerce ステージング環境を実行しないが、これらのリダイレクトの外観を確認したい場合は、Fastly で直接ステージアカウントを設定できます。
+Adobe Commerce ステージング環境を実行しないが、これらのリダイレクトの外観を確認したい場合は、[!DNL Fastly] で直接ステージアカウントを設定できます。
 
 ## 関連資料
 
-* [Fastly VCL リファレンス ](https://docs.fastly.com/vcl/)
-* 開発者向けドキュメントの [ ルートの設定 ](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) を参照してください。
-* [Fastly の設定 ](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) については、開発者向けドキュメントを参照してください。
-* 開発者向けドキュメントの [VCL 正規表現チートシート ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)。
+* [[!DNL Fastly VCL]  参照 ](https://docs.fastly.com/vcl/)
+* 開発者向けドキュメントの [ ルートの設定 ](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html)
+* アドビの開発者向けドキュメントの [ 設定  [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* 開発者向けドキュメントの [[!DNL VCL]  正規表現チートシート ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

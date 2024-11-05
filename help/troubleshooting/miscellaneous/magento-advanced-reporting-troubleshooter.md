@@ -4,9 +4,9 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,10 @@ b.いいえ – [ 高度なレポート要件 ](https://docs.magento.com/user-gu
 
 +++**複数の基本通貨が使用されていますか？**
 
-複数の基本通貨を（注文および設定内で）使用していますか。 現在の設定を取得するには、次の SQL コマンドを実行します：`SELECT value FROM core_config_data WHERE path = 'currency/options/base';`。
+複数の基本通貨を（注文および設定内で）使用していますか。 [!DNL SQL] コマンドを実行して、現在の設定を取得します：`SELECT value FROM core_config_data WHERE path = 'currency/options/base';`。
 
 a.はい – クエリによって複数の行が返された場合、サポートされる通貨は 1 つのみなので、高度なレポートは使用できません。\
-b. NO – 出力には 1 つの通貨のみが表示されます。 例：`USD`。 複数の基本通貨が（注文で）使用されたことはありますか？ 次の SQL コマンドを実行して、注文の履歴データを取得します。\
+b. NO – 出力には 1 つの通貨のみが表示されます。 例：`USD`。 複数の基本通貨が（注文で）使用されたことはありますか？ 次の [!DNL SQL] コマンドを実行して、注文の履歴データを取得します。\
 `SELECT DISTINCT base_currency_code FROM sales_order;`。
 **メモ：このコマンドでは、完全なテーブルスキャンが必要です。そのため、レコード数が多いテーブルの場合、クエリの実行中に履歴オーダーデータを取得するために** パフォーマンスに影響が及ぶ可能性があります。
 複数の基本通貨が使用されたことがある場合は、1 つの通貨のみをサポートしているので、高度なレポートを使用できません。 出力に 1 つの通貨のみが表示される場合は、[ 手順 3](#step-3) に進みます。
@@ -157,3 +157,7 @@ b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/he
 +++
 
 [手順 1 に戻る](#step-1)
+
+## 関連資料
+
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

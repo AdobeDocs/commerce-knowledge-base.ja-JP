@@ -4,9 +4,9 @@ description: この記事では、多数の製品をインポートしたり、�
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-MySQL クライアントまたは [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) サーバーが [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) バイトを超えるパケットを受信すると、[ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) エラー（`exception.log` に表示されます）を発行して接続を閉じます。 一部のクライアントでは、通信パケットが大きすぎると、*クエリ中に MySQL サーバーへの接続が失われる* というエラーが発生する場合があります。
+[!DNL MySQL] クライアントまたは [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) サーバーが [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) バイトを超えるパケットを受信すると、[ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) エラー（`exception.log` に表示されます）を発行して接続を閉じます。 一部のクライアントでは、通信パケットが大きすぎると、*クエリ中にサーバーへの接続が失わ [!DNL MySQL] る* というエラーが発生する場合もあります。
 
 <u> 再現手順 </u>
 
@@ -29,7 +29,7 @@ MySQL クライアントまたは [mysqld](https://dev.mysql.com/doc/refman/8.0/
 
 ## 原因：
 
-MySQL `max_allowed_packets` 設定のデフォルト値 16MB は、ニーズに合った大きさではありません。
+[!DNL MySQL] `max_allowed_packets` 設定のデフォルト値 16MB は、ニーズに合った十分な大きさではありません。
 
 ## 解決策
 
@@ -45,7 +45,8 @@ MySQL `max_allowed_packets` 設定のデフォルト値 16MB は、ニーズに�
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ インストールガイド/MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=max%20allowed%2016%20MB)。
-* サポートナレッジベースの [ データベースのアップロードにより、MySQL への接続が失われます ](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)。
+* 開発者向けドキュメントの [ オンプレミスでのインストールの概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) を参照してください。
+* サポートナレッジベースの [ データベースのアップロードにより  [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) への接続が失われます。
 * [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) については、サポートナレッジベースを参照してください。
 * サポートナレッジベースの [ データベースパフォーマンスの問題を解決するためのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)。
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

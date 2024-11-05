@@ -4,9 +4,9 @@ description: この記事では、Commerce管理者を使用して商品カテ�
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -88,4 +88,8 @@ ht-degree: 0%
 1. `entity_id` と `created_in` の値が同じカテゴリ レコードを検索します。
 1. `row_id` = `entity_id` のレコードを選択し、`updated_in` の値をコピーします。
 1. `row_id` が `entity_id` に等しくないレコードを選択し、コピーした `updated_in` 値を `created_in` 値として貼り付けます。 以下のスクリーンショットを図として参照してください。    ![created_in value.png をコピー ](assets/copy_created-in_value.png)
-1. 手順 3 で更新したカテゴリ更新レコードの `created_in` 値が、`staging_update` テーブルに存在することを確認します。 *例：* コピーされた `created_in` 値が 1509281953 の場合、`row_id` = 1509281953 のエンティティが `staging_update` テーブルに存在する必要があります
+1. 手順 3 で更新したカテゴリ更新レコードの `created_in` 値が、`staging_update` テーブルに存在することを確認します。 *例：* コピーされた `created_in` 値が 1509281953 の場合、`row_id` = 1509281953 のエンティティが `staging_update` テーブルに存在する必要があります。
+
+## 関連資料
+
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -1,19 +1,19 @@
 ---
 title: データベースの変更は、ストアフロントには反映されません
-description: この記事では、適用されるエンティティ更新の遅延や中断を回避するためのソリューションを提供します。 これには、変更ログテーブルのサイズが大きくなりすぎるのを防ぐ方法や、MySQL テーブルのトリガーを設定する方法が含まれます。
+description: この記事では、適用されるエンティティ更新の遅延や中断を回避するためのソリューションを提供します。 これには、変更ログテーブルがサイズ超過になるのを防ぐ方法や、テーブルトリガーを設定する方法などが含  [!DNL MySQL]  れます。
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # データベースの変更は、ストアフロントには反映されません
 
-この記事では、適用されるエンティティ更新の遅延や中断を回避するためのソリューションを提供します。 これには、変更ログテーブルのサイズが大きくなりすぎるのを防ぐ方法や、MySQL テーブルのトリガーを設定する方法が含まれます。
+この記事では、適用されるエンティティ更新の遅延や中断を回避するためのソリューションを提供します。 これには、変更ログテーブルがサイズ超過になるのを防ぐ方法や、テーブルトリガーを設定する方法 [!DNL MySQL] 含まれています。
 
 影響を受ける製品とバージョン：
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 変更ログテーブルは、エンティティに対する変更が追跡されるデータベーステーブルです。 変更が適用されない限り、レコードは変更ログテーブルに保存されます。変更は、`indexer_update_all_views` cron ジョブによって実行されます。 Adobe Commerce データベースには複数の変更ログテーブルがあり、INDEXER\_TABLE\_NAME + &#39;\_cl&#39;というパターンに従って名前が付けられます（例：`catalog_category_product_cl`、`catalog_product_category_cl`）。 データベースでの変更の追跡方法について詳しくは、開発者向けドキュメントの [ インデックス作成の概要/Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) に関する記事を参照してください。
 
-### MySQL データベーストリガーが設定されていない
+### [!DNL MySQL] データベース トリガーが設定されていません
 
 エンティティ（product、category、target rule など）を追加または変更した後で、対応する変更ログ・テーブルにレコードが追加されていない場合、データベース・トリガーが設定されていないことが疑われます。
 
@@ -60,9 +60,9 @@ select * from cron_schedule where job_code = "indexer_update_all_views" and stat
 * `<install_directory>/var/log/cron.log` - バージョン 2.3.1 以降および 2.2.8 以降
 * `<install_directory>/var/log/system.log` – 以前のバージョン用
 
-### MySQL テーブルトリガーを再設定
+### テーブルトリガー[!DNL MySQL] 再設定
 
-不足している MySQL テーブルトリガーを設定するには、インデクサーモードを再設定する必要があります。
+不足している [!DNL MySQL] テーブルトリガーを設定するには、インデクサーモードを再設定する必要があります。
 
 1. 「保存時」に切り替えます。
 1. 「スケジュール通り」に戻します。
@@ -83,5 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## 関連資料
 
-<ul><li title="MySQL テーブルが大きすぎます"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL テーブルが大きすぎます </a>。サポートナレッジベースを参照してください。</li>
-<li title="MySQL テーブルが大きすぎます">開発者向けドキュメントの <a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Indexer の概要/Mview</a>。</li></ul>
+* サポートナレッジベースの [[!DNL MySQL]  テーブルが大きすぎます ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-tables-are-too-large)
+* [ インデックス作成： [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) 開発者向けドキュメント
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

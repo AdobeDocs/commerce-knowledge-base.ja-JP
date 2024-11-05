@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerceの [!UICONTROL Product Recommen
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: af9ee28c5819a9d1b97411210816bfe8a9522614
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ saas-export
 magento/product-recommendations
 ```
 
-モジュールが正しく設定されています（開発者向けドキュメントで [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) を確認してください）。 ただし、レコメンデーションが表示されません。次をお試しください。
+モジュールは正しく作成されました（開発者向けドキュメントで [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) を確認してください）。ただし、レコメンデーションが表示されません。次をお試しください。
 
 * 行動データを収集するのに十分な時間がモジュールにない可能性があります。 システムを 24 時間実行して、データの収集を開始できるようにします。 行動データを必要としないレコメンデーションタイプのデプロイを検討します（例：「*その他の関連リソース*」）。
 
@@ -83,3 +83,5 @@ saas-export
 * 製品Recommendationsガイドの [ 製品Recommendationsを作成 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create)
 * [!DNL SaaS] Data Export Guide の [ ログの確認とトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
 * [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+

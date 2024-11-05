@@ -3,9 +3,10 @@ title: 変更ログテーブルが存在しない場合に、更新されてい�
 description: この記事では、購読での間違ったビュー ID の使用によって発生したデータ同期の問題を修正するソリューショ  [!DNL Commerce Data Exporter mview]  を説明します。
 feature: Data Import/Export, Saas, Logs
 role: Developer
-source-git-commit: 3581e39e7054cf765403fd963e22a051457c1097
+exl-id: 50f2223b-bfcf-4c3c-b0f1-dbcc4365edc2
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -48,4 +49,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-[!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes)
+* [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

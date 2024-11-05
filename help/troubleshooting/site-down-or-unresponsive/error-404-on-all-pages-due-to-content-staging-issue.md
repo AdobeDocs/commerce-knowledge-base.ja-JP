@@ -1,19 +1,19 @@
 ---
 title: コンテンツのステージングに関する問題が原因で、すべてのページでエラー 404 が発生する
-description: この記事では、Adobe Commerce オンプレミスおよびAdobe Commerce on cloud infrastructure の問題を修正します。これらの問題が発生した場合、ストアフロントページまたはCommerce管理者にアクセスすると 404 エラーが発生します。
+description: この記事では、Adobe Commerce オンプレミスおよびAdobe Commerce on cloud infrastructure の問題を修正します。これらの問題が発生した場合、ストアフロントページまたは [!UICONTROL Commerce Admin] ージへのアクセス時に 404 エラーが発生します。
 exl-id: 62d8ba6e-8550-4e1e-8e8d-8f319c92778a
 feature: CMS, Catalog Management, Categories, Page Content, Staging
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # コンテンツのステージングに関する問題が原因で、すべてのページでエラー 404 が発生する
 
-この記事では、Adobe Commerce オンプレミスおよびAdobe Commerce on cloud infrastructure の問題を修正します。これらの問題が発生した場合、ストアフロントページまたはCommerce管理者にアクセスすると 404 エラーが発生します。
+この記事では、Adobe Commerce オンプレミスおよびAdobe Commerce on cloud infrastructure の問題を修正します。これらの問題が発生した場合、ストアフロントページまたは [!UICONTROL Commerce Admin] ージへのアクセス時に 404 エラーが発生します。
 
 ## 影響を受ける製品とバージョン
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事は、[ ステージング更新のプレビュー ](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change) を試みると 404 エラーが発生する状況には適用されません。 その問題が発生した場合は、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を開いてください。
+>この記事は、[ ステージング更新のプレビュー ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change) を試みると 404 エラーが発生する状況には適用されません。 その問題が発生した場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) を開いてください。
 
 ストアフロントページまたは管理者にアクセスすると、[ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) を使用してストアコンテンツアセットのスケジュールされた更新で操作を実行した後、404 エラー（「Whoops, our bad...」ページ）が発生します（[Module\_Staging Magento](https://developer.adobe.com/commerce/php/module-reference/) を使用してスケジュールされたストアコンテンツアセットの更新）。 例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
 
@@ -34,8 +34,8 @@ ht-degree: 0%
 * カテゴリ
 * カタログ価格ルール
 * 買い物かご価格ルール
-* CMS ページ
-* CMS ブロック
+* CMSページ
+* CMSブロック
 * ウィジェット
 
 一部のシナリオについては、以下の原因の節で説明します。
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-この場合、トラブルシューティングのアイデアについては、[ サイトのダウンのトラブルシューティング ](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) を参照してください。
+この場合、トラブルシューティングのアイデアについては、[ サイトのダウンのトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) を参照してください。
 
 ## 解決策
 
@@ -86,6 +86,10 @@ ht-degree: 0%
    DELETE FROM flag WHERE flag_code = 'staging';
    ```
 
-1. cron ジョブが実行されるまで待ちます（適切に設定されている場合は最大 5 分実行されます）。または、cron が設定されていない場合は手動で実行します。
+1. [!DNL cron] ジョブが実行されるまで（適切に設定されている場合は最大 5 分以内に実行されます）待つか、設定されていない場合は手動で実行 [!DNL cron] ます。
 
-無効なリンクを修正した後、問題を直ちに解決する必要があります。 問題が解決しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
+無効なリンクを修正した後、問題を直ちに解決する必要があります。 問題が解決しない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) してください。
+
+## 関連資料
+
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

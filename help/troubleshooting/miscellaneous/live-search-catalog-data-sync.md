@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ API キーが変更されたため、エクスポートされたカタログを�
 
 特定の SKU に対して製品データが正しく同期されていない場合は、次の操作をおこないます。
 
-1. 次の SQL クエリを使用して、期待するデータが `feed_data` 列にあることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
+1. 次の [!DNL SQL] クエリを使用して、`feed_data` の列に目的のデータが入力されていることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
 
    ```sql
    select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で SQL クエリを再実行してデータを確認します。
+1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で [!DNL SQL] クエリを再実行してデータを確認します。
 
    ```bash
    bin/magento indexer:reindex cde_products_feed
@@ -76,7 +76,7 @@ API キーが変更されたため、エクスポートされたカタログを�
 
 ### 前回の製品書き出しのタイムスタンプを確認
 
-1. `cde_products_feed` に正しいデータが表示された場合は、次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
+1. `cde_products_feed` に正しいデータが表示された場合は、次の [!DNL SQL] クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -94,13 +94,13 @@ API キーが変更されたため、エクスポートされたカタログを�
 
 特定の属性コードに対して製品属性データが正しく同期されていない場合は、次の操作を行います。
 
-1. 次の SQL クエリを使用して、期待するデータが `feed_data` 列にあることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
+1. 次の [!DNL SQL] クエリを使用して、`feed_data` の列に目的のデータが入力されていることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
 
    ```sql
    select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で SQL クエリを再実行してデータを確認します。
+1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で [!DNL SQL] クエリを再実行してデータを検証します。
 
    ```bash
    bin/magento indexer:reindex cde_product_attributes_feed
@@ -112,7 +112,7 @@ API キーが変更されたため、エクスポートされたカタログを�
 
 `cde_product_attributes_feed` に正しいデータが表示される場合：
 
-1. 次の SQL クエリを使用して、最後の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
+1. 次の [!DNL SQL] クエリを使用して、前回の書き出しのタイムスタンプを確認します。 `modified_at` タイムスタンプの後にする必要があります。
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -137,5 +137,6 @@ bin/magento saas:resync --feed productattributes
 
 ## 関連資料
 
-* ユーザードキュメントの [Live Search のオンボーディング ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) を参照してください。
-* Adobe Commerce SaaS データ書き出しガイドの [ ログの確認とAdobe Commerce SaaS データの書き出しと同期のトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) を参照してください。
+* ユーザードキュメントの [ オンボーディング Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html)
+* Adobe Commerce SaaS データ書き出しガイドの [ ログの確認とAdobe Commerce SaaS データの書き出しと同期のトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

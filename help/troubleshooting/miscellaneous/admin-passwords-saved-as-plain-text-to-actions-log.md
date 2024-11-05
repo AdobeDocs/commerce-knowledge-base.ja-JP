@@ -4,9 +4,9 @@ description: ここでは、Commerce管理者が管理者権限で新しいユ�
 exl-id: 0e91198e-66b9-456a-9b75-5986369ed8e6
 feature: Admin Workspace, Logs
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,6 @@ ht-degree: 0%
 
 ## の詳細 {#Adminpasswordsaresavedasplaintexttoactionslog('magento_logging_event_changes'table)-Moreinformation}
 
-[Adobe Commerce 2.0.16 および 2.1.9 セキュリティアップデートページ ](https://magento.com/security/patches/magento-2016-and-219-security-update) がセキュリティセンターにあります。
-
-開発者向けドキュメントの [Adobe Commerce アプリケーションとコンポーネントをアップグレード ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) します。
+* [ セキュリティセンターのAdobe Commerce 2.0.16 および 2.1.9 セキュリティアップデート ](https://magento.com/security/patches/magento-2016-and-219-security-update) ページ
+* 開発者向けドキュメントの [Adobe Commerce アプリケーションとコンポーネントのアップグレード ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

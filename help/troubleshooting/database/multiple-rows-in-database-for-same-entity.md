@@ -4,9 +4,9 @@ description: この記事では、データベース内の同じエンティテ�
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
 exl-id: 09d5c321-9c45-4041-b6f6-831efca0977e
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 0%
 SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 ```
 
-カテゴリ/製品/買い物かご価格ルール/カタログ価格ルール/CMS ページの `$entityID = ID`。
+カテゴリ/商品/買い物かご価格ルール/カタログ価格ルール/CMSページの `$entityID = ID`。
 
 | Entity | $entityTable | 列（$C） |
 |------------------|-----------------------------------|------------------|
 | カテゴリ/製品 | catalog_category_entity/catalog_product_entity | entity_id |
 | 買い物かご価格ルール/カタログ価格ルール | salesrule/catalogrule | rule_id |
-| CMS ページ | cms_page | page_id |
+| CMSページ | cms_page | page_id |
 
 ## 原因：
 
@@ -67,5 +67,6 @@ SELECT row_id, entity_id, created_in, updated_in FROM catalog_product_entity WHE
 
 ## 関連資料
 
-* [ カテゴリに対する変更は保存されません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) が、サポートナレッジベースに表示されます。
-* [ スケジュール更新の終了日を編集した後、カタログルールテーブルのエントリを複製 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) ます。サポートナレッジベースを参照してください。
+* [ カテゴリに対する変更は保存されません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) アドビのサポートナレッジベースに保存されます
+* [ スケジュール更新の終了日を編集した後、カタログルールテーブルのエントリを複製 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) る（サポートナレッジベース）
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

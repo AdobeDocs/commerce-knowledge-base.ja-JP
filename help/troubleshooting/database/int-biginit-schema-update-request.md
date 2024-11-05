@@ -4,9 +4,9 @@ description: この記事では、価格の変更、製品の削除や複製な�
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 * Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 この記事では、価格の変更、製品の削除や複製など、製品の更新を保存できない場合のソリューションを説明します。
-「在庫項目を保存できませんでした *というエラーメッセージが表示される場合があります。 もう一度やり直してください。* 製品を更新した後、デプロイに失敗する場合があります。 また、`php bin/magento setup:upgrade` を実行すると、次の MySQL エラーメッセージが表示される場合があります（クラウドインフラストラクチャ上のAdobe Commerceでは、このエラーがデプロイメントログに表示されます）。
+「在庫項目を保存できませんでした *というエラーメッセージが表示される場合があります。 もう一度やり直してください。* 製品を更新した後、デプロイに失敗する場合があります。 `php bin/magento setup:upgrade` を実行すると、次の [!DNL MySQL] エラーメッセージが表示される場合もあります（クラウドインフラストラクチャ上のAdobe Commerceでは、このエラーがデプロイメントログに表示されます）。
 
 ```mysql
 SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column 'value_id' at row 1, query was: INSERT INTO `catalog_product_entity_decimal` (`attribute_id`,`store_id`,`row_id`,`value`) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `attribute_id` = VALUES(`attribute_id`), `store_id` = VALUES(`store_id`), `row_id` = VALUES(`row_id`), `value` = VALUES(`value`)
@@ -56,7 +56,7 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 
 >[!WARNING]
 >
->テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [ メンテナンスモード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブル（変更が加えられたテーブルに対してのみ）に対して MYSQL optimize コマンドを実行することもお勧めします。
+>テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [ メンテナンスモード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
 
 >[!NOTE]
 >
@@ -111,7 +111,8 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 
 ## 関連資料
 
-* [Commerce インストールガイドの一般的な MySQL ガイドライン ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)。
-* サポートナレッジベースの [ データベースのアップロードにより、MySQL への接続が失われます ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html)。
-* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください。
-* [ クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください。
+* Commerce インスト  [!DNL MySQL]  ルガイドの [ 一般的なガイドライン ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
+* サポートナレッジベースの [ データベースのアップロードにより  [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html) への接続が失われる
+* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) に関するサポートナレッジベース
+* [ クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -4,9 +4,9 @@ description: この記事では、既存の Cloud Starter プロジェクトにA
 feature: Commerce Intelligence
 role: Developer
 exl-id: 56f6ad64-729d-4e3a-93a9-da1b91bc5c1d
-source-git-commit: b75328202952bf4c8f57ddc538b5c9e4318b2001
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 
    ![SSH 公開鍵の追加 ](/help/troubleshooting/miscellaneous/assets/add_ssh_key_mbi.png)
 
-1. Business Intelligenceに必要な MySQL 資格情報を入力します。
+1. Business Intelligenceに必要な情報 [!DNL MySQL] 資格情報を入力します。
 
    * `.magento/services.yaml` を更新します。
 
@@ -197,3 +197,7 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 1. 「**[!UICONTROL Save Integration]**」をクリックします。
 1. これで、Commerce Intelligence Essentials アカウントに正常に接続されました。
 1. Adobe Commerce Intelligence Pro をご利用のお客様は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーに連絡して、次の手順を調整してください。
+
+## 関連資料
+
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

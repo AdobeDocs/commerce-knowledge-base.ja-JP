@@ -1,19 +1,19 @@
 ---
 title: データ書き出しの使用による不一致の特定
-description: この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データエクスポートは、特に [data dispensity diagnostic checklist] （/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md）で問題を特定できなかった場合に、レポートでデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに便利なツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
+description: この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データエクスポートは、特に [data dispensity diagnostic checklist] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy）で問題を特定できなかった場合に、レポートでデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに便利なツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
 # データ書き出しの使用による不一致の特定
 
-この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データ書き出しは、特に [ データの相違に関する診断チェックリスト ](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) が問題の特定に役立たなかった場合に、レポートのデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに役立つツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
+この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データ書き出しは、特に [ データの相違に関する診断チェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) が問題の特定に役立たなかった場合に、レポートのデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに役立つツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
 
 例えば、次の分析を考えてみましょう。
 
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 ![](assets/Export_Discrepancies_5.gif)
 
-生データの書き出しメニューでは、書き出し元のテーブルと、書き出しに含める列を選択できます。 結果セットにフィルターを適用することもできます。
+**生データの書き出し** メニューでは、書き出し元のテーブルと、書き出しに含める列を選択できます。 結果セットにフィルターを適用することもできます。
 
-この例では、このレポートで使用される **売上高** 指標は、**日付** をタイムスタンプとして使用し、**orders** テーブルで定義された **order\_total** フィールドを使用しています。 この書き出しには、2014 年 11 月のすべての **order\_id** 値と、それらの **order\_total** を含めたいと思います。 **売上高** 指標ではフィルターを使用していませんが、書き出しにフィルターを追加して、結果セットを 2014 年 11 月のみに制限します。
+この例では、このレポートで使用される **売上高** 指標は、**`orders`** テーブルで定義された **order\_total** フィールド（**date** をタイムスタンプとして使用します。 この書き出しには、2014 年 11 月のすべての **order\_id** 値と、それらの **order\_total** を含めたいと思います。 **売上高** 指標ではフィルターを使用していませんが、書き出しにフィルターを追加して、結果セットを 2014 年 11 月のみに制限します。
 
 生データの書き出しメニューは、次の例のようになります。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 両方のシステムの行数が同じで、**売上高** 指標がソースデータに一致しない場合、**order\_total** はどこかでオフになっている必要があります。 **order\_total** フィールドがソースデータベースで更新されており、MagentoBI がこれらの変更を取得していない可能性があります。
 
-これを確認するには、**order\_total** 列が再チェックされているかどうかを確認します。 Data Warehouseマネージャーに移動し、「注文」テーブルをクリックします。 [ 再確認頻度 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) が「変更」に表示されます。 列。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、続行して、目的の再チェック頻度に設定します。
+これを確認するには、**order\_total** 列が再チェックされているかどうかを確認します。 Data Warehouseマネージャーに移動し、**`orders`** のテーブルをクリックします。 [ 再確認頻度 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) が「変更」に表示されます。 列。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、続行して、目的の再チェック頻度に設定します。
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ソース・データベースにMagentoBI よりも多くの行があり、そのギャップが更新サイクル中に受け取ると予想されるオーダー数より大きい場合は、接続に問題がある可能性があります。 つまり、MagentoBI はソースデータベースから新しいデータを取り込むことができず、これはいくつかの理由で発生する可能性があります。
 
-接続ページに移動し、注文テーブルを含むデータソースのステータスを確認します。
+接続ページに移動し、`order` のテーブルを含むデータソースのステータスを確認します。
 
 1. **ステータスが再認証の場合**、接続で正しい資格情報が使用されていません。 接続をクリックし、正しい資格情報を入力して、もう一度試してください。
 1. **ステータスが失敗の場合**、接続がサーバー側で正しくセットアップされていない可能性があります。 通常、接続の失敗はホスト名が正しくないか、ターゲットサーバーが指定されたポートで接続を受け入れないために発生します。接続をクリックしてホスト名のつづりを再確認し、正しいポートが入力されていることを確認します。 サーバー側で、ポートが接続を受け入れ、ファイアウォールに許可されたMagentoBI IP アドレス（54.88.76.97/32）が設定されていることを確認します。 **接続が引き続き失敗する場合**、この記事の最後にある [ サポートへのお問い合わせ ](#support) の節を参照して、次の手順を確認してください。
@@ -87,7 +87,9 @@ Data Warehouseマネージャでは、主キー列はキーシンボルでマー
 * **ソースデータベースの行数が Connection BI の行数を超えており** Magentoが成功と表示されるか引き続き失敗する場合は、接続名と、表示されているエラーメッセージ（存在する場合）を把握する必要があります。
 * **ソース・データベースの行がMagentoBI より少なく、** 行がテーブルから削除されず、かつ頻度が正しく設定されている場合は、スプレッドシートで VLOOKUP を実行して **どの order\_id 値がMagentoBI にあるのか** 確認しますが、ソース・データベースには存在しません。 チケットを送信する際に、これらの値を含めます。
 
-## 関連
+## 関連資料
 
-* [データの食い違い診断チェックリスト](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-* [ データ不一致チケットの送信 ](https://support.magento.com/hc/en-us/articles/360016506472-Submitting-a-data-discrepancy-ticket)
+* [ データ不整合の診断チェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Adobe Commerce Intelligence サービスポリシー ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+

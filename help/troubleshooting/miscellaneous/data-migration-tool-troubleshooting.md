@@ -4,9 +4,9 @@ description: この記事では、データ移行ツールの実行時に発生�
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -162,3 +162,7 @@ Deltalog for <TABLE_NAME> is not installed
 ### 考えられる解決策
 
 移行の問題を修正するには、Adobe Commerce 1 データベースのコピーから移行プロセスをテストすることをお勧めします。 コピーの問題を修正した後、ライブ Adobe Commerce 1 データベースから移行プロセスを再度開始します。 これにより、移行プロセスをスムーズにおこなうことができます。
+
+## 関連資料
+
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
