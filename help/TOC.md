@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 2212ec66c04445db791c5bd852d7498161de410d
+source-git-commit: 5110233220a6db734be2802b792869759f46b8c0
 workflow-type: tm+mt
-source-wordcount: '9625'
+source-wordcount: '9627'
 ht-degree: 0%
 
 ---
@@ -841,7 +841,7 @@ ht-degree: 0%
       * [robots.txt で、cloud infrastructure 2.3.x に 404 エラーのAdobe Commerceが表示される](/help/troubleshooting/miscellaneous/robots-txt-gives-404-error-magento-commerce-cloud-2-3-x.md)
       * [管理者アクセスが制限され、パフォーマンスの問題が発生する](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Cron タスクは他のグループからタスクをロック](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Commerce Admin でロックされたフィールド](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
+      * [Commerce管理のロックされた（グレー表示）フィールド](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
       * [Commerce Admin を使用して検索エンジンを変更できない（検索エンジンメニューにアクセスできない）](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [インストール xdebug maximum function nesting level エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [エンティティ Adobe Commerce バックエンドを保存できません](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)

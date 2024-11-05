@@ -1,19 +1,19 @@
 ---
-title: Commerce Admin でロックされたフィールド
+title: Commerce管理のロックされた（グレー表示）フィールド
 description: ここでは、Commerce管理者でフィールドを変更できない場合の解決策を説明します。
 exl-id: 5fe0967a-4241-440b-bb0d-429fa5644bbc
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Commerce Admin でロックされたフィールド
+# Commerce管理のロックされた（グレー表示）フィールド
 
-ここでは、Commerce管理者でフィールドを変更できない場合の解決策を説明します。
+ここでは、Commerce管理者でロックされた（グレー表示されている）フィールドを変更できない場合の解決策を説明します。
 
 ## 影響を受ける製品とバージョン
 
