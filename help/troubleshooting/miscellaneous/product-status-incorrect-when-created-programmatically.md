@@ -4,7 +4,7 @@ description: この記事では、プログラムによって作成または更�
 exl-id: ac02f961-f9e2-4620-839f-b8dbd0befb15
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Commerce アプリケーションがブートストラップされたス�
 
 ## 製品ステータスが正しくない場合の解決策
 
-開発者向けドキュメントの [ObjectManager> プログラムによる製品アップデート ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) トピックで説明しているように、`Magento\Framework\Authorization\PolicyInterface` ーザーの動的 DI 環境設定を設定します。
+開発者向けドキュメントの [ObjectManager> プログラムによる製品アップデート ](https://developer.adobe.com/commerce/php/development/components/object-manager/) トピックで説明しているように、`Magento\Framework\Authorization\PolicyInterface` ーザーの動的 DI 環境設定を設定します。
 
 ## 関連資料
 

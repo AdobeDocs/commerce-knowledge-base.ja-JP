@@ -4,7 +4,7 @@ description: この記事では、Inventory managementのインストール/ア�
 exl-id: ae32fbe3-deab-4f31-b427-95f8b54a476f
 feature: Install, Inventory, Orders
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 複数の web サイトがある場合は、これらの web サイトをSales Channelとしてデフォルト在庫または他のカスタム在庫に追加する必要があります。
 
-これを行う方法について詳しくは、ユーザーガイドの wiki/ユーザーガイドの [Stock の節 ](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) を参照してください。
+これを行う方法について詳しくは、ユーザーガイドの wiki/ユーザーガイドの [Stock の節 ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) を参照してください。

@@ -4,7 +4,7 @@ description: この記事では、「robots.txt」ファイルがクラウドイ
 exl-id: 6f0b9f47-1901-4c43-88d8-fd992015d70f
 feature: Cloud, Marketing Tools, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -38,5 +38,5 @@ ht-degree: 0%
 ## 関連資料
 
 * [ 悪意のあるトラフィックをブロックして、Fastly レベルでMagento Commerce Cloudする方法 ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) については、サポートナレッジベースを参照してください。
-* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) を参照してください。
+* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
 * ユーザーガイドの [ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)。

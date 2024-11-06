@@ -4,7 +4,7 @@ description: この記事では、ストアフロントカタログページに�
 exl-id: ad363744-756a-48b9-ae11-58642e0ca6a4
 feature: Catalog Management, Logs
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、回避策としてパッチを提供しますが、この問題は cloud infrastructure v2.3.3 リリースのAdobe Commerceで永続的に修正されており、v2.3.3 にアップグレードすることをお勧めします。開発者向けドキュメントの [Adobe Commerceのバージョンをアップグレード ](https://devdocs.magento.com/cloud/project/project-upgrade.html) の手順に従います。
+>この記事では、回避策としてパッチを提供しますが、この問題は cloud infrastructure v2.3.3 リリースのAdobe Commerceで永続的に修正されており、v2.3.3 にアップグレードすることをお勧めします。開発者向けドキュメントの [Adobe Commerceのバージョンをアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) の手順に従います。
 
 この記事では、ストアフロントカタログページにアクセスできないというAdobe Commerce on cloud infrastructure 2.2.0 の既知の問題に対するパッチを提供します。エラーメッセージは次のようになります。*Integrity constraint violation: 1062 Duplicate entry &#39;%entry%&#39; for key &#39;プライマリ&#39;, query was: INSERT INTO \&#39;search\_tmp\_%number%*
 
@@ -78,6 +78,6 @@ curl -X DELETE 127.0.0.1:9200/magento2_product_8_v332
 
 * [ クラウドインフラストラクチャー上のAdobe Commerceのログファイルの場所スタータープランアーキテクチャ ](/help/how-to/general/log-locations-directories-for-starter-plan.md) に関するアドビのサポートナレッジベースを参照してください。
 * [ クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャのログファイルの場所 ](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) に関するアドビのサポートナレッジベースを参照してください。
-* 開発者向けドキュメントの [Adobe Commerceのログファイル ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) 場所
+* 開発者向けドキュメントの [Adobe Commerceのログファイル ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) 場所
 
 ## 添付ファイル

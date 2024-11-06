@@ -4,9 +4,9 @@ description: この記事では、データ移行ツールの実行時に発生�
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### 原因：
 
-開発者向けドキュメントの [EAV 移行手順 ](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://glossary.magento.com/extension) に属しています。
+開発者向けドキュメントの [EAV 移行手順 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#extension) に属しています。
 
 ### 可能な解決策
 
@@ -125,7 +125,7 @@ URL 書き換えの `Target path` は、`Request path` + `Store ID` の一意の
 
 `config.xml` ファイルで「`auto_resolve_urlrewrite_duplicates`」オプションを有効にします。
 
-この設定は、競合する [URL](https://glossary.magento.com/url) 書き換えのレコードにハッシュ文字列を追加し、コマンドラインインターフェイスに解決結果を表示します。
+この設定は、URL 書き換えの競合するレコードにハッシュ文字列を追加し、コマンドラインインターフェイスに解決結果を表示します。
 
 ## エンティティの不一致 {#mismatch-of-entities}
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### 原因：
 
-このエラーは、（開発者向けドキュメントの [ 増分移行 ](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) データに対する変更の際に発生します。 つまり、deltalog テーブル（プレフィックス `m2_cl_*` を含む）がAdobe Commerce 1 データベースに見つかりませんでした。 このツールは、（アドビの開発者向けドキュメントの [data migration](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) 中にこれらのテーブルをインストールするだけでなく、変更内容を追跡して deltalog テーブルに値を入力するデータベーストリガーもインストールします。
+このエラーは、（開発者向けドキュメントの [ 増分移行 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) データに対する変更の際に発生します。 つまり、deltalog テーブル（プレフィックス `m2_cl_*` を含む）がAdobe Commerce 1 データベースに見つかりませんでした。 このツールは、（アドビの開発者向けドキュメントの [data migration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) 中にこれらのテーブルをインストールするだけでなく、変更内容を追跡して deltalog テーブルに値を入力するデータベーストリガーもインストールします。
 
 このエラーの理由の 1 つは、ライブストア自体からではなく、ライブ Adobe Commerce 1 ストアの *コピー* から移行しようとしていることです。 一度も移行されていないライブ Adobe Commerce 1 ストアからコピーを作成すると、そのコピーには、差分マイグレーションを行うのに必要なトリガーや追加の差分テーブルが含まれないので、マイグレーションが失敗します。 データ移行ツールでは、AC1 と AC2 の DB を比較して相違点を移行しません。 代わりに、最初のマイグレーション時にインストールされたトリガーテーブルとデルタ・テーブルを使用して、後続のデルタ・マイグレーションを実行します。 その場合、ライブ Adobe Commerce 1 DB のコピーには、Data Migration Tool が移行の実行に使用するトリガーテーブルおよび差分テーブルは含まれません。
 

@@ -1,10 +1,10 @@
 ---
 title: '*連絡先*を URL キーとして保存できません'
-description: この記事では、製品または CMS ページの URL キー（例：「/contact」）として*contact*を保存できない場合の問題の回避策を説明します。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
+description: ここでは、商品やCMSページの URL キー（例：「/contact」）として*contact*を保存できない場合の対処法を示します。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
 exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
 feature: CMS, Marketing Tools, Storefront
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # *連絡先* を URL キーとして保存できません
 
-この記事では、製品または CMS ページの URL キー（例：「/contact *として* 連絡先」を保存できない場合の問題の回避策を説明します。
+ここでは、商品またはCMSページの URL キーとして *contact* を保存できない場合の対処法を示します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,11 +21,11 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.x
 
 ## 問題
 
-URL キーとして *連絡先* という用語を使用して製品や CMS ページを保存することはできません。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
+URL キーとして *連絡先* という用語を使用して、商品またはCMSページを保存することはできません。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
 
 <u> 再現手順 </u>:
 
-*連絡先* を URL キーとして持つ CMS ページを作成します。
+*連絡先* を URL キーとして使用してCMS ページを作成します。
 
 <u> 期待される結果 </u>:
 
@@ -63,5 +63,5 @@ URL キーとして *連絡先* という用語を使用して製品や CMS ペ�
 
 ## 関連資料
 
-* ユーザーガイドの [URL の書き換え ](https://docs.magento.com/user-guide/marketing/url-rewrite.html)。
-* ユーザーガイドの [SEO のベストプラクティス ](https://docs.magento.com/user-guide/marketing/seo-best-practices.html)。
+* ユーザーガイドの [URL の書き換え ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
+* ユーザーガイドの [SEO のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview)。

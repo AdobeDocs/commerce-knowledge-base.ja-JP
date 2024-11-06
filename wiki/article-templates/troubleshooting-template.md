@@ -1,7 +1,7 @@
 ---
 title: '...'
 labels: troubleshooting,...
-source-git-commit: 44795e84359a907de2105ffc775926612c726492
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Adobe Commerceがこれを行います。
 
 ## 関連資料
 
-* [ 記事のトピック ](https://docs.magento.com/user-guide/)」を参照してください。
-* 開発者向けドキュメントの [ 記事のトピック ](https://devdocs.magento.com)。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別する方法として、「[ 記事のトピック ](https://devdocs.magento.com)」をクラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントに記載しています。 と [ 記事のトピック ](https://devdocs.magento.com) を参照してください（Adobe Commerce オンプレミス開発者向けドキュメント）。
+* [ 記事のトピック ](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)」を参照してください。
+* 開発者向けドキュメントの [ 記事のトピック ](https://developer.adobe.com/commerce/docs/)。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別する方法として、「[ 記事のトピック ](https://developer.adobe.com/commerce/docs/)」をクラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントに記載しています。 と [ 記事のトピック ](https://developer.adobe.com/commerce/docs/) を参照してください（Adobe Commerce オンプレミス開発者向けドキュメント）。
 * サポートに関するナレッジベースの [ 記事のトピック ](https://support.magento.com/hc/en-us)。
 * 関連リソース（ブログ、フォーラム、StackOverflow など）

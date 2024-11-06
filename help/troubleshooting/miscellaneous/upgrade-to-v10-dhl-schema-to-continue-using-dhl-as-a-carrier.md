@@ -4,7 +4,7 @@ description: この記事では、2022 年 12 月に DHL スキーマ 6.2 が非
 exl-id: eed83713-2d6a-4360-bfa1-bebd4d604f2f
 feature: Orders, Shipping/Delivery, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 デプロイメント方法に応じて、[!DNL Quality Patches Tool] の使用方法とパッチのインストール方法については、次のリンクを参照してください。
 
 * Adobe Commerceのオンプレミス環境およびMagento Open Source:Adobe Experience Leagueの [ 品質パッチ ツール/使用方法 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 **パッチは、次のAdobe Commerce バージョン（すべてのデプロイメント方法）に適用されます。**
 

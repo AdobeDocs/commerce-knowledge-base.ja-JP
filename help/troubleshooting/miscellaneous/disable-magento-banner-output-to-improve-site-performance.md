@@ -4,7 +4,7 @@ description: この記事では、サイトパフォーマンスの低下に対�
 exl-id: 90a8bd21-1f2c-4cfe-8213-17f877e20de8
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **コンテンツ**/*要素* の下に「**バナー**」オプションが表示されない場合は、そのようにはならず、この記事の推奨事項は適用できません。
 
-Cloud infrastructure 2.3.x 上のAdobe Commerceの場合（機能は [v 2.3.x で名前が変更されました ](https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html#banner-now-dynamic-block)）:
+Cloud infrastructure 2.3.x 上のAdobe Commerceの場合（機能は [v 2.3.x で名前が変更されました ](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html#banner-now-dynamic-block)）:
 
 1. Commerce Admin にログインします。
 1. **コンテンツ**/*要素/* **動的ブロック** に移動します。
@@ -56,5 +56,5 @@ Cloud infrastructure 2.3.x 上のAdobe Commerceの場合（機能は [v 2.3.x �
 >
 >実稼動環境に適用する前に、まず [ ステージング/統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) で変更をテストすることを強くお勧めします。 また、操作の前に最新のバックアップを取ることをお勧めします。
 
-1. 開発者向けドキュメントの [ モジュール出力の無効化 ](https://devdocs.magento.com/guides/v2.3/config-guide/config/disable-module-output.html) の説明に従って、`Magento_Banner` モジュール出力を無効にします。 使用する必要があるモジュール名は `Magento_Banner` です。
-1. コードのデプロイ。 クラウドインフラストラクチャー上のAdobe Commerceの場合は、開発者向けドキュメントの [ ストアのデプロイ ](https://devdocs.magento.com/guides/v2.3/cloud/live/stage-prod-live.html) の記事の説明に従ってデプロイします。
+1. 開発者向けドキュメントの [ モジュール出力の無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/disable-module-output) の説明に従って、`Magento_Banner` モジュール出力を無効にします。 使用する必要があるモジュール名は `Magento_Banner` です。
+1. コードのデプロイ。 クラウドインフラストラクチャー上のAdobe Commerceの場合は、開発者向けドキュメントの [ ストアのデプロイ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) の記事の説明に従ってデプロイします。

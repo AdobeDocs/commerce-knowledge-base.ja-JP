@@ -4,7 +4,7 @@ description: ここでは、Commerce管理者でフィールドを変更でき�
 exl-id: 5fe0967a-4241-440b-bb0d-429fa5644bbc
 feature: Admin Workspace
 role: Developer
-source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -52,6 +52,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 設定を書き出す ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) を参照してください。
-* 開発者向けドキュメントの [ 設定値を設定 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) します。
+* 開発者向けドキュメントの [ 設定を書き出す ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) を参照してください。
+* 開発者向けドキュメントの [ 設定値を設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) します。
 * [ クラウドインフラストラクチャー上のAdobe Commerce:Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) を使用して、デプロイメントのダウンタイムを短縮できます。

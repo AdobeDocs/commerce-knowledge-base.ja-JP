@@ -4,7 +4,7 @@ description: この記事では、New RelicでAdobe Commerceの CPU クリティ
 exl-id: 45b8ced0-b12f-428b-9838-2a9c26b9874b
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 5be8f2969426078bfcc0e4ffb4895dcf0327165f
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ
 <u>**実行**</u>:
 
 * このアラートがクリアされるまで、スケジュールされている展開を中止します。
-* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、開発者向けドキュメントの [ 免除 IP アドレスのリストを管理する ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt) を参照してください。
+* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、開発者向けドキュメントの [ 免除 IP アドレスのリストを管理する ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#instgde-cli-maint-exempt) を参照してください。
 
 <u>**止めて！**</u>:
 
@@ -61,4 +61,4 @@ Adobe Commerce サポートチケットが存在するかどうかを確認し�
    * 最近のトレンドを確認して、最近のコードのデプロイメントや設定の変更に関する問題を特定します（例えば、新しい顧客グループやカタログの大幅な変更）。 コードのデプロイメントまたは変更における相関関係について、過去 7 日間のアクティビティを確認することをお勧めします。
    * フラットカタログの確認と無効化を検討します。 手順については、サポートナレッジベースの [ パフォーマンスが遅い、動作が遅い、動作が長い ](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md) を参照してください。
    * DDoS 攻撃が発生していると思われる場合は、ボットトラフィックをブロックしてみてください。 手順については、サポートナレッジベースの [Fastly レベルでクラウドインフラストラクチャ上でAdobe Commerceの悪意のあるトラフィックをブロックする方法 ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) を参照してください。
-1. 問題が一時的であると思われる場合は、アップサイズなどの軽減手順を実行するか、サイトをメンテナンスモードにします。 手順については、サポートナレッジベースの [ 一時サイズ変更のリクエスト方法 ](/help/how-to/general/how-to-request-temporary-magento-upsize.md) および開発者ドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) を参照してください。 アップサイズによってサイトが通常の処理に戻った場合は、永続的なアップサイズを要求するか（Adobeアカウントチームに問い合わせてください）、負荷テストを実行してサービスの負荷を軽減するクエリまたはコードを最適化し、専用ステージングで問題を再現することを試みてください。 手順については、クラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントの [ デプロイメントのテスト/読み込みとストレステスト ](https://devdocs.magento.com/cloud/live/stage-prod-test.html#loadtest) を参照してください。
+1. 問題が一時的であると思われる場合は、アップサイズなどの軽減手順を実行するか、サイトをメンテナンスモードにします。 手順については、サポートナレッジベースの [ 一時サイズ変更のリクエスト方法 ](/help/how-to/general/how-to-request-temporary-magento-upsize.md) および開発者ドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 アップサイズによってサイトが通常の処理に戻った場合は、永続的なアップサイズを要求するか（Adobeアカウントチームに問い合わせてください）、負荷テストを実行してサービスの負荷を軽減するクエリまたはコードを最適化し、専用ステージングで問題を再現することを試みてください。 手順については、クラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントの [ デプロイメントのテスト/読み込みとストレステスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing) を参照してください。

@@ -4,7 +4,7 @@ description: この記事では、管理パネルから Web セットアップ�
 exl-id: 1b89da58-c872-481b-b2a0-aa48db8223db
 feature: Admin Workspace, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Web セットアップウィザードは、クラウドインフラストラク�
 
 この機能は、クラウドインフラストラクチャー上のAdobe Commerceでは無効になっています。
 
-アドビのクラウドインフラストラクチャでAdobe Commerceの更新を実行したり、外部モジュールをインストールしたりする方法について詳しくは、開発者向けドキュメントの [ 拡張機能のインストール、管理、アップグレード ](https://devdocs.magento.com/cloud/howtos/install-components.html) を参照してください。
-アップデートの実行方法やAdobe Commerce オンプレミス用の外部モジュールのインストール方法については、開発者向けドキュメントの [ クイックスタートインストール ](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) を参照してください。
+アドビのクラウドインフラストラクチャでAdobe Commerceの更新を実行したり、外部モジュールをインストールしたりする方法について詳しくは、開発者向けドキュメントの [ 拡張機能のインストール、管理、アップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
+アップデートの実行方法やAdobe Commerce オンプレミス用の外部モジュールのインストール方法については、開発者向けドキュメントの [ クイックスタートインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) を参照してください。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 拡張機能のインストール ](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) を参照してください。
+* 開発者向けドキュメントの [ 拡張機能のインストール ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) を参照してください。

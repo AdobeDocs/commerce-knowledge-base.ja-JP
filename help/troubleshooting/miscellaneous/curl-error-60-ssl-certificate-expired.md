@@ -4,7 +4,7 @@ description: 「この記事では、cURL エラー 60 を受信した後にブ�
 exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
 feature: Configuration
 role: Developer
-source-git-commit: 6f631ca35b663c386bca9efe6e56db266502c0b1
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -55,7 +55,7 @@ cURL error 60: SSL certificate problem: certificate has expired
 開発者向けドキュメントでは、
 
 * [Cloud Manager API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
-* [Fastly の設定：SSL/TLS 証明書のプロビジョニング ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates)
+* [Fastly の設定：SSL/TLS 証明書のプロビジョニング ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
 
 サポートナレッジベースでは、
 

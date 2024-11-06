@@ -4,7 +4,7 @@ description: この記事では、「CSV ファイルは UTF-8 エンコーデ�
 exl-id: 88d8e0b8-152e-4a6d-bc44-3b285e0eb0c3
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -23,4 +23,4 @@ ht-degree: 0%
 1. &#x200B;&#x200B;**ファイル**/**名前を付けて保存**&#x200B;をクリックし&#x200B;&#x200B;&#x200B;**コンマ区切り値（.csv）** 形式を選択してファイルを保存します。
 1. Sublime Text で CSV ファイルを開きます。
 1. Sublime Text で&#x200B;&#x200B; **File**/**Save with Encoding**/**UTF-8\*&#x200B;** に移動します。 これにより、UTF-8 エンコーディングで CSV ファイルが保存されます。    ![csv_file_UTF-8_sublime_3.2.2_magento_BI.png](assets/csv_file_UTF-8_sublime_3.2.2_magento_BI.png)
-1. ユーザーガイドの [ データをアップロード ](https://docs.magento.com/mbi/data-analyst/importing-data/connecting-data/using-file-uploader.html) して、MagentoBI の新しいテーブルに貼り付けます。
+1. ユーザーガイドの [ データをアップロード ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/connecting/using-file-uploader) して、MagentoBI の新しいテーブルに貼り付けます。

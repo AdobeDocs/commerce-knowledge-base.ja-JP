@@ -4,7 +4,7 @@ description: ACSD-47027 パッチを適用して、クエリ B2B [!UICONTROL Com
 exl-id: 478ae16b-7722-4469-8f8a-a38820e61ae4
 feature: B2B, Companies, GraphQL, Roles/Permissions
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -99,7 +99,7 @@ Adobe Commerceは、フィルターなしでクエリを実行します。 レ�
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。 
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。 
 
 ## 関連資料
 

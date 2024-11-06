@@ -1,7 +1,7 @@
 ---
 title: インストール中、例外 SessionHandler::read （）
 description: 「この記事では、Adobe Commerceのインストール中に例外**SessionHandler::read （）**が発生した場合の対処方法について説明します。」
-source-git-commit: 5cec04f8c4f80d34fc26b06eb929960ce21e2dc0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -25,7 +25,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->このエラーは、2015 年 9 月 28 日（PT）より前のコードバージョンでのみ発生します。 9 月 29 日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redis の設定オプションについて詳しくは、開発者向けドキュメントの [Redis の設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) を参照してください。 コマンドラインインストーラーを使用して Redis を指定する方法については、開発者向けドキュメントの [ インストールトピック ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-install.html) または [ デプロイメント設定トピック ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp) を参照してください。
+>このエラーは、2015 年 9 月 28 日（PT）より前のコードバージョンでのみ発生します。 9 月 29 日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redis の設定オプションについて詳しくは、開発者向けドキュメントの [Redis の設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) を参照してください。 コマンドラインインストーラーを使用して Redis を指定する方法については、開発者向けドキュメントの [ インストールトピック ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced) または [ デプロイメント設定トピック ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment) を参照してください。
 
 ## 原因：
 
@@ -33,7 +33,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 ## ソリューション：
 
-* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの [ インストールガイド/Adobe Commerce ソフトウェアのアップデート ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update) を参照してください。
+* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの [ インストールガイド/Adobe Commerce ソフトウェアのアップデート ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) を参照してください。
 * 既存のコードで次の回避策を使用します。
 
 ## `php.ini` を見つけます {#locate-php-ini}

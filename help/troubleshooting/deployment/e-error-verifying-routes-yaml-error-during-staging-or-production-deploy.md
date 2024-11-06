@@ -4,7 +4,7 @@ description: '「この記事では、クラウドインフラストラクチャ
 exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
 feature: Deploy, Routes, Staging
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 1. с変更をコミットし、プッシュしてプロジェクトを再デプロイします。
 
-ルート設定を更新する詳細な手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ルートの設定 ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) を参照してください。
+ルート設定を更新する詳細な手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ルートの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) を参照してください。
 
 >[!NOTE]
 >

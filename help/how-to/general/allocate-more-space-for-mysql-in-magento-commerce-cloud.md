@@ -3,7 +3,7 @@ title: Cloud 上のAdobe Commerceで MySQL に割り当てる領域を増やす
 description: この記事では、クラウドインフラストラクチャー上の Adode Commerceで MySQL に領域を割り当てる方法について説明します。
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-詳しくは、[MySQL サービスの設定 ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) の記事を参照してください。
+詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
 
 `.magento/services.yaml` ファイルを変更したら、変更内容を適用するために、コミットしてプッシュする必要があります。 プッシュはデプロイメントプロセスをトリガーします。
 

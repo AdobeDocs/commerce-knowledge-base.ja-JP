@@ -4,7 +4,7 @@ description: この記事では、Venia ストアフロントのGraphQL クエ�
 exl-id: ba268945-2a10-4af5-8089-cde21f0687bd
 feature: GraphQL
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -42,9 +42,9 @@ yarn run validate-queries
 アップグレード方法については、次のドキュメントを参照してください。
 
 * PWA Studioのアップグレードの場合、アップグレードする必要があるバージョンを [PWAリリースノートの ](https://github.com/magento/pwa-studio/releases/) 以前のバージョンからのアップグレード」の節で検索します。
-* 開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード ](https://devdocs.magento.com/cloud/project/project-upgrade.html)
-* [ 開発者向けドキュメントの ](https://devdocs.magento.com/guides/v2.3/comp-mgr/cli/cli-upgrade.html)Adobe Commerceをオンプレミス（「composer create-project」またはアーカイブを使用してインストール）でアップグレードする
-* [ 開発者向けドキュメントのAdobe Commerceをオンプレミスでアップグレード（Adobe Commerce リポジトリをクローンしてインストール） ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/dev_update-magento.html)
+* 開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [ 開発者向けドキュメントの ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)Adobe Commerceをオンプレミス（「composer create-project」またはアーカイブを使用してインストール）でアップグレードする
+* [ 開発者向けドキュメントのAdobe Commerceをオンプレミスでアップグレード（Adobe Commerce リポジトリをクローンしてインストール） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs)
 
 ## 関連資料
 

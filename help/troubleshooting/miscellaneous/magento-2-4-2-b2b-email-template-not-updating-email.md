@@ -4,7 +4,7 @@ description: この記事では、メールテンプレートの一部の情報�
 exl-id: 31b7086f-a941-4682-aa07-301ac31d543b
 feature: B2B, Communications
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -45,4 +45,4 @@ Cron ジョブまたはコンシューマーを手動で実行して、新しい
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ メッセージキューの管理 ](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html) を参照してください。
+* 開発者向けドキュメントの [ メッセージキューの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) を参照してください。

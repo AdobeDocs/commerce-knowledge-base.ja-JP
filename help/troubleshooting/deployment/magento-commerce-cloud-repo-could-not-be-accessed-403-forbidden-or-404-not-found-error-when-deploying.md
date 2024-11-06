@@ -4,7 +4,7 @@ description: 「この記事では、次のようなクラウドインフラス�
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 2. env:COMPOSER\_AUTH 変数に keys 値を追加し、auth.json で同じキーが指定されているかどうかを確認します
 
-開発者向けドキュメントの [ 既存システムの準備 ](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) および [ 認証キーの追加 ](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) の手順と関連情報を参照してください。
+開発者向けドキュメントの [ 既存システムの準備 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) および [ 認証キーの追加 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) の手順と関連情報を参照してください。
 
 ### 3. auth.json の更新または削除
 

@@ -4,7 +4,7 @@ description: 「この記事では、Commerce管理者のログイン問題に�
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer
-source-git-commit: f87263cde5aa001f78abc368c949ce150feecb91
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 ## 解決策
 
 1. データベースバックアップを作成します。
-1. [[!DNL phpMyAdmin]](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスします。 `admin_user` データベース テーブルで、管理者ユーザーレコードに対して、`is_active` が&quot;`1`&quot;に設定され、`lock_expires` が `NULL` になっているかどうかを確認します。 必要に応じて、これらの値をリセットします。
+1. [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスします。 `admin_user` データベース テーブルで、管理者ユーザーレコードに対して、`is_active` が&quot;`1`&quot;に設定され、`lock_expires` が `NULL` になっているかどうかを確認します。 必要に応じて、これらの値をリセットします。
 
 ## 関連資料
 

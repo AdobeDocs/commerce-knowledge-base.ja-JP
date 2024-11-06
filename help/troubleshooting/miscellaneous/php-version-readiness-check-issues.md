@@ -4,9 +4,9 @@ description: ここでは、Web Setup Wizard を使用してオンプレミス�
 exl-id: dee939cf-b9b2-4750-965c-5b8908a4498d
 feature: Variables
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ### 解決策
 
-この問題を解決するには、開発者ドキュメント [2.3.x のシステム要件 ](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html) および [2.2.x のシステム要件 ](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html) にリストされているサポート対象バージョンのいずれかを使用します。
+この問題を解決するには、開発者ドキュメント [2.3.x のシステム要件 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) および [2.2.x のシステム要件 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) にリストされているサポート対象バージョンのいずれかを使用します。
 
 ## PHP レディネスチェックが表示されない
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### 解決策
 
-これは、cron ジョブの設定が正しくない症状です。 詳しくは、開発者用ドキュメントの [cron ジョブの設定 ](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) を参照してください。
+これは、cron ジョブの設定が正しくない症状です。 詳しくは、開発者用ドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
 
 ## PHP バージョンが正しくありません
 
@@ -62,8 +62,7 @@ ht-degree: 0%
 * Web サーバーまたは php-fm を再起動します。
 * `$PATH` 環境変数に PHP への複数のパスがあるかどうかをチェックします。
 * `which php` コマンドを使用して、パス内の最初の PHP 実行可能ファイルを探します。正しくない場合は、そのファイルを削除するか、正しい PHP バージョンへのシンボリックリンクを作成します。
-* [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) ページを使用して、詳細情報を収集します。
+* [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software) ページを使用して、詳細情報を収集します。
 * アドビの開発者向けドキュメントで、サポート対象の PHP バージョンを、アドビのシステム要件に従って実行していることを確認してください。
-   * [Adobe Commerce 2.3.x の必要システム構成 ](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html)
-   * [Adobe Commerce 2.2.x の必要システム構成 ](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html)
-* 開発者向けドキュメントの [PHP 設定オプション ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-centos-ubuntu.html) で説明されているように、PHP コマンドラインと PHP web サーバープラグインの両方に同じ PHP 設定を指定します。
+   * [Adobe Commerceの動作環境 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+* 開発者向けドキュメントの [PHP 設定オプション ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements#php-settings) で説明されているように、PHP コマンドラインと PHP web サーバープラグインの両方に同じ PHP 設定を指定します。

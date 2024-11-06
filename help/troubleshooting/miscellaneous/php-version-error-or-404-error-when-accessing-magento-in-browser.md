@@ -4,7 +4,7 @@ description: この文書では、Web ブラウザでAdobe Commerce インスタ
 exl-id: 6cfdeaae-5e52-411c-9006-5af8a467873a
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 ](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html#php) を参照してください。
+* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) を参照してください。
 * Apache を再起動します。ファイルシステムと同じ PHP バージョンを使用していない可能性があるからです。 Apache を再起動するには、次のコマンドを使用します。
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* [Apache server rewrites](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html) が有効になっていることを確認します。 Apache サーバーの書き換えが正しく設定されていない場合、静的ファイルは正しい場所から提供されません。
+* [Apache server rewrites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache) が有効になっていることを確認します。 Apache サーバーの書き換えが正しく設定されていない場合、静的ファイルは正しい場所から提供されません。
 * インストール中に入力したベース URL に問題がある可能性があります。 ベース URL の値は、コマンドラインからAdobe Commerceをインストールするときに `--base-url=` を指定するか、web インストーラーの Web 設定ページにある **ストアアドレス** フィールドの値として指定します。 ベース URL *必須* は、スキーム（`http://` など）で始まり、末尾がスラッシュ（/）で終わります。 有効な値でインストーラーを再度実行し、後でAdobe Commerceにアクセスしてみてください。

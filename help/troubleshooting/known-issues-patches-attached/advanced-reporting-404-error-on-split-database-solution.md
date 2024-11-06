@@ -1,10 +1,10 @@
 ---
 title: 分割データベースソリューションの高度なレポート 404 エラー
-description: この記事では、高度なレポートを使用しようとすると 404 エラーが発生する [split database solution] （https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html）のAdobe Commerce 2.3.x ユーザー向けのパッチを提供します。
+description: この記事では、高度なレポートを使用しようとすると 404 エラーが発生する [split database solution] （https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master）のAdobe Commerce 2.3.x ユーザー向けのパッチを提供します。
 exl-id: b81d4ada-5f38-4882-bc5b-ab4ccd63fc5f
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分割データベースソリューションの高度なレポート 404 エラー
 
-この記事では、Adobe Commerce 2.3.x で [split database solution](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) を使用していて、高度なレポートを使用しようとすると 404 エラーが発生するパッチを提供します。
+この記事では、Adobe Commerce 2.3.x で [split database solution](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) を使用していて、高度なレポートを使用しようとすると 404 エラーが発生するパッチを提供します。
 
 ## 影響を受ける製品とバージョン
 

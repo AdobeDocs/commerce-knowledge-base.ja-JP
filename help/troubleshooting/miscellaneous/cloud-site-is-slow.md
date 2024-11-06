@@ -4,7 +4,7 @@ description: この記事では、クラウドインフラストラクチャサ�
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Fastly では、通常、アプリケーションからの応答ヘッダーを�
 
 全体的なキャッシュヒット率を確認するには：
 
-1. クラウドインフラストラクチャ環境のAdobe Commerceの [Fastly 資格情報を取得 ](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) します。
+1. クラウドインフラストラクチャ環境のAdobe Commerceの [Fastly 資格情報を取得 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) します。
 1. 次の Linux/macOS cURL コマンドを実行して、過去 30 分間のサイトのヒット率を確認し、とを Fastly 資格情報の値に置き換えます。
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +82,8 @@ Fastly では、通常、アプリケーションからの応答ヘッダーを�
 
 1. 時間別および日別のヒット率の統計を使用して、ヒット率が低下し始めた時期を識別します。 サイトに変更をデプロイと同時にヒット率が突然低下した場合は、サイトの読み込みが停止するまで変更をロールバックすることを検討してください。
 1. Commerce管理者の **ストア**/**設定**/詳細/**システム**/**フルページキャッシュ** で、設定を確認します。 公開コンテンツの **TTL** の値が低く設定されていないことを確認します。
-1. [VCL スニペットをアップロード ](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets) したことを確認します。
-1. カスタム VCL スニペットを使用する場合は、「pass」または「pipe」アクションを正しく使用するようデバッグしてください。これらは慎重に使用してください。少なくとも、何らかの条件で使用する必要があります。 ヒントについては、開発者向けドキュメントの [Custom Fastly VCL スニペット ](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) を参照してください。
+1. [VCL スニペットをアップロード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets) したことを確認します。
+1. カスタム VCL スニペットを使用する場合は、「pass」または「pipe」アクションを正しく使用するようデバッグしてください。これらは慎重に使用してください。少なくとも、何らかの条件で使用する必要があります。 ヒントについては、開発者向けドキュメントの [Custom Fastly VCL スニペット ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) を参照してください。
 
 ### 手順 3：サーバー負荷が高い原因となっている web サイトを特定する
 

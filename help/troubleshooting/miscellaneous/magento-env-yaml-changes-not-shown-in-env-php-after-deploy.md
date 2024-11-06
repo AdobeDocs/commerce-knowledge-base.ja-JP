@@ -4,7 +4,7 @@ description: この記事では、.magento.env.yaml ファイルの変更がデ�
 exl-id: 39ea7295-ba5a-40cc-bc68-a5e0b965c1a7
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 <u> 再現手順：</u>
 
-`.magento.env.yaml` の値を変更してサーバーにプッシュします。サーバーは、現在チェックアウトされている環境の設定（およびデプロイメント設定）を定義する必要があります。 手順については、開発者向けドキュメントの [ 環境変数/変数のデプロイ ](https://devdocs.magento.com/cloud/env/variables-deploy.html) を参照してください。
+`.magento.env.yaml` の値を変更してサーバーにプッシュします。サーバーは、現在チェックアウトされている環境の設定（およびデプロイメント設定）を定義する必要があります。 手順については、開発者向けドキュメントの [ 環境変数/変数のデプロイ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) を参照してください。
 
 <u> 期待される結果：</u>
 
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 ## 解決策
 
-1. [Adobe Commerceのパフォーマンスのベストプラクティス/ソフトウェアの推奨事項 ](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html) に従ってシステムが設定されていることを確認します。
+1. [Adobe Commerceのパフォーマンスのベストプラクティス/ソフトウェアの推奨事項 ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software) に従ってシステムが設定されていることを確認します。
 1. `php.ini``opcache.enable_cli` ディレクティブが `0` に設定されているかどうかを次のコマンドを実行して確認します：`php -i | grep opcache.enable_cli`
 1. 出力が `opcache.enable_cli=1` のような場合は、プロジェクトのルートディレクトリにある `php.ini` ファイルを編集し、`opcache.enable_cli=1` を `opcache.enable_cli=0` に変更します。
 1. プロジェクトを再デプロイします。
 
 ## 関連資料
 
-* [Cloud for Adobe Commerce/ビルドとデプロイ ](https://devdocs.magento.com/cloud/project/magento-env-yaml.html)。
+* [Cloud for Adobe Commerce/ビルドとデプロイ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml)。

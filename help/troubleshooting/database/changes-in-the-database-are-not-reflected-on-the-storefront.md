@@ -4,7 +4,7 @@ description: この記事では、適用されるエンティティ更新の遅�
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 ## 原因：
 
-インデクサーが [ スケジュールに従って更新するように設定されている ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) 場合、変更ログが大きすぎる、または MySQLトリガーが設定されていない 1 つ以上のテーブルが原因で問題が発生している可能性があります。
+インデクサーが [ スケジュールに従って更新するように設定されている ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) 場合、変更ログが大きすぎる、または MySQLトリガーが設定されていない 1 つ以上のテーブルが原因で問題が発生している可能性があります。
 
 ### 変更ログテーブルのサイズ超過
 
 変更ログテーブルは、`indexer_update_all_views` cron ジョブが複数回正常に完了されなかった場合、そのサイズが大きくなります。
 
-変更ログテーブルは、エンティティに対する変更が追跡されるデータベーステーブルです。 変更が適用されない限り、レコードは変更ログテーブルに保存されます。変更は、`indexer_update_all_views` cron ジョブによって実行されます。 Adobe Commerce データベースには複数の変更ログテーブルがあり、INDEXER\_TABLE\_NAME + &#39;\_cl&#39;というパターンに従って名前が付けられます（例：`catalog_category_product_cl`、`catalog_product_category_cl`）。 データベースでの変更の追跡方法について詳しくは、開発者向けドキュメントの [ インデックス作成の概要/Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) に関する記事を参照してください。
+変更ログテーブルは、エンティティに対する変更が追跡されるデータベーステーブルです。 変更が適用されない限り、レコードは変更ログテーブルに保存されます。変更は、`indexer_update_all_views` cron ジョブによって実行されます。 Adobe Commerce データベースには複数の変更ログテーブルがあり、INDEXER\_TABLE\_NAME + &#39;\_cl&#39;というパターンに従って名前が付けられます（例：`catalog_category_product_cl`、`catalog_product_category_cl`）。 データベースでの変更の追跡方法について詳しくは、開発者向けドキュメントの [ インデックス作成の概要/Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) に関する記事を参照してください。
 
 ### [!DNL MySQL] データベース トリガーが設定されていません
 

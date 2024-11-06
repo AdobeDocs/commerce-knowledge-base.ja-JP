@@ -4,7 +4,7 @@ description: この記事では、「var/export/email」フォルダー内のサ
 exl-id: 68120d3b-f5df-43a5-91f6-2ec519cc25ac
 feature: Cloud, Communications, Data Import/Export, Paas, Roles/Permissions
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -67,4 +67,4 @@ chmod 777 -R var/export/
 
 ## 関連資料
 
-* ユーザーガイドの [ エクスポート ](https://docs.magento.com/user-guide/system/data-export.html)。
+* ユーザーガイドの [ エクスポート ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-export)。

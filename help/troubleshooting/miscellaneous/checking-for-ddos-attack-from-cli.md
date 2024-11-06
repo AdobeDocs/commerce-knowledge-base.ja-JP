@@ -4,7 +4,7 @@ description: この記事では、サーバの Command Line Interface （CLI; �
 exl-id: dfdef289-cf51-42d7-b3fb-d4d2d3760951
 feature: Observability
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -35,8 +35,8 @@ Web サイトの動作が遅くなる原因としては、サーバーの動作�
 ## ソリューションの手順
 
 1. Adobe Commerceのログを調べて、DDoS 攻撃以外の何かが発生していないかどうかを確認します。 詳しくは、開発者向けドキュメントの次の記事を参照してください。
-   * [Adobe CommerceとMagento Open Sourceログの場所 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html)
-   * [ クラウドインフラストラクチャログ上のAdobe Commerceの場所 ](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html)
+   * [Adobe CommerceとMagento Open Sourceログの場所 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging)
+   * [ クラウドインフラストラクチャログ上のAdobe Commerceの場所 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. CLI の使用を開始し、`netstat` のコマンドを使用して現在のすべてのインターネット接続を確認します：`netstat -na`。 サーバーへのアクティブな確立済み接続がすべて表示されます。 この場合、同じ IP アドレスからの接続が多すぎると気付くことがあります。
 1. 確立された接続をポート 80 （Web サイトの http ポート）で接続するものだけに絞り込んで、1 つの IP アドレスまたは IP アドレスのグループからの接続数が多すぎるかどうかを並べ替えて認識できるようにするには、次のコマンドを使用します。`netstat -an | grep :80 | sort` ポート 443 の https に対しても、同じコマンドを繰り返すことができます：`netstat -an | grep :443 | sort`。 もう 1 つのオプションは、元のコマンドをポート 80 と 443 の両方に拡張することです。`netstat -an | egrep ":80|:443" | sort`。
 1. サーバーでアクティブな `SYNC_REC` が多数発生しているかどうかを確認するには、次のコマンドを使用します。     `netstat -n -p|grep SYN_REC | wc -l`     これは通常 5 未満ですが、DDoS 攻撃でははるかに高くなる可能性がありますが、サーバーによっては、通常の状態である可能性が高い場合もあります。
@@ -53,6 +53,6 @@ DDoS 攻撃を受けている場合は、ネットワーク構成や DDoS 攻撃
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [DDoS 保護 ](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-fastly.html#ddos-protection)
-* [CLI コマンドの使用 ](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/example/cli.html)
-* [Commerce用の Cloud CLI](https://devdocs.magento.com/guides/v2.3/cloud/reference/cli-ref-topic.html)
+* [DDoS 保護 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
+* [CLI コマンドの使用 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [Commerce用の Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)

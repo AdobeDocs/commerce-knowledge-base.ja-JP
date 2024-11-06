@@ -4,7 +4,7 @@ description: この記事では、クラウドインフラストラクチャー�
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -47,7 +47,7 @@ https:/&#x200B;/mydomain.com.c.&lt;projectid>.magento.cloud/にはアクセス�
 ## 解決策
 
 * クラウドサイトがライブの場合は、https://mydomain.com/に切り替えます。
-* アクティブなサイト（クラウド以外）がある場合は、https://mydomain.com/ ドメインを使用してサブドメイン `mcprod.mydomain.com` を設定し、**ベース URL** を *https://mcprod.mydomain.com* に更新して、[DNS を Fastly に指定 ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings) ます。
+* アクティブなサイト（クラウド以外）がある場合は、https://mydomain.com/ ドメインを使用してサブドメイン `mcprod.mydomain.com` を設定し、**ベース URL** を *https://mcprod.mydomain.com* に更新して、[DNS を Fastly に指定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings) ます。
 
 ## 関連資料
 

@@ -3,7 +3,7 @@ title: Cloud 上のNew Relicのアカウントオーナーの変更
 description: クラウドインフラストラクチャー上のAdobe Commerce プロジェクトの場合は、New Relic UI ページでNew Relic アカウントのオーナーを変更できます。 詳しい手順については、New Relic ドキュメントの [ アカウント所有者の変更 ] （https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner）を参照してください。
 exl-id: fbb778d5-7e5d-4cd9-849a-4071ca9e4bea
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの ](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html)0}New Relic サービス } を参照してください。[
+* 開発者向けドキュメントの ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)0}New Relic サービス } を参照してください。[

@@ -4,7 +4,7 @@ description: この記事では、買い物かごの価格ルールクーポン�
 exl-id: 9c81de40-65a3-422d-9053-3c894b863a0a
 feature: Orders
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -62,8 +62,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.3 以降
 ...
 ```
 
-詳細な手順については、開発者向けドキュメントの [ メッセージキューの管理/設定 ](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) を参照してください。
+詳細な手順については、開発者向けドキュメントの [ メッセージキューの管理/設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) を参照してください。
 
 ## 関連資料
 
-開発者向けドキュメントの [ メッセージキューの概要 ](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)。
+開発者向けドキュメントの [ メッセージキューの概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)。

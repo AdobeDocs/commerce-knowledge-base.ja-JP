@@ -4,7 +4,7 @@ description: この記事では、Commerce管理者にログインしたり、�
 exl-id: a91a7a51-7cc4-4910-a9de-3a212788663f
 feature: Admin Workspace, Checkout, Orders, Services
 role: Developer
-source-git-commit: aa8c32e3524d669daea7bcf8bc63ed9f8ed16ffa
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -80,6 +80,6 @@ Adobe Commerceには、セッションロックのメカニズムに問題があ
 
 ## Adobe Commerce on cloud infrastructure 2.2.0: ECE-Tools v2002.0.8 以降を使用します {#h_64593789291526919876198}
 
-バージョン 2002.0.3 ～ 2002.0.7 の [ECE-Tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html) デプロイメントスクリプトパッケージ [ 適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) この回避策は自動的に `disable_locking` を `1` に設定します。 これにより、元の問題が発生しないAdobe Commerce 2.2.0 のセッションロック機能が無効になります。
+バージョン 2002.0.3 ～ 2002.0.7 の [ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) デプロイメントスクリプトパッケージ [ 適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) この回避策は自動的に `disable_locking` を `1` に設定します。 これにより、元の問題が発生しないAdobe Commerce 2.2.0 のセッションロック機能が無効になります。
 
 Adobe Commerceを Cloud Infrastructure 2.2.0 で実行している場合は、ECE-Tools を v2002.0.8 以降にアップグレードします。 また、クラウドインフラストラクチャー上のAdobe Commerceを 2.2.2 以降にアップグレードすることを検討することもできます。

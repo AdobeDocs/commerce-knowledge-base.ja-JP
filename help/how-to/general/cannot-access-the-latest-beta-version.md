@@ -2,7 +2,7 @@
 title: 最新バージョンのBetaにアクセスできません
 description: この記事では、最新バージョンのBeta code for Adobe Commerceを利用しようとする際の問題の解決策について説明します。 Beta コードは、[Adobe Commerce Beta プログラム ] （https://github.com/magento/magento2/wiki/Magento-Beta-Program）に記載されているプロセスに従った、公式のAdobeパートナーのみが利用できます。
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### アーリーアクセスコードの場所
 
-ベータ版のアクセス期間中、リリースパッケージは [repo.magento.com](https://repo.magento.com/) の Composer からのみ入手できます。 この期間中、リリースパッケージは GitHub ポータルおよびAdobe Commerce ポータルでは利用できません。GA 日にこれらの場所に公開される予定です。 Composer の使用方法の詳細については、[ こちら ](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) をクリックしてください。
+ベータ版のアクセス期間中、リリースパッケージは [repo.magento.com](https://repo.magento.com/) の Composer からのみ入手できます。 この期間中、リリースパッケージは GitHub ポータルおよびAdobe Commerce ポータルでは利用できません。GA 日にこれらの場所に公開される予定です。 Composer の使用方法の詳細については、[ こちら ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) をクリックしてください。
 
 ### 使用する MageID
 

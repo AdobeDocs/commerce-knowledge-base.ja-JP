@@ -4,7 +4,7 @@ description: この記事では、'/tmp' マウントがいっぱいになり、
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -120,7 +120,7 @@ find /tmp/*.hprof -type f -delete
 
 `/tmp` がいっぱいの問題を回避するには、次の推奨事項に従います。
 
-* 検索に MySQL を使用しないでください。 検索のElasticsearchにより、通常、重い一時テーブルの作成のほとんどが不要になります。 開発者向けドキュメントの [Elasticsearchを使用するためのAdobe Commerceの設定 ](https://devdocs.magento.com/guides/v2.2/config-guide/elasticsearch/configure-magento.html) を参照してください。
+* 検索に MySQL を使用しないでください。 検索のElasticsearchにより、通常、重い一時テーブルの作成のほとんどが不要になります。 開発者向けドキュメントの [Elasticsearchを使用するためのAdobe Commerceの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) を参照してください。
 * インデックスのない列に対して `SELECT` クエリを実行しないでください。このクエリは大量の一時ディスク領域を消費します。 インデックスを追加することもできます。
 * CLI で次のコマンドを実行して、`/tmp` をクリーンアップする cron を作成します。
 

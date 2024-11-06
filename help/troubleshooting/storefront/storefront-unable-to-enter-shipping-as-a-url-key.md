@@ -1,10 +1,10 @@
 ---
 title: URL キーとして配送を保存できない
-description: この記事では、製品または CMS ページの URL キー（/shipping_など）として shipping を保存できない場合の問題の回避策を説明します。 URL キーを保存しようとすると、URL キーが URL と重複していることを示すエラーが表示されます。
+description: ここでは、商品またはCMSページの URL キー（/shipping_など）として shipping を保存できない場合の問題の回避策を示します。 URL キーを保存しようとすると、URL キーが URL と重複していることを示すエラーが表示されます。
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # _出荷_ を URL キーとして保存できません
 
-この記事では、製品または CMS ページの URL キー（_例：/shipping_）として shipping を保存できない場合の問題の回避策を説明します。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
+ここでは、商品またはCMSページの URL キー（_例：/shipping_）として shipping を保存できない場合の問題の回避策を示します。 URL キーを保存しようとすると、URL キーが重複した URL であることを示すエラーが表示されます。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,7 +21,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.x
 
 ## 問題
 
-URL キーに _shipping_ という用語を含む CMS ページを保存することはできません。
+URL キーに _shipping_ という用語を使用してCMS ページを保存することはできません。
 
 <u> 再現手順 </u>:
 
@@ -122,5 +122,5 @@ URL キーに「_shipping_」という用語は使用できませんが、「_sh
 
 ## 関連資料
 
-* アドビのマーチャンダイジングおよびプロモーションユーザーガイドの [URL の書き換え ](https://docs.magento.com/user-guide/marketing/url-rewrite.html)。
-* [SEO のベストプラクティス ](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) マーチャンダイジングおよびプロモーションユーザーガイドの
+* アドビのマーチャンダイジングおよびプロモーションユーザーガイドの [URL の書き換え ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
+* [SEO のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) マーチャンダイジングおよびプロモーションユーザーガイドの

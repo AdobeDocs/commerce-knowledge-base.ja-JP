@@ -4,7 +4,7 @@ description: この記事では、Cloud Infrastructure 2.2.X 上のAdobe Commerc
 exl-id: 3e6bd5aa-bd5d-4880-8b78-64f280647abe
 feature: Cache, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -45,6 +45,6 @@ Adobe Commerceを 2.2.X から 2.3.X にアップグレードすると、キャ�
    * 統合：自分でファイルを修正して、変更をプッシュします。
    * ステージングと実稼動：自分でファイルを修正し、変更をプッシュし、[Adobe Commerce サポートチケットを作成して ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 適用させます。
 
-1. <https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-image-optimization.html> の説明に従って、Commerce Admin で Fastly 画像の最適化を有効にします（Fastly は事前に設定する必要があります）。
+1. <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization> の説明に従って、Commerce Admin で Fastly 画像の最適化を有効にします（Fastly は事前に設定する必要があります）。
 
 設定が正しいにもかかわらず問題が解決しない場合は、調査を続行するか、[Adobe Commerce サポート ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にお問い合わせください。

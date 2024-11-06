@@ -4,7 +4,7 @@ description: この記事では、品質向上パッチツール（QPT）の概�
 exl-id: 43393708-3939-449f-a764-b2ac6326165f
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 品質向上パッチツールで使用可能なパッチ
 
-使用可能なパッチのリストについては、開発者向けドキュメントの [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。
+使用可能なパッチのリストについては、開発者向けドキュメントの [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を参照してください。
 
 ## 品質向上パッチツールのインストール方法と使用方法
 
@@ -50,13 +50,13 @@ Adobe Commerce オンプレミスの場合と、クラウドインフラスト�
 
 ### Adobe Commerce オンプレミスで QPT をインストールして使用する方法
 
-パッチの適用と元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントの [ ソフトウェア更新ガイド/パッチ適用 ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) を参照してください。
+パッチの適用と元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントの [ ソフトウェア更新ガイド/パッチ適用 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) を参照してください。
 
 ### クラウドインフラストラクチャーにAdobe Commerce用 QPT をインストールして使用する方法
 
-クラウドインフラストラクチャで QPT をインストールして使用し、Adobe Commerceにパッチを適用したり元に戻したりする方法について詳しくは、開発者向けドキュメントの [Cloud for Adobe Commerce/パッチを適用 ](https://devdocs.magento.com/cloud/project/project-patch.html) を参照してください。
+クラウドインフラストラクチャで QPT をインストールして使用し、Adobe Commerceにパッチを適用したり元に戻したりする方法について詳しくは、開発者向けドキュメントの [Cloud for Adobe Commerce/パッチを適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 品質向上パッチツールのリリースノート ](https://devdocs.magento.com/quality-patches/release-notes.html)
+* 開発者向けドキュメントの [ 品質向上パッチツールのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 * [Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) をサポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート情報に含めます。

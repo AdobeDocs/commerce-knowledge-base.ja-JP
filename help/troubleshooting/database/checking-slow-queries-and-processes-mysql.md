@@ -4,7 +4,7 @@ description: この記事では、マーチャントのサイトに悪影響を�
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -80,5 +80,5 @@ Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイさ
 
 * dev.mysql.comの [MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html)
 * dev.mysql.comの [MySQL Kill 構文 ](https://dev.mysql.com/doc/refman/8.0/en/kill.html)。
-* [ セキュリティ、パフォーマンス、データ処理 ](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) については、開発者向けドキュメントを参照してください。
-* 開発者向けドキュメントの [MySQL ヘルプ ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html)。
+* [ セキュリティ、パフォーマンス、データ処理 ](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) については、開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [MySQL ヘルプ ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql)。

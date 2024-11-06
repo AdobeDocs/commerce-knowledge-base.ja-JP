@@ -4,7 +4,7 @@ description: この記事では、.csv ファイルから製品を読み込ん�
 exl-id: 7f7bf782-4b35-4067-aa94-417097079f1f
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. [ インポート機能 ](https://docs.magento.com/m2/ee/user_guide/system/data-import.html) を使用してファイルをインポートします。
+1. [ インポート機能 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) を使用してファイルをインポートします。
 1. バンドル製品ページを開きます。
 
 <u> 期待される結果 </u>:
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. .csv ファイル内の `bundle_values` 列の `position` パラメーターで、各オプションに対して位置を明示的に宣言します。 詳しい手順については、製品ガイドの [ 製品データの編集 ](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) を参照してください。
+1. .csv ファイル内の `bundle_values` 列の `position` パラメーターで、各オプションに対して位置を明示的に宣言します。 詳しい手順については、製品ガイドの [ 製品データの編集 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) を参照してください。
 1. 読み込み操作を繰り返します。
 
-読み込みの一般情報については、ユーザーガイドの [ バンドル製品の読み込み ](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) を参照してください。
+読み込みの一般情報については、ユーザーガイドの [ バンドル製品の読み込み ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) を参照してください。

@@ -1,9 +1,9 @@
 ---
 title: クラウドインフラストラクチャー上のAdobe Commerceの管理者 URL の変更
-description: デフォルトでは、[Commerce管理者 ] （https://docs.magento.com/m2/ee/user_guide/stores/admin.html）の URL は*&lt;domain\_name&gt;/admin*に設定されています。 この記事では、URL を変更する方法を説明します。
+description: デフォルトでは、[Commerce管理者 ] （https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin）の URL は*&lt;domain\_name&gt;/admin*に設定されています。 この記事では、URL を変更する方法を説明します。
 exl-id: 6236370c-e0a2-45a6-a38f-12e219c540af
 feature: Admin Workspace, Cloud
-source-git-commit: 04dba4e2adeaaa7649b817444024bf96e7830ad3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%

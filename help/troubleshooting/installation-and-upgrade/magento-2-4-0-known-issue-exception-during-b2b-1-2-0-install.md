@@ -4,7 +4,7 @@ description: この記事では、B2B 1.2.0 のインストール時に「setup:
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -69,8 +69,8 @@ composer のパッチ手順については、[Adobeが提供する composer パ�
 
 <u>Git パッチ </u>
 
-* クラウドインフラストラクチャー上のAdobe Commerceに対する Git パッチの手順については、開発者向けドキュメントの [ パッチを適用する ](https://devdocs.magento.com/cloud/project/project-patch.html) を参照してください。
-* Adobe Commerceの Git パッチ手順については、開発者向けドキュメントの [ パッチの適用：カスタムパッチ ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) を参照してください。
+* クラウドインフラストラクチャー上のAdobe Commerceに対する Git パッチの手順については、開発者向けドキュメントの [ パッチを適用する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
+* Adobe Commerceの Git パッチ手順については、開発者向けドキュメントの [ パッチの適用：カスタムパッチ ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) を参照してください。
 
 ## 関連資料
 

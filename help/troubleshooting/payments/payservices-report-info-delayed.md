@@ -4,7 +4,7 @@ description: この記事では、支払いサービスのレポートデータ�
 exl-id: 2f3249d1-be12-45bc-aa73-bef9766509ae
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 前提条件：支払いサービス機能を使用して注文が行われます。
 
-1. 注文は、[ 管理者 ](https://docs.magento.com/user-guide/sales/invoice-create.html) で [ 請求 ](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) （またはキャンセル [ または ](https://docs.magento.com/user-guide/stores/admin.html) クレジットメモによる払い戻し ](https://docs.magento.com/user-guide/sales/credit-memos.html)[ されます。
+1. 注文は、[ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) で [ 請求 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) （またはキャンセル [ または ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) クレジットメモによる払い戻し ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)[ されます。
 1. 注文支払ステータスレポートに移動して、その注文に関する情報を表示します。
 1. ステータスは `AUTHORIZED` と表示されます。これは、請求またはその他の注文アクションの前の注文ステータスです。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これは、一般的なユースケースの 1 つにすぎません。 [ 注文アクション ](https://docs.magento.com/user-guide/sales/order-actions.html) が発生し、該当するレポートですぐにデータを使用できない場合は、他のユースケースが考えられます。
+>これは、一般的なユースケースの 1 つにすぎません。 [ 注文アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) が発生し、該当するレポートですぐにデータを使用できない場合は、他のユースケースが考えられます。
 
 <u> 期待される結果 </u>:
 レポートデータは、注文に対するアクションが発生した直後に入力されます。

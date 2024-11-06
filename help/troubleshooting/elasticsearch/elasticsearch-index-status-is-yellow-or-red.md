@@ -2,7 +2,7 @@
 title: Elasticsearchインデックスのステータスが「イエロー」または「レッド」である
 description: この記事では、Elasticsearchインデックスのステータスが「*green*」でない場合の解決策を提供します。 '*yellow*'は正常を示し、'*red*'は不良を示します。 「黄」または「赤」ステータスは、製品が見つからない場合や、古い製品情報が表示される場合に発生する可能性があります。
 exl-id: 27689511-6a41-41a9-8dda-a627d2f65263
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) を参照してください。
+> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 
 この記事では、Elasticsearchインデックスのステータスが「*green*」でない場合の解決策を提供します。 「*yellow*」は正常を示し、「*red*」は不良を示します。 「黄」または「赤」ステータスは、製品が見つからない場合や、古い製品情報が表示される場合に発生する可能性があります。
 

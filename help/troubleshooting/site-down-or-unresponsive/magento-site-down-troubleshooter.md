@@ -4,7 +4,7 @@ description: 各質問をクリックすると、トラブルシューティン�
 exl-id: 10a2313e-cc82-4ffc-9247-624884f3e165
 feature: Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -80,7 +80,7 @@ b.いいえ – [ 手順 7](#step-7) に進みます。
 
 +++**Elasticsearchエラーはありますか？**
 
-a.はい – [Elasticsearchの確認 ](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/) 手順に進みます。\
+a.はい – [Elasticsearchの確認 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) 手順に進みます。
 b.いいえ – [ 手順 8](#step-8) に進みます。
 
 +++
@@ -116,7 +116,7 @@ b.いいえ – [ 手順 11](#step-11) に進みます。
 
 +++**Redis エラーが表示されますか？**
 
-a.はい – 手順に進んで [ 実行中であることを確認  [!DNL Redis] ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/redis#troubleshooting-redis) および [[!DNL Redis]  トラブルシューティング ](https://redis.io/topics/problems) を行います。\
+a.はい – 手順に進んで [ 実行中であることを確認  [!DNL Redis] ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection) および [[!DNL Redis]  トラブルシューティング ](https://redis.io/topics/problems) を行います。\
 b.いいえ – [ 手順 12](#step-12) に進みます。
 
 +++

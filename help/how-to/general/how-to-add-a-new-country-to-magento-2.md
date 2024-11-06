@@ -3,7 +3,7 @@ title: Adobe Commerceへの新しい国の追加方法
 description: この文書では、Adobe Commerceと Zend ロケールライブラリに存在しない国を追加する方法を説明します。 これには、該当する契約条件の下で顧客のカスタマイズを構成するコードとデータベースの変更が必要です。 この記事に含まれるサンプル資料は、いかなる保証もなく「現状のまま」提供されることに注意してください。 Adobeまたは関連会社は、これらの資料を維持、修正、更新、変更、修正、またはその他の方法でサポートする義務を負いません。 ここでは、これを達成するために行う必要があるものの基本原則を説明します。
 exl-id: af499add-4966-4a3a-972a-62a34c169a1b
 feature: Build, Cache
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 新しいモジュールを作成する前に、開発者向けドキュメントの次のトピックを参照してください。
 
-* [PHP デベロッパーガイド ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html)
-* [ モジュールの概要 ](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [ 新しいモジュールの作成 ](https://devdocs.magento.com/videos/fundamentals/create-a-new-module/)
-* [ モジュール設定ファイル ](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-files.html)
+* [PHP デベロッパーガイド ](https://developer.adobe.com/commerce/php/development/)
+* [ モジュールの概要 ](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [ 新しいモジュールの作成 ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
+* [ モジュール設定ファイル ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## 必要な情報
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 この例では、次のディレクトリ構造で\&#39;ExtraCountries\&#39;という新しいモジュールを作成します。
 
-（モジュール構造について詳しくは、開発者向けドキュメントの [ モジュールの概要 ](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) を参照してください）。
+（モジュール構造について詳しくは、開発者向けドキュメントの [ モジュールの概要 ](https://developer.adobe.com/commerce/php/architecture/modules/overview/) を参照してください）。
 
 <pre><ExtraCountries>
  |
@@ -97,7 +97,7 @@ ht-degree: 0%
 </config>
 ```
 
-モジュール設定ファイルについて詳しくは、開発者向けドキュメントの [PHP 開発者ガイド/設定ファイルの定義 ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) を参照してください。
+モジュール設定ファイルについて詳しくは、開発者向けドキュメントの [PHP 開発者ガイド/設定ファイルの定義 ](https://developer.adobe.com/commerce/php/development/build/required-configuration-files/) を参照してください。
 
 これらの変更はオプションであり、「国を許可」、「郵便番号はオプションです」および「欧州連合（EU）諸国」リストに対する新しい国のデフォルトに影響するだけです。 このファイルをモジュール構造からスキップした場合でも、新しい国は追加されますが、**管理者**/**ストア**/*設定*/**設定**/**一般**/**国オプション** 設定ページで手動で設定する必要があります。
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 モジュール登録ファイルでは、「Adobe Commerce Directory」モジュールの依存性を指定し、「Extra Countries」モジュールが Directory モジュールの後に登録され、実行されることを確認する必要があります。
 
-モジュールの依存関係について詳しくは、開発者向けドキュメントの [ モジュールの依存関係の管理 ](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) を参照してください。
+モジュールの依存関係について詳しくは、開発者向けドキュメントの [ モジュールの依存関係の管理 ](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies) を参照してください。
 
 `module.xml` 例
 
@@ -185,7 +185,7 @@ class TranslatedListsPlugin
 
 このデータパッチは、Adobe Commerceのインストールまたはアップグレードプロセス中に実行され、新しい国レコードをデータベースに追加します。
 
-データパッチについて詳しくは、開発者向けドキュメントの [ データおよびスキーマパッチの開発 ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) を参照してください。
+データパッチについて詳しくは、開発者向けドキュメントの [ データおよびスキーマパッチの開発 ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) を参照してください。
 
 次の例では、メソッド `apply()` の `$data` 配列に、新しい国の国 ID、ISO2 および ISO3 コードが含まれ、このデータがデータベースに挿入されていることがわかります。
 
@@ -266,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-次に registration.php ファイルの例を示します。 モジュールの登録について詳しくは、開発者向けドキュメントの [PHP 開発者ガイド > コンポーネントの登録 ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) を参照してください。
+次に registration.php ファイルの例を示します。 モジュールの登録について詳しくは、開発者向けドキュメントの [PHP 開発者ガイド > コンポーネントの登録 ](https://developer.adobe.com/commerce/php/development/build/component-registration/) を参照してください。
 
 ```php
 <?php
@@ -279,7 +279,7 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 これは、composer.json ファイルの例です。
 
-composer.json について詳しくは、開発者向けドキュメントの [PHP Developer Guide > The composer.json file](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html) を参照してください。
+composer.json について詳しくは、開発者向けドキュメントの [PHP Developer Guide > The composer.json file](https://developer.adobe.com/commerce/php/development/build/composer-integration/) を参照してください。
 
 ```json
 {
@@ -310,7 +310,7 @@ composer.json について詳しくは、開発者向けドキュメントの [P
 
 ## モジュールのインストール
 
-モジュールのインストール方法については、開発者ドキュメントの [ モジュールの場所 ](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) を参照してください。
+モジュールのインストール方法については、開発者ドキュメントの [ モジュールの場所 ](https://developer.adobe.com/commerce/php/architecture/modules/overview/#module-locations) を参照してください。
 
 モジュールディレクトリが正しい場所に配置されたら、`bin/magento setup:upgrade` を実行してデータパッチを適用し、翻訳プラグインを登録します。
 

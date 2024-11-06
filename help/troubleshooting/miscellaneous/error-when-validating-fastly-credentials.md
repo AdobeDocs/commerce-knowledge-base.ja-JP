@@ -4,7 +4,7 @@ description: この記事では、Fastly 資格情報の検証時にユーザー
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 831a928dbe8fd6b37f3fe9ad5dc35ee80e11a578
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -22,11 +22,11 @@ Fastly 資格情報の検証時にエラーが発生します。
 ## 影響を受ける製品とバージョン
 
 * Adobe Commerce（すべてのデプロイメント方法）：すべてのバージョン
-* 拡張機能またはテクノロジー（Fastly、New Relicなど） バージョン Fastly
+* 拡張機能またはテクノロジー（Fastly、New Relicなど）のバージョン Fastly
 
 ## 解決策
 
-1. 正しい Fastly サービス ID と API トークンがあることを確認して、もう一度検証を試してください。 詳しい手順については、開発者向けドキュメントの [Fastly 資格情報のテスト ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) を参照してください。
+1. 正しい Fastly サービス ID と API トークンがあることを確認して、もう一度検証を試してください。 詳しい手順については、開発者向けドキュメントの [Fastly 資格情報のテスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) を参照してください。
 1. 資格情報の検証に失敗した場合は、次の curl コマンドを実行して、サービスのステータスを確認します。
 
    ```curl
@@ -45,6 +45,6 @@ Fastly 資格情報の検証時にエラーが発生します。
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [Cloud for Adobe Commerce/Fastly/Fastly サービスアカウントと資格情報 ](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
+* [Cloud for Adobe Commerce/Fastly/Fastly サービスアカウントと資格情報 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce/Fastly の設定/Fastly 資格情報のテスト ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce/Fastly の設定/Fastly 資格情報のテスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

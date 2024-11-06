@@ -4,7 +4,7 @@ description: この記事では、クラウドインフラストラクチャ上�
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
@@ -58,4 +58,4 @@ php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 
 ## 関連資料
 
-* 開発者向けドキュメントの [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html)。
+* 開発者向けドキュメントの [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid)。

@@ -4,7 +4,7 @@ description: Adobe Commerce on cloud infrastructure Pro プランアーキテク
 exl-id: 4d08eaad-a3ce-4f6c-9c32-58e44e1d6534
 feature: Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Adobe Commerceの管理アラート
 
 
-サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 開発者向けドキュメントの [New Relic通知チャネルの設定 ](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) を参照してください。
+サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 開発者向けドキュメントの [New Relic通知チャネルの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) を参照してください。
 
 >[!NOTE]
 >

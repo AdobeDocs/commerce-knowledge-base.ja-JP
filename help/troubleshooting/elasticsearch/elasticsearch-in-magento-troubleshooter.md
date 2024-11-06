@@ -3,7 +3,7 @@ title: Adobe CommerceのElasticsearchに関するトラブルシューティン�
 description: Adobe CommerceのElasticsearchに関する問題は、Elasticsearchのトラブルシューティング ツールを使用して解決できます。 各質問をクリックすると、トラブルシューティングの各ステップの回答が表示されます。
 exl-id: acae0da0-2918-4021-9fbe-c138940c5a72
 feature: Categories
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -100,7 +100,7 @@ b. NO - カタログ検索のステータスが _再インデックスが必要_
 
 +++ファイル **`.yaml`最近更新されましたか？**
 
-a.はい – DevDocs`.yaml` 参照してElasticsearch設定を確認します [ 設定をElasticsearchするには、Elasticsearch：を設定します ](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=elastic%20search%20yaml)。\
+a.はい – DevDocs`.yaml` 参照してElasticsearch設定を確認します [ 設定をElasticsearchするには、Elasticsearch：を設定します ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)。\
 b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++
@@ -131,7 +131,7 @@ b.いいえ – [ 手順 12](#step-12) に進みます。
 
 +++**ストレージ使用率 > 85%?**
 
-a.はい。利用可能なストレージを増やす必要があります。 DevDocs[ 設定Elasticsearch:Elasticsearchを有効にするには、を参照してください ](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=elastic%20search%20yaml) 次に、`localhost:9200/_cat/allocation?v` を実行します（Pro ステージング環境または実稼動環境の場合）。 （すべてのスターターのブランチを含む）統合環境の 1 つにいる場合は、`elasticsearch.internal:9200/_cat/allocation?v` を実行します。 [ 手順 11](#step-11) に進みます。\
+a.はい。利用可能なストレージを増やす必要があります。 DevDocs[ 設定Elasticsearch:Elasticsearchを有効にするには、を参照してください ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) 次に、`localhost:9200/_cat/allocation?v` を実行します（Pro ステージング環境または実稼動環境の場合）。 （すべてのスターターのブランチを含む）統合環境の 1 つにいる場合は、`elasticsearch.internal:9200/_cat/allocation?v` を実行します。 [ 手順 11](#step-11) に進みます。\
 b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)。
 
 +++

@@ -4,7 +4,7 @@ description: この記事では、デプロイメント後に画像が正しく�
 exl-id: 7e6bcebd-edff-437a-9103-2743443d2ed9
 feature: Cache, Categories, Deploy, Storefront
 role: Admin
-source-git-commit: c4d586ca3980acbe4f33c5f2616ef7f3051bc7d3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 これを実行するには、[Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) から使用できる SSH 情報とストア URL が必要です。
 
-1. [ データベースダンプ ](/help/how-to/general/create-database-dump-on-cloud.md) のソースとなったプロジェクトに SSH で接続します。詳しくは、開発者向けドキュメントの [ 環境への SSH](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) を参照してください。
+1. [ データベースダンプ ](/help/how-to/general/create-database-dump-on-cloud.md) のソースとなったプロジェクトに SSH で接続します。詳しくは、開発者向けドキュメントの [ 環境への SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) を参照してください。
 1. 次を実行して画像キャッシュを再生成します。
 
    ```bash

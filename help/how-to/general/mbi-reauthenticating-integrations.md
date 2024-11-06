@@ -3,7 +3,7 @@ title: 「MBI：統合の再認証」
 description: この記事では、サードパーティのサービスからデータを取り込むために必要な権限をMagento Business Intelligence（MBI）に付与するために、統合を再認証するソリューションについて説明します。 これらの権限が取り消された場合は、再認証が必要です。
 exl-id: c608d6f9-64a5-44f8-9d7b-9a85a2668775
 feature: Commerce Intelligence, Integration
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## データベースと SaaS の統合
 
-データベースおよび SaaS 統合のリストについては、開発者向けドキュメントの [ 統合を使用した外部データの接続 ](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) を参照してください。 （ページを開く場合は、左側の目次をナビゲーションに使用します）。
+データベースおよび SaaS 統合のリストについては、開発者向けドキュメントの [ 統合を使用した外部データの接続 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) を参照してください。 （ページを開く場合は、左側の目次をナビゲーションに使用します）。
 
 ## 接続に問題がありますか？
 

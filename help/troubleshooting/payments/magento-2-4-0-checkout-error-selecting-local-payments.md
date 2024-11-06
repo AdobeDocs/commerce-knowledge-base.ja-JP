@@ -4,7 +4,7 @@ description: 「この記事では、チェックアウト中にAdobe Commerce�
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * Adobe Commerce 2.4.0 がインストールされています。
 * 1 つの製品と 1 つのカテゴリを作成します。
-* [Braintree支払い方法 ](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html) を構成します。
+* [Braintree支払い方法 ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree.html) を構成します。
 
 <u> 再現手順 </u>:
 

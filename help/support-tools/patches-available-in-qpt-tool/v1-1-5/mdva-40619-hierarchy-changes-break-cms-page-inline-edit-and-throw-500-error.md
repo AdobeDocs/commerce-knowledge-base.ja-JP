@@ -1,19 +1,19 @@
 ---
-title: 「MDVA-40619：階層の変更により CMS ページのインライン編集が中断され、500 エラーがスローされる」
-description: MDVA-40619 パッチは、CMS ページ階層の変更によって CMS ページのインライン編集が中断され、「500 エラー」がスローされる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md） 1.1.5 がインストールされている場合に利用できます。 パッチ ID は MDVA-40619。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: 「MDVA-40619：階層の変更により、CMS ページのインライン編集が中断され、500 エラーがスローされる」
+description: MDVA-40619 パッチは、CMSのページ階層が変更されると、CMSのページのインライン編集が中断され、「500 エラー」がスローされる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md） 1.1.5 がインストールされている場合に利用できます。 パッチ ID は MDVA-40619。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 exl-id: c003d845-1ba0-49c0-9f1a-a4b0ec00f30c
 feature: CMS
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# MDVA-40619：階層の変更により CMS ページのインライン編集が中断され、500 エラーがスローされる
+# MDVA-40619：階層の変更により、CMS ページのインライン編集が中断され、500 エラーがスローされる
 
-MDVA-40619 パッチは、CMS ページ階層の変更によって CMS ページのインライン編集が中断され、「500 エラー」がスローされる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.5 がインストールされている場合に使用できます。 パッチ ID は MDVA-40619。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-40619 パッチは、CMSのページ階層が変更されると、CMSのページのインライン編集が中断され、「500 エラー」がスローされる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)1.1.5 がインストールされている場合に使用できます。 パッチ ID は MDVA-40619。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,11 +27,11 @@ MDVA-40619 パッチは、CMS ページ階層の変更によって CMS ページ
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-CMS のページ階層が変更されると、CMS のページのインライン編集が中断し、「500 エラー」がスローされる。
+CMS ページの階層が変更されると、CMS ページのインライン編集が機能しなくなり、「500 エラー」がスローされる。
 
 <u> 再現手順 </u>:
 
@@ -40,7 +40,7 @@ CMS のページ階層が変更されると、CMS のページのインライン
 1. 「親ノード階層を使用」のチェックを外します。
 1. ページを手動で選択し、「**保存** をクリックします。
 1. 次に、**コンテンツ**/**ページ** に移動します。
-1. グリッドから CMS ページを編集してみてください。
+1. グリッドから任意のCMSページを編集してみます。
 1. **保存** をクリックします。
 
 <u> 期待される結果 </u>:
@@ -59,8 +59,8 @@ CMS のページ階層が変更されると、CMS のページのインライン
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

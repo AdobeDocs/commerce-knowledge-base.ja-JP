@@ -1,10 +1,10 @@
 ---
 title: クラウドインフラストラクチャー上のAdobe Commerceでディスクの容量が不足した場合に、ファイルを安全に削除できます
-description: この記事では、ディスク容量が不足し、ファイルを安全に削除する必要がある場合の解決策を説明します。 このアクションを検討する前に、開発者向けドキュメントの [ ディスク容量の管理 ] （https://devdocs.magento.com/cloud/project/manage-disk-space.html#no-space-left）を確認してください。 その記事の手順が自分に適していない場合や問題が解決しない場合は、この記事の手順を確認してください。
+description: この記事では、ディスク容量が不足し、ファイルを安全に削除する必要がある場合の解決策を説明します。 このアクションを検討する前に、開発者向けドキュメントの [ ディスク容量の管理 ] （https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left）を確認してください。 その記事の手順が自分に適していない場合や問題が解決しない場合は、この記事の手順を確認してください。
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 86515936f72bbd0a5778cb81f665993ed91e4707
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -59,4 +59,4 @@ FS='/data/exports';NUMRESULTS=20;resize;clear; echo "Please find below the Large
 
 開発者向けドキュメントでは、
 
-* [ ディスク容量の管理 ](https://devdocs.magento.com/cloud/project/manage-disk-space.html)
+* [ ディスク容量の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

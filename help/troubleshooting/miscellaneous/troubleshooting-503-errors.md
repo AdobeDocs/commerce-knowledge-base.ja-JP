@@ -4,7 +4,7 @@ description: この記事では、特定の Varnish Cache のデフォルト値�
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 9c5e993b69a98865a1142110625252da848eae04
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -63,4 +63,4 @@ Varnish がキャッシュアプリケーションとして設定されていて
 $ bin/magento cache:enable
 ```
 
-コマンドラインの使用について詳しくは、「[ コマンドライン設定の概要 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands.html) を参照してください。
+コマンドラインの使用について詳しくは、「[ コマンドライン設定の概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) を参照してください。

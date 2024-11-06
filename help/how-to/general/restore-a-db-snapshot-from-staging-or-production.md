@@ -2,7 +2,7 @@
 title: ステージング環境または実稼動環境から DB スナップショットを復元
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceでステージング環境または実稼動環境から DB スナップショットを復元する方法について説明します。
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -62,7 +62,7 @@ ht-degree: 0%
    ```
 
 1. データベース [!DNL dump file] （例：[!DNL Production] の場合は `<cluster ID>.sql.gz`、[!DNL Staging] の場合は `<cluster ID_stg>.sql.gz`）をローカルコンピューターにコピーします。
-1. 開発者向けドキュメントで、データベースにリモートで接続する [!DNL SSH tunnel] を [[!DNL SSH]  および  [!DNL sFTP]: [!DNL SSH tunneling]](https://devdocs.magento.com/cloud/env/environments-ssh.html#env-start-tunn) のように設定していることを確認します。
+1. 開発者向けドキュメントで、データベースにリモートで接続する [!DNL SSH tunnel] を [[!DNL SSH]  および  [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) のように設定していることを確認します。
 1. データベースに接続します。
 
    ```sql
@@ -152,5 +152,5 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [ コードのインポート：データベースをインポートします ](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html#cloud-import-db)。
-* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース ](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)
+* [ コードのインポート：データベースをインポートします ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
+* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)

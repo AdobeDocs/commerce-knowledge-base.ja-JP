@@ -4,7 +4,7 @@ description: 「この記事では、New RelicでAdobe Commerceの MariaDB ア�
 exl-id: 707e20e0-faba-4bcd-884c-b54568787442
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ
 **動け！**
 
 * このアラートがクリアされるまで、スケジュールされている展開を中止します。
-* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、「[ 除外 IP アドレスのリストの管理 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt)」を参照してください。
+* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、「[ 除外 IP アドレスのリストの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#instgde-cli-maint-exempt)」を参照してください。
 * サイトパフォーマンスに影響が出ている場合は、読み込みなどのスクリプトを終了し、アラートの原因を特定してください。
 
 **やめて！**
@@ -56,7 +56,7 @@ DML 問合せクリティカル・アラートを受け取った場合は、手�
 1. コードの最適化または運用の最適化を探します。
 1. コードの最適化：一括挿入/更新、インデックス使用の最小化、コードのスロットルなどを使用してクエリを最適化する場合を想定しています。
 1. 運用の最適化：リソースを大量に消費するデータ変更の負荷を軽減し、トラフィック時間を短縮します。
-1. その他の最適化：ECE-Tools の最新バージョンを使用していることを確認してください。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 ](https://devdocs.magento.com/cloud/project/ece-tools-update.html) を参照してください。
+1. その他の最適化：ECE-Tools の最新バージョンを使用していることを確認してください。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
 
 ## 関連資料
 

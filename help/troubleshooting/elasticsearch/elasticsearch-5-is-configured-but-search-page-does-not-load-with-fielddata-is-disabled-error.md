@@ -3,7 +3,7 @@ title: Elasticsearch 5 が設定され、「Fielddata が無効になってい�
 description: 「ここでは、Elasticsearch 5 で検索ページが読み込まれず、次のような例外が発生する問題を修正する方法について説明します。」
 exl-id: f5fa8144-4e7c-45ce-89d0-a8367e91d6db
 feature: Cache
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -56,7 +56,7 @@ SELECT ea.attribute_code, ea.frontend_input, cea.is_filterable, cea.is_filterabl
 この問題を修正するには、`is_filterable` （レイヤーナビゲーションで使用）および `filterable_in_search` （検索結果レイヤーナビゲーションで使用）を「0」（使用しない）に設定する必要があります。 これを行うには、次の手順を実行します。
 
 1. データベースバックアップを作成します。
-1. [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

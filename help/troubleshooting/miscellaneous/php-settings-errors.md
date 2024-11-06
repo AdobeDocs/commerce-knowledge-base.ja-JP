@@ -4,7 +4,7 @@ description: この記事では、PHP の設定エラーに対する解決策を
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -48,7 +48,7 @@ PHP のメモリ制限を増やすには、次の手順に従います。
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-`max-input-vars` には「適切な」値はありません。設定のサイズと複雑さによって異なります。 必要に応じて、`php.ini` ファイルの値を変更します。 [ 必要な PHP 設定 ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) を参照してください。
+`max-input-vars` には「適切な」値はありません。設定のサイズと複雑さによって異なります。 必要に応じて、`php.ini` ファイルの値を変更します。 [ 必要な PHP 設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
 
 ## xdebug 最大関数のネスト レベル エラー
 
@@ -76,4 +76,4 @@ Parse error: syntax error, unexpected 'data' (T_STRING)
 
 [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags) の詳細情報。
 
-`php.ini` を編集して `asp_tags = off` を設定します。 詳しくは、[PHP の設定が必要 ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) を参照してください。
+`php.ini` を編集して `asp_tags = off` を設定します。 詳しくは、[PHP の設定が必要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。

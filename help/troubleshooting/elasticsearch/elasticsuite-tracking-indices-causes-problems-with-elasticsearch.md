@@ -2,7 +2,7 @@
 title: ElasticSuite トラッキングインデックスが原因でElasticsearchの問題が発生する
 description: この記事では、ElasticSuite プラグインによって生成されるトラッキングインデックスによって引き起こされるElasticsearchメモリの問題の問題について説明します。
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -68,5 +68,5 @@ Cron ジョブを作成して、トラッキングインデックスを削除し
 
 設定された時間頻度でインデックスを削除する場合は、開発者向けドキュメントの以下の記事を参照して、cron ジョブを作成します。
 
-* [ カスタム cron ジョブと cron グループの設定（チュートリアル） ](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [cron ジョブの設定 ](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [ カスタム cron ジョブと cron グループの設定（チュートリアル） ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [cron ジョブの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

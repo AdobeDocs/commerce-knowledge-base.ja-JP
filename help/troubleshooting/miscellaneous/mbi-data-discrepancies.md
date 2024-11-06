@@ -4,7 +4,7 @@ description: 「特定のレポートの数値が不正確に見えますか？ 
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 * [データの食い違い診断チェックリスト](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [書き出しを使用したデータの不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-また、不一致に関わるテーブルと列に正しい [ レプリケーション方法 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) と [ 再確認 ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) が設定されていることを確認することをお勧めします。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
+また、不一致に関わるテーブルと列に正しい [ レプリケーション方法 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) と [ 再確認 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) が設定されていることを確認することをお勧めします。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
 
 ## まだ助けが必要だ！
 

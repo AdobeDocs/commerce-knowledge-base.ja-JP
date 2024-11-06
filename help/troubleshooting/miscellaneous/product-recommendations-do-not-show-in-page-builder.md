@@ -4,7 +4,7 @@ description: ここでは、「製品のRecommendations」オプションがペ�
 exl-id: e96a446b-2e64-47a6-ac1b-e73183da9fb8
 feature: Page Builder, Configuration, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -37,5 +37,5 @@ ht-degree: 0%
 ## 関連資料
 
 * ユーザーガイドの [ コンテンツを追加 – 製品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)。
-* 開発者向けドキュメントの [Product Recommendationsのインストールと設定 ](https://devdocs.magento.com/recommendations/install-configure.html) を参照してください。
-* [Adobe Commerce ユーザーガイド ](https://docs.magento.com/user-guide/)
+* 開発者向けドキュメントの [Product Recommendationsのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) を参照してください。
+* [Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)

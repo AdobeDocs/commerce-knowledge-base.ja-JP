@@ -4,7 +4,7 @@ description: この記事では、コードのコンパイルに問題がある�
 exl-id: ba2dd229-29f6-43e2-9467-8bd1bf59e6ef
 feature: Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -57,7 +57,7 @@ CLI/ターミナルで次のコマンドを実行します。
 
 **クラウドインフラストラクチャ上のAdobe Commerceを修正する方法：**
 
-上記のコマンドを実行するか、7 月 29 日木曜日（PT）に利用可能になる最新バージョンの ECE ツール（ece-tools: 2002.1.7）にアップグレードします。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 ](https://devdocs.magento.com/cloud/project/ece-tools-update.html) を参照してください。
+上記のコマンドを実行するか、7 月 29 日木曜日（PT）に利用可能になる最新バージョンの ECE ツール（ece-tools: 2002.1.7）にアップグレードします。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
 
 完全な修正は、Adobe Commerce（すべてのデプロイメント方法） 2.4.4 でリリースされる予定です。
 

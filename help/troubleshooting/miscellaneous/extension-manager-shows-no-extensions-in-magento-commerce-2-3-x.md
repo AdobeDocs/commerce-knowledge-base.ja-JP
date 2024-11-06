@@ -4,7 +4,7 @@ description: この記事では、Commerce Marketplace経由で拡張機能を�
 exl-id: bed8506d-39b9-449a-891b-466d214a0fe8
 feature: Extensions
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Commerce Marketplace経由で拡張機能を購入した場合、コア Adobe Commerce Extension Managerを使用してインストールすることはできません。 アクセスキーを追加して Marketplace に同期すると、Extension Managerに拡張機能が表示されません。
 
-この問題の **回避策** は、開発者向けドキュメントの [ 一般的な CLI のインストール ](https://devdocs.magento.com/extensions/install/) に示されているように、コマンドライン Adobe Commerceのインストールを使用することです。
+この問題の **回避策** は、開発者向けドキュメントの [ 一般的な CLI のインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) に示されているように、コマンドライン Adobe Commerceのインストールを使用することです。
 
 <u> 再現手順 </u>:
 
@@ -44,4 +44,4 @@ Commerce Marketplace経由で拡張機能を購入した場合、コア Adobe Co
 
 ## 回避策
 
-開発者向けドキュメントの [ 一般的な CLI のインストール ](https://devdocs.magento.com/extensions/install/) に示されているコマンドライン Adobe Commerceのインストールを使用します。
+開発者向けドキュメントの [ 一般的な CLI のインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) に示されているコマンドライン Adobe Commerceのインストールを使用します。

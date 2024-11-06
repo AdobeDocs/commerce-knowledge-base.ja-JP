@@ -3,7 +3,7 @@ title: Adobeが提供する composer パッチの適用方法
 description: この文書では、Adobe Commerce オンプレミス、Adobe Commerce on cloud infrastructure、およびMagento Open Sourceに composer パッチを適用する方法について説明します。
 exl-id: a9301ad8-1d4b-49f5-b679-758624928219
 feature: Cache
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
    git push origin
    ```
 
-クラウドプロジェクトにパッチを適用する方法について詳しくは、開発者向けドキュメントの [ パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html) を参照してください。
+クラウドプロジェクトにパッチを適用する方法について詳しくは、開発者向けドキュメントの [ パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
 
 ### Adobe Commerceのオンプレミス環境およびMagento Open Sourceに composer パッチを適用する方法 {#commerce}
 

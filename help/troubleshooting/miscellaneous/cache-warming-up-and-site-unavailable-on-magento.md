@@ -4,7 +4,7 @@ description: この記事では、ページキャッシュがウォームアッ�
 exl-id: c91d5c1f-95e6-4240-be98-2acea49ae728
 feature: Cache, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 ## 解決策
 
-キャッシュウォームアップ中の同時接続数を制限します。 これには、キャッシュウォームアップスクリプトが同時に送信できるウォームアップリクエストの数を指定するために、`WARM_UP_CONCURRENCY` のデプロイ後変数を追加する必要があります。 このオプションを設定すると、Adobe Commerceのクラウドインフラストラクチャの負荷を管理するのに役立ちます。 手順については、開発者向けドキュメントの [Post-deploy variables > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) を参照してください。
+キャッシュウォームアップ中の同時接続数を制限します。 これには、キャッシュウォームアップスクリプトが同時に送信できるウォームアップリクエストの数を指定するために、`WARM_UP_CONCURRENCY` のデプロイ後変数を追加する必要があります。 このオプションを設定すると、Adobe Commerceのクラウドインフラストラクチャの負荷を管理するのに役立ちます。 手順については、開発者向けドキュメントの [ デプロイ後変数/WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) を参照してください。
 
 ## 関連資料
 
-ユーザーガイドの [ フルページキャッシュ ](https://docs.magento.com/user-guide/system/cache-full-page.html)
+ユーザーガイドの [ フルページキャッシュ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching)

@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerce バックエンドでエンテ�
 exl-id: e45dc88a-2da0-4524-bd61-6634cfebb169
 feature: Admin Workspace, Marketing Tools
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 原因：
 
-この問題は、最大セッションサイズに影響を与えた最近導入された新機能に関連しています。 開発者向けドキュメントの [ セッション管理 ](https://docs.magento.com/user-guide/stores/security-session-management.html) を参照してください。
+この問題は、最大セッションサイズに影響を与えた最近導入された新機能に関連しています。 開発者向けドキュメントの [ セッション管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) を参照してください。
 
 ## 解決策
 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* ユーザーガイドの [ マーケティングメニュー ](https://docs.magento.com/user-guide/marketing/marketing-menu.html)。
+* ユーザーガイドの [ マーケティングメニュー ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu)。

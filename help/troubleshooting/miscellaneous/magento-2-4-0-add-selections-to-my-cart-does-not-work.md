@@ -4,7 +4,7 @@ description: この記事では、顧客の買い物かごを管理する際にC
 exl-id: b0830ec2-2aea-4afb-8d02-e9c8f54283be
 feature: Orders, Shopping Cart
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe Commerceが選択内容を買い物かごに追加しません。
 
 ## 関連資料
 
-* ユーザーガイドの [MerchDocs](https://docs.magento.com/user-guide/sales/shopping-assisted-cart-manage.html) 買い物かごの管理。
+* ユーザーガイドの [MerchDocs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) 買い物かごの管理。
 * [Adobe Commerce 2.4.0 の既知の問題：ストアフロントに生のメッセージデータが表示されます ](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) アドビのサポートナレッジベースを参照してください。
 * [Adobe Commerce 2.4.0 の既知の問題：輸出税率が機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) アドビのサポートナレッジベースを参照してください。
 * [Adobe Commerce 2.4.0 既知の問題：Braintreeのお支払い方法が複数アドレスのチェックアウトに表示されません ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) アドビのサポートナレッジベースを参照してください。

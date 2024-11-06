@@ -3,7 +3,7 @@ title: Elasticsearchが正しくインストールされていることを確認
 description: この文書では、Elasticsearch（ES）のインストールと設定の誤りに起因する問題の解決策について説明します。
 exl-id: d2c5971c-4db4-4857-ae79-970313bce981
 feature: Install
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 * Adobe CommerceのオンプレミスおよびAdobe Commerceのクラウドインフラストラクチャ：
    * v2.2.3 以降は、ES 5.x をサポート
    * v2.2.8+および v2.3.1+は、ES 6.x をサポートしています。
-   * ES v2.x および v5.x は、[ 提供終了 ](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する ](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html) 必要があります。
+   * ES v2.x および v5.x は、[ 提供終了 ](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
 * Magento Open Source v2.3.0 以降では、ES 5.x および 6.x がサポートされています（ただし 6.x をお勧めします）。
 
 ## 問題
@@ -56,8 +56,8 @@ Elasticsearchが正しくインストールされていません。 これは次
 
 Elasticsearchを正しく設定するには：
 
-* クラウドインフラストラクチャー上のAdobe Commerceのマーチャントは、開発者向けドキュメントの [Elasticsearchサービスの設定 ](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html) の手順に従うことができます。
-* Adobe Commerceのオンプレミス環境およびMagento Open Source上のマーチャントは、開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) の手順に従うことができます。
+* クラウドインフラストラクチャー上のAdobe Commerceのマーチャントは、開発者向けドキュメントの [Elasticsearchサービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) の手順に従うことができます。
+* Adobe Commerceのオンプレミス環境およびMagento Open Source上のマーチャントは、開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) の手順に従うことができます。
 
 Elasticsearchを設定したら、正しく設定されていることを確認します。
 

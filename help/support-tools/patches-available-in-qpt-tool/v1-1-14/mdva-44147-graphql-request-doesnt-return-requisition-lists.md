@@ -4,7 +4,7 @@ description: MDVA-44147 パッチは、GraphQL リクエストが要求リスト
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -27,7 +27,7 @@ MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さな�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -36,8 +36,8 @@ GraphQL リクエストが購買依頼リストを返さない。
 <u> 再現手順 </u>:
 
 1. **ストア**/**設定**/**設定**/**一般**/**B2B 機能** に移動し、購買依頼リストを有効化します。
-1. 顧客としてログインし、[ 購買依頼リスト ](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html) に製品を追加します。
-1. [ 顧客トークン ](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html) を作成します。
+1. 顧客としてログインし、[ 購買依頼リスト ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) に製品を追加します。
+1. [ 顧客トークン ](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html) を作成します。
 
    <pre>
     <code class="language-graphql">
@@ -52,7 +52,7 @@ GraphQL リクエストが購買依頼リストを返さない。
       </code>
       </pre>
 
-1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) 記事を参照してください。
+1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) 記事を参照してください。
 
    リクエスト :
 
@@ -126,7 +126,7 @@ GraphQL リクエストが購買依頼リストを返さない。
       </code>
       </pre>
 
-1. 返されたリスト（MQ==）から任意の項目の UID をコピーし、次のクエリを使用して、UID でフィルタリングされたリストを取得します。
+1. 返されたリスト（MQ==）から任意の項目のUIDをコピーし、次のクエリを使用して、UIDでフィルタリングされたリストを取得します。
 
    <pre>
     <code class="language-graphql">
@@ -177,8 +177,8 @@ GraphQL リクエストが購買依頼リストを返さない。
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 
@@ -187,4 +187,4 @@ GraphQL リクエストが購買依頼リストを返さない。
 * [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) がサポートナレッジベースに追加されました。
 * [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかをサポートナレッジベースで確認します ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)。
 
-QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) を参照してください。
+QPT で利用可能なその他のパッチについて詳しくは、開発者向けドキュメントの [QPT で利用可能なパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を参照してください。

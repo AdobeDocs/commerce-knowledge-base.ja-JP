@@ -3,7 +3,7 @@ title: 特定の店舗の DB エンティティ （注文、請求書、クレ�
 description: この記事では、「ALTER TABLE」 SQL 文を使用して、特定のAdobe Commerce ストアでAdobe Commerce Database （DB）エンティティ（注文、請求書、クレジットメモなど）の増分 ID を変更する方法について説明します。
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 * Adobe Commerce オンプレミス：2.x.x
 * クラウドインフラストラクチャー上のAdobe Commerce:2.x.x
-* MySQL：任意の [ サポートされているバージョン ](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
+* MySQL：任意の [ サポートされているバージョン ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## ID を増分を変更する必要があるのはいつですか（ケース）
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 ## 前提条件の手順
 
 1. 新しい増分 ID を変更する必要があるストアとエンティティを見つけます。
-1. MySQL DB に [ 接続 ](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) します。 クラウドインフラストラクチャー上のAdobe Commerceの場合、最初に [SSH 経由で環境に接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) する必要があります。
+1. MySQL DB に [ 接続 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) します。 クラウドインフラストラクチャー上のAdobe Commerceの場合、最初に [SSH 経由で環境に接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) する必要があります。
 1. 次のクエリを使用して、エンティティシーケンステーブルの現在の auto\_increment 値を確認します。
 
 ```sql
@@ -53,7 +53,7 @@ SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_typ
 
 ### 関連ドキュメント
 
-* 開発者向けドキュメントの [ リモート MySQL データベース接続の設定 ](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html)。
+* 開発者向けドキュメントの [ リモート MySQL データベース接続の設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)。
 
 ## 増分 ID を変更するエンティティを更新
 

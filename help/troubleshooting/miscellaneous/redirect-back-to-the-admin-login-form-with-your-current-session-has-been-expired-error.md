@@ -4,7 +4,7 @@ description: 「この記事では、[!UICONTROL Commerce Admin] のログイン
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### セッションストレージの変更
 
-セッションストレージを変更してみてください。 開発者向けドキュメントの [ セッションファイルの探し方 ](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) 記事の情報を使用して、セッションが保存されている場所を確認し、`app/etc/env.php` ファイルを編集して変更します。
+セッションストレージを変更してみてください。 開発者向けドキュメントの [ セッションファイルの探し方 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) 記事の情報を使用して、セッションが保存されている場所を確認し、`app/etc/env.php` ファイルを編集して変更します。
 
 例えば、ファイルシステムへのセッションの保存を開始するには、`'session'` セクションを次のように変更します。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 設定ファイルからデータを読み込む ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html)
+* 開発者向けドキュメントの [ 設定ファイルからデータを読み込む ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration)
 * 開発者向けドキュメントの [ 設定  [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
 * サポート技術情報で [ 「アカウントが一時的に無効になっています」というエラーが表示された [!UICONTROL Commerce Admin] ログインフォームにリダイレクト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) る
 * [ サポートナレッジベースで [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) にログインしようとすると、エラーが発生せずにログインフォームに戻ります

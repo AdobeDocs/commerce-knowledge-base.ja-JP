@@ -2,7 +2,7 @@
 title: サポートエージェントからリクエストされた場合に「スクラブ」ダンプを作成する方法
 description: この記事では、Adobe Commerce サポート担当者からデータベースとコードの「スクラブ」ダンプ（バックアップ）を提供するように求められたときに、Adobe Commerce管理者からダンプ（バックアップ）を作成する方法について説明します。 このダンプでは、プロセスを高速化するためにメディア ファイルが除外され、ファイルのサイズが小さくなります。 データベースをバックアップする際に、すべての機密データがハッシュ化されます。
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
-source-git-commit: e07ade849a4105b5e499b5282d75cb1b5321b6ea
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.x、2.4.x
 
 その後、をサポートに提供して、ダンプファイルへの直接ダウンロードリンク（ストアアドレスと表示されるファイル名）を確認できます。
 
-管理者からダンプを作成する際に問題が発生した場合は、開発者向けドキュメントの [ サポートユーティリティの実行 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) に記載されているように、CLI コマンドの使用を検討してください。
+管理者からダンプを作成する際に問題が発生した場合は、開発者向けドキュメントの [ サポートユーティリティの実行 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) に記載されているように、CLI コマンドの使用を検討してください。
 
 ## 関連資料
 

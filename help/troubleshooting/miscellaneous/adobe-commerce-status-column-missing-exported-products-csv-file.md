@@ -4,7 +4,7 @@ description: この記事では、書き出された製品を含む CSV ファ�
 exl-id: 3cbe1e6c-fc73-4331-add7-1ebcb28a4580
 feature: Data Import/Export, Products
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -50,5 +50,5 @@ CSV ファイル内の製品のステータス属性の名前が変更されま�
 
 ## 関連資料
 
-* ユーザーガイドの [CSV ファイルの操作 ](https://docs.magento.com/user-guide/system/data-csv.html)。
-* アドビのユーザーガイドの [ 製品書き出し属性リファレンス ](https://docs.magento.com/user-guide/system/data-attributes-product.html)。
+* ユーザーガイドの [CSV ファイルの操作 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv)。
+* アドビのユーザーガイドの [ 製品書き出し属性リファレンス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product)。

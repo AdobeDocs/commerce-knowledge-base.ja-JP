@@ -3,7 +3,7 @@ title: クラウドインフラストラクチャー上のAdobe Commerceで環�
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境をロールバックする様々なシナリオについて説明します。
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -55,13 +55,13 @@ ht-degree: 0%
 
 ## シナリオ 2：スナップショットの復元
 
-開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのスナップショットを復元する ](https://devdocs.magento.com/cloud/project/project-webint-snap.html#restore-snapshot) をお読みください。
+開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのスナップショットを復元する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) をお読みください。
 
 >[!NOTE]
 >
 >スナップショットの作成は、クラウドインフラストラクチャアカウントでAdobe Commerceにアクセスした後、大規模な変更を適用する前の最初の手順である必要があります。 これはベストプラクティスであり、強く推奨されます。
 
-開発者向けドキュメントの [ スナップショットの作成 ](https://devdocs.magento.com/cloud/project/project-webint-snap.html#create-snapshot) をお読みください。
+開発者向けドキュメントの [ スナップショットの作成 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) をお読みください。
 
 ## シナリオ 3：スナップショットがない、安定して構築（SSH 接続を使用可能）
 

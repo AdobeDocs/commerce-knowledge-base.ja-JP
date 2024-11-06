@@ -4,7 +4,7 @@ description: この記事では、セキュリティスキャンツールで実�
 exl-id: e5f7f8c6-2dd3-44e3-8d19-f1f38d06dd6c
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. ユーザーガイドの [ セキュリティスキャン ](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) の説明に従って、セキュリティスキャンツールを設定して web サイトを確認します。
+1. ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) の説明に従って、セキュリティスキャンツールを設定して web サイトを確認します。
 1. 「アクション」列で「**スキャンの実行**」を選択します。
 
 <u> 期待される結果 </u>:
@@ -47,5 +47,5 @@ Web サイトを開いてみます。
 
 ## 関連資料
 
-* アドビの開発者向けドキュメントの [ 運用開始してローンチする ](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan)。
-* ユーザーガイドの [ セキュリティスキャン ](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html)。
+* アドビの開発者向けドキュメントの [ 運用開始してローンチする ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview)。
+* ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)。

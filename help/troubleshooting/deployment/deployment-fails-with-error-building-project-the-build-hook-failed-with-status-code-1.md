@@ -4,7 +4,7 @@ description: 「この記事では、デプロイメントプロセスのビル�
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -78,11 +78,11 @@ Adobe Commerce on cloud infrastructure スタータープランアーキテク�
        php ./vendor/bin/ece-tools deploy
    ```
 
-   [ece-tools へのアップグレード ](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) の記事を参照してください。
+   [ece-tools へのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) の記事を参照してください。
 
 1. 次のコマンドを実行して、ECE-tools パッケージが `composer.lock` ファイルに存在することを確認します。    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    これらを指定した場合、応答は次の例のようになります。    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-[ece-tools へのアップグレード ](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) の記事を参照してください。
+[ece-tools へのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) の記事を参照してください。
 
 ### パッチが原因で問題が発生しているか。
 

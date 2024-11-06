@@ -4,7 +4,7 @@ description: ここでは、クラウドインフラストラクチャー上のA
 exl-id: 1b2c25d3-ca1b-4409-8d6b-378aa0952f94
 feature: Storage, Observability
 role: Developer
-source-git-commit: 9ee4145d5516a37fab1c092d539000627f242a93
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Adobe Commerceでは、すべてのログファイルが `var` ディレクト�
 * `var` ディレクトリをクリーンアップします。
 * `var` ディレクトリのサイズを追跡してクリーンアップする cron ジョブを設定します。
 * 未使用のディスク容量がある場合は、割り当てるディスク容量を増やします。 （スペース制限を確認する方法については、以下の節を参照してください）。
-   * スタータープラン、すべての環境、Pro プラン統合環境の場合は、[ ディスク領域の管理：ディスク領域の割り当て ](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html#application-disk-space) で説明しているように、未使用のディスク領域があれば割り当てることができます。
+   * スタータープラン、すべての環境、Pro プラン統合環境の場合は、[ ディスク領域の管理：ディスク領域の割り当て ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space) で説明しているように、未使用のディスク領域があれば割り当てることができます。
    * Pro プランのステージング環境および実稼動環境では、未使用のディスク容量がある場合に割り当てるディスク容量を増やすには、サポートにお問い合わせください。
 * ディスク容量の上限に達してもディスク容量の不足が発生する場合は、ディスク容量の購入を検討してください。詳しくは、Adobeアカウントチームにお問い合わせください。
 

@@ -3,7 +3,7 @@ title: Fastly レベルでAdobe Commerceの悪意のあるトラフィックを�
 description: この記事では、クラウドインフラストラクチャストア上のAdobe Commerceで DDoS 攻撃が行われていると思われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Web サイトが DDoS によって過負荷になっている場合、Commerce管理者にログインできない可能性があります（および、この記事で後述するすべての手順を実行する必要があります）。
 
-管理者にアクセスするには、[ メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html#instgde-cli-maint) の説明に従って web サイトをメンテナンスモードにし、IP アドレスを許可リストに登録します。 この操作が完了したら、メンテナンスモードを無効にします。
+管理者にアクセスするには、[ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) の説明に従って web サイトをメンテナンスモードにし、IP アドレスを許可リストに登録します。 この操作が完了したら、メンテナンスモードを無効にします。
 
 ## IP によるトラフィックのブロック
 
@@ -74,7 +74,7 @@ name: block_bad_useragents
 * ロボットはあなたの `robots.txt` を無視することができます。 特に、セキュリティの脆弱性を探して Web をスキャンするマルウェアロボットや、スパムの発信者が使用するメールアドレスの収集には注意を払いません。
 * `robots.txt` ファイルは、公開されているファイルです。 ロボットが使用したくないサーバーのセクションは誰でも確認できます。
 
-Adobe Commerce `robots.txt` の基本設定とデフォルトの設定については、開発者向けドキュメントの [ 検索エンジンロボット ](https://docs.magento.com/m2/ee/user_guide/marketing/search-engine-robots.html) の記事を参照してください。
+Adobe Commerce `robots.txt` の基本設定とデフォルトの設定については、開発者向けドキュメントの [ 検索エンジンロボット ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) の記事を参照してください。
 
 `robots.txt` に関する一般的な情報と推奨事項については、以下を参照してください。
 

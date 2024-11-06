@@ -4,7 +4,7 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -19,10 +19,10 @@ Adobe Commerceの高度なレポートの問題は、このトラブルシュー
 
 +++**Web サイトは高度なレポート要件を満たしていますか？**
 
-詳細レポートを使用すると、404 エラーページが表示される。 Web サイトは [ 高度なレポート要件 ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements) を満たしていますか？
+詳細レポートを使用すると、404 エラーページが表示される。 Web サイトは [ 高度なレポート要件 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) を満たしていますか？
 
 a.はい – [ 手順 2](#step-2) に進みます。\
-b.いいえ – [ 高度なレポート要件 ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements) の手順に従って、サイトの高度なレポート要件を完了します。 次に [ 手順 2](#step-2) に進みます。
+b.いいえ – [ 高度なレポート要件 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) の手順に従って、サイトの高度なレポート要件を完了します。 次に [ 手順 2](#step-2) に進みます。
 
 +++
 
@@ -44,7 +44,7 @@ b. NO – 出力には 1 つの通貨のみが表示されます。 例：`USD`�
 
 +++**分割データベースソリューションを使用していますか？**
 
-[ 分割データベースソリューション ](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) を使用していますか？
+[ 分割データベースソリューション ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) を使用していますか？
 
 回答：はい。パッチ **Advanced Reporting 404 error on split database solution[ で MDVA-26831** を使用し ](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md) キャッシュをクリアします。 ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。\
 b.いいえ – [ 手順 4](#step-4) に進みます。
@@ -55,10 +55,10 @@ b.いいえ – [ 手順 4](#step-4) に進みます。
 
 +++**詳細レポートは有効になっていますか？**
 
-**管理者**/**ストア**/**設定**/**設定**/**一般**/**詳細レポート** をオンにします。 詳細な手順については、[ 詳細レポート：詳細レポートを有効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) を参照してください。
+**管理者**/**ストア**/**設定**/**設定**/**一般**/**詳細レポート** をオンにします。 詳細な手順については、[ 詳細レポート：詳細レポートを有効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) を参照してください。
 
 a.はい – [ 手順 5](#step-5) に進みます。\
-b.いいえ – [ 詳細レポートを有効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) を選択して保存し、Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 データが読み込まれるかどうかを確認します。 問題が解決した場合。 [ ステップ 5](#step-5) に進まない場合。
+b.いいえ – [ 詳細レポートを有効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) を選択して保存し、Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 データが読み込まれるかどうかを確認します。 問題が解決した場合。 [ ステップ 5](#step-5) に進まない場合。
 
 +++
 
@@ -81,9 +81,9 @@ b.いいえ – トークンの値が NULL であるか、データベースに�
 
 a.はい – 次の手順を実行します。1. 次のクエリを実行します。\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [ 設定で詳細レポートモジュールを無効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active) します。\
+2\. [ 設定で詳細レポートモジュールを無効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active) します。\
 3\. Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 詳細レポートでデータが表示されない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
-b.いいえ – クエリから何も返されない場合は、次の手順に従います。1. [ 設定で詳細レポートモジュールを無効にする ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active) します。\
+b.いいえ – クエリから何も返されない場合は、次の手順に従います。1. [ 設定で詳細レポートモジュールを無効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active) します。\
 2\. Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 詳細レポートでデータが表示されない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
 
 +++

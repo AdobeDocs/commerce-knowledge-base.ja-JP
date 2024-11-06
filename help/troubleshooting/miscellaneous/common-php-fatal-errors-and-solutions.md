@@ -4,7 +4,7 @@ description: この文書では、Adobe Commerceのログを調べた際に見�
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 `max_execution_time = 120`
 
-[php.ini の設定をカスタマイズする ](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) の記事を参照してください。
+[php.ini の設定をカスタマイズする ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) の記事を参照してください。
 
 ## 例
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 解決策
 
-`php.ini` 設定をカスタマイズします。 この [php.ini の設定をカスタマイズする ](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) の記事を参照してください。
+`php.ini` 設定をカスタマイズします。 この [php.ini の設定をカスタマイズする ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) の記事を参照してください。
 
 ## 例
 
@@ -65,9 +65,9 @@ MySQL 環境のディスク領域が不足しています。 MySQL 環境に追�
 
 開発者向けドキュメントでは、
 
-* [PHP 設定エラー ](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
-* [ 必要な PHP 設定 ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
-* [Redis 検証 ](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
-* [Redis の設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
-* [PHP メモリ制限エラー ](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
-* [ 一般的な問題の解決策 – メモリ制限 ](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)
+* [PHP 設定エラー ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [ 必要な PHP 設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Redis 検証 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Redis の設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [PHP メモリ制限エラー ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [ 一般的な問題の解決策 – メモリ制限 ](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

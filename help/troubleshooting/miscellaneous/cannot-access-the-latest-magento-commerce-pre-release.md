@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerceの最新のプレリリース�
 exl-id: cbf54a15-b307-4bfc-90b7-cff98aeb4fce
 feature: Roles/Permissions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 プレリリースでは、リリースパッケージは次の 2 つの場所で使用できます。
 
-1. [magento.com](https://repo.magento.com/) の Composer を介して、アカウントのプライマリ MageID を使用します。 Composer の使用方法について詳しくは、開発者向けドキュメントの [Composer を使用したAdobe Commerceのインストール ](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) を参照してください。
+1. [magento.com](https://repo.magento.com/) の Composer を介して、アカウントのプライマリ MageID を使用します。 Composer の使用方法について詳しくは、開発者向けドキュメントの [Composer を使用したAdobe Commerceのインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) を参照してください。
 1. **マイアカウント**/**ダウンロード**[account.magento.com](https://account.magento.com/customer/account/login)
 
 >[!NOTE]

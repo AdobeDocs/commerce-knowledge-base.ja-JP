@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerce ストアのパフォーマン�
 exl-id: 7cb6a39f-923b-4acc-965d-23cf7b52c25a
 feature: Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -67,4 +67,4 @@ Adobe Commerceには次の 2 種類のキャッシュがあります。
 ## 推奨事項
 
 1. Commerce CLI からキャッシュをフラッシュしないでください。
-1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [ インデクサーの管理/インデクサーの設定 ](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) を参照してください。
+1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [ インデクサーの管理/インデクサーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を参照してください。

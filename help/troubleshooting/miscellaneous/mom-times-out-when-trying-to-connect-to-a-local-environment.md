@@ -4,7 +4,7 @@ description: ここでは、Adobe CommerceのMagento Order Managementシステ�
 exl-id: 19149d8c-ea24-46fb-8815-9f637afe46ca
 feature: System
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. ローカル環境にAdobe Commerceをインストールします。
 1. ngrok を設定して、ローカルサーバーを公開するトンネルを作成します。
-1. [OMS への接続 ](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) を試します。
+1. [OMS への接続 ](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/) を試します。
 
 <u> 期待される結果 </u>
 

@@ -4,7 +4,7 @@ description: この記事では、New RelicでAdobe Commerceに関する Apdex �
 exl-id: 6e3f28ae-734b-468f-b6a5-c4f2edb1cb4b
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 3493214b468ac93dc938690495ea0a6bcf645a29
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 <u> **動け！**</u>
 
 * このアラートがクリアされるまで、スケジュールされている展開を中止します。
-* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、開発者向けドキュメントの [ 免除 IP アドレスのリストを管理する ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt) を参照してください。
+* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、開発者向けドキュメントの [ 免除 IP アドレスのリストを管理する ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#instgde-cli-maint-exempt) を参照してください。
 
 <u>**やめて！**</u>
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 1. 問題がサービスのバージョンに起因するものではない場合：
    * 長時間実行中のクエリ、プライマリキーが定義されていない、インデックスが重複しているなど、MySQL のその他の問題を確認します。 手順については、サポートナレッジベースの [ クラウドインフラストラクチャ上のAdobe Commerceで発生するデータベースの最も一般的な問題 ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) を参照してください。
    * その他の PHP の問題をチェックします。 CLI/ターミナルで `ps aufx` を実行して、実行中のプロセスを確認します。 ターミナル出力には、現在実行中の cron ジョブとプロセスが表示されます。 出力でプロセスの実行時間を確認します。 実行時間が長い Cron がある場合は、Cron がハングしている可能性があります。 トラブルシューティングの手順については、サポートナレッジベースの [ パフォーマンスが遅い、実行時間が長い、Cron](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md) および [Cron ジョブが「実行中」ステータスのままになる ](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md) を参照してください。
-1. 問題の潜在的な原因が特定されたら、環境に SSH で問い合わせて詳細を確認します。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/技術と要件/SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) を参照してください。
+1. 問題の潜在的な原因が特定されたら、環境に SSH で問い合わせて詳細を確認します。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/技術と要件/SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) を参照してください。
 1. ソースの特定に引き続き苦労する場合は、最近のトレンドを確認し、最近のコードのデプロイメントまたは設定の変更に関する問題を特定します（例えば、新しい顧客グループやカタログの大幅な変更）。 コードのデプロイメントまたは変更における相関関係について、過去 7 日間のアクティビティを確認することをお勧めします。
-1. 妥当な時間内にソリューションが見つからない場合は、アップサイズをリクエストするか、サイトをまだメンテナンスモードに設定していない場合は配置します。 手順については、サポートナレッジベースの [temp resize のリクエスト方法 ](/help/how-to/general/how-to-request-temporary-magento-upsize.md) および開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) を参照してください。
-1. [upsize](/help/how-to/general/how-to-request-temporary-magento-upsize.md) によってサイトが通常の処理に戻った場合は、恒久的なアップサイズを要求すること（Adobeアカウントチームに連絡）を検討するか、負荷テストを実行してクエリまたはサービスの負荷を軽減するコードを最適化し、専用ステージングで問題を再現することを試みます。 開発者向けドキュメントの [Cloud for Adobe Commerce/テストデプロイメント/負荷とストレステスト ](https://devdocs.magento.com/cloud/live/stage-prod-test.html#loadtest) を参照してください。
+1. 妥当な時間内にソリューションが見つからない場合は、アップサイズをリクエストするか、サイトをまだメンテナンスモードに設定していない場合は配置します。 手順については、サポートナレッジベースの [temp resize のリクエスト方法 ](/help/how-to/general/how-to-request-temporary-magento-upsize.md) および開発者向けドキュメントの [ インストールガイド/メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。
+1. [upsize](/help/how-to/general/how-to-request-temporary-magento-upsize.md) によってサイトが通常の処理に戻った場合は、恒久的なアップサイズを要求すること（Adobeアカウントチームに連絡）を検討するか、負荷テストを実行してクエリまたはサービスの負荷を軽減するコードを最適化し、専用ステージングで問題を再現することを試みます。 開発者向けドキュメントの [Cloud for Adobe Commerce/テストデプロイメント/負荷とストレステスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing) を参照してください。

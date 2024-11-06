@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerceのインストール後にス�
 exl-id: f33cee89-b416-4d63-8cc5-9cc57618ce92
 feature: Install, Storefront
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -47,8 +47,8 @@ ht-degree: 0%
 
 使用しているソフトウェアと問題の原因に応じて、次のような解決策が考えられます。
 
-* Apache web サーバーを使用している場合は、[server rewrites](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) の設定と、Adobe Commerce/Magento Open Sourceサーバーのベース URL を確認して、もう一度試してください。 Apache `AllowOverride` ディレクティブの設定が正しくない場合は、静的ファイルが正しい場所から提供されません。
-* nginx web サーバを使用している場合は、必ず [ 仮想ホスト ファイルを設定 ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu) してください。 nginx 仮想ホストファイルは、次の条件を満たす必要があります。
+* Apache web サーバーを使用している場合は、[server rewrites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache#apache-rewrites-and-htaccess) の設定と、Adobe Commerce/Magento Open Sourceサーバーのベース URL を確認して、もう一度試してください。 Apache `AllowOverride` ディレクティブの設定が正しくない場合は、静的ファイルが正しい場所から提供されません。
+* nginx web サーバを使用している場合は、必ず [ 仮想ホスト ファイルを設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) してください。 nginx 仮想ホストファイルは、次の条件を満たす必要があります。
    * `include` ディレクティブは、Adobe Commerce/Magento Open Sourceのインストールディレクトリにあるサンプル nginx 設定ファイルを指している必要があります。 例：    `include /var/www/html/magento2/nginx.conf.sample;`
    * `server_name` ディレクティブは、Adobe Commerce/Magento Open Sourceをインストールするときに指定したベース URL と一致する必要があります。 例：`server_name 192.186.33.10;`
-* アプリケーションが [ 実稼動モード ](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode) の場合は、`magento setup:static-content:deploy` コマンドを使用して静的ビューファイルをデプロイしてみてください。 静的ファイルのデプロイについて詳しくは、開発者ドキュメントの [ 静的ビューファイルのデプロイ ](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) を参照してください。
+* アプリケーションが [ 実稼動モード ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode) の場合は、`magento setup:static-content:deploy` コマンドを使用して静的ビューファイルをデプロイしてみてください。 静的ファイルのデプロイについて詳しくは、開発者ドキュメントの [ 静的ビューファイルのデプロイ ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。

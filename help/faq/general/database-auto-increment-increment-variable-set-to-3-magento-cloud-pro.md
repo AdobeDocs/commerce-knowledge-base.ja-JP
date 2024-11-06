@@ -3,7 +3,7 @@ title: Cloud pro アーキテクチャで、データベース auto_increment in
 description: これは、3 ノードアーキテクチャが原因のクラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャソリューションで期待される動作であり、変更できません。
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -31,5 +31,5 @@ Galera データベース・クラスタが使用されます。これは、各�
 
 詳しくは、開発者向けドキュメントを参照してください。
 
-* [Cloud for Adobe Commerce/Pro アーキテクチャ/バックアップと災害復旧 ](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Cloud for Adobe Commerce/インストールの前提条件：database](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)
+* [Cloud for Adobe Commerce/Pro アーキテクチャ/バックアップと災害復旧 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce/インストールの前提条件：database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
