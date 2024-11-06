@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 5110233220a6db734be2802b792869759f46b8c0
+source-git-commit: d197baf1644dd734880e6e36d6cf477bad3b1170
 workflow-type: tm+mt
-source-wordcount: '9627'
+source-wordcount: '9597'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,11 @@ ht-degree: 0%
          * [MDVA-38799：ステージング更新プログラムの作成後にダウンロード可能な製品が保存されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-0/mdva-38799-downloadable-products-were-not-saved-after-creating-a-staging-update.md)
          * [MDVA-38827：顧客がメールで注文出荷エラーを受信する](/help/support-tools/patches-available-in-qpt-tool/v1-1-0/mdva-38827-customers-receive-an-order-shipment-email-containing-an-error-message.md)
       * v1.1.1 {#v1-1-1}
-         * [概要：品質向上パッチツール（QPT） v1.1.1](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/overview.md)
-         * [MDVA-34948:Web サイトの速度が低下](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-34948-slow-site-and-operations.md)
-         * [MDVA-36021：注文の詳細を開くとエラーメッセージが表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-36021-call-to-a-member-function-getid-error-on-the-order-details-page.md)
-         * [MDVA-37897：最近表示された項目から製品を追加すると、リダイレクトが正しく表示されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-37897-incorrect-redirect-when-customers-try-to-add-products-with-options-from-recently-viewed-widget.md)
-         * [MDVA-39305：有効なGoogle reCAPTCHA でのログインの問題](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md)
+         * [概要: 品質 パッチツール (QPT) v1.1.1](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/overview.md)
+         * [MDVA-34948:Web サイトの動作が遅くなる](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-34948-slow-site-and-operations.md)
+         * [MDVA-36021:注文の詳細を開くとエラーメッセージが表示されます](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-36021-call-to-a-member-function-getid-error-on-the-order-details-page.md)
+         * [MDVA-37897:最近表示した項目から商品を追加するときの誤ったリダイレクト](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-37897-incorrect-redirect-when-customers-try-to-add-products-with-options-from-recently-viewed-widget.md)
+         * [MDVA-39305:有効になっている Google reCAPTCHA でのログインの問題](/help/support-tools/patches-available-in-qpt-tool/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md)
       * v1.1.2 {#v1-1-2}
          * [概要：品質向上パッチツール（QPT） v1.1.2](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/overview.md)
          * [MDVA-37115：製品ページに「Only 0 left」の通知が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-37115-unnecessary-only-0-left-notice-is-shown-on-the-configurable-product-page.md)
@@ -133,8 +133,8 @@ ht-degree: 0%
       * v1-1-10 {#v1-1-10}
          * [概要：品質向上パッチツール（QPT） v1.1.10](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/overview.md)
          * [MDVA-38728：製品の表示を変更すると、メイン Web サイトの URL が書き換えられます](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
-         * [MDVA-39181：関連製品ルールで、ルールに定義されていないカテゴリの製品が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
-         * [MDVA-40175：並べ替え時にラジオボタンが表示されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-40175-radio-buttons-not-displayed-when-reorder-by-admin.md)
+         * [MDVA-39181:関連する製品ルールは、ルール で未定義のカテゴリからの製品を表示する](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
+         * [MDVA-40175:並べ替え時にラジオボタンが表示されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-40175-radio-buttons-not-displayed-when-reorder-by-admin.md)
          * [MDVA-40816：在庫データが製品グリッドに表示されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-40816-inventory-info-doesnt-show-on-product-grid.md)
          * [MDVA-41305：設定可能な商品に対するGraphQL Query addProductsToWishlist のエラー](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-41305-error-on-graphql-query-addproductstowishlist.md)
          * [MDVA-42584：設定可能な商品の在庫ステータスが自動的に更新されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-42584-stock-status-of-configurable-product-not-updated-automatically.md)
@@ -253,7 +253,7 @@ ht-degree: 0%
          * [ACSD-46988:GraphQL通貨 API リクエストで null 値が返される](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
          * [ACSD-47076:Vimeo 動画をストアフロントで再生できない](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-47076-venmo-videos-cannot-be-played-on-the-storefront.md)
       * v1.1.22 {#v1-1-22}
-         * [概要：品質向上パッチツール（QPT） v1.1.22](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/overview.md)
+         * [概要: 品質パッチツール (QPT) v1.1.22](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/overview.md)
          * [ACSD-47106：会社作成ページの新しいカスタム属性が保存されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47106-new-custom-attribute-on-company-creation-page-not-saved.md)
          * [ACSD-47444: PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスすると [!UICONTROL Trying to access array offset on value of type bool] エラーが発生する](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47444-trying-access-array-offset-value-type-bool-error.md)
          * [ACSD-47332:UTC が 00:00～00:59 の間で実行している場合にのみ、Cron が失敗し、エラーが報告されます](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47332-cron-fails-with-error-reported-between-00-59.md)
@@ -555,7 +555,7 @@ ht-degree: 0%
          * [ACSD-56280: ギフト レジストリの購入が完了していません](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed.md)
          * [コンテンツのステージング更新で ACSD-56193: [!DNL Fastly/Varnish] cache がクリアされない](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56193-fastly-cache-not-cleared-for-content-staging-update.md)
          * [ACSD-56158：複数の税務処理基準が買い物かごに適用された場合の、GraphQL応答の誤った税額](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56158-wrong-tax-value-in-graphql-when-multiple-tax-rules-applied-to-cart.md)
-         * [ACSD-56023:CMSページでウィジェットのコンテンツが更新されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56023-widget-content-not-updating-on-the-cms-page.md)
+         * [ACSD-56023:CMS ページWidget内容が更新されない](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56023-widget-content-not-updating-on-the-cms-page.md)
          * [ACSD-56246：製品アップデートをスケジュールすると、複数選択の属性値がクリアされる](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56246-scheduling-product-updates-clears-multiselect-attributes-values.md)
          * [ACSD-56790: ビジュアルマーチャンダイザーで製品を並べ替えている間、「在庫切れを下部に移動」オプションが機能しない](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56790-move-out-of-stock-to-bottom-option-does-not-work-while-sorting-products-in-the-visual-merchandiser.md)
       * v1.1.45 {#v1-1-45}
@@ -584,10 +584,10 @@ ht-degree: 0%
       * v1.1.48 {#v1-1-48}
          * [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.48](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/overview.md)
          * [ACSD-57315:「取得」ボタンをクリックするたびに、新しいトランザクショ  [!DNL PayPal Payflow Pro]  が作成されます](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
-         * [ACSD-56635：アカウント共有がに設定されている場合、読み込まれた顧客は重複します  [!DNL Global]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
-         * [ACSD-57337：アクセス制限を持つ管理者ユーザーに会社が表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
-         * [ACSD-57394: [!DNL GraphQL] の複数の並べ替えフィールドでの製品の並べ替えが正しくありません](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
-         * [ACSD-56546：設定可能な製品およびバンドル製品が、ストアフロントに在庫切れとして表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
+         * [ACSD-56635:アカウント共有が [!DNL Global]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
+         * [ACSD-57337:アクセス制限のある管理者ユーザー会社を表示できる](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
+         * [ACSD-57394:複数の並べ替えフィールドによる誤った商品の並べ替え [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
+         * [ACSD-56546:設定可能なバンドル製品が店頭に在庫切れと表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          * [ACSD-56741：カスタム MySQL トリガーを使用したデータベース設定エラーのトラブルシューティング](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger.md)
          * [ACSD-55566：応答内の内部サーバーエラーで [!UICONTROL mergeCart] mutation が失敗  [!DNL GraphQL]  る](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
          * [ACSD-58008：終了日を空として編集すると、スケジュールの更新が表示されなくなる](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
@@ -631,13 +631,9 @@ ht-degree: 0%
       * [統合環境の強化リクエスト - Pro と Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceに対するホリデーサージ容量リクエスト](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
       * [Adobe Commerce用互換性ツール 1.1.0 のアップグレード](/help/announcements/adobe-commerce-announcements/upgrade-compatibility-tool-for-magento.md)
-      * [SSL/TLS 証明書の要件をAdobeしてクリーンアップする](/help/announcements/adobe-commerce-announcements/magento-ssl-tls-certificate-requirements-and-clean-up.md)
       * [Adobe Commerce リリースの更新されたライフサイクルポリシーに関する FAQ](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Cloud 2.4.4 でのAdobe Commerceの OpenSearch への切り替え](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
-      * [従来の EU 地域向け統合環境の移行](/help/announcements/adobe-commerce-announcements/integration-environments-migration-to-new-regions-for-eu-and-us.md)
       * [Adobe Commerce Recommendations for PHP の脆弱性](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
-      * [Adobe Commerceの Apache log4j2 の脆弱性](/help/announcements/adobe-commerce-announcements/apache-log4j2-adobe-commerce.md)
-      * [クラウドインフラストラクチャー上のAdobe CommerceのBlackfireアクセスの削除](/help/announcements/adobe-commerce-announcements/blackfire-access-removal-for-magento-commerce-cloud.md)
       * [品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツールです](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
       * [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobeは、顧客データのアクセスとプライバシーをサポートします](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
@@ -680,7 +676,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.3.7-p1 の既知の問題：PayPal の注文合計が古い](/help/troubleshooting/payments/paypal-price-known-issue-commerce-237p1.md)
       * [Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
       * [Adobe Commerce 2.4.0：現地支払いの選択でチェックアウトエラーが発生する](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-      * [PayPal Payflow Pro アクティブなカード処理アクティビティ](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
+      * [PayPalペイフロープロアクティブカーディングアクティビティ](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Adobe Commerceの PayPal トラブルシューティング](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0、2.4.1:BraintreeVenmo 部分請求書の有効化](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
       * [サンドボックス環境でクレジットカードの支払いが失敗しました](/help/troubleshooting/payments/payservices-cc-sandbox-failure.md)
@@ -708,7 +704,7 @@ ht-degree: 0%
       * [連絡先を URL キーとして保存できません](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
    * インストールとアップグレード {#installation-and-upgrade}
       * [[!UICONTROL Recommendations] [!DNL JS] Adobe Commerce バージョン 2.4.5 へのアップグレード後にエラーが発生する](/help/troubleshooting/installation-and-upgrade/recommendations-js-errors-after-upgrade-to-adobe-commerce-version-2-4-5.md)
-      * [Adobe Commerce 2.4.6-p1 オンプレミスで [!DNL B2B] 1.4.0 のインストールが失敗する](/help/troubleshooting/installation-and-upgrade/b2b-1-4-0-installation-fails-on-adobe-commerce-2-4-6-p1-on-premises.md)
+      * [[!DNL B2B] オンプレミスの Adobe Systems Commerce 2.4.6-p1 で 1.4.0 のインストールが失敗する](/help/troubleshooting/installation-and-upgrade/b2b-1-4-0-installation-fails-on-adobe-commerce-2-4-6-p1-on-premises.md)
       * [2.4.6 へのアップグレード前に、期限切れの「oauth_tokens」を減らす](/help/troubleshooting/installation-and-upgrade/reduce-expired-oauth-tokens-before-2-4-6-upgrade.md)
       * [nginx を使用してインストールできません](/help/troubleshooting/installation-and-upgrade/cannot-install-using-nginx.md)
       * [Adobe Commerce バージョン 2.3.4-p1 または 2.3.5 へのアップグレード中のウィッシュリストエラー](/help/troubleshooting/installation-and-upgrade/wishlist-error-during-upgrade-to-magento-versions-2-3-4-p1-or-2-3-5.md)
@@ -801,8 +797,8 @@ ht-degree: 0%
       * [1k 以上の製品でカテゴリを保存する際に 504 ゲートウェイタイムアウトエラーが発生する](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
       * [サイトをセキュリティ スキャンに追加するときに表示されるエラーメッセージ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
       * [共有アクセスのトラブルシューティング](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
-      * [パフォーマンスが遅く、動作が遅く、長時間実行されるクローン](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
-      * [Fastly 資格情報の検証中にエラーが発生する](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
+      * [パフォーマンスの低下、低速および長時間の実行](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
+      * [Fastly 認証情報を検証する際のエラー](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
       * [バックアップの問題](/help/troubleshooting/miscellaneous/backup-issues.md)
       * [CSV の読み込み後、新しい顧客がカスタマーグリッドに表示されない](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [セキュリティスキャンツールレポートが空白になる](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
@@ -1008,11 +1004,11 @@ ht-degree: 0%
    * [スタータープランのログの場所（ディレクトリ）](/help/how-to/general/log-locations-directories-for-starter-plan.md)
    * [クラウドインフラストラクチャ上のAdobe Commerceでのデプロイメントのダウンタイムを短縮](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md)
    * [Adobe Commerceへの新しい国の追加方法](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
-   * [Commerce Admin でのデザイン設定のカスタマイズ](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
-   * [クラウド上の統合環境のディスク容量を増やす](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
-   * [クラウドインフラストラクチャー上のAdobe Commerce:CPU 割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
-   * [REST API を使用した共有カタログ価格の更新](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
-   * [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md)
+   * [コマース管理でのデザイン設定のカスタマイズ](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
+   * [クラウド での統合環境に使用するディスク容量を増やす](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
+   * [クラウドインフラストラクチャー での Adobe Systems コマース:CPU 配分の計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
+   * [REST API を使用した共有カタログの価格の更新](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
+   * [大規模な MySQL テーブルの検索文字列](/help/how-to/general/find-large-mysql-tables.md)
    * [データとファイルを実稼動環境からステージング環境またはステージング環境から統合環境に同期](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
    * [クラウドインフラストラクチャ環境のAdobe Commerceで CLI を使用してディスク容量を確認する](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [クラウドインフラストラクチャ cron ジョブでスタックしたAdobe Commerceを手動でリセット](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
