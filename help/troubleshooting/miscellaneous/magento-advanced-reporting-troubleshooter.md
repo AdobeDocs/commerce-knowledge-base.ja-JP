@@ -4,7 +4,7 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 3b402728be7a80b62f21319d2cf91a92f1ad4a0c
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -46,7 +46,7 @@ b. NO – 出力には 1 つの通貨のみが表示されます。 例：`USD`�
 
 [ 分割データベースソリューション ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) を使用していますか？
 
-回答：はい。パッチ **Advanced Reporting 404 error on split database solution[ で MDVA-26831** を使用し ](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md) キャッシュをクリアします。 ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。\
+a.はい。Advanced Reporting 404 のパッチ **MDVA-26831** エラーを使用して、スプリット データベース ソリューションとキャッシュをクリアします。 ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。\
 b.いいえ – [ 手順 4](#step-4) に進みます。
 
 +++
