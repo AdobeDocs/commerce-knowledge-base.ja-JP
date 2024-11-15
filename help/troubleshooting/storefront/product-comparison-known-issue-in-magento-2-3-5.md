@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce オンプレミス 2.3.5 およ
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,6 @@ ht-degree: 0%
 <p title="Adobe Commerce 2.3.5 でバーチャル商品が正しく処理されない複数出荷の注文"><a href="/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md">Adobe Commerce 2.3.5 でバーチャル商品が正しく処理されない複数出荷の注文</a></p>
 </li>
 <li><a href="/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md">Adobe Commerce 2.3.5 の一括アクション製品数の既知の問題</a></li>
-<li>
-<p title="Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミス 2.3.5 および 2.3.5-p1 における国の支払い方法の問題"><a href="/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md">Adobe Commerce on cloud infrastructure およびAdobe Commerce オンプレミス 2.3.5 および 2.3.5-p1 における国の支払い方法の問題</a></p>
-</li>
 <li>
 <p title="Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ</a></p>
 </li>
