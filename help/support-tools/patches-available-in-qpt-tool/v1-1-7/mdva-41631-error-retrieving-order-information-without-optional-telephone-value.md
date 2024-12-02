@@ -4,7 +4,7 @@ description: MDVA-41631 パッチでは、オプションの「telephone」値�
 exl-id: 94b0b918-c1f9-4f5d-8fcd-8b92a9ca8c59
 feature: Orders
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.1 ～ 2.4.3-p1
 
 1. **ストア**/**設定**/**カスタマー**/**カスタマー設定**/**名前と住所のオプション**/**電話を表示** に移動し、電話番号をオプションとして設定します。
 1. ログインしているユーザーとしてGraphQL API を使用して注文します。
-   * 請求先住所と配送先住所を設定する際は、電話番号を設定しないでください。 アドビの開発者向けドキュメントの [GraphQLのチェックアウトチュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) に記載されている手順に従います。
-1. GraphQL [customerOrders クエリ ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) を使用して注文を取得します。
+   * 請求先住所と配送先住所を設定する際は、電話番号を設定しないでください。 アドビの開発者向けドキュメントの [GraphQLのチェックアウトチュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) に記載されている手順に従います。
+1. GraphQL [customerOrders クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/) を使用して注文を取得します。
 
 <pre>
 <code class="language-graphql">

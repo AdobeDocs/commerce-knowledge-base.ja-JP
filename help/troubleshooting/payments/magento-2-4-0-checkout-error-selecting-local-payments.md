@@ -1,10 +1,10 @@
 ---
-title: 「Adobe Commerce 2.4.0：ローカル支払いの選択でチェックアウトエラーが発生する」
-description: 「この記事では、チェックアウト中にAdobe Commerceで既知の問題が発生した場合、一部の国で地域の支払い方法を選択するとエラーメッセージが表示される場合の解決策について説明します。 これは、ベルギー、イタリア、オランダ、ポーランド、スペインの国で発生します。
+title: Adobe Commerce 2.4.0：現地支払いの選択でチェックアウトエラーが発生する
+description: この記事では、一部の国で地域のお支払い方法を選択するとエラーメッセージが表示される、チェックアウト中のAdobe Commerceの既知の問題の解決策について説明します。 これは、ベルギー、イタリア、オランダ、ポーランド、スペインの国で発生します。
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: a8cc7ad0cb9cb111f5b9636ff18aef3b6ed44329
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * Adobe Commerce 2.4.0 がインストールされています。
 * 1 つの製品と 1 つのカテゴリを作成します。
-* [Braintree支払い方法 ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree.html) を構成します。
+* [Braintree支払い方法 ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/) を構成します。
 
 <u> 再現手順 </u>:
 

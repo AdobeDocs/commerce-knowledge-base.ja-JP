@@ -1,10 +1,10 @@
 ---
-title: 「ACSD-44938：ゲストユーザーのGraphQL リクエストで VAT_ID を適用できない」
+title: 'ACSD-44938: ゲストユーザーのGraphQL リクエストで VAT_ID を適用できません'
 description: ACSD-44938 パッチは、ゲストユーザーのGraphQL リクエストで VAT_ID を適用できない問題を修正しました。 このパッチは、[Quality Patches Tool （QPT） ] （/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md） 1.1.18 がインストールされている場合に利用できます。 パッチ ID は ACSD-44938 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 exl-id: 18b3dfa5-b666-491e-a067-526a53294f39
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -35,12 +35,12 @@ ACSD-44938 パッチは、ゲストユーザーのGraphQL リクエストで VAT
 
 <u> 再現手順 </u>:
 
-1. 開発者向けドキュメントの [GraphQL チュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) に記載されている手順に従って、買い物かごを作成します。
+1. 開発者向けドキュメントの [GraphQL チュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) に記載されている手順に従って、買い物かごを作成します。
 1. GraphQLを使用して、ゲストユーザーに VAT_ID を適用してみてください。
 
 <u> 期待される結果 </u>:
 
-VAT_ID は、登録済みの顧客と同じ方法で適用できます。 開発者向けドキュメントの [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) の記事を参照してください。
+VAT_ID は、登録済みの顧客と同じ方法で適用できます。 開発者向けドキュメントの [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) の記事を参照してください。
 
 <u> 実際の結果 </u>:
 

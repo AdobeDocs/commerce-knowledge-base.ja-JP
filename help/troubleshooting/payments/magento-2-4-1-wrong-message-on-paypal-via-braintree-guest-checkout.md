@@ -1,10 +1,10 @@
 ---
-title: 「Adobe Commerce 2.4.1:PayPal Braintreeのゲストチェックアウトで間違ったメッセージが表示される」
+title: Adobe Commerce 2.4.1:PayPal Braintreeのゲストチェックアウトで間違ったメッセージが表示される
 description: この文書では、Adobe Commerce 2.4.1 の既知の問題について説明します。ゲストのチェックアウトが無効になっている場合、Braintreeを通じて PayPal で注文しようとするお客様に情報が得られないエラーメッセージが表示されます。
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -61,4 +61,4 @@ Braintreeを使用せずにダイレクト Paypal を有効にすると、この
 
 * [Adobe Commerceの買い物かご内の製品数のベストプラクティス ](https://support.magento.com/hc/en-us/articles/360048550332) に関するサポートナレッジベースを参照してください。
 * [ 注文処理のチュートリアル：手順 1. 開発者ドキュメントで ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) 買い物かごに項目を追加する
-* [GraphQLのチェックアウトチュートリアル：手順 1. 開発者ドキュメントで ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-add-product-to-cart.html) 買い物かごに製品を追加する
+* [GraphQLのチェックアウトチュートリアル：手順 1. 開発者ドキュメントで ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) 買い物かごに製品を追加する

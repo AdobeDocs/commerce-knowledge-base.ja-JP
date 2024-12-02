@@ -1,10 +1,10 @@
 ---
-title: 「MDVA-44147:GraphQL リクエストで購買依頼リストが返されない」
+title: MDVA-44147:GraphQL要求で要求リストが返されない
 description: MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md） 1.1.14 がインストールされている場合に利用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -52,7 +52,7 @@ GraphQL リクエストが購買依頼リストを返さない。
       </code>
       </pre>
 
-1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) 記事を参照してください。
+1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) 記事を参照してください。
 
    リクエスト :
 
