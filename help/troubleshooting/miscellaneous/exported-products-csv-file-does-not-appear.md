@@ -1,19 +1,19 @@
 ---
 title: 書き出された製品の.csv ファイルが表示されない
-description: ここでは、Commerce Admin で商品を.csv ファイルに書き出そうとした際に、ファイルが表示されない問題の解決策を説明します。
+description: ここでは、Commerce Admin で目的のエンティティタイプを.csv ファイルに書き出そうとしても、ファイルが表示されない問題の解決策を説明します。
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
+source-git-commit: b6f1222918b027eaecda42b767e6f83b2cf0f5d0
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # 書き出された製品の.csv ファイルが表示されない
 
-ここでは、Commerce Admin で商品を.csv ファイルに書き出そうとした際に、ファイルが表示されない問題の解決策を説明します。
+ここでは、目的のエンティティタイプをCommerce Admin の.csv ファイルに書き出すとファイルが表示されない問題の解決策について説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -30,7 +30,7 @@ ht-degree: 0%
    ![magento_export_products_2.3.4.png](assets/magento_export_products_2.3.4.png)
 
 1. を選択
-   * **エンティティタイプ**: *Products*
+   * **エンティティタイプ**：書き出すエンティティ
    * **書き出しファイル形式**: *CSV*
    * **フィールド エンクロージャ**：オフのままにします。
 1. **続行** をクリックします。
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 <u> 期待される結果 </u>
 
-書き出された製品を含む.csv ファイルが、数分でグリッドに表示されます。
+エクスポートされた目的のエンティティタイプを含む.csv ファイルが、数分以内にグリッドに表示されます。
 
 <u> 実際の結果 </u>
 
-エクスポートされた製品を含む.csv ファイルが 10 分以上でグリッドに表示されません。
+エクスポートされた目的のエンティティタイプを含む.csv ファイルが、10 分以上でグリッドに表示されません。
 
 ## 原因：
 
