@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 63664230a110a4ebf37c058e3bde71f6a359ac13
+source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
 workflow-type: tm+mt
-source-wordcount: '9478'
+source-wordcount: '9469'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 0%
    * Site-wide Analysis tool {#site-wide-analysis-tool}
       * [Adobe別 Site-Wide Analysis Tool：概要](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
       * [Adobe Commerce Site-Wide Analysis Tool Report の FAQ](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
-   * Adobe Commerce {#observation} の監視
-      * [Adobe Commerceの監視の概要](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
    * Adobe Commerce {#managed-alerts} の管理アラート
       * [Adobe Commerceの管理アラート：Redis メモリクリティカルアラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
       * [Managed alerts for Adobe Commerce:Disk warning アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

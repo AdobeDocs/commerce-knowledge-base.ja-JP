@@ -3,9 +3,9 @@ title: Adobe Commerce上のクラスターの環境 vCPU 層の表示
 promoted: true
 description: この記事では、Adobe Commerceの監視の「New Relicインフラストラクチャ」タブを使用して vCPU 層の割り当てを確認する方法を説明します。 Adobe Commerceの監視は、New Relic サイトの状況や現在および過去の時間表示を示すAdobe Commerce ナルレットです。
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: 309fda5284de3b8be54e95bf2bfd8ff1777b6c90
+source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,3 @@ New Relic Observation for Adobe Commerceのサーブレットにアクセスし�
    * 最初のグラフは、2 週間を超えるタイムラインの **vCPU 層の表示を示しています（2 週間を超えるタイムラインを選択する必要があります）。 メモ：サンプルレートは 1 日ごとになります。 クラスターのアップサイズ/ダウンサイズが 1 日で発生した場合、終了層のサイズは翌日** に表示されます。
    * 2 つ目のグラフは、タイムラインの **vCPU 層のビューを示しています（24 時間を超え 2 週間以内のタイムラインを選択する必要があります）**。
    * 3 番目のグラフは、ノード別のタイムラインの **vCPU 層ビューを示しています。24 時間未満のタイムラインを見る必要があります**。
-
-## 関連資料
-
-* [Adobe Commerceの概要の確認 ](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) をサポートナレッジベースで行います。
