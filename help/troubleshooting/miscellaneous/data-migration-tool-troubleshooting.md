@@ -4,7 +4,7 @@ description: この記事では、データ移行ツールの実行時に発生�
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 16fc1b45e7df32ef05dac6a245d6604bbbbef13a
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### 原因：
 
-開発者向けドキュメントの [EAV 移行手順 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#extension) に属しています。
+開発者向けドキュメントの [EAV 移行手順 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension) に属しています。
 
 ### 可能な解決策
 

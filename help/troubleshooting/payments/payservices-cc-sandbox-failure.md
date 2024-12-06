@@ -4,7 +4,7 @@ description: この記事では、PayPal API を使用したサンドボック�
 exl-id: 65fd08e0-eefc-47f3-8964-bef3610e6182
 feature: Orders, Payments
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 16fc1b45e7df32ef05dac6a245d6604bbbbef13a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -36,6 +36,6 @@ Error happened when processing the request. Please try again later.
 
 別のテストクレジットカードを使用します。 モッククレジットカードを生成するために、テストに使用できます。
 
-1. PayPal 開発者ポータル [ クレジットカード生成 ](https://developer.paypal.com/developer/creditCardGenerator/) ページに移動します。
+1. PayPal 開発者ポータル [ クレジットカード生成 ](https://developer.paypal.com/api/rest/sandbox/card-testing/#link-creditcardgenerator) ページに移動します。
 1. PayPal 開発者ポータルダッシュボードにログインします。
 1. テストクレジットカードを生成します。
