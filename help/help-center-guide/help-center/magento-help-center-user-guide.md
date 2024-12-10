@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7fbedaaf0d4edccc688be24951a7d30a9e774be8
+source-git-commit: 9abd435c2b360ca667b7c5a4431fdbf4b3c86831
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,18 @@ Adobe Experience League サポートにログインするには、次の手順�
 ### サポートケースの送信 {#support-case}
 
 アカウントオーナーまたは Shared Access ユーザーとして正常にログインしたら、Adobe Experience Leagueのホームページ、Adobe Commerceのアカウントページ、Adobe Commerce Cloudのアカウントページを使用して、サポートケースを送信できます。
+
+>[!NOTE]
+>
+>Adobe Commerce Marketplace チームのサポートリクエストは、Experience Leagueを通じて送信することはできません。サポートシステムが、Experience Leagueと統合されていない別のプラットフォームで動作するからです。
+>
+>次のステートメントが当てはまる場合、サポートケースを送信することができます。
+>
+>* 問題の組織の名前が左の列で、末尾に（[!DNL Commerce]）が付いています。 イシューは、その組織または関連付けられたアカウントに関連しています。
+>* お客様の問題は、Marketplace アカウントにログインできないこと、または拡張機能のデプロイに関して質問があることです。
+>* 問題は、Marketplace での購入に対する払い戻しのリクエストだけではありません。
+>
+>拡張機能の公開、[Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/) での購入、払い戻しの請求に関する問題については、https://commercemarketplace.adobe.com/に直接 [!DNL Commerce Marketplace] チームにお問い合わせください。 ページの下部に移動して「**[!UICONTROL Contact Us]**」をクリックすると、Marketplace サポートチケットを送信するためのフォームが開きます。
 
 #### Adobe Experience League開始ページ {#experience-league-start-page}
 
