@@ -4,9 +4,9 @@ description: Adobe Commerceでのスタックしたデプロイメントと失�
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 6177863da268f43cc30119cef6f718a04c46b3e6
+source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ b. NO - メンテナンスまたはグローバルな障害。 推定期間と�
 
 +++**既存の環境のデプロイメントをブロックしているデプロイメントが他の環境にありますか？**
 
-進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。
+進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) を参照してください。
 
 ```bash
 magento-cloud --state=in_progress
@@ -199,7 +199,7 @@ b.いいえ – [ 手順 18](#step-18) に進みます。
 
 ## 手順 18 - ポストフックの失敗を確認する {#step-18}
 
-+++**Post フックの失敗/ハング？**
++++**ポストフックの失敗/ハングアップ？**
 
 a.はい – データベース：[ 空きディスク領域 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space)、破損、不完全/破損したテーブル。\
 b.いいえ – [ 手順 19](#step-19) に進みます。
