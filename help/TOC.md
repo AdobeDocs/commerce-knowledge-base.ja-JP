@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
+source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
 workflow-type: tm+mt
-source-wordcount: '9469'
+source-wordcount: '9409'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 0%
       * [Adobe Commerceの管理アラート：ディスク・クリティカル・アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
       * [Adobe Commerceの管理アラート：Redis メモリ警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
       * [Managed alerts for Adobe Commerce:Memory warning アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
-      * [Adobe Commerceの管理アラート：CPU 重大なアラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+      * [Adobe Commerceの管理アラート：CPUの重大なアラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
       * [Adobe Commerceの管理アラート：メモリ障害アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
       * [Adobe Commerceの管理アラート：Apdex 重大アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
       * [Adobe Commerceの管理アラート：MariaDB アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
       * [Adobe Commerceの管理アラート：Apdex 警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
-      * [Adobe Commerceの管理アラート：CPU 警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
+      * [Adobe Commerceの管理アラート：CPU警告アラート](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
    * QPT ツール {#patches} で使用可能なパッチ
       * [QPT ツールで使用可能なパッチの概要](/help/support-tools/patches-available-in-qpt-tool/patches-available-in-qpt-tool-overview.md)
       * v1.1.0 {#v1-1-0}
@@ -947,15 +947,9 @@ ht-degree: 0%
       * [詳細検索で最も関連性の高い結果が表示されない](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [管理者で注文をフィルタリング中にエラーが発生する](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
-      * [管理の注文グリッドに表示されない注文](/help/troubleshooting/known-issues-patches-attached/orders-not-displayed-in-the-orders-grid-in-the-admin.md)
-      * [VAT 番号を検証できません – クラウドインフラストラクチャー上のAdobe Commerce](/help/troubleshooting/known-issues-patches-attached/unable-to-validate-vat-number-magento-commerce-cloud.md)
-      * [広告ブロッカーが有効な場合にチェックアウトページが読み込まれない](/help/troubleshooting/known-issues-patches-attached/checkout-pages-not-loading-when-ad-blocker-is-enabled.md)
       * [Adobe Commerce管理者の URL の場所が公開されました](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
-      * [同じ期間に複数の cron ジョブがスケジュールされました](/help/troubleshooting/known-issues-patches-attached/multiple-cron-jobs-scheduled-for-the-same-time-period.md)
-      * [在庫切れの場合に、設定可能な製品スウォッチの表示にエラーが発生する](/help/troubleshooting/known-issues-patches-attached/configurable-product-swatches-not-displayed-as-crossed-out-when-out-of-stock.md)
       * [Braintree支払いが有効な場合、管理者が注文の作成/並べ替えを行うことはできません](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
       * [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
-      * [Adobe Commerce 2.3.6、2.4.1 チェックアウト時の CAPTCHA が機能しない](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [サーバーの E メール アドレスから送信された注文 E メール](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [管理パネルからのAdobe Commerce 2.4.6 エラー](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [バージョン &lt; 2.4.5 からアップグレードする際の [!UICONTROL salesRule] ラベルの問題](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
@@ -992,7 +986,7 @@ ht-degree: 0%
    * [Adobe Commerceへの新しい国の追加方法](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Commerce Admin でのデザイン設定のカスタマイズ](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [クラウド上の統合環境のディスク容量を増やす](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
-   * [クラウドインフラストラクチャー上のAdobe Commerce:CPU 割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
+   * [クラウドインフラストラクチャー上のAdobe Commerce:CPUの割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [REST API を使用した共有カタログ価格の更新](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md)
    * [データとファイルを実稼動環境からステージング環境またはステージング環境から統合環境に同期](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
@@ -1026,7 +1020,7 @@ ht-degree: 0%
    * [クラウドインフラストラクチャー上のAdobe Commerceで管理者パスワードを変更](/help/how-to/general/change-magento-admin-password-on-cloud.md)
    * [クラウドインフラストラクチャー上で一時的なAdobe Commerceのアップサイズをリクエストする方法](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Adobe Commerce上のクラスターの環境 vCPU 層の表示](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
-   * [クラウドインフラストラクチャー上のAdobe Commerce: ホストの CPU 設定を確認します。](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
+   * [クラウドインフラストラクチャー上のAdobe Commerce: ホストのCPU設定を確認します。](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
    * [Fastly on Cloud のアカウント所有者の変更（API トークンを使用したアクセス認証情報）](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md)
    * [クラウド上のAdobe Commerce：認証キーを変更して再デプロイ](/help/how-to/general/redeploy-with-another-key.md)
    * [サポートエージェントからリクエストされた場合に「スクラブ」ダンプを作成する方法](/help/how-to/general/create-dump-for-support.md)
