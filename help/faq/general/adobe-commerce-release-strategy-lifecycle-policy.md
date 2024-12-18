@@ -3,9 +3,9 @@ title: 2024 年および 2023 年Adobe Commerce リリース戦略およびラ�
 description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4 以降のバージョンのサポートウィンドウをバージョン  [!DNL GA] date**から**3 年に拡大しています。 サポートには、**セキュリティパッチとクオリティパッチの両方**が含まれます。 タイミングの詳細については、新しい [ リリースカレンダー ] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html）をご覧ください。
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
-source-git-commit: 81dd81ecbb0a208dbac5d3cbdc4c994556661fb0
+source-git-commit: 216e3c6c7f4db605b39ef365356bc18c76ea034e
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerceのお客様のミッションクリティカルなニーズを満
 
 [Adobe Commerce ソフトウェア ライフサイクル ポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) はオンラインで利用できます。
 
-### 2.4.4、2.4.5、2.4.6 のお客様が、この新しいポリシーのサポート終了に到達するのはいつですか。
+### 2.4.4、2.4.5、2.4.6 および 2.4.7 のお客様が、この新しいポリシーのサポート終了に到達するのはいつですか。
 
 Adobe Commerce 2.4.4 以降のお客様は、以下のタイムラインに示すように、バージョン [!DNL GA] 日から 3 年間、セキュリティと品質の修正を受け取ります。 特定のサポート終了日については、[!DNL Experience League] の [ リリース済みバージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) ページを参照してください。
 
@@ -34,7 +34,7 @@ Adobe Commerce 2.4.4 以降のお客様は、以下のタイムラインに示�
 
 ### Adobe Commerceのリリーススケジュールはどのように変更されますか？
 
-イノベーションを促進し、総所有コストを削減するために、年に 1 回、コアアプリケーションパッチがリリースされます。新機能は、いつでも追加できる構成可能な [!DNL SaaS] サービスとして提供されます。 また、今年に予定されているセキュリティパッチリリースの数も 3 から 4 に増えており、お客様のセキュリティを維持するのに役立ちます。 2024 年コアアプリケーションパッチリリース（2.4.7）の追加の [!DNL beta] リリースも、パートナーおよびお客様が次のリリースの準備をできるように、今年利用可能になる予定です。
+イノベーションを促進し、総所有コストを削減するために、年に 1 回、コアアプリケーションパッチがリリースされます。新機能は、いつでも追加できる構成可能な [!DNL SaaS] サービスとして提供されます。
 
 ### 新しいリリーススケジュールは、お客様にどのようなメリットがありますか？
 
@@ -72,16 +72,160 @@ Adobe Commerce 2.4.4 以降のお客様は、以下のタイムラインに示�
 
 Managed Servicesのお客様は、アップグレードプロセスのいくつかのコンポーネント（分析、クラウドサービスのアップグレード、品質とユーザー受け入れテスト（[!DNL QA] および [!DNL UAT]）、実稼動の立ち上げなど）で、アドビのカスタマーエンジニアリングチームと協力して支援を受けることができます。
 
+<table style="table-layout:auto">
+<thead>
+  <tr>
+    <th colspan="1"></th>
+    <th colspan="4">2022</th>
+    <th colspan="4">2023</th>
+    <th colspan="4">2024</th>
+    <th colspan="4">2025</th>
+    <th colspan="4">2026</th>
+    <th colspan="4">2027</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Commerce</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+  </tr>
+  <tr>
+    <td>2.4.4</td>
+    <td></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>2.4.5</td>
+    <td colspan="2"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>2.4.6</td>
+    <td colspan="4"></td>
+    <td colspan="15" style="background-color:#67ac68;"></td>
+    <td colspan="8"></td>
+  </tr>
+  <tr>
+    <td>2.4.7</td>
+    <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="2"></td>
+  </tr>
+</tbody>
+</table>
+
+**キー**
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+   <td style="background-color:#67ac68;"></td>
+   <td>定期的なサポート</td>
+  </tr>
+  <tr>
+   <td style="background-color:#ffd700;"></td>
+   <td>拡張サポート</td>
+  </tr>
+ </tbody>
+</table>
+
 ## 拡張サポートオプション
 
-### バージョン 2.3.7 および 2.4.0～2.4.3 のお客様向けの拡張サポート・オプションはありますか。
+### バージョン 2.4.4 および 2.4.5 のお客様向けの拡張サポートオプションはありますか。
 
-お客様には、できるだけ早くアップグレードを推奨しますが、[!DNL PHP] 7.4 をベースとしたバージョン（2.3.7 および 2.4.0-2.4.3 を使用しているお客様）では、有料の拡張サポートプランを利用できます。 これらの計画には、コアアプリケーションの品質パッチとセキュリティパッチの両方が含まれ、最長 1 年間の [!DNL PHP] が含まれます。
+お客様には、できるだけ早くアップグレードを推奨しますが、バージョン 2.4.4 および 2.4.5 のすべてのAdobe Commerceのお客様に対して、1 年間のサポート延長が追加コストなしで提供され、アップグレードプランをビジネスニーズに合わせてより柔軟に調整できます。
 
-* 2.3.7 の拡張サポートは 2022 年 9 月 8 日（PT）に開始され、2023 年 9 月 8 日（PT）まで受け取ることができます。
-* 2.4.0～2.4.3 のサポートの拡張は、2022 年 11 月 28 日（PT）に開始され、2023 年 11 月 28 日（PT）まで受け取ることができます。
+これらの計画には、コアアプリケーションの品質パッチとセキュリティパッチの両方が最大 1 年間含まれています。
+
+<table style="height: 144px; width: 632.2px;">
+<tbody>
+<tr>
+<td class="wysiwyg-text-align-center" style="width: 132px;"><strong>リリースバージョン</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 96px;"><strong>リリース日</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 144px;"><strong>通常の Open Source サポートの終了</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 140.2px;"><strong>拡張サポートの終了</strong></td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-center" style="width: 132px;">2.4.4</td>
+<td style="width: 96px;">2022 年 4 月 12 日（Pt）</td>
+<td style="width: 144px;">2025 年 4 月 8 日（Pt）</td>
+<td style="width: 140.2px;">2026 年 4 月 14 日（Pt）</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-center" style="width: 132px;">2.4.5</td>
+<td style="width: 96px;">2022 年 8 月 9 日（Pt）</td>
+<td style="width: 144px;">2025 年 8 月 12 日（Pt）</td>
+<td style="width: 140.2px;">2026 年 8 月 11 日（Pt）</td>
+</tr>
+</tbody>
+</table>
 
 ### 拡張サポートによって [!DNL PCI] のコンプライアンスが保証されますか。
 
-延長サポートの下、アドビのカスタマーエンジニアリングチームは、範囲を低下させることなく、引き続き通常と同じ品質およびセキュリティパッチを提供します。 ただし、[!DNL MySQL] などの基盤となるサードパーティテクノロジーがサポート終了に達した場合に、[!DNL PCI] ーザーの準拠を維持するには、追加の対策を講じる必要があります。 Adobeでは、サポート終了に達したサードパーティテクノロジーには対応していません **ただし、サポートサービスまたは拡張サポートの対象となる、Adobe Commerceのバージョンで使用される [!DNL PHP] のバージョンに対する [!DNL PHP] サポートを除きます**。 Adobeでは、コンプライアンスを確保するために、[PCI 評価担当者 ](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors) と協力することをお勧めします。 テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、{0](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)Adobe Commerceの必要システム構成 } を参照してください。[
+延長サポートの下、アドビのカスタマーエンジニアリングチームは、範囲を低下させることなく、引き続き通常と同じ品質およびセキュリティパッチを提供します。 ただし、[!DNL MariaDB] などの基盤となるサードパーティテクノロジーがサポート終了に達した場合に、[!DNL PCI] ーザーの準拠を維持するには、追加の対策を講じる必要があります。
 
+Adobeでは、サポート終了に達したサードパーティテクノロジーのサポートを提供していません。 Adobeでは、コンプライアンスを確保するために、お客様が [[!DNL PCI]  評価者 ](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) と協力することをお勧めします。 テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、{0](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)Adobe Commerceの必要システム構成 } を参照してください。[
+
+<table style="height: 444px; width: 632.2px;">
+<tbody>
+<tr>
+<td class="wysiwyg-text-align-center" style="width: 48px;"><strong>バージョン</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 72px;"><strong>サポートされる [!DNL PHP] バージョン、EOS</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 96px;"><strong>サポートされる [!DNL MariaDB] バージョン、EOS</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 108px;"><strong>サポートされる [!DNL Composer] バージョン、EOS</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 126px;"><strong>サポートされる [!DNL OpenSearch] バージョン、EOS</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 86.2px;"><strong>サポートされる [!DNL Redis] バージョン、EOS</strong></td>
+<td class="wysiwyg-text-align-center" style="width: 96px;"><strong>サポートされる [!DNL RabbitMQ] バージョン、EOS</strong></td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-center" style="width: 48px;"><strong>2.4.4</strong></td>
+<td style="width: 72px;">[!DNL PHP] 8.1、EOS - <strong>2025 年 12 月 31 日 <sup>1</sup></strong></td>
+<td style="width: 96px;">[!DNL MariaDB] 10.6、EOS - 2026<sup>2 年 7 月 </sup></td>
+<td style="width: 108px;">[!DNL Composer] 2.8、EOS - 2026<sup>3 で予定 </sup></td>
+<td style="width: 126px;">[!DNL OpenSearch] 1.3、2025 年の EOS は [!DNL OpenSearch]2、2026 年の EOS は <sup>4</sup></td>
+<td style="width: 86.2px;">[!DNL Redis] 7.2、EOS - 2026 年に予定</td>
+<td style="width: 96px;">[!DNL RabbitMQ] 3.9、提供終了</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-center" style="width: 48px;"><strong>2.4.5</strong></td>
+<td style="width: 72px;">[!DNL PHP] 8.1、EOS - <strong>2025 年 12 月 31 日 <sup>1</sup></strong></td>
+<td style="width: 96px;">[!DNL MariaDB] 10.6、EOS - 2026<sup>2 年 7 月 </sup></td>
+<td style="width: 108px;">[!DNL Composer] 2.8、EOS - 2026<sup>3 で予定 </sup></td>
+<td style="width: 126px;">[!DNL OpenSearch] 1.3、2025 年の EOS は [!DNL OpenSearch]2、2026 年の EOS は <sup>4</sup></td>
+<td style="width: 86.2px;">[!DNL Redis] 7.2、EOS - 2026 年に予定</td>
+<td style="width: 96px;">[!DNL RabbitMQ] 3.13 EOS - 2027 年 12 月 30 日</td>
+</tr>
+</tbody>
+</table>
+
+* <sup>1</sup> Adobe Commerce 2.4.4 および 2.4.5 Cloud のお客様は、延長サポート中に [!DNL PHP] 8.1 EOS の日付の影響を受けることはありません。Adobeがインフラストラクチャに 8.1 のセキュリティ修正 [!DNL PHP] ライフタイムサポートを自動適用するからです。 Adobe Commerce 2.4.4 および 2.4.5 オンプレミスのお客様は、必要に応じて [!DNL PHP] 8.1 のライフタイムサポートセキュリティパッチを要求するために、Adobeサポートにお問い合わせいただく必要があります。
+* <sup>2</sup> Adobe Commerce 2.4.4 および 2.4.5 の [!DNL MariaDB] 10.6 との互換性は、2025 年 4 月のセキュリティ専用パッチの範囲内でリリースされる予定です。
+* <sup>3</sup> Adobe Commerce 2.4.4 および 2.4.5 の [!DNL Composer] 2.8 との互換性は、2025 年 4 月のセキュリティ専用パッチの範囲内でリリースされる予定です。
+* <sup>4</sup> Adobe Commerce 2.4.4 および 2.4.5 の [!DNL OpenSearch] 2 との互換性は、2025 年 4 月のセキュリティ専用パッチの範囲内でリリースされる予定です。
