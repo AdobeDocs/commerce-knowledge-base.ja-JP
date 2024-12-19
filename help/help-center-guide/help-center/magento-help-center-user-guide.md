@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 9abd435c2b360ca667b7c5a4431fdbf4b3c86831
+source-git-commit: 16511a9bcc0e229297916f5c48ee8b606e10edbe
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -339,13 +339,15 @@ Cloud Console を使用して新しいサポートチケットを送信するに
 
 <u> 原因 </u>
 
-Adobe Commerce Cloud プロジェクトを持っていて、そのプロジェクトにユーザーを追加した場合、プロジェクト所有者の画像 ID に対する共有アクセスが自動的に付与されます。 これは通常、**[!UICONTROL Share Name]** の列に *MAG[XYZ からのクラウド共有アクセス]* と表示されます。
+Adobe Commerce Cloud プロジェクトがあり、ユーザーをプロジェクトに追加した場合は、プロジェクト所有者の画像 ID に対する共有アクセスが自動的に付与される可能性があります。 これは通常、**[!UICONTROL Share Name]** の列に *MAG[XYZ からのクラウド共有アクセス]* と表示されます。
 
-DELETEリンクが見つからない場合は、Commerce Cloudを通じて Shared Access が自動的に付与されたことを意味します。
+>[!NOTE]
+>
+>DELETEリンクが見つからない場合は、Commerce Cloudを通じて Shared Access が自動的に付与されたことを意味します。
 
 <u> 解決策 </u>
 
-このページで共有アクセスが追加/付与されていない場合、MAG[XYZ から *Cloud Shared Access]* という共有名を持つ共有アクセスユーザーのリストを削除することはできません。 これらは、情報/監査目的で保持されます。
+共有アクセスが追加/付与されていない場合、共有名が *Cloud Shared Access である共有アクセスユーザーのリストを MAG[XYZ]* から削除することはできません [ このページ ](https://account.magento.com/grantor/manage/)。 これらは、情報/監査目的で保持されます。
 
 ただし、それらの共有アクセスユーザーに対する権限を取り消すと、そのユーザーはアクセスできなくなります。
 
