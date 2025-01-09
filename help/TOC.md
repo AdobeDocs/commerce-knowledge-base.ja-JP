@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
+source-git-commit: c46d29aa11b9cbbcccbf1765b4ae972e14ac80ac
 workflow-type: tm+mt
-source-wordcount: '9409'
+source-wordcount: '9397'
 ht-degree: 0%
 
 ---
@@ -1021,7 +1021,6 @@ ht-degree: 0%
    * [クラウドインフラストラクチャー上で一時的なAdobe Commerceのアップサイズをリクエストする方法](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Adobe Commerce上のクラスターの環境 vCPU 層の表示](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [クラウドインフラストラクチャー上のAdobe Commerce: ホストのCPU設定を確認します。](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
-   * [Fastly on Cloud のアカウント所有者の変更（API トークンを使用したアクセス認証情報）](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md)
    * [クラウド上のAdobe Commerce：認証キーを変更して再デプロイ](/help/how-to/general/redeploy-with-another-key.md)
    * [サポートエージェントからリクエストされた場合に「スクラブ」ダンプを作成する方法](/help/how-to/general/create-dump-for-support.md)
    * [MBI：高度な計算列の作成と編集](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
