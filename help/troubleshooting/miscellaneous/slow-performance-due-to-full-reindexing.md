@@ -4,7 +4,7 @@ description: この記事では、完全なインデックス再作成（イン�
 exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
 feature: Best Practices
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 72ee49a8667f575a58e0cf1b3d5c9df936cc628b
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -59,3 +59,4 @@ ht-degree: 0%
 
 * [ インデックス作成の概要：インデックス再作成方法 ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) については、開発者向けドキュメントを参照してください。
 * [ 無効化されたキャッシュは、サポートナレッジベースで応答時間の低下を引き起こします ](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)。
+
