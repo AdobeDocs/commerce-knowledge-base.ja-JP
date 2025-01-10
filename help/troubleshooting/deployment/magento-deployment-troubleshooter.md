@@ -4,7 +4,7 @@ description: Adobe Commerceでのスタックしたデプロイメントと失�
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
+source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -30,7 +30,7 @@ b. NO - メンテナンスまたはグローバルな障害。 推定期間と�
 
 +++**既存の環境のデプロイメントをブロックしているデプロイメントが他の環境にありますか？**
 
-進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) を参照してください。
+進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) を参照してください。
 
 ```bash
 magento-cloud --state=in_progress

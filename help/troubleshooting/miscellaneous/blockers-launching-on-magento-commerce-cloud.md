@@ -4,7 +4,7 @@ description: この記事では、Fastly 設定、SSL 証明書、301 リダイ�
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
+source-git-commit: df966df6a85057b26d53a870d038269ebdcc2b32
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -78,7 +78,7 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 
 推奨事項：パフォーマンスが低下した原因を特定するには、パフォーマンステストに [Adobe Commerce Performance Toolkit](https://github.com/magento/magento2/tree/2.3/setup/performance-toolkit) を使用することを検討してください。 次のサードパーティツールも検討できます。
 
-* [Siege](https://www.joedog.org/siege-home/): HTTP 負荷テストおよびベンチマークユーティリティ。基本認証、Cookie、HTTP、HTTPS および FTP プロトコルをサポートします。
+* [Siege](https://www.joedog.org/siege-home): HTTP 負荷テストおよびベンチマークユーティリティ。基本認証、Cookie、HTTP、HTTPS および FTP プロトコルをサポートします。
 * [Jmeter](https://jmeter.apache.org/)：評判の良い負荷テストおよびパフォーマンス測定ツール。 スパイクされたトラフィックのパフォーマンスを測定するのに役立ちます（例：フラッシュセールス）。
 * [New Relic](https://support.newrelic.com/): サイトのプロセスと領域を特定し、データ、クエリ、Redis などの送信に費やした時間がアクションごとに追跡されるため、パフォーマンスが低下する原因になります。
 * [WebPageTest](https://www.webpagetest.org/) （無料）および [Pingdom](https://www.pingdom.com/) （有料）：サイトページのリアルタイム分析により、異なるオリジンの場所に時間を読み込みます。
