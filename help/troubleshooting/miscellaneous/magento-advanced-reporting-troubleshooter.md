@@ -4,7 +4,7 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 3b402728be7a80b62f21319d2cf91a92f1ad4a0c
+source-git-commit: aed14781c6a7b43d0a719ac89c2965d5044d8c22
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -138,7 +138,7 @@ b.いいえ – [ 手順 10](#step-10) に進みます。
 
 +++**cron ジョブによってエラーメッセージがスローされますか？**
 
-例：`core_config_data` の表に「*/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 ファイルは削除できません* というエラーが表示されます。 警告！unlink （/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en）：そのようなファイルやディレクトリはありません*
+例：`cron_schedule` の表に「*/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 ファイルは削除できません* というエラーが表示されます。 警告！unlink （/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en）：そのようなファイルやディレクトリはありません*
 
 a.はい – ACSD-50165 パッチを使用してください [ ファイルは削除できません。 警告！unlink：管理 ](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md) にファイルまたはディレクトリのエラーがありません。ジョブが再実行されるまで 24 時間待ってから、再試行してください。\
 b.いいえ – [ 手順 11](#step-11) に進みます。
