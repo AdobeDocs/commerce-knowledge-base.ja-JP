@@ -1,22 +1,33 @@
 ---
-title: 'SOAPから RESTful API への [!DNL FedEx] shipping method integration の移行'
+title: SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行
 promoted: true
 description: Adobe Commerce 2.4.4-p4 - 2.4.6-pX のSOAPから RESTful API への  [!DNL FedEx] shipping method integration の移行に対処するためのパッチを適用します。
 feature: Shipping/Delivery
 role: Developer
 exl-id: 7e11a171-6924-41d0-a5c7-7b794d0da84c
-source-git-commit: 7c468583883789a6bc6e41d1a787a356ea3205c4
+source-git-commit: 7a54e992e365238ec7c764225a31cd3b6b8ad019
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行
 
+>[!WARNING]
+>
+>以前に提供されたパッチの代わりに、[!DNL Quality Patches Tool] （QPT） 1.1.57 リリースの ACSD-61622 パッチを使用してください。 新しいパッチは、Adobe Commerce バージョン（すべてのデプロイメント方法） 2.4.6-p1 ～ 2.4.6-p8 と互換性があります。 新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される場合があります。
+>
+>詳しくは、Adobe Commerce ツールガイドの [ACSD-61622 パッチの記事 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) を参照してください。
+
+>[!WARNING]
+>
+>新しいパッチをインストールする前に、この記事で提供されている以前のパッチをアンインストールする必要があります。 パッチのアンインストール手順については、ユーザーガイドの [ カスタムパッチを元に戻す ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) を参照してください。
+
+
 この記事では、SOAPからAdobe Commerce 2.4.4-p4 - 2.4.6-pX の RESTful API への [!DNL FedEx] Shipping Method integration の移行に関する問題を解決するためのパッチを提供します。
 
-[!DNL FedEx Web Services] トラッキング、住所の検証、郵便番号の検証 Web サービス定義言語（WSDLS）は、2024 年 5 月 15 日（PT）に廃止されます。 SOAP ベースの [!DNL FedEx Web Services] は開発時に統合対象となり、[!DNL FedEx] の RESTFUL API に置き換えられました。 詳しくは、[[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html) を参照してください。
+[!DNL FedEx Web Services] トラッキング、住所の検証、郵便番号の検証 Web サービス定義言語（WSDLS）は、2024 年 5 月 15 日（PT）に廃止されました。 SOAP ベースの [!DNL FedEx Web Services] は開発時に統合対象となり、[!DNL FedEx] の RESTFUL API に置き換えられました。 詳しくは、[[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html) を参照してください。
 
 この変更は、Adobe Commerceにおける現在の [!DNL FedEx] shipping method integration の実装に影響を与え、現在の実装を修正して、廃止されたSOAP API から最新の [!DNL FedEx] RESTFUL API に移行する必要があります。
 
