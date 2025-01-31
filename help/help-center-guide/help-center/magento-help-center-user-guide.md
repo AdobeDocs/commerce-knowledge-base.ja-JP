@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience Leagueサポートユーザーガイド
 description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 6321dfa57f694a53f4b9b1c1e93182d60fa63c7b
+source-git-commit: c287b45c3cea99f6d536d6ed4d90a5e19d9fa71c
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2963'
 ht-degree: 0%
 
 ---
@@ -309,6 +309,10 @@ Cloud Console を使用して新しいサポートチケットを送信するに
 ### 共有アクセスを提供 {#provide-shared-access}
 
 共有アカウントの設定手順について詳しくは、『Adobe Commerce入門ガイド』の [Commerce アカウントの共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) の節を参照してください。
+
+>[!NOTE]
+>
+>共有アクセスを付与するには、既存のアカウントが必要です。詳しくは [Commerce アカウントの作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) を参照してください。
 
 新しいユーザーに共有アクセスを提供すると、Adobe Commerce アカウントページの **共有アクセス**/**権限の管理** で関連情報を利用できます。
 
