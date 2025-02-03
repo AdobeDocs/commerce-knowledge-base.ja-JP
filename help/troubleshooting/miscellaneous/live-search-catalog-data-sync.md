@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 0%
 
 ## 問題
 
-カタログデータが正しく同期されていないか、新しい製品が追加されたが検索結果に表示されません。
+カタログデータが正しく同期されていないか、新しい製品が追加されたが検索結果に表示されません。 また、`var/log/exception.log` で次のエラーが発生する場合もあります。
+
+`Magento_LiveSearch: An error occurred in search backend. {"result":{"errors":[{"message":"Exception while fetching data (/productSearch) : No index was found for this request"}]}}`
 
 >[!NOTE]
 >
@@ -134,6 +136,22 @@ API キーが変更されたため、エクスポートされたカタログを�
 bin/magento saas:resync --feed products
 bin/magento saas:resync --feed productattributes
 ```
+
+次のコマンドを実行してフィードを再同期します。
+
+```
+bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed products --cleanup-feed
+bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
+bin/magento saas:resync --feed scopesWebsite --cleanup-feed
+bin/magento saas:resync --feed prices --cleanup-feed
+bin/magento saas:resync --feed productOverrides --cleanup-feed
+bin/magento saas:resync --feed variants --cleanup-feed
+bin/magento saas:resync --feed categories --cleanup-feed
+bin/magento saas:resync --feed categoryPermissions --cleanup-feed
+```
+
+ライブサーチのインデックス再作成をリクエストする [ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) します。 問題の説明で、管理パネルの **[!UICONTROL System]**/**[!UICONTROL Services]**/**[!UICONTROL Commerce Services Connector]** の下にあるデータスペース/環境 ID を含めます。
 
 ## 関連資料
 
