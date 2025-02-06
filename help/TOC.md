@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: b14ce46b2e68b76f349c3d2791897c7519088f24
+source-git-commit: 9de7cb6d2c9e529031999cad9ae6f3c8de5520c7
 workflow-type: tm+mt
-source-wordcount: '9387'
+source-wordcount: '9382'
 ht-degree: 0%
 
 ---
@@ -958,7 +958,6 @@ ht-degree: 0%
       * [検索エンジンがに設定されている場合に  [!DNL Elasticsearch7]  フォールバック  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
       * [ElasticSuite トラッキングインデックスが原因でElasticsearchの問題が発生する](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
-      * [Adobe CommerceのElasticsearchに関するトラブルシューティング](/help/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.md)
       * [Elasticsearchが正しくインストールされていることを確認します。](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md)
       * [Elasticsearch 5 が設定され、「Fielddata が無効になっています…」エラーで検索ページが読み込まれない](/help/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled-error.md)
       * [Elasticsearchインデックスのステータスが「イエロー」または「レッド」である](/help/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.md)
