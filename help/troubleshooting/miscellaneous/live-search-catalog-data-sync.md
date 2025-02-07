@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
+source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 1. 30 分後、ユーザードキュメントの [Live Search のインストール/書き出しの確認 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) の説明に従って、書き出されたカタログデータを確認します。
 1. 30 分後、ユーザードキュメントの [Live Search のインストール/接続のテスト ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) の説明に従って接続をテストします。
 
-または
+Or
 
 1. カタログに新しい商品を追加します。
 1. Magentoインデクサーと cron がデータをバックエンドサービスに同期させるために実行してから 15～20 分後に、製品名またはその他の検索可能な属性を使用して検索クエリを実行してみてください。
@@ -65,7 +65,13 @@ API キーが変更されたため、エクスポートされたカタログを�
 1. 次の [!DNL SQL] クエリを使用して、`feed_data` の列に目的のデータが入力されていることを確認します。 また、`modified_at` タイムスタンプもメモしておきます。
 
    ```sql
-   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   SELECT * FROM cde_products_feed WHERE json_extract(feed_data, '$.sku') = '<your_sku>' AND json_extract(feed_data, '$.storeViewCode') = '<your_ store_view_code>';
+   ```
+
+   例：
+
+   ```sql
+   SELECT * FROM cde_products_feed WHERE json_extract(feed_data, '$.sku') = '24-MB04' AND json_extract(feed_data, '$.storeViewCode') = 'default';
    ```
 
 1. 正しいデータが表示されない場合は、次のコマンドを使用して再インデックスを実行し、手順 1 で [!DNL SQL] クエリを再実行してデータを確認します。
