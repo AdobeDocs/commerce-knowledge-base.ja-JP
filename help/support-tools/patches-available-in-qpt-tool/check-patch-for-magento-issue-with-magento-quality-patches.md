@@ -4,7 +4,7 @@ description: この記事では、品質向上パッチツール（QPT）の概�
 exl-id: 43393708-3939-449f-a764-b2ac6326165f
 feature: Tools and External Services
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ce9c69e12d64b4b4a8e6129783d9b15e95eff867
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -60,3 +60,4 @@ Adobe Commerce オンプレミスの場合と、クラウドインフラスト�
 
 * 開発者向けドキュメントの [ 品質向上パッチツールのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 * [Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) をサポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート サポート情報に含めます。
+
