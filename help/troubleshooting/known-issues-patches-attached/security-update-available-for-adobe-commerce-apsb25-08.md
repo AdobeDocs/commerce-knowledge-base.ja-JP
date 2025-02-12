@@ -5,7 +5,7 @@ description: Adobe Commerce 2.4.8 [!DNL critical, important, and moderate vulner
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: babb822cc505e2911ae28cd1a2540799146f19b3
+source-git-commit: d669c097767b5855c6bd747a0ab11b3520f405a0
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
