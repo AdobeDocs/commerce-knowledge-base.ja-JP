@@ -5,7 +5,7 @@ description: Adobe Commerce 2.4.8 [!DNL critical, important, and moderate vulner
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: f4a7a6ac538cf1199aea32875215709fcd165a08
+source-git-commit: babb822cc505e2911ae28cd1a2540799146f19b3
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Adobe Commerce on Cloud Infrastructure、Adobe Commerce オンプレミス、お
 * 2.4.5-p10 以前
 * 2.4.4-p11 以前
 
-## ## Adobe Commerce on Cloud、Adobe Commerce オンプレミス、およびMagento Open Source ソフトウェアのソリューション
+## Adobe Commerce on Cloud、Adobe Commerce オンプレミス、Magento Open Source ソフトウェアのソリューション
 
 影響を受ける製品およびバージョンの脆弱性を解決するために、Adobe Commerce/Magento Open Sourceのバージョンに応じて、[!DNL CVE-2025-24434] Isolated パッチを適用する必要があります。
 
