@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 83b57cde528c8f581d243553006cf0eb97aed138
+source-git-commit: 3003dc048e6f0bc34dd0264f0e038759e8ff94fa
 workflow-type: tm+mt
-source-wordcount: '9380'
+source-wordcount: '9388'
 ht-degree: 0%
 
 ---
@@ -932,6 +932,7 @@ ht-degree: 0%
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * の既知 {#known-issues-patches-attached} 問題
+      * [Adobe Commerce 2.4.7-p4.1 [!DNL HIPAA] 2.0 互換性パッケージのホットフィックス](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
       * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
       * [Adobe Commerce 2.4.6 [!DNL GraphQL "placeOrder" API] p8 での後方互換性のない変更](/help/troubleshooting/known-issues-patches-attached/backwards-incompatible-changes-for-graphql-placeorder-api-in-adobe-commerce-2-4-6-p8.md)
       * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
