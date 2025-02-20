@@ -2,16 +2,16 @@
 title: Adobe Commerce サポートチケットのライフサイクルポリシーの更新
 description: この記事では、Adobe Commerce サポートチケットライフサイクルポリシーの更新に関する情報を提供します。
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
+source-git-commit: b882fcc3a890fa0eb06c17f877d7d315be66e294
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce サポートチケットのライフサイクルポリシーの更新
 
-このドキュメントでは、コミュニケーションを強化し、お客様に迅速に解決策を提供してカスタマーサクセスを支援することを目的として、AdobeDX サポートケースのライフサイクルに対する改善点の概要を説明します。 これは、[Adobeサクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon) でも確認できます。
+このドキュメントでは、コミュニケーションを強化し、お客様に迅速に解決策を提供してカスタマーサクセスを支援することを目的として、Adobe DX サポートケースのライフサイクルに対する改善点の概要を説明します。 これは、[Adobe サクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon) でも確認できます。
 以下は、サポートプロセス中に発生した様々なシナリオに関するタイムラインと通知です。
 
 ## ケースのフォローアップのリマインダー
@@ -33,7 +33,7 @@ ht-degree: 0%
 * ステータスが「応答待ち」に設定された後、1 日、3 日、5 日に、フォローアップ通知が顧客に送信され、追加情報の提供を求められます。
 * ステータスが「応答待ち」に設定された後、顧客から 6 日間の応答がない場合、ケースはクローズに設定され、クローズ通知が送信されます。
 
-お客様は、14 日以内にクローズドケースを再度開いて、コミュニケーションを継続することができます。 14 日を超えると、新しいサポートケースをオープンして、以前にクローズしたケースに関するコミュニケーションを継続できます。
+お客様は、14 日以内にExperience Leagueでクローズ済みケースを再度開いて、コミュニケーションを継続できます。 14 日を超えると、新しいサポートケースをオープンして、以前にクローズしたケースに関するコミュニケーションを継続できます。 クローズしたチケットに関するメールへの返信では、そのチケットは再オープンされないことに注意してください。
 
 ### エンジニアがソリューションを提供する場合
 
@@ -50,4 +50,4 @@ ht-degree: 0%
 * [ サポートチケットの送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
 * [Adobe Commerce ヘルプセンターの開始ページに「チケットを送信」リンクが表示されない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
 * [ チケット送信フォーム：マーチャントが組織ドロップダウンに表示されない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
-* [Adobe成功計画の概要：サポート ケースのライフサイクル ](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
+* [Adobe サクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
