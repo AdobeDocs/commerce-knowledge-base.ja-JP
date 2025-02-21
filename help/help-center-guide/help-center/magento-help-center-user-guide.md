@@ -1,41 +1,41 @@
 ---
-title: Adobe CommerceのExperience Leagueサポートユーザーガイド
-description: Experience Leagueサポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
+title: Adobe CommerceのExperience League サポートユーザーガイド
+description: Experience League サポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c287b45c3cea99f6d536d6ed4d90a5e19d9fa71c
+source-git-commit: c578bdc5684705283bb1d3eb4c42edb62ad769f9
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '3072'
 ht-degree: 0%
 
 ---
 
-# Adobe CommerceのExperience Leagueサポートユーザーガイド
+# Adobe CommerceのExperience League サポートユーザーガイド
 
-このガイドでは、[Experience Leagueサポートにサポートチケットを送信し ](https://experienceleague.adobe.com/home#support)Adobe Commerce アカウントへの共有アクセスを提供する方法について説明します。
-
->[!NOTE]
->
->Adobe Commerceのサポートは、Adobe Commerce ヘルプセンターからExperience Leagueに移行されました。 [ こちら ](#what-is-experience-support) で説明しているExperience Leagueケースのフォームフローを使用して、サポートケースを送信します。
+このガイドでは、[Experience League サポートにサポートチケットを送信し ](https://experienceleague.adobe.com/home#support)Adobe Commerce アカウントへの共有アクセスを提供する方法について説明します。
 
 >[!NOTE]
 >
->この時点で、以前にAdobe Commerce ヘルプセンターで送信したケースを表示するには、https://support.magento.com/hc/en-us/requestsに移動する必要があります。これらのケースは新しいサポートチケットシステムに移行されていないからです。 ヘルプセンターは読み取り専用になりました。元の問題のサポートを引き続き受けるには、[Experience Leagueサポート ](https://experienceleague.adobe.com/home#support) にフォローアップチケットを送信する必要があります。
+>Adobe Commerceのサポートは、Adobe Commerce ヘルプセンターからExperience Leagueに移行されました。 [ こちら ](#what-is-experience-support) で説明しているExperience League ケースフォームフローを使用して、サポートケースを送信します。
 
 >[!NOTE]
 >
->Adobe Commerce ヘルプセンターのナレッジベース部分がAdobe Experience League ポータルに移行されました。 サポートチケットを作成すると、関連するナレッジベース記事が、Adobe Experience Leagueのその他の関連するAdobe Commerce ドキュメントと共に提案されます。
+>この時点で、以前にAdobe Commerce ヘルプセンターで送信したケースを表示するには、https://support.magento.com/hc/en-us/requestsに移動する必要があります。これらのケースは新しいサポートチケットシステムに移行されていないからです。 ヘルプセンターは読み取り専用になりました。元の問題に対するサポートを引き続き受けるには、[Experience League サポート ](https://experienceleague.adobe.com/home#support) にフォローアップチケットを送信する必要があります。
+
+>[!NOTE]
+>
+>Adobe Commerce ヘルプセンターのナレッジベースの部分は、Adobe Experience League ポータルに移行されました。 サポートチケットを作成すると、関連するナレッジベース記事が、Adobe Experience League からの関連するその他のAdobe Commerce ドキュメントと共に提案されます。
 
 **主要更新：** 2024 年 7 月 29 日
 
-**[EXPERIENCE LEAGUEサポートとは](#what-is-experience-support)**
+**[EXPERIENCE LEAGUEのサポートとは](#what-is-experience-support)**
 
 **[サポートケース](#support-cases)**
 
-* [Experience Leagueサポートへのログイン](#sign-in-experience-support)
+* [Experience League サポートへのログイン](#sign-in-experience-support)
 * [サポートケースの送信](#submit-case)
 
-   * [Adobe Experience League開始ページ](#experience-league-start-page)
+   * [Adobe Experience League スタートページ](#experience-league-start-page)
    * [Adobe Commerce アカウントページ](#submit-case-adobe-commerce-account-page)
    * [*メールアドレスを確認してください*](#verify-email-address-error)
 
@@ -61,28 +61,28 @@ ht-degree: 0%
 **[ADOBE COMMERCEの請求に関する FAQ](#billing-faq)**
 
 
-## Experience Leagueサポートとは {#what-is-experience-support}
+## Experience League サポートとは {#what-is-experience-support}
 
-Experience Leagueサポートは、Adobe Commerceの正規のお客様がサポートチケットを送信および管理できるAdobe用のサポートポータルです。 また、トラブルシューティング記事を確認することもできます。
+Experience League サポートは、Adobeのサポート ポータルで、Adobe Commerceの正規のお客様がサポートチケットを送信および管理できます。 また、トラブルシューティング記事を確認することもできます。
 
 ## サポートケース {#support-cases}
 
 Adobe Experience League サポートケース管理を使用すると、サポート事例を通じてサポートを活用し、Adobe Commerceを含むAdobe製品を使用中に発生した特定の問題を、契約中のすべてのAdobe Commerce製品に対して解決できます。
 
-## Experience Leagueサポートへのログイン {#sign-in-experience-support}
+## Experience League サポートへのログイン {#sign-in-experience-support}
 
 ログインすると、サポートチケットに関するエージェントからの質問を送信、更新、回答できます。
 
 Adobe Experience League サポートにログインするには、次の手順に従います。
 
 1. [experienceleague.adobe.com](https://experienceleague.adobe.com/) に移動します。
-1. Adobeログイン資格情報を使用してログインします。
+1. Adobe ログイン資格情報を使用してログインします。
 
 ![experience-league へのログイン ](assets/experience_league_sign_in.png)
 
 ### サポートケースの送信 {#support-case}
 
-アカウントオーナーまたは Shared Access ユーザーとして正常にログインしたら、Adobe Experience Leagueのホームページ、Adobe Commerceのアカウントページ、Adobe Commerce Cloudのアカウントページを使用して、サポートケースを送信できます。
+アカウントオーナーまたは Shared Access ユーザーとして正常にログインしたら、Adobe Experience League のホームページ、Adobe Commerceのアカウントページ、Adobe Commerce Cloud のアカウントページを使用して、サポートケースを送信できます。
 
 >[!NOTE]
 >
@@ -96,21 +96,21 @@ Adobe Experience League サポートにログインするには、次の手順�
 >
 >拡張機能の公開、[Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/) での購入、払い戻しの請求に関する問題については、https://commercemarketplace.adobe.com/に直接 [!DNL Commerce Marketplace] チームにお問い合わせください。 ページの下部に移動して「**[!UICONTROL Contact Us]**」をクリックすると、Marketplace サポートチケットを送信するためのフォームが開きます。
 
-#### Adobe Experience League開始ページ {#experience-league-start-page}
+#### Adobe Experience League スタートページ {#experience-league-start-page}
 
-Adobe Experience Leagueの「スタート」ページを使用して新しいサポートケースを送信するには、次の手順に従います。
+Adobe Experience League のスタートページを使用して新しいサポートケースを送信するには、次の手順に従います。
 
 >[!INFO]
 >
 >1. ケースを送信するには、適切な製品（Adobe Commerce、Adobe Commerce Intelligence、Experience Platformなど）のサポートを受ける資格を有している必要があります。 サポートを受ける資格がない場合は、組織内でサポートを受ける資格のあるユーザーではないことを示すバーがページ上部に表示されます。
->1. 複数の組織に属している場合や、似た名前を持つ複数の組織がある場合（それぞれが、組織が購読している他のAdobe商品を表します）、「（Commerce）」で終わる左側の列のドロップダウンから適切な組織を最初に選択する必要があります。
->1. ケースを提出するには、適切な商品（Adobe Commerce、Adobe Commerce レポート、Adobe Commerce支払いサービス、Experience Platformなど）のサポートを受ける資格を有している必要があります。 サポートを受ける資格がない場合は、組織内でサポートを受ける資格のあるユーザーではないことを示すバーがページ上部に表示されます。 Commerce関連の問題のケースを送信するには、まず *[!DNL (Commerce)]* で終わる適切な組織名を選択する必要があります。
->1. 複数の組織に属している場合や、似た名前を持つ複数の組織がある場合（それぞれが、組織が購読している他のAdobe商品を表します）、最初にドロップダウンから適切な組織を選択する必要があります。
+>1. 複数の組織に属している場合や、似た名前を持つ複数の組織がある場合（それぞれが、組織が購読している他のAdobe製品を表します）、最初に、左側の列で「（Commerce）」で終わるドロップダウンから適切な組織を選択する必要があります。
+>1. ケースを提出するには、適切な商品（Adobe Commerce、Adobe Commerce レポート、Adobe Commerce Payment Services、Experience Platformなど）のサポートを受ける資格を付与されている必要があります。 サポートを受ける資格がない場合は、組織内でサポートを受ける資格のあるユーザーではないことを示すバーがページ上部に表示されます。 Commerce関連の問題のケースを送信するには、まず *[!DNL (Commerce)]* で終わる適切な組織名を選択する必要があります。
+>1. 複数の組織に属している場合や、似た名前を持つ複数の組織がある場合（それぞれが、組織が購読している他のAdobe製品を表します）、最初にドロップダウンから適切な組織を選択する必要があります。
 >1. [!UICONTROL Select a product] ドロップダウンに「Adobe Commerce」が表示されない場合は、まずCommerce アカウントオーナーから [ 共有アクセス ](#shared-access) を取得する必要があります。 共有アクセスが付与されたら、ケースを送信する前に、プロセスを完了するために [ アカウントを同期 ](#switch-accounts) する必要があります。
 
 >[!NOTE]
 >
->ケースを送信する前に正しい組織を選択していること、および選択した組織が、サポートをリクエストする製品に適した資格を持っていることを確認します。 例えば、イシューがAdobe Commerceに関係しているものの、商品としてExperience Platformを選択していて、ケースが正常に送信された場合、ケースのルーティング間違いや応答時間の遅延につながる可能性があります。
+>ケースを送信する前に正しい組織を選択していること、および選択した組織が、サポートをリクエストする製品に適した資格を持っていることを確認します。 例えば、イシューがAdobe Commerceに関連しているが、商品としてAdobe Commerce IntelligenceまたはAdobe Experience Platformを選択していて、ケースが正常に送信された場合、ケースのルーティング間違いや応答時間の遅延につながる可能性があります。
 >
 >また、ケースの送信時に間違った組織が選択された場合、チームは適切または正しい組織の [!UICONTROL My Cases] でケースを表示できません。 Adobe Commerce サポートチームには、ケースに関連付けられた組織を変更する機能はありません。この問題に対処するには、既存のケースをクローズし、提供/選択された適切な詳細で新しいケースを送信する必要があります。
 
@@ -126,11 +126,16 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 
    ![open-support-case](assets/open_support_case.png)
 
-1. ドロップダウンメニューから製品を選択し、ケースのタイトルと説明を入力します。 メモ：ドロップダウンに商品が表示されない場合や、Commerceが使用できない場合は、左側の列の「組織」を切り替えて、もう一度確認します。
+1. ドロップダウンメニューから製品を選択し、ケースのタイトルと説明を入力します。 メモ：ドロップダウンに製品が表示されない場合や、[!DNL Commerce] が使用可能なオプションでない場合は、左側の列で [!UICONTROL Organization] を切り替えて、もう一度確認します。
 
    ![select_product](assets/support_case_product.png)
 
-1. Adobe Experience Leagueは、お客様の問題を解決するのに役立つ記事やベストプラクティスを提案します。 それでも直接サポートが必要な場合は、ケースを送信する前に追加情報を提供する必要があります。
+>[!NOTE]
+>
+>製品として「**[!DNL Commerce]on cloud infrastructure」が選択されたチケットを送信しており** 組織に複数のプロジェクトがリストされている場合は、適切な [!UICONTROL Project ID] を選択するように求められます。 必要な [!UICONTROL Project ID] が見つからない場合は、別の「プロジェクト X」で支援を求めているメモをチケットに追加してください。<br> クラウドインフラストラクチャで **[!DNL Commerce]を使用していて、「Managed Services上で**[!DNL Commerce]**」チケットを送信しようとしているが** クラウドインフラストラクチャで **[!DNL Commerce]を表示しない場合** 利用可能な商品として以下を行います。<br>1 **[!UICONTROL Case title]** に問題の件名を入力してください。<br>2。 **[!UICONTROL Case description]** に問題の説明を入力します。<br>3。 これらの項目を両方とも入力すると、下の **[!UICONTROL Cloud Project URL]** フィールドが表示されます。
+
+
+1. Adobe Experience League は、ケースを解決するのに役立つ記事とベストプラクティスを提案します。 それでも直接サポートが必要な場合は、ケースを送信する前に追加情報を提供する必要があります。
 
    ![direct_support_required](assets/direct_support.png)
 
@@ -140,7 +145,7 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 >
 >experienceleague.adobe.comにログインしたときに、組織のドロップダウンメニューに組織が表示されない場合は、サポートをリクエストする前または既存のサポートケースを管理する前に、プロファイルをaccounts.magento.comと同期する必要がある場合があります。   
 >
->1. accounts.magento.comに移動し、Adobe Experience Leagueでサポートケースを管理するために使用するのと同じプロファイル（企業、学校、個人）を使用してログインします。 
+>1. accounts.magento.comに移動し、Adobe Experience League でのサポートケースの管理に使用するプロファイル（企業、学校、個人）と同じプロファイルでログインします。 
 >1. accounts.magento.com プロファイルに正常にログインしたら、experienceleague.adobe.comに戻ってログインします。 
 >1. 組織ドロップダウンメニューから組織を選択します。 
 >1. それでも組織が表示されない場合は、Commerce管理者に問い合わせて、サポート委任権限を取得してください。 詳しくは、[Commerce アカウント共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) のヘルプ記事を参照してください。 
@@ -149,7 +154,7 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 >
 >組織/製品が重要な理由
 >
->**例 A**:1 つの会社に対してのみ共有アクセスがあり、その会社は 2 つのAdobe製品（Product1 および Product2）の権限を持っています。
+>**例 A**：共有アクセス権を持つ会社は 1 つだけで、その会社が 2 つのAdobe製品（Product1 および Product2）の使用権限を持っています。
 >1. 各組織は 1 つの製品を表すので、ドロップダウンには「OrgA-Product1」と「OrgB-Product2」という 2 つの組織が表示されます。
 >1. Product = Product1 を選択した場合、問題が Product2 に関係しているときは、ケースは Product2 サポートにルーティングされ、ケースを Product1 サポートに転送する際に遅延が生じます。
 >1. OrgA-Product1 のケースを発行し、今後その組織の [!UICONTROL My Cases] をレビューする場合、組織として OrgA-Product2 を選択すると表示されません（例 B と比較して、その他の組織を選択する必要があります）。
@@ -158,7 +163,7 @@ Adobe Experience Leagueの「スタート」ページを使用して新しいサ
 >1. 組織 A に対してケースを送信したが、その問題が実際に組織 B に影響を与えている場合、組織 B のメンバーは将来、[!UICONTROL My Cases] の下でこのケースを表示することはできません。
 >1. さらに、OrgA のメンバーは、実際には OrgB 向けの [!UICONTROL My Cases] のケースを確認できるので、プライバシーの問題が発生する可能性があります。
 
-サポートケースを送信するには、Experience Leagueにログインするためのアカウントがhttps://account.adobe.comとhttps://account.magento.comの両方に必要です。 サインインするまでサポート ケースを送信できません。
+Experience Leagueにログインしてサポートケースを送信するには、https://account.adobe.comとhttps://account.magento.comの両方にアカウントがある必要があります。 サインインするまでサポート ケースを送信できません。
 
 >[!NOTE]
 >
@@ -339,15 +344,15 @@ Cloud Console を使用して新しいサポートチケットを送信するに
 
 <u> 影響を受ける製品とバージョン </u>
 
-* Adobe Commerce Cloud（すべてのバージョン）
+* Adobe Commerce Cloud （すべてのバージョン）
 
 <u> 原因 </u>
 
-Adobe Commerce Cloud プロジェクトがあり、ユーザーをプロジェクトに追加した場合は、プロジェクト所有者の画像 ID に対する共有アクセスが自動的に付与される可能性があります。 これは通常、**[!UICONTROL Share Name]** の列に *MAG[XYZ からのクラウド共有アクセス]* と表示されます。
+Adobe Commerce Cloud プロジェクトがあり、プロジェクトにユーザーを追加していた場合、プロジェクト所有者の画像 ID に対する共有アクセスが自動的に付与されていた可能性があります。 これは通常、**[!UICONTROL Share Name]** の列に *MAG[XYZ からのクラウド共有アクセス]* と表示されます。
 
 >[!NOTE]
 >
->DELETEリンクが見つからない場合は、Commerce Cloudを通じて Shared Access が自動的に付与されたことを意味します。
+>DELETE リンクが見つからない場合は、Commerce Cloudを通じて共有アクセスが自動的に付与されていました。
 
 <u> 解決策 </u>
 
