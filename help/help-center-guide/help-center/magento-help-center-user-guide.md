@@ -3,7 +3,7 @@ title: Adobe CommerceのExperience League サポートユーザーガイド
 description: Experience League サポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c578bdc5684705283bb1d3eb4c42edb62ad769f9
+source-git-commit: cb0d3b47c7b9693c83c6f1e85fa41cce57972c9f
 workflow-type: tm+mt
 source-wordcount: '3072'
 ht-degree: 0%
@@ -130,9 +130,9 @@ Adobe Experience League のスタートページを使用して新しいサポ�
 
    ![select_product](assets/support_case_product.png)
 
->[!NOTE]
->
->製品として「**[!DNL Commerce]on cloud infrastructure」が選択されたチケットを送信しており** 組織に複数のプロジェクトがリストされている場合は、適切な [!UICONTROL Project ID] を選択するように求められます。 必要な [!UICONTROL Project ID] が見つからない場合は、別の「プロジェクト X」で支援を求めているメモをチケットに追加してください。<br> クラウドインフラストラクチャで **[!DNL Commerce]を使用していて、「Managed Services上で**[!DNL Commerce]**」チケットを送信しようとしているが** クラウドインフラストラクチャで **[!DNL Commerce]を表示しない場合** 利用可能な商品として以下を行います。<br>1 **[!UICONTROL Case title]** に問題の件名を入力してください。<br>2。 **[!UICONTROL Case description]** に問題の説明を入力します。<br>3。 これらの項目を両方とも入力すると、下の **[!UICONTROL Cloud Project URL]** フィールドが表示されます。
+   >[!NOTE]
+   >
+   >製品として「**[!DNL Commerce]on cloud infrastructure」が選択されたチケットを送信しており** 組織に複数のプロジェクトがリストされている場合は、適切な [!UICONTROL Project ID] を選択するように求められます。 必要な [!UICONTROL Project ID] が見つからない場合は、別の「プロジェクト X」で支援を求めているメモをチケットに追加してください。<br> クラウドインフラストラクチャで **[!DNL Commerce]を使用していて、「Managed Services上で**[!DNL Commerce]**」チケットを送信しようとしているが** クラウドインフラストラクチャで **[!DNL Commerce]を表示しない場合** 利用可能な商品として以下を行います。<br>1 **[!UICONTROL Case title]** に問題の件名を入力してください。<br>2。 **[!UICONTROL Case description]** に問題の説明を入力します。<br>3。 これらの項目を両方とも入力すると、下の **[!UICONTROL Cloud Project URL]** フィールドが表示されます。
 
 
 1. Adobe Experience League は、ケースを解決するのに役立つ記事とベストプラクティスを提案します。 それでも直接サポートが必要な場合は、ケースを送信する前に追加情報を提供する必要があります。
@@ -143,23 +143,25 @@ Adobe Experience League のスタートページを使用して新しいサポ�
 
 >[!IMPORTANT]
 >
->experienceleague.adobe.comにログインしたときに、組織のドロップダウンメニューに組織が表示されない場合は、サポートをリクエストする前または既存のサポートケースを管理する前に、プロファイルをaccounts.magento.comと同期する必要がある場合があります。   
+>experienceleague.adobe.comにログインしたときに、組織のドロップダウンメニューに組織が表示されない場合は、サポートをリクエストする前または既存のサポートケースを管理する前に、プロファイルをaccounts.magento.comと同期する必要がある場合があります。
 >
->1. accounts.magento.comに移動し、Adobe Experience League でのサポートケースの管理に使用するプロファイル（企業、学校、個人）と同じプロファイルでログインします。 
->1. accounts.magento.com プロファイルに正常にログインしたら、experienceleague.adobe.comに戻ってログインします。 
->1. 組織ドロップダウンメニューから組織を選択します。 
->1. それでも組織が表示されない場合は、Commerce管理者に問い合わせて、サポート委任権限を取得してください。 詳しくは、[Commerce アカウント共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) のヘルプ記事を参照してください。 
+>1. accounts.magento.comに移動し、Adobe Experience League でのサポートケースの管理に使用するプロファイル（企業、学校、個人）と同じプロファイルでログインします。
+>1. accounts.magento.com プロファイルに正常にログインしたら、experienceleague.adobe.comに戻ってログインします。
+>1. 組織ドロップダウンメニューから組織を選択します。
+>1. それでも組織が表示されない場合は、Commerce管理者に問い合わせて、サポート委任権限を取得してください。 詳しくは、[Commerce アカウント共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) のヘルプ記事を参照してください。
 
 >[!NOTE]
 >
 >組織/製品が重要な理由
 >
 >**例 A**：共有アクセス権を持つ会社は 1 つだけで、その会社が 2 つのAdobe製品（Product1 および Product2）の使用権限を持っています。
+>
 >1. 各組織は 1 つの製品を表すので、ドロップダウンには「OrgA-Product1」と「OrgB-Product2」という 2 つの組織が表示されます。
 >1. Product = Product1 を選択した場合、問題が Product2 に関係しているときは、ケースは Product2 サポートにルーティングされ、ケースを Product1 サポートに転送する際に遅延が生じます。
 >1. OrgA-Product1 のケースを発行し、今後その組織の [!UICONTROL My Cases] をレビューする場合、組織として OrgA-Product2 を選択すると表示されません（例 B と比較して、その他の組織を選択する必要があります）。
 >
 >**例 B**:2 つの会社に対して共有アクセス権があり、各会社はAdobe Commerceの使用権限のみを持っています。
+>
 >1. 組織 A に対してケースを送信したが、その問題が実際に組織 B に影響を与えている場合、組織 B のメンバーは将来、[!UICONTROL My Cases] の下でこのケースを表示することはできません。
 >1. さらに、OrgA のメンバーは、実際には OrgB 向けの [!UICONTROL My Cases] のケースを確認できるので、プライバシーの問題が発生する可能性があります。
 
@@ -170,6 +172,7 @@ Experience Leagueにログインしてサポートケースを送信するには
 >既にhttps://account.magento.comにアカウントを持っているがログインできない場合、2022 年 8 月からhttps://account.adobe.comにアカウントを登録する必要が生じている可能性があります。
 >
 >これを解決するには：
+>
 >1. MAG ID と同じメールアドレスを使用して、https://account.adobe.comでアカウントを作成します。
 >1. https://account.magento.comに移動して、Adobe IDと MAG ID をリンクします。
 
