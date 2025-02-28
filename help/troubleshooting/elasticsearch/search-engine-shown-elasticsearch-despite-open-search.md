@@ -1,11 +1,11 @@
 ---
-title: 「[!DNL Elasticsearch] はインストールに関係なく検索エンジンと  [!DNL OpenSearch]  て表示されます」
+title: インストールに関係なく、検索エンジンとして [!DNL Elasticsearch] が表示  [!DNL OpenSearch]  れる
 description: この記事では、 [!DNL OpenSearch] をインストールまたはアップグレードした後も  [!DNL Elasticsearch] cloud 上のAdobe Commerceの検索エンジンとして引き続き表示される問題の解決策を説明します。
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
+source-git-commit: b3f68e43ce3c4fdea001db1d8ba2774900db7dba
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 影響を受けるバージョン
 
-cloud 2.4.3-p2 - 2.4.5-p6 のAdobe Commerce
+クラウド 2.4.4 - 2.4.5-p11 のAdobe Commerce
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ cloud 2.4.3-p2 - 2.4.5-p6 のAdobe Commerce
 
 ## 原因：
 
-Adobe Commerceは、検索エンジンとして [!DNL Elasticsearch7] を指定するようにハードコードされています。
+[!DNL Elasticsearch7] は、これらのバージョンで使用される検索エンジンになるようにAdobe Commerceでハードコードされています。
 
-これは、インストールされているバージョンのサービスと混同しないでください。 基になる [!DNL OpenSearch] サービスをバックエンドのエンジンとして使用しているにもかかわらず、アプリケーションは [!DNL Elasticsearch7] を検索エンジンとして認識するだけで、[!DNL OpenSearch] は認識しません。
+これは、インストールされているバージョンのサービスと混同しないでください。 [!DNL Opensearch] モジュールはコードに含まれていませんが、Adobe Commerceは基になる [!DNL Opensearch] サービスを利用できます。
 
 ## 解決策
 
@@ -70,7 +70,7 @@ $ curl 127.0.0.1:9200
 
 **メソッド 2**:
 
-* Magentoクラウド CLI で、`magento-cloud relationships -p <project_id>` コマンドを使用します。 コマンドを使用して、[!DNL OpenSearch] を見つけます。
+* Magento-cloud CLI で、`magento-cloud relationships -p <project_id>` コマンドを使用します。 コマンドを使用して、[!DNL OpenSearch] を見つけます。
 
 ## 関連資料
 
