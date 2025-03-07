@@ -4,9 +4,9 @@ description: Adobe Commerceでのスタックしたデプロイメントと失�
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
+source-git-commit: 4704446d043e3175b5af27c068908e58bfb7a9ff
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerceでのスタックしたデプロイメントと失敗したデプ
 
 +++**クラウドインフラストラクチャサービス上のAdobe Commerceは稼働していますか？**
 
-デプロイメントの停止 – クラウドインフラストラクチャサービス上でAdobe Commerceは稼働していますか。 [Adobe Commerce Cloud](https://status.adobe.com/products/3350/) を確認してください。
+デプロイメントの停止 – クラウドインフラストラクチャサービス上でAdobe Commerceは稼働していますか。 「[Adobe Commerce Cloud](https://status.adobe.com/products/3350/)」をオンにします。
 
 a.はい – [ 手順 2](#step-2) に進みます。\
 b. NO - メンテナンスまたはグローバルな障害。 推定期間と更新を確認します。
@@ -30,7 +30,7 @@ b. NO - メンテナンスまたはグローバルな障害。 推定期間と�
 
 +++**既存の環境のデプロイメントをブロックしているデプロイメントが他の環境にありますか？**
 
-進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) を参照してください。
+進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) を参照してください。
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ magento-cloud --state=in_progress
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-既存のデプロイメントアクティビティに関する情報を見つけるには（[Cloud UI で「ログがスニップされた」エラーがある場合のデプロイメントログの確認」を参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+既存のデプロイメントアクティビティに関する情報を見つけるには（[Cloud UI で「ログがスニップされた」エラーがある場合のデプロイメントログの確認」を参照 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
 詳しくは、次のコマンドを実行して、そのアクティビティの実行ログを取得してください。
 
 ```bash
@@ -79,7 +79,7 @@ b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/he
 +++**Bitbucket の使用**
 
 a.はい – [status.bitbucket.com](https://bitbucket.status.atlassian.com/) をチェックします。\
-b.いいえ – [ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) でデプロイメントログエラーを確認します。 [ 手順 6](#step-6) に進みます。
+b.いいえ – [ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations) でデプロイメントログエラーを確認します。 [ 手順 6](#step-6) に進みます。
 
 +++
 
@@ -124,7 +124,7 @@ b.いいえ – [ 手順 11](#step-11) に進みます。
 +++**使用可能なストレージは問題ありませんか？**
 
 a.はい – [ 手順 11](#step-11) に進みます。\
-b. NO - レビュー [ ディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html)。
+b. NO - レビュー [ ディスク容量の管理 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。
 
 +++
 
@@ -148,9 +148,9 @@ b.いいえ – [ 手順 8](#step-8) に進みます。
 
 ## 手順 13 - Elasticsearchのアップグレードに失敗したかどうかを確認する {#step-13}
 
-+++**アップグレード中または展開中のElasticsearch**
++++**Elasticsearchをアップグレードまたはデプロイしますか？**
 
-a.はい – Elasticsearchがアップグレード手順に失敗しました。 [Elasticsearch ソフトウェアの互換性 ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 それでもElasticsearchのアップグレードが機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。 **注意**：クラウドインフラストラクチャー上のAdobe Commerceでは、インフラストラクチャチームに 48 営業時間通知しないと、実稼動環境にサービスアップグレードをプッシュできないことに注意してください。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある場合は、48 時間前に [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、必要なサービスアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。\
+a.はい – Elasticsearchのアップグレード手順に失敗しました。 [Elasticsearch ソフトウェア互換性 ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 それでもElasticsearchのアップグレードが機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。 **注意**：クラウドインフラストラクチャー上のAdobe Commerceでは、インフラストラクチャチームに 48 営業時間通知しないと、実稼動環境にサービスアップグレードをプッシュできないことに注意してください。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある場合は、48 時間前に [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、必要なサービスアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。\
 b.いいえ – [ 手順 14](#step-14) に進みます。
 
 +++
@@ -164,7 +164,7 @@ b.いいえ – [ 手順 15](#step-15) に進みます。
 
 +++
 
-## 手順 15 - Elasticsearchバージョンのエラー {#step-15}
+## 手順 15 - Elasticsearchのバージョンエラー {#step-15}
 
 +++**Elasticseach バージョンに関するエラー**
 
@@ -210,7 +210,7 @@ b.いいえ – [ 手順 19](#step-19) に進みます。
 
 +++**サードパーティの拡張機能を使用しますか？**
 
-回答：はい [ サードパーティの拡張機能を無効にする ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) を試して、特にエラーに拡張機能名がある場合は、デプロイメントを実行します（問題の原因がサードパーティの拡張機能であるかどうかを確認します）。\
+回答：はい [ サードパーティの拡張機能を無効にする ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) を試して、特にエラーに拡張機能名がある場合は、デプロイメントを実行します（問題の原因がサードパーティの拡張機能であるかどうかを確認します）。\
 b.いいえ – [ 手順 20](#step-20) に進みます。
 
 +++
