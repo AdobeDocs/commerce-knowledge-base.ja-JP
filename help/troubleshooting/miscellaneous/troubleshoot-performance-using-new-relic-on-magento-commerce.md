@@ -1,12 +1,12 @@
 ---
 title: Adobe CommerceのNew Relicを使用したパフォーマンスのトラブルシューティング
-description: この記事では、New Relicを使用して、クラウドインフラストラクチャー上でAdobe Commerceのパフォーマンスの問題を解決するためのトラブルシューティング手順を説明します。 また、詳しい情報を得るためのリソースも提供します。 問題のリストを以下に示します。 サポートナレッジベースでトラブルシューティング手順を確認するには、をクリックしてください。'
+description: この記事では、New Relicを使用して、クラウドインフラストラクチャー上でAdobe Commerceのパフォーマンスに関する問題を解決するためのトラブルシューティング手順を説明します。 また、詳しい情報を得るためのリソースも提供します。 問題のリストを以下に示します。 サポートナレッジベースでトラブルシューティング手順を確認するには、をクリックしてください。
 exl-id: 0a22beb7-18b0-47eb-a6b8-63b7322b392c
 feature: Observability
 role: Developer
-source-git-commit: 324cce66df1e4ab7ec4ef8fb6512c3acbabdf3ab
+source-git-commit: 27fed162416c619a08d757279a3405f1fa72e976
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 この記事では、New Relicを使用して、クラウドインフラストラクチャー上でAdobe Commerceのパフォーマンスに関する問題を解決するためのトラブルシューティング手順を説明します。 また、詳しい情報を得るためのリソースも提供します。 次の表で取り上げる問題と、推奨されるリソースは次のとおりです。
 
 * Apdex スコアの低さ
-* 高い CPU 使用率
+* CPUの高い使用率
 * 高い I/O オペレーション
 * 機能停止
 
@@ -60,22 +60,22 @@ ht-degree: 0%
 </ol>
 </td>
 <td>
-<p>New Relic Apdex スコアについて詳しくは、<a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic ドキュメント/APM Apdex/ユーザー満足度の測定 </a> を参照してください。 サポートナレッジベースの <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Managed alerts for Adobe Commerce: Apdex warning alert</a> も参照してください。</p>
+<p>New Relic Apdex スコアについて詳しくは、<a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic ドキュメント/APM Apdex/ユーザー満足度の測定 </a> を参照してください。 サポートナレッジベースの <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Managed alerts for Adobe Commerce: Apdex warning alert</a> も参照してください。</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>高い CPU 使用率：</p>
-<p>CPU 使用率が高い場合は、MySQL、Redis など、特にビジー状態のサービスがあることを示しています。</p>
+<p>CPUの高い使用率：</p>
+<p>CPUの使用率が高い場合は、MySQL、Redis など、特にビジー状態のサービスがあることを示している可能性があります。</p>
 </td>
 <td>
 <ol>
 <li><a href="https://login.newrelic.com/login">New Relic</a>/インフラストラクチャ/プロセスにログインします。</li>
-<li>CPU グラフを確認して、CPU 時間を 100% 以上使用しているスタックプロセスや高消費プロセスがあるかどうかを確認し、インスタンスのプロセッサー数と比較します。 リソース使用率のピークに注意を払う 停止した cron でない限り、プロセスを強制終了することはお勧めしません。</li>
+<li>CPUのグラフを確認して、CPU時間を 100% 以上消費しているスタックプロセスや高い消費量のプロセスがあるかどうかを確認し、インスタンスのプロセッサー数と比較します。 リソース使用率のピークに注意を払う 停止した cron でない限り、プロセスを強制終了することはお勧めしません。</li>
 </ol>
 </td>
 <td>
-<p>個々のプロセスまたはプロセスのグループに対するパフォーマンス指標、特に CPU のパーセンテージ、I/O バイト、メモリの使用状況について詳しくは、<a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic ドキュメント/インフラストラクチャ UI ページ/インフラストラクチャホストページ/プロセス タブ </a> を参照してください。</p>
+<p>パフォーマンス指標、特に個々またはプロセスグループのCPUのパーセンテージ、I/O バイトおよびメモリ使用量について詳しくは、<a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic ドキュメント/インフラストラクチャ UI ページ/インフラストラクチャホストページ/プロセス タブ </a> を参照してください。</p>
 </td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ ht-degree: 0%
 <li>最も時間がかかる順に並べ替えます。</li>
 <li>上位のクエリを確認します。
 
-メモ：<code>UPDATE</code> または <code> 挿入</code>クエリは、最も CPU を消費するクエリです。</li>
+メモ：<code>UPDATE</code> または <code> 挿入</code>クエリは、最もCPUを使用するクエリです。</li>
 <li>並べ替え順セレクターからスループットに切り替え、データベースのスループットがドロップダウンに表示される原因となったプロセスを探します。</li>
 <li>さらに調査する必要がある場合は、サードパーティのサービスの調査を検討してください。</li>
 </ol>
