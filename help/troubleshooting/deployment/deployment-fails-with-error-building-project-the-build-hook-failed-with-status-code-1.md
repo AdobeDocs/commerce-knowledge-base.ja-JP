@@ -1,12 +1,12 @@
 ---
-title: 「プロジェクトの構築エラー：ビルドフックがステータスコード 1 で失敗しました」でデプロイメントが失敗する」
-description: 「この記事では、デプロイメントプロセスのビルドフェーズが失敗するクラウドインフラストラクチャ上のAdobe Commerceの問題の原因と解決策について説明します。エラーメッセージは次のように要約されます。*「エラー構築プロジェクト：ビルドフックがステータスコード 1 で失敗しました」*。
+title: 「プロジェクトの構築エラー：ビルドフックがステータスコード 1 で失敗しました」でデプロイメントが失敗します
+description: この記事では、デプロイメントプロセスのビルド段階が失敗するAdobe Commerce on cloud infrastructure の問題の原因と解決策について説明し、エラーメッセージは次のように要約されます。*「エラーの構築プロジェクト：ビルドフックがステータスコード 1 で失敗しました」*。
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 6a880a57c6cafb34fa51706f7bab1e23310bcef7
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,17 @@ Adobe Commerce on cloud infrastructure スタータープランアーキテク�
 
    [ece-tools へのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) の記事を参照してください。
 
-1. 次のコマンドを実行して、ECE-tools パッケージが `composer.lock` ファイルに存在することを確認します。    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    これらを指定した場合、応答は次の例のようになります。    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+1. 次のコマンドを実行して、ECE-tools パッケージが `composer.lock` ファイルに存在することを確認します。
+
+   ```bash
+   grep '"name": "magento/ece-tools"' composer.lock
+   ```
+
+   これらを指定した場合、応答は次の例のようになります。
+
+   ```bash
+   "name": "magento/ece-tools", "version": "2002.0.20",
+   ```
 
 [ece-tools へのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) の記事を参照してください。
 
