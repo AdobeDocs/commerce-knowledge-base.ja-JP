@@ -3,9 +3,9 @@ title: クラウドインフラストラクチャー上のAdobe Commerceに対�
 description: この記事では、アドビのクラウドインフラストラクチャでAdobe Commerce サイトの SSL （TLS）証明書を取得する方法に関する質問に対する回答を示します。
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 7694e6cb739d73a28c902e95d324b1317f4daaf6
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 この記事では、アドビのクラウドインフラストラクチャでAdobe Commerce サイトの SSL （TLS）証明書を取得する方法に関する質問に対する回答を示します。
 
-## Adobeが提供する SSL/TLS 証明書は何ですか？
+## Adobeが提供する SSL/TLS 証明書には何がありますか？
 
 Adobeは、ドメイン検証済みの [SSL/TLS 証明書を暗号化しましょう ](https://letsencrypt.org/) 証明書を提供して、[!DNL Fastly] から安全な HTTPS トラフィックを提供します。 Adobeは、クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャ、ステージング、クラウドインフラストラクチャー上のAdobe Commerce Starter プランアーキテクチャ環境ごとに 1 つの証明書を提供し、その環境内のすべてのドメインを保護します。
 
@@ -54,8 +54,8 @@ SSL 証明書を取得したら、[Adobe Commerce サポートチケットを送
 
 >[!WARNING]
 >
->証明書ファイルをチケットに直接アップロードしないことが重要です。 そうしないと、証明書が侵害されたと見なされ、Adobeは新しい証明書をリクエストする必要があります。
->ファイルは SFTP 経由でサーバーにアップロードする必要があります。ファイルをリポジトリにコミットするなど、他の方法は使用しないでください（機密データを含まない不変ファイルに対してのみ実行する必要があります）。
+>証明書ファイルをチケットに直接アップロードしないことが重要です。 そうでない場合は、証明書が侵害されたと見なされ、Adobeは新しい証明書をリクエストする必要があります。
+>ファイルは、SFTP を使用して、選択したフォルダー（`var/ssl`、`/tmp/ssl` など）にサーバーにアップロードする必要があります。 - ファイルをリポジトリにコミットするなど、他の方法は使用しないでください（機密データを含まない不変ファイルにのみ実行する必要があります）。
 
 ## 証明書の名前
 
@@ -67,7 +67,7 @@ SSL 証明書の名前は、プライマリ URL に関してのみ重要です�
 
 ## ワイルドカード TLS 証明書を使用できますか？
 
-ワイルドカード TLS 証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt 証明書では使用できません。 TLS 最適化の一環として、Adobeはワイルドカード TLS 証明書のサポートを終了します。 Adobeの Let’s Encrypt 証明書でワイルドカード証明書を使用し、Adobe Commerceの [!DNL Fastly] コンソールで設定されているマーチャントを特定して連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えてください。 ワイルドカード TLS 証明書を置き換えるには、[!DNL Fastly] プラグインの [ ドメインセクション ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) にアクセスしてください。 ここから、正確なドメインを追加したり、ワイルドカードを削除したりできます。 これらの新しいドメインが CDN を経由してルーティングされるようにするには、DNS が [!DNL Fastly] を指している必要があることに注意してください。 ドメインを追加し、DNS が更新されると、一致する [ 暗号化しましょう ](https://letsencrypt.org/) 証明書がプロビジョニングされます。 ワイルドカードを使用して [!DNL Fastly] を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 URL FQDN が設定されておらず、DNS に同じ URL FQDN が設定されている場合は、サイトが停止する可能性があります。 したがって、設定された URL が、[!DNL Fastly] を指す DNS で 1 対 1 の一致も持つことを確認する必要があります。
+ワイルドカード TLS 証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt 証明書では使用できません。 TLS 最適化の一環として、Adobeではワイルドカード TLS 証明書のサポートを終了します。 Adobeの Let’s Encrypt 証明書でワイルドカード証明書を使用し、Adobe Commerceの [!DNL Fastly] コンソールで設定されているマーチャントを特定して連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えてください。 ワイルドカード TLS 証明書を置き換えるには、[!DNL Fastly] プラグインの [ ドメインセクション ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) にアクセスしてください。 ここから、正確なドメインを追加したり、ワイルドカードを削除したりできます。 これらの新しいドメインが CDN を経由してルーティングされるようにするには、DNS が [!DNL Fastly] を指している必要があることに注意してください。 ドメインを追加し、DNS が更新されると、一致する [ 暗号化しましょう ](https://letsencrypt.org/) 証明書がプロビジョニングされます。 ワイルドカードを使用して [!DNL Fastly] を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 URL FQDN が設定されておらず、DNS に同じ URL FQDN が設定されている場合は、サイトが停止する可能性があります。 したがって、設定された URL が、[!DNL Fastly] を指す DNS で 1 対 1 の一致も持つことを確認する必要があります。
 
 ## ドメインがAdobe Commerceを指さなくなった場合はどうすればよいですか？
 
