@@ -1,17 +1,18 @@
 ---
-title: 「[!DNL Admin] ログインが機能していません – 許可されているセッションの最大サイズを超えています」
-description: パネルにログインしようとすると、フォームが更新され  [!DNL Admin]  ログインできない場合は、問題を解決してください。
+title: '[!UICONTROL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています'
+description: '[!UICONTROL Admin] パネルにログインしようとすると、フォームが更新されてログインできなくなる場合の問題を解決します。'
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
+source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# [!DNL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています
+# [!UICONTROL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています
 
-この記事では、[!DNL Admin] パネルにログインしようとしてフォームが更新され、ログインできない場合の対処方法を説明します。 これは、[!DNL Admin] セッションサイズを超えていることが原因です。
+この記事では、[!UICONTROL Admin] パネルにログインしようとしてフォームが更新されたばかりでログインできない、または [!UICONTROL Admin] パネルでアクションを実行して自動的にログアウトする場合の対処方法を説明します。
+これは、[!UICONTROL Admin] [!UICONTROL Session Size] を超えていることが原因です。
 
 ## 影響を受けるバージョン
 
@@ -20,7 +21,10 @@ ht-degree: 0%
 
 ## 問題
 
-フォームは再読み込みを続けるので、[!DNL Admin] にログインすることはできません。
+[!UICONTROL Admin] ージで次のいずれかの症状が発生します。
+
+1. フォームが再読み込みを続けているので、[!UICONTROL Admin] にログインすることはできません。
+1. アクションを実行しようとすると、自動的にログアウトされます。
 
 ## 原因：
 
@@ -41,7 +45,7 @@ ht-degree: 0%
 
 <u> クラウドインフラストラクチャー上のAdobe Commerce</u>:
 
-（この設定は、デプロイメント/操作モードがデフォルトまたは開発者の場合にのみ、[!DNL Admin] でアクセスできます。 ただし、クラウド環境で使用できるのは、実稼動デプロイメントモードのみです。）
+（この設定は、デプロイメント/操作モードが *デフォルト* または *開発者* の場合にのみ、[!UICONTROL Admin] でアクセスできます。 ただし、クラウド環境で使用できるのは、実稼動デプロイメントモードのみです。）
 
 この値を増やすには、ターミナル（SSH）で次のコマンドを実行します。
 
@@ -53,6 +57,6 @@ bin/magento config:set system/security/max_session_size_admin 500000
 
 ## 関連資料
 
-* 「管理システムガイド」の [ セッションサイズ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions)。
-* 設定ガイドの [ 操作モード ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)。
-* Commerce on Cloud Infrastructure ガイドの [ 安全な接続 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)。
+* 「管理システムガイド」の [ セッションサイズ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions)
+* 設定ガイドの [ 操作モード ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Commerce on Cloud Infrastructure ガイドの [ 安全な接続 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)
