@@ -4,9 +4,9 @@ description: この記事では、クラウドインフラストラクチャー�
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -51,4 +51,5 @@ https:/&#x200B;/mydomain.com.c.&lt;projectid>.magento.cloud/にはアクセス�
 
 ## 関連資料
 
-[Fastly オリジンクローキングのイネーブルメントに関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) （サポートナレッジベース内）
+* [Fastly オリジンクローキングのイネーブルメントに関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) をサポートナレッジベースに掲載しています
+* サポートナレッジベースの [ 新しいドメインを設定するためのチェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain)

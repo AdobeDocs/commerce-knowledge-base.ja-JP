@@ -3,9 +3,9 @@ title: Fastly レベルでAdobe Commerceの悪意のあるトラフィックを�
 description: この記事では、クラウドインフラストラクチャストア上のAdobe Commerceで DDoS 攻撃が行われていると思われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -85,4 +85,5 @@ Adobe Commerce `robots.txt` の基本設定とデフォルトの設定につい�
 
 ## 関連資料
 
-[Cloud 上のAdobe Commerceの製品固有のライセンス条件 ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
+* [Cloud 上のAdobe Commerceの製品固有のライセンス条件 ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
+* Commerce on Cloud ガイドの [ ブロックリクエストのカスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
