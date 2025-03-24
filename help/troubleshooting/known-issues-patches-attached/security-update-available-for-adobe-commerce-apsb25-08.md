@@ -5,9 +5,9 @@ description: Adobe Commerce 2.4.8 [!DNL critical, important, and moderate vulner
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: d669c097767b5855c6bd747a0ab11b3520f405a0
+source-git-commit: aba9548c0b5a06ffd0cddce630e53e5664bb9aac
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Adobe Commerce on Cloud Infrastructure、Adobe Commerce オンプレミス、お
 * 2.4.4-p11 以前
 
 ## Adobe Commerce on Cloud、Adobe Commerce オンプレミス、Magento Open Source ソフトウェアのソリューション
+
+>[!NOTE]
+>
+>この問題は、[ 最新のクラウドパッチアップデート ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) によって解決されます。 クラウドパッチのアップデートで修正が既に適用されている場合に、分離されたパッチを適用しようとすると、インストールに失敗する可能性があります。
 
 影響を受ける製品およびバージョンの脆弱性を解決するために、Adobe Commerce/Magento Open Sourceのバージョンに応じて、[!DNL CVE-2025-24434] Isolated パッチを適用する必要があります。
 
@@ -97,4 +101,4 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、接�
 Adobe Commerceで利用できるセキュリティ更新プログラム：
 
 * [Adobe セキュリティ速報（[!DNL APSB25-08]） ](https://helpx.adobe.com/security/products/magento/apsb25-08.html)
-* [Adobe Commerceで利用可能な最新のセキュリティ更新） ](https://helpx.adobe.com/security/products/magento.html)
+* [Adobe Commerceで利用可能な最新のセキュリティ更新 ](https://helpx.adobe.com/security/products/magento.html)
