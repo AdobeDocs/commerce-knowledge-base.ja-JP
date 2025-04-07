@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
+source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 Or
 
 1. カタログに新しい商品を追加します。
-1. Magentoインデクサーと cron がデータをバックエンドサービスに同期させるために実行してから 15～20 分後に、製品名またはその他の検索可能な属性を使用して検索クエリを実行してみてください。
+1. Magento インデクサーと cron がデータをバックエンドサービスに同期させるために実行してから 15～20 分後に、製品名またはその他の検索可能な属性を使用して検索クエリを実行してみてください。
 
 <u> 期待される結果 </u>
 
@@ -146,7 +146,7 @@ bin/magento saas:resync --feed productattributes
 次のコマンドを実行してフィードを再同期します。
 
 ```
-bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed productattributes --cleanup-feed
 bin/magento saas:resync --feed products --cleanup-feed
 bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
 bin/magento saas:resync --feed scopesWebsite --cleanup-feed
