@@ -2,9 +2,9 @@
 title: Adobe Commerce サポートツールの概要
 description: Adobe Commerceには、e コマースストアのエクスペリエンスを向上させるために役立つ様々なサポートツールが用意されています。
 exl-id: 5364ff2b-07ea-4b42-8756-adec85f4efca
-source-git-commit: f2e4dbeeade5006e253beba9ff808e6571647ef4
+source-git-commit: 6ccebaec7f0a228b646737a2f48fe6d087ea2861
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Adobe Commerce サイトの状態、現在または過去の時間表示を確�
 
 クラウドインフラストラクチャー上のAdobe Commerceに対する管理されたアラートは、次の手順に関するトラブルシューティングの指示を含む、既製の [!DNL New Relic] アラートを生成します。
 
-サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 サポートナレッジベースに記載されている記事を使用して、アラートのトラブルシューティングを行うことができます。 管理アラートの詳細については、「[Adobe Commerceの管理アラート ](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)」をクリックしてください。
+サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 サポートナレッジベースに記載されている記事を使用して、アラートのトラブルシューティングを行うことができます。 管理アラートの詳細については、「[Adobe Commerceの管理アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)」をクリックしてください。
 
 
 ## [!DNL Site-Wide Analysis Tool] - サイトスキャンに基づくパフォーマンスの推奨事項の取得 {#site-wide-analysis-tool}
@@ -41,6 +41,6 @@ Adobe Commerce サイトの状態、現在または過去の時間表示を確�
 
 ## [!DNL Quality Patches Tool] - Adobe Commerceのバージョンで使用可能なすべてのパッチを取得します。 {#quality-patches-tool}
 
-[!DNL Quality Patches Tool] （QPT）は、AdobeやMagento Open Sourceコミュニティが開発した個別のパッチを提供します。 インストールされたバージョンのAdobe CommerceまたはMagento Open Sourceで使用可能なすべての個別パッチに関する一般情報を適用、元に戻して表示できます。
+[!DNL Quality Patches Tool] （QPT）は、AdobeとMagento Open Source コミュニティが開発した個別のパッチを提供します。 インストールされたバージョンのAdobe CommerceまたはMagento Open Sourceで使用可能なすべての個別パッチに関する一般情報を適用、元に戻して表示できます。
 
 QPT は、分類と簡単なアプリケーション/削除を使用して、インストールされたバージョンで利用可能なパッチのみを表示します。 詳しくは、サポートナレッジベースの [Adobe Commerceの問題のパッチを確認  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) を参照してください。
