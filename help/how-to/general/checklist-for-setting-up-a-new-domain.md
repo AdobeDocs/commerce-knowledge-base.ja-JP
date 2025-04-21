@@ -3,16 +3,16 @@ title: 新規設定のチェックリスト  [!DNL domain]
 description: これは、クラウドインフラストラクチャー上に新しいAdobe Commerceをセットアップする方法を  [!DNL domain]  すチェックリストです。
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: 625ed2c7ab79f7bca9a979903e97c44c875e607c
+source-git-commit: f7b246088e3580922bd3389b2992e5dd8f97ff7a
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # 新しい [!DNL domain] の設定のチェックリスト
 
-これは、クラウドインフラストラクチャー上のAdobe Commerceで新しい [!DNL domain] を設定する方法を示したチェックリストです。 これは、新しいドメインを追加しようとしているか、現在のドメインを新しいドメインに置き換えようとしているかに関係なく適用されます。
+このチェックリストでは、クラウドインフラストラクチャ上のAdobe Commerceで新しい [!DNL domain] を設定する方法について説明します。 これは、新しいドメインを追加する場合でも、現在のドメインを置き換える場合でも適用されます。 これは、新しいステージング環境を取得した後にも適用されます（手順 4 を参照）。
 
 ## 影響を受ける製品とバージョン
 
@@ -65,3 +65,4 @@ ht-degree: 0%
 ## 関連資料
 
 * ユーザーガイドの [ 複数の web サイトまたはストアを設定：新規追加  [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains)。
+* [ 接触チャネルクロークによりサイトにアクセスできない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking)
