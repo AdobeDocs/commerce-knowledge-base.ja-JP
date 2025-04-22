@@ -3,9 +3,9 @@ title: Adobe CommerceのExperience League サポートユーザーガイド
 description: Experience League サポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c9468428b9d230121fb1da354d138439a04d070d
+source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
 workflow-type: tm+mt
-source-wordcount: '2942'
+source-wordcount: '2966'
 ht-degree: 0%
 
 ---
@@ -321,6 +321,10 @@ Cloud Console を使用して新しいサポートチケットを送信するに
 >共有アクセスを付与するには、既存のアカウントが必要です。詳しくは [Commerce アカウントの作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) を参照してください。
 
 新しいユーザーに共有アクセスを提供すると、Adobe Commerce アカウントページの **共有アクセス**/**権限の管理** で関連情報を利用できます。
+
+>[!NOTE]
+>
+>Shared Access は、Commerce Cloudコンソールへのアクセスを自動的に付与しません。 [ クラウドプロジェクトにユーザーを個別に追加する ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project) 必要があります。
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
