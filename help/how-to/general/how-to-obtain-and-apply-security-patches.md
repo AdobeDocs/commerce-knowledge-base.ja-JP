@@ -2,14 +2,17 @@
 title: '[!UICONTROL security patch] の取得方法と適用方法'
 description: この記事では、リリース済みの [!UICONTROL security patch] を取得して適用する方法について説明しますが、説明は使用できません。
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
+source-git-commit: 43c8308c6539c53f60fb6457047898a2edd46532
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL security patch] ールの取得および適用方法
+
+>[!NOTE]
+>オンプレミス環境を使用していて、[!DNL CVS] や [!DNL GitHub] などのバージョン管理システムを使用せずにコードを管理している場合は、web ホストがパッチの適用を支援できる可能性があります。 お気軽にお問い合わせください
 
 この記事では、リリース済みの [!UICONTROL security patch] を取得して適用する方法について説明しますが、説明は使用できません。
 
@@ -17,18 +20,17 @@ ht-degree: 0%
 
 Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
+
 ## 原因：
 
-ほとんどの [!UICONTROL Security Patches] は、適用する物理ファイルまたはホットフィックスなしでリリースされます。
+ほとんどの [!UICONTROL Security Patches] は、適用するための独立したパッチやホットフィックスなしでリリースされており、[!UICONTROL Security Patch] のリリースにアップグレードする必要があります。
 
 ## 解決策
 
 
 ### ケース I:
 
-リリースノートに物理的なパッチファイル/ホットフィックスが記載されている場合：
-
-* [https://account.magento.com](https://account.magento.com/downloads/view/) のダウンロードセクションからファイルをダウンロードします。 （共有アクセス ユーザーには、まずアカウント所有者/ライセンス所有者からダウンロード権限が付与される必要があります）
+* [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) に孤立したパッチファイル/ホットフィックスが記載されている場合は、[https://account.magento.comのダウンロードセクションからファイルをダウンロードし ](https://account.magento.com/downloads/view/) ください。 共有アクセスユーザーには、まずアカウント所有者/ライセンス所有者からダウンロード権限が付与されている必要があります。
 
 **注意事項：**
 
@@ -42,7 +44,9 @@ Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
 ### ケース II:
 
-リリースノートに物理的なパッチファイル/ホットフィックスが記載されていない場合：
+分離パッチは例外的な場合にのみ提供され、セキュリティ修正を実装するための推奨された形式ではありません。
+
+分離されたパッチファイル/ホットフィックスがリリースノートに記載されていない場合：
 
 * **Cloud:**
 
@@ -51,8 +55,8 @@ Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
 * **クラウドまたはオンプレミス：**
 
-* 物理的なパッチファイルまたはホットフィックスが入手できない場合は、[Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X のAdobe Commerceのバージョンを、最新のパッチバージョン 2.4.X-pY にアップグレードしてください。
-* 物理的なパッチファイルまたはホットフィックスが入手できない場合は、[Adobe Commerce バージョン On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X を最新のパッチバージョン 2.4.X-pY にアップグレードしてください。
+* 分離されたパッチファイルまたはホットフィックスが入手できない場合は、[Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X のAdobe Commerceのバージョンを、最新のパッチバージョン 2.4.X-pY にアップグレードしてください。
+* 分離されたパッチファイルまたはホットフィックスが入手できない場合は、[Adobe Commerce バージョン On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X を最新のパッチバージョン 2.4.X-pY にアップグレードしてください。
 
 ## 関連資料
 
