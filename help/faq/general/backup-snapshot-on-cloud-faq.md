@@ -1,11 +1,11 @@
 ---
-title: 'クラウド上のバックアップ（スナップショット）：よくある質問'
+title: クラウド上のバックアップ（スナップショット）：よくある質問
 description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境をスナップショットでバックアップする際の基本事項について説明します。
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
+source-git-commit: cfaa7043eed9cc5369f5317b10609d97a91d5861
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 ### ステージング環境と実稼動環境
 
 * 手動スナップショットは、Pro プランのステージング環境および実稼動環境では使用できません。
-* 自動スナップショットは、サイトの **ライブ状態に関係なく** 作成されます（まだ起動されていないサイトに対してもスナップショットが作成されます）。 自動バックアップは、別のシステムに保存されているので、公開ではアクセスできません。 [Adobe Commerce サポートチケットを送信 ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) して、特別なバックアップをリクエストしたり、チケットに日付、時刻、タイムゾーンを指定した特定のバックアップから復元したりできます。 また、データベースのロールバックやリストアはサポートによって実行されず、スナップショットが取得されますが、データベースは自分でリストアする必要があります。
+* 自動スナップショットは、サイトの **ライブ状態に関係なく** 作成されます（まだ起動されていないサイトに対してもスナップショットが作成されます）。 自動バックアップは、別のシステムに保存されているので、公開ではアクセスできません。
+[Adobe Commerce サポートチケットを送信 ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) して、特別なバックアップをリクエストしたり、チケットに日付、時刻、タイムゾーンを指定した特定のバックアップから復元したりできます。 サポートでは、オンデマンドで手動スナップショットは生成されません。
+また、データベースのロールバックやリストアはサポートによって実行されず、スナップショットが取得されますが、データベースは自分でリストアする必要があります。
 * バックアップは、**暗号化されたAmazon Web Services Elastic Block Store （AWS EBS）スナップショット** を使用して作成されます。
 * 環境スナップショットには、完全なシステム（ファイルシステムとデータベース）が含まれます。
 * 自動スナップショットのリテンション時間 **異なる** と [ スケジュール ](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery) に従います。
