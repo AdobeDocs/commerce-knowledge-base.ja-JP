@@ -2,7 +2,7 @@
 title: サポートチケットの問題の理由の説明
 description: この記事では、サポートチケット**問題の理由**フィールドオプションの一覧と、それぞれの詳細を説明します。
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: d3523be967f16a3e65025917fa6ac65097214100
+source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
   </tr>
   <tr>
     <td>インフラ事故</td>
-    <td>クラウドインフラストラクチャー上のAdobe Commerceについて、停止したデプロイメント、[!DNL New Relic] アクセス、SSH/sFTP アクセス、サービスアップグレード（[!DNL OpenSearch]、[!DNL MariaDB]/[!DNL MySQL]、[!DNL Redis]、[!DNL RabbitMQ] （ただし PHP は除く）、SSL 証明書など、サポートが必要です。 **（[!DNL Live Search] には適用されません）**</td>
+    <td>クラウドインフラストラクチャー上のAdobe Commerceについて、停止したデプロイメント、[!DNL New Relic] アクセス、SSH/sFTP アクセス、サービスアップグレード（[!DNL OpenSearch]、[!DNL MariaDB]/[!DNL MySQL]、[!DNL Redis]、[!DNL RabbitMQ] （ただし PHP は除く）、SSL 証明書など、サポートが必要です。<strong> （[!DNL Live Search] には適用されません） </strong>。</td>
   </tr>  
 </tbody>
 </table>
