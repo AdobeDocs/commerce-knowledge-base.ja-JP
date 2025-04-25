@@ -3,7 +3,7 @@ title: Adobe CommerceのExperience League サポートユーザーガイド
 description: Experience League サポートにサポートチケットを送信する方法、アカウントへの共有アクセスを提供する方法、Adobe Commerce ナレッジベースを操作する方法について説明します。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
+source-git-commit: 145fc1dfc197cde39d55ceac4d02ecee6c641459
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Adobe Commerce アカウントのページを使用して新しいサポート�
 
 1. Adobe Experience League サポートページが読み込まれます。
 1. 左側のメニューから **[!UICONTROL Open Ticket]** を選択します。
-1. フィールドに入力します。
+1. [fields](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) を入力します。
 1. **送信** をクリックします。
 
 #### *メールアドレスを確認してください* エラーが発生しました（Adobe Commerce アカウントページ） {#verify-email-address-error}
@@ -279,8 +279,7 @@ Cloud Console を使用して新しいサポートチケットを送信するに
 1. ユーザーメニューで「**[!UICONTROL Support]**」を選択します。
 1. **[!UICONTROL My Tickets]** ページが読み込まれます。
 1. 右上隅の「**[!UICONTROL Submit a ticket]**」をクリックします。
-1. フィールドに入力します。
-1. **送信** をクリックします。
+1. [fields](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) を入力します。
 1. 「**[!UICONTROL Submit]**」をクリックします。
 
 ### Adobe Commerce P1 ホットライン {#P1-hotline}
