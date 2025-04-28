@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce拡張機能を使用すると�
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
+source-git-commit: fec99ebd6b03f2dc1b70c0ea388935dc5e60ad57
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,7 @@ API キーが変更されたため、エクスポートされたカタログを�
 
 ### API 設定の変更後に同期
 
-（既知の問題） API 設定を変更した場合、その結果データ領域 ID が変更され、カタログの変更が同期されなくなっている場合は、次のコマンドを実行してください。
-
-```bash
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed productattributes
-```
-
-次のコマンドを実行してフィードを再同期します。
+（既知の問題） API 設定を変更した場合、結果としてデータ領域 ID が変更され、カタログの変更が同期されなくなっている場合は、次のコマンドを実行してフィードを再同期します。
 
 ```
 bin/magento saas:resync --feed productattributes --cleanup-feed
@@ -158,6 +151,9 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
 ライブサーチのインデックス再作成をリクエストする [ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) します。 問題の説明で、管理パネルの **[!UICONTROL System]**/**[!UICONTROL Services]**/**[!UICONTROL Commerce Services Connector]** の下にあるデータスペース/環境 ID を含めます。
+
+>[!IMPORTANT]
+>`--cleanup-feed` オプションは、API 設定を更新した場合、または [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) オプションを使用して `saas:resync` コマンドを実行した場合にのみ使用します。 その他の場合に `--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生します。
 
 ## 関連資料
 
