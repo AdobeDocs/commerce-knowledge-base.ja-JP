@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 1f9b11e38ed11fc022a5afa9132130ea2a266616
+source-git-commit: a4a913c9159e9267ca20da99b9d690c85667c7db
 workflow-type: tm+mt
-source-wordcount: '9326'
+source-wordcount: '9340'
 ht-degree: 0%
 
 ---
@@ -945,6 +945,7 @@ ht-degree: 0%
       * [2.4.4 [!DNL CVE-2022-31160] 2.4.5、2.4.6 リリースの [!DNL JQuery UI] セキュリティ脆弱性/修正](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Adobe Commerceで Cookie の最大数を超えるとエラーが発生する](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
+      * [APSB25-08 セキュリティパッチ後のすべての一括非同期 web エンドポイントの実行時間が短縮されました](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
    * Elasticsearch {#elasticsearch}
       * [検索エンジンがに設定されている場合に  [!DNL Elasticsearch7]  フォールバック  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
