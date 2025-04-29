@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 41948c702d5c4e37847ab18ca2a93798e70a8e98
+source-git-commit: 1f9b11e38ed11fc022a5afa9132130ea2a266616
 workflow-type: tm+mt
-source-wordcount: '9315'
+source-wordcount: '9326'
 ht-degree: 0%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 0%
       * [アップグレード互換性ツールのエラーのトラブルシューティング](/help/troubleshooting/installation-and-upgrade/uct-segmentation-fault-error.md)
       * [インストールまたはアップグレード中のメモリ不足エラー](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
       * [REGEXP_LIKE 関数がないため、B2B 1.5.2 へのアップグレードが SQL 構文エラーで失敗します](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
+      * [B2B 1.5.2 の更新後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * サイトがダウンしているか応答しない {#site-down-or-unresponsive}
       * [接触チャネルクロークにより、サイトにアクセスできない](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [Web ブラウザーでAdobe Commerceにアクセスする際に 503 エラーが発生する](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
