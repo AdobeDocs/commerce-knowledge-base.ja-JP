@@ -4,14 +4,20 @@ description: この記事では、company_structure テーブルを更新しよ�
 feature: B2B, Upgrade
 role: Admin, Developer
 exl-id: c5fe316c-99e3-482e-80b5-25aaae371230
-source-git-commit: f83b82a95d4592252c8923720e90733115c52d87
+source-git-commit: 04e17dfdf143e233eb2767064c1328990c899eda
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # REGEXP_LIKE 関数がないため、B2B 1.5.2 へのアップグレードが SQL 構文エラーで失敗します
+
+>[!INFO]
+>
+>B2B 1.5.2 に更新した後、`Magento_Company` モジュールをアップグレードする際にパフォーマンスの問題が発生した場合は、添付の [ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch](assets/ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch.zip) を適用します。
+>
+>詳しくは、Adobe Commerce ナレッジベースの [B2B 1.5.2 アップデート後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題 ](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md) を参照してください。
 
 この記事では、`company_structure` テーブルを更新しようとしたときに `REGEXP_LIKE` 関数が見つからなかったことが原因で発生する SQL 構文エラーのホットフィックスを示します。
 
