@@ -40,7 +40,7 @@ ht-degree: 0%
    >
    >ビルドだけでなく、アプリケーションで Node.JS を実行する場合は、次のコマンドを追加してビルドフックを変更してください。
    > 
-   ```
+   > ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
    > echo 'export NO_UPDATE_NOTIFIER=1' >> .environment
    > echo 'export NVM_DIR="$MAGENTO_CLOUD_DIR/.nvm"' >> .environment

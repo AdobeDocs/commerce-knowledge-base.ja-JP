@@ -41,12 +41,12 @@ gift_card_options に「uid」が含まれている場合、ギフトカード�
 
 <pre>
 <code class="language-graphql">
-query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
-  products(filter: { url_key: { eq: $urlKey } }) {
-    items {
+query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
+  products(filter: { url_key: { eq: $urlKey } }) &lbrace;
+    items &lbrace;
       id
       url_key
-      ... on GiftCardProduct {
+      ... on GiftCardProduct &lbrace;
         allow_open_amount
         open_amount_min
         open_amount_max
@@ -55,15 +55,15 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
         lifetime
         allow_message
         message_max_length
-        gift_card_options {
+        gift_card_options &lbrace;
           uid
           title
           required
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -77,118 +77,118 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         0,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         1,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         2,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         3,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         4,
         "uid"
-      ]
-    }
-  ],
-  "data": {
-    "products": {
-      "items": [
-        {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
+    "products": &lbrace;
+      "items": &lbrack;
+        &lbrace;
           "id": 2,
           "url_key": "gitf-card",
           "allow_open_amount": false,
@@ -199,18 +199,18 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
           "lifetime": 0,
           "allow_message": true,
           "message_max_length": 255,
-          "gift_card_options": [
+          "gift_card_options": &lbrack;
             null,
             null,
             null,
             null,
             null
-          ]
-        }
-      ]
-    }
-  }
-}
+          &rbrack;
+        &rbrace;
+      &rbrack;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

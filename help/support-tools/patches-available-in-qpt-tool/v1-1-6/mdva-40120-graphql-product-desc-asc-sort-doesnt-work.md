@@ -40,30 +40,30 @@ MDVA-40120 パッチを使用すると、DESC/ASC でGraphQLを並べ替えて�
 1. 次のGraphQL クエリを実行します。
    <pre>
     <code class="language-graphql">
-    {
-      products(filter: {category_id: {eq: "{{cat_id}}"}}, sort: {relevance: ASC}) {
+    &lbrace;
+      products(filter: {category_id: {eq: "{{cat_id}}"}}, sort: {relevance: ASC}) &lbrace;
         total_count
-        items {
+        items &lbrace;
           name
           sku
-        }
-      }
-    }
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 1. 応答を確認します。
 1. GraphQL クエリで、並べ替え順を **ASC** から **DESC** に変更します。
    <pre>
     <code class="language-graphql">
-    {
-      products(filter: {category_id: {eq: "{{cat_id}}"}}, sort: {relevance: DESC}) {
+    &lbrace;
+      products(filter: {category_id: {eq: "{{cat_id}}"}}, sort: {relevance: DESC}) &lbrace;
         total_count
-        items {
+        items &lbrace;
           name
           sku
-        }
-      }
-    }
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 1. 応答を確認します。

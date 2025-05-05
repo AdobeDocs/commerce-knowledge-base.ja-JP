@@ -26,7 +26,7 @@ ht-degree: 0%
 
 <u> 再現手順：</u>
 
-Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。** **
+Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。**&#x200B; **
 
 <u> 期待される結果：</u>
 
@@ -40,7 +40,7 @@ Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動し
 
 <u> 再現手順：</u>
 
-Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。** **
+Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。**&#x200B; **
 
 <u> 期待される結果：</u>
 

@@ -54,7 +54,7 @@ Baler モジュールは現在、アルファ開発の初期段階にあり、Ba
 
 既存の Baler Alphaのドキュメントは、[Github/Magento/Baler/Getting with the alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md) で確認できます。 ただし、実稼動での使用の準備は整っておらず、自己責任で使用します。 代わりに、ファイルの最適化のために、Adobe Commerceの組み込みバンドル（基本バンドル）を使用して、JavaScript （JS）ファイルを結合またはバンドルすることをお勧めします。
 
-* 管理者で結合またはバンドルをオンにできます（結合とバンドルを同時に有効にすることはできません）。**ストア**/**設定**/**設定**/**詳細**/**開発者**/**10}JavaScript設定。**
+* 管理者で結合またはバンドルをオンにできます（結合とバンドルを同時に有効にすることはできません）。**ストア**/**設定**/**設定**/**詳細**/**開発者**/**10&rbrace;JavaScript設定。**
 * コマンドラインからAdobe Commerceの組み込みバンドル（基本バンドル）を有効にすることもできます。`php -f bin/magento config:set dev/js/enable_js_bundling 1`
 
 詳しくは、[ クラウドインフラストラクチャー上のAdobe Commerceおよびオンプレミス上のAdobe Commerceでの CSS と JavaScript ファイルの最適化 ](https://support.magento.com/hc/en-us/articles/360044482152) を参照してください。

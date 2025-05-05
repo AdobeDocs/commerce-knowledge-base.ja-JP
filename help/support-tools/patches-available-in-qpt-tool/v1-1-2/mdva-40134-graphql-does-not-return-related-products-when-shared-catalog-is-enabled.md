@@ -46,16 +46,16 @@ B2B モジュールをインストールする必要があります。
 1. **関連製品** の下に、2 つのダッフルバッグ（ID 7 と 13）を追加します。
 1. **Post** リクエストを送信します。
 
-<pre>{
-  製品（フィルター：{sku: {eq: "24-MB01"}}、並べ替え：{name: ASC}） {
-    項目 {
-      related_products {
+<pre>&lbrace;
+  製品（フィルター：{sku: {eq: "24-MB01"}}、並べ替え：{name: ASC}） &lbrace;
+    項目 &lbrace;
+      related_products &lbrace;
         uid
         名前
-      }
-    }
-  }
-}</pre>
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 <u> 期待される結果 </u>:
 
@@ -65,7 +65,7 @@ B2B モジュールをインストールする必要があります。
 
 ユーザーに次のエラーが表示されます。
 
-<pre>Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId （）の戻り値は int 型にする必要があり、null は {"exception":"[object] （GraphQL\\Error\\Error （code: 0）:Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId （）の戻り値は int 型にする必要があり、null が返されます </pre>
+<pre>Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId （）の戻り値は int 型にする必要があり、null は &lbrace;"exception":"[object] （GraphQL\\Error\\Error （code: 0）:Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId （）の戻り値は int 型にする必要があり、null が返されます </pre>
 
 ## パッチの適用
 

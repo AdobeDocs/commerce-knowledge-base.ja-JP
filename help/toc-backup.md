@@ -1039,7 +1039,7 @@ ht-degree: 0%
    * [ACSD-45754：クーポンを買い物かごに適用した後、報酬ポイントが追加されない](/help/support-tools/patches-available-in-qpt-tool/acsd-45754-reward-points-not-added-after-applying-coupon-to-the-cart.md)
    * [MDVA-43605:Rest API を使用している場合、注文データが行の合計に対して負の値を返す](/help/support-tools/patches-available-in-qpt-tool/mdva-43605-order-data-returns-negative-values-for-row-totals-when-using-rest-api.md)
    * [ACSD-45424：一部払い戻し後に作成された予約報酬が正しくありません](/help/support-tools/patches-available-in-qpt-tool/acsd-45424-incorrect-reservation-compensation-created-after-partial-refund.md)
-   * [MDVA-44188: ``を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/mdva-44188-emails-are-not-sent.md)
+   * [MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/mdva-44188-emails-are-not-sent.md)
    * [ACSD-46213：カテゴリツリーリクエストが 20 カテゴリに制限されています](/help/support-tools/patches-available-in-qpt-tool/acsd-46213-category-tree-limited-20-categories.md)
    * [MDVA-38559: /V1/customers/search API はエラーを返します](/help/support-tools/patches-available-in-qpt-tool/mdva-38559-v1-customers-search-api-error.md)
    * [MDVA-44940：管理者からカテゴリを保存中に SQL エラーが発生しました](/help/support-tools/patches-available-in-qpt-tool/mdva-44940-sql-error-while-saving-category-from-admin.md)

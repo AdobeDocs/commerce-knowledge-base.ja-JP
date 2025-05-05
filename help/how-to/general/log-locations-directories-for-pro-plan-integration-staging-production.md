@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Pro プランのログの場所（ディレクトリ）：統合、ステージング、実稼動
 
-クラウドインフラストラクチャー上にデプロイされたAdobe Commerce プロジェクトのビルド、デプロイ、アプリケーション、サービスのログの場所については、{2 *クラウドインフラストラクチャーのCommerceガイドの [ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) を参照してください。*
+クラウドインフラストラクチャー上にデプロイされたAdobe Commerce プロジェクトのビルド、デプロイ、アプリケーション、サービスのログの場所については、&lbrace;2 *クラウドインフラストラクチャーのCommerceガイドの [ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) を参照してください。*

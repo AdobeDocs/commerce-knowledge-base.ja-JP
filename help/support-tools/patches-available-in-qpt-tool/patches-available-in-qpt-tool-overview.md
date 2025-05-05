@@ -55,7 +55,7 @@ Adobe Commerce オンプレミスの場合と、クラウドインフラスト�
 
 ### クラウドインフラストラクチャーにAdobe Commerce用 QPT をインストールして使用する方法
 
-クラウドインフラストラクチャ上でCommerceにパッチを適用したり元に戻したりする際に ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)QPT をインストールして使用する方法について詳しくは、開発者向けドキュメントの [Adobe Commerce on Cloud Infrastructure ガイド/パッチの適用を参照してください。
+クラウドインフラストラクチャ上でCommerceにパッチを適用したり元に戻したりする際に [&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)QPT をインストールして使用する方法について詳しくは、開発者向けドキュメントの Adobe Commerce on Cloud Infrastructure ガイド/パッチの適用を参照してください。
 
 ## 関連資料
 

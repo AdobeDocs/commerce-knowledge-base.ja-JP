@@ -36,7 +36,7 @@ Adobe Commerceのお客様。
 
 ## アップグレード互換性ツール 1.1.0 のインストール
 
-インストールの手順については、開発者向けドキュメントのAdobe Commerce:[ 互換性ツールをアップグレード/インストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) を参照してください。 このツールを使用するための前提条件については、開発者向けドキュメントのAdobe Commerce：互換性ツールのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) を参照してください [
+インストールの手順については、開発者向けドキュメントのAdobe Commerce:[ 互換性ツールをアップグレード/インストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) を参照してください。 このツールを使用するための前提条件については、開発者向けドキュメントのAdobe Commerce：互換性ツールのアップグレード [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) を参照してください 
 
 ## 各問題の横にある数字は何ですか？
 

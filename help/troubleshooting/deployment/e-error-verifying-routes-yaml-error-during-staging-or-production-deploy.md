@@ -36,9 +36,9 @@ ht-degree: 0%
 <pre>アプリケーションのデプロイ設定の確認 E: routes.yaml の検証中にエラーが発生しました。
 以下のドメインがクラスターに設定されていますが、routes.yaml ファイルでルートが定義されていません。
 
-- store1.example.com
-- store2.example.com
-- test-store.example.com
+&#x200B;- store1.example.com
+&#x200B;- store2.example.com
+&#x200B;- test-store.example.com
 
 現在の routes.yaml 設定を使用すると、
   これらのドメインは提供されません。

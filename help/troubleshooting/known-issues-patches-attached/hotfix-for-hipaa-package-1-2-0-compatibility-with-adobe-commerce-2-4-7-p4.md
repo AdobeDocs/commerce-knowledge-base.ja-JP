@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.7-p4 [!DNL HIPAA] 1.2.0 互換性パッケージのホットフィックス
 
-この記事では、Cloud Infrastructure 2.4.7-p4 上のAdobe Commerceと **新しい**[!DNL HIPAA] パッケージ 1.2.0 の互換性を追加するためのホットフィックスを提供します。
+この記事では、Cloud Infrastructure 2.4.7-p4 上のAdobe Commerceと **新しい**&#x200B;[!DNL HIPAA] パッケージ 1.2.0 の互換性を追加するためのホットフィックスを提供します。
 
 この問題は、バージョン 2.4.7-p5 リリースで修正される予定です。
 
@@ -22,8 +22,8 @@ Cloud Infrastructure 2.4.7-p4 以前のAdobe Commerce
 
 ## 前提条件
 
-* Adobeは、**[!DNL HIPAA Ready]** 拡張機能にアクセスするためのAdobe Commerce アカウントをプロビジョニングしています。 詳しくは、**Adobe Commerce：はじめる前に ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) の [[!DNL HIPAA] Adobe Commerceへの対応** を参照してください。
-* [repo.magento.com](https://repo.magento.com) にアクセスして拡張機能をインストールします。 キーの生成と必要な権限の取得については、**Adobe Commerce: インストールガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) の [ 認証キーの取得** を参照してください。
+* Adobeは、**[!DNL HIPAA Ready]** 拡張機能にアクセスするためのAdobe Commerce アカウントをプロビジョニングしています。 詳しくは、**Adobe Commerce：はじめる前に [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) の [!DNL HIPAA] Adobe Commerceへの対応** を参照してください。
+* [repo.magento.com](https://repo.magento.com) にアクセスして拡張機能をインストールします。 キーの生成と必要な権限の取得については、**Adobe Commerce: インストールガイド [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) の  認証キーの取得** を参照してください。
 
 ## 問題
 

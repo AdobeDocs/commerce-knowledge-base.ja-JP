@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![change_store_view.png](assets/change_store_view.png)
 
-**関連ドキュメント：**[ 範囲の変更 ](https://experienceleague.adobe.com/docs/commerce-admin/config/scope-change.html#set-the-scope) をユーザーガイドで参照してください。
+**関連ドキュメント：**&#x200B;[ 範囲の変更 ](https://experienceleague.adobe.com/docs/commerce-admin/config/scope-change.html#set-the-scope) をユーザーガイドで参照してください。
 
 ### 問題 2:「システム値を使用」をオフにできません
 

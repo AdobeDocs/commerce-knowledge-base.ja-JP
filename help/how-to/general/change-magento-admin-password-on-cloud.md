@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ### 送信メールを有効にする
 
-**パスワードを忘れた場合** フォームを使用する前に、[Cloud Console[ を使用して ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) 送信メールを有効にする ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) を行います。
+**パスワードを忘れた場合** フォームを使用する前に、[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html)Cloud Console[ を使用して ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) 送信メールを有効にする  を行います。
 
 ### 迷惑メール フォルダーの確認
 

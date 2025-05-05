@@ -131,7 +131,7 @@ Git をリセットすると、コードが以前に目的の状態に戻りま�
 
 [3. Adobe Commerce ソフトウェアをアンインストールします。](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;period; Force redeploy.（強制再デプロイ）
+4&period; Force redeploy.（強制再デプロイ）
 
 これらの手順を実行すると、シナリオ 1 と同じ結果が得られます。
 

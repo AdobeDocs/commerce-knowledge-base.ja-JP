@@ -31,7 +31,7 @@ ACSD-49970 パッチでは、*[!UICONTROL New Relic Reporting]* がオンにな�
 
 ## 問題
 
-`logDataHelper``GraphQLOperationNames` このキーが含まれているかどうかに関わらず、キーは正しく処理されません。
+`logDataHelper` `GraphQLOperationNames` このキーが含まれているかどうかに関わらず、キーは正しく処理されません。
 
 <u> 再現手順 </u>:
 

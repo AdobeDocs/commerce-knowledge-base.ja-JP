@@ -49,7 +49,7 @@ magento/product-recommendations
 
 >[!NOTE]
 >
->[**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) （ユーザーガイド内）が *有効* になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。**[!UICONTROL Cookie Restriction Mode]**が *無効* になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) （ユーザーガイド内）が *有効* になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。**[!UICONTROL Cookie Restriction Mode]**&#x200B;が *無効* になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
 
 ## カタログ [!DNL SaaS] 書き出しモジュール
 

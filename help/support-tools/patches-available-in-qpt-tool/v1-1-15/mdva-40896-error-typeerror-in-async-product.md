@@ -1,6 +1,6 @@
 ---
 title: '「MDVA-40896: ''エラー：TypeError：非同期製品での引数 3'' エラー」'
-description: '「MDVA-40896 パッチにより、「Error: TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::process （） must be the type array, string given」エラーが非同期製品バルク API に表示される問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md） 1.1.15 がインストールされている場合に利用できます。 パッチ ID は MDVA-40896。 この問題はAdobe Commerce 2.4.4 で修正されていることに注意してください。'''
+description: '「MDVA-40896 パッチにより、「Error: TypeError: Argument 3 passed to MagentoFrameworkWebapiServiceInputProcessor::process （） must be the type array, string given」エラーが非同期製品バルク API に表示される問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md） 1.1.15 がインストールされている場合に利用できます。 パッチ ID は MDVA-40896。 この問題はAdobe Commerce 2.4.4 で修正されていることに注意してください。'''
 exl-id: d9b73e7a-c228-492c-9fdf-c57cceafb330
 feature: Products
 role: Admin

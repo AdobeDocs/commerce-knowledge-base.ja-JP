@@ -35,7 +35,7 @@ ACSD-50895 パッチは、[!DNL Google Analytics] 4 GTM が設定されていな
 <u> 再現手順 </u>:
 
 1. 管理者ユーザーとしてログインします。
-1. **Admin**/**Store**/**Configuration**/**Sales**/10}Google API **/** Google Analytics **で、**[!DNL Google Analytics 3]**と&#x200B;**[!DNL Google Tag Manager]**を有効にします。**
+1. **Admin**/**Store**/**Configuration**/**Sales**/10&rbrace;Google API **/** Google Analytics **で、**&#x200B;[!DNL Google Analytics 3]&#x200B;**と&#x200B;**&#x200B;[!DNL Google Tag Manager]&#x200B;**を有効にします。**
 1. **[!DNL Google Analytics 4]** と **[!DNL Google Tag Manager]** を有効にしないでください。
 1. ストアフロントの商品ページを開きます。
 

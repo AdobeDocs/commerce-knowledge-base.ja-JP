@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ## ソース データベースの行数がMagento BI の行数より少なくなっています {#lessrows}
 
-ソース・データベースの行数がMagentoBI の行数よりも少ない場合は、ソース・データベースから行が削除され、MagentoBI がこれらの削除を取得していない可能性があります。 ** [ データを削除 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) すると、不一致、更新時間の延長、ロジスティック上の多くの問題につながる可能性があるので**本当に必要でない限り、データを削除しないことを強くお勧めします。
+ソース・データベースの行数がMagentoBI の行数よりも少ない場合は、ソース・データベースから行が削除され、MagentoBI がこれらの削除を取得していない可能性があります。 **&#x200B; [ データを削除 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) すると、不一致、更新時間の延長、ロジスティック上の多くの問題につながる可能性があるので**&#x200B;本当に必要でない限り、データを削除しないことを強くお勧めします。
 
 ただし、ローがテーブルから削除された場合は、プライマリ・キーの再チェック頻度を確認してください。 プライマリキーを再チェックすると、テーブルの削除された行がチェックされます。
 

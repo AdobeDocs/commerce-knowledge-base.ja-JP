@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 個々の行が現在の `max_allowed_packet` 制限を超えているクエリを特定します。 返されるデータの量を減らすには、このようなクエリを書き換える必要があります。 これは、`SELECT` ステートメントの列数を減らすか、テーブルデザインの一環として様々な列に対して小さいデータ型を選択することで行うことができます。 New Relic アカウントをお持ちの場合、[New Relic APM Errors ページ ](https://docs.newrelic.com/docs/apm/apm-ui-pages/error-analytics/errors-page-explore-events-behind-errors)[New Relic APM Databases ページ ](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) および [New Relic Logs](https://docs.newrelic.com/docs/logs/log-management/get-started/get-started-log-management) を使用して、関連するクエリを検索します。
+1. 個々の行が現在の `max_allowed_packet` 制限を超えているクエリを特定します。 返されるデータの量を減らすには、このようなクエリを書き換える必要があります。 これは、`SELECT` ステートメントの列数を減らすか、テーブルデザインの一環として様々な列に対して小さいデータ型を選択することで行うことができます。 New Relic アカウントをお持ちの場合、[New Relic APM Errors ページ ](https://docs.newrelic.com/docs/apm/apm-ui-pages/error-analytics/errors-page-explore-events-behind-errors) [New Relic APM Databases ページ ](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) および [New Relic Logs](https://docs.newrelic.com/docs/logs/log-management/get-started/get-started-log-management) を使用して、関連するクエリを検索します。
 1. 迅速な修復を行うために、[ チケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) する際に、`max_allowed_packet` のサイズを増やすように一時的にリクエストできますが、値が大きすぎると、ネットワークの輻輳が発生してレプリケーションにエラーが発生する可能性があるので、これはカスタマー・エンジニアリング・チームの判断で行います。
 1. ベストプラクティスとして、一部の大規模なデータベーステーブルに対して、CLI で次のコマンドを実行する必要があります。
 

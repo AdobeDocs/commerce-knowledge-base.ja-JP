@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336:Adobe Commerce Admin で通知を _[!UICONTROL Something went wrong]_消す際にエラーが発生する
+# ACSD-47336:Adobe Commerce Admin で通知を _[!UICONTROL Something went wrong]_&#x200B;消す際にエラーが発生する
 
-ACSD-47336 パッチは、[!DNL Commerce] Admin で通知を却下すると _[!UICONTROL Something went wrong]_エラーが表示される問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 がインストールされている場合に使用できます。 パッチ ID は ACSD-47336 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-47336 パッチは、[!DNL Commerce] Admin で通知を却下すると _[!UICONTROL Something went wrong]_&#x200B;エラーが表示される問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 がインストールされている場合に使用できます。 パッチ ID は ACSD-47336 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -31,7 +31,7 @@ ACSD-47336 パッチは、[!DNL Commerce] Admin で通知を却下すると _[!U
 
 ## 問題
 
-[!DNL Commerce] Admin で通知 _[!UICONTROL Something went wrong]_無効にすると、エラーが表示されます。
+[!DNL Commerce] Admin で通知 _[!UICONTROL Something went wrong]_&#x200B;無効にすると、エラーが表示されます。
 
 <u> 再現手順 </u>:
 
@@ -41,11 +41,11 @@ ACSD-47336 パッチは、[!DNL Commerce] Admin で通知を却下すると _[!U
 
 <u> 期待される結果 </u>:
 
-完了したタスクをクリアすると、_[!UICONTROL Something went wrong]_のエラーは表示されません。
+完了したタスクをクリアすると、_[!UICONTROL Something went wrong]_&#x200B;のエラーは表示されません。
 
 <u> 実際の結果 </u>:
 
-_[!UICONTROL Something went wrong]_のエラーが表示されます。
+_[!UICONTROL Something went wrong]_&#x200B;のエラーが表示されます。
 
 ## パッチの適用
 

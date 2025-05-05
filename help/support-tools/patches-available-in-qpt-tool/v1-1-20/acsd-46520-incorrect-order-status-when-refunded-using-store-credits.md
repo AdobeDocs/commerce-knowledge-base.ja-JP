@@ -55,7 +55,7 @@ ACSD-46520 パッチは、ストアクレジットを使用して払い戻した
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe Commerceまたは [!DNL Magento Open Source] オンプレミス：[Quality Patches Tool Guide の ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)Quality Patches Tools > Usage]。
+* Adobe Commerceまたは [!DNL Magento Open Source] オンプレミス：[Quality Patches Tool Guide の ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)Quality Patches Tools > Usage&rbrack;。
 * クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料

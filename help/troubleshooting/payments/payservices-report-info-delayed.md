@@ -29,7 +29,7 @@ ht-degree: 0%
 
 前提条件：支払いサービス機能を使用して注文が行われます。
 
-1. 注文は、[ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) で [ 請求 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) （またはキャンセル [ または ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) クレジットメモによる払い戻し ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)[ されます。
+1. 注文は、[ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) で [ 請求 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) （またはキャンセル [ または ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) クレジットメモによる払い戻し [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos) されます。
 1. 注文支払ステータスレポートに移動して、その注文に関する情報を表示します。
 1. ステータスは `AUTHORIZED` と表示されます。これは、請求またはその他の注文アクションの前の注文ステータスです。
 

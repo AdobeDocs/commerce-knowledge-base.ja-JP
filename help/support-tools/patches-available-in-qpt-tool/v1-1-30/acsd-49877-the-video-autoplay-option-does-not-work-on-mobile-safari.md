@@ -27,7 +27,7 @@ ACSD-49877 は、ビデオがリモートビデオファイルに直接リンク
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、[!magento/quality-patches] パッケージを最新のバージョンに更新し、[[!DNL Quality Patches Tool]：パッチを検索 ] ページで互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、[ !magento/quality-patches] パッケージを最新のバージョンに更新し、[[!DNL Quality Patches Tool]：パッチを検索 ] ページで互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 

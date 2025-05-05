@@ -40,7 +40,7 @@ proc_open(): fork failed - Cannot allocate memory
 
 ## 解決策 {#solution}
 
-アドビの開発者向けドキュメントでは、インストールまたはアップグレードが正常に完了するように ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)2 GB のメモリを PHP に割り当てる [ を推奨しています。
+アドビの開発者向けドキュメントでは、インストールまたはアップグレードが正常に完了するように [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)2 GB のメモリを PHP に割り当てる  を推奨しています。
 
 既に設定されている場合は、スワップファイルをマシン上に作成します。 Linux マシンは、より多くのメモリリソースが必要で、RAM がいっぱいであれば *スワップ領域* を使用します。 スワップ領域は、メモリ内の非アクティブなページに使用されます。
 

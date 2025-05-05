@@ -31,7 +31,7 @@ MDVA-43601 パッチでは、`catalogrule_rule` または `catalogrule_product` 
 
 ## 問題
 
-`catalogrule_rule` または `catalogrule_product``catalogrule_product_price` 完全に再インデックスすると、トリガーはテーブルから削除されます。
+`catalogrule_rule` または `catalogrule_product` `catalogrule_product_price` 完全に再インデックスすると、トリガーはテーブルから削除されます。
 
 <u> 再現手順 </u>:
 

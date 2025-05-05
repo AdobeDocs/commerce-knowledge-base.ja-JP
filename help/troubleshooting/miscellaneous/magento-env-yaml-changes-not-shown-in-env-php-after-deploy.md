@@ -46,7 +46,7 @@ ht-degree: 0%
 ## 解決策
 
 1. [Adobe Commerceのパフォーマンスのベストプラクティス/ソフトウェアの推奨事項 ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software) に従ってシステムが設定されていることを確認します。
-1. `php.ini``opcache.enable_cli` ディレクティブが `0` に設定されているかどうかを次のコマンドを実行して確認します：`php -i | grep opcache.enable_cli`
+1. `php.ini` `opcache.enable_cli` ディレクティブが `0` に設定されているかどうかを次のコマンドを実行して確認します：`php -i | grep opcache.enable_cli`
 1. 出力が `opcache.enable_cli=1` のような場合は、プロジェクトのルートディレクトリにある `php.ini` ファイルを編集し、`opcache.enable_cli=1` を `opcache.enable_cli=0` に変更します。
 1. プロジェクトを再デプロイします。
 

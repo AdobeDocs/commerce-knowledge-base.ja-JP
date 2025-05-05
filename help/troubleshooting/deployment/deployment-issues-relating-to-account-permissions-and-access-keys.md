@@ -54,7 +54,7 @@ ht-degree: 0%
 
 古いキーに関連付けられた Marketplace アカウントにアクセスできる場合は、次の手順を実行してキーを無効にします。
 
-1. 古いアカウントの資格情報を使用して ](https://marketplace.magento.com/)[ Commerce Marketplaceにログインします。
+1. 古いアカウントの資格情報を使用して [&#128279;](https://marketplace.magento.com/) Commerce Marketplaceにログインします。
 1. ページの右上にあるアカウント名をクリックし、「**マイプロファイル**」を選択します。
 1. 「Marketplace」タブの **アクセスキー** をクリックします。
 

@@ -57,10 +57,10 @@ ACSD-60441 パッチでは、バックエンドから生成された統合アク
 次のエラーが発生します。
 
     &quot;&#39;json
-    {
+    &lbrace;
     &quot;message&quot;: &quot;同じメールアドレスを持つ顧客が関連付けられた web サイトに既に存在します。&quot;,
     &quot;trace&quot;: ...
-    }
+    &rbrace;
     &quot;&#39;
 
 ## パッチの適用

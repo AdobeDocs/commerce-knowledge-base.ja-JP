@@ -37,7 +37,8 @@ ht-degree: 0%
 
 1. Adobe Commerce管理者/ **[!UICONTROL Store]** / **[!UICONTROL Configuration]** / **[!UICONTROL Sales]** / **[!UICONTROL Minimum Order Amount]** に移動して、以下を設定します。
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
+   * &#x200B;
+
      [!UICONTROL Minimum Amount]: *2*
 
 1. [!UICONTROL Cart Price Rule] を作成します。
@@ -45,7 +46,8 @@ ht-degree: 0%
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
       * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-      * 
+      * &#x200B;
+
         [!UICONTROL Discount Amount]: *92*
       * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. 価格が 25 ドルの製品を作成します。

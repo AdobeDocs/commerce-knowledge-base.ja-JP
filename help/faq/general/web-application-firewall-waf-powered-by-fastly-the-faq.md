@@ -132,7 +132,7 @@ WAF サポートでは、不要なリクエストや悪意のあるリクエス�
 
 ## WAF が正規のトラフィックをブロックしている場合、またはその他の問題を引き起こしている場合、どうすればサポートを受けられますか。
 
-[2}Adobe Commerce ヘルプセンター ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) で ](https://support.magento.com) サポートチケットを送信 } します。 [チケットが WAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
+[2&rbrace;Adobe Commerce ヘルプセンター ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) で [&#128279;](https://support.magento.com) サポートチケットを送信 &rbrace; します。 チケットが WAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
 
 Adobe Commerceのサポートチケット発行システムは、アドビのサポートエンジニアとお客様の担当者とのコミュニケーションをトラッキングします。 チケットの更新に合わせて、お客様やAdobe Commerceのスタッフにメールを送信し、お知らせのタイムスタンプ付きトランスクリプトを提供します。
 

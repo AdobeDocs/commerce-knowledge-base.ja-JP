@@ -33,5 +33,5 @@ Adobe Commerceのヘッドレス実装を開発中です。 それでも、Fastl
 
 ## 詳細情報
 
-* [ ヘッドレス Web サイト：分離されたアーキテクチャに関する大きな問題は何ですか？[Josh Koenig](https://pantheon.io/team/josh-koenig) による ](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture)。
+* [&#128279;](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) ヘッドレス Web サイト：分離されたアーキテクチャに関する大きな問題は何ですか？[Josh Koenig](https://pantheon.io/team/josh-koenig) による 。
 * [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) については、開発者向けドキュメントを参照してください。

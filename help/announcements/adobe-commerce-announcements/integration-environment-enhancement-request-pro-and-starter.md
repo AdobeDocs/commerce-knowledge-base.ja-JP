@@ -27,7 +27,7 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのお�
 1. マーチャントは、問い合わせ理由 [ クラウド設定の変更をリクエスト ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)」を使用して、拡張統合環境へのアップグレードをリクエスト *サポートチケットを送信* する必要があります。
 1. Adobeカスタマー・エンジニアリング・チームが統合環境の数を確認し、変更を開始します。
 1. アップグレードが完了すると、マーチャントにチケットで通知されます。
-1. マーチャントは統合環境をデプロイします。 開発者向けドキュメントの [ ブランチの結合 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) の手順に従います。 *注意*：デプロイメントは次の場合に自動的に行われます。 <pre>git プッシュオリジン <branch-name></pre>
+1. マーチャントは統合環境をデプロイします。 開発者向けドキュメントの [ ブランチの結合 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) の手順に従います。 *注意*：デプロイメントは次の場合に自動的に行われます。 <pre>git プッシュオリジン &lt;branch-name></pre>
 
 パフォーマンスが向上した場合は、拡張統合環境に正常にアップグレードされたことを示します。
 
@@ -43,7 +43,7 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのお�
 1. マーチャントは、問い合わせ理由 [ 「クラウド設定の変更をリクエスト ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)」 *-**ステージング環境は名前付き統合環境です* を使用して、拡張統合環境へのアップグレードをリクエストするサポートチケットを送信** する必要があります。
 1. Adobeカスタマー・エンジニアリング・チームが統合環境の数を確認し、変更を開始します。
 1. アップグレードが完了すると、マーチャントにチケットで通知されます。
-1. マーチャントは統合環境をデプロイします。 開発者向けドキュメントの [ ブランチの結合 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) の手順に従います。 *注意*：デプロイメントは次の場合に自動的に行われます。 <pre>git プッシュオリジン <branch-name></pre>
+1. マーチャントは統合環境をデプロイします。 開発者向けドキュメントの [ ブランチの結合 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) の手順に従います。 *注意*：デプロイメントは次の場合に自動的に行われます。 <pre>git プッシュオリジン &lt;branch-name></pre>
 
 パフォーマンスが向上した場合は、拡張統合環境に正常にアップグレードされたことを示します。
 

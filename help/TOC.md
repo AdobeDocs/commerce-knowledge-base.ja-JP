@@ -164,7 +164,7 @@ ht-degree: 0%
          * [MDVA-43824：注文のキャンセル操作が失敗し、「アイテムがキャンセルされていません」というエラーが表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-43824-order-cancellation-action-failed-with-error.md)
          * [MDVA-43862:GraphQLの UpdateCartItems ミューテーションエラーにより、顧客が買い物かご項目を更新できない](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-43862-unable-to-update-cart-items-because-of-graphql-updatecartitems-mutation-error.md)
          * [MDVA-43935：製品ページにアップセル製品が 2 回表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-43935-upsell-product-shown-twice-on-product-page.md)
-         * [MDVA-44188: ``を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-44188-emails-are-not-sent.md)
+         * [MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-44188-emails-are-not-sent.md)
       * v1.1.14 {#v1-1-14}
          * [概要：品質向上パッチツール（QPT） v1.1.14](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/overview.md)
          * [MDVA-43102：販売可能数量が正しく更新されていません](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)

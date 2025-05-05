@@ -60,5 +60,5 @@ Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
 ## 関連資料
 
-* [2}Cloud Infrastructure ガイドのCommerce Cloud Adobe Commerce ツールスイートのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) を参照してください *。*
-* [2}Cloud Infrastructure ガイドのAdobe Commerce Adobe Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) を参照してください **
+* [2&rbrace;Cloud Infrastructure ガイドのCommerce Cloud Adobe Commerce ツールスイートのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) を参照してください *。*
+* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce Adobe Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) を参照してください **

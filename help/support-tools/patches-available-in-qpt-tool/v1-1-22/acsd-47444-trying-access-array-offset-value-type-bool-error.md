@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47444: PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスすると _[!UICONTROL Trying to access array offset on value of type bool]_エラーが発生する
+# ACSD-47444: PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスすると _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;エラーが発生する
 
-ACSD-47444 パッチを適用すると、PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスする際に _[!UICONTROL Trying to access array offset on value of type bool]_のエラーが発生する問題が解決されます。このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.22 がインストールされている場合に使用できます。
+ACSD-47444 パッチを適用すると、PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスする際に _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;のエラーが発生する問題が解決されます。このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.22 がインストールされている場合に使用できます。
 
 ## 影響を受ける製品とバージョン
 
@@ -29,7 +29,7 @@ ACSD-47444 パッチを適用すると、PHP 7.4 上の既知の製品に対し�
 
 ## 問題
 
-PHP 7.4 で、既知の製品に対して存在しない特定のカテゴリパスにアクセスすると、_[!UICONTROL Trying to access array offset on value of type bool]_というエラーが発生します。
+PHP 7.4 で、既知の製品に対して存在しない特定のカテゴリパスにアクセスすると、_[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;というエラーが発生します。
 
 <u> 前提条件 </u>:
 

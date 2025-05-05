@@ -47,8 +47,8 @@ TLS （Transport Layer Security）は、セキュリティの低い先行プロ�
 
 Fastly の TLS 強制機能を使用すると、サイトページに対するすべての暗号化されていない受信要求を TLS に強制できます。
 
->>
-これは、暗号化されていないリクエストに対して *301 Moved Permanently* 応答を返すことで機能し、TLS と同等の値にリダイレクトされます。 例えば、*http://www.example.com/foo.jpeg} に対してリクエストを行* と、*https://www.example.com/foo.jpeg* にリダイレクトされます。
+&#x200B;>>
+これは、暗号化されていないリクエストに対して *301 Moved Permanently* 応答を返すことで機能し、TLS と同等の値にリダイレクトされます。 例えば、*http://www.example.com/foo.jpeg&rbrace; に対してリクエストを行* と、*https://www.example.com/foo.jpeg* にリダイレクトされます。
 
 [ 通信の確保 ](https://docs.fastly.com/guides/securing-communications/) （Fastly 関連ドキュメント）
 

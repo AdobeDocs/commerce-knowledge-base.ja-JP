@@ -25,9 +25,9 @@ ht-degree: 0%
 
 詳しくは、[[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions) を参照してください。
 
-Adobe Commerceは、3.54 以降の最新の [!DNL  Google Maps] バージョンとは互換性がありませんでした。
+Adobe Commerceは、3.54 以降の最新の [!DNL &#x200B; Google Maps] バージョンとは互換性がありませんでした。
 
-非互換性は、`lib/web/legacy-build.min.js` を通じて読み込まれた従来の `prototype.js script` がネイティブの Array.from 関数を上書きしたために発生し、[!DNL  Google Maps] API との直接競合につながります。
+非互換性は、`lib/web/legacy-build.min.js` を通じて読み込まれた従来の `prototype.js script` がネイティブの Array.from 関数を上書きしたために発生し、[!DNL &#x200B; Google Maps] API との直接競合につながります。
 
 [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices) を参照。
 

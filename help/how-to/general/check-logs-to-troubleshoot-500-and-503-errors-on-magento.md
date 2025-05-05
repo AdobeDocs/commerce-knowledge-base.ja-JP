@@ -31,6 +31,6 @@ Bob - not in TOC
 
 ## 関連資料
 
-* [2}Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) ログの表示と管理 *を参照してください。*
+* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) ログの表示と管理 *を参照してください。*
 * サポートナレッジベースの [503 エラーのトラブルシューティング ](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) を参照してください。
 * サポートナレッジベースの [Magentoサイトのダウンのトラブルシューティング ](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) を参照してください。

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. コアBraintreeの統合が使用されます（**Stores**/**Configurations**/**Sales**/**Payment Method**/**8}Braintree）。**
+1. コアBraintreeの統合が使用されます（**Stores**/**Configurations**/**Sales**/**Payment Method**/**8&rbrace;Braintree）。**
 1. Luma ストアフロントを使用して、注文します。
 1. 管理 UI / **営業** に移動します。
 1. 顧客の新しい注文を作成するか、以前に注文した注文に移動して、「**並べ替え**」をクリックします。

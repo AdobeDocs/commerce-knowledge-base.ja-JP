@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 現在のAdobeアカウントの E メール アドレスを変更する
 
-この記事では、[Magentoアカウント ](https://account.adobe.com/) に登録されている現在のメールアドレスを、[Adobeアカウントまたは [Adobeアカウント ](https://account.adobe.com/) に登録されていない新しいアドレスに変更する方法について説明し ](https://account.magento.com/) す。
+この記事では、[Magentoアカウント ](https://account.adobe.com/) に登録されている現在のメールアドレスを、[&#128279;](https://account.magento.com/)Adobeアカウントまたは [Adobeアカウント ](https://account.adobe.com/) に登録されていない新しいアドレスに変更する方法について説明し  す。
 
 ## 影響を受ける製品とバージョン
 

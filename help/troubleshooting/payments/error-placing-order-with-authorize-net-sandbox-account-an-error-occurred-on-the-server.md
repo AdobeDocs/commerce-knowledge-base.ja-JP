@@ -29,7 +29,7 @@ ht-degree: 0%
 
 [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) サンドボックスアカウントを使用して注文すると、次のエラーメッセージが表示されます。
 
->>
+&#x200B;>>
 「サーバーでエラーが発生しました。 もう一度注文してみてください」
 
 ## 原因 1: テスト モードが有効になっています
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 解決策 1：テストモードを無効にする
 
-1. **Stores**/**Configuration**/**Sales**/**Payment Methods**/**Other Payment Methods**/10}Authorize.net Direct Post **に移動します。**
+1. **Stores**/**Configuration**/**Sales**/**Payment Methods**/**Other Payment Methods**/10&rbrace;Authorize.net Direct Post **に移動します。**
 1. **テストモード** を「いいえ」に設定します（**システム値を使用** のチェックを外してから、メニューで「いいえ」を選択します）。
 1. 「**設定を保存**」をクリックします。
 

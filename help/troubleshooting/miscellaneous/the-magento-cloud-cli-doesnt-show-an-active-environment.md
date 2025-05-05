@@ -50,6 +50,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-2. コマンドを使用して環境の ID を指定します。
+&#x200B;2. コマンドを使用して環境の ID を指定します。
 
 `magento-cloud ssh -e integration`

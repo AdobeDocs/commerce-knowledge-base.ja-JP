@@ -44,10 +44,10 @@ MDVA-43178 パッチでは、カスタムストアのカスタムトークンを
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

@@ -1,6 +1,6 @@
 ---
 title: 「PWA Studio：ブラウザーが.local.pwadev サイトを解決できない」
-description: この記事では、別のプログラムまたはプロセスが [ ホスト ファイル ] （https://en.wikipedia.org/wiki/Hosts_(file\）を編集し、プロジェクト ドメインのエントリを削除した場合の解決策を示します。
+description: この記事では、別のプログラムまたはプロセスが [ ホスト ファイル ] （https://en.wikipedia.org/wiki/Hosts_(file）を編集し、プロジェクト ドメインのエントリを削除した場合の解決策を示します。
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer

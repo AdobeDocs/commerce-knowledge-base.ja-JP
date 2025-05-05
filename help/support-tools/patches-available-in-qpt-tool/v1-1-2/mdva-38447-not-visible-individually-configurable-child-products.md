@@ -49,26 +49,26 @@ B2B モジュールをインストールする必要があります。
   $search：文字列
   $pageSize: Int!
   $currentPage: Int!
-） {
+） &lbrace;
   products （
     フィルター：$filter
     並べ替え：$sort
     検索：$search
     pageSize: $pageSize
     currentPage: $currentPage
-  ） {
+  ） &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    項目 {
+    &rbrace;
+    項目 &lbrace;
       名前
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 変数：
 

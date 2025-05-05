@@ -37,27 +37,27 @@ ht-degree: 0%
 
 （モジュール構造について詳しくは、開発者向けドキュメントの [ モジュールの概要 ](https://developer.adobe.com/commerce/php/architecture/modules/overview/) を参照してください）。
 
-<pre><ExtraCountries>
+<pre>&lt;ExtraCountries>
  |
- <etc>
+ &lt;etc>
  | |
  | config.xml
  | di.xml
  | module.xml
  |
- <Plugin>
+ &lt;Plugin>
  | |
- | <Framework>
+ | &lt;Framework>
  |   |
- |   <Locale>
+ |   &lt;Locale>
  |     |
  |     TranslatedListsPlugin.php
  |
- <Setup>
+ &lt;Setup>
  | |
- | <Patch>
+ | &lt;Patch>
  |   |
- |   <Data>
+ |   &lt;Data>
  |     |
  |     AddDataForAbstractCountry.php
  |

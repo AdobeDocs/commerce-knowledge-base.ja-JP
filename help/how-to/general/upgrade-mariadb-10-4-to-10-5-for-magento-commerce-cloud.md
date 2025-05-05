@@ -49,4 +49,4 @@ MariaDB 10.4 は [2024 年 6 月 18 日（PT） ](https://endoflife.date/mariadb
 
 * オンプレミスデプロイメントの [DB アップグレードのベストプラクティスガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)。
 * [ クラウド上のAdobe Commerce用に MariaDB 10.0 を 10.2 にアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud) する（サポートナレッジベース）。
-* 開発者向けドキュメントの ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)0}Adobe Commerce ライフサイクルポリシー }。[
+* 開発者向けドキュメントの [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)0&rbrace;Adobe Commerce ライフサイクルポリシー &rbrace;。
