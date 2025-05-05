@@ -32,7 +32,7 @@ B2B 1.5.2 に更新した後に `Magento_Company` モジュールをアップグ
 
 <u> 再現手順 </u>:
 
-1. 会社を親会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの [ 会社階層の管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) を参照してください。
+1. 会社を親会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの [ 会社階層の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) を参照してください。
 1. B2B を 1.5.2 バージョンにアップグレードします。
 
 <u> 期待される結果 </u>:
@@ -61,7 +61,7 @@ B2B 1.5.2 に更新した後に `Magento_Company` モジュールをアップグ
 
 ### パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) を参照してください。
+ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) を参照してください。
 
 ### クラウドパッチを使用したパッチの適用
 
@@ -80,8 +80,8 @@ Cloud マーチャント上のAdobe Commerceの場合は、次の手順に従い
    ```
 
 1. ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch を `m2-hotfixes` ディレクトリに追加します。
-1. 変更をコミットしてプッシュし、再デプロイと `bin/magento setup:upgrade` プロイメントを開始します。 手順については、Cloud 上のAdobe Commerce ガイドの [ パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) を参照してください。
+1. 変更をコミットしてプッシュし、再デプロイと `bin/magento setup:upgrade` プロイメントを開始します。 手順については、Cloud 上のAdobe Commerce ガイドの [ パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) を参照してください。
 
 ## 関連資料
 
-* [REGEXP_LIKE 関数がないため、SQL 構文エラーで B2B 1.5.2 へのアップグレードが失敗します ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
+* [REGEXP_LIKE 関数がないため、SQL 構文エラーで B2B 1.5.2 へのアップグレードが失敗します ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)

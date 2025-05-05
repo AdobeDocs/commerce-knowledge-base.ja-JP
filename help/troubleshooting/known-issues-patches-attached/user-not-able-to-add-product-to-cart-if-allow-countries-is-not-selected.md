@@ -65,4 +65,4 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## 役に立つリンク
 
-[ クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) については、開発者向けドキュメントを参照してください。
+[ クラウドインフラストラクチャー上のAdobe Commerceにカスタムパッチを適用する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) については、開発者向けドキュメントを参照してください。

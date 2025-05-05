@@ -29,7 +29,7 @@ ht-degree: 0%
 
 前提条件：支払いサービス機能を使用して注文が行われます。
 
-1. 注文は、[ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) で [ 請求 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) （またはキャンセル [ または ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) クレジットメモによる払い戻し [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos) されます。
+1. 注文は、[ 管理者 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) で [ 請求 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) （またはキャンセル [ または ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin) クレジットメモによる払い戻し [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos) されます。
 1. 注文支払ステータスレポートに移動して、その注文に関する情報を表示します。
 1. ステータスは `AUTHORIZED` と表示されます。これは、請求またはその他の注文アクションの前の注文ステータスです。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これは、一般的なユースケースの 1 つにすぎません。 [ 注文アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) が発生し、該当するレポートですぐにデータを使用できない場合は、他のユースケースが考えられます。
+>これは、一般的なユースケースの 1 つにすぎません。 [ 注文アクション ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) が発生し、該当するレポートですぐにデータを使用できない場合は、他のユースケースが考えられます。
 
 <u> 期待される結果 </u>:
 レポートデータは、注文に対するアクションが発生した直後に入力されます。
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 管理画面に表示されるデータのこの遅延に影響する要因は 2 つあります。
 
-* [ 管理者の設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html) を使用して、Commerceからデータを同期（書き出しと保持）する頻度。
+* [ 管理者の設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html?lang=ja) を使用して、Commerceからデータを同期（書き出しと保持）する頻度。
 * PayPal がレポートデータを公開する期間。
 
 ## 解決策

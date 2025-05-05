@@ -1,6 +1,6 @@
 ---
 title: Fastly が有効になっているサブページにメインメニュー（カテゴリ）が表示されない
-description: この記事では、Fastly または Varnish が有効になっているときに、メインメニュー（またはユーザーガイドの [ カテゴリトップナビゲーションメニュー ] （https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html））がサブページのストアフロント（例：*blog/page*）に表示されない問題を修正しました。
+description: この記事では、Fastly または Varnish が有効になっているときに、メインメニュー（またはユーザーガイドの [ カテゴリトップナビゲーションメニュー ] （https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=ja））がサブページのストアフロント（例：*blog/page*）に表示されない問題を修正しました。
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer

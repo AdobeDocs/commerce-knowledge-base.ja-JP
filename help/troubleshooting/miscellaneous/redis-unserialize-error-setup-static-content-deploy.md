@@ -99,5 +99,5 @@ STATIC_CONTENT_THREADS =1
 
 開発者向けドキュメントでは、
 
-* [Redis の設定 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [ コマンドラインアップグレード ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Redis の設定 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=ja)
+* [ コマンドラインアップグレード ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=ja)

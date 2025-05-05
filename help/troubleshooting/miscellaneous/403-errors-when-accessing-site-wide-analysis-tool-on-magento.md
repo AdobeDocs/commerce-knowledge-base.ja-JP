@@ -79,4 +79,4 @@ HTTP/2 403
 
 ## 関連資料
 
-* [Site-Wide Analysis Tool ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Site-Wide Analysis Tool ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=ja)

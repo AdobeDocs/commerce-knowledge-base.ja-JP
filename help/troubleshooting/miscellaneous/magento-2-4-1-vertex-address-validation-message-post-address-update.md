@@ -24,7 +24,7 @@ ht-degree: 0%
 
 前提条件：
 
-**頂点アドレス クレンジング** を有効にします。 手順については、ユーザーガイドの [ ストアフロントアドレスクレンジングの設定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) を参照してください。
+**頂点アドレス クレンジング** を有効にします。 手順については、ユーザーガイドの [ ストアフロントアドレスクレンジングの設定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=ja) を参照してください。
 
 <u> 再現手順：</u>
 

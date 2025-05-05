@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します
 
-この記事では、[ デプロイメントログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に次のようなエラーが表示されてデプロイメントが失敗した場合の問題の解決策を説明します。
+この記事では、[ デプロイメントログ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に次のようなエラーが表示されてデプロイメントが失敗した場合の問題の解決策を説明します。
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 >
 >これはエラーの例です。 （デプロイするAdobe Commerceのバージョンに応じて）別のファイルを示すエラーが発生する場合があります。
 
-デプロイに失敗しました。 *デプロイメントログ [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に、「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 エラー）* などのエラーが  表示されます。
+デプロイに失敗しました。 *デプロイメントログ [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) に、「https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip」ファイルをダウンロードできませんでした（HTTP/1.1 404 エラー）* などのエラーが  表示されます。
 
 ### 原因：
 
@@ -53,7 +53,7 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 プロジェクトレベルで `env:COMPOSER_AUTH` 変数を更新し、コードへのアクセス権を持つキーで設定されていることを確認します。
 
-手順については、Cloud Infrastructure のCommerce ガイドの [ 変数レベル ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) を参照してください。
+手順については、Cloud Infrastructure のCommerce ガイドの [ 変数レベル ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) を参照してください。
 
 ## 関連資料
 

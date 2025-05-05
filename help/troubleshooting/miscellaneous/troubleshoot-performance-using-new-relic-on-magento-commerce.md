@@ -60,7 +60,7 @@ ht-degree: 0%
 </ol>
 </td>
 <td>
-<p>New Relic Apdex スコアについて詳しくは、<a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic ドキュメント/APM Apdex/ユーザー満足度の測定 </a> を参照してください。 サポートナレッジベースの <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Managed alerts for Adobe Commerce: Apdex warning alert</a> も参照してください。</p>
+<p>New Relic Apdex スコアについて詳しくは、<a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic ドキュメント/APM Apdex/ユーザー満足度の測定 </a> を参照してください。 サポートナレッジベースの <a href="https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Managed alerts for Adobe Commerce: Apdex warning alert</a> も参照してください。</p>
 </td>
 </tr>
 <tr>

@@ -53,4 +53,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)。
+* ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-scan)。

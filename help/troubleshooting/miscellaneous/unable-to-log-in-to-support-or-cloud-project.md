@@ -51,7 +51,7 @@ Adobe Commerceを他のAdobeソリューションと統合するプロセスの�
 - 既存のAdobeの会社/個人アカウント。
 - Adobeアカウントがない場合は、同じメールアドレスで作成します。
 
-手順については、Adobe Experience Leagueの [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) を参照してください。
+手順については、Adobe Experience Leagueの [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=ja) を参照してください。
 
 ## 関連資料
 

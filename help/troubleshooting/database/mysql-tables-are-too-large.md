@@ -34,5 +34,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [ 変更ログテーブルのサイズが大きすぎて、エンティティの更新に遅延が発生する ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) アドビのサポートナレッジベース
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [ 変更ログテーブルのサイズが大きすぎて、エンティティの更新に遅延が発生する ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) アドビのサポートナレッジベース
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

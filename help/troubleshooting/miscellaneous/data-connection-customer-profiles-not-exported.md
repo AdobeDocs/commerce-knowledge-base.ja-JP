@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-[[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) 拡張機能をインストールおよび設定し、顧客プロファイルデータをExperience Platformに送信できるようにしたが、そのプロファイルデータがExperience Platformに表示されない。
+[[!DNL Data Connection]](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/data-connection/overview) 拡張機能をインストールおよび設定し、顧客プロファイルデータをExperience Platformに送信できるようにしたが、そのプロファイルデータがExperience Platformに表示されない。
 
 ## 解決策
 
@@ -31,7 +31,7 @@ Experience Platformに顧客プロファイル情報が表示されない場合�
 
 最新バージョンの `experience-platform-connector` 拡張機能がインストールされていることを確認します。
 
-最新バージョンについて詳しくは、[[!DNL Data Connection]  拡張機能リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes) を参照してください。
+最新バージョンについて詳しくは、[[!DNL Data Connection]  拡張機能リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/data-connection/release-notes) を参照してください。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Experience Platformに顧客プロファイル情報が表示されない場合�
 
 #### クラウドインフラストラクチャー上のAdobe Commerce
 
-1. `.magento.env.yaml` で `ENABLE_EVENTING` グローバル変数を有効にします。 [ 詳細情報 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global)。
+1. `.magento.env.yaml` で `ENABLE_EVENTING` グローバル変数を有効にします。 [ 詳細情報 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global)。
 
    ```bash
        stage:
@@ -116,14 +116,14 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. 管理者の *[!UICONTROL Commerce Services Connector]* ページに移動し、指定した [!UICONTROL sandbox/production] キーが正しく設定されていることを確認します。 また、Commerce アカウントの [!UICONTROL sandbox/production] 設定が、[!UICONTROL Commerce Services Connector] に示す設定と一致することを確認します。 詳細情報 [ 詳細情報 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey)。
+1. 管理者の *[!UICONTROL Commerce Services Connector]* ページに移動し、指定した [!UICONTROL sandbox/production] キーが正しく設定されていることを確認します。 また、Commerce アカウントの [!UICONTROL sandbox/production] 設定が、[!UICONTROL Commerce Services Connector] に示す設定と一致することを確認します。 詳細情報 [ 詳細情報 ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey)。
 
 ### 許可リストにサービス ID が含まれているかどうかを確認し、Adobe Commerce サポートに問い合わせます
 
 1. Adobe Commerceの許可リストに [!UICONTROL Commerce Services Connector] `serviceId` が表示されることを確認します。
-1. Adobe Commerceステータスを確認するには、[許可リストに加える サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) にお問い合わせください。
+1. Adobe Commerceステータスを確認するには、[許可リストに加える サポート ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) にお問い合わせください。
 
 ## 関連資料
 
-* Commerce サービスユーザーガイドの [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) 拡張機能
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce サービスユーザーガイドの [[!DNL Data Connection]](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/data-connection/overview) 拡張機能
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

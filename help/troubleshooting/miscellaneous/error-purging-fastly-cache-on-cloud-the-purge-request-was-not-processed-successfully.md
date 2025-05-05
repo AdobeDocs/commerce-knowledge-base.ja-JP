@@ -49,12 +49,12 @@ ht-degree: 0%
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-VCL のリストを確認します。 Fastly のデフォルト VCL に問題がある場合は、再度アップロードするか、[Fastly のデフォルト VCL](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) に従ってコンテンツを確認することができます。 Commerce カスタム VCL の編集については、『 Cloud Infrastructure ガイド』の [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を参照してください。
+VCL のリストを確認します。 Fastly のデフォルト VCL に問題がある場合は、再度アップロードするか、[Fastly のデフォルト VCL](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) に従ってコンテンツを確認することができます。 Commerce カスタム VCL の編集については、『 Cloud Infrastructure ガイド』の [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=ja) を参照してください。
 
 ## 詳細情報
 
 開発者向けドキュメントでは、
 
-* [Fastly について ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Fastly のセットアップ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Fastly について ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja)
+* [Fastly のセットアップ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)
+* [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=ja)

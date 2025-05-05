@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
+詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
 
 `.magento/services.yaml` ファイルを変更したら、変更内容を適用するために、コミットしてプッシュする必要があります。 プッシュはデプロイメントプロセスをトリガーします。
 

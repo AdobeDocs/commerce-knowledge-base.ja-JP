@@ -32,7 +32,7 @@ Installation-failes-cannot-create-install.log
 
 この値の変更方法が不明な場合は、次の手順を使用します。
 
-1. まだ作成していない場合は、[phpinfo.php](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software) を作成します。
+1. まだ作成していない場合は、[phpinfo.php](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software) を作成します。
 1. ブラウザーのアドレスまたは場所フィールドに、次の URL を入力します。`https://<your web server IP or hostname>/<path to docroot>/phpinfo.php`
 1. `php.ini` の場所を探します。     通常、表示される結果では、`php.ini` は **読み込まれた設定ファイル** として指定されます。
 1. root 権限を持つユーザーとして、`php.ini` をテキストエディターで開きます。

@@ -37,5 +37,5 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [Pro アーキテクチャ > 統合環境 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [ スターターアーキテクチャ/ステージング環境 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Pro アーキテクチャ > 統合環境 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [ スターターアーキテクチャ/ステージング環境 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ### MySQL に十分な容量があるかどうかを確認します
 
-クラウドインフラストラクチャー上のすべてのAdobe Commerce スタータープランアーキテクチャ環境、およびクラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) の場合は、環境に [SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) で次のコマンドを実行します。
+クラウドインフラストラクチャー上のすべてのAdobe Commerce スタータープランアーキテクチャ環境、およびクラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) の場合は、環境に [SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) で次のコマンドを実行します。
 
 ```bash
 magento-cloud db:size
 ```
 
-Pro アーキテクチャのステージング環境または実稼動環境の場合は、[ 環境に SSH 接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) し、`df -h` を実行します   `| grep mysql` コマンド。 結果は次のようになります。
+Pro アーキテクチャのステージング環境または実稼動環境の場合は、[ 環境に SSH 接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) し、`df -h` を実行します   `| grep mysql` コマンド。 結果は次のようになります。
 
 ```bash
 sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
@@ -55,7 +55,7 @@ mysql:
     disk: 2048
 ```
 
-詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) の記事を参照してください。
+詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html?lang=ja) の記事を参照してください。
 
 Pro アーキテクチャのステージング環境または実稼動環境用にこれらの変更を行うには、[ サポートチケット ](https://support.magento.com) を作成する必要があります。 ただし、通常は、Adobe Commerceがこれらのパラメーターをモニタリングし、アラートを送信したり、契約に従ってアクションを実行したりするので、Pro アーキテクチャのステージング/実稼動で対処する必要はありません。
 

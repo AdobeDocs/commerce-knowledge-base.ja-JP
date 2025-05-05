@@ -104,7 +104,7 @@ Adobe Commerceの WAF 製品には、PCI 要件の一環として OWASP Top-10 �
 
 ## お客様は、IP ブラックリストを作成および変更してトラフィックをブロックすることはできますか。
 
-はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューでHTMLをアップロードすることで、カスタムエラーページを作成できます。 開発者向けドキュメントの [ カスタムエラー/メンテナンスページの作成 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) を参照してください。
+はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューでHTMLをアップロードすることで、カスタムエラーページを作成できます。 開発者向けドキュメントの [ カスタムエラー/メンテナンスページの作成 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja) を参照してください。
 
 ## WAF サービスの運用状況はどこで確認できますか？
 
@@ -118,7 +118,7 @@ WAF サービスの全体的な可用性は、[Fastly ステータスページ ]
 
 Adobe Commerceにはセキュリティオペレーションセンターがありませんが、適切な人材を採用してセキュリティインシデントにリアルタイムで対応できるセキュリティオペレーションプロセスを用意しています。 2035 年 7 月 24 日のサポートも提供しています。
 
-また、Adobe Commerce関連のセキュリティニュースや最新情報を [ セキュリティセンター ](https://helpx.adobe.com/security.html) から取得することもできます。
+また、Adobe Commerce関連のセキュリティニュースや最新情報を [ セキュリティセンター ](https://helpx.adobe.com/jp/security.html) から取得することもできます。
 
 ## どのようなサポートがありますか？
 
@@ -160,7 +160,7 @@ Adobe Commerceのサポートチケット発行システムは、アドビのサ
 </tr>
 <tr>
 <td>緊急エスカレーション*</td>
-<td>米国および国際電話番号については、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Adobe Commerce P1 通知ホットライン </a> の記事を参照してください。</td>
+<td>米国および国際電話番号については、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=ja">Adobe Commerce P1 通知ホットライン </a> の記事を参照してください。</td>
 </tr>
 </tbody>
 </table>

@@ -66,11 +66,11 @@ ht-degree: 0%
 
 共有アカウントで作成したキーを使用していた場合は、アクセス権を付与したAdobe Commerce ライセンスオーナーに連絡し、キーの生成をリクエストする必要があります。
 
-支払いの問題が原因でライセンスが以前に失効され、その問題が解決されてライセンスが更新された場合は、[ 新しい認証キーを生成 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) する必要があります。
+支払いの問題が原因でライセンスが以前に失効され、その問題が解決されてライセンスが更新された場合は、[ 新しい認証キーを生成 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=ja) する必要があります。
 
 ### 2. env:COMPOSER\_AUTH 変数に keys 値を追加し、auth.json で同じキーが指定されているかどうかを確認します
 
-開発者向けドキュメントの [ 既存システムの準備 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) および [ 認証キーの追加 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) の手順と関連情報を参照してください。
+開発者向けドキュメントの [ 既存システムの準備 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/overview) および [ 認証キーの追加 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/overview) の手順と関連情報を参照してください。
 
 ### 3. auth.json の更新または削除
 

@@ -74,4 +74,4 @@ $ curl 127.0.0.1:9200
 
 ## 関連資料
 
-Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html)。
+Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=ja)。

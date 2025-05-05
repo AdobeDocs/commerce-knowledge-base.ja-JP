@@ -40,5 +40,5 @@ GraphQL リクエストの性質上、[!DNL Fastly] WAF によるリクエスト
 
 ## 関連資料
 
-* クラウドインフラストラクチャー上のCommerceにある [Web アプリケーションファイアウォール（WAF） ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) に関するガイド。
-* クラウドインフラストラクチャー上のCommerceにおける [ カスタム VCL の概要 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) ガイド。
+* クラウドインフラストラクチャー上のCommerceにある [Web アプリケーションファイアウォール（WAF） ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) に関するガイド。
+* クラウドインフラストラクチャー上のCommerceにおける [ カスタム VCL の概要 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) ガイド。

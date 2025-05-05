@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2024 リリーススケジュール
 
-[2023 年に、サポートウィンドウを拡大し ](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) より多くのセキュリティアップデートを提供し、イノベーションの導入を加速するために、リリース戦略を更新しました。 2024 年に向けて、ミッションクリティカルなお客様のニーズにより優れたサポートを提供するための取り組みを継続し、来年度のリソースを計画および予算に計上するための時間を提供する [ リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を公開しました。 変更をまとめるのに役立つように、2023 年と 2024 年の戦略を見て、何が変わらず、何が変わっているのかを判断します。
+[2023 年に、サポートウィンドウを拡大し ](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) より多くのセキュリティアップデートを提供し、イノベーションの導入を加速するために、リリース戦略を更新しました。 2024 年に向けて、ミッションクリティカルなお客様のニーズにより優れたサポートを提供するための取り組みを継続し、来年度のリソースを計画および予算に計上するための時間を提供する [ リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja) を公開しました。 変更をまとめるのに役立つように、2023 年と 2024 年の戦略を見て、何が変わらず、何が変わっているのかを判断します。
 
 ## 同じままであるもの
 
@@ -27,6 +27,6 @@ ht-degree: 0%
 * 2024 年には、ビジネスのセキュリティとコンプライアンスを維持するために、現在サポートされているすべてのAdobe Commerce バージョンに対して、セキュリティのみのパッチリリースを 5 つに増やします。
 * ベータ版リリースを通じてプラットフォームの最新バージョンへの早期のアクセスを最大 6 か月前まで提供するために、2 週間のプレリリース期間を削除します。
 
-これらの戦略の変更を組み込んだ 2024 年リリースカレンダーには、Adobe Experience Leagueの [ リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) で確認できる 5 つのリリースが含まれています。
+これらの戦略の変更を組み込んだ 2024 年リリースカレンダーには、Adobe Experience Leagueの [ リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja) で確認できる 5 つのリリースが含まれています。
 
 このスケジュールを年間の計画サイクルで使用して、これらのリリースウィンドウに関するリソースをより適切に準備し、割り当ててください。 アップグレード計画に関するその他のリソースについては、アップグレードガイドの [ アップグレードプロセスの概要 ](/docs/commerce-operations/upgrade-guide/overview.html) を参照してください。

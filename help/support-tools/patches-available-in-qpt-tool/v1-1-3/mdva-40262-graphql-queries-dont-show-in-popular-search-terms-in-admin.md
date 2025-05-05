@@ -1,6 +1,6 @@
 ---
 title: 「MDVA-40262：管理者の一般的な検索用語にGraphQLのクエリが表示されない」
-description: MDVA-40262 Adobe Commerce品質パッチを使用すると、管理者の一般的な検索用語にGraphQL検索クエリが表示されない問題を修正できます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.3 がインストールされている場合に利用できます。 パッチ ID は MDVA-40262。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+description: MDVA-40262 Adobe Commerce品質パッチを使用すると、管理者の一般的な検索用語にGraphQL検索クエリが表示されない問題を修正できます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.3 がインストールされている場合に利用できます。 パッチ ID は MDVA-40262。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 exl-id: 7157e47d-a042-4462-96ed-23203a3213bd
 feature: Admin Workspace, GraphQL, Search
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40262：管理者の一般的な検索用語にGraphQLのクエリが表示されない
 
-MDVA-40262 Adobe Commerce品質パッチを使用すると、管理者の一般的な検索用語にGraphQL検索クエリが表示されない問題を修正できます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview)1.1.3 がインストールされている場合に使用できます。 パッチ ID は MDVA-40262。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-40262 Adobe Commerce品質パッチを使用すると、管理者の一般的な検索用語にGraphQL検索クエリが表示されない問題を修正できます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview)1.1.3 がインストールされている場合に使用できます。 パッチ ID は MDVA-40262。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.3
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -76,8 +76,8 @@ GraphQL クエリを実行して商品を検索した後、一般的な検索用
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

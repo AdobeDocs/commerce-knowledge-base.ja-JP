@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce 2.3.5 の製品比較の既知の問題
-description: この記事では、Adobe Commerce オンプレミス 2.3.5 およびAdobe Commerce on cloud infrastructure 2.3.5 における既知の [product comparison] （https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/shopper-tools/product-compare）の問題を回避する方法について推奨事項を説明します。
+description: この記事では、Adobe Commerce オンプレミス 2.3.5 およびAdobe Commerce on cloud infrastructure 2.3.5 における既知の [product comparison] （https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/shopper-tools/product-compare）の問題を回避する方法について推奨事項を説明します。
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.3.5 の製品比較の既知の問題
 
-この記事では、Adobe Commerce オンプレミス 2.3.5 およびAdobe Commerce on cloud infrastructure 2.3.5 の既知の [ 製品比較 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/shopper-tools/product-compare) 問題を回避する方法に関する推奨事項を説明します。
+この記事では、Adobe Commerce オンプレミス 2.3.5 およびAdobe Commerce on cloud infrastructure 2.3.5 の既知の [ 製品比較 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/shopper-tools/product-compare) 問題を回避する方法に関する推奨事項を説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品属性は、「ストアフロントで比較 **設定を使用した比較に使用されるように** 定されています。 詳しくは、製品ユーザーガイドの [ 製品属性の作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create#step-4-describe-the-storefront-properties) を参照してください。
+>製品属性は、「ストアフロントで比較 **設定を使用した比較に使用されるように** 定されています。 詳しくは、製品ユーザーガイドの [ 製品属性の作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create#step-4-describe-the-storefront-properties) を参照してください。
 
 修正は、2020 年 Q4 にリリースされるAdobe Commerce 2.3.6 で利用できるようになります。
 

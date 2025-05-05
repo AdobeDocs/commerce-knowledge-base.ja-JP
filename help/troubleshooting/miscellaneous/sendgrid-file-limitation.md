@@ -52,9 +52,9 @@ Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxx
 ## 回避策
 
 * 6 MB または 10 MB を超える添付ファイルは使用しないでください。
-* Adobe Commerce インスタンスでリモート SMTP サーバーを使用することを検討してください。 手順については、管理システムガイドの [ メール通信の設定 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) を参照してください。
+* Adobe Commerce インスタンスでリモート SMTP サーバーを使用することを検討してください。 手順については、管理システムガイドの [ メール通信の設定 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=ja) を参照してください。
 * モジュール内にファイルを保存できるようにサーバーを再設定し、メール内のファイルへのリンクを添付します。
 
 ## 関連資料
 
-* Commerce on Cloud Infrastructure ガイドの [[!DNL SendGrid]  メールサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。
+* Commerce on Cloud Infrastructure ガイドの [[!DNL SendGrid]  メールサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=ja)。

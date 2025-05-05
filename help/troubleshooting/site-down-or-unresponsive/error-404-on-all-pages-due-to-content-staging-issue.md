@@ -24,9 +24,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事は、[ ステージング更新のプレビュー ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change) を試みると 404 エラーが発生する状況には適用されません。 その問題が発生した場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) を開いてください。
+>この記事は、[ ステージング更新のプレビュー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change) を試みると 404 エラーが発生する状況には適用されません。 その問題が発生した場合は、[ サポートチケット ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) を開いてください。
 
-ストアフロントページまたは管理者にアクセスすると、[ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) を使用してストアコンテンツアセットのスケジュールされた更新で操作を実行した後、404 エラー（「Whoops, our bad...」ページ）が発生します（[Module\_Staging Magento](https://developer.adobe.com/commerce/php/module-reference/) を使用してスケジュールされたストアコンテンツアセットの更新）。 例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
+ストアフロントページまたは管理者にアクセスすると、[ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja) を使用してストアコンテンツアセットのスケジュールされた更新で操作を実行した後、404 エラー（「Whoops, our bad...」ページ）が発生します（[Module\_Staging Magento](https://developer.adobe.com/commerce/php/module-reference/) を使用してスケジュールされたストアコンテンツアセットの更新）。 例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
 
 ストアのコンテンツアセットには、次のものが含まれます。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-この場合、トラブルシューティングのアイデアについては、[ サイトのダウンのトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) を参照してください。
+この場合、トラブルシューティングのアイデアについては、[ サイトのダウンのトラブルシューティング ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) を参照してください。
 
 ## 解決策
 
@@ -88,8 +88,8 @@ ht-degree: 0%
 
 1. [!DNL cron] ジョブが実行されるまで（適切に設定されている場合は最大 5 分以内に実行されます）待つか、設定されていない場合は手動で実行 [!DNL cron] ます。
 
-無効なリンクを修正した後、問題を直ちに解決する必要があります。 問題が解決しない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) してください。
+無効なリンクを修正した後、問題を直ちに解決する必要があります。 問題が解決しない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) してください。
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

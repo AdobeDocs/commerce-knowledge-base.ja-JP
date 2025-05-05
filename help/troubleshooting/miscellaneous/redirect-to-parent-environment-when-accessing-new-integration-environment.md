@@ -59,7 +59,7 @@ update core_config_data set value = %your_new_environment_secure_url% where path
 
 #### Adobe Commerce CLI （バージョン 2.2.X で使用可能）を使用してデータベースを修正します。
 
-1. [Adobe Commerce ファイルシステムの所有者としてログインするか、](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html) に切り替えます。
+1. [Adobe Commerce ファイルシステムの所有者としてログインするか、](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html?lang=ja) に切り替えます。
 1. 次のコマンドを実行します。
 
 ```bash
@@ -87,4 +87,4 @@ php <your_magento_install_dir>/bin/magento cache:clean config
 
 ## 開発者向けドキュメントの関連記事：
 
-[ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)
+[ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja)

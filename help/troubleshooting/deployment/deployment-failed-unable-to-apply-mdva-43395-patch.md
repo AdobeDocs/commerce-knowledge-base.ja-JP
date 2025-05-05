@@ -25,7 +25,7 @@ MDVA-43395 パッチを適用できません。
 
 ## 原因：
 
-クラウドマーチャントは、[magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) がインストールされていて、既にパッチが含まれている場合は、MDVA-43395 パッチを個別に適用する必要はありません。
+クラウドマーチャントは、[magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) がインストールされていて、既にパッチが含まれている場合は、MDVA-43395 パッチを個別に適用する必要はありません。
 
 ## 解決策
 
@@ -45,4 +45,4 @@ $ vendor/bin/magento-patches -n status |grep 43443
 ## 関連資料
 
 * [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)。
-* 開発者向けドキュメントの [Commerceのクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016)。
+* 開発者向けドキュメントの [Commerceのクラウドパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016)。

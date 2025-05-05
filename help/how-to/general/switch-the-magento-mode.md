@@ -13,5 +13,5 @@ ht-degree: 0%
 
 開発者向けドキュメントで次の記事を参照してください。
 
-* Adobe Commerce 2.3: [ 操作モードを設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)
-* Adobe Commerce 2.4: [ 操作モードを設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Adobe Commerce 2.3: [ 操作モードを設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Adobe Commerce 2.4: [ 操作モードを設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/set-mode)

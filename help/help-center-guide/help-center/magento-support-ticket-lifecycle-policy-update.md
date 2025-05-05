@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce サポートチケットのライフサイクルポリシーの更新
 
-このドキュメントでは、コミュニケーションを強化し、お客様に迅速に解決策を提供してカスタマーサクセスを支援することを目的として、Adobe DX サポートケースのライフサイクルに対する改善点の概要を説明します。 これは、[Adobe サクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon) でも確認できます。
+このドキュメントでは、コミュニケーションを強化し、お客様に迅速に解決策を提供してカスタマーサクセスを支援することを目的として、Adobe DX サポートケースのライフサイクルに対する改善点の概要を説明します。 これは、[Adobe サクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/ja/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon) でも確認できます。
 以下は、サポートプロセス中に発生した様々なシナリオに関するタイムラインと通知です。
 
 ## ケースのフォローアップのリマインダー
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [ サポートチケットの送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
-* [Adobe Commerce ヘルプセンターの開始ページに「チケットを送信」リンクが表示されない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
-* [ チケット送信フォーム：マーチャントが組織ドロップダウンに表示されない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
-* [Adobe サクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
+* [ サポートチケットの送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
+* [Adobe Commerce ヘルプセンターの開始ページに「チケットを送信」リンクが表示されない ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [ チケット送信フォーム：マーチャントが組織ドロップダウンに表示されない ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Adobe サクセスプランの概要：サポートケースのライフサイクル ](https://experienceleague.adobe.com/ja/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)

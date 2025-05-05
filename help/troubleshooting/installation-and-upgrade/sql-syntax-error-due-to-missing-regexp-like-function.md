@@ -38,7 +38,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. 会社を親会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの [ 会社階層の管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) を参照してください。
+1. 会社を親会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの [ 会社階層の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) を参照してください。
 1. B2B を 1.5.2 バージョンにアップグレードします。
 
 <u> 期待される結果 </u>:
@@ -78,4 +78,4 @@ Unable to apply data patch Magento\Company\Setup\Patch\Data\SetCompanyForStructu
    composer update magento/magento-cloud-patches
    ```
 
-1. 変更をコミットしプッシュして、再デプロイを開始します。 手順については、Cloud 上のAdobe Commerce ガイドの [ パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) を参照してください。
+1. 変更をコミットしプッシュして、再デプロイを開始します。 手順については、Cloud 上のAdobe Commerce ガイドの [ パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) を参照してください。

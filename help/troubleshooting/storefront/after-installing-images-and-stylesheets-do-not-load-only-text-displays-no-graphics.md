@@ -47,8 +47,8 @@ ht-degree: 0%
 
 使用しているソフトウェアと問題の原因に応じて、次のような解決策が考えられます。
 
-* Apache web サーバーを使用している場合は、[server rewrites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache#apache-rewrites-and-htaccess) の設定と、Adobe Commerce/Magento Open Sourceサーバーのベース URL を確認して、もう一度試してください。 Apache `AllowOverride` ディレクティブの設定が正しくない場合は、静的ファイルが正しい場所から提供されません。
-* nginx web サーバを使用している場合は、必ず [ 仮想ホスト ファイルを設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) してください。 nginx 仮想ホストファイルは、次の条件を満たす必要があります。
+* Apache web サーバーを使用している場合は、[server rewrites](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/web-server/apache#apache-rewrites-and-htaccess) の設定と、Adobe Commerce/Magento Open Sourceサーバーのベース URL を確認して、もう一度試してください。 Apache `AllowOverride` ディレクティブの設定が正しくない場合は、静的ファイルが正しい場所から提供されません。
+* nginx web サーバを使用している場合は、必ず [ 仮想ホスト ファイルを設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) してください。 nginx 仮想ホストファイルは、次の条件を満たす必要があります。
    * `include` ディレクティブは、Adobe Commerce/Magento Open Sourceのインストールディレクトリにあるサンプル nginx 設定ファイルを指している必要があります。 例：    `include /var/www/html/magento2/nginx.conf.sample;`
    * `server_name` ディレクティブは、Adobe Commerce/Magento Open Sourceをインストールするときに指定したベース URL と一致する必要があります。 例：`server_name 192.186.33.10;`
-* アプリケーションが [ 実稼動モード ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode) の場合は、`magento setup:static-content:deploy` コマンドを使用して静的ビューファイルをデプロイしてみてください。 静的ファイルのデプロイについて詳しくは、開発者ドキュメントの [ 静的ビューファイルのデプロイ ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。
+* アプリケーションが [ 実稼動モード ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode) の場合は、`magento setup:static-content:deploy` コマンドを使用して静的ビューファイルをデプロイしてみてください。 静的ファイルのデプロイについて詳しくは、開発者ドキュメントの [ 静的ビューファイルのデプロイ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。

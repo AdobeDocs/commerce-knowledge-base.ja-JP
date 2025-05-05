@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 > MDVA-37725 パッチは非推奨（廃止予定）です。
 
-MDVA-37725 パッチは、デフォルト web サイトのロゴ URL を含むデフォルト以外の web サイトから非同期注文 E メールが送信される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview)1.1.4 がインストールされている場合に使用できます。 パッチ ID は MDVA-37725。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-37725 パッチは、デフォルト web サイトのロゴ URL を含むデフォルト以外の web サイトから非同期注文 E メールが送信される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview)1.1.4 がインストールされている場合に使用できます。 パッチ ID は MDVA-37725。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -31,7 +31,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.4.3
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -61,8 +61,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.4.3
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

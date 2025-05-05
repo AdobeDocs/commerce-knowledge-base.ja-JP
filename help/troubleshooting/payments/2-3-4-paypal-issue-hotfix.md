@@ -49,7 +49,7 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com/tech-resources/download#download2353) ポータルの「ダウンロード」セクションにある [ ホットフィックス ](https://magento.com) をマイアカウントで適用します。
 
-クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce v1.0.2 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) を参照してください。
+クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce v1.0.2 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) を参照してください。
 
 ## パッチの適用方法
 

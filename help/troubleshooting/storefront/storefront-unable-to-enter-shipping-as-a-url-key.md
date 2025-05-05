@@ -122,5 +122,5 @@ URL キーに「_shipping_」という用語は使用できませんが、「_sh
 
 ## 関連資料
 
-* アドビのマーチャンダイジングおよびプロモーションユーザーガイドの [URL の書き換え ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
-* [SEO のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) マーチャンダイジングおよびプロモーションユーザーガイドの
+* アドビのマーチャンダイジングおよびプロモーションユーザーガイドの [URL の書き換え ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
+* [SEO のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/seo-overview) マーチャンダイジングおよびプロモーションユーザーガイドの

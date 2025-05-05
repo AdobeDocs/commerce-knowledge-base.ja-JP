@@ -33,7 +33,7 @@ Adobe Commerceは Nginx と共にインストールされます。
 <u> 再現手順 </u>:
 
 1. AWS `s3` をメディアストレージとして使用するようにAdobe Commerceを設定します。
-1. Adobe Commerce インストールディレクトリに用意されている `nginx.conf.sample` 設定ファイルと Nginx バーチャルホストを使用して、Nginx を設定します。 開発者向けドキュメントの [Nginx の設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) を参照してください。
+1. Adobe Commerce インストールディレクトリに用意されている `nginx.conf.sample` 設定ファイルと Nginx バーチャルホストを使用して、Nginx を設定します。 開発者向けドキュメントの [Nginx の設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) を参照してください。
 1. 1 つの製品画像でシンプルな製品を作成します。
 1. Nginx には、次のような `nginx.conf.sample` で画像のサイズ変更を行うコメントなしの設定があります。
 

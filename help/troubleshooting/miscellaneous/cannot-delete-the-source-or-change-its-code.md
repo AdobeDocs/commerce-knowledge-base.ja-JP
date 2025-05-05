@@ -37,6 +37,6 @@ ht-degree: 0%
 
 在庫を移動するか、ある場所のすべての出荷から製品をドロップすることで、製品からソースを削除できます。
 
-[SSA](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations) 計算およびAdobe Commerce Inventory の受注処理からソースを削除する必要がある場合は、ソースを無効にできます。 無効にしたソースは、すべてのデータ、割り当てられた製品および在庫数量を保持し、いつでも再び有効にして再び出荷を開始できます。
+[SSA](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/basics/selection-reservations) 計算およびAdobe Commerce Inventory の受注処理からソースを削除する必要がある場合は、ソースを無効にできます。 無効にしたソースは、すべてのデータ、割り当てられた製品および在庫数量を保持し、いつでも再び有効にして再び出荷を開始できます。
 
 ソースを無効にする方法について詳しくは、[ ソースの作成ガイド ](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) を参照してください。

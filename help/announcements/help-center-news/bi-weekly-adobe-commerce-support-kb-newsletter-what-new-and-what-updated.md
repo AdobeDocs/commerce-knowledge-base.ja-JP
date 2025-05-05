@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. [ACSD-45849：ステージングアップデート後にビデオメタデータが失われる：](/help/support-tools/patches-available-in-qpt-tool/v1-1-18/acsd-45849-video-metadata-lost-after-staging-update.md) ACSD-45849 パッチは、ステージングアップデートの適用後にビデオメタデータが失われる問題を修正します。 このパッチは、Quality Patches Tool （QPT） 1.1.18 がインストールされている場合に使用できます。
 
-1. [ACSD-45754：カートにクーポンを適用した後に報酬ポイントが追加されない：](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/acsd-45754-reward-points-not-added-after-applying-coupon-to-the-cart.html) ACSD-45754 パッチは、カートにクーポンを適用した後に報酬ポイントが追加されない問題を解決します。 このパッチは、Quality Patches Tool （QPT） 1.1.18 がインストールされている場合に使用できます。
+1. [ACSD-45754：カートにクーポンを適用した後に報酬ポイントが追加されない：](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/acsd-45754-reward-points-not-added-after-applying-coupon-to-the-cart.html?lang=ja) ACSD-45754 パッチは、カートにクーポンを適用した後に報酬ポイントが追加されない問題を解決します。 このパッチは、Quality Patches Tool （QPT） 1.1.18 がインストールされている場合に使用できます。
 
 1. [ACSD-45488：複数のソースを持つ設定可能な製品が在庫に戻されない：](/help/support-tools/patches-available-in-qpt-tool/v1-1-18/acsd-45488-configurable-product-with-multiple-sources-not-returned-to-in-stock.md) ACSD-45488 パッチは、複数のソースを持つ設定可能な製品が在庫に自動的に戻されない問題を解決します。 このパッチは、Quality Patches Tool （QPT） 1.1.18 がインストールされている場合に使用できます。
 

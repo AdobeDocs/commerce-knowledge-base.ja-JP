@@ -33,4 +33,4 @@ New Relic アカウントオーナーに連絡し、[!DNL New Relic] の自分�
 
 ## 関連資料
 
-開発者向けドキュメントの [Manage [!DNL New Relic] account](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) を参照してください。
+開発者向けドキュメントの [Manage [!DNL New Relic] account](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) を参照してください。

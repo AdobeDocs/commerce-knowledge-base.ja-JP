@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## クエリを実行できません。 EXPLAIN のコスト値\[xxx\] は、このクエリを実行するには高すぎます。
 
-このメッセージが表示された場合は、クエリの実行にコストがかかりすぎていると見なされたことを意味します。 この状況に対しては、2 つの推奨事項があります。1 つは、コストのかかる操作であるため、クエリから ORDER BY 句を排除することです。 2 つ目は、[ 最適化の記事 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) のヒントに従って、クエリを調整することです。
+このメッセージが表示された場合は、クエリの実行にコストがかかりすぎていると見なされたことを意味します。 この状況に対しては、2 つの推奨事項があります。1 つは、コストのかかる操作であるため、クエリから ORDER BY 句を排除することです。 2 つ目は、[ 最適化の記事 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html?lang=ja) のヒントに従って、クエリを調整することです。
 
 ## クエリを実行できません。 このクエリは、10,000 の制限を超える\[xxx\] 行を返します
 

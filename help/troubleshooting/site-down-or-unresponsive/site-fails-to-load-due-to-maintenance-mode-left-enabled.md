@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## 関連資料
 
-メンテナンスモードを使用するタイミングについては、開発者ドキュメントの [ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。
+メンテナンスモードを使用するタイミングについては、開発者ドキュメントの [ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。

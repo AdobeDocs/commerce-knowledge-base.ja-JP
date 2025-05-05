@@ -42,8 +42,8 @@ ht-degree: 0%
 
 ## 解決策
 
-検索エンジンによるインデックス作成を有効にします。 開発者向けドキュメントの [ 検索エンジンによるインデックス作成の設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) を参照してください。
+検索エンジンによるインデックス作成を有効にします。 開発者向けドキュメントの [ 検索エンジンによるインデックス作成の設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) を参照してください。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
+* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。

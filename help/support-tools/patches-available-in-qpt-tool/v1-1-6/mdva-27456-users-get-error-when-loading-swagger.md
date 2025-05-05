@@ -1,6 +1,6 @@
 ---
 title: 「MDVA-27456:Swagger の読み込み時にエラーが発生する」
-description: MDVA-27456 パッチでは、Swagger を読み込もうとするとエラーが発生する問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.6 がインストールされている場合に利用できます。 パッチ ID は MDVA-27456。 この問題はAdobe Commerce 2.3.7 で修正されました。
+description: MDVA-27456 パッチでは、Swagger を読み込もうとするとエラーが発生する問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.6 がインストールされている場合に利用できます。 パッチ ID は MDVA-27456。 この問題はAdobe Commerce 2.3.7 で修正されました。
 exl-id: e331595f-a94b-4070-803a-60f559735b29
 feature: Tools and External Services
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-27456:Swagger の読み込み時にエラーが発生する
 
-MDVA-27456 パッチでは、Swagger を読み込もうとするとエラーが発生する問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview)1.1.6 がインストールされている場合に使用できます。 パッチ ID は MDVA-27456。 この問題はAdobe Commerce 2.3.7 で修正されました。
+MDVA-27456 パッチでは、Swagger を読み込もうとするとエラーが発生する問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview)1.1.6 がインストールされている場合に使用できます。 パッチ ID は MDVA-27456。 この問題はAdobe Commerce 2.3.7 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.3.6-p1
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -51,8 +51,8 @@ Swagger はエラーなしで読み込まれます。
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

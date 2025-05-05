@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->この問題は、[[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) で修正されました。 最新バージョンをインストールするには、ユーザーガイドの [ アップデート  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#update) を参照してください。
+>この問題は、[[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html?lang=ja) で修正されました。 最新バージョンをインストールするには、ユーザーガイドの [ アップデート  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#update) を参照してください。
 
 この記事では、製品リストページ（PLP）に「*選択に一致する製品が見つかりません*」エラーが表示され、検索ポップオーバーで一部の項目が返される既知の問題について説明します。
 
@@ -49,4 +49,4 @@ Adobe Commerce管理 [!DNL Live Search] の在庫ステータス設定に関係�
 
 ## 関連資料
 
-ユーザーガイドの [ インストール  [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install)。
+ユーザーガイドの [ インストール  [!DNL Live Search]](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/install)。

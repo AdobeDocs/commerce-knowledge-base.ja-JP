@@ -14,15 +14,15 @@ ht-degree: 0%
 
 クラウドインフラストラクチャー上のAdobe Commerce cron ジョブの実行が完了せず、停止し、他の cron ジョブの実行を妨げる。 この記事では、停止した cron ジョブを手動でリセットする方法を説明します。
 
-このコマンドは慎重に使用してください。 詳しくは、サポートナレッジベースで [cron ジョブのリセット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) の記事を読むことをお勧めします。
+このコマンドは慎重に使用してください。 詳しくは、サポートナレッジベースで [cron ジョブのリセット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja) の記事を読むことをお勧めします。
 
 ## 手順
 
 >[!INFO]
 >
->[ECE-Tools v2002.0.4 から ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4)SSH アクセスを介して CLI コマンドを使用して、スタックした cron ジョブを手動でリセットできます。
+>[ECE-Tools v2002.0.4 から ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html?lang=ja#v2002.0.4)SSH アクセスを介して CLI コマンドを使用して、スタックした cron ジョブを手動でリセットできます。
 
-1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
 1. 次のコマンドを実行します：`./vendor/bin/ece-tools cron:unlock`
 
 ## 警告
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 ## 詳しくは、サポートナレッジベースを参照してください。
 
-[cron ジョブのリセット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+[cron ジョブのリセット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja)

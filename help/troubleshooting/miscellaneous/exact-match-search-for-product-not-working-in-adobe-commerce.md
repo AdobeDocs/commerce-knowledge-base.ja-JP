@@ -46,6 +46,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-ユーザーガイドの [Live Search をインストール ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) します。
+ユーザーガイドの [Live Search をインストール ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja) します。
 
-開発者向けドキュメントの [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)。
+開発者向けドキュメントの [Live Search](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/overview)。

@@ -22,8 +22,8 @@ Cloud Infrastructure 2.4.7-p4 以前のAdobe Commerce
 
 ## 前提条件
 
-* Adobeは、**[!DNL HIPAA Ready]** 拡張機能にアクセスするためのAdobe Commerce アカウントをプロビジョニングしています。 詳しくは、**Adobe Commerce：はじめる前に [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) の [!DNL HIPAA] Adobe Commerceへの対応** を参照してください。
-* [repo.magento.com](https://repo.magento.com) にアクセスして拡張機能をインストールします。 キーの生成と必要な権限の取得については、**Adobe Commerce: インストールガイド [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) の  認証キーの取得** を参照してください。
+* Adobeは、**[!DNL HIPAA Ready]** 拡張機能にアクセスするためのAdobe Commerce アカウントをプロビジョニングしています。 詳しくは、**Adobe Commerce：はじめる前に [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) の [!DNL HIPAA] Adobe Commerceへの対応** を参照してください。
+* [repo.magento.com](https://repo.magento.com) にアクセスして拡張機能をインストールします。 キーの生成と必要な権限の取得については、**Adobe Commerce: インストールガイド [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) の  認証キーの取得** を参照してください。
 
 ## 問題
 
@@ -43,7 +43,7 @@ Cloud Infrastructure 2.4.7-p4 上のAdobe Commerceの問題を修正するには
 
 ## パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照してください。
+ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=ja) を参照してください。
 
 ## Adobe Commerce on Cloud マーチャントの場合のみ – パッチが適用されているかどうかを確認する方法
 
@@ -53,7 +53,7 @@ Cloud Infrastructure 2.4.7-p4 上のAdobe Commerceの問題を修正するには
 >
 ><u> これを行うには、ファイル `VULN-27015-2.4.7_COMPOSER.patch` を使用して、次の手順に従います **例として**</u>。
 
-1. [ 品質向上パッチツールのインストール ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
+1. [ 品質向上パッチツールのインストール ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja)。
 1. 次のコマンドを実行します。<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. 次のような出力が表示されます **<u>ここで使用した例では、VULN-27015</u>** は *Applied* ステータスを返します。

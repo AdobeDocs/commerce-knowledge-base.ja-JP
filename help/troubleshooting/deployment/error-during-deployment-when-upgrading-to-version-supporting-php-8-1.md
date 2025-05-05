@@ -45,4 +45,4 @@ PHP 8.1 には既に JSON のサポートが含まれており、拡張機能を
 
 ## 関連資料
 
-開発者向けドキュメントの [PHP アプリケーション ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)。
+開発者向けドキュメントの [PHP アプリケーション ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/php-settings)。

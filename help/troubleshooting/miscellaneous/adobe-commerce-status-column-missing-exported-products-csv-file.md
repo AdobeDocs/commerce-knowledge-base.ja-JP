@@ -50,5 +50,5 @@ CSV ファイル内の製品のステータス属性の名前が変更されま�
 
 ## 関連資料
 
-* ユーザーガイドの [CSV ファイルの操作 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv)。
-* アドビのユーザーガイドの [ 製品書き出し属性リファレンス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product)。
+* ユーザーガイドの [CSV ファイルの操作 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-csv)。
+* アドビのユーザーガイドの [ 製品書き出し属性リファレンス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-attributes-product)。

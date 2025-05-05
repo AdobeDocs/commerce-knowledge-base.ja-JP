@@ -35,10 +35,10 @@ MySQL のデッドロックは、2 つ以上のトランザクションが相互
 ## 解決策
 
 1. アプリケーション、デプロイメント、または MySQL ログでデッドロックエラーを確認します。
-   * [Adobe CommerceとMagento Open Sourceログの場所 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [ クラウドインフラストラクチャログ上のAdobe Commerceの場所 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+   * [Adobe CommerceとMagento Open Sourceログの場所 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html?lang=ja)
+   * [ クラウドインフラストラクチャログ上のAdobe Commerceの場所 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)
 1. コマンド `mysql -e 'show full processlist';` を使用して、MySQL プロセスのリストでプロセスが実行されているかどうかを確認します。
-1. クラウドインフラストラクチャー上のAdobe Commerceで、MySQL スレーブが有効になっていることを確認します。 詳しくは、「[ 変数をデプロイ（MYSQL\_USE\_SLAVE\_CONNECTION） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection)」を参照してください。
+1. クラウドインフラストラクチャー上のAdobe Commerceで、MySQL スレーブが有効になっていることを確認します。 詳しくは、「[ 変数をデプロイ（MYSQL\_USE\_SLAVE\_CONNECTION） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#mysql_use_slave_connection)」を参照してください。
 1. 関連するエラーに応じて、ソリューション自体が表示されるか、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を開く必要がある場合は、役立つログ情報を含める必要がある場合があります。
 
 ## 関連資料

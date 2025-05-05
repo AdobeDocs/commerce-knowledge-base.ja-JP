@@ -42,7 +42,7 @@ web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-未使用のスペースがある場合は、`services.yaml` ージ内のデータベースに割り当てるスペースを増やし、をデプロイする必要があります。 手順については、「[ サービスディスク容量 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space)」を参照してください。
+未使用のスペースがある場合は、`services.yaml` ージ内のデータベースに割り当てるスペースを増やし、をデプロイする必要があります。 手順については、「[ サービスディスク容量 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space)」を参照してください。
 
 注：Pro アーキテクチャ計画では、次のコマンドを実行して、パーティションの割り当て済み領域を確認できます。`df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## 関連資料
 
-開発者向けドキュメントの [ ディスク容量の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)
+開発者向けドキュメントの [ ディスク容量の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

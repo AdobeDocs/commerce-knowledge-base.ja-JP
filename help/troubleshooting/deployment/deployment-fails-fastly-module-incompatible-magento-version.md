@@ -54,7 +54,7 @@ ht-degree: 0%
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-クラウドインフラストラクチャソリューションでAdobe Commerceを使用している場合は、このエラーメッセージが [ デプロイログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) に表示されます。 Adobe Commerce オンプレミスの場合は、コマンドラインにエラーが表示されます。
+クラウドインフラストラクチャソリューションでAdobe Commerceを使用している場合は、このエラーメッセージが [ デプロイログ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations) に表示されます。 Adobe Commerce オンプレミスの場合は、コマンドラインにエラーが表示されます。
 
 ## 原因：
 
@@ -70,4 +70,4 @@ Fastly モジュールをバージョン 1.2.82 以降にアップグレード�
    * fastly モジュールが magento-cloud-metapackage に含まれている場合：    <pre>composer update magento/magento-cloud-metapackage</pre>
    * fastly モジュールが個別にインストールされた場合（例えば、cloud edition ではなくAdobe Commerceをオンプレミスで使用している場合） <pre>composer update fastly/magento2</pre>
 1. 変更内容をコミットしてプッシュし、デプロイメントプロセスをトリガーします（自動的に行われない場合）。
-1. Admin で [ 新しい VCL を Fastly にアップロードします ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)。
+1. Admin で [ 新しい VCL を Fastly にアップロードします ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)。

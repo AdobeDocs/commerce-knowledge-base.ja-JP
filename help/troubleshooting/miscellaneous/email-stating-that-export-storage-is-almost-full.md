@@ -41,8 +41,8 @@ ht-degree: 0%
 
 `du -shc` */path/to/folder*
 
-メディアディスク使用量が合計ディスク容量の大きな割合を占める場合は、[Fastly Deep Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) を有効にしてから、サーバー上の *pub/media/catalog/product/cache* フォルダーのファイルを手動で削除することを検討してください。
+メディアディスク使用量が合計ディスク容量の大きな割合を占める場合は、[Fastly Deep Image Optimization](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) を有効にしてから、サーバー上の *pub/media/catalog/product/cache* フォルダーのファイルを手動で削除することを検討してください。
 
 ## 関連資料
 
-サポートナレッジベースで [ 専用クラスターを確認 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) してください。
+サポートナレッジベースで [ 専用クラスターを確認 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) してください。

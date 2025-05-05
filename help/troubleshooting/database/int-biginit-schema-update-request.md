@@ -56,7 +56,7 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 
 >[!WARNING]
 >
->テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [ メンテナンスモード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
+>テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [ メンテナンスモード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
 
 >[!NOTE]
 >
@@ -111,8 +111,8 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 
 ## 関連資料
 
-* Commerce インスト  [!DNL MySQL]  ルガイドの [ 一般的なガイドライン ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
-* サポートナレッジベースの [ データベースのアップロードにより  [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html) への接続が失われる
-* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) に関するサポートナレッジベース
-* [ クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce インスト  [!DNL MySQL]  ルガイドの [ 一般的なガイドライン ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=ja)
+* サポートナレッジベースの [ データベースのアップロードにより  [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=ja) への接続が失われる
+* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=ja) に関するサポートナレッジベース
+* [ クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=ja) については、サポートナレッジベースを参照してください
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

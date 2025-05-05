@@ -31,9 +31,9 @@ ht-degree: 0%
 
 <u> 再現手順 </u>
 
-1. アドビのユーザードキュメントの [Live Search のインストール/API キーの設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) に従って、Adobe Commerce インスタンスの Live Search を設定して接続します。
-1. 30 分後、ユーザードキュメントの [Live Search のインストール/書き出しの確認 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) の説明に従って、書き出されたカタログデータを確認します。
-1. 30 分後、ユーザードキュメントの [Live Search のインストール/接続のテスト ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) の説明に従って接続をテストします。
+1. アドビのユーザードキュメントの [Live Search のインストール/API キーの設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#configure-api-keys) に従って、Adobe Commerce インスタンスの Live Search を設定して接続します。
+1. 30 分後、ユーザードキュメントの [Live Search のインストール/書き出しの確認 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#verify-export) の説明に従って、書き出されたカタログデータを確認します。
+1. 30 分後、ユーザードキュメントの [Live Search のインストール/接続のテスト ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#test-connection) の説明に従って接続をテストします。
 
 Or
 
@@ -150,13 +150,13 @@ bin/magento saas:resync --feed categories --cleanup-feed
 bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
-ライブサーチのインデックス再作成をリクエストする [ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) します。 問題の説明で、管理パネルの **[!UICONTROL System]**/**[!UICONTROL Services]**/**[!UICONTROL Commerce Services Connector]** の下にあるデータスペース/環境 ID を含めます。
+ライブサーチのインデックス再作成をリクエストする [ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?lang=ja&support-tab=home#support) します。 問題の説明で、管理パネルの **[!UICONTROL System]**/**[!UICONTROL Services]**/**[!UICONTROL Commerce Services Connector]** の下にあるデータスペース/環境 ID を含めます。
 
 >[!IMPORTANT]
->`--cleanup-feed` オプションは、API 設定を更新した場合、または [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) オプションを使用して `saas:resync` コマンドを実行した場合にのみ使用します。 その他の場合に `--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生します。
+>`--cleanup-feed` オプションは、API 設定を更新した場合、または [—dry-run](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) オプションを使用して `saas:resync` コマンドを実行した場合にのみ使用します。 その他の場合に `--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生します。
 
 ## 関連資料
 
-* ユーザードキュメントの [ オンボーディング Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html)
-* Adobe Commerce SaaS データ書き出しガイドの [ ログの確認とAdobe Commerce SaaS データの書き出しと同期のトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* ユーザードキュメントの [ オンボーディング Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=ja)
+* Adobe Commerce SaaS データ書き出しガイドの [ ログの確認とAdobe Commerce SaaS データの書き出しと同期のトラブルシューティング ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

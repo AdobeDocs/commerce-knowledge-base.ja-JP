@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->[MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
+>[MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 原因：
 
-クラウドインフラストラクチャー上でAdobe Commerceにアップグレードし（バージョン 2.3.1 以降）、バージョン 6.x より前のElasticsearchを使用しているマーチャントでは、デプロイ時にエラーが発生する場合があります。 これは、Elasticsearchバージョン 2.x と 5.x が [ 提供終了 ](https://www.elastic.co/support/eol) であり、Adobe Commerceではサポートされなくなったためです。 Elasticsearchクライアントは最新である必要があります。最新でない場合、デプロイメントを実行するとエラーが発生するリスクがあります。 詳しくは、開発者向けドキュメントの [Elasticsearchクライアントの変更 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
+クラウドインフラストラクチャー上でAdobe Commerceにアップグレードし（バージョン 2.3.1 以降）、バージョン 6.x より前のElasticsearchを使用しているマーチャントでは、デプロイ時にエラーが発生する場合があります。 これは、Elasticsearchバージョン 2.x と 5.x が [ 提供終了 ](https://www.elastic.co/support/eol) であり、Adobe Commerceではサポートされなくなったためです。 Elasticsearchクライアントは最新である必要があります。最新でない場合、デプロイメントを実行するとエラーが発生するリスクがあります。 詳しくは、開発者向けドキュメントの [Elasticsearchクライアントの変更 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 
 ## 問題
 
@@ -43,12 +43,12 @@ ht-degree: 0%
 
 この問題を解決するには、ElasticsearchクライアントモジュールとElasticsearchサービスが、最新の推奨バージョンである必要があります。
 
-1. 開発者向けドキュメントの手順 [Elasticsearchモジュールの変更 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) に従って、Elasticsearchクライアントモジュールの最新のお勧めバージョンを入手します。
+1. 開発者向けドキュメントの手順 [Elasticsearchモジュールの変更 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) に従って、Elasticsearchクライアントモジュールの最新のお勧めバージョンを入手します。
 1. [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、ステージング環境と実稼動環境で、Elasticsearchサービスを 6.x にアップデートするようにリクエストします。 Elasticsearchサービスへのアップグレードが完了するまでに時間がかかる場合があることに注意してください。
 
 ## 関連資料
 
-* [Adobe Commerce 2.3 テクノロジースタック要件 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) については、開発者向けドキュメントを参照してください。
-* 開発者向けドキュメントの [Elasticsearchサービスを設定する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) を参照してください。
-* 開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
+* [Adobe Commerce 2.3 テクノロジースタック要件 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview) については、開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [Elasticsearchサービスを設定する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) を参照してください。
+* 開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 * [Elasticsearchが正しくインストールされていることを確認する ](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md) については、サポートナレッジベースを参照してください。

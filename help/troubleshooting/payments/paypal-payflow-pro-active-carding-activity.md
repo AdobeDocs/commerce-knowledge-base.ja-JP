@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 パッケージのインストール後、次のドキュメントに示すように、Google reCAPTCHA （推奨）または CAPTCHA を設定します。
 
-* ユーザーガイドの [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)。
-* ユーザーガイドの [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha)。
+* ユーザーガイドの [Google reCAPTCHA](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)。
+* ユーザーガイドの [CAPTCHA](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-captcha)。
 
 新しいチェックアウトフォームオプションは次のとおりです。
 

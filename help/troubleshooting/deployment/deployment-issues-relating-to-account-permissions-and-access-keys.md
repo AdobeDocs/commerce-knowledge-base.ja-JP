@@ -64,4 +64,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [ 認証キーの取得 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) については、開発者向けドキュメントを参照してください。
+* [ 認証キーの取得 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) については、開発者向けドキュメントを参照してください。

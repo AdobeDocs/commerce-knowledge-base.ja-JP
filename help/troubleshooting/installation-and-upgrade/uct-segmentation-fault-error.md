@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* [ 互換性アップグレードツール ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) は、2.3.0 以降のAdobe Commerce バージョンと互換性があります。
+* [ 互換性アップグレードツール ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=ja) は、2.3.0 以降のAdobe Commerce バージョンと互換性があります。
 
 ## セグメント化の失敗エラー
 
@@ -82,4 +82,4 @@ php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
 bin/uct upgrade:check /<dir>/<instance-name> -m /vendor/<vendor-name>/
 ```
 
-コマンドラインインターフェイスオプションについて詳しくは、[ コマンドラインインターフェイスでのツールの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) ページを参照してください。
+コマンドラインインターフェイスオプションについて詳しくは、[ コマンドラインインターフェイスでのツールの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html?lang=ja) ページを参照してください。

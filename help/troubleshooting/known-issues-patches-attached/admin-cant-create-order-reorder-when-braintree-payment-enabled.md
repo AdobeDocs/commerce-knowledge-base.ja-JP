@@ -58,7 +58,7 @@ report.CRITICAL: Error: Call to a member function getMethodInstance() on null in
 
 >[!NOTE]
 >
->さらに、クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce バージョン 1.0.18 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) を参照してください。
+>さらに、クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce バージョン 1.0.18 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) を参照してください。
 
 ### 互換性のあるAdobe Commerceのバージョン：
 

@@ -30,7 +30,7 @@ b. NO - メンテナンスまたはグローバルな障害。 推定期間と�
 
 +++**既存の環境のデプロイメントをブロックしているデプロイメントが他の環境にありますか？**
 
-進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) を参照してください。
+進行中のアクティビティのリストを取得するには、magento-cloud CLI を使用して次のコマンドを実行します（1 つのクラウドプロジェクトにのみ追加されている場合）。 **メモ**：最新バージョンの magento-cloud CLI を使用していることを確認してください。 手順については、Cloud Infrastructure 上のCommerce ガイドの [CLI の更新 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) を参照してください。
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ magento-cloud --state=in_progress
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-既存のデプロイメントアクティビティに関する情報を見つけるには（[Cloud UI で「ログがスニップされた」エラーがある場合のデプロイメントログの確認」を参照 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+既存のデプロイメントアクティビティに関する情報を見つけるには（[Cloud UI で「ログがスニップされた」エラーがある場合のデプロイメントログの確認」を参照 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
 詳しくは、次のコマンドを実行して、そのアクティビティの実行ログを取得してください。
 
 ```bash
@@ -79,7 +79,7 @@ b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/he
 +++**Bitbucket の使用**
 
 a.はい – [status.bitbucket.com](https://bitbucket.status.atlassian.com/) をチェックします。\
-b.いいえ – [ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations) でデプロイメントログエラーを確認します。 [ 手順 6](#step-6) に進みます。
+b.いいえ – [ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations) でデプロイメントログエラーを確認します。 [ 手順 6](#step-6) に進みます。
 
 +++
 
@@ -124,7 +124,7 @@ b.いいえ – [ 手順 11](#step-11) に進みます。
 +++**使用可能なストレージは問題ありませんか？**
 
 a.はい – [ 手順 11](#step-11) に進みます。\
-b. NO - レビュー [ ディスク容量の管理 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。
+b. NO - レビュー [ ディスク容量の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。
 
 +++
 
@@ -132,7 +132,7 @@ b. NO - レビュー [ ディスク容量の管理 ](https://experienceleague.ad
 
 +++**_ファイルに警告を書き込めませんでした _?**
 
-a.はい。[.magento.app.yaml のディスク値を増やして ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) 再デプロイしてください。 それでもうまくいかない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
+a.はい。[.magento.app.yaml のディスク値を増やして ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ja#application-disk-space) 再デプロイしてください。 それでもうまくいかない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
 b.いいえ – [ 手順 12](#step-12) に進みます。
 
 +++
@@ -159,7 +159,7 @@ b.いいえ – [ 手順 14](#step-14) に進みます。
 
 +++**ファイル・システムの inode またはスペースが不足している場合**
 
-a.はい。[ ディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) を参照してください。\
+a.はい。[ ディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ja#application-disk-space) を参照してください。\
 b.いいえ – [ 手順 15](#step-15) に進みます。
 
 +++
@@ -201,7 +201,7 @@ b.いいえ – [ 手順 18](#step-18) に進みます。
 
 +++**ポストフックの失敗/ハングアップ？**
 
-a.はい – データベース：[ 空きディスク領域 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space)、破損、不完全/破損したテーブル。\
+a.はい – データベース：[ 空きディスク領域 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ja#allocate-disk-space)、破損、不完全/破損したテーブル。\
 b.いいえ – [ 手順 19](#step-19) に進みます。
 
 +++
@@ -210,7 +210,7 @@ b.いいえ – [ 手順 19](#step-19) に進みます。
 
 +++**サードパーティの拡張機能を使用しますか？**
 
-回答：はい [ サードパーティの拡張機能を無効にする ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) を試して、特にエラーに拡張機能名がある場合は、デプロイメントを実行します（問題の原因がサードパーティの拡張機能であるかどうかを確認します）。\
+回答：はい [ サードパーティの拡張機能を無効にする ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions) を試して、特にエラーに拡張機能名がある場合は、デプロイメントを実行します（問題の原因がサードパーティの拡張機能であるかどうかを確認します）。\
 b.いいえ – [ 手順 20](#step-20) に進みます。
 
 +++

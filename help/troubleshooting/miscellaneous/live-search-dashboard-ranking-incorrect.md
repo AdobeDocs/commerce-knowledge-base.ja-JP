@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ダッシュボ [!DNL Live Search] ドと検索結果のランキングが正しくありません
 
-[!DNL Live Search] ダッシュボードに表示されるデータが正しくない場合や、[ 検索結果のランキング ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) が期待どおりでない場合は、考えられる理由により次を参照してください。
+[!DNL Live Search] ダッシュボードに表示されるデータが正しくない場合や、[ 検索結果のランキング ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) が期待どおりでない場合は、考えられる理由により次を参照してください。
 
 * `productView` イベントの製品コンテキストの `topLevelSku` フィールドがありません。 これにより、空のコンバージョンや、その他の予期しない指標が発生します。
 

@@ -103,4 +103,4 @@ Adobe Commerce ステージング環境を実行しないが、これらのリ�
 * 開発者向けドキュメントの [ ルートの設定 ](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html)
 * アドビの開発者向けドキュメントの [ 設定  [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
 * 開発者向けドキュメントの [[!DNL VCL]  正規表現チートシート ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

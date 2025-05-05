@@ -40,7 +40,7 @@ ht-degree: 0%
 
 プレリリースでは、リリースパッケージは次の 2 つの場所で使用できます。
 
-1. [magento.com](https://repo.magento.com/) の Composer を介して、アカウントのプライマリ MageID を使用します。 Composer の使用方法について詳しくは、開発者向けドキュメントの [Composer を使用したAdobe Commerceのインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) を参照してください。
+1. [magento.com](https://repo.magento.com/) の Composer を介して、アカウントのプライマリ MageID を使用します。 Composer の使用方法について詳しくは、開発者向けドキュメントの [Composer を使用したAdobe Commerceのインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer) を参照してください。
 1. **マイアカウント**/**ダウンロード**&#x200B;[account.magento.com](https://account.magento.com/customer/account/login)
 
 >[!NOTE]

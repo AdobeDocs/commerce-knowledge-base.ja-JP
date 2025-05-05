@@ -36,7 +36,7 @@ BAK ファイルは、デプロイメントプロセスの産物です。 デプ
 
 設定ファイルを復元するには：
 
-1. [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) を使用してリモートリポジトリにログインします。
+1. [SSH](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) を使用してリモートリポジトリにログインします。
 1. 使用可能なバックアップファイルのリストを表示します。
 
    ```

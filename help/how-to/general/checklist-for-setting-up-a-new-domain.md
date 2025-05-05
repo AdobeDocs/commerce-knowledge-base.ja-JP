@@ -22,17 +22,17 @@ ht-degree: 0%
 
 ### 手順 1 - [!DNL Integration, Staging] 用ですか、[!DNL Production environment] 用ですか。
 
-* **[!DNL Integration]**: [!DNL Custom domains] はサポートされていません。 ユーザーガイドでは、この方法を代わりに使用する必要があります。[ 複数の web サイトまたはストアを設定する：ローカルインストールを設定する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains)。
+* **[!DNL Integration]**: [!DNL Custom domains] はサポートされていません。 ユーザーガイドでは、この方法を代わりに使用する必要があります。[ 複数の web サイトまたはストアを設定する：ローカルインストールを設定する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja#add-new-domains)。
 * **[!DNL Staging]**: **手順 2** に移動します。
 * **[!DNL Production]**: **手順 3** に移動します。
 
 ### 手順 2 - [!DNL Staging environment]:[!DNL Pro] または [!DNL Starter] を使用していますか？
 
-* **[!DNL Pro]**: **リクエストを送信** してドメインを [!DNL Fastly, Nginx] に追加し、[!DNL SSL certificate] を設定（必要に応じて [!DNL Sendgrid domain] も設定）。 設定が完了したら、[ [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings) を使用して  [!DNL DNS]  設定を更新します。
+* **[!DNL Pro]**: **リクエストを送信** してドメインを [!DNL Fastly, Nginx] に追加し、[!DNL SSL certificate] を設定（必要に応じて [!DNL Sendgrid domain] も設定）。 設定が完了したら、[ [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#update-dns-configuration-with-development-settings) を使用して  [!DNL DNS]  設定を更新します。
 
 >[!NOTE]
 >
->ユーザーガイドの [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) に [!DNL Fastly] すように、**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!DNL Fastly Configuration]**/**[!UICONTROL Domains]** の [!DNL Admin] で設定を更新することで、新しい [!DNL domain] を自分に追加できます。
+>ユーザーガイドの [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html?lang=ja#manage-domains) に [!DNL Fastly] すように、**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!DNL Fastly Configuration]**/**[!UICONTROL Domains]** の [!DNL Admin] で設定を更新することで、新しい [!DNL domain] を自分に追加できます。
 >
 >ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
 >
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ユーザーガイドの **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!DNL Fastly Configuration]**/**[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) の [!DNL Admin] で設定を更新することで、新しい [!DNL domain] を自分に追加で [!DNL Fastly] ます。
+>ユーザーガイドの **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!DNL Fastly Configuration]**/**[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html?lang=ja#manage-domains) の [!DNL Admin] で設定を更新することで、新しい [!DNL domain] を自分に追加で [!DNL Fastly] ます。
 >
 >
 >ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
@@ -59,10 +59,10 @@ ht-degree: 0%
 
 ### 手順 4 - [!DNL domain] はライブですか？
 
-* **はい**: [[!UICONTROL production] 設定で  [!DNL DNS]  設定を更新 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html#update-dns-configuration-with-production-settings)。
-* **いいえ**: [[!UICONTROL development] 設定で  [!DNL DNS]  設定を更新 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings)。
+* **はい**: [[!UICONTROL production] 設定で  [!DNL DNS]  設定を更新 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja#update-dns-configuration-with-production-settings)。
+* **いいえ**: [[!UICONTROL development] 設定で  [!DNL DNS]  設定を更新 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#update-dns-configuration-with-development-settings)。
 
 ## 関連資料
 
-* ユーザーガイドの [ 複数の web サイトまたはストアを設定：新規追加  [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains)。
-* [ 接触チャネルクロークによりサイトにアクセスできない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking)
+* ユーザーガイドの [ 複数の web サイトまたはストアを設定：新規追加  [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja#add-new-domains)。
+* [ 接触チャネルクロークによりサイトにアクセスできない ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking)

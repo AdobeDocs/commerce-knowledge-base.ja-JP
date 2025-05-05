@@ -29,5 +29,5 @@ Adobeでは、一般入手可能な Quality Patches Tool をリリースしま�
 
 詳しくは、開発者向けドキュメントを参照してください。
 
-* [ 品質向上パッチツールで使用可能なパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [ 品質向上パッチツールのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [ 品質向上パッチツールで使用可能なパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)
+* [ 品質向上パッチツールのリリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/release-notes)

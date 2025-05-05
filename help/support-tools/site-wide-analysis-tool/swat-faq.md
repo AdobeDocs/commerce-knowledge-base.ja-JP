@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->クラウドインフラストラクチャー v2.4.1 以降のAdobe Commerceでは、Commerce管理パネルから [!DNL Site-Wide Analysis Tool] を利用できます。 したがって、[!DNL Site-Wide Analysis Tool] レポートは顧客が直接実行できます。 アクセスの詳細については、[[!DNL Site-Wide Analysis Tool]  ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html) を参照してください。
+>クラウドインフラストラクチャー v2.4.1 以降のAdobe Commerceでは、Commerce管理パネルから [!DNL Site-Wide Analysis Tool] を利用できます。 したがって、[!DNL Site-Wide Analysis Tool] レポートは顧客が直接実行できます。 アクセスの詳細については、[[!DNL Site-Wide Analysis Tool]  ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html?lang=ja) を参照してください。
 
 ## [!DNL Site-Wide Analysis Tool] とは
 

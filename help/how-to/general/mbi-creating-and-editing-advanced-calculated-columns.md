@@ -1,6 +1,6 @@
 ---
 title: 「MBI：高度な計算列の作成と編集」
-description: '''[Admin users] （https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management）には、Data Warehouse管理で特定の計算列を作成および編集する機能があります。 これらの計算列を使用すると、ビジネス上の重要な質問に回答するために探しているレポートを設定できます。」'
+description: '''[Admin users] （https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management）には、Data Warehouse管理で特定の計算列を作成および編集する機能があります。 これらの計算列を使用すると、ビジネス上の重要な質問に回答するために探しているレポートを設定できます。」'
 exl-id: 713a5593-8103-4d74-be5e-0102678d0f97
 feature: Commerce Intelligence
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # MBI：高度な計算列の作成と編集
 
-[ 管理者ユーザー ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) は、Data Warehouseマネージャーで特定の計算列を作成および編集できます。 これらの計算列を使用すると、ビジネス上の主要な質問に回答するために探しているレポートを設定できます。
+[ 管理者ユーザー ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) は、Data Warehouseマネージャーで特定の計算列を作成および編集できます。 これらの計算列を使用すると、ビジネス上の主要な質問に回答するために探しているレポートを設定できます。
 
 Data Warehouseマネージャーで作成できる計算列のリストと、正しく設定されていることを確認するためのガイダンスについては、ユーザーガイドの次の記事を参照してください。
 
-* [ 計算列の作成 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
-* [ 計算列のタイプ ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
-* [ テーブルの関係の理解と評価 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
-* [ 計算列のパスの作成 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
+* [ 計算列の作成 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
+* [ 計算列のタイプ ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
+* [ テーブルの関係の理解と評価 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
+* [ 計算列のパスの作成 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
 
 ## まだ助けが必要だ！
 
@@ -35,7 +35,7 @@ Data Warehouseマネージャーで作成できる計算列のリストと、正
 
 ## 関連資料
 
-* [MBI ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview)
+* [MBI ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/guide-overview)
 * [MBI：データの不一致](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [MBI：データアナリスト ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
-* [MBI:Magento BI のヘルプ ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/start/sign-in)
+* [MBI：データアナリスト ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
+* [MBI:Magento BI のヘルプ ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/start/sign-in)

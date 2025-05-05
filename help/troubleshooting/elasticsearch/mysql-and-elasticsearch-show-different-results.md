@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップおよび構成する必要があります。開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
+> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップおよび構成する必要があります。開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 
 この記事では、MySQL とElasticsearchで同じ検索クエリに対して異なる検索結果を取得することに関連する、Adobe Commerce on cloud infrastructure 2.2.3 の既知の問題に対するパッチを提供します。
 

@@ -48,7 +48,7 @@ Configuration Management を無効にするには、`/app/etc/` ディレクト�
 
 設定ファイルを削除するには、次の手順に従います。
 
-1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
 1. 設定ファイルを削除します。
    * Adobe Commerce 2.4 の場合：
 
@@ -65,18 +65,18 @@ Configuration Management を無効にするには、`/app/etc/` ディレクト�
 次の項目を確認して、設定管理の詳細を学びます。
 
 * [ クラウドインフラストラクチャ上のAdobe Commerceでのデプロイメントのダウンタイムを短縮する ](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) については、サポートナレッジベースを参照してください。
-* 開発者向けドキュメントの [ ストア設定の設定管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) を参照してください。
+* 開発者向けドキュメントの [ ストア設定の設定管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ja) を参照してください。
 
 ### 手順 1:setup:uninstall コマンドを使用してAdobe Commerce ソフトウェアをアンインストールする {#setup-uninstall}
 
 
 Adobe Commerce ソフトウェアをアンインストールすると、データベースが削除されて復元され、配置設定が削除されて、`var` の下のディレクトリがクリアされます。
 
-開発者向けドキュメントの [Adobe Commerce ソフトウェアをアンインストールする ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) を確認してください。
+開発者向けドキュメントの [Adobe Commerce ソフトウェアをアンインストールする ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=ja) を確認してください。
 
 Adobe Commerce ソフトウェアをアンインストールするには、次の手順に従います。
 
-1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
 1. 実行 `setup:uninstall`:
 
    ```php
@@ -147,7 +147,7 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 `setup:uninstall` コマンドの実行がエラーで失敗し、完了しない場合は、次の手順で DB を手動でクリアできます。
 
-1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. [ 環境に SSH で接続します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
 1. MySQL DB に接続します。
 
    ```sql
@@ -168,15 +168,15 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 1. 設定ファイル `config.php`、`config.php` `.bak`、`env.php`、`env.php.bak` を削除します。
 
-DB をリセットした後、[トリガーに Git プッシュを送信して環境を再デプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands)、新しく作成した DB にAdobe Commerceをインストールします。 または [redeploy コマンドを実行します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands)。
+DB をリセットした後、[トリガーに Git プッシュを送信して環境を再デプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=ja#git-commands)、新しく作成した DB にAdobe Commerceをインストールします。 または [redeploy コマンドを実行します ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=ja#environment-commands)。
 
 ## 関連資料
 
 開発者向けドキュメントでは、
 
-* [ クラウド上のスナップショットの復元 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [ スナップショットの作成 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
-* [ スナップショットとバックアップの管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Cloud Console でのブランチの管理 – ログの表示 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
-* [ コンポーネントのデプロイメントの失敗 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
-* [ プロジェクトの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)
+* [ クラウド上のスナップショットの復元 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [ スナップショットの作成 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [ スナップショットとバックアップの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Cloud Console でのブランチの管理 – ログの表示 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=ja#view-logs)
+* [ コンポーネントのデプロイメントの失敗 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=ja)
+* [ プロジェクトの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja#configure-the-project)

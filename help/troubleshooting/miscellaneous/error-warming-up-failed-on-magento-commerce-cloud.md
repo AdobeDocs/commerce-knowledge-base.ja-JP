@@ -47,5 +47,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* ユーザーガイドの [Adobe Commerce ユーザーガイド/フルページキャッシュ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
+* ユーザーガイドの [Adobe Commerce ユーザーガイド/フルページキャッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
 * [Adobe Commerceでキャッシュウォーミングアップとサイトを利用できません ](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) という内容をサポートナレッジベースに記載しています。

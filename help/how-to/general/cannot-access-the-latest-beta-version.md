@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### アーリーアクセスコードの場所
 
-ベータ版のアクセス期間中、リリースパッケージは [repo.magento.com](https://repo.magento.com/) の Composer からのみ入手できます。 この期間中、リリースパッケージは GitHub ポータルおよびAdobe Commerce ポータルでは利用できません。GA 日にこれらの場所に公開される予定です。 Composer の使用方法の詳細については、[ こちら ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) をクリックしてください。
+ベータ版のアクセス期間中、リリースパッケージは [repo.magento.com](https://repo.magento.com/) の Composer からのみ入手できます。 この期間中、リリースパッケージは GitHub ポータルおよびAdobe Commerce ポータルでは利用できません。GA 日にこれらの場所に公開される予定です。 Composer の使用方法の詳細については、[ こちら ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer) をクリックしてください。
 
 ### 使用する MageID
 

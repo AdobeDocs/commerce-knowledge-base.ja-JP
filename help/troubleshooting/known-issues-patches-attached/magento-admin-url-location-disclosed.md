@@ -48,4 +48,4 @@ Adobeは、発作の症状がまったくない場合でも、できるだけ早
 * [5 ブルートフォースの攻撃に対するProtectの即時行動 ](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
 * [ 新しい更新プログラムを推測するMagento インストール パスワードをProtectしてください ](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [ セキュリティのベストプラクティス ](https://magento.com/security/best-practices/security-best-practices)
-* [2.4.x](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication) 向けAdobe Commerceでの二要素認証の追加と設定
+* [2.4.x](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication) 向けAdobe Commerceでの二要素認証の追加と設定

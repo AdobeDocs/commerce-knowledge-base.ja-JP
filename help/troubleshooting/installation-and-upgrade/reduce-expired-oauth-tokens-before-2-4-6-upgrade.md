@@ -36,6 +36,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* Commerce設定リファレンスガイドの [ サービス > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html)
+* Commerce設定リファレンスガイドの [ サービス > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html?lang=ja)
 * Adobe Developer ガイドの [ 認証ガイド ](https://developer.adobe.com/developer-console/docs/guides/authentication/)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB25-08]
 
-2025 年 2 月 11 日（PT）に、Adobeは、Adobe CommerceおよびMagento Open Sourceのセキュリティ更新を定期的にスケジュールしてリリースしました。 この更新により、[[!DNL critical, important] および  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) の脆弱性が解決されます。 これらの脆弱性が悪用されると、任意のコード実行、セキュリティ機能のバイパス、権限のエスカレーションが発生する可能性があります。 詳しくは、[Adobeのセキュリティ速報（[!DNL APSB25-08]）を参照してください ](https://helpx.adobe.com/security/products/magento/apsb25-08.html)。
+2025 年 2 月 11 日（PT）に、Adobeは、Adobe CommerceおよびMagento Open Sourceのセキュリティ更新を定期的にスケジュールしてリリースしました。 この更新により、[[!DNL critical, important] および  [!DNL moderate]](https://helpx.adobe.com/jp/security/severity-ratings.html) の脆弱性が解決されます。 これらの脆弱性が悪用されると、任意のコード実行、セキュリティ機能のバイパス、権限のエスカレーションが発生する可能性があります。 詳しくは、[Adobeのセキュリティ速報（[!DNL APSB25-08]）を参照してください ](https://helpx.adobe.com/jp/security/products/magento/apsb25-08.html)。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Adobe Commerce on Cloud Infrastructure、Adobe Commerce オンプレミス、お
 
 >[!NOTE]
 >
->この問題は、[ 最新のクラウドパッチアップデート ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) によって解決されます。 クラウドパッチのアップデートで修正が既に適用されている場合に、分離されたパッチを適用しようとすると、インストールに失敗する可能性があります。
+>この問題は、[ 最新のクラウドパッチアップデート ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) によって解決されます。 クラウドパッチのアップデートで修正が既に適用されている場合に、分離されたパッチを適用しようとすると、インストールに失敗する可能性があります。
 
 影響を受ける製品およびバージョンの脆弱性を解決するために、Adobe Commerce/Magento Open Sourceのバージョンに応じて、[!DNL CVE-2025-24434] Isolated パッチを適用する必要があります。
 
@@ -71,7 +71,7 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、接�
 
 ## 分離パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照してください。
+ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=ja) を参照してください。
 
 ## Adobe Commerce on Cloud マーチャントの場合のみ – 分離パッチが適用されているかどうかを確認する方法
 
@@ -81,7 +81,7 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、接�
 >
 ><u> これを行うには、ファイル `VULN-27015-2.4.7_COMPOSER.patch` を使用して、次の手順を実行します **例として**</u>。
 
-1. [ 品質向上パッチツールのインストール ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
+1. [ 品質向上パッチツールのインストール ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja)。
 1. 次のコマンドを実行します。<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. VULN-27015 が *Applied* ステータスを返す、次のような出力が表示されます。
@@ -100,5 +100,5 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、接�
 
 Adobe Commerceで利用できるセキュリティ更新プログラム：
 
-* [Adobe セキュリティ速報（[!DNL APSB25-08]） ](https://helpx.adobe.com/security/products/magento/apsb25-08.html)
-* [Adobe Commerceで利用可能な最新のセキュリティ更新 ](https://helpx.adobe.com/security/products/magento.html)
+* [Adobe セキュリティ速報（[!DNL APSB25-08]） ](https://helpx.adobe.com/jp/security/products/magento/apsb25-08.html)
+* [Adobe Commerceで利用可能な最新のセキュリティ更新 ](https://helpx.adobe.com/jp/security/products/magento.html)

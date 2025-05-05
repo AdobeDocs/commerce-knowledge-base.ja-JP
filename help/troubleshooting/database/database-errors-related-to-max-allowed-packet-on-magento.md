@@ -45,8 +45,8 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ オンプレミスでのインストールの概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) を参照してください。
-* サポートナレッジベースの [ データベースのアップロードにより  [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) への接続が失われます。
-* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) については、サポートナレッジベースを参照してください。
-* サポートナレッジベースの [ データベースパフォーマンスの問題を解決するためのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)。
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 開発者向けドキュメントの [ オンプレミスでのインストールの概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview) を参照してください。
+* サポートナレッジベースの [ データベースのアップロードにより  [!DNL MySQL]](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) への接続が失われます。
+* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja) については、サポートナレッジベースを参照してください。
+* サポートナレッジベースの [ データベースパフォーマンスの問題を解決するためのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)。
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

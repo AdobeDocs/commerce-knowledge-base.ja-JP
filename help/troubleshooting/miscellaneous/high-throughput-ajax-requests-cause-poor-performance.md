@@ -36,7 +36,7 @@ ht-degree: 0%
 
 次の 3 つの解決策があります。
 
-* [ バージョン 2.3.4 へのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)。
+* [ バージョン 2.3.4 へのアップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)。
 * 軽いリクエスト（キャッシュリクエストまたは顧客のプライベートコンテンツへの移動）を確保します。
 * リクエストの数を減らします。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 <u> リクエストの数を減らす </u>
 
-* 永続的な買い物かごを無効にすると、`customer/section/load` リクエストの数が増える可能性があります。 アドビの開発者ドキュメントの [ 永続的な買い物かごのパス ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) の手順に従って、永続的な買い物かごが有効になっているかどうかを確認します。
+* 永続的な買い物かごを無効にすると、`customer/section/load` リクエストの数が増える可能性があります。 アドビの開発者ドキュメントの [ 永続的な買い物かごのパス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/paths/config-reference-general) の手順に従って、永続的な買い物かごが有効になっているかどうかを確認します。
 * でコンテンツの再読み込みまたは無効化が必要な場合は `sections.xml` 開発者向けドキュメントの [ プライベートコンテンツ：プライベートコンテンツの無効化 ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) の手順に従ってください。 カスタマイズで `customerData.reload()` メソッドを直接使用していないことを確認してください。
 * 同じページ上の他のPOST AJAX リクエストを確認します。 Google Chrome ブラウザーでGoogle Chrome開発者ツールを開きます。 「**Network**」タブをクリックしてから「**XHR**」タブをクリックすると、特定のページからのすべてのAJAX リクエストのリストが表示されます。 次に、各リクエストをクリックし、フィールドでリクエストメソッドをGETリクエストにする必要があります。 メモ：Google Chromeは例として使用され、他のブラウザーでも同様に実行できます。
 * Google Tag Manager （GTM）機能を確認します。これは特定のAJAX リクエストです。 ユーザーはこのAJAXを削除し、プライベート機能を使用してカスタマイズをリファクタリングして、サーバーへのリクエストの合計数を減らすことができます。

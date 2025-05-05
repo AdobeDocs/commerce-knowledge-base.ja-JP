@@ -20,17 +20,17 @@ Bob - not in TOC
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)。
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=ja)。
 
 これらのサーバーエラーのログを表示するには、web サーバーの `access.log` （例：`<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`）を確認します
 
 関連ログを確認するには：
 
 1. 次のコマンドを CLI で実行します（クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの場合）。 または、過去の特定の時点（Adobe Commerce on cloud infrastructure スタータープランアーキテクチャの場合）まで、ログのカバレッジの期間が限られ、ログのローテーションは使用できません。`grep -r "\" [50[0-9]" /path/to/access.log` 過去にエラーが発生した場合は、CLI で次のコマンドを実行します（Pro アーキテクチャのみ）。`zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
-1. 次に、`exception.log` と `error.log`、または同等の [ ローテーションされたログ ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達すると自動的にローテーションされ圧縮されるログ）で、同じタイムスタンプを確認して、潜在的なエラーを見つけ、そのエラーを引き起こしている可能性のあるものを確認します。 注：`exception.log` をチェックし、`error.log` に CLI で上記のコマンドを実行し、`access.log` を `exception.log` または `error.log` に置き換えます。
+1. 次に、`exception.log` と `error.log`、または同等の [ ローテーションされたログ ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja#log-rotation) （特定のファイルサイズに達すると自動的にローテーションされ圧縮されるログ）で、同じタイムスタンプを確認して、潜在的なエラーを見つけ、そのエラーを引き起こしている可能性のあるものを確認します。 注：`exception.log` をチェックし、`error.log` に CLI で上記のコマンドを実行し、`access.log` を `exception.log` または `error.log` に置き換えます。
 
 ## 関連資料
 
-* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) ログの表示と管理 *を参照してください。*
+* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) ログの表示と管理 *を参照してください。*
 * サポートナレッジベースの [503 エラーのトラブルシューティング ](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) を参照してください。
 * サポートナレッジベースの [Magentoサイトのダウンのトラブルシューティング ](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) を参照してください。

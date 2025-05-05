@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ### 解決策
 
-必要な場合にのみ、インデックス再作成を実行します。 手順については、開発者向けドキュメントの [ インデクサーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を確認してください。 一般的な推奨事項とベストプラクティスは、部分的なインデックス再作成メカニズムによって、マーチャントによる手動アクションを必要とせずに、データのインデックス再作成を処理できるようにすることです。 すべてのインデックス再作成は、Adobe Commerceのネイティブ機能（Mview）を使用して行う必要があります。 Mview は、データのインデックスを再作成する最も効率的な方法である部分インデックス再作成を実行します。 Mview について詳しくは、開発者向けドキュメントの [ インデックス作成の概要：Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) を参照してください。
+必要な場合にのみ、インデックス再作成を実行します。 手順については、開発者向けドキュメントの [ インデクサーの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を確認してください。 一般的な推奨事項とベストプラクティスは、部分的なインデックス再作成メカニズムによって、マーチャントによる手動アクションを必要とせずに、データのインデックス再作成を処理できるようにすることです。 すべてのインデックス再作成は、Adobe Commerceのネイティブ機能（Mview）を使用して行う必要があります。 Mview は、データのインデックスを再作成する最も効率的な方法である部分インデックス再作成を実行します。 Mview について詳しくは、開発者向けドキュメントの [ インデックス作成の概要：Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) を参照してください。
 
 ## 関連資料
 

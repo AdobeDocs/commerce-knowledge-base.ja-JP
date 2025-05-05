@@ -1,6 +1,6 @@
 ---
 title: 「MDVA-32776：注文を行っても在庫ステータスが更新されない」
-description: MDVA-32776 パッチは、注文が行われても出荷されなかった場合に在庫ステータスが更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.6 がインストールされている場合に利用できます。 パッチ ID は MDVA-32776。 この問題はAdobe Commerce 2.4.2 で修正されました。
+description: MDVA-32776 パッチは、注文が行われても出荷されなかった場合に在庫ステータスが更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.6 がインストールされている場合に利用できます。 パッチ ID は MDVA-32776。 この問題はAdobe Commerce 2.4.2 で修正されました。
 exl-id: 10e9458f-562a-480b-b813-104a93db4308
 feature: Orders
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-32776：発注時に在庫ステータスが更新されない
 
-MDVA-32776 パッチは、注文が行われても出荷されなかった場合に在庫ステータスが更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview)1.1.6 がインストールされている場合に使用できます。 パッチ ID は MDVA-32776。 この問題はAdobe Commerce 2.4.2 で修正されました。
+MDVA-32776 パッチは、注文が行われても出荷されなかった場合に在庫ステータスが更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview)1.1.6 がインストールされている場合に使用できます。 パッチ ID は MDVA-32776。 この問題はAdobe Commerce 2.4.2 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.1-p1
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -60,8 +60,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.1-p1
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

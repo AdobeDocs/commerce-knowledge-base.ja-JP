@@ -24,8 +24,8 @@ ht-degree: 0%
 
 * [PHP デベロッパーガイド ](https://developer.adobe.com/commerce/php/development/)
 * [ モジュールの概要 ](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [ 新しいモジュールの作成 ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
-* [ モジュール設定ファイル ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [ 新しいモジュールの作成 ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/backend-development/create-module)
+* [ モジュール設定ファイル ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## 必要な情報
 

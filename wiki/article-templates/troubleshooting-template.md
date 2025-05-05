@@ -67,7 +67,7 @@ Adobe Commerceがこれを行います。
 
 ## 関連資料
 
-* [ 記事のトピック ](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)」を参照してください。
+* [ 記事のトピック ](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home)」を参照してください。
 * 開発者向けドキュメントの [ 記事のトピック ](https://developer.adobe.com/commerce/docs/)。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別する方法として、「[ 記事のトピック ](https://developer.adobe.com/commerce/docs/)」をクラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントに記載しています。 と [ 記事のトピック ](https://developer.adobe.com/commerce/docs/) を参照してください（Adobe Commerce オンプレミス開発者向けドキュメント）。
 * サポートに関するナレッジベースの [ 記事のトピック ](https://support.magento.com/hc/en-us)。
 * 関連リソース（ブログ、フォーラム、StackOverflow など）

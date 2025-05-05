@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Markdown での作成者
 
-通常、[Adobe Experience League Markdown 構文スタイルガイド ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en) を使用しますが、いくつかの違いがあり、例外があります。 また、場合によっては、特定のHTMLタグが必要です。
+通常、[Adobe Experience League Markdown 構文スタイルガイド ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=ja) を使用しますが、いくつかの違いがあり、例外があります。 また、場合によっては、特定のHTMLタグが必要です。
 
 リポジトリーで最も一般的に使用される Markdown フォーマットの例を以下に示します。
 

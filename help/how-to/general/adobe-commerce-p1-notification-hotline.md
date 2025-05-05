@@ -21,7 +21,7 @@ ht-degree: 0%
 ## P1 通知ホットラインの電話ポリシー
 
 * P1 通知ホットラインは、P1 レベルの問題を報告するために使用できます。 （前のセクションの P1 インシデント定義を参照）。
-* Adobe Commerce P1 通知ホットラインを呼び出す前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) します。
+* Adobe Commerce P1 通知ホットラインを呼び出す前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) します。
 * 調査、トラブルシューティング、通信は、サポートチケット内でのみ行われます。
 * 問い合わせの前に、問題に関する追加情報をすべてチケットに直接追加します。
 * お電話の際は、必ずチケット番号をお持ちください。

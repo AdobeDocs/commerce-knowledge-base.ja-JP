@@ -52,7 +52,7 @@ Commerce管理者にログインします。
 管理者セッションの有効期間を延長するには、次の手順に従います。
 
 1. データベースバックアップを作成します。
-1. [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Commerce管理者にログインします。
 Cookie の設定値を確認してクリアするには、次の手順に従います。
 
 1. データベースバックアップを作成します。
-1. [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");

@@ -80,7 +80,7 @@ ht-degree: 0%
 
 1. с変更をコミットし、プッシュしてプロジェクトを再デプロイします。
 
-ルート設定を更新する詳細な手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ルートの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) を参照してください。
+ルート設定を更新する詳細な手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ルートの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) を参照してください。
 
 >[!NOTE]
 >

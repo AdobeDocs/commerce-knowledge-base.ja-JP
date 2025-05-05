@@ -22,7 +22,7 @@ Adobe Commerce バージョン 2.4.x 以降
 
 ## 回避策
 
-ただし、エッジケースによっては、ファセットが [[!DNL Live Search]  ファセットワークスペース ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) で設定されているようにアルファベット順に並べ替えられない場合があります。
+ただし、エッジケースによっては、ファセットが [[!DNL Live Search]  ファセットワークスペース ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) で設定されているようにアルファベット順に並べ替えられない場合があります。
 
 回避策として、「製品属性」セクションで製 [!UICONTROL Admin] 属性を並べ替えることができます。
 

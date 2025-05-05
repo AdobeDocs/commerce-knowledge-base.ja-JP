@@ -20,4 +20,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)0&rbrace;New Relic サービス &rbrace; を参照してください。
+* 開発者向けドキュメントの [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)0&rbrace;New Relic サービス &rbrace; を参照してください。

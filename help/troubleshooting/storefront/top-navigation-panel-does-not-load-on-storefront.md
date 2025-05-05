@@ -51,7 +51,7 @@ Adobe Commerceストア用に Varnish をインストールして設定します
 
 問題を解決するには、追加の Varnish 設定を実行し、Varnish を再起動する必要があります。
 
-1. `root` 権限を持つユーザーとして、Vanish 設定ファイルをテキストエディターで開きます。 このファイルが別のオペレーティングシステムのどこに配置されているかの情報については、開発者向けドキュメントの [Varnish システム設定の変更 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) を参照してください。
+1. `root` 権限を持つユーザーとして、Vanish 設定ファイルをテキストエディターで開きます。 このファイルが別のオペレーティングシステムのどこに配置されているかの情報については、開発者向けドキュメントの [Varnish システム設定の変更 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/config-varnish-server) を参照してください。
 1. `DAEMON_OPTS variable` で、`-p feature=+esi_ignore_https`、`-p  feature=+esi_ignore_other_elements`、`-p  feature=+esi_disable_xml_check` を追加します。 次のようになります。
 
    ```bash
@@ -64,5 +64,5 @@ Adobe Commerceストア用に Varnish をインストールして設定します
 
 ## 関連資料
 
-* 開発者向けドキュメントの [Varnish と web サーバーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) を参照してください。
+* 開発者向けドキュメントの [Varnish と web サーバーの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/config-varnish-server) を参照してください。
 * [Varnish のドキュメント ](https://varnish-cache.org/docs/5.1/reference/index.html)

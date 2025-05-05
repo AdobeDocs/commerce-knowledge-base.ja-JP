@@ -42,9 +42,9 @@ yarn run validate-queries
 アップグレード方法については、次のドキュメントを参照してください。
 
 * PWA Studioのアップグレードの場合、アップグレードする必要があるバージョンを [PWAリリースノートの ](https://github.com/magento/pwa-studio/releases/) 以前のバージョンからのアップグレード」の節で検索します。
-* 開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
-* [ 開発者向けドキュメントの ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)Adobe Commerceをオンプレミス（「composer create-project」またはアーカイブを使用してインストール）でアップグレードする
-* [ 開発者向けドキュメントのAdobe Commerceをオンプレミスでアップグレード（Adobe Commerce リポジトリをクローンしてインストール） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs)
+* 開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [ 開発者向けドキュメントの ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)Adobe Commerceをオンプレミス（「composer create-project」またはアーカイブを使用してインストール）でアップグレードする
+* [ 開発者向けドキュメントのAdobe Commerceをオンプレミスでアップグレード（Adobe Commerce リポジトリをクローンしてインストール） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/developer/git-installs)
 
 ## 関連資料
 

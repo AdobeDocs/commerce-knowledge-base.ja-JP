@@ -42,4 +42,4 @@ ht-degree: 0%
 
 現在のアカウントの所有権を新しい所有者または別のメールアドレスに転送する必要がある場合は、アカウントに関連付けられたプライマリユーザーのメールを更新する必要があります。
 
-次を参照してください：[https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)
+次を参照してください：[https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=ja](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=ja)

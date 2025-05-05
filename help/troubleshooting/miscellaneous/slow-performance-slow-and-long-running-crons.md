@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >どのAdobe Commerce バージョンでも、一部の拡張機能はフラットテーブルでのみ機能するので、フラットテーブルを無効にした場合にリスクが生じます。 フラットカタログインデクサーを使用する拡張機能があることがわかっている場合は、それらの値を「*いいえ*」に設定する際に、その点を考慮する必要があります。
 
-この記事では、[ フラットテーブルとインデクサー ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat) が有効になっていることが原因で発生する、サイトのパフォーマンスの問題と、実行が遅く停止した cron を解決する方法について説明します。
+この記事では、[ フラットテーブルとインデクサー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/catalog-flat) が有効になっていることが原因で発生する、サイトのパフォーマンスの問題と、実行が遅く停止した cron を解決する方法について説明します。
 
 影響を受ける製品とバージョン
 

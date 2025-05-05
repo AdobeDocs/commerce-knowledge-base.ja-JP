@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 前提条件：環境に SSH で接続する
 
-この記事で説明されているバリアントを使用してクラウドインフラストラクチャ上のAdobe Commerceに DB をダンプするには、まず [ 環境に SSH 接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) する必要があります。
+この記事で説明されているバリアントを使用してクラウドインフラストラクチャ上のAdobe Commerceに DB をダンプするには、まず [ 環境に SSH 接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) する必要があります。
 
 >[!WARNING]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## オプション 1:db-dump （**ece-tools；推奨**）
 
-[ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) コマンドを使用して DB をダンプできます。
+[ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja) コマンドを使用して DB をダンプできます。
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 これは推奨される最も安全なオプションです。
 
-クラウドインフラストラクチャー上のCommerce ガイドの [ データベースのダンプ（ECE-Tools） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) を参照してください。
+クラウドインフラストラクチャー上のCommerce ガイドの [ データベースのダンプ（ECE-Tools） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=ja) を参照してください。
 
 ## オプション 2:mysqldump
 
@@ -61,4 +61,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **関連ドキュメント：**
 
 * [mysqldump - データベースバックアッププログラム ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) 公式の MySQL ドキュメントにあります。
-* [ クラウド固有の変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) （`MAGENTO_CLOUD_RELATIONSHIPS` を参照） – Commerce on Cloud Infrastructure ガイドを参照してください。
+* [ クラウド固有の変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=ja) （`MAGENTO_CLOUD_RELATIONSHIPS` を参照） – Commerce on Cloud Infrastructure ガイドを参照してください。

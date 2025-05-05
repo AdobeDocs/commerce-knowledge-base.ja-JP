@@ -23,7 +23,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) の説明に従って、セキュリティスキャンツールを設定して web サイトを確認します。
+1. ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-scan) の説明に従って、セキュリティスキャンツールを設定して web サイトを確認します。
 1. 「アクション」列で「**スキャンの実行**」を選択します。
 
 <u> 期待される結果 </u>:
@@ -47,5 +47,5 @@ Web サイトを開いてみます。
 
 ## 関連資料
 
-* アドビの開発者向けドキュメントの [ 運用開始してローンチする ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview)。
-* ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)。
+* アドビの開発者向けドキュメントの [ 運用開始してローンチする ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/overview)。
+* ユーザーガイドの [ セキュリティスキャン ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-scan)。

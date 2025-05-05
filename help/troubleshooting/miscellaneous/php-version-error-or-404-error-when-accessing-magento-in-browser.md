@@ -29,7 +29,7 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) を参照してください。
+* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements) を参照してください。
 * Apache を再起動します。ファイルシステムと同じ PHP バージョンを使用していない可能性があるからです。 Apache を再起動するには、次のコマンドを使用します。
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* [Apache server rewrites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache) が有効になっていることを確認します。 Apache サーバーの書き換えが正しく設定されていない場合、静的ファイルは正しい場所から提供されません。
+* [Apache server rewrites](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/web-server/apache) が有効になっていることを確認します。 Apache サーバーの書き換えが正しく設定されていない場合、静的ファイルは正しい場所から提供されません。
 * インストール中に入力したベース URL に問題がある可能性があります。 ベース URL の値は、コマンドラインからAdobe Commerceをインストールするときに `--base-url=` を指定するか、web インストーラーの Web 設定ページにある **ストアアドレス** フィールドの値として指定します。 ベース URL *必須* は、スキーム（`http://` など）で始まり、末尾がスラッシュ（/）で終わります。 有効な値でインストーラーを再度実行し、後でAdobe Commerceにアクセスしてみてください。

@@ -67,4 +67,4 @@ Adobe Commerceには次の 2 種類のキャッシュがあります。
 ## 推奨事項
 
 1. Commerce CLI からキャッシュをフラッシュしないでください。
-1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [ インデクサーの管理/インデクサーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を参照してください。
+1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [ インデクサーの管理/インデクサーの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を参照してください。

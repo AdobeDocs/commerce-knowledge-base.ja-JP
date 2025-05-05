@@ -78,7 +78,7 @@ inode が不足している、使用可能なストレージ領域が不足し�
 
 [!DNL MySQL] を元の軌道に戻す（または停止するのを防ぐ）ための即時の手順があります。大きなテーブルをフラッシュして、スペースを解放します。
 
-しかし、長期的なソリューションとしては、より多くのスペースを割り当て、[ 注文/請求書/出荷アーカイブ ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) 機能の有効化など、[ データベースのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) に従うことになります。
+しかし、長期的なソリューションとしては、より多くのスペースを割り当て、[ 注文/請求書/出荷アーカイブ ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja) 機能の有効化など、[ データベースのベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-archive) に従うことになります。
 
 以下は、迅速なソリューションと長期的なソリューションの両方の詳細です。
 
@@ -124,7 +124,7 @@ Size Used Avail Use% Mounted on·
 
 >[!WARNING]
 >
->操作を実行する前にデータベースバックアップを作成し、サイトの負荷が高い期間は避けることを強くお勧めします。 開発者向けドキュメントの [ データベースのダンプ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) を参照してください。
+>操作を実行する前にデータベースバックアップを作成し、サイトの負荷が高い期間は避けることを強くお勧めします。 開発者向けドキュメントの [ データベースのダンプ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) を参照してください。
 
 大きなテーブルがあるかどうかを確認し、フラッシュできるテーブルがあるかどうかを検討します。 これをプライマリ（ソース）ノードで行います。
 
@@ -132,7 +132,7 @@ Size Used Avail Use% Mounted on·
 
 巨大なレポートテーブルがない場合は、Adobe Commerce アプリケーションを元の状態に戻すた `_index` に、レポートテーブルのフラッシュを検討します。 `index_price` のテーブルが最適な候補となります。 例えば、`catalog_category_product_index_storeX` テーブルの場合、X には「1」から最大ストア数までの値を含めることができます。 これらのテーブルのデータを復元するには、インデックスを再作成する必要があることに注意してください。大きなカタログの場合、インデックスの再作成に多くの時間がかかることがあります。
 
-フラッシュしたら、wsrep 同期が完了するまで待ちます。 これで、バックアップを作成し、容量の割り当てや購入、[ 注文/請求書/出荷アーカイブ ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) 機能の有効化など、容量を追加するためにより重要な手順を実行できます。
+フラッシュしたら、wsrep 同期が完了するまで待ちます。 これで、バックアップを作成し、容量の割り当てや購入、[ 注文/請求書/出荷アーカイブ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-archive) 機能の有効化など、容量を追加するためにより重要な手順を実行できます。
 
 ### バイナリログ設定を確認
 
@@ -151,4 +151,4 @@ Size Used Avail Use% Mounted on·
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

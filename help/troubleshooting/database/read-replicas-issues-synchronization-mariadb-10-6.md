@@ -54,7 +54,7 @@ ht-degree: 0%
 
 
 
-データベース設定を更新する手順については、Cloud Infrastructure ガイドのCommerceにある「変数のデプロイ」トピックの [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) を参照してください。
+データベース設定を更新する手順については、Cloud Infrastructure ガイドのCommerceにある「変数のデプロイ」トピックの [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#database_configuration) を参照してください。
 
 
 ## 関連資料

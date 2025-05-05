@@ -1,6 +1,6 @@
 ---
 title: データ書き出しの使用による不一致の特定
-description: この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データエクスポートは、特に [data dispensity diagnostic checklist] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy）で問題を特定できなかった場合に、レポートでデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに便利なツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
+description: この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データエクスポートは、特に [data dispensity diagnostic checklist] （https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy）で問題を特定できなかった場合に、レポートでデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに便利なツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データ書き出しの使用による不一致の特定
 
-この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データ書き出しは、特に [ データの相違に関する診断チェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) が問題の特定に役立たなかった場合に、レポートのデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに役立つツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
+この記事では、Magentoの BI データの不一致をトラブルシューティングする方法について説明します。 データ書き出しは、特に [ データの相違に関する診断チェックリスト ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) が問題の特定に役立たなかった場合に、レポートのデータの相違を特定するために、Magentoの BI データとソースデータを比較するのに役立つツールです。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実際の例について説明します。
 
 例えば、次の分析を考えてみましょう。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 両方のシステムの行数が同じで、**売上高** 指標がソースデータに一致しない場合、**order\_total** はどこかでオフになっている必要があります。 **order\_total** フィールドがソースデータベースで更新されており、MagentoBI がこれらの変更を取得していない可能性があります。
 
-これを確認するには、**order\_total** 列が再チェックされているかどうかを確認します。 Data Warehouseマネージャーに移動し、**`orders`** のテーブルをクリックします。 [ 再確認頻度 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) が「変更」に表示されます。 列。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、続行して、目的の再チェック頻度に設定します。
+これを確認するには、**order\_total** 列が再チェックされているかどうかを確認します。 Data Warehouseマネージャーに移動し、**`orders`** のテーブルをクリックします。 [ 再確認頻度 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=ja) が「変更」に表示されます。 列。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、続行して、目的の再チェック頻度に設定します。
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ## ソース データベースの行数がMagento BI の行数より少なくなっています {#lessrows}
 
-ソース・データベースの行数がMagentoBI の行数よりも少ない場合は、ソース・データベースから行が削除され、MagentoBI がこれらの削除を取得していない可能性があります。 **&#x200B; [ データを削除 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) すると、不一致、更新時間の延長、ロジスティック上の多くの問題につながる可能性があるので**&#x200B;本当に必要でない限り、データを削除しないことを強くお勧めします。
+ソース・データベースの行数がMagentoBI の行数よりも少ない場合は、ソース・データベースから行が削除され、MagentoBI がこれらの削除を取得していない可能性があります。 **&#x200B; [ データを削除 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=ja) すると、不一致、更新時間の延長、ロジスティック上の多くの問題につながる可能性があるので**&#x200B;本当に必要でない限り、データを削除しないことを強くお勧めします。
 
 ただし、ローがテーブルから削除された場合は、プライマリ・キーの再チェック頻度を確認してください。 プライマリキーを再チェックすると、テーブルの削除された行がチェックされます。
 
@@ -89,7 +89,7 @@ Data Warehouseマネージャでは、主キー列はキーシンボルでマー
 
 ## 関連資料
 
-* [ データ不整合の診断チェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
-* [Adobe Commerce Intelligence サービスポリシー ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [ データ不整合の診断チェックリスト ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Adobe Commerce Intelligence サービスポリシー ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 

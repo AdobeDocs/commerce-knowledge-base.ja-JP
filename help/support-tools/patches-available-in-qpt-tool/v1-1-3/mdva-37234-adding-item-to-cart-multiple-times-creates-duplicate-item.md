@@ -1,6 +1,6 @@
 ---
 title: 「MDVA-37234：買い物かごに項目を複数回追加すると、重複行項目が作成される」
-description: MDVA-37234 パッチでは、同じ SKU に対して買い物かごに項目を複数回追加（並列リクエスト）すると、同じ買い物かご ID に対して重複した行項目が作成される問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.3 がインストールされている場合に利用できます。 パッチ ID は MDVA-37234。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+description: MDVA-37234 パッチでは、同じ SKU に対して買い物かごに項目を複数回追加（並列リクエスト）すると、同じ買い物かご ID に対して重複した行項目が作成される問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.3 がインストールされている場合に利用できます。 パッチ ID は MDVA-37234。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 exl-id: 8f0dc249-10b2-4f2c-abca-1f5b7aea204d
 feature: Orders, Shopping Cart
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37234：買い物かごに品目を複数回追加すると、重複品目が作成される
 
-MDVA-37234 パッチでは、同じ SKU に対して買い物かごに項目を複数回追加（並列リクエスト）すると、同じ買い物かご ID に対して重複した行項目が作成される問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview)1.1.3 がインストールされている場合に使用できます。 パッチ ID は MDVA-37234。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-37234 パッチでは、同じ SKU に対して買い物かごに項目を複数回追加（並列リクエスト）すると、同じ買い物かご ID に対して重複した行項目が作成される問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview)1.1.3 がインストールされている場合に使用できます。 パッチ ID は MDVA-37234。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.3.7-p1 �
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -86,8 +86,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.3.7-p1 �
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

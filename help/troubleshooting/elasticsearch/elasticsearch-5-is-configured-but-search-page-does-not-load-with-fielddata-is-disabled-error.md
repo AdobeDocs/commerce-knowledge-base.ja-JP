@@ -56,7 +56,7 @@ SELECT ea.attribute_code, ea.frontend_input, cea.is_filterable, cea.is_filterabl
 この問題を修正するには、`is_filterable` （レイヤーナビゲーションで使用）および `filterable_in_search` （検索結果レイヤーナビゲーションで使用）を「0」（使用しない）に設定する必要があります。 これを行うには、次の手順を実行します。
 
 1. データベースバックアップを作成します。
-1. [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
+1. [phpMyAdmin](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

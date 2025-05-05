@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 原因：
 
-この問題は、最大セッションサイズに影響を与えた最近導入された新機能に関連しています。 開発者向けドキュメントの [ セッション管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) を参照してください。
+この問題は、最大セッションサイズに影響を与えた最近導入された新機能に関連しています。 開発者向けドキュメントの [ セッション管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management) を参照してください。
 
 ## 解決策
 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* ユーザーガイドの [ マーケティングメニュー ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu)。
+* ユーザーガイドの [ マーケティングメニュー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/marketing-menu)。

@@ -60,7 +60,7 @@ Adobe Commerce 2.4.6-p8 セキュリティ専用パッチでアップグレー�
 
 ## パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースで [Adobe提供の Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照して手順を確認します。
+ファイルを解凍し、サポートナレッジベースで [Adobe提供の Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=ja) を参照して手順を確認します。
 
 ## Adobe Commerce on Cloud マーチャントのみ – パッチが適用されているかどうかを確認する方法
 
@@ -68,7 +68,7 @@ Adobe Commerce 2.4.6-p8 セキュリティ専用パッチでアップグレー�
 
 <u> これを行うには、次の手順に従い、サンプルファイル `VULN-27015-2.4.7_COMPOSER.patch` を使用します **例として</u>**。
 
-1. [ をインストールします  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
+1. [ をインストールします  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja)。
 1. 次のコマンドを実行します。<br>
    ![ac-13283-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. VULN-27015 が *Applied* ステータスを返す、次のような出力が表示されます。

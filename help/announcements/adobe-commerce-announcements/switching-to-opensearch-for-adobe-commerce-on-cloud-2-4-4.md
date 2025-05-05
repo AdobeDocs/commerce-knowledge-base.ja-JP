@@ -47,10 +47,10 @@ Adobe Commerce 2.4.4 以降。
 
 使用しているAdobe Commerce コアバージョンがElasticsearch 7.10 をサポートしている場合は、そのバージョンを使用できます。
 
-バージョンの互換性については、開発者向けドキュメントの [ システム要件 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) を確認してください。
+バージョンの互換性については、開発者向けドキュメントの [ システム要件 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja) を確認してください。
 
 >[!NOTE]
 >
 >2022 年 5 月にElasticsearch 7.10 がサポート終了となるため、できるだけ早くAdobe Commerce 2.4.4 へのアップグレードを計画することをお勧めします。
 
-Adobeパートナーは、Elasticsearch 7.16.1 および OpenSearch 1.1 に対してテストされた最新の beta4 コードにアクセスするために、アドビのベータ版プログラム [ こちら ](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) に新規登録できます。
+Adobeパートナーは、Elasticsearch 7.16.1 および OpenSearch 1.1 に対してテストされた最新の beta4 コードにアクセスするために、アドビのベータ版プログラム [ こちら ](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html?lang=ja) に新規登録できます。

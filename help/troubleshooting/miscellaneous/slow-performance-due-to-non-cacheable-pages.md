@@ -53,7 +53,7 @@ Adobe Commerceでキャッシュする必要があるページがあります。
 
 >[!NOTE]
 >
->Cloud infrastructure 2.4.1 以降のAdobe Commerceでは、[Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) を使用して、フルページキャッシュが正しく設定されていないかどうかを自動的に確認できます。
+>Cloud infrastructure 2.4.1 以降のAdobe Commerceでは、[Site-Wide Analysis Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access) を使用して、フルページキャッシュが正しく設定されていないかどうかを自動的に確認できます。
 
 ### 関連資料
 

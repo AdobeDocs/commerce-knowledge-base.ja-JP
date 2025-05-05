@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## 環境スナップショットの復元
 
-Commerce既存のスナップショットを復元するには（サポート対象の環境：統合、ステージング、スタータープランの実稼動または Pro プランの統合）、Cloud Infrastructure ガイドの [ バックアップ管理：手動バックアップの復元 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) の手順に従ってください。
+Commerce既存のスナップショットを復元するには（サポート対象の環境：統合、ステージング、スタータープランの実稼動または Pro プランの統合）、Cloud Infrastructure ガイドの [ バックアップ管理：手動バックアップの復元 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) の手順に従ってください。
 
 ## データベース（DB）のバックアップ
 

@@ -72,4 +72,4 @@ Adobe Commerceのバージョンに応じて、次のパッチを適用します
 
 ## 関連資料
 
-[Adobeが提供する Composer パッチを適用する方法 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Adobeが提供する Composer パッチを適用する方法 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)

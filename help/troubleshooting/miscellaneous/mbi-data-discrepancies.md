@@ -18,7 +18,7 @@ ht-degree: 0%
 * [データの食い違い診断チェックリスト](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [書き出しを使用したデータの不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-また、不一致に関わるテーブルと列に正しい [ レプリケーション方法 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) と [ 再確認 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) が設定されていることを確認することをお勧めします。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
+また、不一致に関わるテーブルと列に正しい [ レプリケーション方法 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) と [ 再確認 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) が設定されていることを確認することをお勧めします。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
 
 ## まだ助けが必要だ！
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 関連資料
 
 * [計算される列](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [ 構造データベースの変更 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [ 構造データベースの変更 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=ja)

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## データベースと SaaS の統合
 
-データベースおよび SaaS 統合のリストについては、開発者向けドキュメントの [ 統合を使用した外部データの接続 ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) を参照してください。 （ページを開く場合は、左側の目次をナビゲーションに使用します）。
+データベースおよび SaaS 統合のリストについては、開発者向けドキュメントの [ 統合を使用した外部データの接続 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) を参照してください。 （ページを開く場合は、左側の目次をナビゲーションに使用します）。
 
 ## 接続に問題がありますか？
 

@@ -47,9 +47,9 @@ https:/&#x200B;/mydomain.com.c.&lt;projectid>.magento.cloud/にはアクセス�
 ## 解決策
 
 * クラウドサイトがライブの場合は、https://mydomain.com/に切り替えます。
-* アクティブなサイト（クラウド以外）がある場合は、https://mydomain.com/ ドメインを使用してサブドメイン `mcprod.mydomain.com` を設定し、**ベース URL** を *https://mcprod.mydomain.com* に更新して、[DNS を Fastly に指定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings) ます。
+* アクティブなサイト（クラウド以外）がある場合は、https://mydomain.com/ ドメインを使用してサブドメイン `mcprod.mydomain.com` を設定し、**ベース URL** を *https://mcprod.mydomain.com* に更新して、[DNS を Fastly に指定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings) ます。
 
 ## 関連資料
 
 * [Fastly オリジンクローキングのイネーブルメントに関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) をサポートナレッジベースに掲載しています
-* サポートナレッジベースの [ 新しいドメインを設定するためのチェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain)
+* サポートナレッジベースの [ 新しいドメインを設定するためのチェックリスト ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain)

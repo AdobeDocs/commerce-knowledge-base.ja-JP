@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 問題
 
-ストアのコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新開始直後はストアフロントに表示されません。 これは、「コンテンツのステージング [ 機能を使用して更新がスケジュールされている場合 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) 発生します。
+ストアのコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新開始直後はストアフロントに表示されません。 これは、「コンテンツのステージング [ 機能を使用して更新がスケジュールされている場合 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja) 発生します。
 
 ## 原因：
 
@@ -45,6 +45,6 @@ Fastly のソフトパージ機能（デフォルトで有効）により、更�
 
 ## 関連ドキュメント
 
-* Commerce on Cloud Infrastructure ガイドの [ パージオプションの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
-* [ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) - コンテンツとデザインに関するドキュメント。
+* Commerce on Cloud Infrastructure ガイドの [ パージオプションの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)。
+* [ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja) - コンテンツとデザインに関するドキュメント。
 * Fastly ドキュメントの [ 古いコンテンツの提供 ](https://docs.fastly.com/guides/performance-tuning/serving-stale-content)。

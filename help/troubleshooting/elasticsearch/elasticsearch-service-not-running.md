@@ -19,7 +19,7 @@ ht-degree: 0%
 
    * v2.2.3 以降は、ES 5.x をサポート
    * v2.2.8+および v2.3.1+は、ES 6.x をサポートしています。
-   * ES v2.x および v5.x は、[ 提供終了 ](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
+   * ES v2.x および v5.x は、[ 提供終了 ](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
 
 * Magento Open Source v2.3.0 以降では、ES 5.x および 6.x がサポートされています（ただし 6.x をお勧めします）。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 <code>&lbrace;"0":"&lbrace;\"error\":&lbrace;\"root_cause\":[{\"type\":\"illegal_argument_exception\",\"reason\":\"Fielddata is disabled on text fields by default. Set fielddata=true on [%attribute_code%]] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory.\"}&rbrack;</code>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">Elasticsearch 5 が設定されましたが、サポートナレッジベースに「Fielddata is disabled...」エラーが表示され </a> 検索ページが読み込まれません。
+<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=ja">Elasticsearch 5 が設定されましたが、サポートナレッジベースに「Fielddata is disabled...」エラーが表示され </a> 検索ページが読み込まれません。
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ ht-degree: 0%
 <code>Elasticsearch\Common\Exceptions\NoNodesAvailableException: Noticed exception 'Elasticsearch\Common\Exceptions\NoNodesAvailableException' with message 'No alive nodes found in your cluster' in /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ConnectionPool/StaticNoPingConnectionPool.php:51</code>
 </td>
 <td>
-Elasticsuite インデックスが削除されていません。  サポートナレッジベースの <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite トラッキングインデックスが原因でElasticsearchに関する問題が発生する </a> を参照してください。
+Elasticsuite インデックスが削除されていません。  サポートナレッジベースの <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html?lang=ja">ElasticSuite トラッキングインデックスが原因でElasticsearchに関する問題が発生する </a> を参照してください。
  </td>
 </tr>
 <tr>
@@ -59,15 +59,15 @@ Elasticsuite インデックスが削除されていません。  サポート�
 <li><a href="https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk/">Linux および Unix システムのハードディスクの問題（ディスク容量超過やディスクへの書き込み不可など）を解決するための 8 つのヒント</a></li>
 <li><a href="https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not">serverfault: df はディスクがいっぱいと言うが、ディスクが空ではない</a></li>
 <li><a href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">unix.stackexchange.com:Linux のディスク容量がどこにあるかを調べますか？</a></li>
-<li>ログファイルは、定期的に十分にアーカイブされていません。 開発者向けドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/action-logs/action-log-archive"> ログアーカイブの設定 </a> を参照してください。</li>
-<li>ファイルシステムディレクトリは最適化されません。 開発者向けドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#resource-file-optimization"> ファイルの最適化 </a> を参照してください。</li>
+<li>ログファイルは、定期的に十分にアーカイブされていません。 開発者向けドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/action-logs/action-log-archive"> ログアーカイブの設定 </a> を参照してください。</li>
+<li>ファイルシステムディレクトリは最適化されません。 開発者向けドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#resource-file-optimization"> ファイルの最適化 </a> を参照してください。</li>
 <li>上記のドキュメントの解決策でも問題が解決しない場合は、Adobeアカウントチームに連絡して追加のストレージをリクエストすることを検討してください。</li>
 </ul>
 </li>
 <li>ディスクのストレージが不足していなくても、左側の列にエラーメッセージが表示される場合は、<a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket"> サポートチケットを送信 </a> します。</li>
 </ul>
 <ul>
-<li>サポートナレッジベースの <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite トラッキングインデックスが原因でElasticsearchに関する問題が発生する </a> を参照してください。
+<li>サポートナレッジベースの <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html?lang=ja">ElasticSuite トラッキングインデックスが原因でElasticsearchに関する問題が発生する </a> を参照してください。
 </li>
 </ul>
 </td>

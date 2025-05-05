@@ -24,20 +24,20 @@ Adobe Commerceには、e コマースストアのエクスペリエンスを向�
 
 Adobe Commerce サイトの状態、現在または過去の時間表示を確認で [!DNL Observation for Adobe Commerce] る [!DNL New Relic nerdlet] ールです。 nerdlet は、プログラミング機能を備えて構築されたカスタムアプリケ [!DNL New Relic One] ションです。 最も関連性の高い [!DNL New Relic] 情報を、共通のタイムラインに対して簡単な形式で表示します。
 
-クラウドアーキテクチャでの [!DNL Observation for Adobe Commerce] の使用方法については、[[!DNL Observation for Adobe Commerce] /概要 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) を参照してください。
+クラウドアーキテクチャでの [!DNL Observation for Adobe Commerce] の使用方法については、[[!DNL Observation for Adobe Commerce] /概要 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ja) を参照してください。
 
 ## Adobe Commerce向け管理アラート – 重要なストレージおよび Apdex レベルに関するアラートを取得  {#managed-alerts-for-adobe-commerce}
 
 クラウドインフラストラクチャー上のAdobe Commerceに対する管理されたアラートは、次の手順に関するトラブルシューティングの指示を含む、既製の [!DNL New Relic] アラートを生成します。
 
-サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 サポートナレッジベースに記載されている記事を使用して、アラートのトラブルシューティングを行うことができます。 管理アラートの詳細については、「[Adobe Commerceの管理アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)」をクリックしてください。
+サイトが重要なストレージと Apdex レベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握するのに役立つ、主要なダッシュボードとアラートを設定しました。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 サポートナレッジベースに記載されている記事を使用して、アラートのトラブルシューティングを行うことができます。 管理アラートの詳細については、「[Adobe Commerceの管理アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)」をクリックしてください。
 
 
 ## [!DNL Site-Wide Analysis Tool] - サイトスキャンに基づくパフォーマンスの推奨事項の取得 {#site-wide-analysis-tool}
 
 [!DNL Site-Wide Analysis Tool] は、エンドツーエンドの「ポイントインタイム」サイト分析を実行する SaaS （software as a service）アプリケーションです。 全てのツール関連の顧客サイト情報は、3 時間ごと～1 日 1 回の所定のスケジュールで収集されます。 つまり、SWAT は常に顧客サイトのデータを分析しています。
 
-[!DNL Site-Wide Analysis Tool] の詳細については、[[!DNL Site-Wide Analysis Tool]  ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) を参照してください。
+[!DNL Site-Wide Analysis Tool] の詳細については、[[!DNL Site-Wide Analysis Tool]  ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=ja) を参照してください。
 
 ## [!DNL Quality Patches Tool] - Adobe Commerceのバージョンで使用可能なすべてのパッチを取得します。 {#quality-patches-tool}
 

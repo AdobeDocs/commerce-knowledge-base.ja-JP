@@ -67,7 +67,7 @@ SSL 証明書の名前は、プライマリ URL に関してのみ重要です�
 
 ## ワイルドカード TLS 証明書を使用できますか？
 
-ワイルドカード TLS 証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt 証明書では使用できません。 TLS 最適化の一環として、Adobeではワイルドカード TLS 証明書のサポートを終了します。 Adobeの Let’s Encrypt 証明書でワイルドカード証明書を使用し、Adobe Commerceの [!DNL Fastly] コンソールで設定されているマーチャントを特定して連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えてください。 ワイルドカード TLS 証明書を置き換えるには、[!DNL Fastly] プラグインの [ ドメインセクション ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) にアクセスしてください。 ここから、正確なドメインを追加したり、ワイルドカードを削除したりできます。 これらの新しいドメインが CDN を経由してルーティングされるようにするには、DNS が [!DNL Fastly] を指している必要があることに注意してください。 ドメインを追加し、DNS が更新されると、一致する [ 暗号化しましょう ](https://letsencrypt.org/) 証明書がプロビジョニングされます。 ワイルドカードを使用して [!DNL Fastly] を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 URL FQDN が設定されておらず、DNS に同じ URL FQDN が設定されている場合は、サイトが停止する可能性があります。 したがって、設定された URL が、[!DNL Fastly] を指す DNS で 1 対 1 の一致も持つことを確認する必要があります。
+ワイルドカード TLS 証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt 証明書では使用できません。 TLS 最適化の一環として、Adobeではワイルドカード TLS 証明書のサポートを終了します。 Adobeの Let’s Encrypt 証明書でワイルドカード証明書を使用し、Adobe Commerceの [!DNL Fastly] コンソールで設定されているマーチャントを特定して連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えてください。 ワイルドカード TLS 証明書を置き換えるには、[!DNL Fastly] プラグインの [ ドメインセクション ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) にアクセスしてください。 ここから、正確なドメインを追加したり、ワイルドカードを削除したりできます。 これらの新しいドメインが CDN を経由してルーティングされるようにするには、DNS が [!DNL Fastly] を指している必要があることに注意してください。 ドメインを追加し、DNS が更新されると、一致する [ 暗号化しましょう ](https://letsencrypt.org/) 証明書がプロビジョニングされます。 ワイルドカードを使用して [!DNL Fastly] を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 URL FQDN が設定されておらず、DNS に同じ URL FQDN が設定されている場合は、サイトが停止する可能性があります。 したがって、設定された URL が、[!DNL Fastly] を指す DNS で 1 対 1 の一致も持つことを確認する必要があります。
 
 ## ドメインがAdobe Commerceを指さなくなった場合はどうすればよいですか？
 
@@ -75,4 +75,4 @@ SSL 証明書の名前は、プライマリ URL に関してのみ重要です�
 
 ## 関連資料
 
-開発者向けドキュメントの [SSL/TLS 証明書のプロビジョニング ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
+開発者向けドキュメントの [SSL/TLS 証明書のプロビジョニング ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)

@@ -36,7 +36,7 @@ Adobe Commerceのお客様。
 
 ## アップグレード互換性ツール 1.1.0 のインストール
 
-インストールの手順については、開発者向けドキュメントのAdobe Commerce:[ 互換性ツールをアップグレード/インストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) を参照してください。 このツールを使用するための前提条件については、開発者向けドキュメントのAdobe Commerce：互換性ツールのアップグレード [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) を参照してください 
+インストールの手順については、開発者向けドキュメントのAdobe Commerce:[ 互換性ツールをアップグレード/インストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) を参照してください。 このツールを使用するための前提条件については、開発者向けドキュメントのAdobe Commerce：互換性ツールのアップグレード [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) を参照してください 
 
 ## 各問題の横にある数字は何ですか？
 
@@ -47,7 +47,7 @@ Adobe Commerceのお客様。
 * エラーコード：エラーメッセージにAdobe Commerceによって割り当てられた識別情報。
 * エラーの説明：エラーの原因の概要を示す説明。
 * エラーの推奨アクション：該当する場合は、エラーのトラブルシューティングと解決に関するガイダンスを提供します。
-* コードのリストと説明については、[ エラーメッセージ参照ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages) を参照してください。
+* コードのリストと説明については、[ エラーメッセージ参照ページ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages) を参照してください。
 
 ## ツールに関するフィードバックはどこで共有できますか？
 
@@ -56,4 +56,4 @@ UCT の [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/
 ## 関連資料
 
 * Adobe Commerce ブログ：[ アップグレード互換性ツール（Alpha）の概要 ](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce：開発者向けドキュメントの [ 互換性アップグレードツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)。
+* Adobe Commerce：開発者向けドキュメントの [ 互換性アップグレードツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)。

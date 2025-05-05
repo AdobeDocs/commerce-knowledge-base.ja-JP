@@ -35,4 +35,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-[ ベンダーバンドルの拡張機能 ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions): Adobe Commerce ドキュメント / リリース情報/ Adobe Commerce 2.4.4 リリースノート。
+[ ベンダーバンドルの拡張機能 ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=ja&#vendor-bundled-extensions): Adobe Commerce ドキュメント / リリース情報/ Adobe Commerce 2.4.4 リリースノート。

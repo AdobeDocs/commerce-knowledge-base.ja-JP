@@ -33,8 +33,8 @@ ht-degree: 0%
 
 画像をアップロードする前に、パフォーマンスと表示品質のバランスを取るために画像を最適化および圧縮します。 これにより、スペースを増やし、ページ読み込み時間を短縮できます。 PNG は、単色の領域が大きい画像ほどサイズが小さくなります。 JPEGは他のすべてのもののために小さいサイズを与えます。 最も高い圧縮率を使用します（著しい劣化は発生しません）。 これは通常 60～80% です。
 
-[Fastly 画像の最適化 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) を使用すると、よりストレージ効率の高い画像を作成できます。
+[Fastly 画像の最適化 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=ja) を使用すると、よりストレージ効率の高い画像を作成できます。
 
 ## 関連資料
 
-Commerce on Cloud Infrastructure を使用している場合のディスク容量の管理については、Adobe Commerce on Cloud Infrastructure ガイドの [Adobe Commerceでのディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) を参照してください。
+Commerce on Cloud Infrastructure を使用している場合のディスク容量の管理については、Adobe Commerce on Cloud Infrastructure ガイドの [Adobe Commerceでのディスク容量の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ja) を参照してください。

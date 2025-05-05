@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### 原因：
 
-開発者向けドキュメントの [EAV 移行手順 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension) に属しています。
+開発者向けドキュメントの [EAV 移行手順 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/data-migration/basics/technical-specification) 中に、Adobe Commerce 1 コードベースのクラスがAdobe Commerce 2 コードベースに見つかりませんでした。 ほとんどの場合、欠落しているクラスは [extension](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/glossary#extension) に属しています。
 
 ### 可能な解決策
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### 原因：
 
-このエラーは、（開発者向けドキュメントの [ 増分移行 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) データに対する変更の際に発生します。 つまり、deltalog テーブル（プレフィックス `m2_cl_*` を含む）がAdobe Commerce 1 データベースに見つかりませんでした。 このツールは、（アドビの開発者向けドキュメントの [data migration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) 中にこれらのテーブルをインストールするだけでなく、変更内容を追跡して deltalog テーブルに値を入力するデータベーストリガーもインストールします。
+このエラーは、（開発者向けドキュメントの [ 増分移行 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/data-migration/migrate-data/delta) データに対する変更の際に発生します。 つまり、deltalog テーブル（プレフィックス `m2_cl_*` を含む）がAdobe Commerce 1 データベースに見つかりませんでした。 このツールは、（アドビの開発者向けドキュメントの [data migration](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/data-migration/migrate-data/data) 中にこれらのテーブルをインストールするだけでなく、変更内容を追跡して deltalog テーブルに値を入力するデータベーストリガーもインストールします。
 
 このエラーの理由の 1 つは、ライブストア自体からではなく、ライブ Adobe Commerce 1 ストアの *コピー* から移行しようとしていることです。 一度も移行されていないライブ Adobe Commerce 1 ストアからコピーを作成すると、そのコピーには、差分マイグレーションを行うのに必要なトリガーや追加の差分テーブルが含まれないので、マイグレーションが失敗します。 データ移行ツールでは、AC1 と AC2 の DB を比較して相違点を移行しません。 代わりに、最初のマイグレーション時にインストールされたトリガーテーブルとデルタ・テーブルを使用して、後続のデルタ・マイグレーションを実行します。 その場合、ライブ Adobe Commerce 1 DB のコピーには、Data Migration Tool が移行の実行に使用するトリガーテーブルおよび差分テーブルは含まれません。
 
@@ -165,5 +165,5 @@ Deltalog for <TABLE_NAME> is not installed
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 

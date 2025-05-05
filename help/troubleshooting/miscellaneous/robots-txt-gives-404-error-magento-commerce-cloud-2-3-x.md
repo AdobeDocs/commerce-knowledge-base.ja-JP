@@ -33,10 +33,10 @@ ht-degree: 0%
 
 セルフサービスが有効になっていない場合（または有効かどうかわからない場合）は、[Magentoサポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、Nginx リダイレクトルールの `/robots.txt` リクエストから `/media/robots.txt` リクエストへの削除をリクエストします。
 
-セルフサービスを有効にしている場合は、ECE-Tools を 2002.0.12 以上にアップグレードし、`.magento.app.yaml` ファイルの Nginx リダイレクトルールを削除してください。 詳しくは、開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) を参照してください。
+セルフサービスを有効にしている場合は、ECE-Tools を 2002.0.12 以上にアップグレードし、`.magento.app.yaml` ファイルの Nginx リダイレクトルールを削除してください。 詳しくは、開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html?lang=ja) を参照してください。
 
 ## 関連資料
 
 * [ 悪意のあるトラフィックをブロックして、Fastly レベルでMagento Commerce Cloudする方法 ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) については、サポートナレッジベースを参照してください。
-* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
-* ユーザーガイドの [ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)。
+* 開発者向けドキュメントの [ サイトマップと検索エンジンロボットを追加する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
+* ユーザーガイドの [ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ja#search-engine-robots)。

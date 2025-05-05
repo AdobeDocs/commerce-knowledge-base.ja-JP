@@ -57,4 +57,4 @@ Adobe Commerce オンプレミス：[Quality Patches Tools > Usage](/docs/commer
 ## 関連資料
 
 * Commerce ツールガイドの [[!DNL Quality Patches Tool] > リリースノート ](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)。
-* [[!DNL Quality Patches Tool]: Commerce ツールガイドのパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 検索します。
+* [[!DNL Quality Patches Tool]: Commerce ツールガイドのパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) 検索します。

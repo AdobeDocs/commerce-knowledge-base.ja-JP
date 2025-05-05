@@ -29,7 +29,7 @@ ht-degree: 0%
 
 前提条件：Adobe Commerce 2.4.3 以前がインストールされている。
 
-1. [ アップグレードの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) の説明に従って、アップグレードを開始します。
+1. [ アップグレードの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=ja) の説明に従って、アップグレードを開始します。
 1. `composer update` コマンドを実行して、Adobe Commerce アプリケーションをアップグレードします。
 
 <u> 期待される結果 </u>:
@@ -64,7 +64,7 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
 
 Adobe Commerceのインストール方法に応じて、`composer.json` ファイルに次の内容を追加します。
 
-* プロジェクトが作成されている場合 [`composer create-project` コマンドを使用 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
+* プロジェクトが作成されている場合 [`composer create-project` コマンドを使用 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
 
   ```json
   "config": {

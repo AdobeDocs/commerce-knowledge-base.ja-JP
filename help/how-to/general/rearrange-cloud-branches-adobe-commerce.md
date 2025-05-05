@@ -29,12 +29,12 @@ ht-degree: 0%
 
 クラウドのブランチを並べ替えるには：
 
-1. [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) の役割が必要です。
+1. [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja) の役割が必要です。
 1. magento-cloud [!DNL CLI] をインストールします（まだインストールしていない場合）。
 1. 移動する必要があるブランチに対して、次のコマンドを実行します。
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-注：新しいブランチを作成する際に、親ブランチを指定できます。 手順については、開発者向けドキュメントの [ ブランチ作成のスターターの取得 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) を参照してください。
+注：新しいブランチを作成する際に、親ブランチを指定できます。 手順については、開発者向けドキュメントの [ ブランチ作成のスターターの取得 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches) を参照してください。
 
 `branch <environment-name> <parent-environment-ID>` magento-cloud 環境コマンドを使用して、新しい環境ブランチを作成できます。
 
@@ -42,4 +42,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-開発者向けドキュメントの [ を使用したブランチの管理  [!DNL CLI]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) を参照してください。
+開発者向けドキュメントの [ を使用したブランチの管理  [!DNL CLI]](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches) を参照してください。

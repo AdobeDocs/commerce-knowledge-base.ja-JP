@@ -29,7 +29,7 @@ Commerce管理者で Fastly の **Force TLS** 機能を有効化して、クラ�
 1. **ストアフロントでセキュアな URL を使用** 設定および **管理者でセキュアな URL を使用** 設定を **はい** に設定します。    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. 右上隅の **設定を保存** をクリックして、変更を適用します。
 
-**ユーザーガイドの関連ドキュメント：**   [URL を保存 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
+**ユーザーガイドの関連ドキュメント：**   [URL を保存 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### 手順 2:Force TLS を有効にする {#step-2-enable-force-tls}
 

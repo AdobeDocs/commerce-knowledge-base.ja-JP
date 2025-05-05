@@ -46,6 +46,6 @@ Adobe Commerceは、有効期限から 30 日後に証明書を更新します�
 ## 関連資料
 
 * [Magento Commerce Cloud用の SSL （TLS）証明書：よくある質問 ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) アドビのサポートナレッジベースにあります。
-* [ コマンドラインツールのリファレンス：magento-cloud 証明書：add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) を開発者向けドキュメントに記載しています。
-* [Launch チェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist) 開発者向けドキュメントに記載されています。
-* ユーザーガイドの [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) にアクセスします。
+* [ コマンドラインツールのリファレンス：magento-cloud 証明書：add](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) を開発者向けドキュメントに記載しています。
+* [Launch チェックリスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/checklist) 開発者向けドキュメントに記載されています。
+* ユーザーガイドの [Site-Wide Analysis Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) にアクセスします。

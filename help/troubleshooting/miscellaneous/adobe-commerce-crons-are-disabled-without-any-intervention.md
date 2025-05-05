@@ -39,10 +39,10 @@ ht-degree: 0%
 
 ## 解決策
 
-[!DNL ECE Tools] を最新バージョン [2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113) にアップグレードしてください。
+[!DNL ECE Tools] を最新バージョン [2002.1.13](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113) にアップグレードしてください。
 
 ## 関連資料
 
-* [ パフォーマンスが遅く、実行速度が遅く、実行時間が長い  [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html) というサポートナレッジベースがあります。
-* サポートナレッジベースの [[!DNL Cron]  タスクは他のグループからタスクをロックします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en)。
-* サポートナレッジベースで [[!DNL Cron]  ジョブが「実行中」ステータス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) のままになる。
+* [ パフォーマンスが遅く、実行速度が遅く、実行時間が長い  [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html?lang=ja) というサポートナレッジベースがあります。
+* サポートナレッジベースの [[!DNL Cron]  タスクは他のグループからタスクをロックします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=ja)。
+* サポートナレッジベースで [[!DNL Cron]  ジョブが「実行中」ステータス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja) のままになる。

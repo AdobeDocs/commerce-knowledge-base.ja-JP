@@ -54,4 +54,4 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html)。
+* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=ja)。

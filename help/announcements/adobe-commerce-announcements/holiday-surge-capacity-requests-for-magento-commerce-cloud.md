@@ -34,7 +34,7 @@ ht-degree: 0%
 
 **サージ容量の要求**
 
-ホリデーシーズン中に追加の容量の必要性を予測するクラウドインフラストラクチャ上のAdobe Commerce マーチャントは、日付とチケット内の予想される容量のニーズを示す [Surge Capacity Support Ticket を送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) するには、[ ヘルプセンター ](/help/overview.md) を使用します。 容量を増やすには、ライセンス済みの超過容量を使用する必要があります。
+ホリデーシーズン中に追加の容量の必要性を予測するクラウドインフラストラクチャ上のAdobe Commerce マーチャントは、日付とチケット内の予想される容量のニーズを示す [Surge Capacity Support Ticket を送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=ja) するには、[ ヘルプセンター ](/help/overview.md) を使用します。 容量を増やすには、ライセンス済みの超過容量を使用する必要があります。
 
 **これらのチケットは、定員が必要な場合は 48 営業時間前までに提出することをお勧めします。また、ブラックフライデー/サイバーマンデー期間の定員が限られているため、可能な限り事前にリクエストすることをお勧めします。**
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 サポートナレッジベースでは、
 
-* [Cloud 上のAdobe Commerceの CPU 割り当ての計算 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
-* [Cloud 上のAdobe Commerceでホストのインスタンスのアップサイズが必要かどうかを確認する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
-* [ クラウド上のAdobe Commerceでホストの CPU 設定を確認する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
-* [Cloud 上のAdobe Commerceの停止の特定と測定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html)
+* [Cloud 上のAdobe Commerceの CPU 割り当ての計算 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html?lang=ja)
+* [Cloud 上のAdobe Commerceでホストのインスタンスのアップサイズが必要かどうかを確認する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html?lang=ja)
+* [ クラウド上のAdobe Commerceでホストの CPU 設定を確認する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html?lang=ja)
+* [Cloud 上のAdobe Commerceの停止の特定と測定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html?lang=ja)

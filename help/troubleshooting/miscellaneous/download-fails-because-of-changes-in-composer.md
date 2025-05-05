@@ -52,5 +52,5 @@ Composer version 1.0-dev (2b14f0a047dd4f3545ec82381f65c36ea93a4c81) 2015-11-25 1
    * Composer を 2015 年 11 月 26 日（PT）以降のバージョンにアップグレード：`composer self-update`
 
 1. Adobe Commerce ディレクトリとサブディレクトリを削除します。
-1. `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` または `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)` を使用して、もう一度ダウンロードしてみてください。
+1. `[composer create-project](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer)` または `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)` を使用して、もう一度ダウンロードしてみてください。
 1. Adobe Commerce ソフトウェアのダウンロードが完了したら、Composer を更新します。`composer self-update`

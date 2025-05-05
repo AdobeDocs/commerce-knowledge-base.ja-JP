@@ -30,7 +30,7 @@ Adobe Commerce（すべてのデプロイメント）およびMagento Open Sourc
 
 ストアテーマをリセットする必要があるが、管理パネルにアクセスできない場合は、次の手順を実行してデータベース内でテーマをリセットできます。
 
-1. [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。`UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
+1. [phpMyAdmin](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスして、次の SQL クエリを実行します。`UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
 1. 次のディレクトリをクリアします。
    * `pub/static/frontend`
    * `var/view_preprocessing`

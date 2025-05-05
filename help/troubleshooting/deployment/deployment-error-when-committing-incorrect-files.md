@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-ファイルやフォルダーのリポジトリにコミットすると、デプロイメントエラーが発生します。 例えば、次のエラーは、[ ビルドフェーズ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase) 中に DB が現在使用可能でないときに DB に接続しようとすることが原因で発生します。
+ファイルやフォルダーのリポジトリにコミットすると、デプロイメントエラーが発生します。 例えば、次のエラーは、[ ビルドフェーズ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=ja#build-phase) 中に DB が現在使用可能でないときに DB に接続しようとすることが原因で発生します。
 
 ```SQL
 SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i  
@@ -42,7 +42,7 @@ SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i
 
 ## 原因：
 
-特定のファイルやフォルダーは、[ デプロイメントワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) で中断を引き起こすので、リポジトリにコミットしないでください。
+特定のファイルやフォルダーは、[ デプロイメントワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=ja) で中断を引き起こすので、リポジトリにコミットしないでください。
 
 ## 解決策
 

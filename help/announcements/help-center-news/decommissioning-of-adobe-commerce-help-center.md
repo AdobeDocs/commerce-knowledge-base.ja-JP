@@ -14,11 +14,11 @@ ht-degree: 0%
 # Adobe Commerce ヘルプセンターの廃止
 
 Adobeソリューションファミリーとの連携を強化するために、Adobe Commerceは、サポートの受け取りプロセスをAdobe Commerce ヘルプセンターからAdobe Experience Leagueに移行しました。
-2024 年 7 月 29 日（PT）に、Adobe Commerce ヘルプセンターは読み取り専用ステータスになり、新しいサポートケースはすべて [Adobe Experience League](https://experienceleague.adobe.com/) を通じて申請されるようになりました。
+2024 年 7 月 29 日（PT）に、Adobe Commerce ヘルプセンターは読み取り専用ステータスになり、新しいサポートケースはすべて [Adobe Experience League](https://experienceleague.adobe.com/ja) を通じて申請されるようになりました。
 
 >[!NOTE]
 >
->**サポートケースを送信するには、[ ここ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) で説明されているExperience Leagueケースのフォームフローを使用します。**
+>**サポートケースを送信するには、[ ここ ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) で説明されているExperience Leagueケースのフォームフローを使用します。**
 
 ## Adobe Commerce ヘルプセンターでの過去のケースの表示
 
@@ -34,4 +34,4 @@ Adobeでは、Adobe Commerce ヘルプセンターの過去のケースの表示
 
 >[!NOTE]
 >
->Adobe Commerce ヘルプセンターのナレッジベースの部分も、[Adobe Experience League ポータル ](https://experienceleague.adobe.com/) に移行されました。 サポートチケットを作成すると、関連するナレッジベース記事が、Adobe Experience Leagueのその他の関連するAdobe Commerce ドキュメントと共に提案されます。
+>Adobe Commerce ヘルプセンターのナレッジベースの部分も、[Adobe Experience League ポータル ](https://experienceleague.adobe.com/ja) に移行されました。 サポートチケットを作成すると、関連するナレッジベース記事が、Adobe Experience Leagueのその他の関連するAdobe Commerce ドキュメントと共に提案されます。

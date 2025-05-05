@@ -18,11 +18,11 @@ ht-degree: 0%
 >
 >以前に提供されたパッチの代わりに、[!DNL Quality Patches Tool] （QPT） 1.1.57 リリースの ACSD-61622 パッチを使用してください。 新しいパッチは、Adobe Commerce バージョン（すべてのデプロイメント方法） 2.4.6-p1 ～ 2.4.6-p8 と互換性があります。 新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される場合があります。
 >
->詳しくは、Adobe Commerce ツールガイドの [ACSD-61622 パッチの記事 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) を参照してください。
+>詳しくは、Adobe Commerce ツールガイドの [ACSD-61622 パッチの記事 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) を参照してください。
 
 >[!WARNING]
 >
->新しいパッチをインストールする前に、この記事で提供されている以前のパッチをアンインストールする必要があります。 パッチのアンインストール手順については、ユーザーガイドの [ カスタムパッチを元に戻す ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) を参照してください。
+>新しいパッチをインストールする前に、この記事で提供されている以前のパッチをアンインストールする必要があります。 パッチのアンインストール手順については、ユーザーガイドの [ カスタムパッチを元に戻す ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) を参照してください。
 
 
 この記事では、SOAPからAdobe Commerce 2.4.4-p4 - 2.4.6-pX の RESTful API への [!DNL FedEx] Shipping Method integration の移行に関する問題を解決するためのパッチを提供します。
@@ -75,7 +75,7 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、次�
 
 ## パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースで [Adobe提供の Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照して手順を確認します。
+ファイルを解凍し、サポートナレッジベースで [Adobe提供の Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=ja) を参照して手順を確認します。
 
 ## パッチが適用されているかどうかを知る方法
 
@@ -83,7 +83,7 @@ Adobe CommerceまたはMagento Open Sourceのバージョンに応じて、次�
 
 <u> これは、次の手順で実行できます </u>。
 
-1. [ をインストールします  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
+1. [ をインストールします  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja)。
 1. 次のコマンドを実行します。
 
    ```bash

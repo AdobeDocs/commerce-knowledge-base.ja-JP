@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-2022 年 8 月に、マーチャントが DHL 配送を引き続き提供できるように、[DHL スキーマバージョン 6.2 のアップグレード ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) 修正パッチと共に）リリースされました。 DHL では再び新しいスキーマ（バージョン 10.0）を 2022 年 10 月に導入し、以前のバージョン（6.2 スキーマ）は 2022 年 12 月末に非推奨（廃止予定）になります。 Adobe Commerce 2.4.5 以前の DHL 統合では、バージョン 6.2 のみがサポートされています。
+2022 年 8 月に、マーチャントが DHL 配送を引き続き提供できるように、[DHL スキーマバージョン 6.2 のアップグレード ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html?lang=ja) 修正パッチと共に）リリースされました。 DHL では再び新しいスキーマ（バージョン 10.0）を 2022 年 10 月に導入し、以前のバージョン（6.2 スキーマ）は 2022 年 12 月末に非推奨（廃止予定）になります。 Adobe Commerce 2.4.5 以前の DHL 統合では、バージョン 6.2 のみがサポートされています。
 
 ## 解決策
 
@@ -35,8 +35,8 @@ ht-degree: 0%
 
 デプロイメント方法に応じて、[!DNL Quality Patches Tool] の使用方法とパッチのインストール方法については、次のリンクを参照してください。
 
-* Adobe Commerceのオンプレミス環境およびMagento Open Source:Adobe Experience Leagueの [ 品質パッチ ツール/使用方法 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe Commerceのオンプレミス環境およびMagento Open Source:Adobe Experience Leagueの [ 品質パッチ ツール/使用方法 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja)。
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 **パッチは、次のAdobe Commerce バージョン（すべてのデプロイメント方法）に適用されます。**
 
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 ## 役に立つリンク
 
-* [[!DNL Quality Patches Tool] > リリースノ ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) ト（Adobe Experience League）
+* [[!DNL Quality Patches Tool] > リリースノ ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja) ト（Adobe Experience League）
 
-* [[!DNL Quality Patches Tool]:Adobe Experience Leagueでパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 検索します。
+* [[!DNL Quality Patches Tool]:Adobe Experience Leagueでパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) 検索します。
 
 ## 関連資料
 
-* [ 配送業者として DHL を引き続き提供するためのパッチを ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) アドビのサポートナレッジベースで適用してください。
+* [ 配送業者として DHL を引き続き提供するためのパッチを ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html?lang=ja) アドビのサポートナレッジベースで適用してください。
 
-* [ 配送業者 > DHL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl.html) をユーザーガイドに記載します。
-* ユーザーガイドの [ 設定リファレンス/販売/配信方法 ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html)。
+* [ 配送業者 > DHL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl.html?lang=ja) をユーザーガイドに記載します。
+* ユーザーガイドの [ 設定リファレンス/販売/配信方法 ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html?lang=ja)。

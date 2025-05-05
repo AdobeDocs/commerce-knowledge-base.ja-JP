@@ -29,7 +29,7 @@ ht-degree: 0%
 
 crontab が設定されているかどうかを確認するには、次の手順に従います。
 
-1. [MagentoのファイルシステムのオーナーとしてCommerce サーバーにログインするか、](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) に切り替えます。
+1. [MagentoのファイルシステムのオーナーとしてCommerce サーバーにログインするか、](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) に切り替えます。
 1. 次のファイルが存在するかどうかを確認します：`$ ls -al <magento_root>/var/.setup_cronjob_status`。 ファイルが存在する場合、cron は過去に正常に実行されています。 ファイル *が存在しない* 場合は、まだAdobe Commerceをインストールしていないか、cron が動作していません。 どちらの場合も、次の手順に進みます。
 1. cron の詳細を見る。 `root` 権限を持つユーザーとして、次のコマンドを入力します：`$ crontab -u <Magento file system owner name> -l`。 例えば、CentOS `$ crontab -u magento_user -l` の場合は次のようになります。 ユーザーに crontab が設定されていない場合は、次のメッセージが表示されます。    `no crontab for magento_user`。 crontab には次の情報が表示されます。
    * 使用している PHP バイナリ （場合によっては複数のバイナリを使用）
@@ -40,17 +40,17 @@ crontab が設定されているかどうかを確認するには、次の手順
 
 ## 解決策：crontab が設定されていない {#solution-crontab-not-set-up}
 
-Cron ジョブが正しく設定されていることを確認するには、開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
+Cron ジョブが正しく設定されていることを確認するには、開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
 
 ## 解決策：間違った PHP バイナリから実行されている cron {#solution-cron-running-from-incorrect-php-binary}
 
 Cron ジョブで web サーバープラグインとは異なる PHP バイナリを使用している場合は、PHP 設定エラーが表示される場合があります。 この問題を解決するには、PHP コマンドラインと PHP Web Server プラグインの両方に同じ PHP 設定を指定します。
 
-PHP 設定について詳しくは、開発者向けドキュメントの [ 必要な PHP 設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
+PHP 設定について詳しくは、開発者向けドキュメントの [ 必要な PHP 設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
 
 ## 解決策：cron がエラーで実行されている {#solution-cron-running-with-errors}
 
-コマンドに役立つエラーメッセージが表示される可能性があるので、各コマンドを手動で実行してみてください。 開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
+コマンドに役立つエラーメッセージが表示される可能性があるので、各コマンドを手動で実行してみてください。 開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
 
 >[!NOTE]
 >

@@ -52,6 +52,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 設定を書き出す ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) を参照してください。
-* 開発者向けドキュメントの [ 設定値を設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) します。
+* 開発者向けドキュメントの [ 設定を書き出す ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) を参照してください。
+* 開発者向けドキュメントの [ 設定値を設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) します。
 * [ クラウドインフラストラクチャー上のAdobe Commerce:Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) を使用して、デプロイメントのダウンタイムを短縮できます。

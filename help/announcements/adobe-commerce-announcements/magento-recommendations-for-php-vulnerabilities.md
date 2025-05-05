@@ -28,7 +28,7 @@ Adobe Commerce サイトの影響と手順については、以下を参照し�
 この更新用にクラウドサイトを再デプロイする際の追加メモ：
 
 * サイトで PHP バージョン 7.0 を使用している場合、これらのセキュリティアップデートを利用するには、再デプロイする前にサポートされている PHP バージョンにアップグレードする必要があります。
-* 2.1.x/2.2.x の場合、PHP のアップグレードに関する詳細は [ こちら ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) を参照してください。
+* 2.1.x/2.2.x の場合、PHP のアップグレードに関する詳細は [ こちら ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja) を参照してください。
 
 \* *この記事の以前のバージョンとメッセージングは 9 月 19 日（PT）に発表されましたが、チームは予定より早く作業を完了しました。*
 

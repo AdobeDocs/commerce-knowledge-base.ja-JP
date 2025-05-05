@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ## Fastly 資格情報の表示方法
 
-詳しくは、開発者向けドキュメントの [Fastly 資格情報の取得 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) の節を参照してください。
+詳しくは、開発者向けドキュメントの [Fastly 資格情報の取得 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) の節を参照してください。
 
 ## Fastly 資格情報のテスト方法
 
-詳しくは、開発者向けドキュメントの [Fastly 資格情報のテスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) の節を参照してください。
+詳しくは、開発者向けドキュメントの [Fastly 資格情報のテスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) の節を参照してください。
 

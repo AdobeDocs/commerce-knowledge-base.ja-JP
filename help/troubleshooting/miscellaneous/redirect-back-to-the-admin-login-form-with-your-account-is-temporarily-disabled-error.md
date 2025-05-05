@@ -37,9 +37,9 @@ ht-degree: 0%
 ## 解決策
 
 1. データベースバックアップを作成します。
-1. [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスします。 `admin_user` データベース テーブルで、管理者ユーザーレコードに対して、`is_active` が&quot;`1`&quot;に設定され、`lock_expires` が `NULL` になっているかどうかを確認します。 必要に応じて、これらの値をリセットします。
+1. [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) などのデータベースツールを使用するか、コマンドラインから手動で DB にアクセスします。 `admin_user` データベース テーブルで、管理者ユーザーレコードに対して、`is_active` が&quot;`1`&quot;に設定され、`lock_expires` が `NULL` になっているかどうかを確認します。 必要に応じて、これらの値をリセットします。
 
 ## 関連資料
 
-* [[!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) にログインしようとすると、エラーなしでログインフォームにリダイレクトし直す
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) にログインしようとすると、エラーなしでログインフォームにリダイレクトし直す
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

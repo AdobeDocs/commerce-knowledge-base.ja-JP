@@ -36,11 +36,11 @@ MySQL 検索エンジンが廃止された理由は、Elasticsearchが優れた�
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">MySQL</td>
-<td style="width: 478.2px;">Elasticsearchをインストールしてください。 開発者向けドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search">Elasticsearchのインストールと設定 </a> を参照してください。</td>
+<td style="width: 478.2px;">Elasticsearchをインストールしてください。 開発者向けドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search">Elasticsearchのインストールと設定 </a> を参照してください。</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch（バージョンがリストに表示されていません）</td>
-<td style="width: 478.2px;">Elasticsearch 2 を使用しており、Elasticsearch 7 （推奨）または 6 に更新する必要があります。 詳しくは、開発者向けドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search#es-upgrade6">Elasticsearchのアップグレード </a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine">Elasticsearchを使用するようにCommerceを設定 </a> を参照してください。</td>
+<td style="width: 478.2px;">Elasticsearch 2 を使用しており、Elasticsearch 7 （推奨）または 6 に更新する必要があります。 詳しくは、開発者向けドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search#es-upgrade6">Elasticsearchのアップグレード </a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/configure-search-engine">Elasticsearchを使用するようにCommerceを設定 </a> を参照してください。</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
@@ -59,7 +59,7 @@ MySQL 検索エンジンが廃止された理由は、Elasticsearchが優れた�
 
 ## インストール：
 
-Adobe Commerce オンプレミスおよびMagento Open Source 2.4.0 がリリースされると、Elasticsearchが必要なコンポーネントになるので、バージョン 2.4.0 をインストールする前にElasticsearchホストをセットアップして設定する必要があります。開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
+Adobe Commerce オンプレミスおよびMagento Open Source 2.4.0 がリリースされると、Elasticsearchが必要なコンポーネントになるので、バージョン 2.4.0 をインストールする前にElasticsearchホストをセットアップして設定する必要があります。開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 
 デフォルトでは、Adobe Commerce検索はElasticsearch 7 を検索エンジンとして使用し、localhost:9200 のサーバーへの接続を試みます。 Elasticsearch 6.x もサポートされています。 設定がデフォルトと一致しない場合は、データベース接続を設定する場合と同様に、`setup:install` に渡される引数を使用してこれらの設定を設定できます。
 

@@ -28,6 +28,6 @@ ht-degree: 0%
 
 メールアドレスを変更するには、次の手順に従います。
 
-1. 古いメールアドレスで使用されているパスワードをリセットします。 Adobe helpx の [ パスワードを忘れた場合のリセット ](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) に記載されている手順に従います。
+1. 古いメールアドレスで使用されているパスワードをリセットします。 Adobe helpx の [ パスワードを忘れた場合のリセット ](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html) に記載されている手順に従います。
 1. パスワードリセットリンクは、現在の所有者のメールボックスに手順と共に送信されます。
 1. [Adobeアカウントページに移動し ](https://account.adobe.com) 新しいメールアドレスでログインして、パスワードを設定します。

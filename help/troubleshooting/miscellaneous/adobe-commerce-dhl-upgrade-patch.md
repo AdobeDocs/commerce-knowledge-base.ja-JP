@@ -29,7 +29,7 @@ DHL は 6.2 スキーマバージョンを導入しており、2022 年 7 月末
 ## パッチ
 
 パッチ ID は、Quality Patches Tool バージョン 1.1.16 で使用可能な AC-3022 です。
-QPT の使用方法とパッチのインストール方法については、開発者向けドキュメントの [Quality Patches Tool （QPT） > Usage](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) の記事を参照してください。
+QPT の使用方法とパッチのインストール方法については、開発者向けドキュメントの [Quality Patches Tool （QPT） > Usage](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) の記事を参照してください。
 
 このパッチは、次のAdobe Commerce バージョンに適用されます。
 
@@ -38,5 +38,5 @@ QPT の使用方法とパッチのインストール方法については、開�
 
 ## 関連資料
 
-* [ 配送業者 > DHL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) ユーザーガイド
-* ユーザーガイドの [ 配信方法 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods)
+* [ 配送業者 > DHL](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) ユーザーガイド
+* ユーザーガイドの [ 配信方法 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/delivery-methods)

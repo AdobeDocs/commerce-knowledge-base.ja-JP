@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Commerce Marketplace経由で拡張機能を購入した場合、コア Adobe Commerce Extension Managerを使用してインストールすることはできません。 アクセスキーを追加して Marketplace に同期すると、Extension Managerに拡張機能が表示されません。
 
-この問題の **回避策** は、開発者向けドキュメントの [ 一般的な CLI のインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) に示されているように、コマンドライン Adobe Commerceのインストールを使用することです。
+この問題の **回避策** は、開発者向けドキュメントの [ 一般的な CLI のインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions) に示されているように、コマンドライン Adobe Commerceのインストールを使用することです。
 
 <u> 再現手順 </u>:
 
@@ -44,4 +44,4 @@ Commerce Marketplace経由で拡張機能を購入した場合、コア Adobe Co
 
 ## 回避策
 
-開発者向けドキュメントの [ 一般的な CLI のインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) に示されているコマンドライン Adobe Commerceのインストールを使用します。
+開発者向けドキュメントの [ 一般的な CLI のインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions) に示されているコマンドライン Adobe Commerceのインストールを使用します。

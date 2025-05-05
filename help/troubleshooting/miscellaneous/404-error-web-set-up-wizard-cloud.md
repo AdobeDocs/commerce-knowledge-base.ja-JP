@@ -43,9 +43,9 @@ Web セットアップウィザードは、クラウドインフラストラク�
 
 この機能は、クラウドインフラストラクチャー上のAdobe Commerceでは無効になっています。
 
-アドビのクラウドインフラストラクチャでAdobe Commerceの更新を実行したり、外部モジュールをインストールしたりする方法について詳しくは、開発者向けドキュメントの [ 拡張機能のインストール、管理、アップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
-アップデートの実行方法やAdobe Commerce オンプレミス用の外部モジュールのインストール方法については、開発者向けドキュメントの [ クイックスタートインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) を参照してください。
+アドビのクラウドインフラストラクチャでAdobe Commerceの更新を実行したり、外部モジュールをインストールしたりする方法について詳しくは、開発者向けドキュメントの [ 拡張機能のインストール、管理、アップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
+アップデートの実行方法やAdobe Commerce オンプレミス用の外部モジュールのインストール方法については、開発者向けドキュメントの [ クイックスタートインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer) を参照してください。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 拡張機能のインストール ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) を参照してください。
+* 開発者向けドキュメントの [ 拡張機能のインストール ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) を参照してください。

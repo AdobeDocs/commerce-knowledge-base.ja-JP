@@ -48,11 +48,11 @@ Adobe Commerce on cloud infrastructure プロジェクトを計画する際に�
 
 サポートナレッジベースでは、
 
-* [ ステージング環境と実稼動環境での Fastly DNS 設定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [ クラウド上のスタータープラン用に Fastly を設定する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [ クラウドインフラストラクチャー上でのAdobe Commerceの立ち上げに対する潜在的なブロッカー ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [ ステージング環境と実稼動環境での Fastly DNS 設定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=ja)
+* [ クラウド上のスタータープラン用に Fastly を設定する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=ja)
+* [ クラウドインフラストラクチャー上でのAdobe Commerceの立ち上げに対する潜在的なブロッカー ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=ja)
 
 開発者向けドキュメントでは、
 
-* [Fastly の概要 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [ 運用開始チェックリスト：Fastly の DNS 設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Fastly の概要 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja)
+* [ 運用開始チェックリスト：Fastly の DNS 設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja)

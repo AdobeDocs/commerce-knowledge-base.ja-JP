@@ -33,7 +33,7 @@ ht-degree: 0%
 
 暗号化キーをコピーするには：
 
-1. 開発者向けドキュメントの [ 環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) に記載されているように、データベースダンプのソースとなったプロジェクトに SSH で接続します。
+1. 開発者向けドキュメントの [ 環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) に記載されているように、データベースダンプのソースとなったプロジェクトに SSH で接続します。
 1. `app/etc/env.php` をテキストエディターで開きます。
 1. `crypt` の `key` の値をコピーします。
 
@@ -44,7 +44,7 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 宛先プロジェクトのキー値を設定するには：
 
 1. [Cloud Console](https://console.adobecommerce.com) を開き、プロジェクトを探します。
-1. 開発者向けドキュメントの [ プロジェクトの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) の説明に従って、（開発者向けドキュメントの [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) 変数の値を設定します。 これにより、デプロイメントプロセスがトリガーさ `CRYPT_KEY`、デプロイメントのたびに `app/etc/env.php` ファイルで上書きされます。
+1. 開発者向けドキュメントの [ プロジェクトの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja) の説明に従って、（開発者向けドキュメントの [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja) 変数の値を設定します。 これにより、デプロイメントプロセスがトリガーさ `CRYPT_KEY`、デプロイメントのたびに `app/etc/env.php` ファイルで上書きされます。
 
 オプションで、`app/etc/env.php` ファイルの暗号化キーを手動で上書きできます。
 

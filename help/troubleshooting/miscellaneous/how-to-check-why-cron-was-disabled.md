@@ -53,21 +53,21 @@ ht-degree: 0%
 
 ### [!DNL OpCache] 設定の欠落の解決策 {#solution-missed-opcache-settings}
 
-Commerce ナレッジベースの [[!DNL Cron]  設定の誤りまたは欠落  [!DNL OpCache]  設定が原因で停止 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings) を参照してください。
+Commerce ナレッジベースの [[!DNL Cron]  設定の誤りまたは欠落  [!DNL OpCache]  設定が原因で停止 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings) を参照してください。
 
 ### インフラストラクチャチームによる無効化向けソリューション {#solution-disabled-by-infrastructure-team}
 
 1. サイトがダウンしているか、応答していない以前のサポートチケットを確認します。
 1. 次に、インフラストラクチャチームが無効にしたことを示したかどうかを確認します。
 1. インフラストラクチャチームによって発生した問題や懸念に対処したことを確認します。
-1. さらにサポートが必要な場合は [ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) を送信し、[!DNL cron] を再度有効にして、インフラストラクチャチームが示した問題に対処する方法を説明するようリクエストします。
+1. さらにサポートが必要な場合は [ サポートリクエスト ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) を送信し、[!DNL cron] を再度有効にして、インフラストラクチャチームが示した問題に対処する方法を説明するようリクエストします。
 
 ### 展開用のソリューションが失敗しました {#solution-deployment-failed}
 
 デプロイメントログを確認します。
 
-* Commerce on Cloud Infrastructure ガイドの [ ログの表示と管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)。
-* Commerce ナレッジベースの [Cloud UI にエラーがあ *`log snipped`* 場合のデプロイメントログの確認 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)。
+* Commerce on Cloud Infrastructure ガイドの [ ログの表示と管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations)。
+* Commerce ナレッジベースの [Cloud UI にエラーがあ *`log snipped`* 場合のデプロイメントログの確認 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)。
 
 1. `setup:upgrade` の手順でデプロイメントが失敗した場合、[!DNL cron] は再度有効になりません。
 例：デプロイメントログには、次の行が表示されます。
@@ -80,4 +80,4 @@ Commerce ナレッジベースの [[!DNL Cron]  設定の誤りまたは欠落  
 ...<br>
    ```  [2024-02-07T10:50:09.579005+00:00] INFO: Enable cron```
 
-**さらにサポートが必要な場合は [ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) を送信します。**
+**さらにサポートが必要な場合は [ サポートリクエスト ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) を送信します。**

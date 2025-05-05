@@ -1,6 +1,6 @@
 ---
 title: Core Adobe Commerce Payment Integrations の償却
-description: 支払いサービス指令PSD2 （[ 支払いサービス指令 ] （https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html）の詳細を参照）および多くの API の継続的な進化により、Adobe Commerceのコア支払い統合の多くは時代遅れになり、将来的にセキュリティへの準拠を失うリスクがあります。 そのため、多くのコア支払い統合は既に廃止されているか、まもなく廃止される予定です。対応するCommerce Marketplace拡張機能への移行をお勧めします。 支払い統合の最近の非推奨（廃止予定）を確認するには、以下の残りの記事を参照してください。 各**ステータス**リンクはアドビのユーザーガイドに記載されています。 **以下の統合機能はすべてAdobe Commerce 2.4.0 リリースから削除され、2.3 のバージョンから廃止されます。**
+description: 支払いサービス指令PSD2 （[ 支払いサービス指令 ] （https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html?lang=ja）の詳細を参照）および多くの API の継続的な進化により、Adobe Commerceのコア支払い統合の多くは時代遅れになり、将来的にセキュリティへの準拠を失うリスクがあります。 そのため、多くのコア支払い統合は既に廃止されているか、まもなく廃止される予定です。対応するCommerce Marketplace拡張機能への移行をお勧めします。 支払い統合の最近の非推奨（廃止予定）を確認するには、以下の残りの記事を参照してください。 各**ステータス**リンクはアドビのユーザーガイドに記載されています。 **以下の統合機能はすべてAdobe Commerce 2.4.0 リリースから削除され、2.3 のバージョンから廃止されます。**
 exl-id: c2c4b3b6-409d-466f-a4f3-dfe13ac7f972
 feature: Compliance, Integration
 source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Core Adobe Commerce Payment Integrations の償却
 
-支払いサービス指令PSD2 （[ 支払いサービス指令 ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html) の詳細を参照してください）と多くの API の継続的な進化により、Adobe Commerceのコア支払い統合の多くが時代遅れになり、将来セキュリティへの準拠が失われるリスクがあります。 そのため、多くのコア支払い統合は既に廃止されているか、まもなく廃止される予定です。対応するCommerce Marketplace拡張機能への移行をお勧めします。 支払い統合の最近の非推奨（廃止予定）を確認するには、以下の残りの記事を参照してください。 各 **ステータス** リンクはアドビのユーザーガイドに記載されています。 **以下の統合はすべてAdobe Commerce 2.4.0 リリースから削除され、2.3 リリースから非推奨（廃止予定）になりました。**
+支払いサービス指令PSD2 （[ 支払いサービス指令 ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html?lang=ja) の詳細を参照してください）と多くの API の継続的な進化により、Adobe Commerceのコア支払い統合の多くが時代遅れになり、将来セキュリティへの準拠が失われるリスクがあります。 そのため、多くのコア支払い統合は既に廃止されているか、まもなく廃止される予定です。対応するCommerce Marketplace拡張機能への移行をお勧めします。 支払い統合の最近の非推奨（廃止予定）を確認するには、以下の残りの記事を参照してください。 各 **ステータス** リンクはアドビのユーザーガイドに記載されています。 **以下の統合はすべてAdobe Commerce 2.4.0 リリースから削除され、2.3 リリースから非推奨（廃止予定）になりました。**
 
 <table style="height: 243px;" width="712">
 <tbody>
@@ -23,27 +23,27 @@ ht-degree: 0%
 </tr>
 <tr>
 <td style="width: 225.455px;">Worldpay</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">2.3.5.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja#recommended-solutions">2.3.5.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
 <td style="width: 226.364px;">PSD2 の要件に準拠するために推奨するソリューションを支払いプロバイダーに問い合わせてください。</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">Authorize.net</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">2.3.4.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja#recommended-solutions">2.3.4.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
 <td style="width: 226.364px;">代わりに、Commerce Marketplaceの <a href="https://marketplace.magento.com/authorizenet-magento-module-authorizenet.html"> 公式拡張機能 </a> を使用します。</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">Authorize.net （ダイレクトPost）</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">2.3.1.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja#recommended-solutions">2.3.1.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
 <td style="width: 226.364px;">代わりに、Commerce Marketplaceの <a href="https://marketplace.magento.com/authorizenet-magento-module-authorizenet.html"> 公式拡張機能 </a> を使用します。</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">CyberSource</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">2.3.3.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja#recommended-solutions">2.3.3.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
 <td style="width: 226.364px;">代わりに、Commerce Marketplaceの <a href="https://marketplace.magento.com/cybersource-global-payment-management.html"> 公式拡張機能 </a> を使用します。</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">eWay</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">2.3.3.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja#recommended-solutions">2.3.3.2</a><br>4.0 以降で非推奨 – 完全に削除されます</td>
 <td style="width: 226.364px;">PSD2 の要件に準拠するために推奨するソリューションを支払いプロバイダーに問い合わせてください。</td>
 </tr>
 </tbody>

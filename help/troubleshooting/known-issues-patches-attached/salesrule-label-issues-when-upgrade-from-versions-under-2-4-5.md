@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## パッチの適用方法
 
-1. Commerce ガイドの [ アップグレードを実行する ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) の手順に従います。
+1. Commerce ガイドの [ アップグレードを実行する ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=ja) の手順に従います。
 1. **[!UICONTROL Update metadata]** フェーズの前に、添付のパッチを適用します。
 （**[!UICONTROL Update metadata]** フェーズが完了した後にパッチを適用することもできますが、その場合は `bin/magento setup:upgrade` を再度実行する必要があります）。
-1. [ アップグレードの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) の残りの手順に進みます。
+1. [ アップグレードの実行 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=ja) の残りの手順に進みます。

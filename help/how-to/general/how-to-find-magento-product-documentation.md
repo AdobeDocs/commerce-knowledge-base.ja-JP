@@ -44,7 +44,7 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 <tr>
 <td>
 <p>マーチャント（エンドユーザー）ドキュメント：</p>
-<p><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home</a></p>
+<p><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home</a></p>
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 </td>
 <td>
 <p>マーチャント（エンドユーザー）ドキュメント：</p>
-<p><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home</a></p>
+<p><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home</a></p>
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 </td>
 <td>
 <p>マーチャント（エンドユーザー）ドキュメント：</p>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html">https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html</a></p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html?lang=ja">https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html?lang=ja</a></p>
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 <td>Adobe CommerceBusiness Intelligence</td>
 <td>
 <p>マーチャント（エンドユーザー）ドキュメント：</p>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html">https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html</a></p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=ja">https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=ja</a></p>
 </td>
 </tr>
 <tr>

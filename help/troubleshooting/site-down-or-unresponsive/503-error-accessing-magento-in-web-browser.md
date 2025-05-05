@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u> 再現手順 </u>
 
-（前提条件：ストアが [ メンテナンスモード ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show)）になっていないことを確認します。
+（前提条件：ストアが [ メンテナンスモード ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show)）になっていないことを確認します。
 
 Web ブラウザーでCommerce管理者またはストアフロントに移動します。
 

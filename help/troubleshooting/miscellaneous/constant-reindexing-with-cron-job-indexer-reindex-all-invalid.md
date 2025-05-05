@@ -55,7 +55,7 @@ SELECT TIMESTAMPDIFF(SECOND, executed_at, finished_at) AS period FROM cron_sched
 SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' AND executed_at IS NOT NULL ORDER BY executed_at ASC LIMIT 1;
 ```
 
-適切に評価を行うのに十分な時間が得られない場合は、この [[!DNL Cron]  （スケジュールされたタスク）ガイドに従って成功した `cron` プロセスがログに保持される時間を増やし ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)**[!DNL Success History Lifetime]** 値を増やすことができます（デフォルトは 60 分だけです）。
+適切に評価を行うのに十分な時間が得られない場合は、この [[!DNL Cron]  （スケジュールされたタスク）ガイドに従って成功した `cron` プロセスがログに保持される時間を増やし ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=ja)**[!DNL Success History Lifetime]** 値を増やすことができます（デフォルトは 60 分だけです）。
 
 
 ## 解決策
@@ -77,4 +77,4 @@ SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_inva
 
 ## 関連資料
 
-Adobe Commerce Operations Configuration Guide の [Configure [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)。
+Adobe Commerce Operations Configuration Guide の [Configure [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=ja)。

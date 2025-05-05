@@ -31,12 +31,12 @@ ht-degree: 0%
 
 アセットがプロジェクトに追加されていない場合は、アセットを [!DNL Super User] として追加し、[!DNL Shared Access] の権限を付与する必要があります。
 
-* ユーザーガイドの [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)。
-* Commerce ナレッジベースの [Adobe Commerce クラウドプロジェクトにユーザーを追加できない ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html)。
-* [Adobe Commerce ヘルプセンターユーザーガイド：共有アクセス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) （Commerce ナレッジベース）。
+* ユーザーガイドの [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja)。
+* Commerce ナレッジベースの [Adobe Commerce クラウドプロジェクトにユーザーを追加できない ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html?lang=ja)。
+* [Adobe Commerce ヘルプセンターユーザーガイド：共有アクセス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#shared-access) （Commerce ナレッジベース）。
 
-ユーザーが [!DNL cloud project] に追加されたが、[!DNL Super User role] がない場合、[ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) で適切に [!DNL role] を更新します。
+ユーザーが [!DNL cloud project] に追加されたが、[!DNL Super User role] がない場合、[ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja) で適切に [!DNL role] を更新します。
 
 ## 関連資料
 
-[ 以前のチームメンバーには、Adobe Commerce Cloud 通知メールが届きます ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)
+[ 以前のチームメンバーには、Adobe Commerce Cloud 通知メールが届きます ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html?lang=ja)

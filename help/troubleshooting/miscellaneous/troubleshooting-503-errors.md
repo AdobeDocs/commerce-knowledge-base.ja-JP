@@ -63,4 +63,4 @@ Varnish がキャッシュアプリケーションとして設定されていて
 $ bin/magento cache:enable
 ```
 
-コマンドラインの使用について詳しくは、「[ コマンドライン設定の概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) を参照してください。
+コマンドラインの使用について詳しくは、「[ コマンドライン設定の概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/config-cli) を参照してください。

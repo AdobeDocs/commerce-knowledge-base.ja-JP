@@ -1,6 +1,6 @@
 ---
 title: 「MDVA-39482：バックオーダーが有効な状態で数量「0」でインポートした場合、製品の在庫切れになる」
-description: MDVA-39482 は、MSI とバックオーダーが有効で、在庫切れのしきい値がマイナス値に設定されている場合に、数量が「0」でインポートされた場合に製品の在庫切れになる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.4 がインストールされている場合に利用できます。 パッチ ID は MDVA-39482。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+description: MDVA-39482 は、MSI とバックオーダーが有効で、在庫切れのしきい値がマイナス値に設定されている場合に、数量が「0」でインポートされた場合に製品の在庫切れになる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview） 1.1.4 がインストールされている場合に利用できます。 パッチ ID は MDVA-39482。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 exl-id: 2caf461c-993d-48b3-bc47-3fa1d014deaf
 feature: Data Import/Export, Orders, Products
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39482: バックオーダーが有効な&#39;0&#39;数量でインポートした場合、商品の在庫切れになります
 
-MDVA-39482 は、MSI とバックオーダーが有効で、在庫切れのしきい値がマイナス値に設定されている場合に、数量が「0」でインポートされた場合に製品の在庫切れになる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview)1.1.4 がインストールされている場合に使用できます。 パッチ ID は MDVA-39482。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-39482 は、MSI とバックオーダーが有効で、在庫切れのしきい値がマイナス値に設定されている場合に、数量が「0」でインポートされた場合に製品の在庫切れになる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview)1.1.4 がインストールされている場合に使用できます。 パッチ ID は MDVA-39482。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.6 ～ 2.3.7-p2�
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -64,8 +64,8 @@ MSI とバックオーダーが有効で、在庫切れのしきい値がマイ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：開発者向けドキュメントの [Software Update Guide > Apply Patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 
