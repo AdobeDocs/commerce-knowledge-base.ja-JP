@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: a4a913c9159e9267ca20da99b9d690c85667c7db
+source-git-commit: 75bf72db367c120efe650d42fe0cf0bc9d51109b
 workflow-type: tm+mt
-source-wordcount: '9340'
+source-wordcount: '9350'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 0%
          * [MDVA-43824：注文のキャンセル操作が失敗し、「アイテムがキャンセルされていません」というエラーが表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-43824-order-cancellation-action-failed-with-error.md)
          * [MDVA-43862:GraphQLの UpdateCartItems ミューテーションエラーにより、顧客が買い物かご項目を更新できない](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-43862-unable-to-update-cart-items-because-of-graphql-updatecartitems-mutation-error.md)
          * [MDVA-43935：製品ページにアップセル製品が 2 回表示される](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-43935-upsell-product-shown-twice-on-product-page.md)
-         * [MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-44188-emails-are-not-sent.md)
+         * [MDVA-44188: ``を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/v1-1-13/mdva-44188-emails-are-not-sent.md)
       * v1.1.14 {#v1-1-14}
          * [概要：品質向上パッチツール（QPT） v1.1.14](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/overview.md)
          * [MDVA-43102：販売可能数量が正しく更新されていません](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)
@@ -946,6 +946,7 @@ ht-degree: 0%
       * [SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Adobe Commerceで Cookie の最大数を超えるとエラーが発生する](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
       * [APSB25-08 セキュリティパッチ後のすべての一括非同期 web エンドポイントの実行時間が短縮されました](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
+      * [顧客グループ名、セグメントおよびプロモーションルール情報が、 [!DNL GraphQL] の方法で公開される。](/help/troubleshooting/known-issues-patches-attached/hotfix-for-exposed-customer-group-segments-promo-rules-information.md)
    * Elasticsearch {#elasticsearch}
       * [検索エンジンがに設定されている場合に  [!DNL Elasticsearch7]  フォールバック  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
