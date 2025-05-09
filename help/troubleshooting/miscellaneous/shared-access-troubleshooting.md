@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 共有アクセスを使用して [!UICONTROL Support] をクリックしましたが、組織の新しいチケットを開いたとき、フォームで使用できる製品がありませんでした
 
-**問題：**[Experience Leagueでチケットを開く際に、適切なクラウドプロジェクトを選択できない ](https://experienceleague.adobe.com/home#support)。
+**問題：**&#x200B;[Experience Leagueでチケットを開く際に、適切なクラウドプロジェクトを選択できない ](https://experienceleague.adobe.com/home#support)。
 
 **考えられる原因：** 資格が [!DNL Commerce] い正しい組織が選択されていません。
 
