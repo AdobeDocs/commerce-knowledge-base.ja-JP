@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ### 送信メールを有効にする
 
-**パスワードを忘れた場合** フォームを使用する前に、[Cloud Console[ を使用して ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) 送信メールを有効にする ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) ことを確認してください。 これは、統合環境とサンドボックスプロジェクトにのみ適用されます。
+**パスワードを忘れた場合** フォームを使用する前に、[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html)Cloud Console[ を使用して ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) 送信メールを有効にする  ことを確認してください。 これは、統合環境とサンドボックスプロジェクトにのみ適用されます。
 
 実稼動環境またはステージング環境で送信メールが本当に無効になっている（つまり、メールが SendGrid で取得されなかった）場合は、「[Cloud Console でメールを有効にする ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli)」をオンにすることで、これを確認できます。 問題が解決しない場合は、Adobe[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信できます。
 
