@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerceでのフォールバック時�
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
-source-git-commit: 6b8eecb3df0bb32344a5861a604a40402bb4d392
+source-git-commit: d17af0f8f92726aa5a6914fc9e1ff13268256d04
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,13 @@ ht-degree: 0%
 
 ## 影響を受けるバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce 2.4.4 - 2.4.5
+クラウドインフラストラクチャー上のAdobe Commerce
+2.4.4 - 2.4.4-p12
+2.4.5 - 2.4.5-p11
 
 >[!NOTE]
 >
->[!DNL OpenSearch] は、Adobe Commerce 2.4.6 以降で検索エンジンとして使用できます。
+>[!DNL OpenSearch] は、Adobe Commerce 2.4.6、2.4.5-p12、2.4.4-p13 以降の検索エンジンとして使用できます。
 
 ## 問題
 
@@ -50,4 +52,4 @@ Adobe Commerce バージョン 2.4.6 以降、[!DNL OpenSearch] を検索エン�
 
 ## 関連資料
 
-Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=ja)。
+Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html)。
