@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Magento.comと accounts.magento.cloud アカウントのログインにリンクします
 
-2020 年 4 月 1 日をもって、Adobe Commerceでは、{accounts.magento.cloud](https://accounts.magento.cloud/) でアカウントを持つユーザーに、このアカウントを [2}Magento.com](https://account.magento.com/customer/account/login/) アカウントにリンクする必要があります。 [これにより、[Magento.com](https://account.magento.com/customer/account/login/) アカウントへのログインが両方のアカウントのプライマリログイン方式になり、ユーザーのセキュリティが向上します。
+2020 年 4 月 1 日をもって、Adobe Commerceでは、{accounts.magento.cloud[&#128279;](https://accounts.magento.cloud/) でアカウントを持つユーザーに、このアカウントを [2}Magento.com](https://account.magento.com/customer/account/login/) アカウントにリンクする必要があります。 これにより、[Magento.com](https://account.magento.com/customer/account/login/) アカウントへのログインが両方のアカウントのプライマリログイン方式になり、ユーザーのセキュリティが向上します。
 
 [accounts.magento.cloud](https://accounts.magento.cloud/) のユーザーは、次の 2 つの方法のいずれかを使用してこれらのアカウントに接続できます。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 1. [https://account.magento.com](https://account.magento.com/) にログインします。
 1. 別のタブに移動して、[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) に移動します。
-1. 「Magentoと接続」をクリックします ](https://account.magento.com/customer/account/login/)[
+1. 「Magentoと接続」をクリックします [&#128279;](https://account.magento.com/customer/account/login/)
 
 ## 関連資料
 
