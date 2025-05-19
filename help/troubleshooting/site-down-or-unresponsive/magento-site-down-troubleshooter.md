@@ -93,7 +93,7 @@ b.いいえ – [ 手順 8](#step-8) に進みます。
 
 +++**[!DNL MySQL] データベースで低速のクエリや誤ったクエリが発生していましたか？**
 
-回答：はい。[ 処理に時間のかかるクエリとプロセスの確認に時間がかかりすぎるクエリのチュートリアル ](https://dev.mysql.com/doc/refman/5.5/en/entering-queries.html) を続  [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql) and checking your query structure in this [[!DNL MySQL]  ます。\
+回答：はい。[ 処理に時間のかかるクエリとプロセスの確認に時間がかかりすぎるクエリのチュートリアル ](https://dev.mysql.com/doc/refman/5.5/en/entering-queries.html) を続  [!DNL MySQL][&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql) and checking your query structure in this [!DNL MySQL]  ます。\
 b.いいえ – [ 手順 9](#step-9) に進みます。
 
 +++
