@@ -3,9 +3,9 @@ title: Adobe Commerce セキュリティスキャンツールに関するよく�
 description: この記事では、Adobe Commerce セキュリティスキャンツールに関するよくある質問（FAQ）に回答します。
 exl-id: 380ce617-e3d9-491b-b425-8489abd3c541
 feature: Compliance
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: cff17a83648e10e85d95a5895acd8d1916a8eef9
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## セキュリティスキャンツールは、すべてのAdobe Commerce マーチャントが使用できますか？ {#is-magento-security-scan-tool-available-to-all-magento-merchants}
 
-はい。セキュリティスキャンツールは、すべてのAdobe CommerceおよびMagento Open Sourceマーチャントが使用できます。
+はい。セキュリティスキャンツールは、すべてのAdobe CommerceおよびMagento Open Sourceのマーチャントが使用できます。
 
 ## セキュリティ スキャン ツールを使用してサイトをスキャンできるユーザーはいますか？ {#can-anyone-scan-my-site-with-the-magento-security-scan-tool}
 
@@ -48,6 +48,6 @@ Security Scan Tool のマーチャントは、Adobe Commerceの Security Scan To
 
 ## スキャンレポートで偽陽性が表示された場合はどうすればよいですか？ {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
-すべてのスキャンに失敗したことを調査し、問題を解決するために適切な措置を講じることをマーチャントにお勧めします。 調査後、スキャン結果が偽陽性と思われる場合は、マーチャントに対し、Adobeに適切な対応を取るように通知するよう依頼します。
+すべてのスキャンに失敗したことを調査し、問題を解決するために適切な措置を講じることをマーチャントにお勧めします。 調査後、マーチャントが偽陽性と思われるスキャン結果に遭遇した場合、マーチャントに対し、Adobeに適切な措置を講じるよう通知するようリクエストします。
 
-偽陽性レポートを送信するには、Adobe Commerce マーチャントサポートにチケットを入れます。これにより、偽陽性の評価、必要な変更、および今後そのような通知が表示されないようにするための推奨事項の提供が可能になります。 マーチャントは、[securityscan@magento.com](mailto:securityscan@magento.com) 宛てに電子メールで偽陽性を報告することもできます。
+偽陽性レポートを送信するには、Adobe Commerce マーチャントサポートにチケットを入れます。これにより、偽陽性の評価、必要な変更、および今後そのような通知が表示されないようにするための推奨事項の提供が可能になります。
