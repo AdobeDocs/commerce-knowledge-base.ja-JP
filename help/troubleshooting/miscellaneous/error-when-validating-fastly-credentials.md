@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 正しい [!DNL Fastly] サービス ID と API トークンがあることを確認して、もう一度検証してみてください。 詳しい手順については、開発者向けドキュメントの [ 資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) を参照してください。
+1. 正しい [!DNL Fastly] サービス ID と API トークンがあることを確認して、もう一度検証してみてください。 詳しい手順については、開発者向けドキュメントの [ 資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) を参照してください。
 1. 資格情報の検証に失敗した場合は、次の curl コマンドを実行して、サービスのステータスを確認します。
 
    ```curl
@@ -50,6 +50,6 @@ ht-degree: 0%
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [Cloud for Adobe Commerce > [!DNL Fastly] > [!DNL Fastly]  サービスアカウントと資格情報 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
+* [Cloud for Adobe Commerce > [!DNL Fastly] > [!DNL Fastly]  サービスアカウントと資格情報 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce/設定  [!DNL Fastly] /資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce/設定  [!DNL Fastly] /資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
