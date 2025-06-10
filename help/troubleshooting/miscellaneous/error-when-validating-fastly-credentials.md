@@ -1,50 +1,55 @@
 ---
-title: Fastly 資格情報の検証中にエラーが発生する
-description: この記事では、Fastly 資格情報の検証時にユーザーがエラーを受け取る問題の解決策を提供します。
+title: 資格情報の検証中にエラーが発生  [!DNL Fastly]  ました
+description: この記事では、資格情報の検証時にユーザーがエラーを受け取る問題の解決策  [!DNL Fastly]  説明します。
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 838f0c5d55c29d026dc37a8f7e5214b9880a4353
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-# Fastly 資格情報の検証中にエラーが発生する
+# [!DNL Fastly] 資格情報の検証中にエラーが発生しました
 
-この記事では、Fastly 資格情報の検証時にユーザーがエラーを受け取る問題の解決策を提供します。
+この記事では、資格情報の検証時に発生した *トークン期限切れ* エラーの解決方法 [!DNL Fastly] 説明します。
+
+この記事で説明する手順は、セキュリティ上の理由から [!DNL Fastly] API トークンをローテーション（サイクル）する必要がある場合にも適用されます。 このような場合、新しい [!DNL Fastly] API トークンをリクエストするために、Adobe Commerce サポートチケットを送信する必要があります。
 
 ## 問題
 
-Fastly 資格情報の検証時にエラーが発生します。
+* [!DNL Fastly] 資格情報の検証時にエラーが発生します。
+* 例えば、誤ってサポートチケットで共有されたり、公開フォーラムに投稿されたりした場合、[!DNL Fastly] トークンが侵害された可能性があります。
 
 ## 影響を受ける製品とバージョン
 
 * Adobe Commerce（すべてのデプロイメント方法）：すべてのバージョン
-* 拡張機能またはテクノロジー（Fastly、New Relicなど）のバージョン Fastly
+* 拡張機能またはテクノロジー（[!DNL Fastly]、[!DNL New Relic] など）のバージョン [!DNL Fastly]
 
 ## 解決策
 
-1. 正しい Fastly サービス ID と API トークンがあることを確認して、もう一度検証を試してください。 詳しい手順については、開発者向けドキュメントの [Fastly 資格情報のテスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) を参照してください。
+1. 正しい [!DNL Fastly] サービス ID と API トークンがあることを確認して、もう一度検証してみてください。 詳しい手順については、開発者向けドキュメントの [ 資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) を参照してください。
 1. 資格情報の検証に失敗した場合は、次の curl コマンドを実行して、サービスのステータスを確認します。
 
    ```curl
    curl -H "Fastly-Key: <API key>" https://api.fastly.com/service/<service ID>/version/active
    ```
 
-1. 上記のコマンドで *{&quot;msg&quot;:&quot;Token $TOKEN expired at 2021-09-28T02:03:37Z&quot;}* のようなエラーが返された場合は、サポートチケットを送信して新しい API トークンをリクエストします。
+1. 上記のコマンドで `{"msg":"Token $TOKEN expired at 2021-09-28T02:03:37Z"}` のようなエラーが返された場合は、サポートチケットを送信して新しい API トークンをリクエストします。 新しいトークンを受信したら、環境の設定を更新します。
 
    サポートチケットの送信方法については、サポートナレッジベースの [Adobe Commerce ヘルプセンターユーザーガイド/サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) を参照してください。
 
    >[!NOTE]
    >
    >セキュリティ上の理由から、現在のトークンを失効させて新しいトークンを生成する必要があるので、パスワードや有効/アクティブな API トークンをチケットで直接共有しないでください。
+   >
+   >Adobe Commerce サポートはトークンにアクセスできるので、チケットにこの情報を含める必要はありません。
 
 1. コマンドがエラーを返さない場合は、[!DNL Fastly] 拡張機能の最新バージョンを実行していることを確認してください。 1.2.203 より前の古いバージョンを使用している場合は、まず「**[!UICONTROL Save Config]**」をクリックしてから資格情報をテストする必要があります。
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [Cloud for Adobe Commerce/Fastly/Fastly サービスアカウントと資格情報 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
+* [Cloud for Adobe Commerce > [!DNL Fastly] > [!DNL Fastly]  サービスアカウントと資格情報 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce/Fastly の設定/Fastly 資格情報のテスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce/設定  [!DNL Fastly] /資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
