@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB25-50]
 
-2025 年 6 月 10 日（PT）に、Adobeは、Adobe CommerceおよびMagento Open Sourceのセキュリティ更新を定期的にスケジュールしてリリースしました。 この更新により [[!DNL critical]  および  [!DNL important]](https://helpx.adobe.com/security/severity-ratings.html) の脆弱性が解決されます。 これらの脆弱性が悪用されると、セキュリティ機能のバイパス、権限のエスカレーション、任意のコードの実行が発生する可能性があります。
+2025 年 6 月 10 日（PT）に、Adobeは、Adobe CommerceおよびMagento Open Sourceのセキュリティ更新を定期的にスケジュールしてリリースしました。 この更新により [[!DNL critical]  および  [!DNL important]](https://helpx.adobe.com/jp/security/severity-ratings.html) の脆弱性が解決されます。 これらの脆弱性が悪用されると、セキュリティ機能のバイパス、権限のエスカレーション、任意のコードの実行が発生する可能性があります。
 
 詳しくは、[Adobeのセキュリティ速報（[!DNL APSB25-50]）を参照してください ](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 >セキュリティパッチ/分離パッチの適用で問題が発生した場合は、サポートサービスにお問い合わせください。
 
-[Adobe Commerceで利用可能な最新のセキュリティ更新プログラムについては、こちらを参照してください ](https://helpx.adobe.com/security/products/magento.html)。
+[Adobe Commerceで利用可能な最新のセキュリティ更新プログラムについては、こちらを参照してください ](https://helpx.adobe.com/jp/security/products/magento.html)。
 
 ## 影響を受ける製品とバージョン
 
@@ -93,7 +93,7 @@ Adobe Commerce バージョンの場合：
 
 ## 分離パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照してください。
+ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=ja) を参照してください。
 
 ## Adobe Commerce on Cloud マーチャントの場合のみ – 分離パッチが適用されているかどうかを確認する方法
 
@@ -103,7 +103,7 @@ Adobe Commerce バージョンの場合：
 >
 ><u> これを行うには、ファイル `VULN-27015-2.4.7_COMPOSER.patch` を使用して、次の手順を実行します **例として**</u>。
 
-1. [ 品質向上パッチツールのインストール ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)。
+1. [ 品質向上パッチツールのインストール ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja)。
 1. 次のコマンドを実行します。<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. VULN-27015 が *Applied* ステータスを返す、次のような出力が表示されます。
@@ -123,4 +123,4 @@ Adobe Commerce バージョンの場合：
 Adobe Commerceで利用できるセキュリティ更新プログラム：
 
 * [Adobe セキュリティ速報（[!DNL APSB25-50]） ](https://helpx.adobe.com/security/products/magento/apsb25-50.html)
-* [Adobe Commerceで利用可能な最新のセキュリティ更新 ](https://helpx.adobe.com/security/products/magento.html)
+* [Adobe Commerceで利用可能な最新のセキュリティ更新 ](https://helpx.adobe.com/jp/security/products/magento.html)
