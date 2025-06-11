@@ -79,7 +79,7 @@ ht-degree: 0%
    ```
 
 1. データベース [!DNL dump file] （例：[!DNL Production] の場合は `<cluster ID>.sql.gz`、[!DNL Staging] の場合は `<cluster ID_stg>.sql.gz`）をローカルコンピューターにコピーします。
-1. 開発者向けドキュメントで、データベースにリモートで接続する [!DNL SSH tunnel] を [[!DNL SSH]  および  [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) のように設定していることを確認します。
+1. 開発者向けドキュメントで、データベースにリモートで接続する [!DNL SSH tunnel] を [[!DNL SSH]  および  [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) のように設定していることを確認します。
 1. データベースに接続します。
 
    ```bash
@@ -175,6 +175,6 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [ コードのインポート：データベースをインポートします ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
-* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [ クラウド上のバックアップ（スナップショット）：よくある質問 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [ コードのインポート：データベースをインポートします ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
+* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [ クラウド上のバックアップ（スナップショット）：よくある質問 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
