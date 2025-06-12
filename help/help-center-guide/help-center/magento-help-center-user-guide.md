@@ -130,7 +130,7 @@ Adobe Experience League のスタートページを使用して新しいサポ�
 
    >[!NOTE]
    >
-   >製品として「**[!DNL Commerce]on cloud infrastructure」が選択されたチケットを送信しており** 組織に複数のプロジェクトがリストされている場合は、適切な [!UICONTROL Project ID] を選択するように求められます。 必要な [!UICONTROL Project ID] が見つからない場合は、別の「プロジェクト X」で支援を求めているメモをチケットに追加してください。<br> クラウドインフラストラクチャで **[!DNL Commerce]を使用していて、「Managed Services上で**[!DNL Commerce]**」チケットを送信しようとしているが** クラウドインフラストラクチャで **[!DNL Commerce]を表示しない場合** 利用可能な商品として以下を行います。<br>1 **[!UICONTROL Case title]** に問題の件名を入力してください。<br>2。 **[!UICONTROL Case description]** に問題の説明を入力します。<br>3。 これらの項目を両方とも入力すると、下の **[!UICONTROL Cloud Project URL]** フィールドが表示されます。
+   >製品として「**[!DNL Commerce]on cloud infrastructure」が選択されたチケットを送信しており** 組織に複数のプロジェクトがリストされている場合は、適切な [!UICONTROL Project ID] を選択するように求められます。 必要な [!UICONTROL Project ID] が見つからない場合は、別の「プロジェクト X」で支援を求めているメモをチケットに追加してください。<br> クラウドインフラストラクチャで **[!DNL Commerce]を使用していて、「Managed Services上で**&#x200B;[!DNL Commerce]&#x200B;**」チケットを送信しようとしているが** クラウドインフラストラクチャで **[!DNL Commerce]を表示しない場合** 利用可能な商品として以下を行います。<br>1 **[!UICONTROL Case title]** に問題の件名を入力してください。<br>2。 **[!UICONTROL Case description]** に問題の説明を入力します。<br>3。 これらの項目を両方とも入力すると、下の **[!UICONTROL Cloud Project URL]** フィールドが表示されます。
 
 
 1. Adobe Experience League は、ケースを解決するのに役立つ記事とベストプラクティスを提案します。 それでも直接サポートが必要な場合は、ケースを送信する前に追加情報を提供する必要があります。
