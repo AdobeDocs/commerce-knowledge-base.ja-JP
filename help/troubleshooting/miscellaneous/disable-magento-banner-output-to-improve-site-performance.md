@@ -56,8 +56,8 @@ Cloud infrastructure 2.3.x 以降のAdobe Commerceの場合（機能は [v 2.3.x
 >
 >実稼動環境に適用する前に、まず [ ステージング/統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) で変更をテストすることを強くお勧めします。 また、操作の前に最新のバックアップを取ることをお勧めします。
 
-1. 開発者向けドキュメントの [ モジュール出力の無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/disable-module-output) の説明に従って、`Magento_Banner` モジュール出力を無効にします。 使用する必要があるモジュール名は `Magento_Banner` です。
-1. コードのデプロイ。 クラウドインフラストラクチャー上のAdobe Commerceの場合は、開発者向けドキュメントの [ ストアのデプロイ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) の記事の説明に従ってデプロイします。
+1. 開発者向けドキュメントの [ モジュール出力の無効化 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/disable-module-output) の説明に従って、`Magento_Banner` モジュール出力を無効にします。 使用する必要があるモジュール名は `Magento_Banner` です。
+1. コードのデプロイ。 クラウドインフラストラクチャー上のAdobe Commerceの場合は、開発者向けドキュメントの [ ストアのデプロイ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) の記事の説明に従ってデプロイします。
 1. モジュール出力を無効にすると、メニューは管理者に表示されなくなります。
-1. **[!UICONTROL Content]** > **[!UICONTROL Elements]** の下のバナーまたは動的オプションは表示されなくなります。 オプションを再度表示するには、[ モジュール出力を有効にする ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/disable-module-output?lang=en#disable-module-output-in-a-simple-deployment) をクリックします。
+1. **[!UICONTROL Content]** > **[!UICONTROL Elements]** の下のバナーまたは動的オプションは表示されなくなります。 オプションを再度表示するには、[ モジュール出力を有効にする ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/disable-module-output?lang=en#disable-module-output-in-a-simple-deployment) をクリックします。
 
