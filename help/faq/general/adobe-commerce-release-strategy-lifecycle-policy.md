@@ -191,7 +191,7 @@ Managed Servicesのお客様は、アップグレードプロセスのいくつ�
 
 延長サポートの下、アドビのカスタマーエンジニアリングチームは、範囲を低下させることなく、引き続き通常と同じ品質およびセキュリティパッチを提供します。 ただし、[!DNL MariaDB] などの基盤となるサードパーティテクノロジーがサポート終了に達した場合に、[!DNL PCI] ーザーの準拠を維持するには、追加の対策を講じる必要があります。
 
-Adobeは、サポート終了に達したサードパーティテクノロジーのサポートを提供していません。 Adobeでは、コンプライアンスを確保するために、お客様が [[!DNL PCI]  評価者 ](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) と協力することをお勧めします。 テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、{0](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)Adobe Commerceの必要システム構成 } を参照してください。[
+Adobeは、サポート終了に達したサードパーティテクノロジーのサポートを提供していません。 Adobeでは、コンプライアンスを確保するために、お客様が [[!DNL PCI]  評価者 ](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) と協力することをお勧めします。 テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、{0[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)Adobe Commerceの必要システム構成 } を参照してください。
 
 <table style="height: 444px; width: 632.2px;">
 <tbody>
