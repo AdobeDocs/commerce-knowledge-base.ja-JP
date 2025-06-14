@@ -15,7 +15,7 @@ ht-degree: 0%
 
 2025 年 6 月 10 日（PT）に、Adobeは、Adobe CommerceおよびMagento Open Sourceのセキュリティ更新を定期的にスケジュールしてリリースしました。 この更新により [[!DNL critical]  および  [!DNL important]](https://helpx.adobe.com/jp/security/severity-ratings.html) の脆弱性が解決されます。 これらの脆弱性が悪用されると、セキュリティ機能のバイパス、権限のエスカレーション、任意のコードの実行が発生する可能性があります。
 
-詳しくは、[Adobeのセキュリティ速報（[!DNL APSB25-50]）を参照してください ](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
+詳しくは、[Adobeのセキュリティ速報（[!DNL APSB25-50]）を参照してください ](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)。
 
 >[!NOTE]
 >
@@ -122,5 +122,5 @@ Adobe Commerce バージョンの場合：
 
 Adobe Commerceで利用できるセキュリティ更新プログラム：
 
-* [Adobe セキュリティ速報（[!DNL APSB25-50]） ](https://helpx.adobe.com/security/products/magento/apsb25-50.html)
+* [Adobe セキュリティ速報（[!DNL APSB25-50]） ](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)
 * [Adobe Commerceで利用可能な最新のセキュリティ更新 ](https://helpx.adobe.com/jp/security/products/magento.html)

@@ -75,7 +75,7 @@ Adobe Experience League サポートケース管理を使用すると、サポ�
 
 Adobe Experience League サポートにログインするには、次の手順に従います。
 
-1. [experienceleague.adobe.com](https://experienceleague.adobe.com/) に移動します。
+1. [experienceleague.adobe.com](https://experienceleague.adobe.com/ja) に移動します。
 1. Adobe ログイン資格情報を使用してログインします。
 
 ![experience-league へのログイン ](assets/experience_league_sign_in.png)
@@ -146,7 +146,7 @@ Adobe Experience League のスタートページを使用して新しいサポ�
 >1. accounts.magento.comに移動し、Adobe Experience League でのサポートケースの管理に使用するプロファイル（企業、学校、個人）と同じプロファイルでログインします。
 >1. accounts.magento.com プロファイルに正常にログインしたら、experienceleague.adobe.comに戻ってログインします。
 >1. 組織ドロップダウンメニューから組織を選択します。
->1. それでも組織が表示されない場合は、Commerce管理者に問い合わせて、サポート委任権限を取得してください。 詳しくは、[Commerce アカウント共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) のヘルプ記事を参照してください。
+>1. それでも組織が表示されない場合は、Commerce管理者に問い合わせて、サポート委任権限を取得してください。 詳しくは、[Commerce アカウント共有 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share) のヘルプ記事を参照してください。
 
 >[!NOTE]
 >
@@ -315,7 +315,7 @@ Cloud Console を使用して新しいサポートチケットを送信するに
 
 ### 共有アクセスを提供 {#provide-shared-access}
 
-共有アカウントの設定手順について詳しくは、『Adobe Commerce入門ガイド』の [Commerce アカウントの共有 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) の節を参照してください。
+共有アカウントの設定手順について詳しくは、『Adobe Commerce入門ガイド』の [Commerce アカウントの共有 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share) の節を参照してください。
 
 >[!NOTE]
 >
