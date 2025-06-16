@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: e5f5fda302aa5023cc4c05ec0971086bffbeaf39
+source-git-commit: 4f4d516ab4250249928c676d9451a1efe041c207
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -181,10 +181,8 @@ ht-degree: 0%
       * [クラウドインフラストラクチャ UI 上のAdobe Commerceにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
       * [頂点アドレスのクレンジング：異なるアドレスは許可されていません](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md)
       * [カテゴリへの変更が保存されない](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
-      * [ライブサーチでは、管理者の在庫状況設定に関係なく、在庫切れの製品が表示されます](/help/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products.md)
       * [Adobe Commerce 2.4.0 の既知の問題 – 輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Adobe Commerce用 Magento Order Management System （OMS）の処理エラー](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
-      * [Adobe Commerce 2.4.x で完全一致検索が機能しない](/help/troubleshooting/miscellaneous/exact-match-search-for-product-not-working-in-adobe-commerce.md)
       * [ページがキャッシュできないのでパフォーマンスが低下する](/help/troubleshooting/miscellaneous/slow-performance-due-to-non-cacheable-pages.md)
       * [キャッシュされたイメージが 2.2.X から 2.3.X へのアップグレード後にロードされない](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [1k 以上の製品でカテゴリを保存する際に 504 ゲートウェイタイムアウトエラーが発生する](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
@@ -216,7 +214,6 @@ ht-degree: 0%
       * [モジュールを無効にした後の問題](/help/troubleshooting/miscellaneous/issues-after-disabling-a-module.md)
       * [非正規表現のオフロードにより、Nginx （ルート）ではなく Fastly にリダイレクトされる](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [Adobe Commerce 2.4.0 の既知の問題：「新規注文を作成」ボタンが表示されない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
-      * [laminas/laminas-escaper 2.7.1 でAdobe Commerceのフロントエンドおよび管理ページのエラーが発生する](/help/troubleshooting/miscellaneous/laminas-escaper-2-7-1-causes-error-adobe-commerce-frontend-and-admin-pages.md)
       * [Adobe Commerceで Site-Wide Analysis Tool にアクセスすると、403 エラーが発生する](/help/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento.md)
       * [Adobe Commerceの高度なレポートのトラブルシューティング](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [一般的な PHP の致命的なエラーと解決策](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
@@ -252,7 +249,6 @@ ht-degree: 0%
       * [PWA Studio: コンパイルを開始する前に Webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Adobe Commerce Redis の問題を修正するための最新のパッチをインストールします。](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
       * [無効なオフセットエラーを解決します](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
-      * [カテゴリを非表示にするGraphQL クエリが B2B 共有カタログで機能しない](/help/troubleshooting/miscellaneous/graphql-categories-cannot-hide-categories-shared-catalog.md)
       * [プログラムで作成した場合に、製品ステータスが不正確になる](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [Fastly エラー：プラグイン VCL のバージョンが古くなっています。 再アップロードしてください](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md)
       * [Adobe Commerce 2.4.0：顧客のアクティビティの更新が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
@@ -297,7 +293,6 @@ ht-degree: 0%
       * [新しいドメインがデフォルトのドメインにリダイレクトされている](/help/troubleshooting/miscellaneous/new-domain-redirecting.md)
       * [Adobe Commerce クラウドプロジェクトにユーザーを追加できない](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Cron が設定の誤りや欠落によって停止する  [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
-      * [ファイルを削除できません。 警告！ unlink: [!DNL Admin] からのファイルまたはディレクトリのエラーはありません](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md)
       * [[!DNL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
       * [既存のクラウドスタータープロジェクトのAdobe Commerce Intelligence接続の設定](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] がライブサーチウィジェットによって壊される](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
@@ -313,15 +308,11 @@ ht-degree: 0%
       * [早期アルファ版ベラーモジュールを有効にした場合のデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
       * [デプロイメントが失敗する Fastly モジュール互換性のないAdobe Commerce バージョン](/help/troubleshooting/deployment/deployment-fails-fastly-module-incompatible-magento-version.md)
-      * [環境の再配置に失敗したか、MySQL サーバーが使用されなくなりました](/help/troubleshooting/deployment/environment-redeployment-failed-or-mysql-server-gone-away.md)
       * [配置エラー：SQLSTATE[HY000]](/help/troubleshooting/deployment/deployment-error-sql-hy000.md)
       * [アカウント権限およびアクセスキーに関するデプロイメントの問題](/help/troubleshooting/deployment/deployment-issues-relating-to-account-permissions-and-access-keys.md)
       * [Adobe Commerce導入のトラブルシューティング](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md)
       * [PHP 8.1 をサポートするバージョンにアップグレードする場合のデプロイ中のエラー](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
-      * [E：ステージングデプロイまたは実稼動デプロイ中の routes.yaml エラーの検証エラー](/help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md)
       * [「プロジェクトの構築エラー：ビルドフックがステータスコード 1 で失敗しました」でデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.md)
-      * [クラウドリポジトリー上のAdobe Commerceにアクセスできませんでした：デプロイ中に「403 Forbidden」または「404 Not Found」エラーが発生する](/help/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.md)
-      * [デプロイメントが「リモートクラスターにアプリケーションをアップロードできません」エラーでスタックする](/help/troubleshooting/deployment/deployment-stuck-with-unable-to-upload-the-application-to-the-remote-cluster-error.md)
       * [デプロイメントエラー：「ダウンロード中にエラー 7 が発生しました… ポート 443：接続が拒否されました」](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [間違ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
@@ -364,7 +355,6 @@ ht-degree: 0%
       * [Elasticsearch インデックスのステータスが「イエロー」または「レッド」である](/help/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.md)
       * [Elasticsearch サービスが実行されていない](/help/troubleshooting/elasticsearch/elasticsearch-service-not-running.md)
       * [MySQL とElasticsearchで異なる結果が表示される](/help/troubleshooting/elasticsearch/mysql-and-elasticsearch-show-different-results.md)
-      * [OpenSearch のインストールにもかかわらず、Elasticsearchが検索エンジンとして表示される](/help/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search.md)
 * ヘルプセンターガイド {#help-center-guide}
    * [Adobe CommerceのExperience League サポートユーザーガイド](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Adobe Commerce サポートチケットのライフサイクルポリシーの更新](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
@@ -467,6 +457,5 @@ ht-degree: 0%
    * [クラウド上のバックアップ（スナップショット）：よくある質問](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [2024 年および 2023 年Adobe Commerce リリース戦略およびライフサイクルポリシーに関する FAQ](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [Adobe Commerce セキュリティスキャンツールに関するよくある質問](/help/faq/general/magento-security-scan-tool-faq.md)
    * [Adobe Commerce ソフトウェアのサポート終了に関する FAQ](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [ヘッドレス Adobe Commerce サイトには Fastly は必要ですか？](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)

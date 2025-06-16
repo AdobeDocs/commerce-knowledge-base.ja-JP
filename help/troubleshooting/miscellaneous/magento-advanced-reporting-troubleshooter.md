@@ -4,9 +4,9 @@ description: Adobe Commerceの高度なレポートの問題は、このトラ�
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 207fd4cd11f76a5076e98cda8b6776b2d68ef937
+source-git-commit: 842c329b5d8bacf72ac689412fde5a5d76d16e85
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ Adobe Commerceの高度なレポートの問題は、このトラブルシュー
 
 +++**Web サイトは高度なレポート要件を満たしていますか？**
 
-詳細レポートを使用すると、404 エラーページが表示される。 Web サイトは [ 高度なレポート要件 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) を満たしていますか？
+詳細レポートを使用すると、404 エラーページが表示される。 Web サイトは [ 高度なレポート要件 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) を満たしていますか？
 
 a.はい – [ 手順 2](#step-2) に進みます。\
-b.いいえ – [ 高度なレポート要件 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) の手順に従って、サイトの高度なレポート要件を完了します。 次に [ 手順 2](#step-2) に進みます。
+b.いいえ – [ 高度なレポート要件 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) の手順に従って、サイトの高度なレポート要件を完了します。 次に [ 手順 2](#step-2) に進みます。
 
 +++
 
@@ -44,7 +44,7 @@ b. NO – 出力には 1 つの通貨のみが表示されます。 例：`USD`�
 
 +++**分割データベースソリューションを使用していますか？**
 
-[ 分割データベースソリューション ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) を使用していますか？
+[ 分割データベースソリューション ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) を使用していますか？
 
 a.はい。Advanced Reporting 404 のパッチ **MDVA-26831** エラーを使用して、スプリット データベース ソリューションとキャッシュをクリアします。 ジョブが再び実行されるまで 24 時間待ってから、もう一度試してください。\
 b.いいえ – [ 手順 4](#step-4) に進みます。
@@ -55,10 +55,10 @@ b.いいえ – [ 手順 4](#step-4) に進みます。
 
 +++**詳細レポートは有効になっていますか？**
 
-**管理者**/**ストア**/**設定**/**設定**/**一般**/**詳細レポート** をオンにします。 詳細な手順については、[ 詳細レポート：詳細レポートを有効にする ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) を参照してください。
+**管理者**/**ストア**/**設定**/**設定**/**一般**/**詳細レポート** をオンにします。 詳細な手順については、[ 詳細レポート：詳細レポートを有効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) を参照してください。
 
 a.はい – [ 手順 5](#step-5) に進みます。\
-b.いいえ – [ 詳細レポートを有効にする ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) を選択して保存し、Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 データが読み込まれるかどうかを確認します。 問題が解決した場合。 [ ステップ 5](#step-5) に進まない場合。
+b.いいえ – [ 詳細レポートを有効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) を選択して保存し、Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 データが読み込まれるかどうかを確認します。 問題が解決した場合。 [ ステップ 5](#step-5) に進まない場合。
 
 +++
 
@@ -81,9 +81,9 @@ b.いいえ – トークンの値が NULL であるか、データベースに�
 
 a.はい – 次の手順を実行します。1. 次のクエリを実行します。\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [ 設定で詳細レポートモジュールを無効にする ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active) します。\
+2\. [ 設定で詳細レポートモジュールを無効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active) します。\
 3\. Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 詳細レポートでデータが表示されない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
-b.いいえ – クエリから何も返されない場合は、次の手順に従います。1. [ 設定で詳細レポートモジュールを無効にする ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active) します。\
+b.いいえ – クエリから何も返されない場合は、次の手順に従います。1. [ 設定で詳細レポートモジュールを無効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) 有効にする）および [ トークンを再認証 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active) します。\
 2\. Adobe Commerceと詳細レポートが同期するまで 24 時間待ちます。 詳細レポートでデータが表示されない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
 
 +++
@@ -145,7 +145,7 @@ b.いいえ – [ 手順 10](#step-10) に進みます。
 
 例：`cron_schedule` の表に「*/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 ファイルは削除できません* というエラーが表示されます。 警告！unlink （/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en）：そのようなファイルやディレクトリはありません*
 
-a.はい – ACSD-50165 パッチを使用してください [ ファイルは削除できません。 警告！unlink：管理 ](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md) にファイルまたはディレクトリのエラーがありません。ジョブが再実行されるまで 24 時間待ってから、再試行してください。\
+a.はい – ACSD-50165 パッチを使用してください [ ファイルは削除できません。 警告！unlink：管理 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26887) にファイルまたはディレクトリのエラーがありません。ジョブが再実行されるまで 24 時間待ってから、再試行してください。\
 b.いいえ – [ 手順 11](#step-11) に進みます。
 
 +++
@@ -165,4 +165,4 @@ b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/he
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
