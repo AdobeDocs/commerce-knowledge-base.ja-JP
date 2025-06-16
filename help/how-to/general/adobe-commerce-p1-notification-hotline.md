@@ -3,7 +3,7 @@ title: Adobe Commerce P1 通知ホットライン
 description: この記事では、Adobe Commerceの P1 通知ホットライン番号を提供します。この番号は、P1 インシデントの報告に使用でき、どのような情報を提供すればよいかを説明します。
 feature: Communications
 exl-id: 48c4fe93-676e-4c69-a96c-8fb3e6872973
-source-git-commit: 8c0c128f2469086c44dcea0e9edc87f934578a69
+source-git-commit: bbff778a020a05953b82b452cdede7c46f20c990
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 ## P1 通知ホットラインの電話ポリシー
 
 * P1 通知ホットラインは、P1 レベルの問題を報告するために使用できます。 （前のセクションの P1 インシデント定義を参照）。
-* Adobe Commerce P1 通知ホットラインを呼び出す前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) します。
+* Adobe Commerce P1 通知ホットラインを呼び出す前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) します。
 * 調査、トラブルシューティング、通信は、サポートチケット内でのみ行われます。
 * 問い合わせの前に、問題に関する追加情報をすべてチケットに直接追加します。
 * お電話の際は、必ずチケット番号をお持ちください。
@@ -32,7 +32,7 @@ ht-degree: 0%
 注意：何らかの理由でボイスメールにアクセスする場合は、氏名、会社名、電話番号、チケット番号などの情報を残してください。 回線が監視され、エンジニアができるだけ早く電話を返します。
 
 * US
-   * フリーダイヤル：（+1） 800 497 0335 （最初のメニューは、Adobe CommerceP1 ホットラインの場合は 6 を押してください）
+   * フリーダイヤル：（+1） 800 497 0335 （最初のメニューは、Adobe CommerceP1 ホットラインの場合は 3 を押してください）
 * EMEA
    * 英国：（+44） 800 169 0454 （最初のメニューでAdobe Commerce P1 ホットラインは 6 を押してください）
    * デンマーク：（+45） 80206017 （最初のメニューで、Adobe Commerce P1 ホットラインに対して 6 を押す）
