@@ -104,7 +104,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 
 ### サポートチケットを送信する際には、どのような情報が必要ですか？
 
-[ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357)、MAGEID、および Cloud Project_ID に対して送信されたドメイン名と正確に一致するものを指定してください。 Cloud Project_ID は、Adobe Commerce オンプレミスでは必要ありません。
+[ セキュリティスキャン ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26357)、MAGEID、および Cloud Project_ID に対して送信されたドメイン名と正確に一致するものを指定してください。 Cloud Project_ID は、Adobe Commerce オンプレミスでは必要ありません。
 
 ### スキャン ツールのスキャンからストアを削除するとどうなりますか？
 
