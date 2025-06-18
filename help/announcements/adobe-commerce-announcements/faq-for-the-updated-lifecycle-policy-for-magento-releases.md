@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerceは、次のマイナーソフトウェアリリースの一般提供日から少なくとも 12 か月間、マイナーリリースの品質修正を提供します。 この間にアドビが提供する品質の修正の方法は変化しています。
 
 * **事前規定：** 現在、12 か月の EOS 期間の前のラインに対する品質修正は、四半期ごとのパッチリリースを通じて提供されているため、四半期ごとのパッチはセキュリティと品質の組み合わせになっています。
-* **新しいポリシー：** 最新のマイナーリリース行として 2.4 以降、以前のサポートされている行（2.3）のリリースパッチはセキュリティ専用に移行されます。 以前サポートされていたラインの品質修正は、マイナーリリース（2.4 など）後の 12 か月間とその後の新しいマイナーリリースラインで引き続き提供されます。ただし、これらの修正は [Quality Patches Tool （QPT）を通じて提供され ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 重要な問題にのみ焦点を当てます。
+* **新しいポリシー：** 最新のマイナーリリース行として 2.4 以降、以前のサポートされている行（2.3）のリリースパッチはセキュリティ専用に移行されます。 以前サポートされていたラインの品質修正は、マイナーリリース（2.4 など）後の 12 か月間とその後の新しいマイナーリリースラインで引き続き提供されます。ただし、これらの修正は [Quality Patches Tool （QPT）を通じて提供され ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 重要な問題にのみ焦点を当てます。
 
 ## このポリシーはいつ有効になりますか？
 
@@ -38,7 +38,7 @@ Adobeには、最新のリリースラインに対するセキュリティ専用
 
 ## 品質向上パッチツールとは
 
-サポートナレッジベースの [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 記事を参照してください。
+サポートナレッジベースの [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 記事を参照してください。
 
 ## この新しいポリシーの使用を検討するユーザー
 
