@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 4f4d516ab4250249928c676d9451a1efe041c207
+source-git-commit: 2ed731574bb25c31d0fcb800fcf8f98b85ff0bc2
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,6 @@ ht-degree: 0%
       * [Google マップのすべてのAdobe Commerce バージョンのアクセス損失に対する修正パッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
       * [変更ログテーブルが存在しない場合に、更新されていないデータの in [!DNL Commerce Data Exporter] feed および  [!DNL cron] logs エラーを修正しました](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [が無効になった理由  [!DNL cron]  確認方法](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [エラ  [!DNL opensearch]  検索エンジンが存在しません。 フォールバック  [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほとんどいっぱいであることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [インデックスが無効化され、「indexer_reindex_all_invalid」が常に実行される](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
@@ -165,7 +164,6 @@ ht-degree: 0%
       * [ストアフロントまたはCommerce管理者にアクセスする際に、空白ページまたはリダイレクトループエラーが発生する](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Adobe Commerce 2.4.1 Vertex Address の検証メッセージ後住所の更新](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
       * [Extension ManagerにAdobe Commerce 2.3.x の拡張機能が表示されない](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
-      * [配送業者として DHL を引き続き提供するためのパッチを適用する](/help/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.md)
       * [Commerce Admin にログインしようとすると、ログインリダイレクトが発生する](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [暗号化キーに関する問題の解決](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
       * [「アップデーターアプリケーションを使用できません」エラーが発生する](/help/troubleshooting/miscellaneous/updater-application-is-not-available-error.md)
@@ -195,7 +193,6 @@ ht-degree: 0%
       * [セキュリティスキャンツールレポートが空白になる](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-p1：誤った値を含む請求書メモ](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [最新のAdobe Commerce プレリリースにアクセスできません](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
-      * [管理者パスワードがアクションログにプレーンテキストとして保存される](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
       * [インデックスは別のプロセスによってロックされています](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
       * [データの相違の診断](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [管理者 2FA のメール通知を受信できない](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
@@ -206,7 +203,6 @@ ht-degree: 0%
       * [クラウドインフラストラクチャー上のAdobe Commerceでブロックを開始](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [PHP 設定エラー](/help/troubleshooting/miscellaneous/php-settings-errors.md)
       * [Redis 問題により、Commerce管理者のログインまたはチェックアウトが遅れる](/help/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.md)
-      * [Adobe Commerce 2.4.4 へのアップグレード時の Composer プラグインの問題](/help/troubleshooting/miscellaneous/adobe-commerce-244-update-composer.md)
       * [PHP mcrypt 拡張モジュールが正しくインストールされていません](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Adobe Commerce 2.3.6、2.4.0-p1、2.4.1 既知の問題：dotdigital login](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Cron ジョブが「実行中」ステータスでスタックする](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
@@ -214,7 +210,6 @@ ht-degree: 0%
       * [モジュールを無効にした後の問題](/help/troubleshooting/miscellaneous/issues-after-disabling-a-module.md)
       * [非正規表現のオフロードにより、Nginx （ルート）ではなく Fastly にリダイレクトされる](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [Adobe Commerce 2.4.0 の既知の問題：「新規注文を作成」ボタンが表示されない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
-      * [Adobe Commerceで Site-Wide Analysis Tool にアクセスすると、403 エラーが発生する](/help/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento.md)
       * [Adobe Commerceの高度なレポートのトラブルシューティング](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [一般的な PHP の致命的なエラーと解決策](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Adobe Commerceで Composer の更新に失敗します：互換性のない引数タイプです](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
@@ -304,15 +299,12 @@ ht-degree: 0%
       * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
-      * [配置に失敗しました：MDVA-43395 パッチを適用できません](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
-      * [早期アルファ版ベラーモジュールを有効にした場合のデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
       * [デプロイメントが失敗する Fastly モジュール互換性のないAdobe Commerce バージョン](/help/troubleshooting/deployment/deployment-fails-fastly-module-incompatible-magento-version.md)
       * [配置エラー：SQLSTATE[HY000]](/help/troubleshooting/deployment/deployment-error-sql-hy000.md)
       * [アカウント権限およびアクセスキーに関するデプロイメントの問題](/help/troubleshooting/deployment/deployment-issues-relating-to-account-permissions-and-access-keys.md)
       * [Adobe Commerce導入のトラブルシューティング](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md)
       * [PHP 8.1 をサポートするバージョンにアップグレードする場合のデプロイ中のエラー](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
-      * [「プロジェクトの構築エラー：ビルドフックがステータスコード 1 で失敗しました」でデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.md)
       * [デプロイメントエラー：「ダウンロード中にエラー 7 が発生しました… ポート 443：接続が拒否されました」](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [間違ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
