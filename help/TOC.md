@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 2ed731574bb25c31d0fcb800fcf8f98b85ff0bc2
+source-git-commit: 51f693c29781029adc0f3d6214d7f784b873998b
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3449'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 0%
       * [Adobe Commerce リリースの更新されたライフサイクルポリシーに関する FAQ](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Cloud 2.4.4 でのAdobe Commerceの OpenSearch への切り替え](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [PHP の脆弱性に対するAdobe Commerceの推奨事項](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
-      * [品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツールです](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
       * [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobeは、カスタマーデータアクセスおよびプライバシーをサポートします](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS API の廃止](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)

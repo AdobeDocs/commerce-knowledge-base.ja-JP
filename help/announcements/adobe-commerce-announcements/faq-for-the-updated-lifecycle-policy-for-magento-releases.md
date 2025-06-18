@@ -1,12 +1,12 @@
 ---
 title: Adobe Commerce リリースの更新されたライフサイクルポリシーに関する FAQ
-description: 「Adobe Commerceは、次回のマイナーソフトウェアリリースの一般提供日から少なくとも 12 か月間、マイナーリリースの品質修正を提供します。 この間に私たちが品質修正を提供する方法は変わりつつあります。」
+description: Adobe Commerceは、次のマイナーソフトウェアリリースの一般提供日から少なくとも 12 か月間、マイナーリリースの品質修正を提供します。 この間にアドビが提供する品質の修正の方法は変化しています。
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2898089896cc2cdc88110a999564669341a52136
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerceは、次のマイナーソフトウェアリリースの一般提供日から少なくとも 12 か月間、マイナーリリースの品質修正を提供します。 この間にアドビが提供する品質の修正の方法は変化しています。
 
 * **事前規定：** 現在、12 か月の EOS 期間の前のラインに対する品質修正は、四半期ごとのパッチリリースを通じて提供されているため、四半期ごとのパッチはセキュリティと品質の組み合わせになっています。
-* **新しいポリシー：** 最新のマイナーリリース行として 2.4 以降、以前のサポートされている行（2.3）のリリースパッチはセキュリティ専用に移行されます。 以前サポートされていたラインの品質修正は、マイナーリリース（2.4 など）後の 12 か月間とその後の新しいマイナーリリースラインで引き続き提供されます。ただし、これらの修正は [Quality Patches Tool （QPT）を通じて提供され ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 重要な問題にのみ焦点を当てます。
+* **新しいポリシー：** 最新のマイナーリリース行として 2.4 以降、以前のサポートされている行（2.3）のリリースパッチはセキュリティ専用に移行されます。 以前サポートされていたラインの品質修正は、マイナーリリース（2.4 など）後の 12 か月間とその後の新しいマイナーリリースラインで引き続き提供されます。ただし、これらの修正は [Quality Patches Tool （QPT）を通じて提供され ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 重要な問題にのみ焦点を当てます。
 
 ## このポリシーはいつ有効になりますか？
 
@@ -34,11 +34,11 @@ Adobe Commerce 2.3.6 は 2020 年 10 月 15 日（PT）にリリースされる�
 
 ## 最新の行（公開 2.4 時点）については、セキュリティのみのリリースが残っていますか？
 
-Adobeでは、最新のリリースラインに対しても引き続きセキュリティのみのリリースを用意しています。 これらのプロセスの概要は、[ 新しいセキュリティ専用パッチリリースの概要 ](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287)DevBlog の投稿で説明されています。
+Adobeには、最新のリリースラインに対するセキュリティ専用リリースも引き続き用意されています。 これらのプロセスの概要は、[ 新しいセキュリティ専用パッチリリースの概要 ](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287)DevBlog の投稿で説明されています。
 
 ## 品質向上パッチツールとは
 
-サポートナレッジベースの [Quality Patches Tool released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 記事を参照してください。
+サポートナレッジベースの [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 記事を参照してください。
 
 ## この新しいポリシーの使用を検討するユーザー
 
@@ -50,7 +50,7 @@ Adobeでは、最新のリリースラインに対しても引き続きセキュ
 
 ## サポートされているマイナーバージョンで最新の行ではない品質修正を取得するにはどうすればよいですか？
 
-修正は、[ 品質向上パッチツール ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) を通じて使用可能になります。
+修正は、[ 品質向上パッチツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patche) を通じて使用可能になります。
 
 ## 最新のラインで品質の修正を受けるにはどうすればよいですか？
 
@@ -62,7 +62,7 @@ Adobeでは、最新のリリースラインに対しても引き続きセキュ
 
 ## 最新の行ではないサポート対象のマイナーバージョンの四半期リリースに、品質の修正は含まれていますか？
 
-はい、セキュリティ専用ラインの一部として、Adobeが「ホットフィックス」と呼ぶものをリリースしています。これらは、Adobe Commerce アプリケーションに影響を与える非常に重要な問題です。
+はい。セキュリティ専用ラインの一部として、Adobeが「ホットフィックス」と呼ぶ機能を同ラインにリリースしています。これらは、Adobe Commerce アプリケーションに影響を与える非常に重要な問題です。
 
 ## セキュリティの向上と QPT は同時に提供されますか？
 
