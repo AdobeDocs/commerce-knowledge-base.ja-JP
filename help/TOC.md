@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 51f693c29781029adc0f3d6214d7f784b873998b
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3327'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 0%
       * [MySQL サーバーが廃止されました&#x200B; クラウド上のAdobe Commerceのエラー](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceで MySQL のディスク領域が不足している](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Adobe Commerceのデータベースストレージに関するトラブルシューティング](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
-      * [MySQL テーブルが大きすぎます](/help/troubleshooting/database/mysql-tables-are-too-large.md)
       * [Adobe Commerceの max_allowed_packet に関連するデータベースエラー](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Adobe Commerce データベースの数値が範囲外です。範囲  [!DNL INT]  終了  [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
       * [MariaDB 10.6 を使用した Adobe Commerce Cloud 2.4.6 のレプリカの問題を確認する](/help/troubleshooting/database/read-replicas-issues-synchronization-mariadb-10-6.md)
@@ -56,9 +55,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0:Braintreeが複数のアドレスのチェックアウトに含まれない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
       * [2.3.4 PayPal 問題のホットフィックス](/help/troubleshooting/payments/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.1:PayPal-Braintreeのゲストチェックアウトで間違ったメッセージが表示される](/help/troubleshooting/payments/magento-2-4-1-wrong-message-on-paypal-via-braintree-guest-checkout.md)
-      * [PayPal サンドボックスアカウントが検証されていません](/help/troubleshooting/payments/payservices-paypal-acct.md)
       * [Authorize.net サンドボックスアカウントへの注文でエラーが発生しました（サーバーでエラーが発生しました）](/help/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server.md)
-      * [遅延支払サービスレポートデータ](/help/troubleshooting/payments/payservices-report-info-delayed.md)
       * [Authorize.netの支払い方法が使用されている場合、チェックアウトが行き詰まる](/help/troubleshooting/payments/checkout-is-stuck-when-authorize-net-payment-method-is-used.md)
       * [Adobe Commerce 2.4.1 既知の問題：PayPal Braintreeのチェックアウトでエラーが発生する](/help/troubleshooting/payments/magento-2-4-1-known-issue-error-popping-up-on-checkout-with-paypal-braintree.md)
       * [Adobe Commerce 2.4.0 Braintree仮想ターミナルページが破損する](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
@@ -70,14 +67,11 @@ ht-degree: 0%
       * [PayPal Payflow Pro アクティブなカード処理アクティビティ](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Adobe Commerceの PayPal トラブルシューティング](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0、2.4.1: Braintree Venmo 部分請求書の有効化](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
-      * [サンドボックス環境でクレジットカードの支払いが失敗しました](/help/troubleshooting/payments/payservices-cc-sandbox-failure.md)
       * [Adobe Commerce 2.4.2 B2B：ディスカウントは引き続き支払い方法の変更](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2:Braintree Venmo の支払いが機能しない](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [複数の住所がある場合、チェックアウト時に支払方法が表示されない](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
       * [EU のお客様は支払いを完了できません](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
-      * [PayPal ゲートウェイ拒否リクエスト – 重複する請求書の問題](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
       * [Adobe Commerce 2.4.0 の既知の問題：Klarna オンサイトメッセージングの空白ページ](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [Payment Services のインストールのトラブルシューティング](/help/troubleshooting/payments/payservices-install.md)
    * ストアフロント {#storefront}
       * [Adobe Commerce 2.4.0 の既知の問題：注文の表示エラー](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce オンプレミス 2.4.2：製品イメージがありません](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
@@ -96,7 +90,6 @@ ht-degree: 0%
    * インストールとアップグレード {#installation-and-upgrade}
       * [[!UICONTROL Recommendations] [!DNL JS] Adobe Commerce バージョン 2.4.5 へのアップグレード後にエラーが発生する](/help/troubleshooting/installation-and-upgrade/recommendations-js-errors-after-upgrade-to-adobe-commerce-version-2-4-5.md)
       * [Adobe Commerce 2.4.6-p1 オンプレミスで [!DNL B2B] 1.4.0 のインストールが失敗する](/help/troubleshooting/installation-and-upgrade/b2b-1-4-0-installation-fails-on-adobe-commerce-2-4-6-p1-on-premises.md)
-      * [2.4.6 へのアップグレード前に、期限切れの「oauth_tokens」を減らす](/help/troubleshooting/installation-and-upgrade/reduce-expired-oauth-tokens-before-2-4-6-upgrade.md)
       * [nginx を使用してインストールできません](/help/troubleshooting/installation-and-upgrade/cannot-install-using-nginx.md)
       * [Adobe Commerce バージョン 2.3.4-p1 または 2.3.5 へのアップグレード中のウィッシュリストエラー](/help/troubleshooting/installation-and-upgrade/wishlist-error-during-upgrade-to-magento-versions-2-3-4-p1-or-2-3-5.md)
       * [古いストアキャッシュがあると、Adobe Commerce 2.4.0 のインストールが失敗する](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-2-4-0-installation-fails-with-outdated-stores-cache.md)
@@ -111,7 +104,6 @@ ht-degree: 0%
       * [インストールが約 70 % で停止](/help/troubleshooting/installation-and-upgrade/installation-stops-at-about-70.md)
       * [Adobe Commerce アップグレード 2.4.3、2.3.7-p1 PHP 致命的なエラーのホットフィックス](/help/troubleshooting/installation-and-upgrade/hotfix-unsupported-php8-command-in-adobe-commerce-2-4-3.md)
       * [Adobe Commerce 2.4.0:B2B 1.2.0 インストール中の例外](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-exception-during-b2b-1-2-0-install.md)
-      * [アップグレード互換性ツールのエラーのトラブルシューティング](/help/troubleshooting/installation-and-upgrade/uct-segmentation-fault-error.md)
       * [インストールまたはアップグレード中のメモリ不足エラー](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
       * [REGEXP_LIKE 関数がないため、B2B 1.5.2 へのアップグレードが SQL 構文エラーで失敗します](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [B2B 1.5.2 の更新後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
@@ -132,8 +124,6 @@ ht-degree: 0%
       * [設定ファイルが見つからないか変更されている](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL エラー 60 : SSL 証明書の有効期限が切れました](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Adobe Commerceの Product Recommendations モジュールのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [クラウドインフラストラクチャー上のAdobe Commerceでディスクの容量が不足した場合に、ファイルを安全に削除できます](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md)
-      * [robots.txt が更新されない、またはデフォルト設定が表示されない](/help/troubleshooting/miscellaneous/robots-txt-not-updated-or-displaying-default-settings.md)
       * [Adobe Commerceの/tmp mount full のトラブルシューティング](/help/troubleshooting/miscellaneous/tmp-mount-full.md)
       * [不明なモジュール Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Cron 準備チェックの問題](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
@@ -180,7 +170,6 @@ ht-degree: 0%
       * [カテゴリへの変更が保存されない](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
       * [Adobe Commerce 2.4.0 の既知の問題 – 輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Adobe Commerce用 Magento Order Management System （OMS）の処理エラー](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
-      * [ページがキャッシュできないのでパフォーマンスが低下する](/help/troubleshooting/miscellaneous/slow-performance-due-to-non-cacheable-pages.md)
       * [キャッシュされたイメージが 2.2.X から 2.3.X へのアップグレード後にロードされない](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [1k 以上の製品でカテゴリを保存する際に 504 ゲートウェイタイムアウトエラーが発生する](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
       * [サイトをセキュリティ スキャンに追加するときに表示されるエラーメッセージ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
@@ -217,11 +206,8 @@ ht-degree: 0%
       * [MOM への手動オーダーのエクスポートが失敗する。 「書き出し順序」ボタンが HTTP 404 エラーを返す](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio：ブラウザーは生成された SSL 証明書を信頼しません](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [デフォルトの Varnish 設定を変更する必要があるために発生した 503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
-      * [新しい統合環境にアクセスする際に親環境にリダイレクト](/help/troubleshooting/miscellaneous/redirect-to-parent-environment-when-accessing-new-integration-environment.md)
-      * [robots.txt で、cloud infrastructure 2.3.x に 404 エラーのAdobe Commerceが表示される](/help/troubleshooting/miscellaneous/robots-txt-gives-404-error-magento-commerce-cloud-2-3-x.md)
       * [管理者アクセスが制限され、パフォーマンスの問題が発生する](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Cron タスクは他のグループからタスクをロック](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Commerce管理のロックされた（グレー表示）フィールド](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
       * [Commerce Admin を使用して検索エンジンを変更できない（検索エンジンメニューにアクセスできない）](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [インストール xdebug maximum function nesting level エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [エンティティ Adobe Commerce バックエンドを保存できません](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
@@ -279,7 +265,6 @@ ht-degree: 0%
       * [Commerce Admin でのキャッシュのパージ中のエラー](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1:dotdigital ページビルダーフォームを保存した際に、ページが空になる](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce クラウド：再インデックスは強制終了メッセージで終了します](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
-      * [DHL 配送を引き続き提供するには、DHL スキーマのバージョン 10.0 にアップグレードしてください](/help/troubleshooting/miscellaneous/upgrade-to-v10-dhl-schema-to-continue-using-dhl-as-a-carrier.md)
       * [Adobe Commerce ステータス列に、書き出された製品の CSV ファイルが見つからない](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)
       * [Adobe Commerce Cloud アカウントでNew Relicにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-new-relic-for-adobe-commerce-cloud-account.md)
       * [Adobe Commerce 2.4.4 にないモジュール](/help/troubleshooting/miscellaneous/what-happened-modules-bundled-adobe-commerce.md)
@@ -308,7 +293,6 @@ ht-degree: 0%
       * [間違ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
-      * [env:COMPOSER_AUTH または auth.json の正しいアクセスキーでのデプロイメントが失敗します](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [Adobe Commerce 2.4.7-p4.1 [!DNL HIPAA] 2.0 互換性パッケージのホットフィックス](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
       * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)

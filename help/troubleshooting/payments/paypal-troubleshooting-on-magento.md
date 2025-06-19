@@ -4,9 +4,9 @@ description: この記事では、PayPal、特に PayFlow Pro ソリューショ
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ PayPal の支払い方法に請求契約と参照トランザクションを含�
 
 以下の記事を参照してください。
 
-* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 ](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) アドビのサポートナレッジベースにあります。
+* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) アドビのサポートナレッジベースにあります。
 * サポートナレッジベースの [ 新しいストアエンティティの増分 ID を変更 ](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) します。
 
 ## 高度な支払いログを収集するには、サポートにお問い合わせください

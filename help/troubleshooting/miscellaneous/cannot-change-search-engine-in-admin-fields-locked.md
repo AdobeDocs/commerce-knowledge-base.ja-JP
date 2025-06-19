@@ -2,9 +2,9 @@
 title: 「app/etc/env.php」の検索エンジンを変更できません
 description: この記事では、Commerce管理者で検索エンジンを変更しようとすると、フィールドがロックされる問題の解決策を提供します。
 exl-id: 61006ce7-34f9-4e4d-a197-f3d627dd277f
-source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ Commerce Admin で検索エンジンを変更しようとすると、フィー�
 
 ## 関連資料
 
-* [Commerce管理者でのロック（グレー表示）されたフィールド ](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) クラウドインフラストラクチャー上のCommerce ガイド。
+* [Commerce管理者でのロック（グレー表示）されたフィールド ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) クラウドインフラストラクチャー上のCommerce ガイド。

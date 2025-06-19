@@ -4,9 +4,9 @@ description: この記事では、特定のAdobe Commerce キャッシュタイ�
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
+1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
 
    ```bash
    php bin/magento cache:status
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    これにより、各キャッシュタイプのステータスが表示されます（無効の場合は「0」、有効の場合は「1」）。 または、この情報を `app/etc/env.php` ファイルで取得できます。
 
-1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にしてください。 サードパーティの拡張機能では、Adobe Commerceのキャッシュを無効にする必要はありません。
+1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にする必要があります。 サードパーティの拡張機能では、Adobe Commerceのキャッシュを無効にする必要はありません。
 1. 調査により、一部のキャッシュタイプが誤って無効になっていることが確認された場合は、各キャッシュタイプに対して次のコマンドを実行して、それらを有効にします。`php bin/magento cache:enable <your_disabled_cache_type>`
 
 特定のAdobe Commerce キャッシュタイプを無効にできるか無効にすべきかとの懸念や質問がある場合は、[Adobe Commerce サポートにお問い合わせ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、レコメンデーションを求めてください。
@@ -48,11 +48,11 @@ ht-degree: 0%
 開発者向けドキュメントのAdobe Commerce キャッシュのドキュメント：
 
 * [Adobe Commerce キャッシュの概要 ](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [ キャッシュの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [ キャッシュの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 パフォーマンスの問題が発生するその他の理由と解決策：
 
 * [サイトのパフォーマンスを向上させるために、Adobe Commerce バナーの出力を無効にします](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md)
-* [MySQL テーブルが大きすぎます](/help/troubleshooting/database/mysql-tables-are-too-large.md)
+* [MySQL テーブルが大きすぎます ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [パフォーマンスが遅く、動作が遅く、長時間実行されるクローン](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
 * [管理者アクセスが制限され、パフォーマンスの問題が発生する](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)

@@ -4,9 +4,9 @@ description: この記事は、データベースに関する問題が発生し�
 exl-id: f7b09023-7129-4fd0-9bb5-02a2228bc148
 feature: Observability, Services, Storage, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 IUse% は 90% を超えていますか。
 
-a.はい。これは、ファイルが多すぎることが原因です。 [ クラウドインフラストラクチャー上のAdobe Commerceのディスク容量不足の場合に、ファイルを安全に削除する手順 ](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md) を確認します。 これらの手順を完了したら [ 手順 2](#step-2) に進みます。 さらに多くのスペースをリクエストする場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
+a.はい。これは、ファイルが多すぎることが原因です。 [ クラウドインフラストラクチャー上のAdobe Commerceのディスク容量不足の場合に、ファイルを安全に削除する手順 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889) を確認します。 これらの手順を完了したら [ 手順 2](#step-2) に進みます。 さらに多くのスペースをリクエストする場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。\
 b. NO - スペースを確認します。 `df -h | grep mysql` を実行し、CLI/ターミナルで `df -h | grep tmp` を実行して、`/tmp` ディレクトリと `/data/mysql` ディレクトリのディスク容量の使用状況を確認します。 [ 手順 3](#step-3) に進みます。
 
 +++
@@ -93,4 +93,4 @@ b.いいえ – [ サポートチケットを送信 ](/help/help-center-guide/he
 
 ## 関連資料
 
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
