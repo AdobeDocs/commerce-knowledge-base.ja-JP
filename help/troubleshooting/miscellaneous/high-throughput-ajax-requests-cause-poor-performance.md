@@ -4,9 +4,9 @@ description: この記事では、一部の高スループットリクエスト�
 exl-id: 68dfca8a-826c-4476-acaf-a139052b5dcc
 feature: Cache
 role: Developer
-source-git-commit: 3bcdbd0536ec71cb80ffa3afbcd53c4ae385d2e3
+source-git-commit: b6e44e106dcc546949459a79c0f2e49b87e1d376
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ### 問題
 
-重要なAJAX リクエストなどの高スループットリクエストが原因で、サイトのパフォーマンスが低下します。
+重要なAJAX リクエストなど、高スループットリクエストが原因で、サイトのパフォーマンスが低下します。
 
 ### 原因：
 
@@ -36,21 +36,21 @@ ht-degree: 0%
 
 次の 3 つの解決策があります。
 
-* [ バージョン 2.3.4 へのアップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)。
+* [ バージョン 2.3.4 へのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)。
 * 軽いリクエスト（キャッシュリクエストまたは顧客のプライベートコンテンツへの移動）を確保します。
 * リクエストの数を減らします。
 
 <u> 軽量なリクエストの確保（キャッシュリクエストまたは顧客のプライベートコンテンツへの移動） </u>
 
-各ページでトリガーされるサードパーティのAJAX リクエストがある場合は、これらのリクエストをキャッシュするか、顧客のプライベートコンテンツに移動しようとします。 これを行うには、マーチャントがGET HTTP メソッドを使用してカスタム AJAX リクエストを呼び出すようにします。 これにより、これらのリクエストが Fastly でキャッシュできるようになります。 キャッシュしてはいけないカスタム AJAX リクエストがある場合は、プライベートコンテンツ機能に従ってリファクタリングする必要があります。 手順については、開発者向けドキュメントの [ 非公開コンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) を参照してください。
+各ページでトリガーされるサードパーティのAJAX リクエストがある場合は、それらのリクエストをキャッシュするか、顧客のプライベートコンテンツに移動します。 これを行うには、マーチャントがGET HTTP メソッドを使用してカスタム AJAX リクエストを呼び出します。 これにより、これらのリクエストが Fastly でキャッシュできるようになります。 キャッシュしてはいけないカスタム AJAX リクエストがある場合は、プライベートコンテンツ機能に従ってリファクタリングする必要があります。 手順については、開発者向けドキュメントの [ 非公開コンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) を参照してください。
 
 <u> リクエストの数を減らす </u>
 
-* 永続的な買い物かごを無効にすると、`customer/section/load` リクエストの数が増える可能性があります。 アドビの開発者ドキュメントの [ 永続的な買い物かごのパス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/paths/config-reference-general) の手順に従って、永続的な買い物かごが有効になっているかどうかを確認します。
+* 永続的な買い物かごを無効にすると、`customer/section/load` リクエストの数が増える可能性があります。 アドビの開発者ドキュメントの [ 永続的な買い物かごのパス ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) の手順に従って、永続的な買い物かごが有効になっているかどうかを確認します。
 * でコンテンツの再読み込みまたは無効化が必要な場合は `sections.xml` 開発者向けドキュメントの [ プライベートコンテンツ：プライベートコンテンツの無効化 ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) の手順に従ってください。 カスタマイズで `customerData.reload()` メソッドを直接使用していないことを確認してください。
-* 同じページ上の他のPOST AJAX リクエストを確認します。 Google Chrome ブラウザーでGoogle Chrome開発者ツールを開きます。 「**Network**」タブをクリックしてから「**XHR**」タブをクリックすると、特定のページからのすべてのAJAX リクエストのリストが表示されます。 次に、各リクエストをクリックし、フィールドでリクエストメソッドをGETリクエストにする必要があります。 メモ：Google Chromeは例として使用され、他のブラウザーでも同様に実行できます。
+* 同じページで他の POST AJAX リクエストを確認します。 Google Chrome ブラウザーでGoogle Chrome開発者ツールを開きます。 「**Network**」タブをクリックしてから「**XHR**」タブをクリックすると、特定のページからのすべてのAJAX リクエストのリストが表示されます。 次に、各リクエストをクリックし、フィールドでリクエストメソッドをGET リクエストにする必要があります。 メモ：Google Chromeは例として使用され、他のブラウザーでも同様に実行できます。
 * Google Tag Manager （GTM）機能を確認します。これは特定のAJAX リクエストです。 ユーザーはこのAJAXを削除し、プライベート機能を使用してカスタマイズをリファクタリングして、サーバーへのリクエストの合計数を減らすことができます。
-* Adobe Commerceのバナーが有効になっているが、使用されていないことを確認します。 サイトのパフォーマンスを向上させるには、[Adobe Commerce バナーの出力を無効にする ](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) ことが必要になる場合があります。
+* Adobe Commerceのバナーが有効になっているが、使用されていないことを確認します。 サイトのパフォーマンスを向上させるには、[Adobe Commerce バナーの出力を無効にする ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909) ことが必要になる場合があります。
 
 ### 関連資料
 

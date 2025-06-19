@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: dc2149f886d46826610f2f74b48ef9060a4ff376
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3263'
 ht-degree: 0%
 
 ---
@@ -76,14 +76,11 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0 の既知の問題：注文の表示エラー](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce オンプレミス 2.4.2：製品イメージがありません](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
       * [インストール後、画像とスタイルシートは読み込まれません。テキストのみが表示され、グラフィックは表示されません](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
-      * [「送料」を URL キーとして保存できません](/help/troubleshooting/storefront/storefront-unable-to-enter-shipping-as-a-url-key.md)
       * [製品がストアフロントに表示されない](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
       * [Adobe Commerce 2.4.0 の問題：ストアフロントの生メッセージデータの表示](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
       * [Adobe Commerce 2.3.5 のチェックアウト中の店舗のクレジットの問題](/help/troubleshooting/storefront/store-credit-issue-during-checkout-in-magento-2-3-5.md)
       * [デプロイメント後に表示されない画像の保存](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
       * [Adobe Commerce 2.3.5 の製品比較の既知の問題](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-      * [上部のナビゲーションパネルがストアフロントに読み込まれない](/help/troubleshooting/storefront/top-navigation-panel-does-not-load-on-storefront.md)
-      * [製品編集画像の役割にもかかわらず、製品画像が表示されない](/help/troubleshooting/storefront/product-images-do-not-display-despite-product-edit-image-roles.md)
       * [Adobe Commerce 2.4.0：複数配送のチェックアウトで報酬ポイントを削除する際に 404 エラーが発生する](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
       * [ユーザーがログアウトされたり、Adobe Commerce ストアフロントで買い物かごのコンテンツが失われたりする](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
       * [連絡先を URL キーとして保存できません](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
@@ -108,7 +105,6 @@ ht-degree: 0%
       * [REGEXP_LIKE 関数がないため、B2B 1.5.2 へのアップグレードが SQL 構文エラーで失敗します](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [B2B 1.5.2 の更新後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * サイトがダウンしているか応答しない {#site-down-or-unresponsive}
-      * [接触チャネルクロークにより、サイトにアクセスできない](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [Web ブラウザーでAdobe Commerceにアクセスする際に 503 エラーが発生する](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [メンテナンスモードが有効なままになっているため、サイトの読み込みに失敗します](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [サイトダウンのトラブルシューティング図](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
@@ -120,7 +116,6 @@ ht-degree: 0%
       * [変更ログテーブルが存在しない場合に、更新されていないデータの in [!DNL Commerce Data Exporter] feed および  [!DNL cron] logs エラーを修正しました](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラ  [!DNL opensearch]  検索エンジンが存在しません。 フォールバック  [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほとんどいっぱいであることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-      * [インデックスが無効化され、「indexer_reindex_all_invalid」が常に実行される](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [設定ファイルが見つからないか変更されている](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL エラー 60 : SSL 証明書の有効期限が切れました](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Adobe Commerceの Product Recommendations モジュールのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
@@ -148,7 +143,6 @@ ht-degree: 0%
       * [CSV ファイルアップロードに関する UTF-8 エラーの解決](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
       * [Adobe CommerceのNew Relicを使用したパフォーマンスのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
       * [Adobe Commerce 2.3.5 の一括アクション製品数の既知の問題](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
-      * [サイトのパフォーマンスを向上させるために、Adobe Commerce バナーの出力を無効にします](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md)
       * [CLI からの DDoS 攻撃の確認](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
       * [ストアフロントまたはCommerce管理者にアクセスする際に、空白ページまたはリダイレクトループエラーが発生する](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Adobe Commerce 2.4.1 Vertex Address の検証メッセージ後住所の更新](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
@@ -160,7 +154,6 @@ ht-degree: 0%
       * [Inventory managementのインストール後に、在庫ステータスが正しくない](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Adobe Commerce 2.3.5 の既知の問題：バーチャル製品の複数出荷注文](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [データ書き出しの使用による不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
-      * [依存関係混乱攻撃に対する Composer プラグイン](/help/troubleshooting/miscellaneous/composer-plugin-against-dependency-confusion-attacks.md)
       * [Adobe CommerceおよびMagento Open Source 2.3.7-p2 のストック画像が表示されない](/help/troubleshooting/miscellaneous/adobe-commerce-and-magento-open-source-2-3-7-p2-stock-images-not-showing.md)
       * [Adobe Commerceで画像の最適化を有効にする際にエラーが発生する](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md)
       * [データ移行ツールのトラブルシューティング](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
@@ -208,7 +201,6 @@ ht-degree: 0%
       * [デフォルトの Varnish 設定を変更する必要があるために発生した 503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [管理者アクセスが制限され、パフォーマンスの問題が発生する](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Cron タスクは他のグループからタスクをロック](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Commerce Admin を使用して検索エンジンを変更できない（検索エンジンメニューにアクセスできない）](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [インストール xdebug maximum function nesting level エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [エンティティ Adobe Commerce バックエンドを保存できません](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [ブラウザーでAdobe Commerceにアクセスする際に PHP バージョンエラーまたは 404 エラーが発生する](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
