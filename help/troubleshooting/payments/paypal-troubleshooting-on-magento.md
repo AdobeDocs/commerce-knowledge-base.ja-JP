@@ -41,7 +41,7 @@ PayPal の支払い方法に請求契約と参照トランザクションを含�
 
 以下の記事を参照してください。
 
-* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) アドビのサポートナレッジベースにあります。
+* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838) アドビのサポートナレッジベースにあります。
 * サポートナレッジベースの [ 新しいストアエンティティの増分 ID を変更 ](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) します。
 
 ## 高度な支払いログを収集するには、サポートにお問い合わせください

@@ -42,4 +42,4 @@ Commerce Admin で検索エンジンを変更しようとすると、フィー�
 
 ## 関連資料
 
-* [Commerce管理者でのロック（グレー表示）されたフィールド ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) クラウドインフラストラクチャー上のCommerce ガイド。
+* [Commerce管理者でのロック（グレー表示）されたフィールド ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26879) クラウドインフラストラクチャー上のCommerce ガイド。
