@@ -44,7 +44,7 @@ cURL error 60: SSL certificate problem: certificate has expired
 
 デプロイメントが正常に完了した場合、[!DNL SSL certificate] は自動的に更新されます。
 
-デプロイメントが失敗し、解決に関するサポートが必要な場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) します。
+デプロイメントが失敗し、解決に関するサポートが必要な場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) します。
 
 ### 方法 1:CLI[!DNL magento-cloud] 使用 {#meth2}
 
@@ -59,9 +59,9 @@ cURL error 60: SSL certificate problem: certificate has expired
 開発者向けドキュメントでは、
 
 * [Cloud Manager API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
-* [Fastly の設定：SSL/TLS 証明書のプロビジョニング ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
+* [Fastly の設定：SSL/TLS 証明書のプロビジョニング ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
 
 サポートナレッジベースでは、
 
-* [ カスタム SSL 証明書の有効期限に関する情報 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html)
-* [ クラウドインフラストラクチャー上のAdobe Commerceの SSL （TLS）証明書 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html)
+* [ カスタム SSL 証明書の有効期限に関する情報 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html?lang=ja)
+* [ クラウドインフラストラクチャー上のAdobe Commerceの SSL （TLS）証明書 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=ja)
