@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.4 ～ 2.4.7。次のいずれかのパッチが適用されています。
 
-* [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) を使用して適用された MDVA-12304 パッチ
-* [Adobe Commerceでセキュリティアップデートが利用可能 – APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
-* [1.1 [!DNL Commerce] 4 用のクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/release-notes) を使用して適用された MDVA-12304 パッチ
+* [Adobe Commerceでセキュリティアップデートが利用可能 – APSB25-08](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [1.1 [!DNL Commerce] 4 用のクラウドパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## 問題
 
@@ -50,6 +50,6 @@ Adobe Commerceの Cookie に関連する問題が原因で、次のエラーが�
 
 ### 関連資料
 
-* Adobe Commerce アップグレードガイドの [ パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply)
-* [Adobe Commerce パッチの大規模な配布のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)Adobe Commerce実装プレイブックに記載
-* Commerce on Cloud ガイドの [Commerce Cloud ツールスイートのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)。
+* Adobe Commerce アップグレードガイドの [ パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/apply)
+* [Adobe Commerce パッチの大規模な配布のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)Adobe Commerce実装プレイブックに記載
+* Commerce on Cloud ガイドの [Commerce Cloud ツールスイートのリリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)。
