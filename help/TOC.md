@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9defec16bbe62e13320d20fcbd0b5e65e946d9f7
+source-git-commit: 86fcde85e7e751125c47f3bc3693b8155d1e972f
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3220'
 ht-degree: 0%
 
 ---
@@ -292,12 +292,8 @@ ht-degree: 0%
       * [ストアの保護と暗号化キーの回転に関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
       * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [暗号化キーのローテーションのトラブルシューティング： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
-      * [Adobe Commerceで利用可能なセキュリティアップデート - [!DNL CVE-2024-34102] の独立したパッチを含むように改訂 [!DNL APSB24-40] れました。](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
+      * [Adobe Commerceで利用可能なセキュリティアップデート -[!DNL APSB24-40] の独立したパッチを含むように改訂  [!DNL CVE-2024-34102] れました。](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] 出荷方法の統合の移行  [!DNL SOAP]  から  [!DNL RESTful API] へ](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
-      * [AC-9182 の [!DNL USPS] Ground Advantage 出荷方法サポートのホットフィックス](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
-      * [Adobe Commerce 2.4.3-p2 - 2.4.5 CVE-2022-35698 のセキュリティホットフィックス](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
-      * [Adobe Commerce 2.4.4：部分請求書を作成できない](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
-      * [詳細検索で最も関連性の高い結果が表示されない](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [管理者で注文をフィルタリング中にエラーが発生する](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
       * [Adobe Commerce管理者の URL の場所が公開されました](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
@@ -306,7 +302,7 @@ ht-degree: 0%
       * [サーバーの E メール アドレスから送信された注文 E メール](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [管理パネルからのAdobe Commerce 2.4.6 エラー](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [バージョン &lt; 2.4.5 からアップグレードする際の [!UICONTROL salesRule] ラベルの問題](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
-      * [2.4.4 [!DNL CVE-2022-31160] 2.4.5、2.4.6 リリースの [!DNL JQuery UI] セキュリティ脆弱性/修正](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
+      * [2.4.4[!DNL JQuery UI]2.4.5、2.4.6 リリースの  [!DNL CVE-2022-31160]  セキュリティ脆弱性/修正](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Adobe Commerceで Cookie の最大数を超えるとエラーが発生する](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
       * [APSB25-08 セキュリティパッチ後のすべての一括非同期 web エンドポイントの実行時間が短縮されました](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
