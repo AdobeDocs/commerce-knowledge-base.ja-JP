@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: f0c2e20e0bd6dab713be59c1c686ee2948445bd4
+source-git-commit: 4d3f571c55feb4752037429b9708e71dcf2c571b
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3164'
 ht-degree: 0%
 
 ---
@@ -286,10 +286,6 @@ ht-degree: 0%
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアの保護と暗号化キーの回転に関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
-      * [暗号化キーのローテーションのトラブルシューティング： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
-      * [Adobe Commerceで利用可能なセキュリティアップデート -[!DNL APSB24-40] の独立したパッチを含むように改訂  [!DNL CVE-2024-34102] れました。](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
-      * [[!DNL UPS] 出荷方法の統合の移行  [!DNL SOAP]  から  [!DNL RESTful API] へ](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [管理者で注文をフィルタリング中にエラーが発生する](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
       * [Adobe Commerce管理者の URL の場所が公開されました](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
