@@ -3,9 +3,10 @@ title: Adobe Commerceで Cookie の最大数を超えるとエラーが発生す
 description: Cookie の最大数を超えるとエラーが発生するAdobe Commerceの問題を解決する方法を説明します。
 feature: Deploy, Support, Upgrade, Tools and External Services
 role: Admin, Developer
-source-git-commit: 44e167c801bbcd313f74c9fc51f9cde9473ef96f
+exl-id: 5c42ea7a-f023-4d34-8417-bb470efc3b84
+source-git-commit: 87e98607ee5e1cc41e4266836fd09531a290725e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.4 ～ 2.4.7。次のいずれかのパッチが適用されています。
 
-* [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/release-notes) を使用して適用された MDVA-12304 パッチ
-* [APSB25-08 分離セキュリティパッチ](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
-* [1.1 [!DNL Commerce] 4 用のクラウドパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) を使用して適用された MDVA-12304 パッチ
+* [Adobe Commerceでセキュリティアップデートが利用可能 – APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [1.1 [!DNL Commerce] 4 用のクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## 問題
 
@@ -49,6 +50,6 @@ Adobe Commerceの Cookie に関連する問題が原因で、次のエラーが�
 
 ### 関連資料
 
-* Adobe Commerce アップグレードガイドの [ パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/apply)
-* [Adobe Commerce パッチの大規模な配布のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)Adobe Commerce実装プレイブックに記載
-* Commerce on Cloud ガイドの [Commerce Cloud ツールスイートのリリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)。
+* Adobe Commerce アップグレードガイドの [ パッチの適用 ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply)
+* [Adobe Commerce パッチの大規模な配布のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)Adobe Commerce実装プレイブックに記載
+* Commerce on Cloud ガイドの [Commerce Cloud ツールスイートのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)。

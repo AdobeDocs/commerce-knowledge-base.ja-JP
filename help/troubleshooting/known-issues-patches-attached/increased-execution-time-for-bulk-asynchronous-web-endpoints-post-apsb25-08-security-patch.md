@@ -3,9 +3,10 @@ title: APSB25-08 セキュリティパッチ後の一括非同期 web エンド�
 description: この記事では、APSB25-08 セキュリティパッチを適用した後、1000 以上のエントリに対する POST rest/all/async/bulk/V1/products リクエストの実行時間が大幅に長くなる問題のホットフィックスを提供します。
 feature: Security, Cache, REST, Products, Customers
 role: Admin, Developer
-source-git-commit: fce7f860b9fddd694b311ffc4acd56a48c06e14b
+exl-id: 784a48cb-1ef1-432b-b09f-ebcbb9bebf01
+source-git-commit: f0c2e20e0bd6dab713be59c1c686ee2948445bd4
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -55,8 +56,8 @@ APSB25-08 セキュリティパッチを適用した後、1,000 件以上のエ�
 
 ## パッチの適用方法
 
-ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=ja) を参照してください。
+ファイルを解凍し、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) を参照してください。
 
 ## 関連資料
 
-* [Adobe Commerceでセキュリティ更新を利用できます – APSB25-08](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
+* [Adobe Commerceでセキュリティアップデートが利用可能 – APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)

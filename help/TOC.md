@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 86fcde85e7e751125c47f3bc3693b8155d1e972f
+source-git-commit: f0c2e20e0bd6dab713be59c1c686ee2948445bd4
 workflow-type: tm+mt
-source-wordcount: '3220'
+source-wordcount: '3192'
 ht-degree: 0%
 
 ---
@@ -285,10 +285,6 @@ ht-degree: 0%
       * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
-      * [Adobe Commerce 2.4.7-p4.1 [!DNL HIPAA] 2.0 互換性パッケージのホットフィックス](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
-      * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
-      * [Adobe Commerce 2.4.6 [!DNL GraphQL "placeOrder" API] p8 での後方互換性のない変更](/help/troubleshooting/known-issues-patches-attached/backwards-incompatible-changes-for-graphql-placeorder-api-in-adobe-commerce-2-4-6-p8.md)
-      * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
       * [ストアの保護と暗号化キーの回転に関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
       * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [暗号化キーのローテーションのトラブルシューティング： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
