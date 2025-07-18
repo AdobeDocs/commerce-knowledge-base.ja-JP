@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 4d3f571c55feb4752037429b9708e71dcf2c571b
+source-git-commit: 2d9b1c0934e7f2646462a73a786e126ab29719b0
 workflow-type: tm+mt
-source-wordcount: '3164'
+source-wordcount: '3193'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 0%
       * [Composer インストール コマンドが.gitignore ファイル、Adobe Commerceを上書きする](/help/troubleshooting/installation-and-upgrade/custom-gitignore-file-overridden.md)
       * [インストール時に PHP の日付を警告](/help/troubleshooting/installation-and-upgrade/during-installation-php-date-warning.md)
       * [インストール中に、リフレクション例外エラーが発生する](/help/troubleshooting/installation-and-upgrade/during-installation-reflection-exception-error.md)
-      * [セットアップ：アップグレードの実行中に市外局番が設定されていません](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
+      * [セットアップの実行中に市外局番が設定されないエラーが発生する](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
       * [インストールが失敗し、install.log を作成できない](/help/troubleshooting/installation-and-upgrade/installation-fails-cannot-create-install-log.md)
       * [インストール中の例外](/help/troubleshooting/installation-and-upgrade/exceptions-during-installation.md)
       * [オプションのサンプルデータのインストール中にエラーが発生しました](/help/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data.md)
@@ -286,10 +286,14 @@ ht-degree: 0%
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアの保護と暗号化キーの回転に関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [管理者で注文をフィルタリング中にエラーが発生する](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
-      * [「国を許可」で何も選択されていない場合、ユーザーが買い物かごに製品を追加できない](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
-      * [Adobe Commerce管理者の URL の場所が公開されました](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
-      * [Braintreeの支払いが有効な場合、管理者が注文の作成や並べ替えができない](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
+      * [Adobe Commerceでセキュリティ更新プログラムを利用できます – [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
+      * [暗号化キーのローテーションのトラブルシューティング： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
+      * [Adobe Commerceで利用可能なセキュリティアップデート -[!DNL APSB24-40] の独立したパッチを含むように改訂  [!DNL CVE-2024-34102] れました。](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
+      * [[!DNL UPS] 出荷方法の統合の移行  [!DNL SOAP]  から  [!DNL RESTful API] へ](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
+      * [AC-9182 の [!DNL USPS] Ground Advantage 出荷方法サポートのホットフィックス](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
+      * [Adobe Commerce 2.4.3-p2 - 2.4.5 CVE-2022-35698 のセキュリティホットフィックス](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
+      * [Adobe Commerce 2.4.4：部分請求書を作成できない](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
+      * [詳細検索で最も関連性の高い結果が表示されない](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [サーバーの E メール アドレスから送信された注文 E メール](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [管理パネルからのAdobe Commerce 2.4.6 エラー](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
