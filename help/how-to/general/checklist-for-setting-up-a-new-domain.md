@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ユーザーガイドの [!DNL domain]/[!DNL Fastly]/[!DNL Admin]/**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]** **[!UICONTROL Full Page Cache]****[!DNL Fastly Configuration]** の **[!UICONTROL Domains]** で設定を更新することで、新しい [[!DNL Manage domains] を自分に追加で ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) ます。
+>ユーザーガイドの [!DNL domain]/[!DNL Fastly]/[!DNL Admin]/**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL System]** **[!UICONTROL Full Page Cache]**&#x200B;**[!DNL Fastly Configuration]** の **[!UICONTROL Domains]** で設定を更新することで、新しい [[!DNL Manage domains] を自分に追加で ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) ます。
 >
 >
 >ドメインを追加できない場合、次のいずれかの理由が原因である可能性があります。
