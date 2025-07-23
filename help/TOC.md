@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 3ac35387a6ccf5b8ee721f1cc3777f20adb919f0
+source-git-commit: acc2baf6066204bb8a4babf18fce9d595b011394
 workflow-type: tm+mt
-source-wordcount: '3128'
+source-wordcount: '3081'
 ht-degree: 0%
 
 ---
@@ -286,11 +286,6 @@ ht-degree: 0%
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアの保護と暗号化キーの回転に関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
-      * [サーバーの E メール アドレスから送信された注文 E メール](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
-      * [管理パネルからのAdobe Commerce 2.4.6 エラー](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
-      * [バージョン &lt; 2.4.5 からアップグレードする際の [!UICONTROL salesRule] ラベルの問題](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
-      * [2.4.4[!DNL JQuery UI]2.4.5、2.4.6 リリースの  [!DNL CVE-2022-31160]  セキュリティ脆弱性/修正](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Adobe Commerceで Cookie の最大数を超えるとエラーが発生する](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
       * [APSB25-08 セキュリティパッチ後のすべての一括非同期 web エンドポイントの実行時間が短縮されました](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
