@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 15d38d9b0cb18536326c0afbb12b8a21eaee596c
+source-git-commit: 0569b4874400e0d313ad556cc7c07abfc7647368
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 0%
 * [Adobe Commerce サポートナレッジベース](/help/overview.md)
 * サポートツール {#support-tools}
    * [サポートツールの概要](/help/support-tools/overview.md)
-   * Site-wide Analysis tool {#site-wide-analysis-tool}
-      * [Adobeによる Site-Wide Analysis Tool：概要](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
-      * [Adobe Commerce Site-Wide Analysis Tool Report の FAQ](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
 * お知らせ {#announcements}
    * [お知らせの概要](/help/announcements/overview.md)
    * Adobe Commerceのお知らせ {#commerce-announcements}
