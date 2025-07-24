@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: acc2baf6066204bb8a4babf18fce9d595b011394
+source-git-commit: 15d38d9b0cb18536326c0afbb12b8a21eaee596c
 workflow-type: tm+mt
-source-wordcount: '3081'
+source-wordcount: '3029'
 ht-degree: 0%
 
 ---
@@ -286,11 +286,6 @@ ht-degree: 0%
       * [キャッシュフラッシュのデプロイメントに失敗しました：「キャッシュ」名前空間にコマンドが定義されていません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアの保護と暗号化キーの回転に関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [SOAPから RESTful API への [!DNL FedEx] 送方法の統合の移行](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
-      * [Adobe Commerceで Cookie の最大数を超えるとエラーが発生する](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
-      * [APSB25-08 セキュリティパッチ後のすべての一括非同期 web エンドポイントの実行時間が短縮されました](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
-      * [顧客グループ名、セグメントおよびプロモーションルール情報が、 [!DNL GraphQL] の方法で公開される。](/help/troubleshooting/known-issues-patches-attached/hotfix-for-exposed-customer-group-segments-promo-rules-information.md)
-      * [Adobe Commerceでセキュリティアップデートを利用できます – APSB25-50](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50.md)
    * Elasticsearch {#elasticsearch}
       * [検索エンジンがに設定されている場合に  [!DNL Elasticsearch7]  フォールバック  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Adobe Commerce cloud infrastructure 2.3.1 以降のアップグレード後のElasticsearchの問題](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
