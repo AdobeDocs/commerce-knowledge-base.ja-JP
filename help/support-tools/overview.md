@@ -17,11 +17,11 @@ Adobe Commerceには、e コマースストアのエクスペリエンスを向�
 
 * Site-wide Analysis tool
 
-   * [Adobeの Site-Wide Analysis Tool：概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro)
+   * [Adobeの Site-Wide Analysis Tool：概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/intro)
 
 * [!DNL Quality Patches Tool] （QPT）
 
-   * [QPT ツールで使用可能なパッチの概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
+   * [QPT ツールで使用可能なパッチの概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
 
      [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) （QPT）は、AdobeとMagento Open Source コミュニティが開発した個別のクオリティパッチを適用できるツールです。
 
@@ -35,20 +35,20 @@ Adobe Commerceには、e コマースストアのエクスペリエンスを向�
 
 * Adobe Commerceの監視
 
-   * [Adobe Commerceの監視の概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
+   * [Adobe Commerceの監視の概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
 
 * Adobe Commerceの管理アラート
-   * [Adobe Commerceの管理アラート：Redis メモリクリティカルアラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
-   * [Managed alerts for Adobe Commerce:disk warning アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
-   * [Adobe Commerceの管理アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
-   * [Managed alerts for Adobe Commerce:disk critical アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
-   * [Managed alerts on Adobe Commerce:Redis memory warning アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
-   * [Managed alerts for Adobe Commerce:memory warning アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)
-   * [Adobe Commerceの管理アラート：CPUのクリティカルアラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)
-   * [Adobe Commerceの管理アラート：メモリ・クリティカル・アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert)
-   * [Adobe Commerceの管理アラート：Apdex 重大アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert)
-   * [Adobe Commerceの管理アラート：MariaDB アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts)
-   * [Adobe Commerceの管理アラート：Apdex 警告アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert)
-   * [Managed alerts for Adobe Commerce:CPUの警告アラート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert)
+   * [Adobe Commerceの管理アラート：Redis メモリクリティカルアラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
+   * [Managed alerts for Adobe Commerce:disk warning アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
+   * [Adobe Commerceの管理アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
+   * [Managed alerts for Adobe Commerce:disk critical アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
+   * [Managed alerts on Adobe Commerce:Redis memory warning アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
+   * [Managed alerts for Adobe Commerce:memory warning アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)
+   * [Adobe Commerceの管理アラート：CPUのクリティカルアラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)
+   * [Adobe Commerceの管理アラート：メモリ・クリティカル・アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert)
+   * [Adobe Commerceの管理アラート：Apdex 重大アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert)
+   * [Adobe Commerceの管理アラート：MariaDB アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts)
+   * [Adobe Commerceの管理アラート：Apdex 警告アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert)
+   * [Managed alerts for Adobe Commerce:CPUの警告アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert)
 * Commerce サイト評価ツール
-   * [Commerce サイト評価 ](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)
+   * [Commerce サイト評価 ](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html?lang=ja)
