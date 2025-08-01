@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >この記事は、[ ステージング更新のプレビュー ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change) を試みると 404 エラーが発生する状況には適用されません。 その問題が発生した場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) を開いてください。
 
-[ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) を使用してストアコンテンツアセットのスケジュールされた更新で操作を実行した後（2}Magento\_Staging モジュールを使用してスケジュールされたストアコンテンツアセットの更新）、ストアフロントページまたは管理者にアクセスすると、404 エラー（「Whoops, our bad..」ページ）が発生 [ ます。 ](https://developer.adobe.com/commerce/php/module-reference/)例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
+[ コンテンツのステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) を使用してストアコンテンツアセットのスケジュールされた更新で操作を実行した後（2&rbrace;Magento\_Staging モジュールを使用してスケジュールされたストアコンテンツアセットの更新）、ストアフロントページまたは管理者にアクセスすると、404 エラー（「Whoops, our bad..」ページ）が発生 [ ます。 ](https://developer.adobe.com/commerce/php/module-reference/)例えば、スケジュールされた更新を含む製品を削除した場合や、スケジュールされた更新の終了日を削除した場合などです。
 
 ストアのコンテンツアセットには、次のものが含まれます。
 
