@@ -1,17 +1,17 @@
 ---
 title: PWA Studioを使用できるように NPM を設定する
-description: 「[Progressive Web Apps （PWA） Studio] （https://magento.github.io/pwa-studio/）は、Cloud Infrastructure 2.3.x 以降のAdobe Commerceで使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、「.magento.app.yaml」設定ファイルの「hooks:build」セクションで行われます。
+description: '[Progressive Web Apps （PWA） Studio] （https://magento.github.io/pwa-studio/）は、Cloud Infrastructure 2.3.x 以降のAdobe Commerceで使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、「.magento.app.yaml」設定ファイルの「hooks:build」セクションで行われます。'
 exl-id: 3854fc94-e8ad-45d8-bf3e-73462364220d
-source-git-commit: 37ac9cca1f876a48092467aa38f2f2f013c83dd9
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # PWA Studioを使用できるように NPM を設定する
 
-[ プログレッシブ web アプリケーション（PWA） Studio](https://magento.github.io/pwa-studio/) は、Cloud Infrastructure 2.3.x 以降でAdobe Commerce用に使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、`.magento.app.yaml` 設定ファイルの `hooks:build` セクションで行います。
+[ プログレッシブ web アプリケーション（PWA） Studio](https://magento.github.io/pwa-studio/) は、Cloud Infrastructure 2.3.x 以降のAdobe Commerceで使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、`hooks:build` 設定ファイルの `.magento.app.yaml` セクションで行います。
 
 ## 環境とテクノロジー
 
@@ -40,7 +40,7 @@ ht-degree: 0%
    >
    >ビルドだけでなく、アプリケーションで Node.JS を実行する場合は、次のコマンドを追加してビルドフックを変更してください。
    > 
-   > ```
+   ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
    > echo 'export NO_UPDATE_NOTIFIER=1' >> .environment
    > echo 'export NVM_DIR="$MAGENTO_CLOUD_DIR/.nvm"' >> .environment
@@ -48,10 +48,10 @@ ht-degree: 0%
    > ```
 
 1. 変更をファイルに保存します。
-1. Git が編集したファイルを [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) にプッシュします。
+1. Git が編集したファイルを [ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) にプッシュします。
 
 変更は、更新された YAML ファイルを Git によって環境にプッシュした後に有効になります。
 
 ## 関連ドキュメント
 
-* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=ja)。
+* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html)。

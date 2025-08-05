@@ -1,12 +1,12 @@
 ---
-title: 「コードディレクトリにクラスを保存できません」エラー」
+title: 「クラスをコードディレクトリに保存できません」エラー
 description: この記事では、依存関係を指定した方法によりクラスがその場で自動生成されなくなり、「Class cannot be saved in the generated/code directory」*というエラーメッセージが表示される問題の修正方法を説明します。
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. ローカル環境で、自動生成されたクラスに依存するカスタムクラスを作成します。
 1. カスタムクラスがトリガーされるシナリオを実行し、正しく機能していることを確認します。
 1. 変更をコミットして統合環境にプッシュします。 これにより、デプロイメントプロセスがトリガーになります。 デプロイメントに成功しました。
-1. [ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) で、カスタムクラスがトリガーされるシナリオを実行します。
+1. [ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) で、カスタムクラスがトリガーされるシナリオを実行します。
 
 <u> 期待される結果 </u>
 

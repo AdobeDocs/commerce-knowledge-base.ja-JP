@@ -4,7 +4,7 @@ description: この記事では、サイトで Fastly キャッシュが機能�
 exl-id: 725949e9-b69b-456f-9c56-e2163143a71e
 feature: Cache, Cloud, Console, Paas
 role: Developer
-source-git-commit: 586a8c6340bfd2cbf773d1b009d6e106e930117d
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ### curl コマンドによるテスト
 
-次に、curl コマンドを使用して、X-header-Tags が存在することと、追加のMagento情報を確認します。 コマンドの形式は、ステージングと実稼動で異なります。
+次に、curl コマンドを使用して、X-Magento-Tags が存在することと、追加のヘッダー情報を確認します。 コマンドの形式は、ステージングと実稼動で異なります。
 
 これらのコマンドについて詳しくは、`-H "host:URL"` を挿入する際に Fastly をバイパスし、接続場所（OneDrive スプレッドシートからの CNAME 情報）の元に置き換え、`-k` は SSL を無視し、詳細な応答を提供 `-v` ます。 ヘッダーが正しく表示される場合は、ライブサイトを確認して、ヘッダーを再度確認します。
 
@@ -105,14 +105,14 @@ curl -k https://www.mymagento.biz.c.sv7gVom4qrpek.ent.magento.cloud -H 'Host: ww
 
 * 返された応答のヘッダーと値を確認します。
 * Fastly-Magento-VCL-Uploaded が存在する必要があります
-* X-tags が返されるMagentoです
+* X-Magento-Tags が返されます。
 * Fastly-Module-Enabled は、Yes または Fastly 拡張機能バージョン番号のいずれかである必要があります
 * X-Cache は HIT または HIT、HIT のいずれかである必要があります
 * x-cache-hits は 1,1 にしてください
 * キャッシュコントロール : max-age は 0 より大きくなければなりません
 * プラグマはキャッシュする必要があります
 
-次の例では、Pragma、X-Module-Tags および Fastly-Module-Enabled の正しい値をMagentoしています。
+次の例では、Pragma、X-Magento-Tags および Fastly-Module-Enabled の正しい値を示しています。
 
 curl コマンドの出力は長くなる場合があります。 以下は概要に過ぎません。
 
@@ -170,13 +170,13 @@ curl コマンドの出力は長くなる場合があります。 以下は概�
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Configuration Management を使用する場合は、設定ファイルが必要です。 app/etc/config.app.php （2.0、2.1）またはapp/etc/config.php（2.2）ファイルを編集し、`'Fastly_Cdn' => 1` の設定が正しいことを確認します。 この設定は `'Fastly_Cdn' => 0` （無効）にしないでください。Fastly を有効にした場合は、設定ファイルを削除し、bin/magento magento-cloud:scd-dump コマンドを実行して更新します。 このファイルの手順については、『設定ガイド』の [ システム固有の設定の管理例 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=ja#manage-the-system-specific-configuration) を参照してください。
+1. Configuration Management を使用する場合は、設定ファイルが必要です。 app/etc/config.app.php （2.0、2.1）またはapp/etc/config.php（2.2）ファイルを編集し、`'Fastly_Cdn' => 1` の設定が正しいことを確認します。 この設定は、`'Fastly_Cdn' => 0` （無効）にしないでください。Fastly を有効にした場合は、設定ファイルを削除し、bin/magento magento-cloud:scd-dump コマンドを実行して更新します。 このファイルの手順については、『設定ガイド』の [ システム固有の設定の管理例 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) を参照してください。
 
-モジュールがインストールされていない場合は、[ 統合環境 ](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) ブランチにインストールし、ステージング環境と実稼動環境にデプロイする必要があります。 詳しくは、クラウドインフラストラクチャー上のCommerce ガイドの [Fastly の設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja) を参照してください。
+モジュールがインストールされていない場合は、[ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) ブランチにインストールし、ステージング環境と実稼動環境にデプロイする必要があります。 詳しくは、クラウドインフラストラクチャー上のCommerce ガイドの [Fastly の設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) を参照してください。
 
 ### Fastly-Magento-VCL-Uploaded がありません
 
-インストールおよび設定中に、Fastly VCL をアップロードしている必要があります。 これらは、作成したカスタム VCL スニペットではなく、Fastly モジュールによって提供される基本 VCL スニペットです。 Commerce手順については、『 Cloud Infrastructure ガイド』の [Fastly VCL スニペットのアップロード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#upload-vcl-to-fastly) を参照してください。
+インストールおよび設定中に、Fastly VCL をアップロードしている必要があります。 これらは、作成したカスタム VCL スニペットではなく、Fastly モジュールによって提供される基本 VCL スニペットです。 Commerce手順については、『 Cloud Infrastructure ガイド』の [Fastly VCL スニペットのアップロード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) を参照してください。
 
 ### X-Cache に MISS が含まれる
 
@@ -185,12 +185,12 @@ X-Cache が HIT、MISS または MISS、MISS の場合、同じ curl コマン�
 同じ結果が得られる場合は、curl コマンドを使用し、応答ヘッダーを確認します。
 
 * プラグマはキャッシュ
-* X-Tag-Tags が存在するMagento
+* X-Magento-Tags が存在する
 * キャッシュコントロール : max-age が 0 より大きい
 
 問題が解決しない場合は、別の拡張機能がこれらのヘッダーをリセットしている可能性があります。 ステージングで次の手順を繰り返して、拡張機能を無効にし、問題を引き起こしている拡張機能を見つけます。 問題の原因となっている拡張機能を見つけたら、実稼動環境でその拡張機能を無効にする必要があります。
 
-1. 拡張機能を無効にするには、Cloud Infrastructure ガイドのCommerceの [ 拡張機能の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=ja#manage-extensions) の節で説明されている手順に従ってください。
+1. 拡張機能を無効にするには、Cloud Infrastructure ガイドのCommerceの [ 拡張機能の管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) の節で説明されている手順に従ってください。
 1. 拡張機能を無効にした後、**[!UICONTROL System]**/**[!UICONTROL Tools]**/**[!UICONTROL Cache Management]** に移動します。
 1. 「**[!UICONTROL Flush Magento Cache]**」をクリックします。
 1. ここで、一度に 1 つの拡張機能を有効にして、設定を保存し、キャッシュをフラッシュします。
@@ -201,6 +201,6 @@ Fastly ヘッダーをリセットしている拡張機能を分離する場合�
 
 ## 詳しくは、開発者向けドキュメントを参照してください。
 
-* [Fastly について ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja)
-* [Fastly のセットアップ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)
-* [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=ja)
+* [Fastly について ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Fastly のセットアップ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* [ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
