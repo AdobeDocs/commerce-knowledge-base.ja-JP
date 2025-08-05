@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## スタータープランと Pro プランの統合でのスペースの割り当て
 
-すべてのスタータープラン環境と Pro プラン [ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) の場合、`.magento/services.yaml` パラメーターを増やすことで、`mysql: disk:` ファイルで MySQL により多くの領域を割り当てることができます。 例：
+すべてのスタータープラン環境と Pro プラン [ 統合環境 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) の場合、`.magento/services.yaml` パラメーターを増やすことで、`mysql: disk:` ファイルで MySQL により多くの領域を割り当てることができます。 例：
 
 ```yaml
 mysql:
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
+詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
 
 `.magento/services.yaml` ファイルを変更したら、変更内容を適用するために、コミットしてプッシュする必要があります。 プッシュはデプロイメントプロセスをトリガーします。
 

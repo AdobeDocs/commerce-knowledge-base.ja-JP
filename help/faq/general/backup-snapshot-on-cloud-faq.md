@@ -40,7 +40,7 @@ ht-degree: 0%
 また、データベースのロールバックやリストアはサポートによって実行されず、スナップショットが取得されますが、データベースは自分でリストアする必要があります。
 * バックアップは、**暗号化されたAmazon Web Services Elastic Block Store （AWS EBS）スナップショット** を使用して作成されます。
 * 環境スナップショットには、完全なシステム（ファイルシステムとデータベース）が含まれます。
-* 自動スナップショットのリテンション時間 **異なる** と [ スケジュール ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery) に従います。
+* 自動スナップショットのリテンション時間 **異なる** と [ スケジュール ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery) に従います。
 
 >[!NOTE]
 >
@@ -50,15 +50,15 @@ ht-degree: 0%
 
 ### 統合（開発）環境
 
-* [ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) は **自動的にバックアップされていません** が、スナップショットを **手動** 作成できます。
+* [ 統合環境 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) は **自動的にバックアップされていません** が、スナップショットを **手動** 作成できます。
 * 非ライブストアの統合環境に対して、手動スナップショットを作成できます。
 * 手動でトリガーされた **複数のスナップショット** がある場合があります。
 * 手動でトリガーしたスナップショットは、**7 日間** 保存されます。
 
 **関連記事については、開発者向けドキュメントを参照してください。**
 
-* [ バックアップと災害復旧 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [ スナップショットの作成 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [ バックアップと災害復旧 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [ スナップショットの作成 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## 環境スナップショット、スタータープラン
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 環境スナップショットの復元
 
-Commerce既存のスナップショットを復元するには（サポート対象の環境：統合、ステージング、スタータープランの実稼動または Pro プランの統合）、Cloud Infrastructure ガイドの [ バックアップ管理：手動バックアップの復元 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) の手順に従ってください。
+Commerce既存のスナップショットを復元するには（サポート対象の環境：統合、ステージング、スタータープランの実稼動または Pro プランの統合）、Cloud Infrastructure ガイドの [ バックアップ管理：手動バックアップの復元 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) の手順に従ってください。
 
 ## データベース（DB）のバックアップ
 
@@ -78,8 +78,8 @@ DB バックアップは、クラウドスナップショットの一部です�
 
 >[!NOTE]
 >
->マウントされたボリュームは [ 書き込み可能なマウント ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) のみを含み/参照し、`/app` ディレクトリの一部は含みません。 その他のファイルの場合は、[ ビルドおよびデプロイメントプロセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) によって作成および生成されます。また、Git リポジトリから残りのファイルをチェックアウトする必要もあります。
+>マウントされたボリュームは [ 書き込み可能なマウント ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) のみを含み/参照し、`/app` ディレクトリの一部は含みません。 その他のファイルの場合は、[ ビルドおよびデプロイメントプロセス ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) によって作成および生成されます。また、Git リポジトリから残りのファイルをチェックアウトする必要もあります。
 
-開発者向けドキュメントの [ スナップショットとバックアップ管理 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)。
+開発者向けドキュメントの [ スナップショットとバックアップ管理 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)。
 
 特定の時点から DB が必要な場合は、実稼動環境およびステージング環境から DB スナップショットの [ サポートリクエスト ](/help/help-center-guide/help-center/magento-help-center-user-guide.md) を送信するだけです。 （任意の環境で）現在の DB のバックアップのみが必要な場合は、ナレッジベースの記事 [ クラウドでのデータベースダンプの生成 ](/help/how-to/general/create-database-dump-on-cloud.md) を参照してください。

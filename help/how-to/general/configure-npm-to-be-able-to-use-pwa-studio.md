@@ -48,10 +48,10 @@ ht-degree: 0%
    > ```
 
 1. 変更をファイルに保存します。
-1. Git が編集したファイルを [ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) にプッシュします。
+1. Git が編集したファイルを [ 統合環境 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) にプッシュします。
 
 変更は、更新された YAML ファイルを Git によって環境にプッシュした後に有効になります。
 
 ## 関連ドキュメント
 
-* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html)。
+* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=ja)。

@@ -31,11 +31,11 @@ ht-degree: 0%
 1. 製品の数を減らします（該当する場合は、顧客グループおよび店舗も減らします）。
 1. 使用を 1 人または 2 人の同時ユーザーに制限します。
 1. cron ジョブを無効にし、必要に応じて手動で実行します。
-1. これを行ったことがない場合は、Enhanced Integration 環境へのアップグレードをリクエストします。アップグレードが実行されると制限される環境の数の制限に注意してください。 詳しくは、サポートナレッジベースの [ 統合環境強化リクエスト - Pro と Starter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) の記事を参照してください。
+1. これを行ったことがない場合は、Enhanced Integration 環境へのアップグレードをリクエストします。アップグレードが実行されると制限される環境の数の制限に注意してください。 詳しくは、サポートナレッジベースの [ 統合環境強化リクエスト - Pro と Starter](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) の記事を参照してください。
 
 ## 関連資料：
 
 開発者向けドキュメントでは、
 
-* [Pro アーキテクチャ > 統合環境 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [ スターターアーキテクチャ/ステージング環境 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Pro アーキテクチャ > 統合環境 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [ スターターアーキテクチャ/ステージング環境 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
