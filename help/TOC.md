@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
+source-git-commit: acb00b0e25b85a558675993d63a80a59df7af5d7
 workflow-type: tm+mt
-source-wordcount: '3006'
+source-wordcount: '2998'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
    * [お知らせの概要](/help/announcements/overview.md)
    * Adobe Commerceのお知らせ {#commerce-announcements}
       * [クラウドインフラストラクチャー上のAdobe Commerceに対するホリデーサージ容量リクエスト](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [Adobe Commerce用互換性ツール 1.1.0 のアップグレード](/help/announcements/adobe-commerce-announcements/upgrade-compatibility-tool-for-magento.md)
       * [Adobe Commerce リリースの更新されたライフサイクルポリシーに関する FAQ](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Cloud 2.4.4 でのAdobe Commerceの OpenSearch への切り替え](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [PHP の脆弱性に対するAdobe Commerceの推奨事項](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
