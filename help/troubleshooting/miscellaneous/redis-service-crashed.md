@@ -4,9 +4,9 @@ description: この記事では、Redis を修正する方法を推奨します�
 exl-id: 5eb8fb70-0f41-433a-8d3f-c368781a2d1d
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 649e01b29b59bf77e6396acbeb7a83bd9c67e1ef
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,15 @@ redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_pe
 ```
 
 *REDIS\_PORT* 変数と *REDIS\_HOST* 変数は `app/etc/env.php` から取得できます。
+
+>[!NOTE]
+>
+>また、次の CLI コマンドを実行して、Redis のホスト アドレスとポート番号を取得することもできます。
+>   
+```bash
+>   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+>   ```
+
 
 上記のクエリを実行した結果、空きメモリの割合が 40% 未満であることが示された場合は、[Adobe Commerce サポートにチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、Redis サーバーの `maxmemory` 設定の増加をリクエストします。 削除されたキーの値が「0」でない場合、または Redis の稼働時間（日数）が 0 である場合（Redis が本日クラッシュしたことを示す）、[Adobe Commerce サポートにチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、この問題の調査と修正を依頼する必要があります。
 
