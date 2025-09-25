@@ -3,16 +3,18 @@ title: Fastly レベルでAdobe Commerceの悪意のあるトラフィックを�
 description: この記事では、クラウドインフラストラクチャストア上のAdobe Commerceで DDoS 攻撃が行われていると思われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
+source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
 
 # Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロックする
 
-この記事では、クラウドインフラストラクチャストア上のAdobe Commerceで DDoS 攻撃が行われていると思われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
+この記事では、悪意のある脅威に対応するだけでなく、地理的フィルタリングの方法としても、ストアへの不要なトラフィックをブロックする方法について説明します。
+
+クラウドインフラストラクチャー上のAdobe Commerce（および Fastly CDN）は、DDoS 攻撃などの悪意のある脅威に対応してストアへのトラフィックを管理するツールを提供します。 さらに、悪意のある意図が検出されない場合でも、特定の国や地域からのリクエストをブロックして、ビジネスポリシー、規制要件、その他の運用ニーズに準拠することができます。
 
 ## 影響を受ける製品とバージョン：
 
@@ -24,7 +26,7 @@ ht-degree: 0%
 
 Web サイトが DDoS によって過負荷になっている場合、Commerce管理者にログインできない可能性があります（および、この記事で後述するすべての手順を実行する必要があります）。
 
-管理者にアクセスするには、[ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) の説明に従って web サイトをメンテナンスモードにし、IP アドレスを許可リストに登録します。 この操作が完了したら、メンテナンスモードを無効にします。
+管理者にアクセスするには、[ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) の説明に従って web サイトをメンテナンスモードにし、IP アドレスを許可リストに登録します。 この操作が完了したら、メンテナンスモードを無効にします。
 
 ## IP によるトラフィックのブロック
 
@@ -74,7 +76,7 @@ name: block_bad_useragents
 * ロボットはあなたの `robots.txt` を無視することができます。 特に、セキュリティの脆弱性を探して Web をスキャンするマルウェアロボットや、スパムの発信者が使用するメールアドレスの収集には注意を払いません。
 * `robots.txt` ファイルは、公開されているファイルです。 ロボットが使用したくないサーバーのセクションは誰でも確認できます。
 
-Adobe Commerce `robots.txt` の基本設定とデフォルトの設定については、開発者向けドキュメントの [ 検索エンジンロボット ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) の記事を参照してください。
+Adobe Commerce `robots.txt` の基本設定とデフォルトの設定については、開発者向けドキュメントの [ 検索エンジンロボット ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) の記事を参照してください。
 
 `robots.txt` に関する一般的な情報と推奨事項については、以下を参照してください。
 
@@ -86,4 +88,4 @@ Adobe Commerce `robots.txt` の基本設定とデフォルトの設定につい�
 ## 関連資料
 
 * [Cloud 上のAdobe Commerceの製品固有のライセンス条件 ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* Commerce on Cloud ガイドの [ ブロックリクエストのカスタム VCL](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+* Commerce on Cloud ガイドの [ ブロックリクエストのカスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
