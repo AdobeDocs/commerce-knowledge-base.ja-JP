@@ -41,6 +41,6 @@ Adobe Commerceが選択内容を買い物かごに追加しません。
 
 ## 関連資料
 
-* ユーザーガイドの [MerchDocs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) 買い物かごの管理。
+* ユーザーガイドの [MerchDocs](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) 買い物かごの管理。
 * [Adobe Commerce 2.4.0 の既知の問題：輸出税率が機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) アドビのサポートナレッジベースを参照してください。
 * [Adobe Commerce 2.4.0 既知の問題：Braintreeの支払い方法が、サポートナレッジベースの複数アドレスのチェックアウトに表示され ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) せん。
