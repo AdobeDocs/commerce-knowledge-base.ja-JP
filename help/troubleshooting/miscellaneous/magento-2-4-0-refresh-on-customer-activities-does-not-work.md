@@ -1,12 +1,12 @@
 ---
-title: 「Adobe Commerce 2.4.0：顧客のアクティビティの更新が機能しない」
+title: Adobe Commerce 2.4.0：顧客のアクティビティの更新が機能しない
 description: この記事では、管理者ユーザーが顧客の注文を作成し、顧客のアクティビティ サイドパネルの「更新」ボタンが機能しない場合の、Adobe Commerce 2.4.0 の既知の問題の解決策を説明します。
 exl-id: 50048e9f-6009-4db5-ae4a-c35a84cec265
 feature: Configuration
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. **製品** ページに移動します。 **顧客のアクティビティ** の **最近表示された製品** セクションの **更新** ボタンをクリックします。
 1. ストアフロントに戻ります。
 1. 作成した製品を使用して注文します。
-1. **管理パネル** に戻り、「顧客のアクティビティ **の** 最終注文項目 **セクションの**&#x200B;**更新** ボタンをクリックします。
+1. **管理パネル** に戻り、「顧客のアクティビティ **の** 最終注文項目 **セクションの****更新** ボタンをクリックします。
 1. ストアフロントに戻ります。 作成した製品を **比較リスト** に追加します。
 1. **管理パネル** に戻ります。 **顧客のアクティビティ** の **比較リストの製品** セクションの **更新** ボタンをクリックします。
 1. ストアフロントに戻ります。
@@ -56,7 +56,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintree支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
-* [Adobe Commerce 2.4.0 の既知の問題：ストアフロントに生のメッセージデータが表示される](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
+* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Adobe Commerce 2.4.0 の既知の問題：輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 * [Adobe Commerce 2.4.0 の既知の問題：「買い物かごに選択項目を追加」ボタンが機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

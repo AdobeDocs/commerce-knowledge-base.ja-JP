@@ -4,9 +4,9 @@ description: この記事では、「**書き出し税率**」ボタンが機能
 exl-id: 29a34a1f-d23a-43cb-ac1f-8711ce25fa6c
 feature: Data Import/Export, Orders
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ ht-degree: 0%
 
 サポートナレッジベースでは、
 
-* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeによるお支払い方法が表示されません ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)。
+* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されません ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)。
 * [Adobe Commerce 2.4.0 の既知の問題 – 顧客のアクティビティの更新が機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)。
-* [Adobe Commerce 2.4.0 の既知の問題：ストアフロントに生のメッセージデータが表示される ](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)。
 * [Adobe Commerce 2.4.0 の既知の問題：「選択項目を買い物かごに追加」ボタンが機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)。

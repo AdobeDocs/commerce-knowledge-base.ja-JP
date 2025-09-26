@@ -4,9 +4,9 @@ description: ここでは、Adobe Commerce 2.3.5 の既知の問題について�
 exl-id: 3ede15d4-4c39-442a-8784-2d5e6650fe67
 feature: Products
 role: Developer
-source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
+source-git-commit: ce456c46653c826b38c590eef89b67bea87ca605
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,4 @@ ht-degree: 0%
 
 * Adobe Commerce 2.3.5 の既知の問題に関するAdobe Commerce サポートナレッジベースの記事：
    * [Adobe Commerce 2.3.5 でバーチャル商品が正しく処理されない複数出荷の注文](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
-   * [Adobe Commerce 2.3.5 の製品比較の既知の問題](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-   * [Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
    * [Adobe Commerce 2.3.5 の既知の問題については、開発者向けドキュメントを参照してください ](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

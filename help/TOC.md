@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 446b3f6d49a5534187bb8706d5cf6068d8f40fec
+source-git-commit: 2b12aeb9227944fc80da50d50fbc5668f4622269
 workflow-type: tm+mt
-source-wordcount: '2989'
+source-wordcount: '2898'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 0%
       * [処理に時間のかかるクエリの確認と MySQL の処理](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [データベースのアップロードにより MySQL への接続が失われる](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [データベースの変更は、ストアフロントには反映されません](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
-      * [MySQL のデッドロック](/help/troubleshooting/database/deadlocks-in-mysql.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceにおける MySQL の高負荷ボトルネック](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL サーバーが廃止されました&#x200B; クラウド上のAdobe Commerceのエラー](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceで MySQL のディスク領域が不足している](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
@@ -56,8 +55,6 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0 Braintree仮想ターミナルページが破損する](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
       * [異なるドメインで管理者およびフロントからサイバーソースに対する支払いが処理されません](/help/troubleshooting/payments/cybersource-payment-from-admin-and-front-on-different-domains-not-processed.md)
       * [Adobe Commerce 2.4.0 既知の問題：Amazon pay、支払い方法なし](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
-      * [Adobe Commerce 2.3.7-p1 の既知の問題：PayPal の注文合計が古い](/help/troubleshooting/payments/paypal-price-known-issue-commerce-237p1.md)
-      * [Adobe Commerce 2.3.5-p1 でのAmazon Pay チェックアウトの問題に対するパッチ](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
       * [Adobe Commerce 2.4.0：現地支払いの選択でチェックアウトエラーが発生する](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
       * [PayPal Payflow Pro アクティブなカード処理アクティビティ](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Adobe Commerceの PayPal トラブルシューティング](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
@@ -65,18 +62,11 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2 B2B：ディスカウントは引き続き支払い方法の変更](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2:Braintree Venmo の支払いが機能しない](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [複数の住所がある場合、チェックアウト時に支払方法が表示されない](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
-      * [EU のお客様は支払いを完了できません](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
       * [Adobe Commerce 2.4.0 の既知の問題：Klarna オンサイトメッセージングの空白ページ](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
    * ストアフロント {#storefront}
-      * [Adobe Commerce 2.4.0 の既知の問題：注文の表示エラー](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce オンプレミス 2.4.2：製品イメージがありません](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
-      * [インストール後、画像とスタイルシートは読み込まれません。テキストのみが表示され、グラフィックは表示されません](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
       * [製品がストアフロントに表示されない](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
-      * [Adobe Commerce 2.4.0 の問題：ストアフロントの生メッセージデータの表示](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
-      * [Adobe Commerce 2.3.5 のチェックアウト中の店舗のクレジットの問題](/help/troubleshooting/storefront/store-credit-issue-during-checkout-in-magento-2-3-5.md)
       * [デプロイメント後に表示されない画像の保存](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
-      * [Adobe Commerce 2.3.5 の製品比較の既知の問題](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-      * [Adobe Commerce 2.4.0：複数配送のチェックアウトで報酬ポイントを削除する際に 404 エラーが発生する](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
       * [ユーザーがログアウトされたり、Adobe Commerce ストアフロントで買い物かごのコンテンツが失われたりする](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
       * [連絡先を URL キーとして保存できません](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
    * インストールとアップグレード {#installation-and-upgrade}
