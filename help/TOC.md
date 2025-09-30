@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 2b12aeb9227944fc80da50d50fbc5668f4622269
+source-git-commit: 750c0c41580af90cc5c883472326f2073cfe0b23
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2891'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 0%
 * トラブルシューティング {#troubleshooting}
    * [トラブルシューティングの概要](/help/troubleshooting/overview.md)
    * データベース {#database}
-      * [同じエンティティのデータベース内の複数の行](/help/troubleshooting/database/multiple-rows-in-database-for-same-entity.md)
       * [処理に時間のかかるクエリの確認と MySQL の処理](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [データベースのアップロードにより MySQL への接続が失われる](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [データベースの変更は、ストアフロントには反映されません](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
