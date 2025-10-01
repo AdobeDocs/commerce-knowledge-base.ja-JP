@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![&#x200B; ナレッジベースのホームページ &#x200B;](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-このナレッジベースの情報は、[Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)、[Adobe Commerce マーチャントガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) およびその他のAdobe Commerceのパブリケーションを補完するように設計されています。 公式ドキュメントでは、トラブルシューティングとベストプラクティス、ホストのお知らせ、よくある質問への回答および（何らかの理由で）記載されていない具体的なシナリオについて説明します。
+このナレッジベースの情報は、[Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)、[Adobe Commerce マーチャントガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja) およびその他のAdobe Commerceのパブリケーションを補完するように設計されています。 公式ドキュメントでは、トラブルシューティングとベストプラクティス、ホストのお知らせ、よくある質問への回答および（何らかの理由で）記載されていない具体的なシナリオについて説明します。
 
 ## このナレッジベースには何がありますか？
 
