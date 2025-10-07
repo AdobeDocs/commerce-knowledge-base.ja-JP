@@ -4,9 +4,9 @@ description: この記事では、'/tmp' マウントがいっぱいになり、
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: aa4cfbceb745f1a06b8a8f9e93cbdebbc151458b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ Use% が 70% 未満であることを確認します。 inode はファイルと
 
 #### MySQL の容量を確認して解放する
 
-サポートナレッジベースの [ クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない > ストレージ容量を確認して解放する ](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md#check_and_free) の手順に従います。
+サポートナレッジベースの [ クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない > ストレージ容量を確認して解放する ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) の手順に従います。
 
-#### Elasticsearchのヒープダンプをチェック
+#### Elasticsearchのヒープダンプを確認する
 
 >[!WARNING]
 >
@@ -114,13 +114,13 @@ find /tmp/*.hprof -type f -delete
 >
 >データベースのバックアップは通常、目的のために作成されます。 それでもファイルが必要かどうか不明な場合は、ファイルを削除する代わりに、別の場所に移動することを検討してください。
 
-`.sql` ファイルまたは `.sql.gz` ファイルの `/tmp` を確認してクリーンアップします。 これらは、バックアップ時に ece-tools によって作成されたり、`mysqldump` ツールを使用して手動でデータベースダンプを作成したりするときに作成されることがあります。
+`/tmp` ファイルまたは `.sql` ファイルの `.sql.gz` を確認してクリーンアップします。 これらは、バックアップ時に ece-tools によって作成されたり、`mysqldump` ツールを使用して手動でデータベースダンプを作成したりするときに作成されることがあります。
 
 ### ベストプラクティス
 
 `/tmp` がいっぱいの問題を回避するには、次の推奨事項に従います。
 
-* 検索に MySQL を使用しないでください。 検索のElasticsearchにより、通常、重い一時テーブルの作成のほとんどが不要になります。 開発者向けドキュメントの [Elasticsearchを使用するためのAdobe Commerceの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/configure-search-engine) を参照してください。
+* 検索に MySQL を使用しないでください。 検索のためのElasticsearchは通常、重い一時テーブルの作成のほとんどを不要にします。 開発者向けドキュメントの [Elasticsearchを使用するためのAdobe Commerceの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) を参照してください。
 * インデックスのない列に対して `SELECT` クエリを実行しないでください。このクエリは大量の一時ディスク領域を消費します。 インデックスを追加することもできます。
 * CLI で次のコマンドを実行して、`/tmp` をクリーンアップする cron を作成します。
 
@@ -130,4 +130,4 @@ find /tmp/*.hprof -type f -delete
 
 ## 関連資料
 
-[ クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない ](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) というアドビのサポートナレッジベースを参照してください。
+[ クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) というアドビのサポートナレッジベースを参照してください。

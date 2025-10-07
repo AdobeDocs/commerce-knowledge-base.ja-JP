@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: d1a9f509bdf4a4c75220145069810e55eddcc43e
+source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,8 @@ ht-degree: 0%
    * データベース {#database}
       * [処理に時間のかかるクエリの確認と MySQL の処理](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [データベースのアップロードにより MySQL への接続が失われる](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [データベースの変更は、ストアフロントには反映されません](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceにおける MySQL の高負荷ボトルネック](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL サーバーが廃止されました&#x200B; クラウド上のAdobe Commerceのエラー](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
-      * [クラウドインフラストラクチャー上のAdobe Commerceで MySQL のディスク領域が不足している](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Adobe Commerceのデータベースストレージに関するトラブルシューティング](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Adobe Commerceの max_allowed_packet に関連するデータベースエラー](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Adobe Commerce データベースの数値が範囲外です。範囲  [!DNL INT]  終了  [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
@@ -252,7 +250,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
