@@ -92,7 +92,7 @@ Use% が 70% 未満であることを確認します。 inode はファイルと
 
 #### MySQL の容量を確認して解放する
 
-サポートナレッジベースの [&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない > ストレージ容量を確認して解放する &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) の手順に従います。
+サポートナレッジベースの [&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない > ストレージ容量を確認して解放する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) の手順に従います。
 
 #### Elasticsearchのヒープダンプを確認する
 
@@ -120,7 +120,7 @@ find /tmp/*.hprof -type f -delete
 
 `/tmp` がいっぱいの問題を回避するには、次の推奨事項に従います。
 
-* 検索に MySQL を使用しないでください。 検索のためのElasticsearchは通常、重い一時テーブルの作成のほとんどを不要にします。 開発者向けドキュメントの [Elasticsearchを使用するためのAdobe Commerceの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) を参照してください。
+* 検索に MySQL を使用しないでください。 検索のためのElasticsearchは通常、重い一時テーブルの作成のほとんどを不要にします。 開発者向けドキュメントの [Elasticsearchを使用するためのAdobe Commerceの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/configure-search-engine) を参照してください。
 * インデックスのない列に対して `SELECT` クエリを実行しないでください。このクエリは大量の一時ディスク領域を消費します。 インデックスを追加することもできます。
 * CLI で次のコマンドを実行して、`/tmp` をクリーンアップする cron を作成します。
 
@@ -130,4 +130,4 @@ find /tmp/*.hprof -type f -delete
 
 ## 関連資料
 
-[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) というアドビのサポートナレッジベースを参照してください。
+[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで MySQL のディスク容量が少ない &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27806) というアドビのサポートナレッジベースを参照してください。
