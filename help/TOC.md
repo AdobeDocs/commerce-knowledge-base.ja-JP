@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 4b92294b26082da2ac5984b729cea2a49663f4b2
+source-git-commit: 5c4d76b3dbaf34b2ded10b520297087562fcaad2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2834'
 ht-degree: 0%
 
 ---
@@ -86,8 +86,6 @@ ht-degree: 0%
       * [REGEXP_LIKE 関数がないため、B2B 1.5.2 へのアップグレードが SQL 構文エラーで失敗します](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [B2B 1.5.2 の更新後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * サイトがダウンしているか応答しない {#site-down-or-unresponsive}
-      * [Web ブラウザーでAdobe Commerceにアクセスする際に 503 エラーが発生する](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
-      * [メンテナンスモードが有効なままになっているため、サイトの読み込みに失敗します](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [パッチを適用すると、サイトが停止します](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Google マップのすべてのAdobe Commerce バージョンのアクセス損失に対する修正パッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
@@ -249,7 +247,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
