@@ -17,21 +17,21 @@ ht-degree: 0%
 >[!NOTE]
 >
 >これらの方法では、**完全なスナップショット** が復元されます。
->>スナップショットを **部分的に** リストアする必要がある場合（たとえば、順序テーブルはそのままにしてカタログテーブルだけをリストアする場合）、開発者または DBA に相談する必要があります。
+>&#x200B;>スナップショットを **部分的に** リストアする必要がある場合（たとえば、順序テーブルはそのままにしてカタログテーブルだけをリストアする場合）、開発者または DBA に相談する必要があります。
 
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 お客様の状況に最も適したものを選択してください。
 
 >[!NOTE]
 >
-> スナップショットを統合環境にインポートする場合は、データベースのサイズに注意してください。 データベースが大きいと、インポート後にパフォーマンスが低下する場合があります。 最初にスナップショットをステージング環境またはローカル環境にインポートして、確認しサイズを小さくしてから統合に転送することをお勧めします。 さらに、インポート後にパフォーマンスの問題が発生した場合は、統合ブランチで cron ジョブを無効にすることを検討します。 詳しくは、『クラウドインフラストラクチャー上のCommerce』ガイドの [ 統合環境 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) を参照してください。
+> スナップショットを統合環境にインポートする場合は、データベースのサイズに注意してください。 データベースが大きいと、インポート後にパフォーマンスが低下する場合があります。 最初にスナップショットをステージング環境またはローカル環境にインポートして、確認しサイズを小さくしてから統合に転送することをお勧めします。 さらに、インポート後にパフォーマンスの問題が発生した場合は、統合ブランチで cron ジョブを無効にすることを検討します。 詳しくは、『クラウドインフラストラクチャー上のCommerce』ガイドの [&#x200B; 統合環境 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) を参照してください。
 
-* [ 方法 1：データベースをローカルマシンに転送し  [!DNL dump]  読み込みます ](#meth2)。
-* [ 方法 2：サーバーからデータベース  [!DNL dump]  直接インポート ](#meth3)。
+* [&#x200B; 方法 1：データベースをローカルマシンに転送し  [!DNL dump]  読み込みます &#x200B;](#meth2)。
+* [&#x200B; 方法 2：サーバーからデータベース  [!DNL dump]  直接インポート &#x200B;](#meth3)。
 
 ## 方法 1: データベース [!DNL dump] をローカル マシンに転送し、インポートする {#meth2}
 
@@ -179,6 +179,6 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [ コードのインポート：データベースをインポートします ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
-* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [ クラウド上のバックアップ（スナップショット）：よくある質問 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [&#x200B; コードのインポート：データベースをインポートします &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
+* [[!DNL Snapshots] and [!DNL backup] management: [!DNL Dump]  データベース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [&#x200B; クラウド上のバックアップ（スナップショット）：よくある質問 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
