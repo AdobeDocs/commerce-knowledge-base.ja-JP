@@ -3,9 +3,9 @@ title: クラウドインフラストラクチャー上で一時的なAdobe Comm
 description: 高トラフィックが予想されるオンラインイベントを計画している場合、またはサイトが突然高トラフィックのイベントに遭遇した場合は、[ サポートチケット ] （/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket）を申請して、クラウドインフラストラクチャストア上のAdobe Commerceの一時的なクラウドキャパシティを増やすようにリクエストできます。
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
+source-git-commit: e59335b67e1f33e138e34cab93ce593836d14b48
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -51,21 +51,53 @@ Adobeは、クラウドインフラストラクチャー上のAdobe Commerce Pro
 
 ## 一時的なアップサイズをリクエストする手順
 
-次の手順に従って、[ サポートチケット ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) を送信し、一時的なクラウド容量の追加をリクエストします。
-
-次の情報を入力した後、[Adobe Commerce サポートセンターでのサポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を送信します。
+一時的なクラウド容量の追加をリクエストするには、次の情報を記載した [ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) をAdobe Commerce サポートセンターで送信します。
 
 >[!NOTE]
 >
 >*ホリデーサージリクエスト* の選択は、10 月から 12 月の間のオプションです。
 
-1. サポートを受けようとするAdobe Commerce製品を選択してください。
-1. 最初の 4 つのフィールド（製品、組織、実装タイプ、件名）に入力します。
-1. **連絡先の理由 *ドロップダウンで「*Adobe Commerce クラウドインフラストラクチャ**」を選択します。
-1. *2&rbrace;Adobe Commerce インフラストラクチャの連絡先の理由* ドロップダウンオプションで、「&lbrace;Holiday Surge Capacity Request **」を選択します。**&#x200B;一時的な追加のクラウド容量リクエストに対しては、48 営業時間前の通知をリクエストするポップアップメッセージで **OK** をクリックします。
-1. 必須フィールド **開始日のサイズ変更** および **終了日のサイズ変更** の日付を選択します。 推奨される **開始時間のサイズ変更** も必須フィールドです。
-1. 次の 4 つのフィールドに入力します。
-1. サイズに関する追加情報がある場合は、「**説明**」フィールドに入力します。 特に大きなサイズが要求されない場合は、次に大きい環境サイズの容量までアップサイズされます。 サージリクエストは、デフォルトで現在のサイズより次に大きいサイズに設定されます。 追加容量が必要な場合は、「説明 **フィールドにそ** を入力してください。 容量の増加は、契約されたサージ日数または vCPU 日数から差し引かれます。 通常の容量増加期間は 5 日ですが、必要な日数が増減する場合は、[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にその旨を記載してください。
+1. サポートが必要な [!DNL Adobe Commerce] 製品を選択します。
+   * [!DNL Commerce Cloud]
+   * [!DNL Commerce on Managed Service]
+
+1. 次のフィールドに入力します。
+   * **[!UICONTROL Case Title]**
+   * **[!UICONTROL Case Description]** *（イシューとコンテキストを明確に説明していることを確認してください）*
+
+1. *ドロップダウンメニューから* インフラストラクチャ変更リクエスト **[!UICONTROL Issue Reason]** を選択します。
+
+1. ドロップダウンメニューから **[!UICONTROL Environment]** を選択します。
+
+1. ドロップダウンメニューから適切な **[!UICONTROL Product Version]** を選択します。
+
+1. *ドロップダウンメニューから* クラウドプロジェクトのサイズ変更（vCPU） **[!UICONTROL Which Infra Change you would like to do today]** を選択します。
+
+1. **[!UICONTROL Architecture]** を選択します。
+   * *デフォルトのアーキテクチャ：* *サイズを選択* ドロップダウンメニューから **次に使用可能なサイズ** を選択します。
+   * *スケールされたアーキテクチャ：* 選択すると、画面が変更されて、次の 2 つの追加フィールドが表示されます。
+      * *Web ノードのサイズ*
+      * *サービスノードのサイズ**（各ノードに必要なサイズを入力します）*
+
+1. **[!UICONTROL From Date]** を UTC 形式（日付と時刻）で入力します。
+
+1. **[!UICONTROL To Date]** を UTC 形式（日付と時刻）で入力します。
+
+1. **[!UICONTROL Project URL]***指定します（https://accounts.magento.cloud/にあり、通常は `https://[REGION].magento.cloud/projects/PROJECT_ID` の形式です）*
+
+1. **[!UICONTROL Project ID]** を入力します。
+
+1. **[!UICONTROL Affected URL]***指定してください（`http://` または `https://` で始める必要があります）*
+
+1. 「**[!UICONTROL Priority]**」を選択します。
+
+1. 「**[!UICONTROL Business Impact]**」を選択します。
+
+1. **[!UICONTROL Time Zone]** *（例：`(UTC-5:00) Indiana (East)`）* を確認します
+
+1. **[!UICONTROL Phone Number]***を入力してください（例：`+12015550123`）*
+
+1. 「**[!UICONTROL Submit]**」をクリックして、サポートケースを確定します。
 
 >[!NOTE]
 >
@@ -86,9 +118,9 @@ Adobeは、クラウドインフラストラクチャー上のAdobe Commerce Pro
 ## 関連資料
 
 * サイトのパフォーマンスを測定および改善する方法に関するインサイト、方法、例については、サポートナレッジベースの次の詳細な記事を参照してください。
-   * [クラウド上のAdobe Commerceの CPU 割り当ての計算](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
+   * [Adobe Commerce on cloud のCPU配分の計算](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
    * [クラウド上のAdobe Commerceでホストのインスタンスのアップサイズが必要かどうかを確認する](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
-   * [クラウド上のAdobe Commerceに対するホストの CPU 設定の確認](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
+   * [クラウド上のAdobe Commerceに対するホストのCPU設定の確認](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
 * 停止を特定する方法について詳しくは、サポートナレッジベースの [Adobe Commerce on cloud の停止の特定と測定 ](/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html) を参照してください。
 * 容量の増加を利用する必要をなくすためにサイトのパフォーマンスを向上させる方法については、開発者向けドキュメントで次の記事を参照してください。
    * [画像サイズ](/docs/commerce-admin/catalog/products/digital-assets/product-image-config.html#product-image-resizing)
