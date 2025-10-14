@@ -20,7 +20,7 @@ Adobe Commerceこの記事では、クラウドインフラストラクチャー
 
 ## ある環境から別の環境にデータを同期するには
 
-データを同期するには、ソース環境から手動でデータベースをダンプする必要があります。 別の環境にデータを転送するには、その後、ソースダンプをターゲット環境にアップロードして読み込む必要があります。 詳しくは、開発者向けドキュメントの [Adobe Commerce コードのクラウドプロジェクトへのインポート/Adobe Commerce データベースのインポート ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) を参照してください。
+データを同期するには、ソース環境から手動でデータベースをダンプする必要があります。 別の環境にデータを転送するには、その後、ソースダンプをターゲット環境にアップロードして読み込む必要があります。 詳しくは、開発者向けドキュメントの [Adobe Commerce コードのクラウドプロジェクトへのインポート/Adobe Commerce データベースのインポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) を参照してください。
 
 クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの場合は、ステージング環境と実稼動環境から統合マスターブランチに同期することもできます。 この同期では、コードの取り込みとプッシュのみが行われ、データはプッシュされません。 データを同期するには、データベースデータをダンプし、別の環境のデータベースにプッシュする必要があります。
 
@@ -30,8 +30,8 @@ Adobe Commerceこの記事では、クラウドインフラストラクチャー
 
 ## ある環境から別の環境にファイルを同期するには
 
-ある環境から別の環境にファイルを同期するには、`rsync` コマンドを使用します。 詳しくは、開発者向けドキュメントの [ コードのデプロイと静的ファイルおよびデータの移行/rsync を使用したファイルの移行 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production#migrate-files-using-rsync) を参照してください。
+ある環境から別の環境にファイルを同期するには、`rsync` コマンドを使用します。 詳しくは、開発者向けドキュメントの [&#x200B; コードのデプロイと静的ファイルおよびデータの移行/rsync を使用したファイルの移行 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production#migrate-files-using-rsync) を参照してください。
 
 >[!NOTE]
 >
->コードを統合からステージングに同期する場合は、統合ブランチから実行する必要があります。 手順については、開発者向けドキュメントの [ 環境の親からの同期 ](/docs/commerce-cloud-service/user-guide/project/console-branches.html#sync-an-environment) を参照してください。
+>コードを統合からステージングに同期する場合は、統合ブランチから実行する必要があります。 手順については、開発者向けドキュメントの [&#x200B; 環境の親からの同期 &#x200B;](/docs/commerce-cloud-service/user-guide/project/console-branches.html#sync-an-environment) を参照してください。

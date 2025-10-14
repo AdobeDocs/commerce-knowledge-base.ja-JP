@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## 問題
 
@@ -48,5 +48,5 @@ ht-degree: 0%
 ## 関連資料
 
 * [データベースのアップロードにより MySQL への接続が失われる](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
-* [ クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)

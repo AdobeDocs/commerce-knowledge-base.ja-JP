@@ -43,4 +43,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* ライブ検索ガイドの [ インストール  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja)
+* ライブ検索ガイドの [&#x200B; インストール  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja)

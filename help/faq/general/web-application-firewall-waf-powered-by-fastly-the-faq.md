@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Managed Cloud WAF （Fastly を活用）はどのように機能しますか？
 
-Web アプリケーションファイアウォール（WAF）は、一連のセキュリティルールに対してトラフィックをフィルタリングすることで、[ 悪意のあるトラフィック ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) がサイトやネットワークに入るのを防ぎます。 いずれかの規則をトリガーするトラフィックは、サイトやネットワークに損害を与える前にブロックされます。
+Web アプリケーションファイアウォール（WAF）は、一連のセキュリティルールに対してトラフィックをフィルタリングすることで、[&#x200B; 悪意のあるトラフィック &#x200B;](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) がサイトやネットワークに入るのを防ぎます。 いずれかの規則をトリガーするトラフィックは、サイトやネットワークに損害を与える前にブロックされます。
 
 Adobe Commerceの Cloud WAF は、Adobe Commerce web アプリケーションを様々な攻撃から保護するように設計されたルールセットを含む WAF ポリシーを提供します。
 
@@ -50,7 +50,7 @@ WAF は、1 つのクラウドアカウント下のすべてのドメインに�
 
 ## WAF ルールセットを更新するにはどうすればよいですか？ WAF ルールを変更または更新して、実稼動環境にグローバルに適用するには、どの程度の時間がかかりますか？
 
-Fastly は、クラウド WAF サービスの一部として、商用サードパーティ、Fastly のリサーチ、オープンソースからのルール更新を管理しています。 必要に応じて、またはルールの変更がそれぞれのソースから使用可能な場合に、公開されたルールをポリシーに更新します。 ルールの公開済みクラスに一致する新しいルールも、有効にすると任意のサービスの WAF インスタンスに挿入されます。 これにより、新しい攻撃や進化する攻撃に迅速に対応できます。 情報 [ ルールの更新とメンテナンスについて ](https://docs.fastly.com/guides/web-application-firewall/fastly-waf-rule-set-updates-maintenance#rule-set-maintenance) は、Fastly ドキュメントサイトで確認できます。
+Fastly は、クラウド WAF サービスの一部として、商用サードパーティ、Fastly のリサーチ、オープンソースからのルール更新を管理しています。 必要に応じて、またはルールの変更がそれぞれのソースから使用可能な場合に、公開されたルールをポリシーに更新します。 ルールの公開済みクラスに一致する新しいルールも、有効にすると任意のサービスの WAF インスタンスに挿入されます。 これにより、新しい攻撃や進化する攻撃に迅速に対応できます。 情報 [&#x200B; ルールの更新とメンテナンスについて &#x200B;](https://docs.fastly.com/guides/web-application-firewall/fastly-waf-rule-set-updates-maintenance#rule-set-maintenance) は、Fastly ドキュメントサイトで確認できます。
 
 ## Adobe Commerceの Cloud WAF は、Fastly が直接顧客に提供する WAF ソリューションとどう違いますか？
 
@@ -104,11 +104,11 @@ Adobe Commerceの WAF 製品には、PCI 要件の一環として OWASP Top-10 �
 
 ## お客様は、IP ブラックリストを作成および変更してトラフィックをブロックすることはできますか。
 
-はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューでHTMLをアップロードすることで、カスタムエラーページを作成できます。 開発者向けドキュメントの [ カスタムエラー/メンテナンスページの作成 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja) を参照してください。
+はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューでHTMLをアップロードすることで、カスタムエラーページを作成できます。 開発者向けドキュメントの [&#x200B; カスタムエラー/メンテナンスページの作成 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja) を参照してください。
 
 ## WAF サービスの運用状況はどこで確認できますか？
 
-WAF サービスの全体的な可用性は、[Fastly ステータスページ ](https://status.fastly.com/) で報告されます。 個々のお客様の WAF の可用性レポートは提供されていません。
+WAF サービスの全体的な可用性は、[Fastly ステータスページ &#x200B;](https://status.fastly.com/) で報告されます。 個々のお客様の WAF の可用性レポートは提供されていません。
 
 ## Adobe Commerceは WAF サービスのインシデント管理を提供しますか？
 
@@ -118,7 +118,7 @@ WAF サービスの全体的な可用性は、[Fastly ステータスページ ]
 
 Adobe Commerceにはセキュリティオペレーションセンターがありませんが、適切な人材を採用してセキュリティインシデントにリアルタイムで対応できるセキュリティオペレーションプロセスを用意しています。 2035 年 7 月 24 日のサポートも提供しています。
 
-また、Adobe Commerce関連のセキュリティニュースや最新情報を [ セキュリティセンター ](https://helpx.adobe.com/jp/security.html) から取得することもできます。
+また、Adobe Commerce関連のセキュリティニュースや最新情報を [&#x200B; セキュリティセンター &#x200B;](https://helpx.adobe.com/jp/security.html) から取得することもできます。
 
 ## どのようなサポートがありますか？
 
@@ -128,11 +128,11 @@ WAF サポートでは、不要なリクエストや悪意のあるリクエス�
 * WAF が正当なトラフィックをブロックするインスタンスに対処するために継続的に行われる偽陽性のトリアージ
 * WAF バージョンのアップグレードの一環として導入された新しい標準ルールの設定
 
-重要度の定義、応答時間、チャネル、可用性など、追加のサポート情報については、[ クラウド SLA](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) の用語を参照してください。
+重要度の定義、応答時間、チャネル、可用性など、追加のサポート情報については、[&#x200B; クラウド SLA](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) の用語を参照してください。
 
 ## WAF が正規のトラフィックをブロックしている場合、またはその他の問題を引き起こしている場合、どうすればサポートを受けられますか。
 
-[2&rbrace;Adobe Commerce ヘルプセンター ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) で [&#128279;](https://support.magento.com) サポートチケットを送信 &rbrace; します。 チケットが WAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
+[2&rbrace;Adobe Commerce ヘルプセンター &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) で [&#128279;](https://support.magento.com) サポートチケットを送信 &rbrace; します。 チケットが WAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
 
 Adobe Commerceのサポートチケット発行システムは、アドビのサポートエンジニアとお客様の担当者とのコミュニケーションをトラッキングします。 チケットの更新に合わせて、お客様やAdobe Commerceのスタッフにメールを送信し、お知らせのタイムスタンプ付きトランスクリプトを提供します。
 

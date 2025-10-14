@@ -57,7 +57,7 @@ Adobe Commerceには次の 2 種類のキャッシュがあります。
 
 次に、フラッシュされた `cat_p` および `category_product_15044` キャッシュに関するレコードを含む `debug.log` の例を示します。
 
-![debug.log コンテンツのサンプル ](assets/debug_log_sample.png)
+![debug.log コンテンツのサンプル &#x200B;](assets/debug_log_sample.png)
 
 通常、キャッシュは次の理由で無効になります。
 
@@ -67,4 +67,4 @@ Adobe Commerceには次の 2 種類のキャッシュがあります。
 ## 推奨事項
 
 1. Commerce CLI からキャッシュをフラッシュしないでください。
-1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [ インデクサーの管理/インデクサーの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を参照してください。
+1. **保存時に更新** ではなく、**スケジュールに従って更新** をインデクサーに設定します。後者は完全なインデックス再作成をトリガーするためです。 詳しくは、開発者向けドキュメントの [&#x200B; インデクサーの管理/インデクサーの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を参照してください。

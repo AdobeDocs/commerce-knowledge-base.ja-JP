@@ -52,6 +52,6 @@ ht-degree: 0%
 
 サポートナレッジベースでは、
 
-* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されません ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)。
-* [Adobe Commerce 2.4.0 の既知の問題 – 顧客のアクティビティの更新が機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)。
-* [Adobe Commerce 2.4.0 の既知の問題：「選択項目を買い物かごに追加」ボタンが機能しません ](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)。
+* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されません &#x200B;](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)。
+* [Adobe Commerce 2.4.0 の既知の問題 – 顧客のアクティビティの更新が機能しません &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)。
+* [Adobe Commerce 2.4.0 の既知の問題：「選択項目を買い物かごに追加」ボタンが機能しません &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)。

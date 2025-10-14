@@ -107,6 +107,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [Adobe Commerce デプロイメントのトラブルシューティング ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
-* [Cloud UI に「ログのスニッピング」エラーがあるかどうかをデプロイメントログで確認する ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Adobe Commerce デプロイメントのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
+* [Cloud UI に「ログのスニッピング」エラーがあるかどうかをデプロイメントログで確認する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

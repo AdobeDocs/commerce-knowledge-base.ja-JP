@@ -23,4 +23,4 @@ ht-degree: 0%
 
 ## これらのメールをオプトアウトするには：
 
-[Amazonサイトで通知環境設定を更新する ](https://sellercentral.amazon.com/gp/help/external/G871) 手順に従います。
+[Amazonサイトで通知環境設定を更新する &#x200B;](https://sellercentral.amazon.com/gp/help/external/G871) 手順に従います。

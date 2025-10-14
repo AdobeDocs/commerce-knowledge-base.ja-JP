@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # クラウド UI に *log snipped* エラーがあるかどうかをデプロイメントログで確認しています
 
-この記事では、クラウドプロジェクト UI でデプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI のAdobe Commerceで *ログのスニペットが長すぎるので* というエラーメッセージが表示される問題の解決策について説明します。 （[Adobe Commerce Cloud コンソール ](https://console.adobecommerce.com/) には適用されません。）
+この記事では、クラウドプロジェクト UI でデプロイメントログを表示しようとすると、クラウドインフラストラクチャ UI のAdobe Commerceで *ログのスニペットが長すぎるので* というエラーメッセージが表示される問題の解決策について説明します。 （[Adobe Commerce Cloud コンソール &#x200B;](https://console.adobecommerce.com/) には適用されません。）
 
 ## 対象製品
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 原因：
 
-UI に表示されるログは、特に、デプロイメントが成功ステータスでリストされた後、サイトが応答しないか、正しく動作していないことが判明した場合には、信頼できるソースとして扱わないでください。 また、サーバー上のログでも確認する必要があります。 開発者向けドキュメントの [ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) を参照してください。
+UI に表示されるログは、特に、デプロイメントが成功ステータスでリストされた後、サイトが応答しないか、正しく動作していないことが判明した場合には、信頼できるソースとして扱わないでください。 また、サーバー上のログでも確認する必要があります。 開発者向けドキュメントの [&#x200B; ログの表示と管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) を参照してください。
 
 ## 解決策
 
@@ -70,5 +70,5 @@ UI に表示されるログは、特に、デプロイメントが成功ステ�
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [ クラウドインフラストラクチャー上のAdobe Commerce/ビルドとデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)
-* [ クラウドインフラストラクチャー上のAdobe Commerce/ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerce/ビルドとデプロイ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerce/ログの表示と管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)

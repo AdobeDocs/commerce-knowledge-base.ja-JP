@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # MBI：高度な計算列の作成と編集
 
-[ 管理者ユーザー ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) は、Data Warehouseマネージャーで特定の計算列を作成および編集できます。 これらの計算列を使用すると、ビジネス上の主要な質問に回答するために探しているレポートを設定できます。
+[&#x200B; 管理者ユーザー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) は、Data Warehouseマネージャーで特定の計算列を作成および編集できます。 これらの計算列を使用すると、ビジネス上の主要な質問に回答するために探しているレポートを設定できます。
 
 Data Warehouseマネージャーで作成できる計算列のリストと、正しく設定されていることを確認するためのガイダンスについては、ユーザーガイドの次の記事を参照してください。
 
-* [ 計算列の作成 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
-* [ 計算列のタイプ ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
-* [ テーブルの関係の理解と評価 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
-* [ 計算列のパスの作成 ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
+* [&#x200B; 計算列の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
+* [&#x200B; 計算列のタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
+* [&#x200B; テーブルの関係の理解と評価 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
+* [&#x200B; 計算列のパスの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
 
 ## まだ助けが必要だ！
 
-通常の計算列の作成に関するヘルプが必要な場合や、高度な計算列を作成または編集する場合は [ チームに問い合わせて ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、次を含めてください。
+通常の計算列の作成に関するヘルプが必要な場合や、高度な計算列を作成または編集する場合は [&#x200B; チームに問い合わせて &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、次を含めてください。
 
 * あなたは何をしようとしているのですか。
 * 新しい列を作成する必要があるテーブルは何ですか？
@@ -35,7 +35,7 @@ Data Warehouseマネージャーで作成できる計算列のリストと、正
 
 ## 関連資料
 
-* [MBI ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/guide-overview)
+* [MBI ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/guide-overview)
 * [MBI：データの不一致](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [MBI：データアナリスト ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
-* [MBI:Magento BI のヘルプ ](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/start/sign-in)
+* [MBI：データアナリスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
+* [MBI:Magento BI のヘルプ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/start/sign-in)

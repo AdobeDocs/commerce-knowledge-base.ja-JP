@@ -44,7 +44,7 @@ Adobe Commerce ファイルシステム内のファイルを意図的に変更�
 
 #### ファイルを意図的に変更しました
 
-競合は通常の方法で手動で解決します。 どうすればよいかわからない場合は、[GitHub ヘルプ ](https://help.github.com/) を参照してください。
+競合は通常の方法で手動で解決します。 どうすればよいかわからない場合は、[GitHub ヘルプ &#x200B;](https://help.github.com/) を参照してください。
 
 #### 意図的にファイルを変更していません
 
@@ -71,6 +71,6 @@ Adobe Commerce ファイルシステム内のファイルを意図的に変更�
 
   >[!NOTE]
   >
-  >Adobeは、特定の GitHub 設定を推奨または推奨しません。 上記は提案のみです。 詳しくは、[GitHub ヘルプ ](https://help.github.com/) を参照してください。
+  >Adobeは、特定の GitHub 設定を推奨または推奨しません。 上記は提案のみです。 詳しくは、[GitHub ヘルプ &#x200B;](https://help.github.com/) を参照してください。
 
   Adobe Commerceの更新を中断した場所に進みます。

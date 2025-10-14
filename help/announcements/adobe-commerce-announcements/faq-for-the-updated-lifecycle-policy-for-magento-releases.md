@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerceは、次のマイナーソフトウェアリリースの一般提供日から少なくとも 12 か月間、マイナーリリースの品質修正を提供します。 この間にアドビが提供する品質の修正の方法は変化しています。
 
 * **事前規定：** 現在、12 か月の EOS 期間の前のラインに対する品質修正は、四半期ごとのパッチリリースを通じて提供されているため、四半期ごとのパッチはセキュリティと品質の組み合わせになっています。
-* **新しいポリシー：** 最新のマイナーリリース行として 2.4 以降、以前のサポートされている行（2.3）のリリースパッチはセキュリティ専用に移行されます。 以前サポートされていたラインの品質修正は、マイナーリリース（2.4 など）後の 12 か月間とその後の新しいマイナーリリースラインで引き続き提供されます。ただし、これらの修正は [Quality Patches Tool （QPT）を通じて提供され ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 重要な問題にのみ焦点を当てます。
+* **新しいポリシー：** 最新のマイナーリリース行として 2.4 以降、以前のサポートされている行（2.3）のリリースパッチはセキュリティ専用に移行されます。 以前サポートされていたラインの品質修正は、マイナーリリース（2.4 など）後の 12 か月間とその後の新しいマイナーリリースラインで引き続き提供されます。ただし、これらの修正は [Quality Patches Tool （QPT）を通じて提供され &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 重要な問題にのみ焦点を当てます。
 
 ## このポリシーはいつ有効になりますか？
 
@@ -26,7 +26,7 @@ Adobe Commerce 2.3.6 は 2020 年 10 月 15 日（PT）にリリースされる�
 
 >[!NOTE]
 >
->2.3 のフルバージョンをリリースするのは、PHP やElasticsearchなどのテクノロジースタックへの準拠を維持する必要がある場合のみです。 この問題は 2021 年第 2 四半期に発生しており、PHP 7.4 の必須アップデートに伴い、2.3.7 行目まで増分する予定です。詳しくは、[Adobe Commerce 2.3.x のリリース行に対する PHP 7.4 のサポート ](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946)DevBlog の投稿を参照してください。
+>2.3 のフルバージョンをリリースするのは、PHP やElasticsearchなどのテクノロジースタックへの準拠を維持する必要がある場合のみです。 この問題は 2021 年第 2 四半期に発生しており、PHP 7.4 の必須アップデートに伴い、2.3.7 行目まで増分する予定です。詳しくは、[Adobe Commerce 2.3.x のリリース行に対する PHP 7.4 のサポート &#x200B;](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946)DevBlog の投稿を参照してください。
 
 ## セキュリティのみのリリースとは何ですか？
 
@@ -34,7 +34,7 @@ Adobe Commerce 2.3.6 は 2020 年 10 月 15 日（PT）にリリースされる�
 
 ## 最新の行（公開 2.4 時点）については、セキュリティのみのリリースが残っていますか？
 
-Adobeには、最新のリリースラインに対するセキュリティ専用リリースも引き続き用意されています。 これらのプロセスの概要は、[ 新しいセキュリティ専用パッチリリースの概要 ](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287)DevBlog の投稿で説明されています。
+Adobeには、最新のリリースラインに対するセキュリティ専用リリースも引き続き用意されています。 これらのプロセスの概要は、[&#x200B; 新しいセキュリティ専用パッチリリースの概要 &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287)DevBlog の投稿で説明されています。
 
 ## 品質向上パッチツールとは
 
@@ -50,7 +50,7 @@ Adobeには、最新のリリースラインに対するセキュリティ専用
 
 ## サポートされているマイナーバージョンで最新の行ではない品質修正を取得するにはどうすればよいですか？
 
-修正は、[ 品質向上パッチツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) を通じて使用可能になります。
+修正は、[&#x200B; 品質向上パッチツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) を通じて使用可能になります。
 
 ## 最新のラインで品質の修正を受けるにはどうすればよいですか？
 
@@ -86,4 +86,4 @@ Adobeには、最新のリリースラインに対するセキュリティ専用
 
 リリースラインの有効期間中に、PHP やElasticsearchなどの様々なテクノロジースタックを更新し、準拠を維持するためにアップグレードする必要があります。 私たちは、これらの来ていることを私たちの商人にできるだけ多くの通知を与えます。
 
-注意：2021 年の第 2 四半期に、2.3.x 行で PHP と Redis を更新して、準拠を維持する必要があります。 これにより、行が 2.3.7 に増加します。詳しくは、[Adobe Commerce 2.3.x のリリース行に対する PHP 7.4 のサポート ](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946)DevBlog の投稿を参照してください。
+注意：2021 年の第 2 四半期に、2.3.x 行で PHP と Redis を更新して、準拠を維持する必要があります。 これにより、行が 2.3.7 に増加します。詳しくは、[Adobe Commerce 2.3.x のリリース行に対する PHP 7.4 のサポート &#x200B;](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946)DevBlog の投稿を参照してください。

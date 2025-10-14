@@ -46,23 +46,23 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
    * 「**[!UICONTROL Continue]**」をクリックします。
    * アカウントを作成するには、情報を入力します。
 
-   ![MBI アカウントの作成 ](/help/troubleshooting/miscellaneous/assets/create_mbi_account.png)
+   ![MBI アカウントの作成 &#x200B;](/help/troubleshooting/miscellaneous/assets/create_mbi_account.png)
 
    * インボックスに移動し、メールアドレスを確認します。
 
-   ![ メールアドレスを確認 ](/help/troubleshooting/miscellaneous/assets/verify_email_address_mbi.png)
+   ![&#x200B; メールアドレスを確認 &#x200B;](/help/troubleshooting/miscellaneous/assets/verify_email_address_mbi.png)
 
    * パスワードを作成します。
 
-   ![ パスワードの作成 ](/help/troubleshooting/miscellaneous/assets/create_password_mbi.png)
+   ![&#x200B; パスワードの作成 &#x200B;](/help/troubleshooting/miscellaneous/assets/create_password_mbi.png)
 
    * アカウントを作成したら、新しいアカウントにユーザーを追加するオプションがあります。 次の手順を実行するために、テクニカル管理者を追加できるようになりました。
 
-   ![ ユーザーを追加 ](/help/troubleshooting/miscellaneous/assets/add_users_mbi.png)
+   ![&#x200B; ユーザーを追加 &#x200B;](/help/troubleshooting/miscellaneous/assets/add_users_mbi.png)
 
 1. ストアに関する情報を入力して、環境設定を指定します。
 
-   ![ ストア情報の追加 ](/help/troubleshooting/miscellaneous/assets/add_store_info_mbi.png)
+   ![&#x200B; ストア情報の追加 &#x200B;](/help/troubleshooting/miscellaneous/assets/add_store_info_mbi.png)
 
    オンボーディングフローの 3 番目の手順でデータベースを接続する前に、収集する必要がある情報がいくつかあります。 手順 9 の *[!UICONTROL Connect your database]* ページに入力します。
 
@@ -75,7 +75,7 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 
 1. 新しく作成したユーザーを *コントリビューター* としてプロジェクトのプライマリ環境に追加します。
 
-   ![ コントリビューターとしてユーザーを追加 ](/help/troubleshooting/miscellaneous/assets/contributor_user_mbi.png)
+   ![&#x200B; コントリビューターとしてユーザーを追加 &#x200B;](/help/troubleshooting/miscellaneous/assets/contributor_user_mbi.png)
 
 1. Commerce Intelligenceの SSH キーを入手します。
 
@@ -83,18 +83,18 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
    * フィールド **[!UICONTROL Encryption Type]** に「**[!UICONTROL SSH Tunnel]**」を選択します。
    * ドロップダウンから、指定したMagento BI Essentials 公開鍵をコピー&amp;ペーストできます。
 
-   ![ 暗号化設定 ](/help/troubleshooting/miscellaneous/assets/encryption_type_mbi.png)
+   ![&#x200B; 暗号化設定 &#x200B;](/help/troubleshooting/miscellaneous/assets/encryption_type_mbi.png)
 
 1. 手順 5 で作成したCommerce Intelligence ユーザーに、新しいMagentoBI Essentials 公開鍵を追加します。
 
    * [accounts.magento.com/customer/account/login](https://account.magento.com/customer/account/login) に移動します。 作成した新しいCommerce Intelligence ユーザーのアカウントのログイン情報でログインします。 次に、「**[!UICONTROL Account Settings]**」タブに移動します。
    * ページを下にスクロールし、「SSH キー」のドロップダウンを展開します。 次に、「**[!UICONTROL Add a public key]**」をクリックします。
 
-   ![ 公開鍵を追加 ](/help/troubleshooting/miscellaneous/assets/add_public_key_mbi.png)
+   ![&#x200B; 公開鍵を追加 &#x200B;](/help/troubleshooting/miscellaneous/assets/add_public_key_mbi.png)
 
    * 上記のMagento MBI Essentials SSH 公開鍵を追加します。
 
-   ![SSH 公開鍵の追加 ](/help/troubleshooting/miscellaneous/assets/add_ssh_key_mbi.png)
+   ![SSH 公開鍵の追加 &#x200B;](/help/troubleshooting/miscellaneous/assets/add_ssh_key_mbi.png)
 
 1. Business Intelligenceに必要な情報 [!DNL MySQL] 資格情報を入力します。
 
@@ -156,7 +156,7 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 
 1. Adobe Commerce データベースに接続します。
 
-   ![Adobe Commerce データベースに接続する ](/help/troubleshooting/miscellaneous/assets/connect_magento_database_mbi.png)
+   ![Adobe Commerce データベースに接続する &#x200B;](/help/troubleshooting/miscellaneous/assets/connect_magento_database_mbi.png)
 
    *入力*:
 
@@ -170,7 +170,7 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 
 1. [!UICONTROL Timezone Settings] を設定します。
 
-   ![ タイムゾーン設定 ](/help/troubleshooting/miscellaneous/assets/timezone_settings_mbi.png)
+   ![&#x200B; タイムゾーン設定 &#x200B;](/help/troubleshooting/miscellaneous/assets/timezone_settings_mbi.png)
 
    *入力*
 
@@ -181,11 +181,11 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 
    * プロジェクト UI には SSH アクセス文字列を指定します。 この文字列は、**[!UICONTROL Encryption settings]** の設定でリモートアドレスとユーザー名に必要な情報を収集するために使用できます。 「**[!UICONTROL SSH]**」を選択して、ユーザー名とリモートアドレスを確認します。 *@* の前のテキスト文字列はユーザー名で、*@* の後のテキスト文字列はリモートアドレスです。
 
-   ![ サイトマスターへのアクセス ](/help/troubleshooting/miscellaneous/assets/access_site_mbi.png)
+   ![&#x200B; サイトマスターへのアクセス &#x200B;](/help/troubleshooting/miscellaneous/assets/access_site_mbi.png)
 
 1. [!UICONTROL Encryption Settings] の情報を入力します。
 
-   ![ 暗号化設定 ](/help/troubleshooting/miscellaneous/assets/encryption_type_mbi.png)
+   ![&#x200B; 暗号化設定 &#x200B;](/help/troubleshooting/miscellaneous/assets/encryption_type_mbi.png)
 
    *入力*
 
@@ -200,4 +200,4 @@ Cloud Starter プロジェクトのCommerce Intelligenceをアクティブ化す
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

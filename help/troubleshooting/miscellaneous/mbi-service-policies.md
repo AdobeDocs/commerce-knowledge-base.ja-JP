@@ -38,16 +38,16 @@ Commerce Intelligenceの目標は、優れたカスタマーサービスを提�
 * 請求情報の入力または変更
 * [ダッシュボードを他のユーザーと共有する](/docs/commerce-business-intelligence/mbi/build/dashboards/share-dashboard-with-users.html?lang=en)
 * データ接続およびサーバーの詳細の説明、作成または変更
-* 標準ユーザーまたは読み取り専用ユーザーに対する管理者レベルの関数の実行（例 [ 指標の追加/編集 ](/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html)）
+* 標準ユーザーまたは読み取り専用ユーザーに対する管理者レベルの関数の実行（例 [&#x200B; 指標の追加/編集 &#x200B;](/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html)）
 * インバウンドの電話でアカウントの詳細（レポートや請求情報など）を開示する。 登録したメールアドレスでフォローアップします。
 
 上記のデータセキュリティ機能に加えて、サポートチームが対応できない製品関連のリクエストがいくつかあります。
 
-* **SQL の指導** - SQL Report Builderを使用したいが、SQL がわからない場合は、 心配はいりません。基本を学ぶうえで役に立つ [ チュートリアル ](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) を用意しています。
+* **SQL の指導** - SQL Report Builderを使用したいが、SQL がわからない場合は、 心配はいりません。基本を学ぶうえで役に立つ [&#x200B; チュートリアル &#x200B;](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) を用意しています。
 
-* **製品の欠陥が原因ではない SQL ビジュアライゼーションの問題** - グラフが少し変わって見え、製品の欠陥が原因である **ではない** 場合は、クエリ自体が原因である可能性があります。 ビジュアライゼーション用のクエリを構造化する方法については、ユーザーガイドの [SQL クエリからのビジュアライゼーションの作成 ](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) チュートリアルをご覧ください。
-* **SQL クエリのデバッグ** - クエリの実行を妨げる EXPLAIN 以外のエラーが発生する場合があります。 クエリの問題が発生した場所を特定する方法については、[Commerce Intelligence ユーザーガイドの SQL Report Builderの使用 ](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) および SQL チュートリアルを参照することをお勧めします。
+* **製品の欠陥が原因ではない SQL ビジュアライゼーションの問題** - グラフが少し変わって見え、製品の欠陥が原因である **ではない** 場合は、クエリ自体が原因である可能性があります。 ビジュアライゼーション用のクエリを構造化する方法については、ユーザーガイドの [SQL クエリからのビジュアライゼーションの作成 &#x200B;](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) チュートリアルをご覧ください。
+* **SQL クエリのデバッグ** - クエリの実行を妨げる EXPLAIN 以外のエラーが発生する場合があります。 クエリの問題が発生した場所を特定する方法については、[Commerce Intelligence ユーザーガイドの SQL Report Builderの使用 &#x200B;](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) および SQL チュートリアルを参照することをお勧めします。
 
 ## チケットを送信するにはどうすればよいですか？
 
-ページ上部の [ チケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) リンクをクリックして、サポートチームに **チケットを送信** できます。 お問い合わせの前に [ サポートチケットの情報 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#info-in-support-ticket) を確認し、必要な情報がすべて最初の送信に含まれていることを確認することをお勧めします。
+ページ上部の [&#x200B; チケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) リンクをクリックして、サポートチームに **チケットを送信** できます。 お問い合わせの前に [&#x200B; サポートチケットの情報 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#info-in-support-ticket) を確認し、必要な情報がすべて最初の送信に含まれていることを確認することをお勧めします。

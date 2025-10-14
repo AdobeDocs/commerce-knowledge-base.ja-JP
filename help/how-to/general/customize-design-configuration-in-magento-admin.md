@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Commerce Admin でのデザイン設定のカスタマイズ
 
-Commerce Admin でのデザイン設定のカスタマイズに関する最新の情報については、開発者向けドキュメントの [Adobe Commerce Admin デザインのカスタマイズ ](https://developer.adobe.com/commerce/php/tutorials/admin/custom-admin-design/) を参照してください。
+Commerce Admin でのデザイン設定のカスタマイズに関する最新の情報については、開発者向けドキュメントの [Adobe Commerce Admin デザインのカスタマイズ &#x200B;](https://developer.adobe.com/commerce/php/tutorials/admin/custom-admin-design/) を参照してください。

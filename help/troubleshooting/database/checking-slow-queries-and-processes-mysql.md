@@ -79,6 +79,6 @@ Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイさ
 ## 関連資料
 
 * dev.mysql.comの [MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html)
-* dev.mysql.comの [MySQL Kill 構文 ](https://dev.mysql.com/doc/refman/8.0/en/kill.html)。
-* [ セキュリティ、パフォーマンス、データ処理 ](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) については、開発者向けドキュメントを参照してください。
-* 開発者向けドキュメントの [MySQL ヘルプ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql)。
+* dev.mysql.comの [MySQL Kill 構文 &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/kill.html)。
+* [&#x200B; セキュリティ、パフォーマンス、データ処理 &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) については、開発者向けドキュメントを参照してください。
+* 開発者向けドキュメントの [MySQL ヘルプ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql)。

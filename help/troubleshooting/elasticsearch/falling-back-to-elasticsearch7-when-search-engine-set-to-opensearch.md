@@ -52,4 +52,4 @@ Adobe Commerce バージョン 2.4.6 以降、[!DNL OpenSearch] を検索エン�
 
 ## 関連資料
 
-Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=ja)。
+Commerce on Cloud Infrastructure ガイドの [OpenSearch サービスの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=ja)。

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # PWA Studioを使用できるように NPM を設定する
 
-[ プログレッシブ web アプリケーション（PWA） Studio](https://magento.github.io/pwa-studio/) は、Cloud Infrastructure 2.3.x 以降のAdobe Commerceで使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、`hooks:build` 設定ファイルの `.magento.app.yaml` セクションで行います。
+[&#x200B; プログレッシブ web アプリケーション（PWA） Studio](https://magento.github.io/pwa-studio/) は、Cloud Infrastructure 2.3.x 以降のAdobe Commerceで使用できる新しいプロジェクトです。 PWA Studioを使用してインストールするには、NPM パッケージマネージャーのバージョンを 5.x 以降に設定して、Node.js 8.x がサポートされるようにする必要があります。これは、`hooks:build` 設定ファイルの `.magento.app.yaml` セクションで行います。
 
 ## 環境とテクノロジー
 
@@ -48,10 +48,10 @@ ht-degree: 0%
    > ```
 
 1. 変更をファイルに保存します。
-1. Git が編集したファイルを [ 統合環境 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) にプッシュします。
+1. Git が編集したファイルを [&#x200B; 統合環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) にプッシュします。
 
 変更は、更新された YAML ファイルを Git によって環境にプッシュした後に有効になります。
 
 ## 関連ドキュメント
 
-* Adobe Commerce on Cloud Infrastructure ガイドの [ アプリケーション設定：フック ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=ja)。
+* Adobe Commerce on Cloud Infrastructure ガイドの [&#x200B; アプリケーション設定：フック &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=ja)。

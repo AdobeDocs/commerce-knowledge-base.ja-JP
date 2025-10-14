@@ -67,5 +67,5 @@ Stack trace:
 
 ## 関連資料
 
-* OMS ドキュメント [OMS コネクタ設定チュートリアル ](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* OMS ドキュメント [OMS コネクタ設定チュートリアル &#x200B;](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

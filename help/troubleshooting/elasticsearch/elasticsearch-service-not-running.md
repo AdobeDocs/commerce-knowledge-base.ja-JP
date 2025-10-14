@@ -19,7 +19,7 @@ ht-degree: 0%
 
    * v2.2.3 以降は、ES 5.x をサポート
    * v2.2.8+および v2.3.1+は、ES 6.x をサポートしています。
-   * ES v2.x および v5.x は、[ 提供終了 ](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
+   * ES v2.x および v5.x は、[&#x200B; 提供終了 &#x200B;](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
 
 * Magento Open Source v2.3.0 以降では、ES 5.x および 6.x がサポートされています（ただし 6.x をお勧めします）。
 

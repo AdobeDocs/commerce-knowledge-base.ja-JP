@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます ](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
+> [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0 で削除されます &#x200B;](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)。 バージョン 2.4.0 をインストールする前に、Elasticsearch・ホストをセットアップして構成する必要があります。[Elasticsearchのインストールと設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) を参照してください。
 
 この記事では、Elasticsearchインデックスのステータスが「*green*」でない場合の解決策を提供します。 「*yellow*」は正常を示し、「*red*」は不良を示します。 「黄」または「赤」ステータスは、製品が見つからない場合や、古い製品情報が表示される場合に発生する可能性があります。
 
@@ -55,7 +55,7 @@ Elasticsearchカタログ検索インデックスが遅いため、ステータ�
    curl --silent -X GET localhost:9200/_cat/indices?v
    ```
 
-これらの手順が機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
+これらの手順が機能しない場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
 
 ## 関連資料
 

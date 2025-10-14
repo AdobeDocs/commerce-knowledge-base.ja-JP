@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >B2B 1.5.2 に更新した後、`Magento_Company` モジュールをアップグレードする際にパフォーマンスの問題が発生した場合は、添付の [ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch](assets/ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch.zip) を適用します。
 >
->詳しくは、Adobe Commerce ナレッジベースの [B2B 1.5.2 アップデート後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題 ](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md) を参照してください。
+>詳しくは、Adobe Commerce ナレッジベースの [B2B 1.5.2 アップデート後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題 &#x200B;](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md) を参照してください。
 
 この記事では、`company_structure` テーブルを更新しようとしたときに `REGEXP_LIKE` 関数が見つからなかったことが原因で発生する SQL 構文エラーのホットフィックスを示します。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. 会社を親会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの [ 会社階層の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) を参照してください。
+1. 会社を親会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの [&#x200B; 会社階層の管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) を参照してください。
 1. B2B を 1.5.2 バージョンにアップグレードします。
 
 <u> 期待される結果 </u>:
@@ -64,7 +64,7 @@ Unable to apply data patch Magento\Company\Setup\Patch\Data\SetCompanyForStructu
    composer update magento/module-b2b
    ```
 
-1. 添付の [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) パッチを適用します。 手順については、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+1. 添付の [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) パッチを適用します。 手順については、サポートナレッジベースの [Adobeが提供する Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 1. `bin/magento setup:upgrade` を実行します。
 
 ### クラウドパッチを使用したパッチの適用
@@ -78,4 +78,4 @@ Unable to apply data patch Magento\Company\Setup\Patch\Data\SetCompanyForStructu
    composer update magento/magento-cloud-patches
    ```
 
-1. 変更をコミットしプッシュして、再デプロイを開始します。 手順については、Cloud 上のAdobe Commerce ガイドの [ パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) を参照してください。
+1. 変更をコミットしプッシュして、再デプロイを開始します。 手順については、Cloud 上のAdobe Commerce ガイドの [&#x200B; パッチの適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) を参照してください。

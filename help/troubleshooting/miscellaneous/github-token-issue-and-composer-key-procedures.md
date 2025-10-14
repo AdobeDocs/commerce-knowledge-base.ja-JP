@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Composer バージョン 1.10.20 以前
 
 >[!NOTE]
@@ -42,9 +42,9 @@ Composer キーが古いと、Github トークンでエラーが発生し、デ�
 1. これにより、その Composer パッケージ バージョンの要件が追加されます。 ロックファイルを確認します。`composer/composer` のバージョンは 1.0.22 以降である必要があります。
 1. `composer.json` および `composer.lock` をコミットし、デプロイメントをプッシュします。
 
-この方法が機能しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
+この方法が機能しない場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
 
 ## 関連資料
 
-* [Github ブログ：GitHub の新しい認証トークン形式の背後 ](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上 ](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [Github ブログ：GitHub の新しい認証トークン形式の背後 &#x200B;](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
+* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上 &#x200B;](https://www.infoq.com/news/2021/04/github-new-token-format/)

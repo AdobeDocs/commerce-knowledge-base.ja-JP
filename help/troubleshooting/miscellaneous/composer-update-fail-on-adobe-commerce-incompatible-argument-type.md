@@ -57,10 +57,10 @@ CLI/ターミナルで次のコマンドを実行します。
 
 **クラウドインフラストラクチャ上のAdobe Commerceを修正する方法：**
 
-上記のコマンドを実行するか、7 月 29 日木曜日（PT）に利用可能になる最新バージョンの ECE ツール（ece-tools: 2002.1.7）にアップグレードします。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
+上記のコマンドを実行するか、7 月 29 日木曜日（PT）に利用可能になる最新バージョンの ECE ツール（ece-tools: 2002.1.7）にアップグレードします。 手順については、開発者向けドキュメントの [Cloud for Adobe Commerce/ece-tools バージョンの更新 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
 
 完全な修正は、Adobe Commerce（すべてのデプロイメント方法） 2.4.4 でリリースされる予定です。
 
 ## 関連資料
 
-* Github: [2021-07-27 Composer 更新互換性のない引数タイプ：必須タイプ : int。 実際のタイプ：文字列 ](https://github.com/magento/magento2/issues/33595)
+* Github: [2021-07-27 Composer 更新互換性のない引数タイプ：必須タイプ : int。 実際のタイプ：文字列 &#x200B;](https://github.com/magento/magento2/issues/33595)

@@ -37,19 +37,19 @@ Adobe Commerce オンプレミスまたはAdobe Commerce on cloud infrastructure
 yarn run validate-queries
 ```
 
-互換性レポートが表示されます。 互換性のない環境を使用している場合は、PWA StudioまたはAdobe Commerce インスタンスをアップグレードする必要があります。 [Adobe Commerce互換性マトリックス ](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/version-compatibility/) を確認して、必要なバージョンを確認してください。
+互換性レポートが表示されます。 互換性のない環境を使用している場合は、PWA StudioまたはAdobe Commerce インスタンスをアップグレードする必要があります。 [Adobe Commerce互換性マトリックス &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/version-compatibility/) を確認して、必要なバージョンを確認してください。
 
 アップグレード方法については、次のドキュメントを参照してください。
 
-* PWA Studioのアップグレードの場合、アップグレードする必要があるバージョンを [PWAリリースノートの ](https://github.com/magento/pwa-studio/releases/) 以前のバージョンからのアップグレード」の節で検索します。
-* 開発者向けドキュメントの [ クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
-* [ 開発者向けドキュメントの ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)Adobe Commerceをオンプレミス（「composer create-project」またはアーカイブを使用してインストール）でアップグレードする
-* [ 開発者向けドキュメントのAdobe Commerceをオンプレミスでアップグレード（Adobe Commerce リポジトリをクローンしてインストール） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/developer/git-installs)
+* PWA Studioのアップグレードの場合、アップグレードする必要があるバージョンを [PWAリリースノートの &#x200B;](https://github.com/magento/pwa-studio/releases/) 以前のバージョンからのアップグレード」の節で検索します。
+* 開発者向けドキュメントの [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceのバージョンのアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [&#x200B; 開発者向けドキュメントの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)Adobe Commerceをオンプレミス（「composer create-project」またはアーカイブを使用してインストール）でアップグレードする
+* [&#x200B; 開発者向けドキュメントのAdobe Commerceをオンプレミスでアップグレード（Adobe Commerce リポジトリをクローンしてインストール） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/developer/git-installs)
 
 ## 関連資料
 
-* [PWA Studio: コンパイルを開始する前に Webpack がハングします ](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md) サポート サポート サポート サポート技術情報
-* [PWA Studio：開発者モードの実行中に検証エラーが発生しました ](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md) サポート技術情報
-* [PWA Studio: サポート サポート サポート サポート技術情報で、ブラウザーに「Cannot proxy to」 ](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md) エラーが表示される
-* [PWA Studioを使用できるように NPM を設定 ](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md) する（サポートナレッジベースを参照）
+* [PWA Studio: コンパイルを開始する前に Webpack がハングします &#x200B;](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md) サポート サポート サポート サポート技術情報
+* [PWA Studio：開発者モードの実行中に検証エラーが発生しました &#x200B;](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md) サポート技術情報
+* [PWA Studio: サポート サポート サポート サポート技術情報で、ブラウザーに「Cannot proxy to」 &#x200B;](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md) エラーが表示される
+* [PWA Studioを使用できるように NPM を設定 &#x200B;](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md) する（サポートナレッジベースを参照）
 * [Adobe Commerce ドキュメントのPWA](https://magento.github.io/pwa-studio/)

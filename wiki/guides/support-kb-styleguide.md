@@ -276,4 +276,4 @@ goURL ではなく通常の URL を使用して、[Adobe.com](http://Adobe.com) 
 
 ## ブランド化
 
-* Magento CommerceはAdobe Commerceになりました。 最新のブランディング言語の使用方法について詳しくは、[ リブランド条件 ](https://github.com/magento/knowledge-base/wiki) wiki を参照してください。
+* Magento CommerceはAdobe Commerceになりました。 最新のブランディング言語の使用方法について詳しくは、[&#x200B; リブランド条件 &#x200B;](https://github.com/magento/knowledge-base/wiki) wiki を参照してください。

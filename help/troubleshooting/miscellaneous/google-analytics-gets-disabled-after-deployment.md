@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 解決策
 
-変数を常に有効にする場合は、開発者向けドキュメントの [Google Analyticsのデプロイ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) の説明に従って、デプロイ変数を `ENABLE_GOOGLE_ANALYTICS = true` 定します。
+変数を常に有効にする場合は、開発者向けドキュメントの [Google Analyticsのデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) の説明に従って、デプロイ変数を `ENABLE_GOOGLE_ANALYTICS = true` 定します。
 
 >[!NOTE]
 >

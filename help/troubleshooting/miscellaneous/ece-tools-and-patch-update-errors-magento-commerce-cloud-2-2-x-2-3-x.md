@@ -82,4 +82,4 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ アップグレードとパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices)。
+* 開発者向けドキュメントの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices)。

@@ -14,7 +14,7 @@ ht-degree: 0%
 タイトルは問題を簡単に説明する必要があります。最大 70 文字が推奨されます。<br/>
 （例：「Out of memory error during install or upgrade」）。
 
-メタデータについて詳しくは、[ コントリビューション/メタデータ ](../../CONTRIBUTING.md#metadata) を参照してください。
+メタデータについて詳しくは、[&#x200B; コントリビューション/メタデータ &#x200B;](../../CONTRIBUTING.md#metadata) を参照してください。
 
 導入段落または 2 つの段落：問題の簡単な概要。 最初の 140 文字は、SEO の目的で重要です。
 
@@ -67,7 +67,7 @@ Adobe Commerceがこれを行います。
 
 ## 関連資料
 
-* [ 記事のトピック ](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home)」を参照してください。
-* 開発者向けドキュメントの [ 記事のトピック ](https://developer.adobe.com/commerce/docs/)。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別する方法として、「[ 記事のトピック ](https://developer.adobe.com/commerce/docs/)」をクラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントに記載しています。 と [ 記事のトピック ](https://developer.adobe.com/commerce/docs/) を参照してください（Adobe Commerce オンプレミス開発者向けドキュメント）。
-* サポートに関するナレッジベースの [ 記事のトピック ](https://support.magento.com/hc/en-us)。
+* [&#x200B; 記事のトピック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home)」を参照してください。
+* 開発者向けドキュメントの [&#x200B; 記事のトピック &#x200B;](https://developer.adobe.com/commerce/docs/)。 また、cloud ユーザー用の devdocs とオンプレミスユーザー用の devdocs の手順を区別する方法として、「[&#x200B; 記事のトピック &#x200B;](https://developer.adobe.com/commerce/docs/)」をクラウドインフラストラクチャー上のAdobe Commerceに関する開発者向けドキュメントに記載しています。 と [&#x200B; 記事のトピック &#x200B;](https://developer.adobe.com/commerce/docs/) を参照してください（Adobe Commerce オンプレミス開発者向けドキュメント）。
+* サポートに関するナレッジベースの [&#x200B; 記事のトピック &#x200B;](https://support.magento.com/hc/en-us)。
 * 関連リソース（ブログ、フォーラム、StackOverflow など）

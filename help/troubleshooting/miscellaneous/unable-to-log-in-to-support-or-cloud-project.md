@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 

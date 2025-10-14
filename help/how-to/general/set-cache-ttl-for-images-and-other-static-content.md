@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 画像およびその他の静的コンテンツのキャッシュ TTL の設定
 
-ユーザーガイドの [ 静的ファイルのキャッシュの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html?lang=ja) を参照してください。
+ユーザーガイドの [&#x200B; 静的ファイルのキャッシュの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html?lang=ja) を参照してください。

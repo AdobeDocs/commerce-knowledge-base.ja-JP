@@ -47,4 +47,4 @@ dotdigital にログインできません。
 
 ## 関連資料
 
-[Adobe Commerce 2.4.1 既知の問題 – Vertex アドレスが別の配送先/請求先アドレスで検証されない問題 ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) アドビのサポートナレッジベースにあります。
+[Adobe Commerce 2.4.1 既知の問題 – Vertex アドレスが別の配送先/請求先アドレスで検証されない問題 &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) アドビのサポートナレッジベースにあります。

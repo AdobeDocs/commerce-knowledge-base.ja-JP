@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### アクセスキーを無効にする方法
 
-古いキーに関連付けられた [Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポートにお問い合わせ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してキーを無効にしてください。
+古いキーに関連付けられた [Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポートにお問い合わせ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してキーを無効にしてください。
 
 古いキーに関連付けられた Marketplace アカウントにアクセスできる場合は、次の手順を実行してキーを無効にします。
 
@@ -64,4 +64,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [ 認証キーの取得 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) については、開発者向けドキュメントを参照してください。
+* [&#x200B; 認証キーの取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) については、開発者向けドキュメントを参照してください。

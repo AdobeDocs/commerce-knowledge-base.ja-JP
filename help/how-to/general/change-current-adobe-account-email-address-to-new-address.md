@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 現在のAdobeアカウントの E メール アドレスを変更する
 
-この記事では、[Magentoアカウント ](https://account.adobe.com/) に登録されている現在のメールアドレスを、[&#128279;](https://account.magento.com/)Adobeアカウントまたは [Adobeアカウント ](https://account.adobe.com/) に登録されていない新しいアドレスに変更する方法について説明し  す。
+この記事では、[Magentoアカウント &#x200B;](https://account.adobe.com/) に登録されている現在のメールアドレスを、[&#128279;](https://account.magento.com/)Adobeアカウントまたは [Adobeアカウント &#x200B;](https://account.adobe.com/) に登録されていない新しいアドレスに変更する方法について説明し  す。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,6 +28,6 @@ ht-degree: 0%
 
 メールアドレスを変更するには、次の手順に従います。
 
-1. 古いメールアドレスで使用されているパスワードをリセットします。 Adobe helpx の [ パスワードを忘れた場合のリセット ](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html) に記載されている手順に従います。
+1. 古いメールアドレスで使用されているパスワードをリセットします。 Adobe helpx の [&#x200B; パスワードを忘れた場合のリセット &#x200B;](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html) に記載されている手順に従います。
 1. パスワードリセットリンクは、現在の所有者のメールボックスに手順と共に送信されます。
-1. [Adobeアカウントページに移動し ](https://account.adobe.com) 新しいメールアドレスでログインして、パスワードを設定します。
+1. [Adobeアカウントページに移動し &#x200B;](https://account.adobe.com) 新しいメールアドレスでログインして、パスワードを設定します。

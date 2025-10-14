@@ -48,11 +48,11 @@ PHP のメモリ制限を増やすには、次の手順に従います。
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-`max-input-vars` には「適切な」値はありません。設定のサイズと複雑さによって異なります。 必要に応じて、`php.ini` ファイルの値を変更します。 [ 必要な PHP 設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
+`max-input-vars` には「適切な」値はありません。設定のサイズと複雑さによって異なります。 必要に応じて、`php.ini` ファイルの値を変更します。 [&#x200B; 必要な PHP 設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
 
 ## xdebug 最大関数のネスト レベル エラー
 
-[ インストール中、xdebug の最大関数のネスト レベル エラー ](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md) を参照してください。
+[&#x200B; インストール中、xdebug の最大関数のネスト レベル エラー &#x200B;](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md) を参照してください。
 
 ## PHTML テンプレートにアクセスすると、エラーが表示されます
 
@@ -64,7 +64,7 @@ Parse error: syntax error, unexpected 'data' (T_STRING)
 
 ### 解決策：php.ini で `asp_tags = off` を設定します
 
-複数のテンプレートには、製品画像を表示するための次の [ テンプレート ](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) のように、タグでラップされたテンプレートの抽象レベルをサポートする構文があります（Twig のよ `<% %>` に様々なテンプレートエンジンを使用します）。
+複数のテンプレートには、製品画像を表示するための次の [&#x200B; テンプレート &#x200B;](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) のように、タグでラップされたテンプレートの抽象レベルをサポートする構文があります（Twig のよ `<% %>` に様々なテンプレートエンジンを使用します）。
 
 ```php
 <img
@@ -76,4 +76,4 @@ Parse error: syntax error, unexpected 'data' (T_STRING)
 
 [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags) の詳細情報。
 
-`php.ini` を編集して `asp_tags = off` を設定します。 詳しくは、[PHP の設定が必要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
+`php.ini` を編集して `asp_tags = off` を設定します。 詳しくは、[PHP の設定が必要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。

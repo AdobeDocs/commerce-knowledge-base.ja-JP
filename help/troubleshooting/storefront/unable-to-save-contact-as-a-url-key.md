@@ -63,5 +63,5 @@ URL キーとして *連絡先* という用語を使用して、商品または
 
 ## 関連資料
 
-* ユーザーガイドの [URL の書き換え ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
-* ユーザーガイドの [SEO のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/seo-overview)。
+* ユーザーガイドの [URL の書き換え &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
+* ユーザーガイドの [SEO のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/seo-overview)。

@@ -65,4 +65,4 @@ Adobe Commerce オンプレミスおよびMagento Open Source 2.x バージョ�
 
 ## 関連資料
 
-* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)。
+* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)。

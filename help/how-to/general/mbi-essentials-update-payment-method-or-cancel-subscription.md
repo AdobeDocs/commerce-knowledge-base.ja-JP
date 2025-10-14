@@ -28,4 +28,4 @@ Commerce Intelligence Essentials クライアントがサブスクリプショ�
 
 ## 関連資料
 
-* [Commerce Intelligence ユーザーガイド ](/docs/commerce-business-intelligence/mbi/guide-overview.html)。
+* [Commerce Intelligence ユーザーガイド &#x200B;](/docs/commerce-business-intelligence/mbi/guide-overview.html)。

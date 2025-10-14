@@ -21,13 +21,13 @@ ht-degree: 0%
 
 **解決策：**
 
-* アカウントオーナー（プライマリアカウントの所有者）の場合は、Adobe アカウントチームにお問い合わせください。 チームメンバーがサポートへのアクセス権を持っている場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed) してもらいます。 アカウントに関連付けられた名前とメールを指定します。
+* アカウントオーナー（プライマリアカウントの所有者）の場合は、Adobe アカウントチームにお問い合わせください。 チームメンバーがサポートへのアクセス権を持っている場合は、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed) してもらいます。 アカウントに関連付けられた名前とメールを指定します。
 * アカウントの所有者でない場合は、所有者に連絡して共有アクセスおよび必要な権限を提供してもらう必要があります。
-* アカウント所有者が会社を終了し、アカウントを別のユーザーに転送する場合は、[Commerce アカウントの転送 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-transfer) を参照してください。
+* アカウント所有者が会社を終了し、アカウントを別のユーザーに転送する場合は、[Commerce アカウントの転送 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-transfer) を参照してください。
 
 >[!NOTE]
 >
->アカウント所有者以外のユーザーでも、自分のアカウントに「[!UICONTROL Shared Access]」タブを設定することは可能です。 ただし、他のユーザーに共有アクセスを提供できるのは、必要な権限を持つアカウント所有者（プライマリアカウント所有者）のみです。 共有アクセスについて詳しくは、『Adobe Commerce Experience League サポートユーザーガイド』の [ 共有アクセス：自分のアカウントにアクセスするための他のユーザーへの権限の付与 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) を参照してください。
+>アカウント所有者以外のユーザーでも、自分のアカウントに「[!UICONTROL Shared Access]」タブを設定することは可能です。 ただし、他のユーザーに共有アクセスを提供できるのは、必要な権限を持つアカウント所有者（プライマリアカウント所有者）のみです。 共有アクセスについて詳しくは、『Adobe Commerce Experience League サポートユーザーガイド』の [&#x200B; 共有アクセス：自分のアカウントにアクセスするための他のユーザーへの権限の付与 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) を参照してください。
 
 ## 共有アクセスを使用しましたが、特定のリソースにアクセスできません
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 共有アクセスを使用して [!UICONTROL Support] をクリックしましたが、組織の新しいチケットを開いたとき、フォームで使用できる製品がありませんでした
 
-**問題：**&#x200B;[Experience Leagueでチケットを開く際に、適切なクラウドプロジェクトを選択できない ](https://experienceleague.adobe.com/home?lang=ja#support)。
+**問題：**&#x200B;[Experience Leagueでチケットを開く際に、適切なクラウドプロジェクトを選択できない &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)。
 
 **考えられる原因：** 資格が [!DNL Commerce] い正しい組織が選択されていません。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 **解決策**:
 
-1. プロジェクトに追加されていることを確認します。 [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/user-access) を参照してください。
+1. プロジェクトに追加されていることを確認します。 [&#x200B; ユーザーアクセスの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/user-access) を参照してください。
 1. プロジェクトに関連付けられたライセンスに対する共有アクセスが、アカウント所有者から付与されていることを確認します。
 
 問題が引き続き発生する場合は、Adobe アカウントチームにお問い合わせください。 アカウントに関連付けられた名前とメールを指定します。
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ## 共有アクセスを使用しましたが、共有アクセスではなくチケットが表示されます
 
-**問題：** 共有アクセスを使用して [ ヘルプセンター ](https://support.magento.com/hc/us-en/requests) にアクセスしていますが、自分のアカウント（組織）に属するチケットのみが表示されます。 [!DNL Commerce] アカウント ページに、共有アクセスを提供してくれた組織のアカウントを使用していることが表示されますが、組織のチケットはまだ表示されていません。
+**問題：** 共有アクセスを使用して [&#x200B; ヘルプセンター &#x200B;](https://support.magento.com/hc/us-en/requests) にアクセスしていますが、自分のアカウント（組織）に属するチケットのみが表示されます。 [!DNL Commerce] アカウント ページに、共有アクセスを提供してくれた組織のアカウントを使用していることが表示されますが、組織のチケットはまだ表示されていません。
 
 **考えられる原因：** ブラウザーがヘルプ センターからキャッシュされたコンテンツを使用しています。
 
@@ -92,6 +92,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [Adobe Commerce サポートまたは Cloud アカウントにログインできない ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
-* [MageID アカウント所有者がログインしてサポートチケットを送信できません ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25231)
-* [Commerce アカウントの共有 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)
+* [Adobe Commerce サポートまたは Cloud アカウントにログインできない &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
+* [MageID アカウント所有者がログインしてサポートチケットを送信できません &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Commerce アカウントの共有 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)

@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Commerce管理者で Fastly の **Force TLS** 機能を有効化して、クラウドインフラストラクチャストア上のAdobe Commerceのすべてのページに対してグローバル HTTP から HTTPS へのリダイレクトを有効にします。
 
-この記事では、詳細な [ 手順 ](#steps)、強制 TLS 機能の概要、影響を受けるバージョン、関連ドキュメントへのリンクを示します。
+この記事では、詳細な [&#x200B; 手順 &#x200B;](#steps)、強制 TLS 機能の概要、影響を受けるバージョン、関連ドキュメントへのリンクを示します。
 
 ## 手順 {#steps}
 
 ### 手順 1：セキュア URL を設定 {#step-1-configure-secure-urls}
 
-この手順では、ストアのセキュア URL を定義します。 既に完了している場合は、[ 手順 2:Force TLS の有効化 ](#step-2-enable-force-tls) に進みます。
+この手順では、ストアのセキュア URL を定義します。 既に完了している場合は、[&#x200B; 手順 2:Force TLS の有効化 &#x200B;](#step-2-enable-force-tls) に進みます。
 
 1. Commerce Admin にログインします。
 1. **ストア**/**設定**/**一般**/**Web** に移動します。
@@ -29,7 +29,7 @@ Commerce管理者で Fastly の **Force TLS** 機能を有効化して、クラ�
 1. **ストアフロントでセキュアな URL を使用** 設定および **管理者でセキュアな URL を使用** 設定を **はい** に設定します。    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. 右上隅の **設定を保存** をクリックして、変更を適用します。
 
-**ユーザーガイドの関連ドキュメント：**   [URL を保存 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls).
+**ユーザーガイドの関連ドキュメント：**   [URL を保存 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### 手順 2:Force TLS を有効にする {#step-2-enable-force-tls}
 
@@ -39,7 +39,7 @@ Commerce管理者で Fastly の **Force TLS** 機能を有効化して、クラ�
 1. 表示されるダイアログで、「**アップロード**」をクリックします。    ![magento-admin_force-tls-confirmation-dialog.png](assets/magento-admin_force-tls-confirmation-dialog.png)
 1. ダイアログが閉じた後、「TLS を強制」の現在の状態が **有効** と表示されていることを確認します。    ![magento-admin_force-tls-enabled.png](assets/magento-admin_force-tls-enabled.png)
 
-**関連する Fastly ドキュメント：**   Adobe Commerce 2 の [Force TLS ガイド ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md)。
+**関連する Fastly ドキュメント：**   Adobe Commerce 2 の [Force TLS ガイド &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md)。
 
 ## Force TLS について
 
@@ -50,7 +50,7 @@ Fastly の TLS 強制機能を使用すると、サイトページに対する�
 &#x200B;>>
 これは、暗号化されていないリクエストに対して *301 Moved Permanently* 応答を返すことで機能し、TLS と同等の値にリダイレクトされます。 例えば、*http://www.example.com/foo.jpeg&rbrace; に対してリクエストを行* と、*https://www.example.com/foo.jpeg* にリダイレクトされます。
 
-[ 通信の確保 ](https://docs.fastly.com/guides/securing-communications/) （Fastly 関連ドキュメント）
+[&#x200B; 通信の確保 &#x200B;](https://docs.fastly.com/guides/securing-communications/) （Fastly 関連ドキュメント）
 
 ## 影響を受けるバージョン
 
@@ -65,6 +65,6 @@ Fastly の TLS 強制機能を使用すると、サイトページに対する�
 
 ## 関連する Fastly ドキュメント
 
-* [Adobe Commerce 2 用 Force TLS ガイド ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md)
-* [TLS リダイレクトの強制 ](https://docs.fastly.com/guides/securing-communications/forcing-a-tls-redirect)
-* [ 意思疎通の確保 ](https://docs.fastly.com/guides/securing-communications/)
+* [Adobe Commerce 2 用 Force TLS ガイド &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md)
+* [TLS リダイレクトの強制 &#x200B;](https://docs.fastly.com/guides/securing-communications/forcing-a-tls-redirect)
+* [&#x200B; 意思疎通の確保 &#x200B;](https://docs.fastly.com/guides/securing-communications/)

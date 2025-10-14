@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Core Adobe Commerce Payment Integrations の償却
 
-支払いサービス指令PSD2 （[ 支払いサービス指令 ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html?lang=ja) の詳細を参照してください）と多くの API の継続的な進化により、Adobe Commerceのコア支払い統合の多くが時代遅れになり、将来セキュリティへの準拠が失われるリスクがあります。 そのため、多くのコア支払い統合は既に廃止されているか、まもなく廃止される予定です。対応するCommerce Marketplace拡張機能への移行をお勧めします。 支払い統合の最近の非推奨（廃止予定）を確認するには、以下の残りの記事を参照してください。 各 **ステータス** リンクはアドビのユーザーガイドに記載されています。 **以下の統合はすべてAdobe Commerce 2.4.0 リリースから削除され、2.3 リリースから非推奨（廃止予定）になりました。**
+支払いサービス指令PSD2 （[&#x200B; 支払いサービス指令 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html?lang=ja) の詳細を参照してください）と多くの API の継続的な進化により、Adobe Commerceのコア支払い統合の多くが時代遅れになり、将来セキュリティへの準拠が失われるリスクがあります。 そのため、多くのコア支払い統合は既に廃止されているか、まもなく廃止される予定です。対応するCommerce Marketplace拡張機能への移行をお勧めします。 支払い統合の最近の非推奨（廃止予定）を確認するには、以下の残りの記事を参照してください。 各 **ステータス** リンクはアドビのユーザーガイドに記載されています。 **以下の統合はすべてAdobe Commerce 2.4.0 リリースから削除され、2.3 リリースから非推奨（廃止予定）になりました。**
 
 <table style="height: 243px;" width="712">
 <tbody>
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 Adobe CommerceとMagento Open Sourceのデプロイメントで、非推奨（廃止予定）の支払い統合を引き続き使用している場合は、以下の推奨事項に従って、お客様の支払いが安全で、支払いが拒否されていないことを確認し、Adobe Commerce 2.4.0 へのアップグレードに備えてください。
 
-* 上記の表で説明されているように、[Commerce Marketplaceから公式の支払い方法 ](https://marketplace.magento.com/extensions/payments-security/payment-integration.html?_ga=2.108129217.2105547619.1564067043-238341041.1564067043) 拡張機能をインストールして設定します。
+* 上記の表で説明されているように、[Commerce Marketplaceから公式の支払い方法 &#x200B;](https://marketplace.magento.com/extensions/payments-security/payment-integration.html?_ga=2.108129217.2105547619.1564067043-238341041.1564067043) 拡張機能をインストールして設定します。
 * 管理で非推奨の支払い統合を無効にする（設定 **有効** 設定オプションを *いいえ*）ことで、支払いオプションとしてストアフロントに表示されなくなりました。 新しい注文には、必ず拡張機能の統合を通じて支払いが行われるようにしてください。
 * Commerce Marketplaceからの新しい統合は、非推奨の支払い統合を使用して行われた支払い取引を処理できないので、すでに転記済みの取引の完了と払い戻しの可能性がある場合にのみ、両方の支払い方法を並行して使用することをお勧めします。 そのためには、非推奨（廃止予定）のお支払い方法を無効のままにし、設定フィールドはすべて入力済みにしておきます。

@@ -45,4 +45,4 @@ Cron ジョブまたはコンシューマーを手動で実行して、新しい
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ メッセージキューの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) を参照してください。
+* 開発者向けドキュメントの [&#x200B; メッセージキューの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) を参照してください。

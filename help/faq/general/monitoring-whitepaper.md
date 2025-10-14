@@ -36,7 +36,7 @@ Adobe Commerce インスタンスには通常、カスタムコードと設定�
 | **説明** | サイトの可用性は、指標に関して設定されたしきい値に基づいて決定されます。 チェックが 10 分間失敗し、処理中のアクティブなデプロイメントがない場合は、サイト停止の通知がトリガーされます。 |
 | **通知の受信者** | マーチャント/パートナーおよびAdobe |
 | **Adobeの対応** | 問題がAdobe Commerce インフラストラクチャ上にある場合は、トリアージと修正を担当します。 |
-| **商人の訴え** | マーチャント/パートナーによって導入された変更またはカスタムコードが原因の場合は、問題を修正する責任があります。 トラブルシューティングについては、「[ サイトダウンのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.html?lang=ja)」を参照してください。 |
+| **商人の訴え** | マーチャント/パートナーによって導入された変更またはカスタムコードが原因の場合は、問題を修正する責任があります。 トラブルシューティングについては、「[&#x200B; サイトダウンのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.html?lang=ja)」を参照してください。 |
 
 ## ディスク容量の監視
 
@@ -48,4 +48,4 @@ Adobe Commerce インスタンスには通常、カスタムコードと設定�
 | **説明** | 通知は、ホストの空きディスク容量に関して構成されたしきい値に基づいて送信されます。 関連するマウント（[!DNL MySQL] またはメディア）に 1 回だけディスク領域が自動的に追加され、サイトの停止を防ぐとともに、ディスク領域をクリアしたり、ディスク使用量の急激な増加を引き起こしているコードやログを特定して解決したりする時間をマーチャントに与えます。 |
 | **通知の受信者** | マーチャント/パートナーおよびAdobe |
 | **Adobeの対応** | サポートチケットを自動的に発行すると、関連するマウント（[!DNL MySQL] またはメディア）にディスク領域が自動的に追加され、サイトの停止が回避されます。 |
-| **商人の訴え** | 継続的な警告レベルのディスク容量アラートを受け取るには、以下を参照してください。 <ul><li>[[!DNL Managed alerts for Adobe Commerce]: disk warning アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)</li><li>[[!DNL Managed alerts for Adobe Commerce]: disk critical アラート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert) </li></ul> |
+| **商人の訴え** | 継続的な警告レベルのディスク容量アラートを受け取るには、以下を参照してください。 <ul><li>[[!DNL Managed alerts for Adobe Commerce]: disk warning アラート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)</li><li>[[!DNL Managed alerts for Adobe Commerce]: disk critical アラート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert) </li></ul> |

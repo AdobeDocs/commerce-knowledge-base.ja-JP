@@ -59,6 +59,6 @@ Braintreeを使用せずにダイレクト Paypal を有効にすると、この
 
 ## 関連資料
 
-* [Adobe Commerceの買い物かご内の製品数のベストプラクティス ](https://support.magento.com/hc/en-us/articles/360048550332) に関するサポートナレッジベースを参照してください。
-* [ 注文処理のチュートリアル：手順 1. 開発者ドキュメントで ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) 買い物かごに項目を追加する
-* [GraphQLのチェックアウトチュートリアル：手順 1. 開発者ドキュメントで ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) 買い物かごに製品を追加する
+* [Adobe Commerceの買い物かご内の製品数のベストプラクティス &#x200B;](https://support.magento.com/hc/en-us/articles/360048550332) に関するサポートナレッジベースを参照してください。
+* [&#x200B; 注文処理のチュートリアル：手順 1. 開発者ドキュメントで &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) 買い物かごに項目を追加する
+* [GraphQLのチェックアウトチュートリアル：手順 1. 開発者ドキュメントで &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) 買い物かごに製品を追加する

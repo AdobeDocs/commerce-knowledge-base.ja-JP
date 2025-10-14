@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？
 
-Adobe Commerceは、共有カタログ内の 1 つ以上の商品の価格アップデート（[ コンテンツステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)）をスケジュールする機能を提供していません。
+Adobe Commerceは、共有カタログ内の 1 つ以上の商品の価格アップデート（[&#x200B; コンテンツステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)）をスケジュールする機能を提供していません。
 
 つまり、Commerce管理パネルの **価格と構造を設定** メニューから直接価格の更新をスケジュールすることはできません（このメニューには **新規更新をスケジュール** ボタンはありません）。
 
@@ -23,7 +23,7 @@ Adobe Commerceは、共有カタログ内の 1 つ以上の商品の価格アッ
 
 ## 顧客グループの価格更新をスケジュール
 
-1. [ 新しい製品アップデートのスケジュール設定 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja) を開始します。
+1. [&#x200B; 新しい製品アップデートのスケジュール設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja) を開始します。
 1. 「**価格**」フィールドまでスクロールし、「**詳細価格**」をクリックします。
 
    ![advanced_pricing.png](assets/advanced_pricing.png){width="600"}
@@ -40,9 +40,9 @@ Adobe Commerceは、共有カタログ内の 1 つ以上の商品の価格アッ
 
 **関連ドキュメント**
 
-* ユーザーガイドの [ 更新のスケジュール （コンテンツのステージング） ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)。
-* ユーザーガイドの [ 詳細価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)。
+* ユーザーガイドの [&#x200B; 更新のスケジュール （コンテンツのステージング） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)。
+* ユーザーガイドの [&#x200B; 詳細価格 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)。
 
 ## 基本価格の予定価格更新
 
-関連記事：[ 基本価格の変更は共有カタログ価格にどのような影響を与えるか？](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) しくは、サポートナレッジベースを参照してください。
+関連記事：[&#x200B; 基本価格の変更は共有カタログ価格にどのような影響を与えるか？](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) しくは、サポートナレッジベースを参照してください。

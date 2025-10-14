@@ -52,7 +52,7 @@ Linux を実行している場合は、`libnss3-tools` （または同等のツ�
 
 ## サポートナレッジベースの関連資料
 
-* [PWA Studio：自己署名証明書の信頼エラー ](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio：自己署名証明書の信頼エラー &#x200B;](https://support.magento.com/hc/en-us/articles/360038973172)
 * [PWA Studio: コンパイルを開始する前に webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
 * [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)

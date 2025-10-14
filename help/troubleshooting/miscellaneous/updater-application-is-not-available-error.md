@@ -29,4 +29,4 @@ ht-degree: 0%
 
 ## 解決策
 
-この問題を解決するには、ファイルおよびサブディレクトリを含んだ `<magento_root>/update` ディレクトリがあるかどうかを確認します。 それ以外の場合は、開発者向けドキュメントの [ アップデーターの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) を参照してください。
+この問題を解決するには、ファイルおよびサブディレクトリを含んだ `<magento_root>/update` ディレクトリがあるかどうかを確認します。 それ以外の場合は、開発者向けドキュメントの [&#x200B; アップデーターの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) を参照してください。

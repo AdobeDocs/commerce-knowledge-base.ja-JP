@@ -30,7 +30,7 @@ Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
 ### ケース I:
 
-* [ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) に孤立したパッチファイル/ホットフィックスが記載されている場合は、[https://account.magento.comのダウンロードセクションからファイルをダウンロードし ](https://account.magento.com/downloads/view/) ください。 共有アクセスユーザーには、まずアカウント所有者/ライセンス所有者からダウンロード権限が付与されている必要があります。
+* [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) に孤立したパッチファイル/ホットフィックスが記載されている場合は、[https://account.magento.comのダウンロードセクションからファイルをダウンロードし &#x200B;](https://account.magento.com/downloads/view/) ください。 共有アクセスユーザーには、まずアカウント所有者/ライセンス所有者からダウンロード権限が付与されている必要があります。
 
 **注意事項：**
 
@@ -50,7 +50,7 @@ Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
 * **Cloud:**
 
-1. 一部の [!UICONTROL Security Patches] は、Commerceのクラウドパッチの下の最新バージョンの Cloud Tools Suite （ECE ツール）に含まれている（リリースされている）可能性があります。[ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) を確認し、リリースにセキュリティ修正が記載されている場合は、パッケージをそのバージョンにアップグレードします。
+1. 一部の [!UICONTROL Security Patches] は、Commerceのクラウドパッチの下の最新バージョンの Cloud Tools Suite （ECE ツール）に含まれている（リリースされている）可能性があります。[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) を確認し、リリースにセキュリティ修正が記載されている場合は、パッケージをそのバージョンにアップグレードします。
 1. リリースノートにセキュリティ修正についての記載がない場合は、引き続きお読みください。
 
 * **クラウドまたはオンプレミス：**
@@ -60,5 +60,5 @@ Adobe Commerce オンプレミスおよび Cloud – すべてのバージョン
 
 ## 関連資料
 
-* [2&rbrace;Cloud Infrastructure ガイドのCommerce Cloud Adobe Commerce ツールスイートのリリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) を参照してください *。*
-* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce Adobe Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) を参照してください **
+* [2&rbrace;Cloud Infrastructure ガイドのCommerce Cloud Adobe Commerce ツールスイートのリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) を参照してください *。*
+* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce Adobe Commerce バージョンのアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) を参照してください **

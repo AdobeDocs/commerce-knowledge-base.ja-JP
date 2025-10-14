@@ -68,5 +68,5 @@ Cron ジョブを作成して、トラッキングインデックスを削除し
 
 設定された時間頻度でインデックスを削除する場合は、開発者向けドキュメントの以下の記事を参照して、cron ジョブを作成します。
 
-* [ カスタム cron ジョブと cron グループの設定（チュートリアル） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [cron ジョブの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [&#x200B; カスタム cron ジョブと cron グループの設定（チュートリアル） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [cron ジョブの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

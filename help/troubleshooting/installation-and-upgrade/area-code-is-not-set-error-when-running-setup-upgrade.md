@@ -51,6 +51,6 @@ Magento コマンドで「*Module &#39;Module\_AdvancedSalesRule&#39;: Installin
 
 ## パッチの適用方法
 
-手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

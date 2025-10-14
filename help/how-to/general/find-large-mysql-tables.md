@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 大きな MySQL テーブルの検索
 
-大きいテーブルを識別するには、[ データベースへの接続 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) の記事の説明に従ってデータベースに接続し、次のコマンドを実行します。ここで、`project_id` はクラウドプロジェクト ID です。
+大きいテーブルを識別するには、[&#x200B; データベースへの接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) の記事の説明に従ってデータベースに接続し、次のコマンドを実行します。ここで、`project_id` はクラウドプロジェクト ID です。
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
@@ -25,4 +25,4 @@ ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

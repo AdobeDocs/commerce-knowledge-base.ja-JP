@@ -35,4 +35,4 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* 開発者向けドキュメントの [Cloud for Adobe Commerce/プロジェクト構造/書き込み可能ディレクトリ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories)。
+* 開発者向けドキュメントの [Cloud for Adobe Commerce/プロジェクト構造/書き込み可能ディレクトリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories)。

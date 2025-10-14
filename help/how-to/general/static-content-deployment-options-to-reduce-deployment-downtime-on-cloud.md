@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドでのデプロイメントのダウンタイムを短縮する静的コンテンツデプロイメントオプション
 
-デプロイメントプロセスを迅速に実行し、クラウドインフラストラクチャ上のAdobe Commerceのメンテナンスダウンタイムを短縮するのに役立つ静的コンテンツデプロイメント（SCD）オプションについて詳しくは、開発者向けドキュメントの [ 静的コンテンツデプロイメント戦略 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/static-content) を参照してください。
+デプロイメントプロセスを迅速に実行し、クラウドインフラストラクチャ上のAdobe Commerceのメンテナンスダウンタイムを短縮するのに役立つ静的コンテンツデプロイメント（SCD）オプションについて詳しくは、開発者向けドキュメントの [&#x200B; 静的コンテンツデプロイメント戦略 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/static-content) を参照してください。

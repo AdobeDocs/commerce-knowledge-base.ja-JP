@@ -33,4 +33,4 @@ ht-degree: 0%
 
 複数の web サイトがある場合は、これらの web サイトをSales Channelとしてデフォルト在庫または他のカスタム在庫に追加する必要があります。
 
-これを行う方法について詳しくは、ユーザーガイドの wiki/ユーザーガイドの [Stock の節 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage) を参照してください。
+これを行う方法について詳しくは、ユーザーガイドの wiki/ユーザーガイドの [Stock の節 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage) を参照してください。

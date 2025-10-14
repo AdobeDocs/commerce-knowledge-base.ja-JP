@@ -114,5 +114,5 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 1. インストールまたはアップグレードのプロセスを完了します。
 
-   * [ クラウドインフラストラ  [!DNL B2B]  チャへのインストール ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html?lang=ja)
-   * [ オンプレミスでのインストール ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html?lang=ja)
+   * [&#x200B; クラウドインフラストラ  [!DNL B2B]  チャへのインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html?lang=ja)
+   * [&#x200B; オンプレミスでのインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html?lang=ja)

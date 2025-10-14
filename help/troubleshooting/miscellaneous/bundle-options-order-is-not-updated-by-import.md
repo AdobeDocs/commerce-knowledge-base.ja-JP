@@ -29,7 +29,7 @@ ht-degree: 0%
 
 <u> 再現手順 </u>:
 
-1. [ インポート機能 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import) を使用してファイルをインポートします。
+1. [&#x200B; インポート機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import) を使用してファイルをインポートします。
 1. バンドル製品ページを開きます。
 
 <u> 期待される結果 </u>:
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. .csv ファイル内の `bundle_values` 列の `position` パラメーターで、各オプションに対して位置を明示的に宣言します。 詳しい手順については、製品ガイドの [ 製品データの編集 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) を参照してください。
+1. .csv ファイル内の `bundle_values` 列の `position` パラメーターで、各オプションに対して位置を明示的に宣言します。 詳しい手順については、製品ガイドの [&#x200B; 製品データの編集 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) を参照してください。
 1. 読み込み操作を繰り返します。
 
-読み込みの一般情報については、ユーザーガイドの [ バンドル製品の読み込み ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) を参照してください。
+読み込みの一般情報については、ユーザーガイドの [&#x200B; バンドル製品の読み込み &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) を参照してください。

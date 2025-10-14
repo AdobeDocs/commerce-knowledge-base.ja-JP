@@ -40,7 +40,7 @@ We found conflicting component dependencies.
 >
 >表示されるメッセージは異なる可能性があります。
 
-サポートナレッジベースで [ ソリューションに対するコンポーネントの依存関係の競合 ](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) を参照してください。
+サポートナレッジベースで [&#x200B; ソリューションに対するコンポーネントの依存関係の競合 &#x200B;](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) を参照してください。
 
 ## ファイルシステム権限の問題 {#trouble-depend-permission}
 
@@ -51,7 +51,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-アドビの開発者ドキュメントの記事 [ 所有権と権限の概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) の説明に従って、ファイルシステムの権限を設定してください。
+アドビの開発者ドキュメントの記事 [&#x200B; 所有権と権限の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) の説明に従って、ファイルシステムの権限を設定してください。
 
 ## コンポーネントの依存関係チェックのステータスは変更されません {#trouble-depend-state}
 

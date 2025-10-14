@@ -30,6 +30,6 @@ Commerce管理でモジュール出力を無効にすると、**ストア**/**�
 
 ## 解決策
 
-モジュール機能を無効にする必要がある場合は、アドビの開発者ドキュメントの [ モジュールの有効化または無効化 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/manage-modules) の説明に従って、モジュールを無効にします。
+モジュール機能を無効にする必要がある場合は、アドビの開発者ドキュメントの [&#x200B; モジュールの有効化または無効化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/manage-modules) の説明に従って、モジュールを無効にします。
 
 モジュール出力の無効化機能は、バージョン 2.2.0 以降で削除されました。

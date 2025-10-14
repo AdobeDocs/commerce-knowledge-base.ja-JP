@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-[ ベンダーバンドルの拡張機能 ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=ja&#vendor-bundled-extensions): Adobe Commerce ドキュメント / リリース情報/ Adobe Commerce 2.4.4 リリースノート。
+[&#x200B; ベンダーバンドルの拡張機能 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=ja&#vendor-bundled-extensions): Adobe Commerce ドキュメント / リリース情報/ Adobe Commerce 2.4.4 リリースノート。

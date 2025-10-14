@@ -30,8 +30,8 @@ Adobe Commerce アプリケーションがブートストラップされたス�
 
 ## 製品ステータスが正しくない場合の解決策
 
-開発者向けドキュメントの [ObjectManager> プログラムによる製品アップデート ](https://developer.adobe.com/commerce/php/development/components/object-manager/) トピックで説明しているように、`Magento\Framework\Authorization\PolicyInterface` ーザーの動的 DI 環境設定を設定します。
+開発者向けドキュメントの [ObjectManager> プログラムによる製品アップデート &#x200B;](https://developer.adobe.com/commerce/php/development/components/object-manager/) トピックで説明しているように、`Magento\Framework\Authorization\PolicyInterface` ーザーの動的 DI 環境設定を設定します。
 
 ## 関連資料
 
-* [Github:productRepository で作成された製品のステータスを変更できない ](https://github.com/magento/magento2/issues/5664)
+* [Github:productRepository で作成された製品のステータスを変更できない &#x200B;](https://github.com/magento/magento2/issues/5664)

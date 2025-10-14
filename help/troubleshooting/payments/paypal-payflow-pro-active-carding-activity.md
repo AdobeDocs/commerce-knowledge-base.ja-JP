@@ -133,7 +133,7 @@ bin/magento cache:clean
 
 >[!NOTE]
 >
->詳しくは、PayPal の KB [ 「Adobeから Payflow Pro との連携について連絡がありました。 どうすれば良いですか？」 ](https://www.paypal.com/us/smarthelp/article/ts2242)。
+>詳しくは、PayPal の KB [&#x200B; 「Adobeから Payflow Pro との連携について連絡がありました。 どうすれば良いですか？」 &#x200B;](https://www.paypal.com/us/smarthelp/article/ts2242)。
 
 **PayPal Payflow マーチャントサポートの詳細**
 

@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ## 影響を受けるバージョン
 
-* Adobe Commerce オンプレミス、[ サポートされているすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
-* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce オンプレミス、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
@@ -57,6 +57,6 @@ bin/magento config:set system/security/max_session_size_admin 500000
 
 ## 関連資料
 
-* 「管理システムガイド」の [ セッションサイズ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management#admin-sessions)
-* 設定ガイドの [ 操作モード ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/set-mode)
-* Commerce on Cloud Infrastructure ガイドの [ 安全な接続 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections)
+* 「管理システムガイド」の [&#x200B; セッションサイズ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management#admin-sessions)
+* 設定ガイドの [&#x200B; 操作モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Commerce on Cloud Infrastructure ガイドの [&#x200B; 安全な接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections)

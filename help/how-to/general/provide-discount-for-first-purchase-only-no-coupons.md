@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 初回購入のみの割引を提供（クーポンなし）
 
-ユーザーガイドの [ 初回購入で割引 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rule-discount-first-purchase) の記事を参照してください。
+ユーザーガイドの [&#x200B; 初回購入で割引 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rule-discount-first-purchase) の記事を参照してください。

@@ -31,7 +31,7 @@ ht-degree: 0%
 
 この問題は、データベース（DB）内の影響を受けるカテゴリレコードの `created_in` 列に同じ値が含まれていることが原因です。
 
-![catalog_category_entity テーブルの破損したデータ ](assets/catalog_category_entity.png)
+![catalog_category_entity テーブルの破損したデータ &#x200B;](assets/catalog_category_entity.png)
 
 詳細：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 1. entity\_id でエンティティをフィルタリングします。entity\_id は影響を受けるカテゴリを識別します。
 1. 同じ entity\_id を持つ異なるエントリに対して created\_in カラムの値が同じ場合は、この例になります。 通常、`created_in` の値はレコードごとに異なります。
 
-![catalog_category_entity テーブルの破損したデータ ](assets/catalog_category_entity.png)
+![catalog_category_entity テーブルの破損したデータ &#x200B;](assets/catalog_category_entity.png)
 
 ## 解決策
 
@@ -87,9 +87,9 @@ ht-degree: 0%
 
 1. `entity_id` と `created_in` の値が同じカテゴリ レコードを検索します。
 1. `row_id` = `entity_id` のレコードを選択し、`updated_in` の値をコピーします。
-1. `row_id` が `entity_id` に等しくないレコードを選択し、コピーした `updated_in` 値を `created_in` 値として貼り付けます。 以下のスクリーンショットを図として参照してください。    ![created_in value.png をコピー ](assets/copy_created-in_value.png)
+1. `row_id` が `entity_id` に等しくないレコードを選択し、コピーした `updated_in` 値を `created_in` 値として貼り付けます。 以下のスクリーンショットを図として参照してください。    ![created_in value.png をコピー &#x200B;](assets/copy_created-in_value.png)
 1. 手順 3 で更新したカテゴリ更新レコードの `created_in` 値が、`staging_update` テーブルに存在することを確認します。 *例：* コピーされた `created_in` 値が 1509281953 の場合、`row_id` = 1509281953 のエンティティが `staging_update` テーブルに存在する必要があります。
 
 ## 関連資料
 
-Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

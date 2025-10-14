@@ -46,5 +46,5 @@ Adobe Commerce 2.2.0 以降の「スケジュールに従って更新」イン�
 
 開発者向けドキュメントの関連トピックへのリンク：
 
-* [ インデックス作成の概要 ](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [ インデクサーの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [&#x200B; インデックス作成の概要 &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/)
+* [&#x200B; インデクサーの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers)

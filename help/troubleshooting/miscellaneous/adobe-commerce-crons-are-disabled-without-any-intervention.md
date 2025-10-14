@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
 
 ## 問題
 
@@ -43,6 +43,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [ パフォーマンスが遅く、実行速度が遅く、実行時間が長い  [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html?lang=ja) というサポートナレッジベースがあります。
-* サポートナレッジベースの [[!DNL Cron]  タスクは他のグループからタスクをロックします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=ja)。
-* サポートナレッジベースで [[!DNL Cron]  ジョブが「実行中」ステータス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja) のままになる。
+* [&#x200B; パフォーマンスが遅く、実行速度が遅く、実行時間が長い  [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html?lang=ja) というサポートナレッジベースがあります。
+* サポートナレッジベースの [[!DNL Cron]  タスクは他のグループからタスクをロックします &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=ja)。
+* サポートナレッジベースで [[!DNL Cron]  ジョブが「実行中」ステータス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja) のままになる。

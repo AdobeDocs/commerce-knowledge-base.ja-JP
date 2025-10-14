@@ -31,6 +31,6 @@ ht-degree: 0%
 
 ## 関連資料
 
-* Adobe Commerce Live Search ドキュメントの [[!DNL Live Search]  ガイドの概要 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=ja)
+* Adobe Commerce Live Search ドキュメントの [[!DNL Live Search]  ガイドの概要 &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=ja)
 
-* Adobe Commerce Live Search ドキュメントの [ インストール  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja)
+* Adobe Commerce Live Search ドキュメントの [&#x200B; インストール  [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja)

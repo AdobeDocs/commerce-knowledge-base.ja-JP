@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## 問題
 
@@ -25,7 +25,7 @@ cron が動作しなくなった。
 
 ## 原因：
 
-[!DNL OpCache] モジュールは、実行時に `env.php` を書き換える [!DNL GraphQL] プラグインを導入した新しいバージョンに更新され、cron 設定を上書きする可能性があり、問題が発生した可能性があります。 `env.php file` の問題を回避するには [!DNL OpCache] の設定を更新する必要があります。これは、[!DNL ECE Tools] パッケージの [ バージョン 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) で解決されました。
+[!DNL OpCache] モジュールは、実行時に `env.php` を書き換える [!DNL GraphQL] プラグインを導入した新しいバージョンに更新され、cron 設定を上書きする可能性があり、問題が発生した可能性があります。 `env.php file` の問題を回避するには [!DNL OpCache] の設定を更新する必要があります。これは、[!DNL ECE Tools] パッケージの [&#x200B; バージョン 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) で解決されました。
 
 ## 解決策
 

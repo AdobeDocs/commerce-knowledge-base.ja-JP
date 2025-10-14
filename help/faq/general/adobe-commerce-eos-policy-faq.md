@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ### Adobe Commerceのすべてのバージョンのソフトウェアサポート日はどこで確認できますか？
 
-Adobe Commerce ソフトウェアのライフサイクル ポリシーとサポートの日付は、[Adobe Commerce ソフトウェアのライフサイクル ポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) で確認できます。 また、[ 開発者ドキュメントページ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions) でサポート終了（EOS）の日付も公開しています。
+Adobe Commerce ソフトウェアのライフサイクル ポリシーとサポートの日付は、[Adobe Commerce ソフトウェアのライフサイクル ポリシー &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) で確認できます。 また、[&#x200B; 開発者ドキュメントページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions) でサポート終了（EOS）の日付も公開しています。
 
 ### AdobeがAdobe Commerce ソフトウェアのバージョンのサポートを終了するとはどういう意味ですか？
 
@@ -38,7 +38,7 @@ AdobeがAdobe Commerce ソフトウェアのバージョンのサポートを終
 **安心なショッピング体験の提供：**
 
 * セキュリティのサポート、修正、更新を提供するには、サードパーティベンダーを評価および採用するためにリソースを費やす必要があります。
-* Adobe Commerce ソフトウェアのバージョンがサポートされなくなると、そのバージョンは [PCI 準拠 ](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security) ではなくなります。 この場合、罰金、クレジットカード処理機能の削除、またはその他の罰則が適用される場合があります。
+* Adobe Commerce ソフトウェアのバージョンがサポートされなくなると、そのバージョンは [PCI 準拠 &#x200B;](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security) ではなくなります。 この場合、罰金、クレジットカード処理機能の削除、またはその他の罰則が適用される場合があります。
 * ほとんどの攻撃では、最新のセキュリティ更新が行われていないインストールをターゲットにしていることが多いため、マーチャントは常にソフトウェアを最新の状態に保ち、利用可能になり次第すぐにセキュリティ更新プログラムをインストールすることをお勧めします。 Web サイトと顧客の個人データを保護するための適切な保護策とセキュリティ管理を使用して、オンラインストアのセキュリティを維持することは、マーチャントの責任です。 これを行う最善の方法の 1 つは、最新のパッチ、修正プログラム、ソフトウェア更新をインストールし、サイトと Admin Console を継続的に監視して異常なアクティビティが発生していないかどうかを確認することです。
 
 **効率的かつ効果的な運用**
@@ -68,9 +68,9 @@ Adobe Commerce ソフトウェアを最新の状態に保つことで、大き�
 
 コマースプラットフォームは会社にとって重要なビジネスシステムであり、常に最新の状態に保つことは、ビジネスへの重要な継続的な投資です。 デジタルストアフロントの最新のテクノロジーとセキュリティの更新は、多くのレベルで重要であり、イノベーションと成長の強化に役立ちます。
 
-Adobe Commerce ソフトウェアを最新版に移行するには、十分な時間とリソースが必要となる場合があります。 サポート終了日のできるだけ前に計画を立てて、戦略的な目標をスケジュール通り、予算内で達成するための適切な時間とリソースを確保することをお勧めします。 次のアップグレードに役立つように、Adobeでは、従うべきベストプラクティスと技術的な手順およびアップグレードを実行する際に使用するツールとリソースを含んだ [2.4 アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja) を公開しています。
+Adobe Commerce ソフトウェアを最新版に移行するには、十分な時間とリソースが必要となる場合があります。 サポート終了日のできるだけ前に計画を立てて、戦略的な目標をスケジュール通り、予算内で達成するための適切な時間とリソースを確保することをお勧めします。 次のアップグレードに役立つように、Adobeでは、従うべきベストプラクティスと技術的な手順およびアップグレードを実行する際に使用するツールとリソースを含んだ [2.4 アップグレードガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja) を公開しています。
 
-もう 1 つの重要な考慮事項は、開発者とパートナーのリソースをできるだけ早く予約することです。 パートナーの時間とリソースは、サポート終了日の前に予約されることが多く、移行プロジェクトを支援するリソースが大幅に少なくなります。 少なくとも年 1 回は話し合う 3 年間のローリングプランを作成し、来年の計画と予算を確実に立てることをお勧めします。 [Adobeのリリース カレンダー ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) を使用してリリース日を管理します。
+もう 1 つの重要な考慮事項は、開発者とパートナーのリソースをできるだけ早く予約することです。 パートナーの時間とリソースは、サポート終了日の前に予約されることが多く、移行プロジェクトを支援するリソースが大幅に少なくなります。 少なくとも年 1 回は話し合う 3 年間のローリングプランを作成し、来年の計画と予算を確実に立てることをお勧めします。 [Adobeのリリース カレンダー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) を使用してリリース日を管理します。
 
 ### Adobe Commerceのサポートが終了した際に、サードパーティのサービスプロバイダーをソフトウェアサポートに使用することはできますか？
 

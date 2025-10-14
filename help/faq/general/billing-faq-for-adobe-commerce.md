@@ -28,7 +28,7 @@ ht-degree: 0%
 
 この支払い方法は、オンプレミスライセンスおよび/または四半期請求、半年請求、年間請求を使用するマーチャント向けです。 これらのカテゴリのいずれかに該当する場合は、次の手順に従ってください。
 
-1. [ ここ ](https://account.magento.com/customer/account/login) をクリックしてログインします。
+1. [&#x200B; ここ &#x200B;](https://account.magento.com/customer/account/login) をクリックしてログインします。
 
 1. アカウントにアクセスするには、資格情報を使用してください。 **アカウントの支払いセクションにアクセスできるのは、プライマリアカウント所有者のみです。**
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 >
 >現在 **Pay Now** 機能を利用していて、自動引き落としを使用して定期的な支払いを設定したい場合は、Adobeアカウントチームにお問い合わせください。
 
-1. [ ここ ](https://account.magento.com/customer/account/login) をクリックしてログインします。
+1. [&#x200B; ここ &#x200B;](https://account.magento.com/customer/account/login) をクリックしてログインします。
 
 1. アカウントにアクセスするには、資格情報を使用してください。 アカウントの支払いセクションにアクセスできるのは、プライマリアカウントの所有者のみです。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 1. 未払いの請求書がある場合は、できるだけ早くこれを支払ってください。 この設定は CC を経由して素早く行われ、CC がファイルに設定されていることを確認します。 Adobeが支払いを受け取ると、支払いが受け取られた日に資格が返されます。
 1. 請求書が支払われたかどうか、または支払いを送信したかどうか、および請求書が受け取られたかどうかがわからない場合は、Magentoのクレジット コレクション [magentocreditcollections@adobe.com](mailto:magentocreditcollections@adobe.com) に電子メールを送信してください。
 
-**未払いの請求書がない場合は、[helpcenterloginissues@magento.comにメールを送信してサポートチケットを作成し ](mailto:helpcenterloginissues@magento.com)CC：行に [magentocreditcollections@adobe.com](mailto:magentocreditcollections@adobe.com) も入力してください。**
+**未払いの請求書がない場合は、[helpcenterloginissues@magento.comにメールを送信してサポートチケットを作成し &#x200B;](mailto:helpcenterloginissues@magento.com)CC：行に [magentocreditcollections@adobe.com](mailto:magentocreditcollections@adobe.com) も入力してください。**
 
 ## 請求書へのアクセス/支払い
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 **支払い送金**、請求書の一番下に常に表示されます。
 
 * 75,000 ドル以下のクレジットカード決済のみ受け付けます。
-* **月額請求の場合、自動引き落とし時にクレジットカードでの支払いが必要です。** [CC 自動引き落とし節を参照 ](#cc-autopay)。
+* **月額請求の場合、自動引き落とし時にクレジットカードでの支払いが必要です。** [CC 自動引き落とし節を参照 &#x200B;](#cc-autopay)。
 * 四半期、半年、年ごとのマーチャントは、クレジットカードを使用して支払うことができますが、マーチャントが手動で行う必要があります。
 
 ## 追加の請求先連絡先

@@ -50,4 +50,4 @@ Adobe Stock画像をアップロードする前に、Media Gallery ストレー�
 
 ## 関連資料
 
-* ユーザーガイドの [ メディアストレージ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/media-storage)。
+* ユーザーガイドの [&#x200B; メディアストレージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/media-storage)。

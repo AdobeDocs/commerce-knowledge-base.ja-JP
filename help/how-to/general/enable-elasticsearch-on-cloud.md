@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドでElasticsearchを有効にする
 
-クラウドインフラストラクチャ上のAdobe CommerceのElasticsearchのセットアップについて詳しくは、開発者向けドキュメントの [Elasticsearchサービスのセットアップ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) 記事を参照してください。
+クラウドインフラストラクチャ上のAdobe CommerceのElasticsearchのセットアップについて詳しくは、開発者向けドキュメントの [Elasticsearchサービスのセットアップ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) 記事を参照してください。

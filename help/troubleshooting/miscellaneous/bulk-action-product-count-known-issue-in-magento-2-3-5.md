@@ -32,4 +32,4 @@ ht-degree: 0%
 
 * Adobe Commerce 2.3.5 の既知の問題に関するAdobe Commerce サポートナレッジベースの記事：
    * [Adobe Commerce 2.3.5 でバーチャル商品が正しく処理されない複数出荷の注文](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
-   * [Adobe Commerce 2.3.5 の既知の問題については、開発者向けドキュメントを参照してください ](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+   * [Adobe Commerce 2.3.5 の既知の問題については、開発者向けドキュメントを参照してください &#x200B;](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

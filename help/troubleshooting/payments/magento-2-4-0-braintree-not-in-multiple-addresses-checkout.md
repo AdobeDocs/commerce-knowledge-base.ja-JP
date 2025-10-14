@@ -15,7 +15,7 @@ ht-degree: 0%
 
 この記事では、複数アドレスのチェックアウトの処理にAdobe Commerceの支払い方法が含まれていない、Braintree 2.4.0 の既知の問題の回避策を説明します。 この問題はAdobe Commerce 2.4.1 で修正されました。
 
-注意：Adobe Commerceでは、PSDへの準拠を維持するために、バージョン 2.3 以降に [0&rbrace;Commerce Marketplace Braintree拡張機能 &rbrace; を使用することをお勧めします。 ](https://marketplace.magento.com/paypal-module-braintree.html)拡張機能には、複数アドレスのチェックアウト機能はありません。
+注意：Adobe Commerceでは、PSDへの準拠を維持するために、バージョン 2.3 以降に [0&rbrace;Commerce Marketplace Braintree拡張機能 &rbrace; を使用することをお勧めします。 &#x200B;](https://marketplace.magento.com/paypal-module-braintree.html)拡張機能には、複数アドレスのチェックアウト機能はありません。
 
 ## 影響を受ける製品とバージョン
 

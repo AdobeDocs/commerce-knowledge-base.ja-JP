@@ -54,4 +54,4 @@ npx @magento/pwa-buildpack create-env-file packages/venia-concept
 ## 関連資料
 
 * [Adobe Commerce ドキュメントのPWA Studio](https://magento.github.io/pwa-studio/)
-* [Venia ストアフロント（概念） ](https://magento.github.io/pwa-studio/venia-pwa-concept/)
+* [Venia ストアフロント（概念） &#x200B;](https://magento.github.io/pwa-studio/venia-pwa-concept/)

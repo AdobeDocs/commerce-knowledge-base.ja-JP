@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce[ すべてのデプロイメント方法 ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce[&#x200B; すべてのデプロイメント方法 &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 

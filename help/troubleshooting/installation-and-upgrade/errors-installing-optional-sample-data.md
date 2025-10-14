@@ -34,11 +34,11 @@ Next exception 'ReflectionException' with message 'Class Magento\CatalogRule\Mod
 
 ### 解決策
 
-[ ファイルシステムの所有権と権限を、`root` 権限を持つユーザーとして ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=ja) 再度設定します。
+[&#x200B; ファイルシステムの所有権と権限を、`root` 権限を持つユーザーとして &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=ja) 再度設定します。
 
 ## 症状（実稼動モード）
 
-現在 [ 実稼動モード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja) に設定している場合、[magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=ja) コマンドを使用すると、サンプルデータのインストールが失敗します。
+現在 [&#x200B; 実稼動モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja) に設定している場合、[magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=ja) コマンドを使用すると、サンプルデータのインストールが失敗します。
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -48,7 +48,7 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 実稼動モードでサンプルデータをインストールしないでください。 開発者モードに切り替え、`var` のディレクトリの一部をクリアして、もう一度試してください。
 
-次のコマンドを、[Adobe Commerce ファイルシステムの所有者 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html?lang=ja) として表示されている順序で入力します。
+次のコマンドを、[Adobe Commerce ファイルシステムの所有者 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html?lang=ja) として表示されている順序で入力します。
 
 ```php
 cd <magento_root>
@@ -70,7 +70,7 @@ PHP Fatal error: Call to undefined method Magento\Catalog\Model\Resource\Product
 サンプルデータのインストール中に、次のようなリソースを使用して SELinux を無効にします。
 
 * [www.ibm.com](https://www.ibm.com/docs/ja/ahts/4.0?topic=t-disabling-selinux)
-* [CentOS のドキュメント ](https://docs.centos.org/en-US/docs/)
+* [CentOS のドキュメント &#x200B;](https://docs.centos.org/en-US/docs/)
 
 ## 症状（発達分枝）
 

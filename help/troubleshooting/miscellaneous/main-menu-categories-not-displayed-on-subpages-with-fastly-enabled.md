@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fastly が有効になっているサブページにメインメニュー（カテゴリ）が表示されない
 
-この記事では、Fastly または Varnish が有効になっているときに、メインメニュー（またはユーザーガイドの [ カテゴリトップナビゲーションメニュー ](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html)）がサブページのストアフロント（例：*ブログ/ページ*）に表示されない問題を修正しました。
+この記事では、Fastly または Varnish が有効になっているときに、メインメニュー（またはユーザーガイドの [&#x200B; カテゴリトップナビゲーションメニュー &#x200B;](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html)）がサブページのストアフロント（例：*ブログ/ページ*）に表示されない問題を修正しました。
 
 **原因：** ページの *URL キー* パラメーター（検索エンジン最適化設定）に使用できる `/` 文字（スラッシュ）ではありません。 通常、この文字は、*URL キー* の代わりに（ページの場所全体を含む *URL パス* が誤って指定された場合に追加されます。例えば、単なる *page\_name* ではなく、*blog/page\_name* となります。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 問題
 
-Fastly またはその他のワニスベースのサービスが有効になっている場合、メインメニュー（ユーザーガイドでは [ カテゴリトップナビゲーションメニュー ](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) とも呼ばれます）は、サブページのストアフロントに表示されません。
+Fastly またはその他のワニスベースのサービスが有効になっている場合、メインメニュー（ユーザーガイドでは [&#x200B; カテゴリトップナビゲーションメニュー &#x200B;](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) とも呼ばれます）は、サブページのストアフロントに表示されません。
 
 ## 原因：
 
@@ -35,7 +35,7 @@ Fastly またはその他のワニスベースのサービスが有効になっ�
 
 通常、この文字は、*URL キー* の代わりに（ページの親リソースやディレクトリを含む、ページの場所全体を含む *URL パス* が誤って指定された場合に追加されます。例えば、単なる *page\_name* ではなく、*blog/page\_name* となります。
 
-![SEO 設定用の URL キーパラメーター ](assets/seo_url_key.png)
+![SEO 設定用の URL キーパラメーター &#x200B;](assets/seo_url_key.png)
 
 ## 解決策
 
@@ -47,7 +47,7 @@ Fastly またはその他のワニスベースのサービスが有効になっ�
 
 ページ階層を設定するには、ページを編集メニューの **階層** セクションを使用します。
 
-![ 階層設定 ](assets/hierarchy_hr.png)
+![&#x200B; 階層設定 &#x200B;](assets/hierarchy_hr.png)
 
 より複雑な階層ソリューションには、**コンテンツ**/**要素**/**階層** メニューを使用することもできます。
 

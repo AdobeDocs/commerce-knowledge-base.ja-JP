@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャ環境のAdobe Commerceで CLI を使用してディスク容量を確認する
 
-開発者向けドキュメントの [ ディスク容量の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) の記事を参照してください。
+開発者向けドキュメントの [&#x200B; ディスク容量の管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) の記事を参照してください。

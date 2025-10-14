@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
@@ -50,5 +50,5 @@ CSV ファイル内の製品のステータス属性の名前が変更されま�
 
 ## 関連資料
 
-* ユーザーガイドの [CSV ファイルの操作 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-csv)。
-* アドビのユーザーガイドの [ 製品書き出し属性リファレンス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-attributes-product)。
+* ユーザーガイドの [CSV ファイルの操作 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-csv)。
+* アドビのユーザーガイドの [&#x200B; 製品書き出し属性リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-attributes-product)。

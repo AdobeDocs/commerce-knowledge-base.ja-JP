@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->免責事項：Adobe Commerceは、トンネルを確立するための特定のツールを推奨または推奨しません。 上記は提案のみです。 詳しくは、[ngrok のドキュメント ](https://ngrok.com/docs) を参照してください。
+>免責事項：Adobe Commerceは、トンネルを確立するための特定のツールを推奨または推奨しません。 上記は提案のみです。 詳しくは、[ngrok のドキュメント &#x200B;](https://ngrok.com/docs) を参照してください。
 
 ## 問題
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. ローカル環境にAdobe Commerceをインストールします。
 1. ngrok を設定して、ローカルサーバーを公開するトンネルを作成します。
-1. [OMS への接続 ](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/) を試します。
+1. [OMS への接続 &#x200B;](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/) を試します。
 
 <u> 期待される結果 </u>
 
@@ -53,4 +53,4 @@ ngrok の起動時に、地域を指定するパラメータを追加します�
 ./ngrok http 80 -region eu
 ```
 
-デフォルトのリージョンは US です。 [ 使用可能なすべての値 ](https://ngrok.com/docs#config_region) を参照してください。
+デフォルトのリージョンは US です。 [&#x200B; 使用可能なすべての値 &#x200B;](https://ngrok.com/docs#config_region) を参照してください。

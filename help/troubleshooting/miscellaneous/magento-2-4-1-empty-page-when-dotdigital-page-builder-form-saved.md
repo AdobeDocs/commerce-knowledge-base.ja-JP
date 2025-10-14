@@ -44,7 +44,7 @@ Web ページは空です。 Web ページを再読み込みすると、変更�
 
 ## 関連資料
 
-* [ ページビルダーとは？開発者向けドキュメントを ](https://developer.adobe.com/commerce/frontend-core/page-builder/) 照してください。
-* 開発者向けドキュメントの [ ページビルダーの設定 ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html?lang=ja)。
-* ユーザーガイドの [ ページビルダー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/introduction)。
-* ユーザーガイドの [ ページビルダー – 要素 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/workspace#elements)。
+* [&#x200B; ページビルダーとは？開発者向けドキュメントを &#x200B;](https://developer.adobe.com/commerce/frontend-core/page-builder/) 照してください。
+* 開発者向けドキュメントの [&#x200B; ページビルダーの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html?lang=ja)。
+* ユーザーガイドの [&#x200B; ページビルダー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/introduction)。
+* ユーザーガイドの [&#x200B; ページビルダー – 要素 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/workspace#elements)。

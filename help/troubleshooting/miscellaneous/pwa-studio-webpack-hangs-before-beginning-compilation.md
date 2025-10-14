@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-[pwa-buildpack の最新リリースが何であるかを確認します ](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
+[pwa-buildpack の最新リリースが何であるかを確認します &#x200B;](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
 
 ```yaml
 pwa-buildpack
@@ -92,8 +92,8 @@ OSX の [Homebrew](https://brew.sh/)、Windows の [Chocolatey](https://chocolat
 
 ## 関連資料
 
-* [Javascript Webpack：概念 ](https://webpack.js.org/concepts/)
-* [Venia ストアフロントのセットアップ ](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
+* [Javascript Webpack：概念 &#x200B;](https://webpack.js.org/concepts/)
+* [Venia ストアフロントのセットアップ &#x200B;](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
 * [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
-* [buildpack コマンドラインインターフェイス ](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
-* [ ツールとライブラリ：buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)
+* [buildpack コマンドラインインターフェイス &#x200B;](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
+* [&#x200B; ツールとライブラリ：buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)

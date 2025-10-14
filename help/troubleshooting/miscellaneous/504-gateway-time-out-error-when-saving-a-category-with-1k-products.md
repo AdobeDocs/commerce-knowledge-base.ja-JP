@@ -64,4 +64,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-ユーザーガイドの [ 製品の自動リダイレクト ](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic)。
+ユーザーガイドの [&#x200B; 製品の自動リダイレクト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic)。

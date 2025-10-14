@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >**廃止の届出**
 >
->支払いサービスディレクティブ [PSD2](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) および多くの API の継続的な進化により、Authorize.Net は古くなり、将来的にセキュリティへの準拠が失われるリスクがあります。 このため、現在は非推奨となっており、Adobe Commerce設定で無効にして、対応する [Commerce Marketplace拡張機能 ](https://marketplace.magento.com/extensions.html) に移行することをお勧めします。
+>支払いサービスディレクティブ [PSD2](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) および多くの API の継続的な進化により、Authorize.Net は古くなり、将来的にセキュリティへの準拠が失われるリスクがあります。 このため、現在は非推奨となっており、Adobe Commerce設定で無効にして、対応する [Commerce Marketplace拡張機能 &#x200B;](https://marketplace.magento.com/extensions.html) に移行することをお勧めします。
 >
 >**この統合はAdobe Commerce 2.4.0 リリースから削除され、2.3.の現在のバージョンから非推奨（廃止予定）になりました。**
 >

@@ -56,4 +56,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* Adobe Commerce Experience League サポートユーザーガイドの [ サポートケースを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) します。
+* Adobe Commerce Experience League サポートユーザーガイドの [&#x200B; サポートケースを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) します。

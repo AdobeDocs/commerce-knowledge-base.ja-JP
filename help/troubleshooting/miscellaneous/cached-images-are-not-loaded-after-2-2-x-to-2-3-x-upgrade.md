@@ -43,8 +43,8 @@ Adobe Commerceを 2.2.X から 2.3.X にアップグレードすると、キャ�
    * スタータープラン：自分でファイルを修正し、変更をプッシュします。
    * Pro プラン：
    * 統合：自分でファイルを修正して、変更をプッシュします。
-   * ステージングと実稼動：自分でファイルを修正し、変更をプッシュし、[Adobe Commerce サポートチケットを作成して ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 適用させます。
+   * ステージングと実稼動：自分でファイルを修正し、変更をプッシュし、[Adobe Commerce サポートチケットを作成して &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) 適用させます。
 
 1. <https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization> の説明に従って、Commerce Admin で Fastly 画像の最適化を有効にします（Fastly は事前に設定する必要があります）。
 
-設定が正しいにもかかわらず問題が解決しない場合は、調査を続行するか、[Adobe Commerce サポート ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にお問い合わせください。
+設定が正しいにもかかわらず問題が解決しない場合は、調査を続行するか、[Adobe Commerce サポート &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にお問い合わせください。

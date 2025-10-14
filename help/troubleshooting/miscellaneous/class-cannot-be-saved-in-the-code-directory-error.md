@@ -26,7 +26,7 @@ ht-degree: 0%
 1. ローカル環境で、自動生成されたクラスに依存するカスタムクラスを作成します。
 1. カスタムクラスがトリガーされるシナリオを実行し、正しく機能していることを確認します。
 1. 変更をコミットして統合環境にプッシュします。 これにより、デプロイメントプロセスがトリガーになります。 デプロイメントに成功しました。
-1. [ 統合環境 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) で、カスタムクラスがトリガーされるシナリオを実行します。
+1. [&#x200B; 統合環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242) で、カスタムクラスがトリガーされるシナリオを実行します。
 
 <u> 期待される結果 </u>
 
@@ -170,4 +170,4 @@ class YourClass
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ コードの生成 ](https://developer.adobe.com/commerce/php/development/components/code-generation/)。
+* 開発者向けドキュメントの [&#x200B; コードの生成 &#x200B;](https://developer.adobe.com/commerce/php/development/components/code-generation/)。

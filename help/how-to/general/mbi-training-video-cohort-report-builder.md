@@ -22,6 +22,6 @@ ht-degree: 0%
 
 このビデオを視聴するには、Adobe Experience Leagueの [Commerce Intelligence - コホートReport Builder](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) に移動してください。
 
-**フォローしますか？** 手順の詳細については、[ コホートReport Builderチュートリアル ](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) をご覧ください。
+**フォローしますか？** 手順の詳細については、[&#x200B; コホートReport Builderチュートリアル &#x200B;](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) をご覧ください。
 
-コホート分析を使い慣れたら、**定性** コホートReport Builderの作成を試してみませんか？ 詳しくは、[ 定性コホート分析の作成 ](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) チュートリアルを参照してください。
+コホート分析を使い慣れたら、**定性** コホートReport Builderの作成を試してみませんか？ 詳しくは、[&#x200B; 定性コホート分析の作成 &#x200B;](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) チュートリアルを参照してください。

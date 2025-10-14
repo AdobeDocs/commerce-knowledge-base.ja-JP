@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 原因：
 
-[!DNL Commerce Data Export] [ バージョン 103.3.0](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes#release-9) リリースでフィードテーブル、インデックス、変更ログテーブルの名前が変更されたので、[!DNL Commerce Data Export] 拡張機能を使用するカスタム拡張機能の [!DNL Mview] サブスクリプションが正しく機能しない場合があります。
+[!DNL Commerce Data Export] [&#x200B; バージョン 103.3.0](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes#release-9) リリースでフィードテーブル、インデックス、変更ログテーブルの名前が変更されたので、[!DNL Commerce Data Export] 拡張機能を使用するカスタム拡張機能の [!DNL Mview] サブスクリプションが正しく機能しない場合があります。
 
 この場合、*テーブルが存在しません* エラーは、`catalog_data_exporter` テーブル名が `cde_products_feed` に変更され、[!DNL Data Exporter Mview] サブスクリプションで古い名前を参照するカスタムコードがあるために発生します。
 
@@ -49,5 +49,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes)
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -50,14 +50,14 @@ proc_open(): fork failed - Cannot allocate memory
 
 以下の参照で説明されているように、`fallocate` コマンドを使用します。
 
-* [Ubuntu 14.04 でスワップを追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
-* [Ubuntu 16.04 でスワップ領域を追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
-* [SwapFaq （help.ubuntu.com） ](https://help.ubuntu.com/community/SwapFaq)
+* [Ubuntu 14.04 でスワップを追加する方法（Digitalocean） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+* [Ubuntu 16.04 でスワップ領域を追加する方法（Digitalocean） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
+* [SwapFaq （help.ubuntu.com） &#x200B;](https://help.ubuntu.com/community/SwapFaq)
 
 ### CentOS でファイルをスワップ {#swap-file-on-centos}
 
 以下の参照で説明されているように、`mkswap` コマンドを使用します。
 
-* [CentOS 6 でスワップを追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
-* [CentOS 7 でスワップを追加する方法（Digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
-* [ スワップ領域（RedHat カスタマーポータル） ](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
+* [CentOS 6 でスワップを追加する方法（Digitalocean） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
+* [CentOS 7 でスワップを追加する方法（Digitalocean） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
+* [&#x200B; スワップ領域（RedHat カスタマーポータル） &#x200B;](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)

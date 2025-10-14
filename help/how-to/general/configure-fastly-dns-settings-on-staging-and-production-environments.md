@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # ステージング環境と実稼動環境での Fastly DNS 設定
 
-最新情報については、開発者向けドキュメントの [Fastly の設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) の記事を参照してください。
+最新情報については、開発者向けドキュメントの [Fastly の設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) の記事を参照してください。

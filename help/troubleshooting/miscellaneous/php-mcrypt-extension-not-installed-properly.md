@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->注意：mcrypt ライブラリ機能は [PHP 7.1 から非推奨となり、PHP 7.2 から削除されました ](https://www.php.net/manual/en/intro.mcrypt.php)。
+>注意：mcrypt ライブラリ機能は [PHP 7.1 から非推奨となり、PHP 7.2 から削除されました &#x200B;](https://www.php.net/manual/en/intro.mcrypt.php)。
 
 ## 詳細
 
@@ -60,4 +60,4 @@ mcrypt がインストールされて *ない* 場合、次のようなメッセ
 PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open shared object file: No such file or directory in Unknown on line 0
 ```
 
-場合によっては、[ コマンドライン ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/advanced) からAdobe Commerce ソフトウェアをインストールし、mcrypt がインストールされている LAMP スタックへのフルパスを指定する必要があります。
+場合によっては、[&#x200B; コマンドライン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/advanced) からAdobe Commerce ソフトウェアをインストールし、mcrypt がインストールされている LAMP スタックへのフルパスを指定する必要があります。

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-実稼動環境からステージング環境または統合環境に [ データベースダンプ ](/help/how-to/general/create-database-dump-on-cloud.md) を読み込むと、保存されたクレジットカード番号が間違って表示されるか、マーチャント資格情報の使用が必要な支払い統合で支払いが失敗します。
+実稼動環境からステージング環境または統合環境に [&#x200B; データベースダンプ &#x200B;](/help/how-to/general/create-database-dump-on-cloud.md) を読み込むと、保存されたクレジットカード番号が間違って表示されるか、マーチャント資格情報の使用が必要な支払い統合で支払いが失敗します。
 
 ## 原因：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 暗号化キーをコピーするには：
 
-1. 開発者向けドキュメントの [ 環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) に記載されているように、データベースダンプのソースとなったプロジェクトに SSH で接続します。
+1. 開発者向けドキュメントの [&#x200B; 環境への SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) に記載されているように、データベースダンプのソースとなったプロジェクトに SSH で接続します。
 1. `app/etc/env.php` をテキストエディターで開きます。
 1. `crypt` の `key` の値をコピーします。
 
@@ -44,7 +44,7 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 宛先プロジェクトのキー値を設定するには：
 
 1. [Cloud Console](https://console.adobecommerce.com) を開き、プロジェクトを探します。
-1. 開発者向けドキュメントの [ プロジェクトの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja) の説明に従って、（開発者向けドキュメントの [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja) 変数の値を設定します。 これにより、デプロイメントプロセスがトリガーさ `CRYPT_KEY`、デプロイメントのたびに `app/etc/env.php` ファイルで上書きされます。
+1. 開発者向けドキュメントの [&#x200B; プロジェクトの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja) の説明に従って、（開発者向けドキュメントの [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja) 変数の値を設定します。 これにより、デプロイメントプロセスがトリガーさ `CRYPT_KEY`、デプロイメントのたびに `app/etc/env.php` ファイルで上書きされます。
 
 オプションで、`app/etc/env.php` ファイルの暗号化キーを手動で上書きできます。
 

@@ -23,7 +23,7 @@ BOB: Is this in TOC?
 
 メールアドレスを再度確認して、ログインに使用しようとしているメールアドレスが既存のCommerce Intelligence アカウントに関連付けられていることを確認します。 場合によっては、アカウント管理者に、メールアドレスに入力ミスがないことを確認するように依頼する必要があります。
 
-メールアドレスが正しいことを確認したら、[ このリンク ](https://dashboard.rjmetrics.com/v2/session/create#/) を使用して再度ログインしてみてください。
+メールアドレスが正しいことを確認したら、[&#x200B; このリンク &#x200B;](https://dashboard.rjmetrics.com/v2/session/create#/) を使用して再度ログインしてみてください。
 
 ## パスワードをリセットしてみてください
 
@@ -44,7 +44,7 @@ BOB: Is this in TOC?
 
 それでもアカウントにアクセスできない場合は、エラーを確認し、サポートチームにチケットを送信することをお勧めします。 これはどうすれば実行できますか。 ブラウザーの開発者ツールを開き、コンソールまたはサイトログウィンドウに表示されるエラーのスクリーンショットを撮る。 以下のGIFで、Google Chromeのデベロッパーツールを開きます。
 
-![Chromeのデベロッパーツールを開く ](assets/Opening_Chrome_dev_tools.gif)
+![Chromeのデベロッパーツールを開く &#x200B;](assets/Opening_Chrome_dev_tools.gif)
 
 上記の例では、最も一般的な方法（**右クリック**>**Inspect**）を使用してコンソールを開きました。 ブラウザーにこの方法がない場合やヘルプが必要な場合は、使用している web ブラウザーに対応する以下のドキュメントリンクを使用します。
 
@@ -70,6 +70,6 @@ BOB: Is this in TOC?
 
 ## サポートナレッジベースの関連トピック：
 
-* [ 新しいユーザーの追加と権限の設定 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=ja)
-* [ メールアドレスやパスワードを更新するにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=ja)
-* [ パスワードをリセットするにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=ja)
+* [&#x200B; 新しいユーザーの追加と権限の設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=ja)
+* [&#x200B; メールアドレスやパスワードを更新するにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=ja)
+* [&#x200B; パスワードをリセットするにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=ja)

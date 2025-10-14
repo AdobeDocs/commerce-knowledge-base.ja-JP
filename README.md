@@ -16,13 +16,13 @@ ht-degree: 6%
 
 ## Adobeコンテンツへの投稿について
 
-[Adobeドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)。
+[Adobeドキュメント投稿者ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)。
 
 投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-善意で軽微な更新を行う場合は、記事にアクセスして記事内の **編集** リンクをクリックすると、GitHub ソースに移動します。 その後、GitHub UI を使用して更新を行います。 一般的な [Adobeドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+善意で軽微な更新を行う場合は、記事にアクセスして記事内の **編集** リンクをクリックすると、GitHub ソースに移動します。 その後、GitHub UI を使用して更新を行います。 一般的な [Adobeドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
 
@@ -44,14 +44,14 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
 
-詳しくは、[Adobeドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+詳しくは、[Adobeドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 ## Markdown を使用してトピックを書式設定する方法
 
 このリポジトリ内の記事はすべて、GitHub Flavored Markdown を使用しています。 Markdown について詳しくは、以下を参照してください。
 
-* [Markdown の基本 ](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [ 印刷用 Markdown チートシート ](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown の基本 &#x200B;](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [&#x200B; 印刷用 Markdown チートシート &#x200B;](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## ラベル
 

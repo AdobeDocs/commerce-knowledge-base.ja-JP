@@ -39,11 +39,11 @@ ht-degree: 0%
 
 1. Edge Dictionary を作成します。
 
-   まず、Adobe Commerceの [[!DNL VCL]  スニペット ](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を使用して、エッジディクショナリを定義できます。 これはリダイレクトを含みます。
+   まず、Adobe Commerceの [[!DNL VCL]  スニペット &#x200B;](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) を使用して、エッジディクショナリを定義できます。 これはリダイレクトを含みます。
 
    いくつかの注意点を次に示します。
 
-   * 辞書のエントリに対して [!DNL regex] を実行で [!DNL Fastly] ません。 完全に一致するだけです。 これらの制限について詳しくは、edge 辞書の制限に関する [[!DNL Fastly] のドキュメントを参照してください ](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations)。
+   * 辞書のエントリに対して [!DNL regex] を実行で [!DNL Fastly] ません。 完全に一致するだけです。 これらの制限について詳しくは、edge 辞書の制限に関する [[!DNL Fastly] のドキュメントを参照してください &#x200B;](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations)。
    * [!DNL Fastly] には、1 つの辞書に対するエントリが 1000 個までに制限されています。 この制限は拡大で [!DNL Fastly] ますが、3 つ目の注意点があります。
    * エントリを更新し、その更新を [!DNL VCL] のすべてのノードにデプロイするたびに、辞書の拡張に伴ってジオメトリの読み込み時間が長くなります。つまり、2000 エントリの辞書は実際には 1,000 エントリの辞書よりも 3 倍～4 倍遅く読み込まれます。 ただし、これは [!DNL VCL] をデプロイする（ディクショナリを更新する、または [!DNL VCL] 関数コードを変更する）場合にのみ問題となります。
 
@@ -99,8 +99,8 @@ Adobe Commerce ステージング環境を実行しないが、これらのリ�
 
 ## 関連資料
 
-* [[!DNL Fastly VCL]  参照 ](https://docs.fastly.com/vcl/)
-* 開発者向けドキュメントの [ ルートの設定 ](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html)
-* アドビの開発者向けドキュメントの [ 設定  [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* 開発者向けドキュメントの [[!DNL VCL]  正規表現チートシート ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Fastly VCL]  参照 &#x200B;](https://docs.fastly.com/vcl/)
+* 開発者向けドキュメントの [&#x200B; ルートの設定 &#x200B;](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html)
+* アドビの開発者向けドキュメントの [&#x200B; 設定  [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* 開発者向けドキュメントの [[!DNL VCL]  正規表現チートシート &#x200B;](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

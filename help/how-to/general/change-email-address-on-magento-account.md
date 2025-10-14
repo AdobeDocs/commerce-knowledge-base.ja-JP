@@ -34,7 +34,7 @@ ht-degree: 0%
 
 <u> 解決策 </u>
 
-1. https://experienceleague.adobe.com/home?lang=ja#supportで次の内容を [ サポート依頼を送信 ](https://experienceleague.adobe.com/home?lang=ja#support) します。
+1. https://experienceleague.adobe.com/home?lang=ja#supportで次の内容を [&#x200B; サポート依頼を送信 &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support) します。
 
    * 更新する既存のメールアドレス
    * 新しいメールアドレス
@@ -48,11 +48,11 @@ ht-degree: 0%
 
 <u> 解決策 </u>
 
-[ 現在の所有者の電子メール ] のメールボックスにアクセスできる場合は、Creative Cloud ユーザーガイドの [ パスワードのリセットまたはパスワードの変更 ](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html) ガイドに従って、現在の所有者の電子メールのAdobeをリセットしてください。
+[ 現在の所有者の電子メール ] のメールボックスにアクセスできる場合は、Creative Cloud ユーザーガイドの [&#x200B; パスワードのリセットまたはパスワードの変更 &#x200B;](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html) ガイドに従って、現在の所有者の電子メールのAdobeをリセットしてください。
 
 1. 現在の所有者のメールボックスに送信されたパスワードのリセット リンクを、手順と共に見つけます。
 1. 新しいパスワードを設定し、メールを [ 新規所有者のメール ] に変更します。
-1. [IMS アカウント ](https://account.adobe.com/) に移動して新しいメールでログインし、パスワードを変更します。
+1. [IMS アカウント &#x200B;](https://account.adobe.com/) に移動して新しいメールでログインし、パスワードを変更します。
 1. メールアドレスとパスワードを変更した後、[owner.com](https://account.magento.com) に移動し、「新しいMagentoのメール [ を使用してログインし ] す。
 
 ただし、[ 現在の所有者のメール ] に送信されたメールへのアクセス権がない場合は、次の手順に従います。
@@ -62,5 +62,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-Creative Cloudユーザーガイドの「[ パスワードを忘れた場合のリセット ](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html)」を参照してください。
-Creative Cloudユーザーガイドの [ アカウントプロファイルを更新する ](https://helpx.adobe.com/jp/manage-account/using/edit-adobe-account-personal-profile.html) を参照してください。
+Creative Cloudユーザーガイドの「[&#x200B; パスワードを忘れた場合のリセット &#x200B;](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html)」を参照してください。
+Creative Cloudユーザーガイドの [&#x200B; アカウントプロファイルを更新する &#x200B;](https://helpx.adobe.com/jp/manage-account/using/edit-adobe-account-personal-profile.html) を参照してください。

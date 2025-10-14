@@ -84,4 +84,4 @@ composer`.gitignore` インストール コマンドを実行すると、ファ�
 
 ## 関連資料
 
-* [ トラッキングされる.gitignore ファイルが composer によって上書きされます。Magento2 GitHub を ](https://github.com/magento/magento2/issues/32888) きます。
+* [&#x200B; トラッキングされる.gitignore ファイルが composer によって上書きされます。Magento2 GitHub を &#x200B;](https://github.com/magento/magento2/issues/32888) きます。

@@ -26,7 +26,7 @@ ht-degree: 0%
 
 <u> 再現手順：</u>
 
-Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。**&#x200B; **
+Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。**&#x200B; &#x200B;**
 
 <u> 期待される結果：</u>
 
@@ -40,7 +40,7 @@ Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動し
 
 <u> 再現手順：</u>
 
-Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。**&#x200B; **
+Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動します。**&#x200B; &#x200B;**
 
 <u> 期待される結果：</u>
 
@@ -69,6 +69,6 @@ Commerce Admin で、**Sales** / **Braintree仮想ターミナル** に移動し
 
 ## パッチの適用方法
 
-手順については、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+手順については、[Adobeが提供する Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 添付ファイル

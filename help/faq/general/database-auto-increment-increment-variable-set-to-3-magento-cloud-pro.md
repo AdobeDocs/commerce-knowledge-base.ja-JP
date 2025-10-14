@@ -31,5 +31,5 @@ Galera データベース・クラスタが使用されます。これは、各�
 
 詳しくは、開発者向けドキュメントを参照してください。
 
-* [Cloud for Adobe Commerce/Pro アーキテクチャ/バックアップと災害復旧 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce/Pro アーキテクチャ/バックアップと災害復旧 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
 * [Cloud for Adobe Commerce/インストールの前提条件：database](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview)

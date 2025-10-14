@@ -21,7 +21,7 @@ Adobe CommerceおよびMagento Open Sourceのセキュリティスキャンツ�
 
 マーチャントが直面する一般的な問題は、セキュリティスキャンツールがマーチャントのサイト所有権を確認できない場合に発生します。
 
-エラーが発生し、サイトをスキャン用に送信できない場合は、サポートナレッジベースのトラブルシューティング記事 [ セキュリティスキャンにサイトを追加する際のエラーメッセージ ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) を参照してください。
+エラーが発生し、サイトをスキャン用に送信できない場合は、サポートナレッジベースのトラブルシューティング記事 [&#x200B; セキュリティスキャンにサイトを追加する際のエラーメッセージ &#x200B;](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) を参照してください。
 
 ## 問題：セキュリティ スキャン ツールで生成されたレポートが空です
 
@@ -39,7 +39,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 {   error 403;   }
 ```
 
-詳細については、サポート技術情報の [ セキュリティ スキャン ツールのレポートが空白になる ](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) に関する記事も参照してください。
+詳細については、サポート技術情報の [&#x200B; セキュリティ スキャン ツールのレポートが空白になる &#x200B;](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) に関する記事も参照してください。
 
 ## 問題：セキュリティの問題は解決されましたが、スキャン時に引き続き脆弱と表示されます
 
@@ -59,7 +59,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 1. **不明**: セキュリティ スキャン ツールには、ドメインに関するデータがまだありません。次の同期サイクルを待ってください。
 1. **失敗**：ステータスに「失敗」と表示される場合は、問題を修正し（2FA を有効にする、管理者 URL を変更など）、次の同期サイクルを待つ必要があります。
 
-インスタンスに対して変更が行われてから 24 時間が経過し、それらがセキュリティスキャンレポートに反映されていない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) できます。 チケットの送信時にストア URL を指定します。
+インスタンスに対して変更が行われてから 24 時間が経過し、それらがセキュリティスキャンレポートに反映されていない場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) できます。 チケットの送信時にストア URL を指定します。
 
 ## BotNet の疑わしいエラー
 
@@ -77,7 +77,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 1. 新しく作成した SSH アカウント、ファイルシステムの変更などを確認します。
 1. セキュリティレビューを実行します。
 1. 特に、まだMagento 1 が実行中の場合は、Adobe Commerceのバージョンとアップグレードを確認してください。このバージョンはサポートされなくなりました。
-1. それでも問題が解決しない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、ストア URL を指定します。
+1. それでも問題が解決しない場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、ストア URL を指定します。
 
 ## 問題：挿入時に妥協のエラーが発生する
 
@@ -90,7 +90,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 1. システム設定の変更を実行し、特にカスタム `HTML head` と `Miscellaneous HTML` をセクション値 `footer` 確認します。
 1. コードとデータベースのレビューを実行して、挿入されたマルウェアの未知の変化と兆候を確認します。
 
-上記のいずれも役に立たない場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、ストア URL とレポートのエラーメッセージを指定します。
+上記のいずれも役に立たない場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) し、ストア URL とレポートのエラーメッセージを指定します。
 
 ## よくある質問
 
@@ -104,7 +104,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 
 ### サポートチケットを送信する際には、どのような情報が必要ですか？
 
-[ セキュリティスキャン ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26357)、MAGEID、および Cloud Project_ID に対して送信されたドメイン名と正確に一致するものを指定してください。 Cloud Project_ID は、Adobe Commerce オンプレミスでは必要ありません。
+[&#x200B; セキュリティスキャン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26357)、MAGEID、および Cloud Project_ID に対して送信されたドメイン名と正確に一致するものを指定してください。 Cloud Project_ID は、Adobe Commerce オンプレミスでは必要ありません。
 
 ### スキャン ツールのスキャンからストアを削除するとどうなりますか？
 

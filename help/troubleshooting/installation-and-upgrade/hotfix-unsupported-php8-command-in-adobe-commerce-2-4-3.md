@@ -54,7 +54,7 @@ PHP の致命的なエラー。
 
 ## パッチの適用方法
 
-手順については、[Magentoが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+手順については、[Magentoが提供する Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 関連資料
 

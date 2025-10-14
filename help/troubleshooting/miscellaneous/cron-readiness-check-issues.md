@@ -40,17 +40,17 @@ crontab が設定されているかどうかを確認するには、次の手順
 
 ## 解決策：crontab が設定されていない {#solution-crontab-not-set-up}
 
-Cron ジョブが正しく設定されていることを確認するには、開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
+Cron ジョブが正しく設定されていることを確認するには、開発者向けドキュメントの [cron ジョブの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
 
 ## 解決策：間違った PHP バイナリから実行されている cron {#solution-cron-running-from-incorrect-php-binary}
 
 Cron ジョブで web サーバープラグインとは異なる PHP バイナリを使用している場合は、PHP 設定エラーが表示される場合があります。 この問題を解決するには、PHP コマンドラインと PHP Web Server プラグインの両方に同じ PHP 設定を指定します。
 
-PHP 設定について詳しくは、開発者向けドキュメントの [ 必要な PHP 設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
+PHP 設定について詳しくは、開発者向けドキュメントの [&#x200B; 必要な PHP 設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings) を参照してください。
 
 ## 解決策：cron がエラーで実行されている {#solution-cron-running-with-errors}
 
-コマンドに役立つエラーメッセージが表示される可能性があるので、各コマンドを手動で実行してみてください。 開発者向けドキュメントの [cron ジョブの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
+コマンドに役立つエラーメッセージが表示される可能性があるので、各コマンドを手動で実行してみてください。 開発者向けドキュメントの [cron ジョブの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration) を参照してください。
 
 >[!NOTE]
 >

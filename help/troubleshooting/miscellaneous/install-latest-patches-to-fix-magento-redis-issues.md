@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce Redis の問題を修正するための最新のパッチをインストールします。
 
-Adobe Commerceこの記事では、[ クラウドインフラストラクチャー上のパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) パッケージで利用可能な最新の Redis 関連パッチについて説明します。
+Adobe Commerceこの記事では、[&#x200B; クラウドインフラストラクチャー上のパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) パッケージで利用可能な最新の Redis 関連パッチについて説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -25,7 +25,7 @@ Redis による追加の CPU とメモリ消費は、Adobe Commerceのパフォ�
 
 ## 解決策
 
-Adobe Commerce on cloud infrastructure のパッチパッケージから提供される最新のパッチを適用します。 手順について詳しくは、開発者向けドキュメントの [ パッチの適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
+Adobe Commerce on cloud infrastructure のパッチパッケージから提供される最新のパッチを適用します。 手順について詳しくは、開発者向けドキュメントの [&#x200B; パッチの適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
 
 Adobe Commerce on cloud infrastructure Patches パッケージが提供する最新の Redis パッチは、次の影響を及ぼします。
 

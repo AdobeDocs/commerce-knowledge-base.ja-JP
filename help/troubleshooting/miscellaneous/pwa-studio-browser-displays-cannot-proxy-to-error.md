@@ -51,9 +51,9 @@ NodeJS がAdobe Commerce ストアのホスト名を解決できません。
 ## 解決策
 
 1. Adobe Commerce ストアが複数の web ブラウザーに読み込まれていることを確認してください。
-1. ローカルの DNS サーバーまたは VPN を実行している場合は、ホストファイル（`/etc/hosts` にある）にエントリを追加し、このドメインを手動でマッピングして（[ ホストファイル編集に関する一般的な手順 ](https://linuxize.com/post/how-to-edit-your-hosts-file/)）、NodeJS が解決できるようにします。
+1. ローカルの DNS サーバーまたは VPN を実行している場合は、ホストファイル（`/etc/hosts` にある）にエントリを追加し、このドメインを手動でマッピングして（[&#x200B; ホストファイル編集に関する一般的な手順 &#x200B;](https://linuxize.com/post/how-to-edit-your-hosts-file/)）、NodeJS が解決できるようにします。
 
 ## 関連資料
 
 * [Adobe Commerce ドキュメントのPWA Studio](https://magento.github.io/pwa-studio/)
-* [ ツールとライブラリ ](https://magento.github.io/pwa-studio/technologies/tools-libraries/)
+* [&#x200B; ツールとライブラリ &#x200B;](https://magento.github.io/pwa-studio/technologies/tools-libraries/)

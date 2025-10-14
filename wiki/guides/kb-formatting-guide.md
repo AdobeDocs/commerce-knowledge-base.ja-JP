@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Markdown での作成者
 
-通常、[Adobe Experience League Markdown 構文スタイルガイド ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=ja) を使用しますが、いくつかの違いがあり、例外があります。 また、場合によっては、特定のHTMLタグが必要です。
+通常、[Adobe Experience League Markdown 構文スタイルガイド &#x200B;](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=ja) を使用しますが、いくつかの違いがあり、例外があります。 また、場合によっては、特定のHTMLタグが必要です。
 
 リポジトリーで最も一般的に使用される Markdown フォーマットの例を以下に示します。
 
@@ -84,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-ここで、``%language-code%`` は [Prism.js でサポートされる言語 ](https://prismjs.com/#supported-languages) で定義されるコードです。
+ここで、``%language-code%`` は [Prism.js でサポートされる言語 &#x200B;](https://prismjs.com/#supported-languages) で定義されるコードです。
 
 ## リスト
 
@@ -165,17 +165,17 @@ your code here
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-header 以外の要素を参照する必要がある場合は、HTMLを使用して、追加する要素を定義し、[id 属性 ](https://www.w3schools.com/html/html_id.asp) を使用します。 その後、Markdown またはHTMLを使用して、この ID を参照できます。
+header 以外の要素を参照する必要がある場合は、HTMLを使用して、追加する要素を定義し、[id 属性 &#x200B;](https://www.w3schools.com/html/html_id.asp) を使用します。 その後、Markdown またはHTMLを使用して、この ID を参照できます。
 
 ### 他の記事への相対リンクとリンク
 
-サポートナレッジベースの記事を参照するために相対リンクを使用しないでください。 記事が [Adobe Commerce ヘルプセンター ](https://support.magento.com/hc/en-us) で公開されると、これらのリンクは機能しません。
-[Adobe Commerce ヘルプ センター ](https://support.magento.com/hc/en-us) のハイパーリンクをすべて使用してください。
+サポートナレッジベースの記事を参照するために相対リンクを使用しないでください。 記事が [Adobe Commerce ヘルプセンター &#x200B;](https://support.magento.com/hc/en-us) で公開されると、これらのリンクは機能しません。
+[Adobe Commerce ヘルプ センター &#x200B;](https://support.magento.com/hc/en-us) のハイパーリンクをすべて使用してください。
 
 
 ## テーブル
 
-テーブルには [HTML形式を使用 ](https://www.w3schools.com/html/html_tables.asp) ます。
+テーブルには [HTML形式を使用 &#x200B;](https://www.w3schools.com/html/html_tables.asp) ます。
 
 
 ## 警告および情報ブロック

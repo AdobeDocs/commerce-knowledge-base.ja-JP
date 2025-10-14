@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce オンプレミス、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce オンプレミス、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
@@ -46,4 +46,4 @@ SameSite cookie 属性が *Lax* に設定されているか、指定されてい
 
 ## 関連資料
 
-[Chrome SameSite の更新 ](https://www.chromestatus.com/feature/5088147346030592)
+[Chrome SameSite の更新 &#x200B;](https://www.chromestatus.com/feature/5088147346030592)

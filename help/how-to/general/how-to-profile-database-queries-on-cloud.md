@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャー上のAdobe Commerceでデータベースクエリをプロファイルする方法
 
-開発者向けドキュメントの [ プロファイルデータベースクエリ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/profile-database-queries) を参照してください。
+開発者向けドキュメントの [&#x200B; プロファイルデータベースクエリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/profile-database-queries) を参照してください。

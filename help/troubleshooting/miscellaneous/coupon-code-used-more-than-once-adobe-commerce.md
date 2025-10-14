@@ -62,8 +62,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.3 以降
 ...
 ```
 
-詳細な手順については、開発者向けドキュメントの [ メッセージキューの管理/設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) を参照してください。
+詳細な手順については、開発者向けドキュメントの [&#x200B; メッセージキューの管理/設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) を参照してください。
 
 ## 関連資料
 
-開発者向けドキュメントの [ メッセージキューの概要 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)。
+開発者向けドキュメントの [&#x200B; メッセージキューの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)。

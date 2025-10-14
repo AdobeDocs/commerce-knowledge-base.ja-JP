@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 
 ## 問題
@@ -36,10 +36,10 @@ Adobe Commerceのアップグレード中にエラーが発生しています：
     - ACSD-XXXXX
    ```
 
-1. [ 品質向上パッチのリリースノート ](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) でパッチ ID を調べて、アップグレード先のAdobe Commerceの新しいバージョンにそれぞれを適用できるかどうかを確認します。
+1. [&#x200B; 品質向上パッチのリリースノート &#x200B;](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) でパッチ ID を調べて、アップグレード先のAdobe Commerceの新しいバージョンにそれぞれを適用できるかどうかを確認します。
 1. パッチがアップグレード先の新しいバージョンのAdobe Commerceに適用されない場合は、`.magento.env.yaml` ファイルからパッチ ID を削除します。
 1. エラーが示すすべてのパッチ ID を確認したら、変更をプッシュして再デプロイします。
 
 ## 関連資料
 
-* Commerce on Cloud Infrastructure ガイドの [ パッチの適用 ](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment)。
+* Commerce on Cloud Infrastructure ガイドの [&#x200B; パッチの適用 &#x200B;](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment)。

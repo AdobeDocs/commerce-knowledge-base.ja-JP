@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 最新バージョンのBetaにアクセスできません
 
-この記事では、最新バージョンのBeta code for Adobe Commerceを利用しようとする際の問題の解決策について説明します。 Beta コードは、[Adobe Commerce Beta プログラム ](https://github.com/magento/magento2/wiki/Magento-Beta-Program) に記載されているプロセスに従った、公式のAdobeパートナーのみが利用できます。
+この記事では、最新バージョンのBeta code for Adobe Commerceを利用しようとする際の問題の解決策について説明します。 Beta コードは、[Adobe Commerce Beta プログラム &#x200B;](https://github.com/magento/magento2/wiki/Magento-Beta-Program) に記載されているプロセスに従った、公式のAdobeパートナーのみが利用できます。
 
 ## 問題
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### アーリーアクセスコードの場所
 
-ベータ版のアクセス期間中、リリースパッケージは [repo.magento.com](https://repo.magento.com/) の Composer からのみ入手できます。 この期間中、リリースパッケージは GitHub ポータルおよびAdobe Commerce ポータルでは利用できません。GA 日にこれらの場所に公開される予定です。 Composer の使用方法の詳細については、[ こちら ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer) をクリックしてください。
+ベータ版のアクセス期間中、リリースパッケージは [repo.magento.com](https://repo.magento.com/) の Composer からのみ入手できます。 この期間中、リリースパッケージは GitHub ポータルおよびAdobe Commerce ポータルでは利用できません。GA 日にこれらの場所に公開される予定です。 Composer の使用方法の詳細については、[&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer) をクリックしてください。
 
 ### 使用する MageID
 
@@ -47,7 +47,7 @@ MageID がプライマリかどうかを確認するには、次の手順を実�
    * アクティブなパートナーライセンス情報が表示された場合、MageID はプライマリです。 終了日の値が将来の日付の場合、パートナーライセンスはアクティブになります。
    * アクティブなパートナーライセンス情報が表示されない場合、お使いの MageID には共有アクセスのみが付与されます。 プライマリ ID 所有者を確認するには、**自分と共有** に移動します。ここで指定されている SHARENAME に注意してください。 **アカウントの切り替え** をクリックし、SHARENAME でメモした値を選択します。 ようこそページに、プライマリ ID 所有者のメールが表示されます。
 1. 何らかの理由でこの情報が [magento.com](https://account.magento.com/customer/account/login) で見つからない場合は、パートナーマネージャーにお問い合わせください。
-1. 上記の方法で解決できない場合は、[ サポートにお問い合わせください ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed)。
+1. 上記の方法で解決できない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed)。
 
 #### 開発者は、キーに対する適切なアクセス権を持っていません
 
@@ -60,4 +60,4 @@ MageID がプライマリかどうかを確認するには、次の手順を実�
 
 ### アーリーアクセスプログラムに含まれていません
 
-アドビのBeta アクセスプログラムは、アドビのソリューションパートナーおよびテクニカルパートナーのみが利用できるので、アドビの実稼動前のコードを評価できます。 Beta アクセスプログラムに含めるには、正常に機能し、Beta NDA [ こちら ](https://github.com/magento/magento2/wiki/Magento-Beta-Program) に署名したアクティブなAdobeパートナーアカウントが必要です。 これらの条件を満たしていて、ベータ版コードにアクセスできない場合は、[commercebeta@adobe.com](mailto:commercebeta@adobe.com) にお問い合わせください。
+アドビのBeta アクセスプログラムは、アドビのソリューションパートナーおよびテクニカルパートナーのみが利用できるので、アドビの実稼動前のコードを評価できます。 Beta アクセスプログラムに含めるには、正常に機能し、Beta NDA [&#x200B; こちら &#x200B;](https://github.com/magento/magento2/wiki/Magento-Beta-Program) に署名したアクティブなAdobeパートナーアカウントが必要です。 これらの条件を満たしていて、ベータ版コードにアクセスできない場合は、[commercebeta@adobe.com](mailto:commercebeta@adobe.com) にお問い合わせください。

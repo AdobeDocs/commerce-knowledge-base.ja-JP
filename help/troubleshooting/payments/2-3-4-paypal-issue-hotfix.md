@@ -47,14 +47,14 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 ## 解決策
 
-Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com/tech-resources/download#download2353) ポータルの「ダウンロード」セクションにある [ ホットフィックス ](https://magento.com) をマイアカウントで適用します。
+Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com/tech-resources/download#download2353) ポータルの「ダウンロード」セクションにある [&#x200B; ホットフィックス &#x200B;](https://magento.com) をマイアカウントで適用します。
 
-クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce v1.0.2 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) を参照してください。
+クラウドインフラストラクチャマーチャント上のAdobe Commerceの場合：Adobeでは、Commerce v1.0.2 のクラウドパッチの修正が含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの [Commerce リリースノートのクラウドパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) を参照してください。
 
 ## パッチの適用方法
 
-手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+手順については、サポートナレッジベースの [Adobe提供の Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 ## 関連資料
 
-* [ リリース情報 > Adobe Commerce 2.3.4 リリースノート > Adobe Commerce 2.3.4 のリージョンパッチで PayPal Express Checkout の問題を適用して、開発者向けドキュメントの重要な PayPal Express Checkout の問題に対処してください ](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue)。
+* [&#x200B; リリース情報 > Adobe Commerce 2.3.4 リリースノート > Adobe Commerce 2.3.4 のリージョンパッチで PayPal Express Checkout の問題を適用して、開発者向けドキュメントの重要な PayPal Express Checkout の問題に対処してください &#x200B;](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue)。

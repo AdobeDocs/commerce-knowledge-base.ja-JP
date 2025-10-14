@@ -21,8 +21,8 @@ Adobeのテクニカルサポートでは、サポートを提供するために
 
 アクセスを認証するには：
 
-1. プライマリユーザーという権限を持つサポートとして [ ログイン ](https://account.magento.com/customer/account/login) します。
-1. **[!UICONTROL My Account]** ページ/**[!UICONTROL Account Settings]** で、「[ アカウントプロファイル ](https://account.magento.com/customer/account/edit) を完了していることを確認し、「**[!UICONTROL Save]**」をクリックします。
+1. プライマリユーザーという権限を持つサポートとして [&#x200B; ログイン &#x200B;](https://account.magento.com/customer/account/login) します。
+1. **[!UICONTROL My Account]** ページ/**[!UICONTROL Account Settings]** で、「[&#x200B; アカウントプロファイル &#x200B;](https://account.magento.com/customer/account/edit) を完了していることを確認し、「**[!UICONTROL Save]**」をクリックします。
 1. **[!UICONTROL My Account]** ページ/**[!UICONTROL Account Settings]**/**[!UICONTROL Privacy Settings]** で以下の操作を行います。 Adobeのテクニカルサポート担当者にデータへのアクセスを許可するための同意フォームが表示されます。
 1. プライバシー設定に関する情報を確認したら、「**データへのアクセスを次の期間だけ許可する：**」の横にあるチェックボックスをオンにするかどうかを選択します。
 1. 期間ドロップダウンで、Adobeのテクニカルサポート担当者がカスタマーデータにアクセスできる期間を選択します。 7 日、30 日、1 年または無期限を選択できます。

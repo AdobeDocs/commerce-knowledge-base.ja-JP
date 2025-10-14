@@ -45,4 +45,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-サポートナレッジベースで [ 専用クラスターを確認 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) してください。
+サポートナレッジベースで [&#x200B; 専用クラスターを確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) してください。

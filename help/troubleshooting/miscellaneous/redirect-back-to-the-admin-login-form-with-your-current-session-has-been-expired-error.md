@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### セッションストレージの変更
 
-セッションストレージを変更してみてください。 開発者向けドキュメントの [ セッションファイルの探し方 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) 記事の情報を使用して、セッションが保存されている場所を確認し、`app/etc/env.php` ファイルを編集して変更します。
+セッションストレージを変更してみてください。 開発者向けドキュメントの [&#x200B; セッションファイルの探し方 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) 記事の情報を使用して、セッションが保存されている場所を確認し、`app/etc/env.php` ファイルを編集して変更します。
 
 例えば、ファイルシステムへのセッションの保存を開始するには、`'session'` セクションを次のように変更します。
 
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ 設定ファイルからデータを読み込む ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration)
-* 開発者向けドキュメントの [ 設定  [!DNL Redis]](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* サポート技術情報で [ 「アカウントが一時的に無効になっています」というエラーが表示された [!UICONTROL Commerce Admin] ログインフォームにリダイレクト ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) る
-* [ サポートナレッジベースで [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) にログインしようとすると、エラーが発生せずにログインフォームに戻ります
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 開発者向けドキュメントの [&#x200B; 設定ファイルからデータを読み込む &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration)
+* 開発者向けドキュメントの [&#x200B; 設定  [!DNL Redis]](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* サポート技術情報で [&#x200B; 「アカウントが一時的に無効になっています」というエラーが表示された [!UICONTROL Commerce Admin] ログインフォームにリダイレクト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) る
+* [&#x200B; サポートナレッジベースで [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) にログインしようとすると、エラーが発生せずにログインフォームに戻ります
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 

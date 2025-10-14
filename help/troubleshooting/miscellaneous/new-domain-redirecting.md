@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. ドメインが同じ環境内でリダイレクトされる場合は、[ 変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja#modify-variables) が設定されていることを確認します。
+1. ドメインが同じ環境内でリダイレクトされる場合は、[&#x200B; 変数 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja#modify-variables) が設定されていることを確認します。
 1. ドメインが別の環境にリダイレクトされている場合は、次のコマンドを実行して [!DNL Fastly] サービスが正しく設定されているかどうかを確認してください：`bin/magento fastly:conf:get -s`
 
 >[!NOTE]
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* サポートナレッジベースの [ 新しいドメインを設定するためのチェックリスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html?lang=ja)。
+* サポートナレッジベースの [&#x200B; 新しいドメインを設定するためのチェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html?lang=ja)。

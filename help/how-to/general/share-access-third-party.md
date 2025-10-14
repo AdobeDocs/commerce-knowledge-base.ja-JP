@@ -27,11 +27,11 @@ ht-degree: 0%
 
 * サードパーティベンダーにクラウド環境へのアクセスを提供します。 関連記事：
 
-   * [Adobe Commerce ヘルプセンターユーザーガイド/共有アクセス：お使いのアカウントに他のユーザーがアクセスできるようにする権限を付与します ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) 詳しくは、サポートナレッジベースを参照してください。
-   * ユーザーガイドの [Commerce アカウントの共有 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)。
+   * [Adobe Commerce ヘルプセンターユーザーガイド/共有アクセス：お使いのアカウントに他のユーザーがアクセスできるようにする権限を付与します &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) 詳しくは、サポートナレッジベースを参照してください。
+   * ユーザーガイドの [Commerce アカウントの共有 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)。
 
 * データベースダンプを作成します（または、サードパーティベンダーにアクセス権を付与します）。 これは、CLI またはCommerce Admin を使用して実行できます。 この DB ダンプは顧客データを難読化するので、コードや製品 SKU などのみが得られ、専有/顧客データは得られません。 サポートナレッジベースで [Commerce アカウントの共有 ] （/help/how-to/general/create-database-dump-on-cloud.md）を参照してください。
-* テストが完了したら、サポートナレッジベースの [Adobe Commerceヘルプセンターユーザーガイド/失効（共有アクセスを削除）の説明に従って ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) クラウド環境への共有アクセスを失効させます。
+* テストが完了したら、サポートナレッジベースの [Adobe Commerceヘルプセンターユーザーガイド/失効（共有アクセスを削除）の説明に従って &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) クラウド環境への共有アクセスを失効させます。
 
 ## ベストプラクティスのテスト
 
@@ -39,4 +39,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* サポートナレッジベースの [Adobe Commerceでサードパーティの拡張機能を使用するためのベストプラクティス ](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento)。
+* サポートナレッジベースの [Adobe Commerceでサードパーティの拡張機能を使用するためのベストプラクティス &#x200B;](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento)。

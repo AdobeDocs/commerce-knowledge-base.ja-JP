@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->コアとなるAdobe Commerce Cybersource の支払い統合は 2.3.3 以降で非推奨となり、2.4.0 で完全に削除される予定です。代わりに、Marketplace の [ 公式拡張機能 ](https://marketplace.magento.com/cybersource-global-payment-management.html) を使用してください。
+>コアとなるAdobe Commerce Cybersource の支払い統合は 2.3.3 以降で非推奨となり、2.4.0 で完全に削除される予定です。代わりに、Marketplace の [&#x200B; 公式拡張機能 &#x200B;](https://marketplace.magento.com/cybersource-global-payment-management.html) を使用してください。
 
 ## 問題
 

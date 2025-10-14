@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # GitHub コミットからAdobe Commerce Composer インストール用のパッチを作成する
 
-開発者向けドキュメントの [ パッチの適用」の「カスタムパッチ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) の節を参照してください。
+開発者向けドキュメントの [&#x200B; パッチの適用」の「カスタムパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) の節を参照してください。

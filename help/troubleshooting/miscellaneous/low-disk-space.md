@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
-書き込み可能なディレクトリを持つディスクのディスク領域が不足しています。 症状の 1 つに、デプロイメントが停止 [ することがあります ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26878)。
+書き込み可能なディレクトリを持つディスクのディスク領域が不足しています。 症状の 1 つに、デプロイメントが停止 [&#x200B; することがあります &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26878)。
 
 ディスク使用量を確認するには、次のコマンドを実行します。
 
@@ -45,7 +45,7 @@ Adobe Commerceでは、すべてのログファイルが `var` ディレクト�
 * `var` ディレクトリをクリーンアップします。
 * `var` ディレクトリのサイズを追跡してクリーンアップする cron ジョブを設定します。
 * 未使用のディスク容量がある場合は、割り当てるディスク容量を増やします。 （スペース制限を確認する方法については、以下の節を参照してください）。
-   * スタータープラン、すべての環境、Pro プラン統合環境の場合は、[ ディスク領域の管理：ディスク領域の割り当て ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space) で説明しているように、未使用のディスク領域があれば割り当てることができます。
+   * スタータープラン、すべての環境、Pro プラン統合環境の場合は、[&#x200B; ディスク領域の管理：ディスク領域の割り当て &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space) で説明しているように、未使用のディスク領域があれば割り当てることができます。
    * Pro プランのステージング環境および実稼動環境では、未使用のディスク容量がある場合に割り当てるディスク容量を増やすには、サポートにお問い合わせください。
 * スペースの制限に達してもスペースの問題が発生する場合は、ディスク容量の購入を検討してください。詳しくは、Adobe アカウントチームにお問い合わせください。
 

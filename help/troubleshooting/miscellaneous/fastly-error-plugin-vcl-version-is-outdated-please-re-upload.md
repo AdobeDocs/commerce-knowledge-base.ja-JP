@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 影響を受ける製品とバージョン
 
 クラウドインフラストラクチャー上のAdobe Commerce 2.2.x.、2.3.x<br>
-Fastly：このエラーは、最新のバージョンを除く、Fastly モジュールのすべてのバージョンに影響を与える可能性があります。 最新リリースについて詳しくは、GitHub の [Fastly リリースノート ](https://github.com/fastly/fastly-magento2/releases) を参照してください。
+Fastly：このエラーは、最新のバージョンを除く、Fastly モジュールのすべてのバージョンに影響を与える可能性があります。 最新リリースについて詳しくは、GitHub の [Fastly リリースノート &#x200B;](https://github.com/fastly/fastly-magento2/releases) を参照してください。
 
 ## 問題
 
@@ -33,15 +33,15 @@ Fastly 拡張機能は（バンドルされた VCL 設定およびテンプレ�
 
 ## 解決策
 
-1. 最新の ECE ツールがインストールされていること、および [ 現在のバージョン ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html?lang=ja) が開発者向けドキュメントに記載されていることを確認します。 ECE-Tools には、依存関係に Fastly パッケージのバージョンがあります。
+1. 最新の ECE ツールがインストールされていること、および [&#x200B; 現在のバージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html?lang=ja) が開発者向けドキュメントに記載されていることを確認します。 ECE-Tools には、依存関係に Fastly パッケージのバージョンがあります。
 
    これは Fastly プラグインの最新バージョンではない可能性がありますが、現在インストールされているものより新しいバージョンである可能性が高く、最新の ECE-Tools をインストールすることをお勧めします。
 
-1. 現在のバージョンの ECE-Tools を使用していない場合は、開発者向けドキュメントで次の手順に従って [ アップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja) してください。
-1. ECE-Tools をアップグレードしたら、現在のバージョンの [Fastly プラグイン ](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) がインストールされているかどうかを確認します。
-1. Fastly プラグインが最新バージョンでない場合は、開発者向けドキュメントで次の手順に従って [ プラグインを最新バージョンにアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#upgrade-the-fastly-module) してください。
+1. 現在のバージョンの ECE-Tools を使用していない場合は、開発者向けドキュメントで次の手順に従って [&#x200B; アップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja) してください。
+1. ECE-Tools をアップグレードしたら、現在のバージョンの [Fastly プラグイン &#x200B;](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) がインストールされているかどうかを確認します。
+1. Fastly プラグインが最新バージョンでない場合は、開発者向けドキュメントで次の手順に従って [&#x200B; プラグインを最新バージョンにアップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#upgrade-the-fastly-module) してください。
 
 ## 関連資料
 
-* Fastly のセットアップと設定について詳しくは、開発者向けドキュメントの [Fastly サービスの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja) を参照してください。
+* Fastly のセットアップと設定について詳しくは、開発者向けドキュメントの [Fastly サービスの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja) を参照してください。
 * Fastly の一般的な情報については、[fastly.com](https://www.fastly.com/) を参照してください。

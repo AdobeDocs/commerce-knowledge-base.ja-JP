@@ -29,4 +29,4 @@ Fastly 設定ページの Fastly IO スニペットの横には、現在の状�
 
 ## 解決策
 
-[ サポートチケット ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を作成し、画像の最適化をリクエストします。
+[&#x200B; サポートチケット &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) を作成し、画像の最適化をリクエストします。

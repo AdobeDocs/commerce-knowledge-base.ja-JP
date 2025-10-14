@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->すべてのお客様は、実稼動環境とステージング環境に Fastly を使用する必要があります。 Fastly は、フルページキャッシュ、画像の最適化、セキュリティサービス（DDoS およびWAF）をクラウドインフラストラクチャプロジェクト上のAdobe Commerceの一部として提供するコンテンツ配信ネットワーク（CDN）です。 これらは、Adobe Commerce ソリューションのコアコンポーネントであり、パフォーマンスとセキュリティを向上させます。 これらの機能は、Adobeの PCI コンプライアンスの一部です。 これらの Fastly サービスは、スターター環境、ステージング環境、ステージング環境、実稼動マスターでセットアップする必要があります。 ヘッドレスデプロイメントでAdobe Commerceを使用している場合、パブリックインターネットからのすべての API トラフィックは Fastly を経由する必要があります。Fastly を使用してGraphQLの応答をキャッシュすることを強くお勧めします。 開発者向けドキュメントの [GraphQL開発者ガイド > Fastly でのキャッシュ ](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly) を参照してください。
+>すべてのお客様は、実稼動環境とステージング環境に Fastly を使用する必要があります。 Fastly は、フルページキャッシュ、画像の最適化、セキュリティサービス（DDoS およびWAF）をクラウドインフラストラクチャプロジェクト上のAdobe Commerceの一部として提供するコンテンツ配信ネットワーク（CDN）です。 これらは、Adobe Commerce ソリューションのコアコンポーネントであり、パフォーマンスとセキュリティを向上させます。 これらの機能は、Adobeの PCI コンプライアンスの一部です。 これらの Fastly サービスは、スターター環境、ステージング環境、ステージング環境、実稼動マスターでセットアップする必要があります。 ヘッドレスデプロイメントでAdobe Commerceを使用している場合、パブリックインターネットからのすべての API トラフィックは Fastly を経由する必要があります。Fastly を使用してGraphQLの応答をキャッシュすることを強くお勧めします。 開発者向けドキュメントの [GraphQL開発者ガイド > Fastly でのキャッシュ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly) を参照してください。
 
 ## **質問**
 

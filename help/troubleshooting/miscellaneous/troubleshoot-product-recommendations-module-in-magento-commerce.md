@@ -45,7 +45,7 @@ magento/product-recommendations
 
 * 設定したレコメンデーションが表示されない場合は、ユーザーのレコメンデーションを作成するのに十分なデータがない可能性があります。
 
-* [!DNL SaaS] Data Space または [!DNL API] Key が有効であることを確認します。 製品レコメンデーションの初期化中に、[!DNL SaaS] Data Space または [!DNL API] キーを指定した後にエラーが発生した場合は、（ユーザーガイドの） [[!DNL SaaS] Data Space and [!DNL API] key](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) を正しく入力したことを確認します。 [!DNL MageID] と [!DNL API] キーが確実にリンクされるようにするには、[!DNL MageID] を所有するユーザー（通常はAdobe Commerce ライセンスを所有するユーザー）が、[!DNL API] キーを生成するユーザーと同じユーザーである必要があります。 使用された [!DNL MageID] を変更する必要がある場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
+* [!DNL SaaS] Data Space または [!DNL API] Key が有効であることを確認します。 製品レコメンデーションの初期化中に、[!DNL SaaS] Data Space または [!DNL API] キーを指定した後にエラーが発生した場合は、（ユーザーガイドの） [[!DNL SaaS] Data Space and [!DNL API] key](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) を正しく入力したことを確認します。 [!DNL MageID] と [!DNL API] キーが確実にリンクされるようにするには、[!DNL MageID] を所有するユーザー（通常はAdobe Commerce ライセンスを所有するユーザー）が、[!DNL API] キーを生成するユーザーと同じユーザーである必要があります。 使用された [!DNL MageID] を変更する必要がある場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
 
 >[!NOTE]
 >
@@ -74,14 +74,14 @@ saas-export
 
 ## イベント
 
-開発者向けドキュメントの [ イベント収集の検証 ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/getting-started/verify) では、Adobe Commerceに送信される行動イベントについて説明しています。
+開発者向けドキュメントの [&#x200B; イベント収集の検証 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/getting-started/verify) では、Adobe Commerceに送信される行動イベントについて説明しています。
 
 ## 関連資料
 
 * 開発者向けドキュメントの [Product Recommendations Administrator Development](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/developer/development-overview)
-* 製品Recommendationsガイドの [ 製品Recommendationsの概要 ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/overview)
-* 製品Recommendationsガイドの [ 製品Recommendationsを作成 ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/admin/create)
-* [!DNL SaaS] Data Export Guide の [ ログの確認とトラブルシューティング ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
-* [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes)
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 製品Recommendationsガイドの [&#x200B; 製品Recommendationsの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/overview)
+* 製品Recommendationsガイドの [&#x200B; 製品Recommendationsを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/product-recommendations/admin/create)
+* [!DNL SaaS] Data Export Guide の [&#x200B; ログの確認とトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging)
+* [!DNL SaaS] Services 用Adobe Commerce データ書き出しガイドの [[!DNL SaaS]  データ書き出し拡張機能のリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes)
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 

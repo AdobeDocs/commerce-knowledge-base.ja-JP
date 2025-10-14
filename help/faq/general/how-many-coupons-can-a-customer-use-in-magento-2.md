@@ -16,8 +16,8 @@ Adobe Commerceの 2.4.7 より前のバージョンの場合、複数のクー�
 
 カート内の複数のクーポンコードを同時に使用するには、[Commerce Marketplace](https://marketplace.magento.com/) で対応する拡張機能の使用を検討してください。
 
-ただし、Adobe Commerce バージョン 2.4.7 以降では、**買い物かごに複数のクーポンコードを同時に** 設定して使用できます。 有効にするには、[ マルチクーポン設定 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/sales#multicoupon-settings) を参照してください。
+ただし、Adobe Commerce バージョン 2.4.7 以降では、**買い物かごに複数のクーポンコードを同時に** 設定して使用できます。 有効にするには、[&#x200B; マルチクーポン設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/sales#multicoupon-settings) を参照してください。
 
 ## 詳細情報
 
-ユーザーガイドの [ クーポンコード ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=ja)。
+ユーザーガイドの [&#x200B; クーポンコード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=ja)。

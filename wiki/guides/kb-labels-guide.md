@@ -8,7 +8,7 @@ ht-degree: 0%
 # ナレッジラベルガイド
 
 このドキュメントでは、Adobe Commerce サポートナレッジベースの記事にラベルを追加する際のガイドラインを示します。
-ラベル （タグとも呼ばれます）を使用すると、[Adobe Commerce サポートナレッジベース ](https://support.magento.com/hc/en-us) の検索エクスペリエンスが向上します。
+ラベル （タグとも呼ばれます）を使用すると、[Adobe Commerce サポートナレッジベース &#x200B;](https://support.magento.com/hc/en-us) の検索エクスペリエンスが向上します。
 ラベルは、記事ファイルのメタデータセクションの「ラベル」フィールドに、コンマで区切り、コンマと次のラベルの間にスペースを入れずに追加します。
 詳しくは、[../../.github/CONTRIBUTING.md#metadata] を参照してください。
 

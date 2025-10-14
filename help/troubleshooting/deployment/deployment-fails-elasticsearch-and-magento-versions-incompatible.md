@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません
 
-開発者向けドキュメントの [Elasticsearchサービスの設定/Elasticsearchソフトウェアの互換性 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) を参照してください。
+開発者向けドキュメントの [Elasticsearchサービスの設定/Elasticsearchソフトウェアの互換性 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) を参照してください。

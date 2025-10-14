@@ -56,8 +56,8 @@ ls: cannot access 'pub/media/catalog/product/cache/directory/filename/': No such
 ```
 
 操作が既に完了しているときに、ファイルをクリアしようとしました。 これはバグではありません。メッセージの同時実行性に関する問題で、時々発生すると予想されています。 トラブルシューティングする問題はない。
-ただし、ファイルがまだキャッシュに残っていることが出力で示される場合は、[ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) する必要があります。
+ただし、ファイルがまだキャッシュに残っていることが出力で示される場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) する必要があります。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [ キャッシュ管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management)。
+* 開発者向けドキュメントの [&#x200B; キャッシュ管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management)。

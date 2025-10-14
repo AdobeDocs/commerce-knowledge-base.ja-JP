@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. `slave_parallel_mode` パラメーターが *conservative* に設定されていることを確認します（値が *conservative* と表示されていない場合は、[ サポートチケットを発行 ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) する必要があります）。 確認するには、次のコマンドを実行します。
+1. `slave_parallel_mode` パラメーターが *conservative* に設定されていることを確認します（値が *conservative* と表示されていない場合は、[&#x200B; サポートチケットを発行 &#x200B;](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) する必要があります）。 確認するには、次のコマンドを実行します。
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -59,5 +59,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* Commerce on Cloud Infrastructure ガイドの [ デプロイメント用の環境変数の設定 ](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)。
-* 実装プレイブックの [ データベース設定のベストプラクティス ](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)。
+* Commerce on Cloud Infrastructure ガイドの [&#x200B; デプロイメント用の環境変数の設定 &#x200B;](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)。
+* 実装プレイブックの [&#x200B; データベース設定のベストプラクティス &#x200B;](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)。

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Cloud 上のNew Relicのアカウントオーナーの変更
 
-クラウドインフラストラクチャー上のAdobe Commerce プロジェクトの場合は、New Relic UI ページでNew Relic アカウントのオーナーを変更できます。 詳しい手順については、New Relic ドキュメントの [ アカウント所有者の変更 ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/account-user-mgmt-tutorial/) を参照してください。
+クラウドインフラストラクチャー上のAdobe Commerce プロジェクトの場合は、New Relic UI ページでNew Relic アカウントのオーナーを変更できます。 詳しい手順については、New Relic ドキュメントの [&#x200B; アカウント所有者の変更 &#x200B;](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/account-user-mgmt-tutorial/) を参照してください。
 
-（所有者の役割を割り当てる）ユーザーがまだアカウントに登録されていない場合は、ユーザーをアカウントに追加する必要があります。 特に [User Management UI と共通タスク ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#add-users) の節については、New Relic ドキュメントの [ ユーザーの追加と更新 ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#where) を参照してください。
+（所有者の役割を割り当てる）ユーザーがまだアカウントに登録されていない場合は、ユーザーをアカウントに追加する必要があります。 特に [User Management UI と共通タスク &#x200B;](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#add-users) の節については、New Relic ドキュメントの [&#x200B; ユーザーの追加と更新 &#x200B;](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#where) を参照してください。
 
-ユーザーを追加する必要があるが、アカウントの既存のオーナーまたは管理者が支援できない場合、New Relicの [Adobe Commerce パートナーシップオーナーアカウントにアクセスできるAdobe Commerce ユーザーは ](https://account.newrelic.com/accounts/1311131/users) すべてのカスタマーアカウントを表示し、お客様に代わってユーザーを追加できます。
+ユーザーを追加する必要があるが、アカウントの既存のオーナーまたは管理者が支援できない場合、New Relicの [Adobe Commerce パートナーシップオーナーアカウントにアクセスできるAdobe Commerce ユーザーは &#x200B;](https://account.newrelic.com/accounts/1311131/users) すべてのカスタマーアカウントを表示し、お客様に代わってユーザーを追加できます。
 
 ## 関連資料
 

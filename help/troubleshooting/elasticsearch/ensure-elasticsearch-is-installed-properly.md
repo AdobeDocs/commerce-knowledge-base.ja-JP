@@ -16,14 +16,14 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->クラウドインフラストラクチャー上のAdobe Commerceの場合、インフラストラクチャチームに 48 営業時間前に通知しない限り、実稼動環境にサービスアップグレードをプッシュすることはできません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある場合は、48 時間前に [ サポートチケットを送信 ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、必要なサービスアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。
+>クラウドインフラストラクチャー上のAdobe Commerceの場合、インフラストラクチャチームに 48 営業時間前に通知しない限り、実稼動環境にサービスアップグレードをプッシュすることはできません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある場合は、48 時間前に [&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) して、必要なサービスアップグレードの詳細を説明し、アップグレードプロセスを開始する時刻を指定します。
 
 ## ElasticsearchバージョンとAdobe Commerceとの互換性
 
 * Adobe CommerceのオンプレミスおよびAdobe Commerceのクラウドインフラストラクチャ：
    * v2.2.3 以降は、ES 5.x をサポート
    * v2.2.8+および v2.3.1+は、ES 6.x をサポートしています。
-   * ES v2.x および v5.x は、[ 提供終了 ](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
+   * ES v2.x および v5.x は、[&#x200B; 提供終了 &#x200B;](https://www.elastic.co/support/eol) が理由で推奨されていません。 ただし、Adobe Commerce v2.3.1 を使用していて、ES 2.x または ES 5.x を使用する場合は、[Elasticsearch php クライアントを変更する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) 必要があります。
 * Magento Open Source v2.3.0 以降では、ES 5.x および 6.x がサポートされています（ただし 6.x をお勧めします）。
 
 ## 問題
@@ -56,8 +56,8 @@ Elasticsearchが正しくインストールされていません。 これは次
 
 Elasticsearchを正しく設定するには：
 
-* クラウドインフラストラクチャー上のAdobe Commerceのマーチャントは、開発者向けドキュメントの [Elasticsearchサービスの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) の手順に従うことができます。
-* Adobe Commerceのオンプレミス環境およびMagento Open Source上のマーチャントは、開発者向けドキュメントの [Elasticsearchのインストールと設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) の手順に従うことができます。
+* クラウドインフラストラクチャー上のAdobe Commerceのマーチャントは、開発者向けドキュメントの [Elasticsearchサービスの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) の手順に従うことができます。
+* Adobe Commerceのオンプレミス環境およびMagento Open Source上のマーチャントは、開発者向けドキュメントの [Elasticsearchのインストールと設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/search/overview-search) の手順に従うことができます。
 
 Elasticsearchを設定したら、正しく設定されていることを確認します。
 

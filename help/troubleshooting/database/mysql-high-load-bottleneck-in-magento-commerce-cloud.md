@@ -24,7 +24,7 @@ ht-degree: 0%
 * ECE ツールバージョン 2002.0.16 以降
 * New Relic APM サービス （**クラウドインフラストラクチャアカウント上のAdobe Commerceには、New Relic APM サービスのソフトウェアとライセンスキーが含まれています**）
 
-New Relic APM サービスと、クラウドインフラストラクチャアカウント上のAdobe Commerceを使用した設定について詳しくは、[New Relic サービス ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) および [New Relic APM の概要 ](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/) を参照してください。
+New Relic APM サービスと、クラウドインフラストラクチャアカウント上のAdobe Commerceを使用した設定について詳しくは、[New Relic サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) および [New Relic APM の概要 &#x200B;](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/) を参照してください。
 
 ## 問題
 
@@ -61,7 +61,7 @@ Adobe Commerceは、複数のデータベースまたは Redis を非同期で�
 
    ![KB-372_image004.png](assets/KB-372_image004.png)
 
-   詳しくは、[DevDocs で変数をデプロイ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) を参照してください。
+   詳しくは、[DevDocs で変数をデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) を参照してください。
 
 1. 変更をコミットし、変更をプッシュします。
 1. 変更をプッシュすると、新しいデプロイメントプロセスが開始されます。 デプロイメントが正常に完了したら、Adobe Commerce on cloud infrastructure インスタンスがスレーブ接続を使用するように設定されています。
@@ -70,7 +70,7 @@ Adobe Commerceは、複数のデータベースまたは Redis を非同期で�
 
 クラウドインフラストラクチャストア上のAdobe Commerceにスレーブ接続機能を使用する場合に尋ねられうる一般的な質問を以下に示します。
 
-* スレーブ接続を使用する際の既知の問題や制限はありますか？ **スレーブ接続の使用に関する既知の問題はありません。 最新の ece-tools パッケージを使用していることを確認してください。 手順は [ece-tools パッケージの更新方法 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) で確認できます**。
+* スレーブ接続を使用する際の既知の問題や制限はありますか？ **スレーブ接続の使用に関する既知の問題はありません。 最新の ece-tools パッケージを使用していることを確認してください。 手順は [ece-tools パッケージの更新方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) で確認できます**。
 * スレーブ接続を使用して追加のレイテンシーはありますか？ *はい。クロス AZ （クロス可用性ゾーン）の待ち時間は、インスタンスが過負荷ではなく、負荷全体を処理できる場合に、クラウドインフラストラクチャインスタンス上のAdobe Commerceのパフォーマンスを低下させます。 ただし、インスタンスが過負荷の場合、マスタースレーブは異なるノードに MySQL データベースまたは Redis の負荷を分散させることで、パフォーマンスの向上に役立ちます。*
 
   **オーバーロードされていないクラスターで** - **スレーブ接続では、パフォーマンスが 10～15% 低下します**。これは、デフォルトではない理由の 1 つです。
@@ -82,9 +82,9 @@ Adobe Commerceは、複数のデータベースまたは Redis を非同期で�
 
 開発者向けドキュメントでは、
 
-* [ 変数をデプロイ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) します。
-* [ オプションのデータベースレプリケーションを設定します ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication)。
-* [ece-tools パッケージ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview)。
+* [&#x200B; 変数をデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) します。
+* [&#x200B; オプションのデータベースレプリケーションを設定します &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication)。
+* [ece-tools パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview)。
 
 >[!NOTE]
 >

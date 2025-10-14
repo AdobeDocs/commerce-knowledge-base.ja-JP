@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## 問題
 
@@ -42,4 +42,4 @@ Commerce Admin で検索エンジンを変更しようとすると、フィー�
 
 ## 関連資料
 
-* [Commerce管理者でのロック（グレー表示）されたフィールド ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26879) クラウドインフラストラクチャー上のCommerce ガイド。
+* [Commerce管理者でのロック（グレー表示）されたフィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26879) クラウドインフラストラクチャー上のCommerce ガイド。

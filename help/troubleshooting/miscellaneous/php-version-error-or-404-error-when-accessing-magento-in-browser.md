@@ -29,7 +29,7 @@ Adobe Commerce ストアフロントまたはCommerce Admin にアクセスし�
 
 次の操作を試してください。
 
-* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements) を参照してください。
+* PHP をバージョン 7.3 にアップグレードします。詳しくは、開発者向けドキュメントの [Adobe Commerce 2.3 テクノロジースタックの要件 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements) を参照してください。
 * Apache を再起動します。ファイルシステムと同じ PHP バージョンを使用していない可能性があるからです。 Apache を再起動するには、次のコマンドを使用します。
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`

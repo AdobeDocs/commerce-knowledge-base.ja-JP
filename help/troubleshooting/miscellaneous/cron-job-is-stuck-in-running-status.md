@@ -37,7 +37,7 @@ ht-degree: 0%
 
 この問題を解決するには、`cron:unlock` コマンドを使用して [!DNL cron] ジョブをリセットする必要があります。 このコマンドは、データベース内の [!DNL cron] ジョブのステータスを変更し、ジョブを強制的に終了して、他のスケジュールされたジョブを続行できるようにします。
 
-1. ターミナルを開き、[SSH キー ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections) を使用して、影響を受ける環境に接続します。
+1. ターミナルを開き、[SSH キー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections) を使用して、影響を受ける環境に接続します。
 1. MySQL データベース資格情報を取得します。    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
 1. `mysql` を使用してデータベースに接続します。    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
 1. `main` データベースを選択します。    ```shell    use main    ```
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 単一の [!DNL cron] を停止するソリューション {#solution-stop-a-single-cron}
 
-1. ターミナルを開き、[SSH キー ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections) を使用して、影響を受ける環境に接続します。
+1. ターミナルを開き、[SSH キー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections) を使用して、影響を受ける環境に接続します。
 1. 次のコマンドを使用して、長時間実行されているタスクを確認します。
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```

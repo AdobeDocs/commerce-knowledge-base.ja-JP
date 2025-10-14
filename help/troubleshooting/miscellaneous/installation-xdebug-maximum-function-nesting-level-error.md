@@ -27,4 +27,4 @@ Adobe Commerceのインストール中に、次のようなメッセージが表
 
 `xdebug` には既知の問題があり、Adobe Commerceのインストールに影響を与えたり、インストール後にストアフロントまたはCommerce管理者にアクセスしたりする可能性があります。
 
-詳しくは、サポートナレッジベースの [xdebug の既知の問題 ](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md) を参照してください。
+詳しくは、サポートナレッジベースの [xdebug の既知の問題 &#x200B;](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md) を参照してください。
