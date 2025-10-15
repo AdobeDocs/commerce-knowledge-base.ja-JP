@@ -103,4 +103,4 @@ Adobe Commerce サポートナレッジベースは、Adobe Commerce サポー�
 
 * Adobeのセキュリティ センター（セキュリティ更新プログラムおよびパッチ）: [https://www.adobe.com/trust/resources.html](https://www.adobe.com/trust/resources.html)
 * Adobe Commerce コミュニティ開発者向けブログ （チュートリアル、ベストプラクティス、コミュニティの技術ニュース）: [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
-* Adobe Commerce ブログ （e コマースの概要）:[https://business.adobe.com/blog/](https://business.adobe.com/blog/)
+* Adobe Commerce ブログ （e コマースの概要）:[https://business.adobe.com/jp/blog/](https://business.adobe.com/jp/blog/)
