@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ## P1 インシデント定義
 
-[Adobe Commerce サポートサービス利用規約に定義されているとおり ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf):「P1 インシデントとは、サービス内の致命的な実稼動上のインシデントで、お客様のサイトに重大な影響を与え、サイトの運用や注文の受理を停止したり、お客様のサイトが完全にダウンしているか機能していない、または実稼動データが失われ、回避策が存在しないなどの原因になります。 P1 インシデントは、迅速に解決するために、Adobeのフリーダイヤル P1 電話番号に報告する必要があります。 Adobeは継続的な取り組みを行い、シニアマネジメントに対して適切なエスカレーションを行い、商業的に合理的な範囲で、できるだけ早く P1 インシデントの解決を提供します。」
+[Adobe Commerce サポートサービス利用規約に定義されているとおり &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf):「P1 インシデントとは、サービス内の致命的な実稼動上のインシデントで、お客様のサイトに重大な影響を与え、サイトの運用や注文の受理を停止したり、お客様のサイトが完全にダウンしているか機能していない、または実稼動データが失われ、回避策が存在しないなどの原因になります。 P1 インシデントは、迅速に解決するために、Adobeのフリーダイヤル P1 電話番号に報告する必要があります。 Adobeは継続的な取り組みを行い、シニアマネジメントに対して適切なエスカレーションを行い、商業的に合理的な範囲で、できるだけ早く P1 インシデントの解決を提供します。」
 
 ## P1 通知ホットラインの電話ポリシー
 
 * P1 通知ホットラインは、P1 レベルの問題を報告するために使用できます（前の節の P1 インシデントの定義を参照）。
-* Adobe Commerce P1 通知ホットラインを呼び出す前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) します。
+* Adobe Commerce P1 通知ホットラインを呼び出す前に、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) します。
 * 調査、トラブルシューティング、通信は、サポートチケット内でのみ行われます。
 * 問い合わせの前に、問題に関する追加情報をすべてチケットに直接追加します。
 * お電話の際は、必ずチケット番号をお持ちください。
