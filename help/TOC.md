@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 3f0eb749d5f704af3584178187fa0907b9c81d83
+source-git-commit: 9c17f1a10303f91ac95813171191983471d345a1
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2778'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 0%
    * データベース {#database}
       * [処理に時間のかかるクエリの確認と MySQL の処理](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [データベースのアップロードにより MySQL への接続が失われる](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [クラウドインフラストラクチャー上のAdobe Commerceにおける MySQL の高負荷ボトルネック](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL サーバーが廃止されました&#x200B; クラウド上のAdobe Commerceのエラー](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [Adobe Commerceのデータベースストレージに関するトラブルシューティング](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Adobe Commerceの max_allowed_packet に関連するデータベースエラー](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
@@ -247,7 +246,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
