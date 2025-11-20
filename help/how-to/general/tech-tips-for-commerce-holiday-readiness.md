@@ -16,7 +16,7 @@ ht-degree: 0%
 
 添付の PDF には、高トラフィックに対するインフラストラクチャの準備、ダウンタイムの防止、休日期間中のパフォーマンスの最適化を行う方法に関するヒントが記載されています。
 
-ピークシーズンに向けて組織、インフラストラクチャ、チームを準備する際のクロスソリューションガイダンスについて詳しくは、[Adobe DX ソリューション統合ホリデー対応ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/unified-holiday-readiness) を参照してください。
+ピークシーズンに向けて組織、インフラストラクチャ、チームを準備する際のクロスソリューションガイダンスについて詳しくは、[Adobe DX ソリューション統合ホリデー対応ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/data-sheets/unified-holiday-readiness) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
