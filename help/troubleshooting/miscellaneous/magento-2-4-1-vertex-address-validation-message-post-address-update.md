@@ -4,9 +4,9 @@ description: ここでは、請求先住所と異なる配送先住所を使用�
 exl-id: c2abeb96-e837-4d16-92dd-82fea5661dd9
 feature: Shipping/Delivery
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: ce377064efabaf09d3856da7c6c5c742a9fdcc2f
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,6 @@ ht-degree: 0%
 
 ## 問題
 
-前提条件：
-
-**頂点アドレス クレンジング** を有効にします。 手順については、ユーザーガイドの [&#x200B; ストアフロントアドレスクレンジングの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=ja) を参照してください。
 
 <u> 再現手順：</u>
 
@@ -37,7 +34,7 @@ ht-degree: 0%
 
 <u> 最初のシナリオ：</u>
 
-[&#x200B; 上記の 6 つの手順 &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) に従い、次の手順を実行します。
+[ 上記の 6 つの手順 ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) に従い、次の手順を実行します。
 
 1. 新しい有効な請求先住所を入力してください。
 1. 「**更新** ボタンをクリックします。 次のようなメッセージ/提案が表示されます。*アドレスが無効です。* このメールの後に、次のようなアドレス候補が表示されます。*郵便番号：XXXXX- XXXX 通り：XXX 市区町村 XXX*
@@ -56,7 +53,7 @@ ht-degree: 0%
 
 <u>2 番目のシナリオ：</u>
 
-[&#x200B; 上記の 6 つの手順 &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) に従い、次の手順を実行します。
+[ 上記の 6 つの手順 ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) に従い、次の手順を実行します。
 
 1. 住所フォームに有効な住所を入力します。
 1. 「**更新** ボタンをクリックします。 次のようなメッセージ/提案が表示されます。*アドレスが無効です。* このメールの後に、次のようなアドレス候補が表示されます。*郵便番号：XXXXX-XXXX 通り：XXX 市区町村 XXX*

@@ -4,9 +4,9 @@ description: この記事では、特定のAdobe Commerce キャッシュタイ�
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: bd6aa238ff8273c60a4cf5160fb614de6ff00d21
+source-git-commit: d9985fecdafa63882f8411b32e296cc47583c93d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
+1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
 
    ```bash
    php bin/magento cache:status
@@ -41,18 +41,17 @@ ht-degree: 0%
 1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にする必要があります。 サードパーティの拡張機能では、Adobe Commerceのキャッシュを無効にする必要はありません。
 1. 調査により、一部のキャッシュタイプが誤って無効になっていることが確認された場合は、各キャッシュタイプに対して次のコマンドを実行して、それらを有効にします。`php bin/magento cache:enable <your_disabled_cache_type>`
 
-特定のAdobe Commerce キャッシュタイプを無効にできるか無効にすべきかとの懸念や質問がある場合は、[Adobe Commerce サポートにお問い合わせ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、レコメンデーションを求めてください。
+特定のAdobe Commerce キャッシュタイプを無効にできるか無効にすべきかとの懸念や質問がある場合は、[Adobe Commerce サポートにお問い合わせ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)、レコメンデーションを求めてください。
 
 ## 関連資料
 
 開発者向けドキュメントのAdobe Commerce キャッシュのドキュメント：
 
-* [Adobe Commerce キャッシュの概要 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [&#x200B; キャッシュの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Adobe Commerce キャッシュの概要 ](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
+* [ キャッシュの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 パフォーマンスの問題が発生するその他の理由と解決策：
 
-* [&#x200B; サイトのパフォーマンスを向上させるには、Adobe Commerce バナーの出力を無効にします &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [MySQL テーブルが大きすぎます &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [ サイトのパフォーマンスを向上させるには、Adobe Commerce バナーの出力を無効にします ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [MySQL テーブルが大きすぎます ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [パフォーマンスが遅く、動作が遅く、長時間実行されるクローン](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
-* [管理者アクセスが制限され、パフォーマンスの問題が発生する](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)

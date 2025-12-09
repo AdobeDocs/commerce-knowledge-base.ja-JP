@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 3a482f7e5ddc872ddaf9634da8ca4f41a3b46ab4
+source-git-commit: 96ec7b44bd913c5976f0a8e3ce8355f7686622ad
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2736'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,6 @@ ht-degree: 0%
       * [Extension ManagerにAdobe Commerce 2.3.x の拡張機能が表示されない](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
       * [Commerce Admin にログインしようとすると、ログインリダイレクトが発生する](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [暗号化キーに関する問題の解決](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
-      * [「アップデーターアプリケーションを使用できません」エラーが発生する](/help/troubleshooting/miscellaneous/updater-application-is-not-available-error.md)
       * [PWA Studio:Adobe Commerceに対する Venia GraphQL クエリで検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
       * [Inventory managementのインストール後に、在庫ステータスが正しくない](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Adobe Commerce 2.3.5 の既知の問題：バーチャル製品の複数出荷注文](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
@@ -133,7 +132,6 @@ ht-degree: 0%
       * [データ移行ツールのトラブルシューティング](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [コンポーネントの依存関係の準備チェックの問題](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [クラウドインフラストラクチャ UI 上のAdobe Commerceにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
-      * [頂点アドレスのクレンジング：異なるアドレスは許可されていません](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md)
       * [カテゴリへの変更が保存されない](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
       * [Adobe Commerce 2.4.0 の既知の問題 – 輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Adobe Commerce用 Magento Order Management System （OMS）の処理エラー](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
@@ -157,7 +155,6 @@ ht-degree: 0%
       * [Adobe Commerce ソフトウェアを更新すると、git プルオリジンの開発が失敗します](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceでブロックを開始](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [PHP 設定エラー](/help/troubleshooting/miscellaneous/php-settings-errors.md)
-      * [Redis 問題により、Commerce管理者のログインまたはチェックアウトが遅れる](/help/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.md)
       * [PHP mcrypt 拡張モジュールが正しくインストールされていません](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Adobe Commerce 2.3.6、2.4.0-p1、2.4.1 既知の問題：dotdigital login](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Cron ジョブが「実行中」ステータスでスタックする](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
@@ -173,7 +170,6 @@ ht-degree: 0%
       * [MOM への手動オーダーのエクスポートが失敗する。 「書き出し順序」ボタンが HTTP 404 エラーを返す](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio：ブラウザーは生成された SSL 証明書を信頼しません](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [デフォルトの Varnish 設定を変更する必要があるために発生した 503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
-      * [管理者アクセスが制限され、パフォーマンスの問題が発生する](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Cron タスクは他のグループからタスクをロック](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [インストール xdebug maximum function nesting level エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [エンティティ Adobe Commerce バックエンドを保存できません](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
@@ -244,7 +240,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
