@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: ed116b8fddfb6f5e22c2da2fdad5d0d0d2b4a377
+source-git-commit: 3a482f7e5ddc872ddaf9634da8ca4f41a3b46ab4
 workflow-type: tm+mt
-source-wordcount: '2769'
+source-wordcount: '2763'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ ht-degree: 0%
       * [異なるドメインで管理者およびフロントからサイバーソースに対する支払いが処理されません](/help/troubleshooting/payments/cybersource-payment-from-admin-and-front-on-different-domains-not-processed.md)
       * [Adobe Commerce 2.4.0 既知の問題：Amazon pay、支払い方法なし](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
       * [Adobe Commerce 2.4.0：現地支払いの選択でチェックアウトエラーが発生する](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-      * [PayPal Payflow Pro アクティブなカード処理アクティビティ](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Adobe Commerceの PayPal トラブルシューティング](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0、2.4.1: Braintree Venmo 部分請求書の有効化](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
       * [Adobe Commerce 2.4.2 B2B：ディスカウントは引き続き支払い方法の変更](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
@@ -245,7 +244,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
