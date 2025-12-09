@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
+1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
 
    ```bash
    php bin/magento cache:status
@@ -48,10 +48,10 @@ ht-degree: 0%
 開発者向けドキュメントのAdobe Commerce キャッシュのドキュメント：
 
 * [Adobe Commerce キャッシュの概要 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [&#x200B; キャッシュの管理 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [&#x200B; キャッシュの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 パフォーマンスの問題が発生するその他の理由と解決策：
 
-* [&#x200B; サイトのパフォーマンスを向上させるには、Adobe Commerce バナーの出力を無効にします &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [MySQL テーブルが大きすぎます &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [&#x200B; サイトのパフォーマンスを向上させるには、Adobe Commerce バナーの出力を無効にします &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [MySQL テーブルが大きすぎます &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [パフォーマンスが遅く、動作が遅く、長時間実行されるクローン](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)

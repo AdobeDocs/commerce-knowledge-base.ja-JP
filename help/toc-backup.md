@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Realpath のキャッシュ・サイズのベスト・プラクティス](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Adobe Commerceでの CSS ファイルと JS ファイルの最適化](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * データベース {#database}
-      * [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+      * [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=ja)
       * [トリガー使用のベストプラクティス](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+      * [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)
       * [MySQL スレーブ接続用のクラウドインフラストラクチャー上のAdobe Commerceのベストプラクティス](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+      * [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
    * 一般 {#general}
       * [プライベートコンテンツブロック内の_isScopePrivate は、Adobe Commerceのパフォーマンスを低下させる](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceに関するトラブルシューティングのベストプラクティス](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [クラウドインフラストラクチャー上のAdobe Commerceにおける画像のベストプラクティス](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Adobe Commerceのベストプラクティス：管理者での重要なアクションの実行](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Adobe Commerceのベストプラクティス：を使用しない場合はレポートを無効にする](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [&#x200B; インデクサーの「スケジュールに従って更新」は、Adobe Commerceのパフォーマンスを最適化します &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+      * [&#x200B; インデクサーの「スケジュールに従って更新」は、Adobe Commerceのパフォーマンスを最適化します &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=ja)
       * [ベストプラクティス Adobe Commerce製品のバリエーション](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Adobe Commerceの注文パフォーマンスのベストプラクティス](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [Adobe Commerceのベストプラクティス：非同期注文処理を有効にする](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
