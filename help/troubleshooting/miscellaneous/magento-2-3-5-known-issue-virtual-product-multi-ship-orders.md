@@ -44,4 +44,4 @@ ht-degree: 0%
 
 開発者向けドキュメントでは、
 
-* [Adobe Commerce 2.3.5 リリースノート ](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Adobe Commerce 2.3.5 リリースノート &#x200B;](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
