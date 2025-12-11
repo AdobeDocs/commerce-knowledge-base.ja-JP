@@ -4,9 +4,9 @@ description: この記事では、完全なインデックス再作成（イン�
 exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
 feature: Best Practices
 role: Developer
-source-git-commit: 72ee49a8667f575a58e0cf1b3d5c9df936cc628b
+source-git-commit: 0786763a1db386fbea7f809eba9bc7f202cdd27a
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >これらのアクションを営業時間外に実行して、営業時間内のパフォーマンスに影響を与えないようにする必要があります。
 
-[&#x200B; サードパーティの拡張機能 &#x200B;](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) によって、完全なインデックス再作成が行われることもあります。 完全な再インデックスは、CLI から手動で実行することもできます。 インデックスが再作成され、パフォーマンスが低下する可能性があるかどうかを確認するには、次の手順を実行します。
+[ サードパーティの拡張機能 ](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) によって、完全なインデックス再作成が行われることもあります。 完全な再インデックスは、CLI から手動で実行することもできます。 インデックスが再作成され、パフォーマンスが低下する可能性があるかどうかを確認するには、次の手順を実行します。
 
 1. 次のクエリを実行して、過去 15 分間に完全に再インデックスされたインデクサーを検索します。
 
@@ -53,10 +53,10 @@ ht-degree: 0%
 
 ### 解決策
 
-必要な場合にのみ、インデックス再作成を実行します。 手順については、開発者向けドキュメントの [&#x200B; インデクサーの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を確認してください。 一般的な推奨事項とベストプラクティスは、部分的なインデックス再作成メカニズムによって、マーチャントによる手動アクションを必要とせずに、データのインデックス再作成を処理できるようにすることです。 すべてのインデックス再作成は、Adobe Commerceのネイティブ機能（Mview）を使用して行う必要があります。 Mview は、データのインデックスを再作成する最も効率的な方法である部分インデックス再作成を実行します。 Mview について詳しくは、開発者向けドキュメントの [&#x200B; インデックス作成の概要：Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) を参照してください。
+必要な場合にのみ、インデックス再作成を実行します。 手順については、開発者向けドキュメントの [ インデクサーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) を確認してください。 一般的な推奨事項とベストプラクティスは、部分的なインデックス再作成メカニズムによって、マーチャントによる手動アクションを必要とせずに、データのインデックス再作成を処理できるようにすることです。 すべてのインデックス再作成は、Adobe Commerceのネイティブ機能（Mview）を使用して行う必要があります。 Mview は、データのインデックスを再作成する最も効率的な方法である部分インデックス再作成を実行します。 Mview について詳しくは、開発者向けドキュメントの [ インデックス作成の概要：Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) を参照してください。
 
 ## 関連資料
 
-* [&#x200B; インデックス作成の概要：インデックス再作成方法 &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) については、開発者向けドキュメントを参照してください。
-* [&#x200B; 無効化されたキャッシュは、サポートナレッジベースで応答時間の低下を引き起こします &#x200B;](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)。
+* [ インデックス作成の概要：インデックス再作成方法 ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) については、開発者向けドキュメントを参照してください。
+
 
