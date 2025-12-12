@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
+source-git-commit: 898424645c2ef0435c1a75604a47b7d5713670d8
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,6 @@ ht-degree: 0%
       * [カスタム SSL 証明書の有効期限情報](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Adobe Commerceを使用する際の時間別Amazon E メールを無効にする](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
-      * [キャッシュが無効化されると、レスポンス・タイムが低下する](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
       * [Github トークンの問題と Composer の主要手順](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
       * [Adobe Commerce 2.4.1 の問題：ChromeでAmazon アカウントを変更できない](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ECE ツールとパッチアップデートエラーAdobe Commerce Cloud Infrastructure 2.2.x.、2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
@@ -202,7 +201,6 @@ ht-degree: 0%
       * [Experience Platformに顧客プロファイルが表示されない](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio：ブラウザーが.local.pwadev サイトを解決できない](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [ページビルダーに表示されない製品レコメンデーション](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
-      * [Adobe Commerce Fastly に関するトラブルシューティング](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
       * [スループットの高いAJAX リクエストが原因で、パフォーマンスが低下する](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [setup:static-content:deploy deployed_version.txt の実行の問題](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
@@ -234,7 +232,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
