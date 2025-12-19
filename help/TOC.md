@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9a2dadfbb5ca0a2c04d4e86454a1145b97924f61
+source-git-commit: 1374f09d481ffd79014d00952c734cf83504df6b
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2628'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,6 @@ ht-degree: 0%
       * [設定ファイルが見つからないか変更されている](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL エラー 60 : SSL 証明書の有効期限が切れました](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Adobe Commerceの Product Recommendations モジュールのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [Adobe Commerceの/tmp mount full のトラブルシューティング](/help/troubleshooting/miscellaneous/tmp-mount-full.md)
       * [不明なモジュール Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Cron 準備チェックの問題](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
       * [Redis サービスがクラッシュしました。](/help/troubleshooting/miscellaneous/redis-service-crashed.md)
@@ -103,7 +102,6 @@ ht-degree: 0%
       * [パフォーマンスの低下を避けるためにキャッシュを有効にする](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [ファイル権限の準備チェックの問題](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
-      * [Fastly キャッシングがクラウドインフラストラクチャのAdobe Commerceで機能しない](/help/troubleshooting/miscellaneous/fastly-caching-is-not-working-on-magento-cloud.md)
       * [Google e コマースの売上高の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
       * [Senseiの API キーを設定しましたが、SaaS データ領域が 1 つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [Fastly が有効になっているサブページにメインメニュー（カテゴリ）が表示されない](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
@@ -137,7 +135,6 @@ ht-degree: 0%
       * [共有アクセスのトラブルシューティング](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [パフォーマンスが遅く、動作が遅く、長時間実行されるクローン](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
       * [Fastly 資格情報の検証中にエラーが発生する](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
-      * [CSV の読み込み後、新しい顧客がカスタマーグリッドに表示されない](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [セキュリティスキャンツールレポートが空白になる](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-p1：誤った値を含む請求書メモ](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [最新のAdobe Commerce プレリリースにアクセスできません](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
@@ -230,7 +227,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
