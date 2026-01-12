@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 557cfbab3dd2c612255c177848d9faf98024a04b
+source-git-commit: fd5d542ca580060c3f0b3ad28024365a43758cfb
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2597'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -249,7 +249,6 @@ ht-degree: 0%
    * [Adobe Commerce サポートチケットのライフサイクルポリシーの更新](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * ハウツー {#how-to}
    * [ハウツーの概要](/help/how-to/overview.md)
-   * [Adobe Commerce P1 通知ホットライン](/help/how-to/general/adobe-commerce-p1-notification-hotline.md)
    * [サポート通知にチームメンバーを含める方法](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [セキュリティパッチの入手と適用方法](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [新規設定のチェックリスト  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
@@ -296,7 +295,6 @@ ht-degree: 0%
    * [Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロックする](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [GitHub コミットからAdobe Commerce Composer インストール用のパッチを作成する](/help/how-to/general/create-a-patch-for-a-magento-2-composer-installation-from-a-github-commit.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで管理者パスワードを変更](/help/how-to/general/change-magento-admin-password-on-cloud.md)
-   * [クラウドインフラストラクチャー上で一時的なAdobe Commerceのアップサイズをリクエストする方法](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Adobe Commerce上のクラスターの環境 vCPU 層の表示](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [クラウドインフラストラクチャー上のAdobe Commerce: ホストのCPU設定を確認します。](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
    * [クラウド上のAdobe Commerce：認証キーを変更して再デプロイ](/help/how-to/general/redeploy-with-another-key.md)
