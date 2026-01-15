@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: fd5d542ca580060c3f0b3ad28024365a43758cfb
+source-git-commit: f729183422f29ce4485f640e66e65a1eeb0c4525
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,6 @@ ht-degree: 0%
       * [一般的な PHP の致命的なエラーと解決策](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Adobe Commerceで Composer の更新に失敗します：互換性のない引数タイプです](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
       * [Adobe Commerce 2.4.2 B2B：メールテンプレートでメールが更新されない](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
-      * [MOM への手動オーダーのエクスポートが失敗する。 「書き出し順序」ボタンが HTTP 404 エラーを返す](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio：ブラウザーは生成された SSL 証明書を信頼しません](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [デフォルトの Varnish 設定を変更する必要があるために発生した 503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Cron タスクは他のグループからタスクをロック](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
@@ -226,7 +225,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
