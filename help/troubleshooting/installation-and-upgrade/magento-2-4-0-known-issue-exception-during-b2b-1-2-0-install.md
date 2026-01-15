@@ -4,9 +4,9 @@ description: この記事では、B2B 1.2.0 のインストール時に「setup:
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 60f68b9edabd13a69e84705b85d84fd10ee6e2be
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -65,18 +65,15 @@ Module 'Magento_PurchaseOrder':
 
 <u>Composer パッチ </u>
 
-Composer パッチの手順については、[Adobeが提供する Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+Composer パッチの手順については、[Adobeが提供する Composer パッチの適用方法 ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
 
 <u>Git パッチ </u>
 
-* クラウドインフラストラクチャー上のAdobe Commerceに対する Git パッチの手順については、開発者向けドキュメントの [&#x200B; パッチを適用する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
-* Adobe Commerceの Git パッチ手順については、開発者向けドキュメントの [&#x200B; パッチの適用：カスタムパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) を参照してください。
+* クラウドインフラストラクチャー上のAdobe Commerceに対する Git パッチの手順については、開発者向けドキュメントの [ パッチを適用する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
+* Adobe Commerceの Git パッチ手順については、開発者向けドキュメントの [ パッチの適用：カスタムパッチ ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) を参照してください。
 
 ## 関連資料
 
-* [Adobe Commerce 2.4.0 の既知の問題：輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 * [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Adobe Commerce 2.4.0 既知の問題：チェックアウト時に一部の国でローカル支払い方法を選択中にエラーメッセージが表示される](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
 * [Adobe Commerce 2.4.0 B2B 管理者が、設定可能な商品を見積もりに追加できない](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
-* [Adobe Commerce 2.4.0 の既知の問題 – 顧客のアクティビティの更新が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Adobe Commerce 2.4.0 の既知の問題：「買い物かごに選択項目を追加」ボタンが機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

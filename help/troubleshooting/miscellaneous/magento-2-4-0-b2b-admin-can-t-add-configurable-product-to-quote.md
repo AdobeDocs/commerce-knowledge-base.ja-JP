@@ -4,9 +4,9 @@ description: この記事では、B2B Quote を管理する際に、**SKU**で�
 exl-id: 73f7231b-b496-4250-b9e2-29427c772d56
 feature: Admin Workspace, B2B, Catalog Management, Configuration, Products, Quotes
 role: Developer
-source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,4 @@ ht-degree: 0%
 ## 推奨事項
 
 現在、B2B の見積もりの編集に関するこの問題には回避策はありませんが、注文と買い物かごの管理については、**SKU** で追加する代わりに、**製品リスト** から製品を選択することができます。 この問題を解決するパッチは、2020 年 Q4 のリリースが予定されているAdobe Commerce 2.4.1 で使用できます。
-
-## 関連資料
-
-* [Adobe Commerce 2.4.0 の既知の問題：顧客のアクティビティの更新が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Adobe Commerce 2.4.0 既知の問題：輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 

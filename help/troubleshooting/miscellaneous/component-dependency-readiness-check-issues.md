@@ -4,9 +4,9 @@ description: この記事では、コンポーネントの依存関係の競合�
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,6 @@ We found conflicting component dependencies.
 >
 >表示されるメッセージは異なる可能性があります。
 
-サポートナレッジベースで [&#x200B; ソリューションに対するコンポーネントの依存関係の競合 &#x200B;](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) を参照してください。
-
 ## ファイルシステム権限の問題 {#trouble-depend-permission}
 
 Adobe Commerce ファイルシステムの所有者がAdobe Commerce ファイルシステム上のディレクトリに書き込む権限を持っていない場合は、次のようなメッセージが表示されます。
@@ -51,7 +49,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-アドビの開発者ドキュメントの記事 [&#x200B; 所有権と権限の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) の説明に従って、ファイルシステムの権限を設定してください。
+アドビの開発者ドキュメントの記事 [ 所有権と権限の概要 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) の説明に従って、ファイルシステムの権限を設定してください。
 
 ## コンポーネントの依存関係チェックのステータスは変更されません {#trouble-depend-state}
 

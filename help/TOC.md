@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 466435b0f73d1fb26ce492c0063104b1dd932e2d
+source-git-commit: 881fdb528850471fcf34dbdf94c7980fff0f248b
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,6 @@ ht-degree: 0%
       * [Redis サービスがクラッシュしました。](/help/troubleshooting/miscellaneous/redis-service-crashed.md)
       * [SQL クエリ：コストエラーの説明](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
       * [Adobe Commerce 2.4.0 B2B 管理者が、設定可能な商品を見積もりに追加できない](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
-      * [Adobe Commerce 2.3.6：アドレス保存時に表示されるエンドレススピナー](/help/troubleshooting/miscellaneous/magento-2-3-6-endless-spinner-displayed-on-address-save.md)
       * [クラウドインフラストラクチャー上のAdobe CommerceのNew Relicのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
       * [パフォーマンスの低下を避けるためにキャッシュを有効にする](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
@@ -124,7 +123,6 @@ ht-degree: 0%
       * [コンポーネントの依存関係の準備チェックの問題](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [クラウドインフラストラクチャ UI 上のAdobe Commerceにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
       * [カテゴリへの変更が保存されない](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
-      * [Adobe Commerce 2.4.0 の既知の問題 – 輸出税率が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Adobe Commerce用 Magento Order Management System （OMS）の処理エラー](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
       * [キャッシュされたイメージが 2.2.X から 2.3.X へのアップグレード後にロードされない](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [サイトをセキュリティ スキャンに追加するときに表示されるエラーメッセージ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
@@ -146,37 +144,24 @@ ht-degree: 0%
       * [PHP mcrypt 拡張モジュールが正しくインストールされていません](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Adobe Commerce 2.3.6、2.4.0-p1、2.4.1 既知の問題：dotdigital login](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Cron ジョブが「実行中」ステータスでスタックする](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
-      * [デプロイ後に、env.php で.magento.env.yaml の変更が表示されない](/help/troubleshooting/miscellaneous/magento-env-yaml-changes-not-shown-in-env-php-after-deploy.md)
-      * [モジュールを無効にした後の問題](/help/troubleshooting/miscellaneous/issues-after-disabling-a-module.md)
       * [非正規表現のオフロードにより、Nginx （ルート）ではなく Fastly にリダイレクトされる](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
-      * [Adobe Commerce 2.4.0 の既知の問題：「新規注文を作成」ボタンが表示されない](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
       * [Adobe Commerceの高度なレポートのトラブルシューティング](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [一般的な PHP の致命的なエラーと解決策](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
-      * [Adobe Commerceで Composer の更新に失敗します：互換性のない引数タイプです](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
       * [Adobe Commerce 2.4.2 B2B：メールテンプレートでメールが更新されない](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [PWA Studio：ブラウザーは生成された SSL 証明書を信頼しません](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [デフォルトの Varnish 設定を変更する必要があるために発生した 503 エラーのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Cron タスクは他のグループからタスクをロック](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [インストール xdebug maximum function nesting level エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
-      * [ブラウザーでAdobe Commerceにアクセスする際に PHP バージョンエラーまたは 404 エラーが発生する](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
-      * [バンドルオプションの順序が読み込みで更新されない](/help/troubleshooting/miscellaneous/bundle-options-order-is-not-updated-by-import.md)
-      * [Adobe Commerce 2.4.0:「買い物かごに選択項目を追加」が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
       * [MBI：データの不一致](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
       * [pub メディアディレクトリで実行されないカスタムサーバーサイドスクリプト](/help/troubleshooting/miscellaneous/custom-server-side-scripts-not-executed-in-pub-media-directory.md)
-      * [PHP バージョン準備チェックの問題](/help/troubleshooting/miscellaneous/php-version-readiness-check-issues.md)
       * [クラウドサイトが遅い](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
       * [カスタム SSL 証明書の有効期限情報](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Adobe Commerceを使用する際の時間別Amazon E メールを無効にする](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [Github トークンの問題と Composer の主要手順](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
-      * [Adobe Commerce 2.4.1 の問題：ChromeでAmazon アカウントを変更できない](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
-      * [ECE ツールとパッチアップデートエラーAdobe Commerce Cloud Infrastructure 2.2.x.、2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
       * [PWA Studio: コンパイルを開始する前に Webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
-      * [Adobe Commerce Redis の問題を修正するための最新のパッチをインストールします。](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
       * [無効なオフセットエラーを解決します](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [プログラムで作成した場合に、製品ステータスが不正確になる](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Fastly エラー：プラグイン VCL のバージョンが古くなっています。 再アップロードしてください](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md)
-      * [Adobe Commerce 2.4.0：顧客のアクティビティの更新が機能しない](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
       * [クラウド上のAdobe Commerceの var/export フォルダー権限の問題](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [スケジュールされたコンテンツステージングの更新が、古い Fastly キャッシュで表示されない](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Cron のトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
@@ -199,12 +184,10 @@ ht-degree: 0%
       * [Adobe Commerce Intelligence アカウントのロックアウトのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
       * [xdebug のインストールに影響する既知の問題](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [Adobe Commerce サポートまたは Cloud アカウントにログインできない](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-      * [コンポーネントの依存関係が競合しています](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
       * [Adobe Commerce Intelligence サービスポリシー](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Git からプッシュされると、新しい環境が実稼動環境に配置される](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Commerce管理者にログイン後にエラーが発生する](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Adobe Commerce用 Magento Order Management System （OMS）のタイムアウト](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
-      * [Commerce Admin でのキャッシュのパージ中のエラー](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1:dotdigital ページビルダーフォームを保存した際に、ページが空になる](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce クラウド：再インデックスは強制終了メッセージで終了します](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
       * [Adobe Commerce ステータス列に、書き出された製品の CSV ファイルが見つからない](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)
@@ -222,7 +205,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
