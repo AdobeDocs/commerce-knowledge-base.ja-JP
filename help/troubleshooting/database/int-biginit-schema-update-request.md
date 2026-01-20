@@ -56,7 +56,7 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 
 >[!WARNING]
 >
->テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [&#x200B; メンテナンスモード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
+>テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [&#x200B; メンテナンスモード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 
 ## 関連資料
 
-* Commerce インスト [&#x200B; ルガイドの  [!DNL MySQL]  一般的なガイドライン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) に関するサポートナレッジベース
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce インスト [&#x200B; ルガイドの  [!DNL MySQL]  一般的なガイドライン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=ja) に関するサポートナレッジベース
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=ja) については、サポートナレッジベースを参照してください
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
