@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >この記事（スキーマの更新に `INT` る）のソリューションを実装す `BIGINT` 前に、マーチャントは、変更しようとしているフィールドに別のテーブルへの外部キー関係がないことを常に確認する必要があります。 フィールドに別のテーブルへの外部キー関係がある場合、関連するフィールドがまだ `INT` しいため、問題が発生します。 次のクエリを使用して、これを検証できます。 このクエリは、指定されたテーブル フィールドに対してデータベースで使用できる外部キー関係を一覧表示します。
 >
-```mysql
+>```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 この記事では、価格の変更、製品の削除や複製など、製品の更新を保存できない場合のソリューションを説明します。
 「在庫項目を保存できませんでした *というエラーメッセージが表示される場合があります。 もう一度やり直してください。* 製品を更新した後、デプロイに失敗する場合があります。 [!DNL MySQL] を実行すると、次の `php bin/magento setup:upgrade` エラーメッセージが表示される場合もあります（クラウドインフラストラクチャ上のAdobe Commerceでは、このエラーがデプロイメントログに表示されます）。
@@ -50,13 +50,13 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 
 ターミナルで次のコマンドを実行して、プライマリキーの最大値を確認します。`SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-`max(value_id)` が `max int(11) [ 4294967296 ]` よりも小さく、`[ AUTO_INCREMENT ]` の値が `max int(11) [ 4294967296 ]` 以上の場合は、[ テーブルの次の値に `[ AUTO_INCREMENT ]` を更新する ](#update-the-auto-increment-to-the-next-value-from-the-table) ことを検討してください。 それ以外の場合は、スキーマの更新 [`INT` の `BIGINT` を検討します ](#int_to_bigint_schema_update)。
+`max(value_id)` が `max int(11) [ 4294967296 ]` よりも小さく、`[ AUTO_INCREMENT ]` の値が `max int(11) [ 4294967296 ]` 以上の場合は、[&#x200B; テーブルの次の値に `[ AUTO_INCREMENT ]` を更新する &#x200B;](#update-the-auto-increment-to-the-next-value-from-the-table) ことを検討してください。 それ以外の場合は、スキーマの更新 [`INT` の `BIGINT` を検討します &#x200B;](#int_to_bigint_schema_update)。
 
 ## `AUTO_INCREMENT` をテーブルの次の値に更新します {#update-the-auto-increment-to-the-next-value-from-the-table}
 
 >[!WARNING]
 >
->テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [ メンテナンスモード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
+>テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [&#x200B; メンテナンスモード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 
 ## 関連資料
 
-* Commerce インスト [ ルガイドの  [!DNL MySQL]  一般的なガイドライン ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
-* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) に関するサポートナレッジベース
-* [ クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください
-* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce インスト [&#x200B; ルガイドの  [!DNL MySQL]  一般的なガイドライン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) に関するサポートナレッジベース
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) については、サポートナレッジベースを参照してください
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
