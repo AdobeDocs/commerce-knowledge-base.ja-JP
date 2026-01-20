@@ -4,20 +4,20 @@ description: この記事では、「cron.log」ファイルに「*SQL server ha
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
 # MySQL サーバーが廃止されました&#x200B; クラウド上のAdobe Commerceのエラー
 
-この記事では、`cron.log` ファイルに「*SQL server has been away*」というエラーメッセージが表示される問題の解決策について説明します。 画像ファイルの読み込みの問題やデプロイメントの失敗など、様々な症状が発生することがあります。
+この記事では、*ファイルに「* SQL server has been away`cron.log`」というエラーメッセージが表示される問題の解決策について説明します。 画像ファイルの読み込みの問題やデプロイメントの失敗など、様々な症状が発生することがあります。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## 問題
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 <u> 実際の結果 </u>
 
-`cron.log` のエラーメッセージ :&quot; *SQLSTATE\[HY000\] \[2006\] MySQL サーバーがat/app/AAAAAAAAA/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php:144&quot;* を終了しました
+`cron.log` :&quot; *SQLSTATE\[HY000\] \[2006\] MySQL サーバーがat/app/AAAAAAAAA/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php:144&quot;を終了しました*
 
 ## 原因：
 
@@ -47,6 +47,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [データベースのアップロードにより MySQL への接続が失われる](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)
+* [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [ クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
