@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: 2118d569e032293f0609becaf10ba4e903ae4b5d
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2400'
 ht-degree: 0%
 
 ---
@@ -204,7 +204,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -223,7 +223,6 @@ ht-degree: 0%
       * [ElasticSuite トラッキングインデックスが原因でElasticsearchで問題が発生する](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
 * ヘルプセンターガイド {#help-center-guide}
    * [Adobe CommerceのExperience League サポートユーザーガイド](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
-   * [Adobe Commerce サポートチケットのライフサイクルポリシーの更新](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * ハウツー {#how-to}
    * [ハウツーの概要](/help/how-to/overview.md)
    * [サポート通知にチームメンバーを含める方法](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
