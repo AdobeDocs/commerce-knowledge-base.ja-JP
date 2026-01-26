@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 2118d569e032293f0609becaf10ba4e903ae4b5d
+source-git-commit: e73894751543dcd1197cc0d20cfac61c44b3ecaa
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2395'
 ht-degree: 0%
 
 ---
@@ -204,7 +204,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -311,7 +311,6 @@ ht-degree: 0%
    * [Adobe Commerceでお客様が使用できるクーポンはいくつですか？](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
    * [サポートチケットの連絡理由の説明](/help/faq/general/support-ticket-contact-reason-descriptions.md)
    * [クラウドインフラストラクチャサンドボックスリクエストでのAdobe Commerceのパートナー](/help/faq/general/partner-magento-commerce-cloud-sandbox-requests.md)
-   * [Google ショッピング広告チャネルに関する FAQ](/help/faq/general/google-shopping-ads-channel-faqs.md)
    * [Adobe Commerce GDPR リソース](/help/faq/general/magento-gdpr-resources.md)
    * [共有カタログ価格に影響する基本価格の変更](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md)
    * [Adobe Commerceの管理パネルでの 2 要素認証に関するよくある質問](/help/faq/general/two-factor-authentication-in-admin-panel-on-magento-faq.md)
