@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: d9985fecdafa63882f8411b32e296cc47583c93d
+source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
 workflow-type: tm+mt
-source-wordcount: '9207'
+source-wordcount: '9208'
 ht-degree: 0%
 
 ---
@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Realpath のキャッシュ・サイズのベスト・プラクティス](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Adobe Commerceでの CSS ファイルと JS ファイルの最適化](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * データベース {#database}
-      * [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=ja)
+      * [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
       * [トリガー使用のベストプラクティス](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)
+      * [ クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題 ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
       * [MySQL スレーブ接続用のクラウドインフラストラクチャー上のAdobe Commerceのベストプラクティス](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
+      * [ クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
    * 一般 {#general}
       * [プライベートコンテンツブロック内の_isScopePrivate は、Adobe Commerceのパフォーマンスを低下させる](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceに関するトラブルシューティングのベストプラクティス](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [クラウドインフラストラクチャー上のAdobe Commerceにおける画像のベストプラクティス](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Adobe Commerceのベストプラクティス：管理者での重要なアクションの実行](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Adobe Commerceのベストプラクティス：を使用しない場合はレポートを無効にする](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [&#x200B; インデクサーの「スケジュールに従って更新」は、Adobe Commerceのパフォーマンスを最適化します &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=ja)
+      * [ インデクサーの「スケジュールに従って更新」は、Adobe Commerceのパフォーマンスを最適化します ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
       * [ベストプラクティス Adobe Commerce製品のバリエーション](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Adobe Commerceの注文パフォーマンスのベストプラクティス](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [Adobe Commerceのベストプラクティス：非同期注文処理を有効にする](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
@@ -471,7 +471,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2-p1：誤った値を含む請求書メモ](/help/troubleshooting/general/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [最新のAdobe Commerce プレリリースにアクセスできません](/help/troubleshooting/general/cannot-access-the-latest-magento-commerce-pre-release.md)
       * [管理者パスワードがアクションログにプレーンテキストとして保存される](/help/troubleshooting/general/admin-passwords-saved-as-plain-text-to-actions-log.md)
-      * [を実行中にエラーが発生しました &#x200B;](/help/troubleshooting/general/error-running-the-setup-di-compile-command-manually.md)
+      * [を実行中にエラーが発生しました ](/help/troubleshooting/general/error-running-the-setup-di-compile-command-manually.md)
       * [インデックスは別のプロセスによってロックされています](/help/troubleshooting/general/index-is-locked-by-another-process.md)
       * [データの相違の診断](/help/troubleshooting/general/diagnosing-a-data-discrepancy.md)
       * [配置エラー：SQLSTATE[HY000]](/help/troubleshooting/general/deployment-error-sql-hy000.md)
@@ -855,7 +855,7 @@ ht-degree: 0%
    * [ファイル権限の準備チェックの問題](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
    * [Fastly キャッシングがクラウドインフラストラクチャのAdobe Commerceで機能しない](/help/troubleshooting/miscellaneous/fastly-caching-is-not-working-on-magento-cloud.md)
    * [Google e コマースの売上高の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-   * [Senseiの API キーを設定しましたが、SaaS データ領域が 1 つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+   * [Adobe AI 用に API キーを設定しましたが、1 つの SaaS データ領域しか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
    * [Fastly が有効になっているサブページにメインメニュー（カテゴリ）が表示されない](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
    * [ファイルストレージが少なく、特定のページの読み込みが遅い](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
    * [インデックス再作成が完全なのでパフォーマンスが低下する](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
@@ -902,12 +902,12 @@ ht-degree: 0%
    * [Adobe Commerce 2.4.2-p1：誤った値を含む請求書メモ](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
    * [最新のAdobe Commerce プレリリースにアクセスできません](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
    * [管理者パスワードがアクションログにプレーンテキストとして保存される](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
-   * [を実行中にエラーが発生しました &#x200B;](/help/troubleshooting/miscellaneous/error-running-the-setup-di-compile-command-manually.md)
+   * [を実行中にエラーが発生しました ](/help/troubleshooting/miscellaneous/error-running-the-setup-di-compile-command-manually.md)
    * [インデックスは別のプロセスによってロックされています](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
    * [データの相違の診断](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
    * [管理者 2FA のメール通知を受信できない](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
    * [「現在のセッションの有効期限が切れました」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-   * [Redis のシリアル化解除エラー &#x200B;](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
+   * [Redis のシリアル化解除エラー ](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
    * [メンテナンスモードになっているが、顧客が使用できるサイト](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
    * [Adobe Commerce ソフトウェアを更新すると、git プルオリジンの開発が失敗します](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceでブロックを開始](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -976,7 +976,7 @@ ht-degree: 0%
    * [Adobe Commerce Fastly に関するトラブルシューティング](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
    * [スループットの高いAJAX リクエストが原因で、パフォーマンスが低下する](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
    * [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
-   * [実行 &#x200B;](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed_version.txt-issue.md)
+   * [実行 ](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed_version.txt-issue.md)
    * [1 回限りのクーポンが複数回使用されている、Adobe Commerce](/help/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.md)
    * [「アカウントが一時的に無効になっています」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
    * [デプロイ後にGoogle Analyticsが無効になる](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
@@ -992,7 +992,7 @@ ht-degree: 0%
    * [Commerce Admin でのキャッシュのパージ中のエラー](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
    * [Adobe Commerceで SendGrid クレジットを超えてもメールが送信されない](/help/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded.md)
    * [Adobe Commerce 2.4.1:dotdigital ページビルダーフォームを保存した際に、ページが空になる](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
-   * [Adobe Commerce cloud：再インデックスはで終了します。 &#x200B;](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
+   * [Adobe Commerce cloud：再インデックスはで終了します。 ](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
    * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
    * [配置に失敗しました：MDVA-43395 パッチを適用できません](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
    * [早期アルファ版ベラーモジュールを有効にした場合のデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
@@ -1025,7 +1025,7 @@ ht-degree: 0%
    * [ACSD-45754：クーポンを買い物かごに適用した後、報酬ポイントが追加されない](/help/support-tools/patches-available-in-qpt-tool/acsd-45754-reward-points-not-added-after-applying-coupon-to-the-cart.md)
    * [MDVA-43605:Rest API を使用している場合、注文データが行の合計に対して負の値を返す](/help/support-tools/patches-available-in-qpt-tool/mdva-43605-order-data-returns-negative-values-for-row-totals-when-using-rest-api.md)
    * [ACSD-45424：一部払い戻し後に作成された予約報酬が正しくありません](/help/support-tools/patches-available-in-qpt-tool/acsd-45424-incorrect-reservation-compensation-created-after-partial-refund.md)
-   * [MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/mdva-44188-emails-are-not-sent.md)
+   * [MDVA-44188: ``を含む ID にメールが送信されない。-&quot;](/help/support-tools/patches-available-in-qpt-tool/mdva-44188-emails-are-not-sent.md)
    * [ACSD-46213：カテゴリツリーリクエストが 20 カテゴリに制限されています](/help/support-tools/patches-available-in-qpt-tool/acsd-46213-category-tree-limited-20-categories.md)
    * [MDVA-38559: /V1/customers/search API はエラーを返します](/help/support-tools/patches-available-in-qpt-tool/mdva-38559-v1-customers-search-api-error.md)
    * [MDVA-44940：管理者からカテゴリを保存中に SQL エラーが発生しました](/help/support-tools/patches-available-in-qpt-tool/mdva-44940-sql-error-while-saving-category-from-admin.md)
