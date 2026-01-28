@@ -1,12 +1,12 @@
 ---
-title: 'Adobe Commerce 2.3.6、2.4.0-p1、2.4.1 既知の問題：dotdigital login'
+title: Adobe Commerce 2.3.6、2.4.0-p1、2.4.1 既知の問題：dotdigital login
 description: ここでは、dotdigital アカウントが有効な場合に、管理パネルから [dotdigital] （https://dotdigital.com/）にログインできないAdobe Commerce 2.3.6、2.4.0-p1、および 2.4.1 の既知の問題について説明します。
 exl-id: 427d895c-8c03-4ced-813a-eeaa67f1d1f0
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 38b4d310cab9dccad142c244f6e07f8421a9894d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,3 @@ dotdigital にログインできません。
 ## 解決策
 
 回避策：この特定の状況では、Safari の代替ブラウザーを使用します。
-
-## 関連資料
-
-[Adobe Commerce 2.4.1 既知の問題 – Vertex アドレスが別の配送先/請求先アドレスで検証されない問題 &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) アドビのサポートナレッジベースにあります。
