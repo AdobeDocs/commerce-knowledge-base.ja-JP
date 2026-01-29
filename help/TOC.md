@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 12e17359c84e3a71425fce1b378cb57ed7fca86d
+source-git-commit: 7f7e26f07e921577b1dd7686f5dace396888aa60
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,6 @@ ht-degree: 0%
       * [PWA Studio: コンパイルを開始する前に Webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [無効なオフセットエラーを解決します](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [プログラムで作成した場合に、製品ステータスが不正確になる](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [クラウド上のAdobe Commerceの var/export フォルダー権限の問題](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [スケジュールされたコンテンツステージングの更新が、古い Fastly キャッシュで表示されない](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Cron のトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [書き出された製品の.csv ファイルが表示されない](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
@@ -201,7 +200,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -302,7 +301,6 @@ ht-degree: 0%
    * [Magento.comと accounts.magento.cloud アカウントのログインにリンクします](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [Fastly オリジンクローク有効化に関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Cloud pro アーキテクチャで、データベース auto_increment increment 変数を「3」Adobe Commerceに設定する](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
-   * [Adobe Commerce on cloud pro インフラストラクチャのファクトシートの監視](/help/faq/general/monitoring-whitepaper.md)
    * [New Relic サービスへのアクセス](/help/faq/general/access-new-relic-services.md)
    * [Adobe Commerceの web コンテンツアクセシビリティ](/help/faq/general/accessibility.md)
    * [Adobe Commerceでお客様が使用できるクーポンはいくつですか？](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
@@ -315,5 +313,4 @@ ht-degree: 0%
    * [クラウド上のバックアップ（スナップショット）：よくある質問](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [2024 年および 2023 年Adobe Commerce リリース戦略およびライフサイクルポリシーに関する FAQ](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [Adobe Commerce ソフトウェアのサポート終了に関する FAQ](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [ヘッドレス Adobe Commerce サイトには Fastly は必要ですか？](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)
