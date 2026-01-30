@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 49dd77f7cb185d771f5f1db823692ede72748634
+source-git-commit: 85d91886a6656b28da91fb3aa40016a800ecd53f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,6 @@ ht-degree: 0%
       * [暗号化キーに関する問題の解決](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
       * [PWA Studio:Adobe Commerceに対する Venia GraphQL クエリで検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
       * [Inventory managementのインストール後に、在庫ステータスが正しくない](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
-      * [Adobe Commerce 2.3.5 の既知の問題：バーチャル製品の複数出荷注文](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [データ書き出しの使用による不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
       * [データ移行ツールのトラブルシューティング](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [コンポーネントの依存関係の準備チェックの問題](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
@@ -200,7 +199,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
