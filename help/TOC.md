@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 038d6e68093742a0ef7d6bd76996f416559ba5c0
+source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -189,14 +189,13 @@ ht-degree: 0%
       * [Adobe Commerce クラウドプロジェクトにユーザーを追加できない](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Cron が設定の誤りや欠落によって停止する  [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [[!DNL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
-      * [既存のクラウドスタータープロジェクトのAdobe Commerce Intelligence接続の設定](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] がライブサーチウィジェットによって壊される](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
       * [サードパーティのセキュリティスキャンで見つかった脆弱性は、 [!DNL HackerOne] の場所に移動する必要があります。](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
       * [2.4.2 から 2.4.5-p3 へのアップグレード後に何千もの検索結果を取得する](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
