@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
+source-git-commit: 538514ebb9a262af74aa1304ea7d70aefcf08dbe
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ ht-degree: 0%
       * [データの相違の診断](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [管理者 2FA のメール通知を受信できない](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [「現在のセッションの有効期限が切れました」というエラーが表示されたCommerce管理者ログインフォームにリダイレクトし直します](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Redis のシリアル化解除エラー setup:static-content:deploy](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
       * [メンテナンスモードになっているが、顧客が使用できるサイト](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
       * [Adobe Commerce ソフトウェアを更新すると、git プルオリジンの開発が失敗します](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceでブロックを開始](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -156,7 +155,6 @@ ht-degree: 0%
       * [無効なオフセットエラーを解決します](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [プログラムで作成した場合に、製品ステータスが不正確になる](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [スケジュールされたコンテンツステージングの更新が、古い Fastly キャッシュで表示されない](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
-      * [Cron のトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [書き出された製品の.csv ファイルが表示されない](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
       * [Cloud UI に「ログのスニペット」エラーがあるかどうかをデプロイメントログで確認しています](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Composer の変更によりダウンロードが失敗する](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
@@ -195,7 +193,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
