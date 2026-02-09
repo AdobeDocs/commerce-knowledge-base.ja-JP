@@ -4,7 +4,7 @@ description: 'この記事では、「setup_deploy」コマンドを手動で実
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # deployed_version.txt 問題 `setup:static-content:deploy` 実行
 
-この記事では、`setup:static-content:deploy` コマンドを手動で実行した際に `deployed_version.txt` 書き込み不可エラーが発生した場合の対処法を示します。
+この記事では、`deployed_version.txt` コマンドを手動で実行した際に `setup:static-content:deploy` 書き込み不可エラーが発生した場合の対処法を示します。
 
 ## 問題
 
-Adobe Commerce on cloud infrastructure の推奨事項に従って [Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) を使用する（および、デプロイメント中に web サイトのダウンタイムを減らすために静的アセットの生成をビルドステージに移行する）場合、`setup:static-content:deploy` コマンドを手動で実行すると、次のエラーが発生する可能性があります。
+Adobe Commerce on cloud infrastructure の推奨事項に従って Configuration Management を使用する（および、デプロイメント中に web サイトのダウンタイムを減らすために静的アセットの生成をビルドステージに移行する）場合、`setup:static-content:deploy` コマンドを手動で実行すると、次のエラーが発生する可能性があります。
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy

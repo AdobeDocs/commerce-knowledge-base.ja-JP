@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 943a85cb94073190654ae8abd7315f3014c40170
+source-git-commit: ceea083458aef5f8d0fcabef66399046d0d2016b
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2234'
 ht-degree: 0%
 
 ---
@@ -191,7 +191,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -220,8 +220,6 @@ ht-degree: 0%
    * [Adobe Commerce Intelligence トレーニングビデオ：SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
    * [初回購入のみの割引を提供（クーポンなし）](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [クラウドスナップショットを使用しない環境のロールバック](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
-   * [スタータープランのログの場所（ディレクトリ）](/help/how-to/general/log-locations-directories-for-starter-plan.md)
-   * [クラウドインフラストラクチャ上のAdobe Commerceでのデプロイメントのダウンタイムを短縮](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md)
    * [Adobe Commerceへの新しい国の追加方法](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Commerce Admin でのデザイン設定のカスタマイズ](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [クラウド上の統合環境のディスク容量を増やす](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
