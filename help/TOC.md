@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: c6d036ff57ede5dbdb031f00f099e00c811d7b0a
+source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -223,7 +223,6 @@ ht-degree: 0%
    * [クラウドインフラストラクチャー上のAdobe Commerce:CPUの割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [REST API を使用した共有カタログ価格の更新](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md)
-   * [データとファイルを実稼動環境からステージング環境またはステージング環境から統合環境に同期](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
    * [クラウドインフラストラクチャ環境のAdobe Commerceで CLI を使用してディスク容量を確認する](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [クラウドインフラストラクチャ cron ジョブでスタックしたAdobe Commerceを手動でリセット](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [実稼働サイトで同じドメインを使用している場合は、実稼動環境で Fastly をテストします](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
