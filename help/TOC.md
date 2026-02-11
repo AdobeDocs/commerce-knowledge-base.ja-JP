@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
+source-git-commit: 0e5465d2d3ef177f8d42f791f4652fc9139695fb
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -230,7 +230,6 @@ ht-degree: 0%
    * [クラウドインフラストラクチャー上でのAdobe Commerceの停止の特定と測定](/help/how-to/general/how-to-identify-outages.md)
    * [Cloud 上のNew Relicのアカウントオーナーの変更](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceの管理者 URL の変更](/help/how-to/general/change-magento-admin-url-on-cloud.md)
-   * [Cloud でElasticsearchを有効にする](/help/how-to/general/enable-elasticsearch-on-cloud.md)
    * [PWA Studioを使用できるように NPM を設定する](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md)
    * [Adobe Commerce上のクラウドのブランチの並べ替え](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Adobe Commerce製品ドキュメントの検索方法](/help/how-to/general/how-to-find-magento-product-documentation.md)
