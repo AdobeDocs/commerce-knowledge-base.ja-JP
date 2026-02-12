@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 6ad8716b066a89fd60d5c9300607889f891e5e3f
+source-git-commit: 9d80bfb801d55c25627e92e9777699c14056e2dd
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2140'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -211,7 +211,6 @@ ht-degree: 0%
    * [Adobe CommerceのExperience League サポートユーザーガイド](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
 * ハウツー {#how-to}
    * [ハウツーの概要](/help/how-to/overview.md)
-   * [サポート通知にチームメンバーを含める方法](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [セキュリティパッチの入手と適用方法](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [新規設定のチェックリスト  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [ステージング環境または実稼動環境から DB スナップショットを復元](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
@@ -219,7 +218,6 @@ ht-degree: 0%
    * [クラウドスナップショットを使用しない環境のロールバック](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [クラウドインフラストラクチャー上のAdobe Commerce:CPUの割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md)
-   * [クラウドインフラストラクチャ環境のAdobe Commerceで CLI を使用してディスク容量を確認する](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [クラウドインフラストラクチャ cron ジョブでスタックしたAdobe Commerceを手動でリセット](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [実稼働サイトで同じドメインを使用している場合は、実稼動環境で Fastly をテストします](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [クラウドでのデプロイメントのダウンタイムを短縮する静的コンテンツデプロイメントオプション](/help/how-to/general/static-content-deployment-options-to-reduce-deployment-downtime-on-cloud.md)
