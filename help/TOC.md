@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 0e5465d2d3ef177f8d42f791f4652fc9139695fb
+source-git-commit: 888089e960017477364b3b3dae7e9cc5c69892ba
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ ht-degree: 0%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -219,7 +219,6 @@ ht-degree: 0%
    * [クラウドスナップショットを使用しない環境のロールバック](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Adobe Commerceへの新しい国の追加方法](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Commerce Admin でのデザイン設定のカスタマイズ](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
-   * [クラウド上の統合環境のディスク容量を増やす](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
    * [クラウドインフラストラクチャー上のAdobe Commerce:CPUの割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [REST API を使用した共有カタログ価格の更新](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md)
