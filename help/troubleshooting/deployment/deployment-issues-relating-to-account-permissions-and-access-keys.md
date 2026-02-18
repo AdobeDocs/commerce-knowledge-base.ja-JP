@@ -4,9 +4,9 @@ description: この記事では、アクセスキー所有権の競合が原因�
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ### アクセスキーを無効にする方法
 
-古いキーに関連付けられた [Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポートにお問い合わせ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してキーを無効にしてください。
+古いキーに関連付けられた [Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポートにお問い合わせ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してキーを無効にしてください。
 
 古いキーに関連付けられた Marketplace アカウントにアクセスできる場合は、次の手順を実行してキーを無効にします。
 
-1. 古いアカウントの資格情報を使用して [&#128279;](https://marketplace.magento.com/) Commerce Marketplaceにログインします。
+1. 古いアカウントの資格情報を使用して [Commerce Marketplace} にログインします。](https://marketplace.magento.com/)
 1. ページの右上にあるアカウント名をクリックし、「**マイプロファイル**」を選択します。
 1. 「Marketplace」タブの **アクセスキー** をクリックします。
 
@@ -64,4 +64,4 @@ ht-degree: 0%
 
 ## 関連資料
 
-* [&#x200B; 認証キーの取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) については、開発者向けドキュメントを参照してください。
+* [ 認証キーの取得 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) については、開発者向けドキュメントを参照してください。

@@ -4,9 +4,9 @@ description: この記事では、PayPal、特に PayFlow Pro ソリューショ
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -41,14 +41,14 @@ PayPal の支払い方法に請求契約と参照トランザクションを含�
 
 以下の記事を参照してください。
 
-* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838) アドビのサポートナレッジベースにあります。
-* サポートナレッジベースの [&#x200B; 新しいストアエンティティの増分 ID を変更 &#x200B;](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) します。
+* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) アドビのサポートナレッジベースにあります。
+* サポートナレッジベースの [ 新しいストアエンティティの増分 ID を変更 ](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) します。
 
 ## 高度な支払いログを収集するには、サポートにお問い合わせください
 
 複雑な支払いの問題をトラブルシューティングするために、Adobe Commerce サポートチームから、高度な支払いログを有効にする専用パッチを適用するよう依頼される場合があります。 この場合、手順は次のようになります。
 
-次の詳細を記載した [&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) します。
+次の詳細を記載した [ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) します。
 
 * 問題をできるだけ多くの詳細で指定します。
 * この記事、ナレッジベース、その他のリソースから試した手順をリストします。 すべての結果を含める。
@@ -57,5 +57,5 @@ PayPal の支払い方法に請求契約と参照トランザクションを含�
 「高度な支払ログ」パッチを受け取った場合：
 
 * パッチを適用します。
-* ログを収集し、それらを [&#x200B; サポートチケット &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) に添付します。
+* ログを収集し、それらを [ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) に添付します。
 * Adobe Commerce サポートチームからの追加の推奨事項が表示されるまで待ちます。

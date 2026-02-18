@@ -1,12 +1,12 @@
 ---
-title: 「[!DNL Cron] 件のタスクで他のグループのタスクがロックされる」
+title: '[!DNL Cron] タスクは他のグループからタスクをロックします'
 description: この記事では、特定の長時間実行ジョブが他のジョブをブロックすることに関連した、クラウドインフラストラクチャー上のAdobe Commerceの問題  [!DNL cron]  対するソリューショ  [!DNL cron]  を説明します。
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,8 @@ Adobe Commerce for cloud では、複雑な [!DNL cron] タスク（長時間実
 
 ## 解決策
 
-1. 自己管理サー [!DNL crons] スを有効にするには、[Adobe Commerce サポート &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) にお問い合わせください。
-1. [!DNL Git] ブランチのAdobe Commerce コードのルートディレクトリにある `.magento.app.yaml` ファイルを開きます。 以下を追加します。
+1. 自己管理サー [ スを有効にするには、](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)Adobe Commerce サポート [!DNL crons] にお問い合わせください。
+1. `.magento.app.yaml` ブランチのAdobe Commerce コードのルートディレクトリにある [!DNL Git] ファイルを開きます。 以下を追加します。
 
    ```yaml
      crons:
@@ -50,7 +50,7 @@ Adobe Commerce for cloud では、複雑な [!DNL cron] タスク（長時間実
 
 >[!NOTE]
 >
->複数の `cron:run` が存在する古い [!DNL cron] 設定を新しい [!DNL cron] スケジュールに転送する必要はありません。前述のように追加された通常の `cron:run` タスクで十分です。 ただし、カスタムジョブがある場合は、転送する必要があります。
+>複数の [!DNL cron] が存在する古い `cron:run` 設定を新しい [!DNL cron] スケジュールに転送する必要はありません。前述のように追加された通常の `cron:run` タスクで十分です。 ただし、カスタムジョブがある場合は、転送する必要があります。
 
 ### 自己管理 [!DNL cron] が有効になっているかどうかを確認します（Cloud Pro ステージングおよび実稼動環境の場合のみ）。
 
@@ -71,5 +71,5 @@ Adobe Commerce for cloud では、複雑な [!DNL cron] タスク（長時間実
 
 ## 関連資料
 
-* 開発者向けドキュメントの [&#x200B; 設定  [!DNL cron]  ジョブ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 開発者向けドキュメントの [ 設定  [!DNL cron]  ジョブ ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -4,9 +4,9 @@ description: この記事では、資格情報の検証時にユーザーがエ�
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 838f0c5d55c29d026dc37a8f7e5214b9880a4353
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 解決策
 
-1. 正しい [!DNL Fastly] サービス ID と API トークンがあることを確認して、もう一度検証してみてください。 詳しい手順については、開発者向けドキュメントの [&#x200B; 資格情報  [!DNL Fastly]  テスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) を参照してください。
+1. 正しい [!DNL Fastly] サービス ID と API トークンがあることを確認して、もう一度検証してみてください。 詳しい手順については、開発者向けドキュメントの [ 資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) を参照してください。
 1. 資格情報の検証に失敗した場合は、次の curl コマンドを実行して、サービスのステータスを確認します。
 
    ```curl
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 上記のコマンドで `{"msg":"Token $TOKEN expired at 2021-09-28T02:03:37Z"}` のようなエラーが返された場合は、サポートチケットを送信して新しい API トークンをリクエストします。 新しいトークンを受信したら、環境の設定を更新します。
 
-   サポートチケットの送信方法については、サポートナレッジベースの [Adobe Commerce ヘルプセンターユーザーガイド/サポートチケット &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) を参照してください。
+   サポートチケットの送信方法については、サポートナレッジベースの [Adobe Commerce ヘルプセンターユーザーガイド/サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-tickets) を参照してください。
 
    >[!NOTE]
    >
@@ -50,6 +50,6 @@ ht-degree: 0%
 
 ## 開発者向けドキュメントの関連する読み値：
 
-* [Cloud for Adobe Commerce > [!DNL Fastly] > [!DNL Fastly]  サービスアカウントと資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
+* [Cloud for Adobe Commerce > [!DNL Fastly] > [!DNL Fastly]  サービスアカウントと資格情報 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce/設定  [!DNL Fastly] /資格情報  [!DNL Fastly]  テスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce/設定  [!DNL Fastly] /資格情報  [!DNL Fastly]  テスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)

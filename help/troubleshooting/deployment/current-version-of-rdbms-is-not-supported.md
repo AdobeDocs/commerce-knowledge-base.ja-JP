@@ -1,12 +1,12 @@
 ---
 title: デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー
-description: 「この記事では、デプロイメントが失敗し、デプロイログに「現在のバージョンの RDBMS はサポートされていません」というエラーが表示される場合の解決策を説明します。」
+description: この記事では、デプロイメントが失敗し、デプロイログに「現在のバージョンの RDBMS はサポートされていません」というエラーが記録されている場合の解決策を説明します。
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ ht-degree: 0%
 アプリケーションをアップグレードする前に、MariaDB サービスを互換性のあるバージョンにアップグレードする必要があります。
 
 
-クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの統合ブランチ（およびスターターアーキテクチャのすべてのブランチ）については、開発者向けドキュメントの [&#x200B; サービスを設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) に従ってください。
+クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの統合ブランチ（およびスターターアーキテクチャのすべてのブランチ）については、開発者向けドキュメントの [ サービスを設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) に従ってください。
 
-Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのステージングと実稼働については、Adobe Commerce バージョンのアップグレードをデプロイする前に [&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してサービスのアップグレードをリクエストしてください。
+Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのステージングと実稼働については、Adobe Commerce バージョンのアップグレードをデプロイする前に [ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してサービスのアップグレードをリクエストしてください。
 
 
 ## 関連資料
 
-* 開発者向けドキュメントの [&#x200B; ビルドとデプロイメントのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)。
-* [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト化 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=ja) サポート情報ベースで行います。
+* 開発者向けドキュメントの [ ビルドとデプロイメントのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)。
+* [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト化 ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) サポート情報ベースで行います。

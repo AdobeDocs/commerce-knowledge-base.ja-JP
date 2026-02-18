@@ -4,9 +4,9 @@ description: この記事では、New Relicを使用して、クラウドイン�
 exl-id: 0a22beb7-18b0-47eb-a6b8-63b7322b392c
 feature: Observability
 role: Developer
-source-git-commit: 27fed162416c619a08d757279a3405f1fa72e976
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 <li>下にスクロールし、「すべてのトランザクションテーブルを表示」をクリックします。</li>
 <li>トランザクションを <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view"> 様々なパラメーター </a> で並べ替えて、疑わしいトランザクションにジャンプさせることができます。</li>
 <li>Apdex スコアが低い、カウントが異常に多い、平均時間が長い、またはディスサット % が高いトランザクションを確認します。</li>
-<li>個々のトランザクションをクリックします。 この問題が解決できない場合は、<a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket"> サポートチケットを送信 </a> してください。
+<li>個々のトランザクションをクリックします。 この問題が解決できない場合は、<a href="https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket"> サポートチケットを送信 </a> してください。
 </li>
 <li>さらに調査する必要がある場合は、web 以外のトランザクションの確認を検討します。</li>
 </ol>
@@ -60,7 +60,7 @@ ht-degree: 0%
 </ol>
 </td>
 <td>
-<p>New Relic Apdex スコアについて詳しくは、<a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic ドキュメント/APM Apdex/ユーザー満足度の測定 </a> を参照してください。 サポートナレッジベースの <a href="https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Managed alerts for Adobe Commerce: Apdex warning alert</a> も参照してください。</p>
+<p>New Relic Apdex スコアについて詳しくは、<a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic ドキュメント/APM Apdex/ユーザー満足度の測定 </a> を参照してください。 サポートナレッジベースの <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Managed alerts for Adobe Commerce: Apdex warning alert</a> も参照してください。</p>
 </td>
 </tr>
 <tr>

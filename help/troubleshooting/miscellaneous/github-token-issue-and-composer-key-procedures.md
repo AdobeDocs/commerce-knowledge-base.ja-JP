@@ -4,7 +4,7 @@ description: この記事では、古い Composer キーが原因で発生した
 exl-id: 202cb936-f9ba-49ea-bf0a-6e6994d2337a
 feature: Identity Management
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Composer バージョン 1.10.20 以前
 
 >[!NOTE]
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 デプロイメントが失敗し、デプロイメントログに次のような情報が含まれている場合：
 
-*致命的なエラー：見つからなかった予期しない ValueException: github.comの github OAuth トークンに無効な文字：「ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx」が/app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129 に含まれています*
+*致命的なエラー：見つからなかった予期しない ValueException: github.com/app/vendor/composer/composer/src/Composer/IO/BaseIO.phpの github OAuth トークンに無効な文字：「ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx」が含まれている:129*
 
 ## 原因：
 
@@ -42,9 +42,9 @@ Composer キーが古いと、Github トークンでエラーが発生し、デ�
 1. これにより、その Composer パッケージ バージョンの要件が追加されます。 ロックファイルを確認します。`composer/composer` のバージョンは 1.0.22 以降である必要があります。
 1. `composer.json` および `composer.lock` をコミットし、デプロイメントをプッシュします。
 
-この方法が機能しない場合は、[&#x200B; サポートチケットを送信 &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) してください。
+この方法が機能しない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してください。
 
 ## 関連資料
 
-* [Github ブログ：GitHub の新しい認証トークン形式の背後 &#x200B;](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上 &#x200B;](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [Github ブログ：GitHub の新しい認証トークン形式の背後 ](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
+* [InfoQ.com ニュース記事：GitHub でトークン形式が変更され、識別性、秘密鍵スキャンおよびエントロピーが向上 ](https://www.infoq.com/news/2021/04/github-new-token-format/)
