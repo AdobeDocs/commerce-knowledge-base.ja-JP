@@ -45,12 +45,12 @@ ht-degree: 0%
 アプリケーションをアップグレードする前に、MariaDB サービスを互換性のあるバージョンにアップグレードする必要があります。
 
 
-クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの統合ブランチ（およびスターターアーキテクチャのすべてのブランチ）については、開発者向けドキュメントの [&#x200B; サービスを設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) に従ってください。
+クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの統合ブランチ（およびスターターアーキテクチャのすべてのブランチ）については、開発者向けドキュメントの [&#x200B; サービスを設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) に従ってください。
 
-Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのステージングと実稼働については、Adobe Commerce バージョンのアップグレードをデプロイする前に [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してサービスのアップグレードをリクエストしてください。
+Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのステージングと実稼働については、Adobe Commerce バージョンのアップグレードをデプロイする前に [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してサービスのアップグレードをリクエストしてください。
 
 
 ## 関連資料
 
-* 開発者向けドキュメントの [&#x200B; ビルドとデプロイメントのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)。
-* [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト化 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) サポート情報ベースで行います。
+* 開発者向けドキュメントの [&#x200B; ビルドとデプロイメントのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)。
+* [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト化 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=ja) サポート情報ベースで行います。

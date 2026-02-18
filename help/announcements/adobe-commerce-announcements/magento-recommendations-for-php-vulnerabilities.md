@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->クラウドインフラストラクチャー上のAdobe Commerceの場合、インフラストラクチャチームに 48 営業時間前に通知しない限り、実稼動環境にサービスアップグレードをプッシュすることはできません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)48 時間前に、必要なサービスアップグレードの詳細と、アップグレードプロセスを開始する時刻を指定します。
+>クラウドインフラストラクチャー上のAdobe Commerceの場合、インフラストラクチャチームに 48 営業時間前に通知しない限り、実稼動環境にサービスアップグレードをプッシュすることはできません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。 そのため、変更を実稼動環境で行う必要がある [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)48 時間前に、必要なサービスアップグレードの詳細と、アップグレードプロセスを開始する時刻を指定します。
 
 Adobe Commerce サイトの影響と手順については、以下を参照してください。
 
@@ -28,7 +28,7 @@ Adobe Commerce サイトの影響と手順については、以下を参照し�
 この更新用にクラウドサイトを再デプロイする際の追加メモ：
 
 * サイトで PHP バージョン 7.0 を使用している場合、これらのセキュリティアップデートを利用するには、再デプロイする前にサポートされている PHP バージョンにアップグレードする必要があります。
-* 2.1.x/2.2.x の場合、PHP のアップグレードに関する詳細は [&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) を参照してください。
+* 2.1.x/2.2.x の場合、PHP のアップグレードに関する詳細は [&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja) を参照してください。
 
 \* *この記事の以前のバージョンとメッセージングは 9 月 19 日（PT）に発表されましたが、チームは予定より早く作業を完了しました。*
 

@@ -29,7 +29,7 @@ Pro プランアーキテクチャの場合、ステージング専用環境と�
 ドメインを [!DNL Fastly] のサービスに追加するには：
 
 1. ドメインを DNS でprod.magentocloud.map.fastly.netに指定し、最大 6 時間待ちます。
-1. [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) このドメインを Nginx 設定に追加するようにリクエストします（まだ行っていない場合）。
+1. [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) このドメインを Nginx 設定に追加するようにリクエストします（まだ行っていない場合）。
 
 ## 証明書をリクエストするにはどうすればよいですか？
 
@@ -47,10 +47,10 @@ Adobeが提供する [&#x200B; 証明書を暗号化しましょう &#x200B;](ht
 
 ただし、このプロセスでは、の設定と保守に追加の作業が必要です。 まず、web サイトのドメイン名（または共通名）の証明書署名要求（CSR）を生成し、SSL ベンダーに提供して SSL 証明書を提供する必要があります。
 
-SSL 証明書を取得したら、[Adobe Commerce サポートチケットを送信するか &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)CTAを使用してカスタムのホスト型証明書をクラウド環境に追加します。
+SSL 証明書を取得したら、[Adobe Commerce サポートチケットを送信するか &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)CTAを使用してカスタムのホスト型証明書をクラウド環境に追加します。
 
 * 使用されなくなったドメインは、システムから自動的にパージされ、それ以上のアクションは必要ありません。
-* 既に証明書を所有している場合は、SFTP （SSH ファイル転送プロトコル）クライアントを使用してサーバー上の Web でアクセスできないファイルの場所にアップロードし、ファイルパスを知らせます [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+* 既に証明書を所有している場合は、SFTP （SSH ファイル転送プロトコル）クライアントを使用してサーバー上の Web でアクセスできないファイルの場所にアップロードし、ファイルパスを知らせます [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 >[!WARNING]
 >
@@ -67,7 +67,7 @@ SSL 証明書の名前は、プライマリ URL に関してのみ重要です�
 
 ## ワイルドカード TLS 証明書を使用できますか？
 
-ワイルドカード TLS 証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt 証明書では使用できません。 TLS 最適化の一環として、Adobeではワイルドカード TLS 証明書のサポートを終了します。 Adobeの Let’s Encrypt 証明書でワイルドカード証明書を使用し、Adobe Commerceの [!DNL Fastly] コンソールで設定されているマーチャントを特定して連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えてください。 ワイルドカード TLS 証明書を置き換えるには、[&#x200B; プラグインの &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) ドメインセクション [!DNL Fastly] にアクセスしてください。 ここから、正確なドメインを追加したり、ワイルドカードを削除したりできます。 これらの新しいドメインが CDN を経由してルーティングされるようにするには、DNS が [!DNL Fastly] を指している必要があることに注意してください。 ドメインを追加し、DNS が更新されると、一致する [&#x200B; 暗号化しましょう &#x200B;](https://letsencrypt.org/) 証明書がプロビジョニングされます。 ワイルドカードを使用して [!DNL Fastly] を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 URL FQDN が設定されておらず、DNS に同じ URL FQDN が設定されている場合は、サイトが停止する可能性があります。 したがって、設定された URL が、[!DNL Fastly] を指す DNS で 1 対 1 の一致も持つことを確認する必要があります。
+ワイルドカード TLS 証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt 証明書では使用できません。 TLS 最適化の一環として、Adobeではワイルドカード TLS 証明書のサポートを終了します。 Adobeの Let’s Encrypt 証明書でワイルドカード証明書を使用し、Adobe Commerceの [!DNL Fastly] コンソールで設定されているマーチャントを特定して連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えてください。 ワイルドカード TLS 証明書を置き換えるには、[&#x200B; プラグインの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) ドメインセクション [!DNL Fastly] にアクセスしてください。 ここから、正確なドメインを追加したり、ワイルドカードを削除したりできます。 これらの新しいドメインが CDN を経由してルーティングされるようにするには、DNS が [!DNL Fastly] を指している必要があることに注意してください。 ドメインを追加し、DNS が更新されると、一致する [&#x200B; 暗号化しましょう &#x200B;](https://letsencrypt.org/) 証明書がプロビジョニングされます。 ワイルドカードを使用して [!DNL Fastly] を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 URL FQDN が設定されておらず、DNS に同じ URL FQDN が設定されている場合は、サイトが停止する可能性があります。 したがって、設定された URL が、[!DNL Fastly] を指す DNS で 1 対 1 の一致も持つことを確認する必要があります。
 
 ## ドメインがAdobe Commerceを指さなくなった場合はどうすればよいですか？
 
@@ -75,4 +75,4 @@ SSL 証明書の名前は、プライマリ URL に関してのみ重要です�
 
 ## 関連資料
 
-開発者向けドキュメントの [SSL/TLS 証明書のプロビジョニング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
+開発者向けドキュメントの [SSL/TLS 証明書のプロビジョニング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)

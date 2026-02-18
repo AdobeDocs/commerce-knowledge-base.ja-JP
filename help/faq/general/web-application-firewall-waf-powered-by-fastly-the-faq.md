@@ -104,7 +104,7 @@ Adobe CommerceのWAF製品には、PCI 要件の一部としてOWASP Top-10 の�
 
 ## お客様は、IP ブラックリストを作成および変更してトラフィックをブロックすることはできますか。
 
-はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューのHTMLをアップロードして、カスタムエラーページを作成できます。 開発者向けドキュメントの [&#x200B; カスタムエラー/メンテナンスページの作成 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) を参照してください。
+はい。お客様は、クラウドインフラストラクチャの管理 UI 上のAdobe Commerceから、国およびアクセス制御リスト（ACL）別のブロックを有効にすることができます。 これらの機能は、特定の国または特定の IP または IP 範囲からの訪問者に対するアクセスをブロックする場合に使用します。 ブロックされた訪問者にエラーコードではなくカスタムページを表示したい場合は、Fastly 設定メニューのHTMLをアップロードして、カスタムエラーページを作成できます。 開発者向けドキュメントの [&#x200B; カスタムエラー/メンテナンスページの作成 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja) を参照してください。
 
 ## WAF サービスの運用ステータスはどこで確認できますか？
 
@@ -118,7 +118,7 @@ WAF サービスの全体的な可用性は、[Fastly ステータスページ &
 
 Adobe Commerceにはセキュリティオペレーションセンターがありませんが、適切な人材を採用してセキュリティインシデントにリアルタイムで対応できるセキュリティオペレーションプロセスを用意しています。 2035 年 7 月 24 日のサポートも提供しています。
 
-また、Adobe Commerce関連のセキュリティニュースや最新情報を [&#x200B; セキュリティセンター &#x200B;](https://helpx.adobe.com/security.html) から取得することもできます。
+また、Adobe Commerce関連のセキュリティニュースや最新情報を [&#x200B; セキュリティセンター &#x200B;](https://helpx.adobe.com/jp/security.html) から取得することもできます。
 
 ## どのようなサポートがありますか？
 
@@ -132,7 +132,7 @@ WAF サポートでは、不要なリクエストや悪意のあるリクエス�
 
 ## WAFが正当なトラフィックをブロックしている場合や、その他の問題を引き起こしている場合は、どうすればよいですか？
 
-[2&rbrace;Adobe Commerce ヘルプセンター &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) で [&#x200B; サポートチケットを送信 &rbrace; します。 &#x200B;](https://support.magento.com)チケットがWAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
+[2&rbrace;Adobe Commerce ヘルプセンター &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) で [&#x200B; サポートチケットを送信 &rbrace; します。 &#x200B;](https://support.magento.com)チケットがWAF サービスに関連することを示し、ブロックされたリクエスト識別子（ID）を含めてください。
 
 Adobe Commerceのサポートチケット発行システムは、アドビのサポートエンジニアとお客様の担当者とのコミュニケーションをトラッキングします。 チケットの更新に合わせて、お客様やAdobe Commerceのスタッフにメールを送信し、お知らせのタイムスタンプ付きトランスクリプトを提供します。
 
@@ -160,7 +160,7 @@ Adobe Commerceのサポートチケット発行システムは、アドビのサ
 </tr>
 <tr>
 <td>緊急エスカレーション*</td>
-<td>米国および国際電話番号については、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Adobe Commerce P1 通知ホットライン </a> の記事を参照してください。</td>
+<td>米国および国際電話番号については、<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=ja">Adobe Commerce P1 通知ホットライン </a> の記事を参照してください。</td>
 </tr>
 </tbody>
 </table>

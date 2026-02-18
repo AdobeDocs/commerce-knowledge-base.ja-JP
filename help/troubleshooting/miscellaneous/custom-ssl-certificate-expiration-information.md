@@ -41,11 +41,11 @@ Adobe Commerceは、有効期限から 30 日後に証明書を更新します�
 
 マーチャントが独自のカスタム SSL 証明書を使用することを選択した場合は、証明書の有効期限の 30 日以上前に更新して、Adobe Commerceの内部 SSL 証明書に置き換えられないようにする必要があります。
 
-独自の SSL を内部 SSL に置き換えた場合に、更新した独自の SSL 証明書で置き換える場合は、新しい証明書ファイルをアップロードした場所で [&#x200B; サポート依頼を送信 &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してください。 新しい SSL の開始日を含めてください。 この情報を取得したら、新しい SSL 証明書のインストールを進めることができます。
+独自の SSL を内部 SSL に置き換えた場合に、更新した独自の SSL 証明書で置き換える場合は、新しい証明書ファイルをアップロードした場所で [&#x200B; サポート依頼を送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してください。 新しい SSL の開始日を含めてください。 この情報を取得したら、新しい SSL 証明書のインストールを進めることができます。
 
 ## 関連資料
 
 * [Magento Commerce Cloud 用の SSL （TLS）証明書：よくある質問 &#x200B;](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) アドビのサポートナレッジベースにあります。
-* [&#x200B; コマンドラインツールのリファレンス：magento-cloud 証明書 :add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) をアドビの開発者向けドキュメントに記載しています。
-* [Launch チェックリスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist) 開発者向けドキュメントに記載されています。
-* ユーザーガイドの [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) にアクセスします。
+* [&#x200B; コマンドラインツールのリファレンス：magento-cloud 証明書 :add](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) をアドビの開発者向けドキュメントに記載しています。
+* [Launch チェックリスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/checklist) 開発者向けドキュメントに記載されています。
+* ユーザーガイドの [Site-Wide Analysis Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) にアクセスします。

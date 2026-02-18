@@ -42,7 +42,7 @@ Composer キーが古いと、Github トークンでエラーが発生し、デ�
 1. これにより、その Composer パッケージ バージョンの要件が追加されます。 ロックファイルを確認します。`composer/composer` のバージョンは 1.0.22 以降である必要があります。
 1. `composer.json` および `composer.lock` をコミットし、デプロイメントをプッシュします。
 
-この方法が機能しない場合は、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してください。
+この方法が機能しない場合は、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してください。
 
 ## 関連資料
 

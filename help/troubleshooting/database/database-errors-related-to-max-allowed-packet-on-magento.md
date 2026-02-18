@@ -34,7 +34,7 @@ ht-degree: 0%
 ## 解決策
 
 1. 個々の行が現在の `max_allowed_packet` 制限を超えているクエリを特定します。 返されるデータの量を減らすには、このようなクエリを書き換える必要があります。 これは、`SELECT` ステートメントの列数を減らすか、テーブルデザインの一環として様々な列に対して小さいデータ型を選択することで行うことができます。 New Relic アカウントをお持ちの場合、[New Relic APM Errors ページ &#x200B;](https://docs.newrelic.com/docs/apm/apm-ui-pages/error-analytics/errors-page-explore-events-behind-errors) [New Relic APM Databases ページ &#x200B;](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) および [New Relic Logs](https://docs.newrelic.com/docs/logs/log-management/get-started/get-started-log-management) を使用して、関連するクエリを検索します。
-1. 迅速な修復を行うために、`max_allowed_packet` チケットを送信 [&#x200B; する際に、](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) のサイズを増やすように一時的にリクエストできますが、値が大きすぎると、ネットワークの輻輳が発生してレプリケーションにエラーが発生する可能性があるので、これはカスタマー・エンジニアリング・チームの判断で行います。
+1. 迅速な修復を行うために、`max_allowed_packet` チケットを送信 [&#x200B; する際に、](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) のサイズを増やすように一時的にリクエストできますが、値が大きすぎると、ネットワークの輻輳が発生してレプリケーションにエラーが発生する可能性があるので、これはカスタマー・エンジニアリング・チームの判断で行います。
 1. ベストプラクティスとして、一部の大規模なデータベーステーブルに対して、CLI で次のコマンドを実行する必要があります。
 
    ```
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 関連資料
 
-* 開発者向けドキュメントの [&#x200B; オンプレミスでのインストールの概要 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) を参照してください。
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) については、サポートナレッジベースを参照してください。
-* サポートナレッジベースの [&#x200B; データベースパフォーマンスの問題を解決するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)。
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 開発者向けドキュメントの [&#x200B; オンプレミスでのインストールの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview) を参照してください。
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja) については、サポートナレッジベースを参照してください。
+* サポートナレッジベースの [&#x200B; データベースパフォーマンスの問題を解決するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)。
+* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
