@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## スタータープランと Pro プランの統合でのスペースの割り当て
 
-すべてのスタータープラン環境と Pro プラン [ 統合環境 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) の場合、`.magento/services.yaml` パラメーターを増やすことで、`mysql: disk:` ファイルで MySQL により多くの領域を割り当てることができます。 例：
+すべてのスタータープラン環境と Pro プラン [&#x200B; 統合環境 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) の場合、`.magento/services.yaml` パラメーターを増やすことで、`mysql: disk:` ファイルで MySQL により多くの領域を割り当てることができます。 例：
 
 ```yaml
 mysql:
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-詳しくは、[MySQL サービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
+詳しくは、[MySQL サービスの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) の記事を参照してください。
 
 `.magento/services.yaml` ファイルを変更したら、変更内容を適用するために、コミットしてプッシュする必要があります。 プッシュはデプロイメントプロセスをトリガーします。
 
@@ -33,7 +33,7 @@ mysql:
 
 ## Pro プランのステージングまたは実稼動での領域の割り当て
 
-Pro プランのステージング環境または実稼動環境用にこれらの変更を行うには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) を作成する必要があります。 ストレージを増やすためにサポートチケットを送信する場合、サポートは、ストレージを適用するパーティション（`/mysql` または `/exports`）の量とパーティションを把握する必要があります。 ストレージ増設リクエストには、Adobe アカウントチームの承認が必要です。アカウントチームは、承認する前に、（注文フォームに従って）ストレージの適切な量を確認します。
+Pro プランのステージング環境または実稼動環境用にこれらの変更を行うには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) を作成する必要があります。 ストレージを増やすためにサポートチケットを送信する場合、サポートは、ストレージを適用するパーティション（`/mysql` または `/exports`）の量とパーティションを把握する必要があります。 ストレージ増設リクエストには、Adobe アカウントチームの承認が必要です。アカウントチームは、承認する前に、（注文フォームに従って）ストレージの適切な量を確認します。
 
 ## 割り当て容量を減らすことができない（Pro および Starter プラン）
 
