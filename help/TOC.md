@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 4d86db1115489e83e58d82464abed8fbd82fea25
+source-git-commit: 14dbbb4e661ea66c79a8532eaa8ea6cb5e45d0c0
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2091'
 ht-degree: 1%
 
 ---
@@ -190,7 +190,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -270,7 +270,6 @@ ht-degree: 1%
    * [Core Adobe Commerce Payment Integrations の償却](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [クラウドインスタンスにサードパーティのアプリケーションをインストールできますか？](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Magento.comと accounts.magento.cloud アカウントのログインにリンクします](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
-   * [Fastly オリジンクローク有効化に関する FAQ](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Cloud pro アーキテクチャで、データベース auto_increment increment 変数を「3」Adobe Commerceに設定する](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
    * [New Relic サービスへのアクセス](/help/faq/general/access-new-relic-services.md)
    * [Adobe Commerceの web コンテンツアクセシビリティ](/help/faq/general/accessibility.md)
