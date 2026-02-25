@@ -1,6 +1,6 @@
 ---
 title: PWA Studio：ブラウザーが.local.pwadev サイトを解決できない
-description: この記事では、別のプログラムまたはプロセスが [ ホスト ファイル ] （https://en.wikipedia.org/wiki/Hosts_(file\）を編集し、プロジェクト ドメインのエントリを削除した場合の解決策を示します。
+description: この記事では、別のプログラムまたはプロセスが [ ホスト ファイル ] （https://en.wikipedia.org/wiki/Hosts_(file）を編集し、プロジェクト ドメインのエントリを削除した場合の解決策を示します。
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
@@ -31,11 +31,11 @@ PWA Studioでは、プロジェクトに使用するカスタムのホスト名�
 
 ## 解決策
 
-[ ホストファイルを手動で編集 ](https://docs.rackspace.com/docs/modify-your-hosts-file) してエントリを追加し直すこともできますが、インストールされている他のソフトウェアを調べて、以前の変更を上書きしたものを確認する必要があります。
+[&#x200B; ホストファイルを手動で編集 &#x200B;](https://docs.rackspace.com/docs/modify-your-hosts-file) してエントリを追加し直すこともできますが、インストールされている他のソフトウェアを調べて、以前の変更を上書きしたものを確認する必要があります。
 
 ## サポートナレッジベースの関連資料
 
-* [PWA Studio：自己署名証明書の信頼エラー ](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio：自己署名証明書の信頼エラー &#x200B;](https://support.magento.com/hc/en-us/articles/360038973172)
 * [PWA Studio: コンパイルを開始する前に Webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
 * [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
