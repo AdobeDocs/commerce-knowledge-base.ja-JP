@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 14dbbb4e661ea66c79a8532eaa8ea6cb5e45d0c0
+source-git-commit: bb56e1f5ae48d9a8c370b1d19588551d76779b66
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 1%
       * [不明なモジュール Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Cron 準備チェックの問題](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
       * [SQL クエリ：コストエラーの説明](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
-      * [Adobe Commerce 2.4.0 B2B 管理者が、設定可能な商品を見積もりに追加できない](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
       * [クラウドインフラストラクチャー上のAdobe CommerceのNew Relicのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
       * [パフォーマンスの低下を避けるためにキャッシュを有効にする](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
@@ -190,7 +189,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)

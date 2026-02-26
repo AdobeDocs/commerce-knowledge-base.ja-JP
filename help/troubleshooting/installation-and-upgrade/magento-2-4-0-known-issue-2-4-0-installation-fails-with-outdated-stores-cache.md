@@ -4,9 +4,9 @@ description: この記事では、Adobe Commerce 2.4.0 のインストールが�
 exl-id: 0680199b-7e47-4a8c-91fe-9f6c32839a0e
 feature: B2B, Cache, Console, Install, Upgrade
 role: Developer
-source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
+source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,5 @@ Adobe Commerce 2.4.0 をインストールする前に、マーチャントは�
 * [Adobe Commerce 2.4.0、2.4.1: Braintree Venmo 部分請求書発行の有効化](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
 * [Adobe Commerce 2.4.0 既知の問題：チェックアウト時に一部の国でローカル支払い方法を選択中にエラーメッセージが表示される](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
 * [Adobe Commerce 2.4.0 既知の問題：Amazon Pay が有効で、標準のチェックアウトに戻る際に支払方法が見つからない使用されます](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
-* [Adobe Commerce 2.4.0 B2B 管理者が、設定可能な商品を見積もりに追加できない](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
 * [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 

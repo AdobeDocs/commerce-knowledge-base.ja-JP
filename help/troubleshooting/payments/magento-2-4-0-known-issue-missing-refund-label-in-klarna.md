@@ -4,9 +4,9 @@ description: この記事では、Klarna VBE （ベンダーバンドル拡張�
 exl-id: f08039b2-7f8b-481e-8ec8-1659e227744f
 feature: B2B, Orders, Payments
 role: Developer
-source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
+source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,3 @@ Klarna ポータルでは、返金された商品の横に **返金** ラベル�
 
 * [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Adobe Commerce 2.4.0 既知の問題：チェックアウト時に一部の国でローカル支払い方法を選択中にエラーメッセージが表示される](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-* [Adobe Commerce 2.4.0 B2B 管理者が、設定可能な商品を見積もりに追加できない](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)

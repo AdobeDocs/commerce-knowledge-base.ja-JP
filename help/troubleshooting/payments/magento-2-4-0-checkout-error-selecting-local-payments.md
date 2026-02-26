@@ -4,9 +4,9 @@ description: この記事では、一部の国で地域のお支払い方法を�
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
+source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * Adobe Commerce 2.4.0 がインストールされています。
 * 1 つの製品と 1 つのカテゴリを作成します。
-* [Braintreeのお支払方法 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/) を構成します。
+* [Braintreeのお支払方法 ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/) を構成します。
 
 <u> 再現手順 </u>:
 
@@ -53,4 +53,3 @@ ht-degree: 0%
 ## 関連資料
 
 * [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
-* [Adobe Commerce 2.4.0 B2B 管理者が、設定可能な商品を見積もりに追加できない](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
