@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * Adobe Commerce 2.4.0 がインストールされています。
 * 1 つの製品と 1 つのカテゴリを作成します。
-* [Braintreeのお支払方法 ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/) を構成します。
+* [Braintreeのお支払方法 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/) を構成します。
 
 <u> 再現手順 </u>:
 
