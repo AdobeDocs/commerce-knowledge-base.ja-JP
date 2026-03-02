@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: caefdec695d553b2681e8677b200e687ea824d55
+source-git-commit: d1169e70188408f48207d9ca9b5a9ec3aaabeea0
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2043'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,6 @@ ht-degree: 1%
       * [Adobe Commerce 2.4.4 にないモジュール](/help/troubleshooting/miscellaneous/what-happened-modules-bundled-adobe-commerce.md)
       * [以前のチームメンバーには、Adobe Commerce クラウド通知メールが届きます](/help/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.md)
       * [新しいドメインがデフォルトのドメインにリダイレクトされている](/help/troubleshooting/miscellaneous/new-domain-redirecting.md)
-      * [Adobe Commerce クラウドプロジェクトにユーザーを追加できない](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Cron が設定の誤りや欠落によって停止する  [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [[!DNL Admin] ログインが動作していません – 許可されているセッションの最大サイズを超えています](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
       * [[!DNL Google Tag Manager] がライブサーチウィジェットによって壊される](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
@@ -189,7 +188,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -224,10 +223,8 @@ ht-degree: 1%
    * [特定の店舗の DB エンティティ （注文、請求書、クレジット メモなど）の増分 ID を変更します](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [クラウド上のスタータープラン用に Fastly を設定する](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
    * [Adobe Commerce Intelligence トレーニングビデオ：コホートReport Builder](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
-   * [クラウド上のAdobe Commerce用に MariaDB を 10.0 から 10.2 にアップグレード](/help/how-to/general/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで環境をリセット](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI：統合の再認証](/help/how-to/general/mbi-reauthenticating-integrations.md)
-   * [ステージング環境と実稼動環境での Fastly DNS 設定](/help/how-to/general/configure-fastly-dns-settings-on-staging-and-production-environments.md)
    * [Pro プランのログの場所（ディレクトリ）：統合、ステージング、実稼動](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [クラウド上のAdobe Commerce：ホストのインスタンスのアップサイズが必要かどうかを確認します。](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [サンドボックススクリプト内のBootstrap Adobe Commerce 2](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
