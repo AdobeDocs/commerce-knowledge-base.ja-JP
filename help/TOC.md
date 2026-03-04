@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 37d987f5eab3d229f0f3230c7da5a7a79c910dc4
+source-git-commit: 3386035e973f1f839a9ff8792b4c2dbd55262139
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2028'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -221,7 +221,6 @@ ht-degree: 1%
    * [Cloud 上のAdobe Commerceで MySQL に割り当てる領域を増やす](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [特定の店舗の DB エンティティ （注文、請求書、クレジット メモなど）の増分 ID を変更します](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [クラウド上のスタータープラン用に Fastly を設定する](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
-   * [Adobe Commerce Intelligence トレーニングビデオ：コホートReport Builder](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで環境をリセット](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI：統合の再認証](/help/how-to/general/mbi-reauthenticating-integrations.md)
    * [Pro プランのログの場所（ディレクトリ）：統合、ステージング、実稼動](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
