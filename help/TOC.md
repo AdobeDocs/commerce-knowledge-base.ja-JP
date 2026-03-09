@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 0d15e1ccd8acd9bd20d2665a8e0581c034432609
+source-git-commit: 27fdd8be38a2507601aba7d52a0cd4348ec9ed6e
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -215,7 +215,6 @@ ht-degree: 1%
    * [クラウドインフラストラクチャ cron ジョブでスタックしたAdobe Commerceを手動でリセット](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [実稼働サイトで同じドメインを使用している場合は、実稼動環境で Fastly をテストします](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [クラウドインフラストラクチャー上でのAdobe Commerceの停止の特定と測定](/help/how-to/general/how-to-identify-outages.md)
-   * [クラウドインフラストラクチャー上のAdobe Commerceの管理者 URL の変更](/help/how-to/general/change-magento-admin-url-on-cloud.md)
    * [Adobe Commerce上のクラウドのブランチの並べ替え](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceのすべてのページに対する HTTP の HTTPS へのリダイレクト（TLS を強制）](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Cloud 上のAdobe Commerceで MySQL に割り当てる領域を増やす](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
