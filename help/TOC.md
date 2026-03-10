@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9eb525793f5401cf23931b9cbff92ba92c1024c1
+source-git-commit: 90da89b659179c2789a9ac60b4834411300f332b
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1992'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -210,7 +210,6 @@ ht-degree: 1%
    * [Adobe Commerce Intelligence Essentials：支払い方法の更新またはサブスクリプションのキャンセル](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [クラウドスナップショットを使用しない環境のロールバック](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [クラウドインフラストラクチャー上のAdobe Commerce:CPUの割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
-   * [大きな MySQL テーブルの検索](/help/how-to/general/find-large-mysql-tables.md)
    * [クラウドインフラストラクチャ cron ジョブでスタックしたAdobe Commerceを手動でリセット](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [実稼働サイトで同じドメインを使用している場合は、実稼動環境で Fastly をテストします](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [クラウドインフラストラクチャー上でのAdobe Commerceの停止の特定と測定](/help/how-to/general/how-to-identify-outages.md)
