@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 90da89b659179c2789a9ac60b4834411300f332b
+source-git-commit: 9ca39100b19808db467383433d5f6b58da3fc000
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1984'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -217,7 +217,6 @@ ht-degree: 1%
    * [クラウドインフラストラクチャー上のAdobe Commerceのすべてのページに対する HTTP の HTTPS へのリダイレクト（TLS を強制）](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Cloud 上のAdobe Commerceで MySQL に割り当てる領域を増やす](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [特定の店舗の DB エンティティ （注文、請求書、クレジット メモなど）の増分 ID を変更します](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
-   * [クラウド上のスタータープラン用に Fastly を設定する](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで環境をリセット](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI：統合の再認証](/help/how-to/general/mbi-reauthenticating-integrations.md)
    * [Pro プランのログの場所（ディレクトリ）：統合、ステージング、実稼動](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
