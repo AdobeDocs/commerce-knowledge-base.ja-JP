@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: コンパイルを開始する前に Webpack がハングします
 
-この記事では、Progressive Web App Studio （PWA Studio[ でコンパイルを開始する前に JavaScript](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)Webpack）が長時間停止した場合の解決策について説明します。
+この記事では、Progressive Web App Studio （PWA Studio[&#x200B; でコンパイルを開始する前に JavaScript](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)Webpack）が長時間停止した場合の解決策について説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-[pwa-buildpack の最新リリースが何であるかを確認します ](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
+[pwa-buildpack の最新リリースが何であるかを確認します &#x200B;](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
 
 ```yaml
 pwa-buildpack
@@ -92,8 +92,8 @@ OSX の [Homebrew](https://brew.sh/)、Windows の [Chocolatey](https://chocolat
 
 ## 関連資料
 
-* [Javascript Webpack：概念 ](https://webpack.js.org/concepts/)
-* [Venia ストアフロントのセットアップ ](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
+* [Javascript Webpack：概念 &#x200B;](https://webpack.js.org/concepts/)
+* [Venia ストアフロントのセットアップ &#x200B;](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
 * [PWA Buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/packages/buildpack/)
-* [buildpack コマンドラインインターフェイス ](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
-* [ ツールとライブラリ：buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)
+* [buildpack コマンドラインインターフェイス &#x200B;](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
+* [&#x200B; ツールとライブラリ：buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)
