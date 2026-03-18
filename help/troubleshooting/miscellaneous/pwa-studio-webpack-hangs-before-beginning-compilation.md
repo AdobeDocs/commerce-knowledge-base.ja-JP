@@ -1,19 +1,19 @@
 ---
-title: '「PWA Studio: コンパイルを開始する前に Webpack がハングする」'
-description: ここでは、Progressive Web App Studio （PWA Studio）でコンパイルを開始する前に、JavaScript [Webpack] （https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack）が長時間停止した場合の解決策について説明します。
+title: 'PWA Studio: コンパイルを開始する前に Webpack がハングします'
+description: ここでは、Progressive Web App Studio （PWA Studio）でコンパイルを開始する前に JavaScript [Webpack] （https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack）が長時間停止した場合の解決策について説明します。
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 032fe4d32921c63570672b9c68e8c03e00bd1077
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-# PWA Studio: コンパイルを開始する前に webpack がハングします
+# PWA Studio: コンパイルを開始する前に Webpack がハングします
 
-この記事では、Progressive Web App Studio （PWA Studio）でコンパイルを開始する前に JavaScript[Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) が長時間停止した場合の推奨される解決策について説明します。
+この記事では、Progressive Web App Studio （PWA Studio[ でコンパイルを開始する前に JavaScript](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)Webpack）が長時間停止した場合の解決策について説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 問題
 
-[pwa-buildpack の最新リリースが何であるかを確認します &#x200B;](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
+[pwa-buildpack の最新リリースが何であるかを確認します ](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
 
 ```yaml
 pwa-buildpack
@@ -37,7 +37,7 @@ pwa-buildpack
 
 <u> 再現手順 </u>:
 
-<u> 前提条件 </u>：ローカルのAdobe Commerce インスタンスを使用して、Venia などのPWA Studioストアフロントを設定して
+<u> 前提条件 </u>：ローカルのAdobe Commerce インスタンスを使用して、Venia などのPWA Studio ストアフロントを設定して
 
 ```yaml
 build
@@ -92,8 +92,8 @@ OSX の [Homebrew](https://brew.sh/)、Windows の [Chocolatey](https://chocolat
 
 ## 関連資料
 
-* [Javascript Webpack：概念 &#x200B;](https://webpack.js.org/concepts/)
-* [Venia ストアフロントのセットアップ &#x200B;](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
-* [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
-* [buildpack コマンドラインインターフェイス &#x200B;](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
-* [&#x200B; ツールとライブラリ：buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)
+* [Javascript Webpack：概念 ](https://webpack.js.org/concepts/)
+* [Venia ストアフロントのセットアップ ](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
+* [PWA Buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/packages/buildpack/)
+* [buildpack コマンドラインインターフェイス ](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
+* [ ツールとライブラリ：buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)

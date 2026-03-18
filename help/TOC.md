@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9ca39100b19808db467383433d5f6b58da3fc000
+source-git-commit: 8be0c125bb0417e34e016656337506da88796630
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1978'
 ht-degree: 1%
 
 ---
@@ -130,7 +130,6 @@ ht-degree: 1%
       * [Adobe Commerce ソフトウェアを更新すると、git プルオリジンの開発が失敗します](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [クラウドインフラストラクチャー上のAdobe Commerceでブロックを開始](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [PHP 設定エラー](/help/troubleshooting/miscellaneous/php-settings-errors.md)
-      * [PHP mcrypt 拡張モジュールが正しくインストールされていません](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Cron ジョブが「実行中」ステータスでスタックする](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
       * [非正規表現のオフロードにより、Nginx （ルート）ではなく Fastly にリダイレクトされる](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [一般的な PHP の致命的なエラーと解決策](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
@@ -186,7 +185,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)

@@ -1,10 +1,10 @@
 ---
-title: 「PWA Studio：開発者モードの実行中に検証エラーが発生する」
-description: ここでは、以前に venia-concept を作成しなかった結果として、Progressive Web App （PWA） Studio for Adobe Commerceでデベロッパーモードを実行したときに検証エラーが発生した場合の解決策について説明します（Venia はPWAストアフロントです）。 環境ファイル。 このファイルには、ローカル開発環境の変数が格納されます。
+title: PWA Studio：開発者モードの実行中に検証エラーが発生する
+description: このトピックでは、以前に venia-concept （Venia はPWA ストアフロントです）環境ファイルを作成しなかった結果、Progressive Web App （PWA） Studio for Adobe Commerceで開発者モードを実行したときに検証エラーが発生した場合の解決策について説明します。 このファイルには、ローカル開発環境の変数が格納されます。
 exl-id: 97d042ef-88e6-4eda-a834-2cff4de276e2
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 9d32a5971341ed8dc46e0932c10eaac4d17ec299
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio：開発者モードの実行中に検証エラーが発生する
 
-ここでは、以前に venia-concept を作成しなかった結果として、Progressive Web App （PWA） Studio for Adobe Commerceでデベロッパーモードを実行したときに検証エラーが発生した場合の解決策について説明します（Venia はPWAストアフロントです）。 環境ファイル。 このファイルには、ローカル開発環境の変数が格納されます。
+このトピックでは、以前に venia-concept （Venia はPWA ストアフロントです）環境ファイルを作成しなかった結果、Progressive Web App （PWA） Studio for Adobe Commerceで開発者モードを実行したときに検証エラーが発生した場合の解決策について説明します。 このファイルには、ローカル開発環境の変数が格納されます。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 <u> 期待される結果 </u>:
 
-* PWA Studioサーバーは正常に起動します。
+* PWA Studio サーバーは通常どおり起動します。
 
 <u> 実際の結果 </u>:
 
@@ -53,5 +53,5 @@ npx @magento/pwa-buildpack create-env-file packages/venia-concept
 
 ## 関連資料
 
-* [Adobe Commerce ドキュメントのPWA Studio](https://magento.github.io/pwa-studio/)
-* [Venia ストアフロント（概念） &#x200B;](https://magento.github.io/pwa-studio/venia-pwa-concept/)
+* [PWA Studio for Adobe Commerce ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/)
+* [Venia ストアフロント（概念） ](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
