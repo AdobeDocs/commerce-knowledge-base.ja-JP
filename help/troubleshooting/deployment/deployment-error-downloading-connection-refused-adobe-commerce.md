@@ -4,9 +4,9 @@ description: 'この記事では、次のデプロイメントエラーの解決
 exl-id: 520cf50f-3682-441d-87a7-8e05301a2b0c
 feature: Cache, Deploy
 role: Developer
-source-git-commit: c005409900021a72d73c10a2df5f23be3f2bc2cf
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ W:    refused
 
 ## 影響を受けるバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+クラウドインフラストラクチャー上のAdobe Commerce[ サポート対象のすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 問題
 
@@ -55,10 +55,10 @@ W:    refused
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Commerce プロジェクトの誰がスーパーユーザーかを確認するには、『 Cloud Infrastructure ガイド』の [&#x200B; ユーザーのプロジェクトの役割を表示 &#x200B;](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) を参照してください。
+Commerce プロジェクトの誰がスーパーユーザーかを確認するには、『 Cloud Infrastructure ガイド』の [ ユーザーのプロジェクトの役割を表示 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user's-project-role) を参照してください。
 
 ## 推奨読み取り
 
-* [Adobe Commerce デプロイメントのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-29640)。
-* [cloud repo のAdobe Commerceにアクセスできませんでした：デプロイ中に 403 Forbidden エラーまたは 404 Not Found エラーが発生しました &#x200B;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)。
-* [&#x200B; 「プロジェクトの構築エラー：ビルドフックがステータスコード 1 で失敗しました」でデプロイメントが失敗します &#x200B;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html)。
+* [Adobe Commerce デプロイメントのトラブルシューティング ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640)。
+* [cloud repo のAdobe Commerceにアクセスできませんでした：デプロイ中に 403 Forbidden エラーまたは 404 Not Found エラーが発生しました ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)。
+* [ 「プロジェクトの構築エラー：ビルドフックがステータスコード 1 で失敗しました」でデプロイメントが失敗します ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html)。

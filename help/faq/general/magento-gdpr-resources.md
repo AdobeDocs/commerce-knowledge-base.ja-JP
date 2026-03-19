@@ -3,9 +3,9 @@ title: Adobe Commerce GDPR リソース
 description: この記事では、Adobe Commerceが GDPR （EU 一般データ保護規則）にどのように準拠するかについて説明した公式ドキュメントリソースの一覧を示します。
 exl-id: d578ff9b-e39c-4c5b-8aaf-f41cab5c1fbb
 feature: Compliance
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ## Adobe Commerceは GDPR に対応しました
 
-Adobe Commerceのすべての GDPR リソースに関する [&#x200B; 公式ホームページ &#x200B;](https://business.adobe.com/jp/privacy/general-data-protection-regulation.html)。
+Adobe Commerceのすべての GDPR リソースに関する [ 公式ホームページ ](https://business.adobe.com/privacy/general-data-protection-regulation.html)。
 
 ## Adobe Commerceの公式声明
 
-* [EU 一般データ保護規則（GDPR）](/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
-* [GDPR コンプライアンス](/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+* [EU 一般データ保護規則（GDPR） ](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
+* [GDPR コンプライアンス ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 
 ## 開発者向けドキュメントのAdobe Commerce 2.X および 1.X での GDPR コンプライアンス
 
-* [顧客の個人情報の参照（バージョン 2.x）](/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
-* [顧客の個人情報の参照（バージョン 1.x）](/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
+* [ 顧客の個人情報の参照（バージョン 2.x） ](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
+* [ 顧客の個人情報の参照（バージョン 1.x） ](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
 
 これらのAdobe Commerce開発者向けドキュメントのトピックでは、マーチャントとシステムインテグレーターが次のようなユースケースを解決するのに役立つ、データフロー図とデータベース情報を提供します。
 

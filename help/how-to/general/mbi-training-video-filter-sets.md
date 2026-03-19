@@ -1,11 +1,11 @@
 ---
-title: 'Adobe Commerce Intelligence トレーニングビデオ：フィルターセット'
+title: Adobe Commerce Intelligence トレーニングビデオ：フィルターセット
 description: ビジネスデータの特定の部分のみを分析しますか？ 手動で片付けるのにうんざりですか？ Adobe Commerce Intelligenceでは、フィルターセット機能を使用してこのプロセスを簡略化できます。
 exl-id: 2756f1f0-1465-4a7b-b249-7a3b36674e43
 feature: Commerce Intelligence
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,6 @@ ht-degree: 0%
 * 指標へのフィルターセットの適用方法
 * 計算されたデータディメンションにフィルターセットを適用する方法
 
-このビデオを視聴するには、Adobe Experience Leagueの [Commerce Intelligence - フィルターセット &#x200B;](/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) に移動してください。
+このビデオを視聴するには、Adobe Experience League の [Commerce Intelligence - フィルターセット ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) に移動してください。
 
-**フォローしますか？** 手順については、[&#x200B; 指標のフィルターセットの作成チュートリアル &#x200B;](/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) を参照してください。
+**フォローしますか？** 手順については、[ 指標のフィルターセットの作成チュートリアル ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) を参照してください。
