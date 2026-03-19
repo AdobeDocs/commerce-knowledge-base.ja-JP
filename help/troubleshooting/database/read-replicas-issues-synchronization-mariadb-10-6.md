@@ -59,5 +59,5 @@ ht-degree: 0%
 
 ## 関連資料
 
-* Commerce on Cloud Infrastructure ガイドの [ デプロイメント用の環境変数の設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)。
-* 実装プレイブックの [ データベース設定のベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)。
+* Commerce on Cloud Infrastructure ガイドの [&#x200B; デプロイメント用の環境変数の設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)。
+* 実装プレイブックの [&#x200B; データベース設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)。

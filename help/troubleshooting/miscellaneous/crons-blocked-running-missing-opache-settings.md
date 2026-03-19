@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## 問題
 
@@ -25,7 +25,7 @@ cron が動作しなくなった。
 
 ## 原因：
 
-[!DNL OpCache] モジュールは、実行時に [!DNL GraphQL] を書き換える `env.php` プラグインを導入した新しいバージョンに更新され、cron 設定を上書きする可能性があり、問題が発生した可能性があります。 [!DNL OpCache] の問題を回避するには `env.php file` の設定を更新する必要があります。これは、[ パッケージの ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) バージョン 2002.1.13[!DNL ECE Tools] で解決されました。
+[!DNL OpCache] モジュールは、実行時に [!DNL GraphQL] を書き換える `env.php` プラグインを導入した新しいバージョンに更新され、cron 設定を上書きする可能性があり、問題が発生した可能性があります。 [!DNL OpCache] の問題を回避するには `env.php file` の設定を更新する必要があります。これは、[&#x200B; パッケージの &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) バージョン 2002.1.13[!DNL ECE Tools] で解決されました。
 
 ## 解決策
 
@@ -56,6 +56,6 @@ Cron が無効であることを示すメッセージが表示される場合が
 
 ## 関連資料
 
-* [Cron 準備チェックの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
-* [Cron プロパティ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
-* [Cron ジョブが「実行中」ステータスでスタックする ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+* [Cron 準備チェックの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
+* [Cron プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
+* [Cron ジョブが「実行中」ステータスでスタックする &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)

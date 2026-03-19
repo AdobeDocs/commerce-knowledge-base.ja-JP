@@ -21,6 +21,6 @@ ht-degree: 0%
 * 指標へのフィルターセットの適用方法
 * 計算されたデータディメンションにフィルターセットを適用する方法
 
-このビデオを視聴するには、Adobe Experience League の [Commerce Intelligence - フィルターセット ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) に移動してください。
+このビデオを視聴するには、Adobe Experience League の [Commerce Intelligence - フィルターセット &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) に移動してください。
 
-**フォローしますか？** 手順については、[ 指標のフィルターセットの作成チュートリアル ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) を参照してください。
+**フォローしますか？** 手順については、[&#x200B; 指標のフィルターセットの作成チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) を参照してください。
