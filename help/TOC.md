@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: e669e0f092b009a124f728390f6fff24aadece15
+source-git-commit: 03cb143909535a2e615b87ac4bdff425fb667c97
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1945'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -206,7 +206,6 @@ ht-degree: 1%
    * [ハウツーの概要](/help/how-to/overview.md)
    * [新規設定のチェックリスト  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [ステージング環境または実稼動環境から DB スナップショットを復元](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
-   * [Adobe Commerce Intelligence Essentials：支払い方法の更新またはサブスクリプションのキャンセル](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [クラウドスナップショットを使用しない環境のロールバック](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [クラウドインフラストラクチャー上のAdobe Commerce:CPUの割り当ての計算](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [クラウドインフラストラクチャ cron ジョブでスタックしたAdobe Commerceを手動でリセット](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
