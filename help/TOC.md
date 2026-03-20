@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 03cb143909535a2e615b87ac4bdff425fb667c97
+source-git-commit: 8f1f6cbdc5aabb0c05a51287d463f051f4233b16
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1941'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 1%
       * [app/etc/env.phpの検索エンジンを変更できません](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [Magento-cloud CLI がアクティブな環境を表示しない](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Adobe Commerce Cloud の [!DNL SendGrid] ファイルの制限](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
-      * [&#x200B; 統合環境でのパフォーマンスの低下 &#x200B;](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
+      * [ 統合環境でのパフォーマンスの低下 ](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * デプロイメント {#deployment}
       * [デプロイに失敗します：ElasticsearchとAdobe Commerceのバージョンに互換性がありません](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -229,7 +229,6 @@ ht-degree: 1%
    * [サポートエージェントからリクエストされた場合に「スクラブ」ダンプを作成する方法](/help/how-to/general/create-dump-for-support.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceに対する SSL （TLS）証明書](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [最新バージョンのBetaにアクセスできません](/help/how-to/general/cannot-access-the-latest-beta-version.md)
-   * [アプリケーションモードの切り替え](/help/how-to/general/switch-the-magento-mode.md)
    * [クラウドインフラストラクチャー上のAdobe Commerceで提供される Fastly アカウントへのログイン方法](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Fastly 503 エラーの代わりにAdobe Commerce エラーレポート番号を表示](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
    * [テーマをデフォルトにリセット](/help/how-to/general/reset-a-theme-to-defaults.md)
