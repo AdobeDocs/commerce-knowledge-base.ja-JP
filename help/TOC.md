@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: fb8a1b5815663b62c5416829b5471adb9c0980c5
+source-git-commit: e7dcfc91da247d881f4aae4725a5c130102799ee
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1905'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 1%
    * [お知らせ概要](/help/announcements/overview.md)
    * Adobe Commerceのお知らせ {#commerce-announcements}
       * [クラウドインフラストラクチャ上のAdobe Commerceのホリデーサージキャパシティのリクエスト](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [ADOBE COMMERCE リリースの更新されたライフサイクルポリシーに関するFAQ](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Cloud 2.4.4でのAdobe CommerceのOpenSearchへの切り替え](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [PHPの脆弱性に関するAdobe Commerceの推奨事項](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
       * [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
@@ -81,7 +80,7 @@ ht-degree: 1%
       * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
-      * [&#x200B; [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [ [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。  [!DNL livesearch]にフォールバックしています。](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
@@ -228,7 +227,6 @@ ht-degree: 1%
    * [サポートエージェントから要求された場合に「スクラブ」ダンプを作成する方法](/help/how-to/general/create-dump-for-support.md)
    * [クラウドインフラストラクチャ上のAdobe CommerceのSSL （TLS）証明書](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [最新のBeta バージョンにアクセスできない](/help/how-to/general/cannot-access-the-latest-beta-version.md)
-   * [Adobe Commerce on cloud infrastructureで提供されるFastly アカウントにログインする方法](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Fastly 503 エラーではなくAdobe Commerce エラーレポート番号を表示](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
    * [テーマをデフォルトにリセットする](/help/how-to/general/reset-a-theme-to-defaults.md)
    * [Adobeが提供するコンポーザーパッチの適用方法](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)
