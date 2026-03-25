@@ -65,12 +65,12 @@ Module 'Magento_PurchaseOrder':
 
 <u> コンポーザーのパッチ </u>
 
-Adobe[が提供するコンポーザーのパッチの適用方法については、](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) コンポーザーのパッチの適用方法を参照してください。
+Adobe[が提供するコンポーザーのパッチの適用方法については、](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) コンポーザーのパッチの適用方法を参照してください。
 
 <u>Git パッチ </u>
 
-* クラウドインフラストラクチャ上のAdobe CommerceのGit パッチ手順については、開発者向けドキュメントの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)」を参照してください。
-* Adobe CommerceのGit パッチの手順については、開発者向けドキュメントの「[&#x200B; パッチの適用：カスタムパッチ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches)」を参照してください。
+* クラウドインフラストラクチャ上のAdobe CommerceのGit パッチ手順については、開発者向けドキュメントの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)」を参照してください。
+* Adobe CommerceのGit パッチの手順については、開発者向けドキュメントの「[&#x200B; パッチの適用：カスタムパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches)」を参照してください。
 
 ## 関連トピックス
 

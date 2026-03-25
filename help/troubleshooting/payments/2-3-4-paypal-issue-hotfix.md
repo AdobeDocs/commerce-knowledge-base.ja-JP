@@ -49,11 +49,11 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com/tech-resources/download#download2353) ポータルの「ダウンロード」セクションから入手できる[&#x200B; ホットフィックス、](https://magento.com)をマイアカウントに適用します。
 
-Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeには、Commerce v1.0.2のCloud Patchesに修正プログラムが含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの「[Commerce リリースノートのクラウドパッチ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche)」を参照してください。
+Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeには、Commerce v1.0.2のCloud Patchesに修正プログラムが含まれています。最新のパッケージを適用する手順については、開発者向けドキュメントの「[Commerce リリースノートのクラウドパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche)」を参照してください。
 
 ## パッチの適用方法
 
-手順については、サポートナレッジベースの「[Adobeが提供するコンポーザーパッチを適用する方法](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」を参照してください。
+手順については、サポートナレッジベースの「[Adobeが提供するコンポーザーパッチを適用する方法](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」を参照してください。
 
 ## 関連トピックス
 

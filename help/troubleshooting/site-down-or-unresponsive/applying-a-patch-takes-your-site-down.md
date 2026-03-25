@@ -65,4 +65,4 @@ Adobe Commerceのクラウドインフラストラクチャには、すべての
 
 ## 関連トピックス
 
-* [Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチを適用する方法について、サポートナレッジベースを参照してください。
+* [Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチを適用する方法について、サポートナレッジベースを参照してください。
