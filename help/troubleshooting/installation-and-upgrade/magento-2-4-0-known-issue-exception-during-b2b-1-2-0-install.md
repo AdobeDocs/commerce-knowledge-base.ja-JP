@@ -1,45 +1,45 @@
 ---
-title: Adobe Commerce 2.4.0:B2B 1.2.0 インストール中の例外
-description: この記事では、B2B 1.2.0 のインストール時に「setup:upgrade」の際にスローされる例外に対する、Adobe Commerceの既知の問題を修正しました。
+title: Adobe Commerce 2.4.0:B2B 1.2.0 インストール時の例外
+description: この記事では、B2B 1.2.0のインストール時に「setup:upgrade」中に発生する例外に関するAdobe Commerceの既知の問題の修正点を紹介します。
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.0:B2B 1.2.0 インストール中の例外
+# Adobe Commerce 2.4.0:B2B 1.2.0 インストール時の例外
 
-この記事では、B2B 1.2.0 のインストール時に `setup:upgrade` 中にスローされる例外に対するAdobe Commerceの既知の問題を修正しました。
+この記事では、B2B 1.2.0のインストール時に`setup:upgrade`中にスローされた例外に関するAdobe Commerceの既知の問題の修正について説明します。
 
 ## 影響を受ける製品とバージョン
 
 * Adobe Commerce オンプレミス 2.4.0
-* クラウドインフラストラクチャー 2.4.0 上のAdobe Commerce
+* Adobe Commerce on cloud infrastructure 2.4.0
 * B2B 1.2.0
 
-## 問題
+## イシュー
 
-<u> 再現手順 </u>
+<u>複製する手順</u>
 
-1. 複数のストアが作成されたAdobe Commerceをインストールします。
+1. 複数のストアを作成してAdobe Commerceをインストールします。
 1. 追加のストアを作成します。
-1. B2B 1.2.0 のインストール
+1. B2B 1.2.0をインストールします。
 
 >[!WARNING]
 >
->1.2.0 未満のバージョンまたは 2.4.0 未満のCommerce インスタンスから 1 つ以上のストアを含む B2B インスタンスのアップグレードも影響を受けます。
+>また、バージョン 1.2.0未満またはCommerce インスタンス 2.4.0未満のバージョンから1つ以上のストアを持つB2B インスタンスのアップグレードも影響を受けます。
 
-<u> 期待される結果 </u>
+<u>期待される結果</u>
 
-B2B 1.2.0 のインストール。
+B2B 1.2.0のインストール。
 
-<u> 実際の結果 </u>
+<u>実際の結果</u>
 
-`setup:upgrade` を実行して B2B 1.2.0 をインストールすると、`PurchaseOrder` モジュールに次のエラーが表示されます。
+`setup:upgrade`がB2B 1.2.0のインストールを実行すると、このエラーが`PurchaseOrder` モジュールに表示されます。
 
 ```php
 Module 'Magento_PurchaseOrder':
@@ -48,31 +48,31 @@ Module 'Magento_PurchaseOrder':
   are not allowed in transactions
 ```
 
-## 解決策
+## Solution
 
-この記事で提供されているパッチを適用します。
+この記事に記載されているパッチを適用します。
 
 ## パッチ
 
-パッチはこの記事に添付されており、（ファイルを解凍した後に） `.composer` 形式と `.git` 形式の両方でダウンロードできます。
+この記事にパッチが添付されており、`.composer`と`.git`の両方の形式でダウンロードできます（ファイルを解凍した後）。
 
-ダウンロードするには、記事の最後まで下にスクロールしてファイル名をクリックするか、次のいずれかのリンクをクリックします。
+ダウンロードするには、記事の最後までスクロールしてファイル名をクリックするか、次のいずれかのリンクをクリックします。
 
 * [Composer パッチ B2B-716\_composer.patch](assets/B2B-716_composer.patch.zip)
 * [Git パッチ B2B-716\_git.patch](assets/B2B-716_git.patch.zip)
 
 ## パッチの適用方法
 
-<u>Composer パッチ </u>
+<u> コンポーザーのパッチ </u>
 
-Composer パッチの手順については、[Adobeが提供する Composer パッチの適用方法 &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) を参照してください。
+Adobe[が提供するコンポーザーのパッチの適用方法については、](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) コンポーザーのパッチの適用方法を参照してください。
 
 <u>Git パッチ </u>
 
-* クラウドインフラストラクチャー上のAdobe Commerceに対する Git パッチの手順については、開発者向けドキュメントの [&#x200B; パッチを適用する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
-* Adobe Commerceの Git パッチ手順については、開発者向けドキュメントの [&#x200B; パッチの適用：カスタムパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) を参照してください。
+* クラウドインフラストラクチャ上のAdobe CommerceのGit パッチ手順については、開発者向けドキュメントの「[ パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)」を参照してください。
+* Adobe CommerceのGit パッチの手順については、開発者向けドキュメントの「[ パッチの適用：カスタムパッチ ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches)」を参照してください。
 
-## 関連資料
+## 関連トピックス
 
-* [Adobe Commerce 2.4.0 既知の問題：複数のアドレスのチェックアウトにBraintreeの支払い方法が表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
-* [Adobe Commerce 2.4.0 既知の問題：チェックアウト時に一部の国でローカル支払い方法を選択中にエラーメッセージが表示される](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
+* [Adobe Commerce 2.4.0の既知の問題：Braintreeの支払い方法が複数のアドレスのチェックアウトに表示されない](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
+* [Adobe Commerce 2.4.0の既知の問題：一部の国でチェックアウト時に表示される「ローカル支払い方法を選択する」というエラーメッセージ](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
