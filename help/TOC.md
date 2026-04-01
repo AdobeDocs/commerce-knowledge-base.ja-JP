@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 651620add857a2cf33c59fd0cd7972cb7c1e0cc3
+source-git-commit: 1502ee72f4421f8fdec5c0e780f1f56423a2cce8
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 1%
       * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
-      * [&#x200B; [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [ [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。  [!DNL livesearch]にフォールバックしています。](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
@@ -215,10 +215,8 @@ ht-degree: 1%
    * [特定のストアのDB エンティティ（注文、請求書、クレジットメモなど）の増分IDの変更](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Adobe Commerce クラウドインフラストラクチャ上の環境をリセットする](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI：統合の再認証](/help/how-to/general/mbi-reauthenticating-integrations.md)
-   * [Pro プランのログの場所（ディレクトリ）：統合、ステージング、実稼動](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce クラウド版：ホストのインスタンスのアップサイズが必要かどうかを確認します](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [サンドボックススクリプトのBootstrap Adobe Commerce 2](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
-   * [Adobe Commerce Intelligence トレーニングビデオ：フィルターセット](/help/how-to/general/mbi-training-video-filter-sets.md)
    * [Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロック](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [クラウドインフラストラクチャ上のAdobe Commerceの管理者パスワードの変更](/help/how-to/general/change-magento-admin-password-on-cloud.md)
    * [Adobe Commerce上のクラスター内のvCPU層を表示する](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
