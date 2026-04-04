@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce ステータスのアップデートを購読する方法
-description: この記事では、[Adobeステータス ] （https://status.adobe.com）でAdobe Commerce ステータスを登録して、ステータスアラート、アップデート、大規模な停止やメンテナンスに関する情報を確認する方法について説明します。
+description: この記事では、[Adobeステータス ] （https://status.adobe.com/ja-jp）でAdobe Commerce ステータスを登録して、ステータスアラート、アップデート、大規模な停止やメンテナンスに関する情報を確認する方法について説明します。
 exl-id: 17b39925-4726-45da-b55d-c04c9b782df1
 source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## AdobeMagentoステータスのアップデートを購読する方法
 
-1. [Adobeの状態 &#x200B;](https://status.adobe.com) に移動します。
+1. [Adobeの状態 &#x200B;](https://status.adobe.com/ja-jp) に移動します。
 1. **ログイン** をクリックします。
 1. Adobeの資格情報を使用してログインします。
 1. オプションが表示されている場合は、「**会社または学校アカウント**」を選択します。
