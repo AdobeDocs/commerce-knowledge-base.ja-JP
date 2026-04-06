@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 308b24e3f88fd9e9aab1c3c2f572b627703bab4d
+source-git-commit: 620f4d9e2e070ea8009f2f16b106ddd63d23b1b6
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,6 @@ ht-degree: 1%
       * [MySQL カタログ検索エンジンは、Adobe Commerce 2.4.0で削除されます](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobe Commerce サポートの受け入れプロセスのExperience Leagueへの移行](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
    * ヘルプセンターのニュース {#news}
-      * [Adobe Commerce ヘルプセンターの廃止](/help/announcements/help-center-news/decommissioning-of-adobe-commerce-help-center.md)
 * トラブルシューティング {#troubleshooting}
    * [トラブルシューティングの概要](/help/troubleshooting/overview.md)
    * データベース {#database}
@@ -79,7 +78,7 @@ ht-degree: 1%
       * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
-      * [&#x200B; [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [ [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。  [!DNL livesearch]にフォールバックしています。](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
