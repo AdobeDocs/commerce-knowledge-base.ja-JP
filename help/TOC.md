@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: a54f3772949bca48018d1cfc97a25dbf93652a56
+source-git-commit: 992746d72bd6251d3a830f8bb03d7ed11e848b9b
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1837'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 1%
       * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
-      * [&#x200B; [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [ [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。  [!DNL livesearch]にフォールバックしています。](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
@@ -238,7 +238,6 @@ ht-degree: 1%
    * [Adobe Commerce クラウド版のMariaDB 10.4から10.5へのアップグレード](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQ {#faq}
    * [FAQの概要](/help/faq/overview.md)
-   * [Fastlyを活用したweb アプリケーションファイアウォール（WAF）:FAQ](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
    * [Adobe Commerceの主要な決済システムとの統合の価値の低下](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [クラウドインスタンスにサードパーティアプリケーションをインストールできますか？](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Magento.comとaccounts.magento.cloud アカウントのログイン情報をリンク](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
