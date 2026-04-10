@@ -5,57 +5,57 @@ source-wordcount: '401'
 ht-degree: 6%
 
 ---
-# Contributeの記事
+# 記事を投稿
 
-アドビのコミュニティはもとより、ドキュメントチーム外部のAdobe担当者からのコントリビューションもお待ちしています。
+私たちは、コミュニティやAdobeのドキュメント部門以外のスタッフからの寄付を歓迎します。
 
 
-## Adobe オープン Source行動規範
+## AdobeオープンSource行動規範
 
 このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
 
-## Adobeコンテンツへの投稿について
+## Adobe コンテンツへのコントリビューションについて
 
-[Adobeドキュメント投稿者ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)。
+[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
-投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
+貢献の方法は、自身が誰であるか、また貢献したい変更の種類によって異なります。
 
 ### 軽微な変更
 
-善意で軽微な更新を行う場合は、記事にアクセスして記事内の **編集** リンクをクリックすると、GitHub ソースに移動します。 その後、GitHub UI を使用して更新を行います。 一般的な [Adobeドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+あなたが心の良さからマイナーアップデートを提供している場合は、記事にアクセスし、記事のGitHub ソースに移動する記事の&#x200B;**Edit** リンクをクリックしてください。 次に、GitHub UIを使用して更新します。 詳しくは、[Adobe Docs コントリビューターガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
-このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
+このリポジトリのドキュメントやコード例に対して提出する軽微な修正や明確化は、Adobe利用条件の対象となります。
 
-### コミュニティメンバーによる大幅な変更または新しい記事
+### コミュニティメンバーからの主な変更点や新しい記事
 
-Adobeコミュニティのメンバーが新しい記事を作成したり、大きな変更をコントリビューションしたりする場合は、Git リポジトリーの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとのやり取りを開始してください。 計画に同意したら、公開リポジトリと非公開リポジトリでの作業を組み合わせて新しいコンテンツを取り込むために、従業員と協力する必要があります。
+Adobe コミュニティに参加していて、新しい記事を作成したり、大きな変更を送信したりしたい場合は、Git リポジトリの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとの会話を開始してください。 計画に同意したら、従業員と協力して、公開リポジトリと非公開リポジトリの作業を組み合わせて、新しいコンテンツを導入する必要があります。
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Adobe社員からの大きな変化
+### Adobe社員の主な変更点
 
-Adobe Experience Cloud ソリューションの製品チームのテクニカルライター、プログラムマネージャー、または開発者で技術記事の投稿または作成を担当している場合は、`https://git.corp.adobe.com/AdobeDocs` のプライベートリポジトリを使用する必要があります。
+テクニカルライター、プログラムマネージャー、またはAdobe Experience Cloud ソリューションのプロダクトチームの開発者で、技術記事の投稿や作成を担当する場合は、`https://git.corp.adobe.com/AdobeDocs`にあるプライベートリポジトリを使用してください。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## ツールと設定
 
-コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
+コミュニティのコントリビューターは、GitHub UIを使用して基本的な編集をおこなったり、リポジトリをフォークして主要なコントリビューションを作成したりできます。
 
-詳しくは、[Adobeドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
-## Markdown を使用してトピックを書式設定する方法
+## Markdownを使用してトピックを書式設定する方法
 
-このリポジトリ内の記事はすべて、GitHub Flavored Markdown を使用しています。 Markdown について詳しくは、以下を参照してください。
+このリポジトリ内のすべての記事では、GitHubのマークダウンを使用しています。 Markdownに詳しくない場合は、以下を参照してください。
 
-* [Markdown の基本 &#x200B;](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [&#x200B; 印刷用 Markdown チートシート &#x200B;](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdownの基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [印刷可能なマークダウンのチートシート ](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## ラベル
 
-公開リポジトリーでは、プルリクエストに以下のような自動ラベルが割り当てられ、プルリクエストワークフローの管理とプルリクエストの処理状況の把握に役立ちます。
+公開リポジトリでは、プルリクエストに自動ラベルが割り当てられ、プルリクエストワークフローの管理や、プルリクエストの状況の把握に役立ちます。
 
-* **変更が作成者に送信されました**：保留中のプルリクエストについて作成者に通知されました。
-* **結合準備完了**：プルリクエストレビューチームによるレビューの準備が整いました。
+* **作成者に変更が送信されました**：保留中のプルリクエストが作成者に通知されました。
+* **結合準備完了**: プルリクエストレビューチームによるレビューの準備完了です。
