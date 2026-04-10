@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 992746d72bd6251d3a830f8bb03d7ed11e848b9b
+source-git-commit: 8b9d7908c4c6b99424e40e24e4de08968b203d18
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1834'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,7 @@ ht-degree: 1%
    * [お知らせ概要](/help/announcements/overview.md)
    * Adobe Commerceのお知らせ {#commerce-announcements}
       * [クラウドインフラストラクチャ上のAdobe Commerceのホリデーサージキャパシティのリクエスト](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [Adobe Commerce サポートの受け入れプロセスのExperience Leagueへの移行](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
-   * ヘルプセンターのニュース {#news}
+      * {hide-from-toc}[Adobe Commerce サポートの受け入れプロセスをExperience Leagueに移行](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * トラブルシューティング {#troubleshooting}
    * [トラブルシューティングの概要](/help/troubleshooting/overview.md)
    * データベース {#database}
@@ -76,7 +75,7 @@ ht-degree: 1%
       * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
-      * [&#x200B; [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [ [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。  [!DNL livesearch]にフォールバックしています。](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
