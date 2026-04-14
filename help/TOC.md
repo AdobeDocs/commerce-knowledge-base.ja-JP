@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 8b9d7908c4c6b99424e40e24e4de08968b203d18
+source-git-commit: ef65f8cf94b86511661b9fe2605d14d3a3027e58
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1828'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,6 @@ ht-degree: 1%
    * [クラウドインフラストラクチャのcron ジョブで停止しているAdobe Commerceを手動でリセットする](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [ライブサイトで同じドメインを使用する場合は、実稼動環境でFastlyをテストします](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [クラウド基盤におけるAdobe Commerceの障害を特定および測定](/help/how-to/general/how-to-identify-outages.md)
-   * [Adobe Commerceでのクラウド分岐の並べ替え](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Adobe Commerce クラウドインフラストラクチャ上のすべてのページのHTTPをHTTPSにリダイレクト（TLSを強制）](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [クラウド上のAdobe CommerceでMySQL用の空き容量を増やす](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [特定のストアのDB エンティティ（注文、請求書、クレジットメモなど）の増分IDの変更](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
