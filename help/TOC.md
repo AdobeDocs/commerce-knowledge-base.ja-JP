@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: ef65f8cf94b86511661b9fe2605d14d3a3027e58
+source-git-commit: 4a274957a88cfb40d318d898ca9870c29540f400
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1817'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 1%
 * お通知 {#announcements}
    * [お知らせ概要](/help/announcements/overview.md)
    * Adobe Commerceのお知らせ {#commerce-announcements}
-      * [クラウドインフラストラクチャ上のAdobe Commerceのホリデーサージキャパシティのリクエスト](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
       * {hide-from-toc}[Adobe Commerce サポートの受け入れプロセスをExperience Leagueに移行](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * トラブルシューティング {#troubleshooting}
    * [トラブルシューティングの概要](/help/troubleshooting/overview.md)
