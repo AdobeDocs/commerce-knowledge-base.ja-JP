@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 4a274957a88cfb40d318d898ca9870c29540f400
+source-git-commit: 3bec25fb1d0ade6c36c41135075edc4ba3610d30
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1801'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
       * [Composer install コマンドが.gitignore ファイルを上書きする、Adobe Commerce](/help/troubleshooting/installation-and-upgrade/custom-gitignore-file-overridden.md)
       * [インストール時に、PHPの日付警告](/help/troubleshooting/installation-and-upgrade/during-installation-php-date-warning.md)
       * [インストール中に、Reflection Exception エラーが発生しました](/help/troubleshooting/installation-and-upgrade/during-installation-reflection-exception-error.md)
-      * [セットアップの実行中に市外局番が設定されないエラーが発生する](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
+      * [セットアップ :upgradeの実行時に市外局番が設定されていません。エラー](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
       * [インストールに失敗しました。install.logを作成できません](/help/troubleshooting/installation-and-upgrade/installation-fails-cannot-create-install-log.md)
       * [インストール時の例外](/help/troubleshooting/installation-and-upgrade/exceptions-during-installation.md)
       * [オプションのサンプルデータのインストール中にエラーが発生する](/help/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data.md)
@@ -192,7 +192,7 @@ ht-degree: 1%
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアのセキュリティの確保と暗号化キーのローテーションに関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
    * Elasticsearch {#elasticsearch}
-      * [検索エンジンが [!DNL Elasticsearch7] に設定されたときに [!DNL Opensearch]にフォールバックします](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
+      * [検索エンジンが [!DNL Opensearch]に設定されたときに [!DNL Elasticsearch7] にフォールバックします](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [ElasticSuite トラッキングインデックスがElasticsearchの問題を引き起こす](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
 * ハウツー {#how-to}
    * [チュートリアルガイド](/help/how-to/overview.md)
@@ -205,7 +205,7 @@ ht-degree: 1%
    * [クラウド基盤におけるAdobe Commerceの障害を特定および測定](/help/how-to/general/how-to-identify-outages.md)
    * [Adobe Commerce クラウドインフラストラクチャ上のすべてのページのHTTPをHTTPSにリダイレクト（TLSを強制）](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [クラウド上のAdobe CommerceでMySQL用の空き容量を増やす](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
-   * [特定のストアのDB エンティティ（注文、請求書、クレジットメモなど）の増分IDの変更](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
+   * [DB エンティティの増分IDの変更（注文、請求書、クレジットメモなど） 特定の店舗で](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Adobe Commerce クラウドインフラストラクチャ上の環境をリセットする](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI：統合の再認証](/help/how-to/general/mbi-reauthenticating-integrations.md)
    * [Adobe Commerce クラウド版：ホストのインスタンスのアップサイズが必要かどうかを確認します](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
@@ -235,7 +235,6 @@ ht-degree: 1%
    * [Adobe Commerce クラウド版のMariaDB 10.4から10.5へのアップグレード](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQ {#faq}
    * [FAQの概要](/help/faq/overview.md)
-   * [Adobe Commerceの主要な決済システムとの統合の価値の低下](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [クラウドインスタンスにサードパーティアプリケーションをインストールできますか？](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Magento.comとaccounts.magento.cloud アカウントのログイン情報をリンク](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [Cloud Pro アーキテクチャで、Database auto_increment incrementの増分変数を「3」のAdobe Commerceに設定](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
