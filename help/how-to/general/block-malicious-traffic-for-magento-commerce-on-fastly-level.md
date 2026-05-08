@@ -1,91 +1,91 @@
 ---
-title: Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロックする
-description: この記事では、クラウドインフラストラクチャストア上のAdobe Commerceで DDoS 攻撃が行われていると思われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
+title: Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロック
+description: この記事では、Adobe Commerce on cloud infrastructure ストアでDDoS攻撃が発生していると疑われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
+source-git-commit: 8bde15deccc24c548c20cf5955cbebc45ac1d9a1
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
 
-# Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロックする
+# Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロック
 
-この記事では、悪意のある脅威に対応するだけでなく、地理的フィルタリングの方法としても、ストアへの不要なトラフィックをブロックする方法について説明します。
+この記事では、悪意のある脅威に対応するだけでなく、ジオグラフィックフィルタリングの方法として、ストアへの不要なトラフィックをブロックする方法について説明します。
 
-クラウドインフラストラクチャー上のAdobe Commerce（および Fastly CDN）は、DDoS 攻撃などの悪意のある脅威に対応してストアへのトラフィックを管理するツールを提供します。 さらに、悪意のある意図が検出されない場合でも、特定の国や地域からのリクエストをブロックして、ビジネスポリシー、規制要件、その他の運用ニーズに準拠することができます。
+Adobe Commerceクラウドインフラストラクチャ（およびFastly CDN）は、DDoS攻撃などの悪意のある脅威に対応して、ストアへのトラフィックを管理するツールを提供します。 さらに、悪意のある意図が検出されない場合でも、特定の国や地域からのリクエストをブロックし、ビジネスポリシー、規制要件、その他の運用ニーズに準拠することができます。
 
 ## 影響を受ける製品とバージョン：
 
-* クラウドインフラストラクチャー 2.3.x 上のAdobe Commerce
+* Adobe Commerce on cloud infrastructure 2.3.x
 
-この記事では、悪意のある IP や、その国およびユーザーエージェントが既に存在することを前提としています。 クラウドインフラストラクチャー上のAdobe Commerceのユーザーは、通常、この情報をAdobe Commerce サポートから取得します。 次の節では、この情報に基づいてトラフィックをブロックする手順を説明します。 すべての変更は、実稼動環境で行う必要があります。
+この記事では、悪意のあるIPsや、その国やユーザーエージェントが既に存在していることを前提としています。 Adobe Commerce on cloud infrastructureのユーザーは、通常、Adobe Commerce サポートからこの情報を取得します。 次の節では、この情報に基づいてトラフィックをブロックする手順を説明します。 すべての変更は実稼動環境で行う必要があります。
 
-## 管理パネルへのアクセスの取得
+## 管理パネルへのアクセス
 
-Web サイトが DDoS によって過負荷になっている場合、Commerce管理者にログインできない可能性があります（および、この記事で後述するすべての手順を実行する必要があります）。
+Web サイトがDDoSによって過負荷になっている場合は、Commerce管理者にログインできない可能性があります（この記事で詳しく説明されているすべての手順を実行してください）。
 
-管理者にアクセスするには、[&#x200B; メンテナンスモードの有効化または無効化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) の説明に従って web サイトをメンテナンスモードにし、IP アドレスを許可リストに登録します。 この操作が完了したら、メンテナンスモードを無効にします。
+管理者にアクセスするには、[ メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)の説明に従ってweb サイトをメンテナンスモードにし、IP アドレスをホワイトリストに登録します。 これが完了したら、メンテナンスモードを無効にします。
 
-## IP によるトラフィックのブロック
+## IPでトラフィックをブロック
 
-クラウドインフラストラクチャストア上のAdobe Commerceの場合、特定の IP アドレスおよびサブネットによってトラフィックをブロックする最も効果的な方法は、Commerce Admin に Fastly 用の ACL を追加することです。 次に、詳細な手順へのリンクを含む手順を示します。
+Adobe Commerce オンクラウドインフラストラクチャストアの場合、特定のIP アドレスとサブネットによるトラフィックをブロックする最も効果的な方法は、Commerce管理者にFastlyのACLを追加することです。 以下は、より詳細な手順へのリンクを含む手順です。
 
-1. Commerce管理者で、**ストア**/**設定**/**詳細**/**システム**/**フルページキャッシュ**/**Fastly 設定** に移動します。
-1. ブロックする IP アドレスまたはサブネットのリストを使用して [&#x200B; 新しい ACL を作成 &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/ACL.md) します。
-1. ACL リストに追加し、Adobe Commerce用の Fastly\_Cdn モジュールの [&#x200B; ブロッキング &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) ガイドの説明に従ってブロックします。
+1. Commerce管理者で、**Stores** > **Configuration** > **Advanced** > **System** > **Full Page Cache** > **Fastly Configuration**&#x200B;に移動します。
+1. [ ブロックするIP アドレスまたはサブネットのリストを含む新しいACL](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/ACL.md)を作成します。
+1. Adobe Commerce用Fastly\_Cdn モジュールの[ ブロッキング ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) ガイドの説明に従って、これをACL リストとブロックに追加します。
 
 ## 国別のトラフィックをブロック
 
-クラウドインフラストラクチャストア上のAdobe Commerceの場合、国別のトラフィックをブロックする最も効果的な方法は、Commerce Admin に Fastly 用の ACL を追加することです。
+Adobe Commerce オンクラウドインフラストラクチャストアの場合、国別のトラフィックをブロックする最も効果的な方法は、Commerce管理者にFastlyのACLを追加することです。
 
-1. Commerce管理者で、**ストア**/**設定**/**詳細**/**システム**/**フルページキャッシュ**/**Fastly 設定** に移動します。
-1. 国を選択し、Adobe Commerce用の Fastly\_Cdn モジュールの [&#x200B; ブロッキング &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) ガイドに記載されているように、ACL を使用してブロッキングを設定します。
+1. Commerce管理者で、**Stores** > **Configuration** > **Advanced** > **System** > **Full Page Cache** > **Fastly Configuration**&#x200B;に移動します。
+1. 国を選択し、Adobe Commerce用Fastly\_Cdn モジュールの[ ブロッキング ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) ガイドで説明されているように、ACLを使用してブロッキングを設定します。
 
 ## ユーザーエージェントによるトラフィックのブロック
 
-ユーザーエージェントに基づいてブロックを確立するには、カスタム VCL スニペットを Fastly 設定に追加する必要があります。 これを行うには、次の手順を実行します。
+ユーザーエージェントに基づいてブロッキングを確立するには、Fastly設定にカスタム VCL スニペットを追加する必要があります。 これを行うには、次の手順を実行します。
 
-1. Commerce管理者で、**ストア**/**設定**/**詳細**/**システム**/**フルページキャッシュ** に移動します。
-1. 次に **Fastly 設定**/**カスタム VCL スニペット** を選択します。
-1. Fastly\_Cdn モジュールの [&#x200B; カスタム VCL スニペット &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) ガイドの説明に従って、新しいカスタムスニペットを作成します。 例として、次のコードサンプルを使用できます。 このサンプルでは、`AhrefsBot` および `SemrushBot` ユーザーエージェントのトラフィックが許可されません。
+1. Commerce管理者で、**Stores** > **Configuration** > **Advanced** > **System** > **Full Page Cache**&#x200B;に移動します。
+1. 次に、**Fastly設定** > **カスタム VCL スニペット**&#x200B;です。
+1. Fastly\_Cdn モジュールの[ カスタム VCL スニペット ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) ガイドの説明に従って、新しいカスタムスニペットを作成します。 次のコードサンプルを例として使用できます。 このサンプルでは、`AhrefsBot` ユーザーエージェントのトラフィックを許可しません。
 
 ```php
 name: block_bad_useragents
   type: recv
   priority: 5
   VCL:
-  if ( req.http.User-Agent ~ "(AhrefsBot|SemrushBot)" ) {
+  if ( req.http.User-Agent ~ "(AhrefsBot)" ) {
       error 405 "Not allowed";
   }
 ```
 
-## レート制限（実験的な Fastly 機能）
+## レート制限（実験的なFastly機能）
 
-クラウドインフラストラクチャ上のAdobe Commerceには、実験的な Fastly 機能があり、特定のパスとクローラーのレート制限を指定できます。 詳しくは、[Fastly モジュールのドキュメント &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) を参照してください。
+Adobe Commerce on cloud infrastructureには、実験的なFastly機能があり、特定のパスとweb クローラーのレート制限を指定できます。 詳しくは、[Fastly モジュールのドキュメント ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md)を参照してください。
 
-この機能は、実稼動環境で使用する前に、ステージング環境で詳細にテストする必要があります。これは、正当なトラフィックをブロックする可能性があるからです。
+この機能は、実稼動環境で使用する前に、ステージング環境で広範にテストする必要があります。これは、正規のトラフィックをブロックする可能性があるためです。
 
-## 推奨：robots.txt の更新を検討してください
+## 推奨：robots.txtの更新を検討する
 
-`robots.txt` ファイルを更新すると、特定の検索エンジン、クローラー、ロボットが特定のページをクロールするのを防ぐのに役立つ場合があります。 クロールしないページの例としては、検索結果ページ、チェックアウト、顧客情報などがあります。 ロボットがこれらのページをクロールするのを防ぐことは、ロボットが生成するリクエストの数を減らすのに役立ちます。
+`robots.txt` ファイルを更新すると、特定の検索エンジン、web クローラー、およびロボットが特定のページをクロールするのを防ぐことができます。 クロールしないページの例としては、検索結果ページ、チェックアウト、お客様情報などがあります。 これらのページをクロールしないようにすることで、生成されるリクエストの数を減らすことができます。
 
-`robots.txt` を使用する際には、次の 2 つの重要な考慮事項があります。
+`robots.txt`を使用する際には、次の2つの重要な考慮事項があります。
 
-* ロボットはあなたの `robots.txt` を無視することができます。 特に、セキュリティの脆弱性を探して Web をスキャンするマルウェアロボットや、スパムの発信者が使用するメールアドレスの収集には注意を払いません。
-* `robots.txt` ファイルは、公開されているファイルです。 ロボットが使用したくないサーバーのセクションは誰でも確認できます。
+* ロボットは`robots.txt`を無視できます。 特に、セキュリティ上の脆弱性をウェブ上でスキャンするマルウェアのロボットや、迷惑メール送信者が利用するメールアドレスの収集には注意が必要です。
+* `robots.txt` ファイルは一般公開されているファイルです。 ロボットが使用したくないサーバーのセクションは誰でも確認できます。
 
-Adobe Commerce `robots.txt` の基本設定とデフォルトの設定については、開発者向けドキュメントの [&#x200B; 検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) の記事を参照してください。
+基本的な情報とデフォルトのAdobe Commerce `robots.txt`設定については、開発者向けドキュメントの[Search Engine Robots](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots)記事をご覧ください。
 
-`robots.txt` に関する一般的な情報と推奨事項については、以下を参照してください。
+`robots.txt`に関する一般的な情報と推奨事項については、次を参照してください。
 
-* Google サポートによる [robots.txt](https://developers.google.com/search/docs/advanced/robots/create-robots-txt) ファイルの作成
-* robotstxt.orgによる [/robots.txtについて &#x200B;](https://www.robotstxt.org/robotstxt.html)
+* Google サポートによる[robots.txt](https://developers.google.com/search/docs/advanced/robots/create-robots-txt) ファイルの作成
+* [/robots.txt](https://www.robotstxt.org/robotstxt.html)について（robotstxt.org）
 
-開発者や SEO の専門家と協力して、許可するユーザーエージェントまたは許可しないユーザーエージェントを決定します。
+開発者やSEOの専門家と協力して、許可したいユーザーエージェントや許可しないユーザーエージェントを決定します。
 
-## 関連資料
+## 関連トピックス
 
-* [Cloud 上のAdobe Commerceの製品固有のライセンス条件 &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* Commerce on Cloud ガイドの [&#x200B; ブロックリクエストのカスタム VCL](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+* [Adobe Commerce on Cloudの製品固有のライセンス条件](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
+* Commerce on Cloud ガイドのリクエストをブロックするための[ カスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
