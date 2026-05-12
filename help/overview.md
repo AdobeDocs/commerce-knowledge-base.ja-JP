@@ -15,8 +15,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce サポートナレッジベースガイドの再構築が進んでおり、その内容はAdobe Experience League内の他の場所に移行されます。 [Experience Leagueの検索ページとフィルター](https://experienceleague.adobe.com/en/search#)を使用して、最新のAdobe Commerceのトラブルシューティングとサポート関連のコンテンツを検索します。
+>Adobe Commerce サポートナレッジベースガイドの再構築が進んでおり、その内容はAdobe Experience League内の他の場所に移行されます。 [Experience Leagueの検索ページとフィルター](https://experienceleague.adobe.com/ja/search#)を使用して、最新のAdobe Commerceのトラブルシューティングとサポート関連のコンテンツを検索します。
 
 ![&#x200B; ナレッジベースのホームページ &#x200B;](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-このナレッジベースの情報は、[Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)および[Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)およびその他のAdobe Commerce パブリケーションを補完するように設計されています。 トラブルシューティングとベストプラクティス、お知らせ、よくある質問への回答、公式ドキュメントに記載されていない（理由にかかわらず）特定のシナリオを紹介します。
+このナレッジベースの情報は、[Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)および[Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja)およびその他のAdobe Commerce パブリケーションを補完するように設計されています。 トラブルシューティングとベストプラクティス、お知らせ、よくある質問への回答、公式ドキュメントに記載されていない（理由にかかわらず）特定のシナリオを紹介します。
