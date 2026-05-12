@@ -1,34 +1,22 @@
 ---
-title: Adobe Commerce サポートナレッジベース
-description: Commerce Store のトラブルシューティングと管理に必要なすべての知識。
+title: Adobe Commerce サポート情報
+description: Commerce ストアのトラブルシューティングとメンテナンスを行うために必要な情報を提供します。
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: 984562f30789ee4cea1f6b43eb960545a71da35e
+source-git-commit: 82a9607fdf1690818dae05f08b7daf98073b9c41
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 3%
+source-wordcount: '133'
+ht-degree: 0%
 
 ---
 
-# Adobe Commerce サポートナレッジベース
+# Adobe Commerce サポート情報
 
 >[!NOTE]
 >
->Adobe Commerce サポートナレッジベースガイドは間もなく再構築され、そのコンテンツは Adobe Experience League 内の他の場所に移動されます。 それまでの間、このガイドの内容を引き続き維持および更新します。
+>Adobe Commerce サポートナレッジベースガイドの再構築が進んでおり、その内容はAdobe Experience League内の他の場所に移行されます。 [Experience Leagueの検索ページとフィルター](https://experienceleague.adobe.com/en/search#)を使用して、最新のAdobe Commerceのトラブルシューティングとサポート関連のコンテンツを検索します。
 
-![&#x200B; ナレッジベースのホームページ &#x200B;](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
+![ ナレッジベースのホームページ ](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-このナレッジベースの情報は、[Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)、[Adobe Commerce マーチャントガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja) およびその他のAdobe Commerceのパブリケーションを補完するように設計されています。 公式ドキュメントでは、トラブルシューティングとベストプラクティス、ホストのお知らせ、よくある質問への回答および（何らかの理由で）記載されていない具体的なシナリオについて説明します。
-
-## このナレッジベースには何がありますか？
-
-| カテゴリ | 説明 |
-| --- | --- |
-| [&#x200B; サポートツール &#x200B;](/help/support-tools/overview.md) | Adobe Commerceが提供する様々なサポートツールを使用して、e コマースストアのエクスペリエンスを向上させることができます。 パーソナライズされたベストプラクティス、診断および監視ツール、サイトに関する最も関連性の高い情報を提供します。 |
-| [&#x200B; 発表 &#x200B;](/help/announcements/overview.md) | Adobe Commerce チームから重要なアップデートを入手してください。 |
-| [&#x200B; トラブルシューティング &#x200B;](/help/troubleshooting/overview.md) | セルフサービスソリューションおよびパッチについては、Adobe Commerce サポートチームまでお問い合わせください。 |
-| [&#x200B; ヘルプセンターユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) | サポートチケットの管理、共有アクセスの付与、ナレッジベースの効果的な参照方法について説明します。 |
-| [&#x200B; ハウツー &#x200B;](/help/how-to/overview.md) | Adobe Commerce サポートチームから明確な手順を段階的に取得します。 |
-| [FAQ](/help/faq/overview.md) | Adobe Commerceのポリシー、戦略、Adobe Commerce機能の詳細に関するよくある質問を紹介します。 |
-
+このナレッジベースの情報は、[Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)および[Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)およびその他のAdobe Commerce パブリケーションを補完するように設計されています。 トラブルシューティングとベストプラクティス、お知らせ、よくある質問への回答、公式ドキュメントに記載されていない（理由にかかわらず）特定のシナリオを紹介します。
