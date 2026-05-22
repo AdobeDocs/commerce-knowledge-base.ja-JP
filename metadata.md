@@ -1,7 +1,8 @@
 ---
 cloud: Experience Cloud
 solution: Commerce
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
 usetq: true
 feature-set: Commerce
 landing-page-name: commerce
@@ -24,4 +25,4 @@ ht-degree: 0%
 
 metadata.md ファイルには、リポジトリ内のユーザーガイド TOC.md ファイルに渡されるリポジトレベルのメタデータが含まれています。 任意のユーザーガイドのmetadata.md コンテンツを変更する場合は、任意のTOC.md ファイルで変更します。
 
-**solution**、**product**、**type**&#x200B;の有効な値のリストについては、[ メタデータ ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html)を参照してください。
+**solution**、**product**、**type**&#x200B;の有効な値のリストについては、[&#x200B; メタデータ &#x200B;](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html)を参照してください。
