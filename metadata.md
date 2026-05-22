@@ -3,6 +3,7 @@ cloud: Experience Cloud
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+usetq: true
 feature-set: Commerce
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
@@ -12,7 +13,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-knowledge-base.ja-JP
 index: true
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-source-git-commit: 1fb532972ed3c732572f2f7f12d31f79bd86a4de
+source-git-commit: be3af16156719ed47daf3fdaec1113663885a1a3
 workflow-type: tm+mt
 source-wordcount: 97
 ht-degree: 0%
