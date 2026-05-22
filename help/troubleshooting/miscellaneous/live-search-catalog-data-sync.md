@@ -31,9 +31,9 @@ ht-degree: 0%
 
 <u>複製する手順</u>
 
-1. Adobe Commerce インスタンスのライブサーチを設定して接続する（[&#x200B; ライブサーチのインストール/API キーの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys)をユーザードキュメントで参照）。
-1. 30分後、ユーザードキュメントの「[&#x200B; ライブサーチのインストール/書き出しを検証](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export)」の説明に従って、書き出されたカタログデータを確認します。
-1. 30分後、ユーザードキュメントの[&#x200B; ライブサーチのインストール/接続のテスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection)で説明されているように、接続をテストします。
+1. Adobe Commerce インスタンスのライブサーチを設定して接続する（[&#x200B; ライブサーチのインストール/API キーの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#configure-api-keys)をユーザードキュメントで参照）。
+1. 30分後、ユーザードキュメントの「[&#x200B; ライブサーチのインストール/書き出しを検証](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#verify-export)」の説明に従って、書き出されたカタログデータを確認します。
+1. 30分後、ユーザードキュメントの[&#x200B; ライブサーチのインストール/接続のテスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=ja#test-connection)で説明されているように、接続をテストします。
 
 Or
 
@@ -80,7 +80,7 @@ Or
    bin/magento indexer:reindex cde_products_feed
    ```
 
-1. それでも正しいデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+1. それでも正しいデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ### 最後の製品エクスポートのタイムスタンプを確認する
 
@@ -96,7 +96,7 @@ Or
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. `<>`時間（増分更新の時間）待ちます。 それでもデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+1. `<>`時間（増分更新の時間）待ちます。 それでもデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ### 特定の属性コードを同期
 
@@ -114,7 +114,7 @@ Or
    bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
-1. それでも正しいデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+1. それでも正しいデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ### 最後の製品属性エクスポートのタイムスタンプを確認する
 
@@ -132,7 +132,7 @@ Or
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. 15～20分待ちます（増分更新の時間）。 それでもデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+1. 15～20分待ちます（増分更新の時間）。 それでもデータが表示されない場合は、[&#x200B; サポートチケットを作成してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ### API設定の変更後に同期
 
@@ -150,13 +150,13 @@ bin/magento saas:resync --feed categories --cleanup-feed
 bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
-[&#x200B; ライブ検索インデックスの再インデックスをリクエストするために、サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support)を送信します。 問題の説明に、**[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**&#x200B;の下の管理パネルにあるデータスペース/環境IDを含めます。
+[&#x200B; ライブ検索インデックスの再インデックスをリクエストするために、サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?lang=ja&support-tab=home#support)を送信します。 問題の説明に、**[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**&#x200B;の下の管理パネルにあるデータスペース/環境IDを含めます。
 
 >[!IMPORTANT]
->他の場合に`--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生する可能性があります。  新しい空の環境がある場合、Adobe チームがデータスペースのクリーンアップ処理を完了した後、または[—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) オプションを指定して`saas:resync` コマンドを実行した場合にのみ使用してください。 他の場合に`--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生する可能性があります。
+>他の場合に`--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生する可能性があります。  新しい空の環境がある場合、Adobe チームがデータスペースのクリーンアップ処理を完了した後、または[—dry-run](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) オプションを指定して`saas:resync` コマンドを実行した場合にのみ使用してください。 他の場合に`--cleanup-feed` オプションを使用すると、データの損失やデータ同期の問題が発生する可能性があります。
 
 ## 関連トピックス
 
-* [&#x200B; オンボーディングライブサーチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) （ユーザードキュメント）
-* [&#x200B; ログを確認し、Adobe Commerce SaaS データ書き出しと同期のトラブルシューティング（](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging)）（Adobe Commerce SaaS データ書き出しガイド）
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [&#x200B; オンボーディングライブサーチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=ja) （ユーザードキュメント）
+* [&#x200B; ログを確認し、Adobe Commerce SaaS データ書き出しと同期のトラブルシューティング（](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging)）（Adobe Commerce SaaS データ書き出しガイド）
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
