@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## Solution
 
-親ブランチは、マーチャントが新しく作成したブランチをプッシュしてアクティブ化した後にのみ設定できます。 開発者向けドキュメントの「[&#x200B; クラウドインフラストラクチャ上のAdobe Commerce > Bitbucket統合](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch)」を参照してください。
+親ブランチは、マーチャントが新しく作成したブランチをプッシュしてアクティブ化した後にのみ設定できます。 開発者向けドキュメントの「[&#x200B; クラウドインフラストラクチャ上のAdobe Commerce > Bitbucket統合](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch)」を参照してください。
 
 サーバー上の既存のブランチの親を更新するには、magento-cloud CLIで`magento-cloud environment:info` コマンドを使用してください。
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-* 開発者向けドキュメントの[Adobe Commerce on cloud infrastructure > magento-cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)。
+* 開発者向けドキュメントの[Adobe Commerce on cloud infrastructure > magento-cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)。

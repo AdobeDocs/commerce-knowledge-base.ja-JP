@@ -1,6 +1,6 @@
 ---
 title: Fastlyが有効になっているサブページにメインメニュー（カテゴリー）が表示されない
-description: この記事では、FastlyまたはVarnishが有効になっている場合に、メインメニュー（またはユーザーガイドの[ カテゴリトップナビゲーションメニュー] （https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html））がサブページ（*blog/page*など）のストアフロントに表示されない場合の修正点を説明します。
+description: この記事では、FastlyまたはVarnishが有効になっている場合に、メインメニュー（またはユーザーガイドの[ カテゴリトップナビゲーションメニュー] （https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=ja））がサブページ（*blog/page*など）のストアフロントに表示されない場合の修正点を説明します。
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fastlyが有効になっているサブページにメインメニュー（カテゴリー）が表示されない
 
-この記事では、FastlyまたはVarnishが有効になっている場合に、メインメニュー（またはユーザーガイドの[&#x200B; カテゴリトップナビゲーションメニュー](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html)）がサブページ（*ブログ/ページ*&#x200B;など）のストアフロントに表示されない場合の修正を説明します。
+この記事では、FastlyまたはVarnishが有効になっている場合に、メインメニュー（またはユーザーガイドの[&#x200B; カテゴリトップナビゲーションメニュー](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=ja)）がサブページ（*ブログ/ページ*&#x200B;など）のストアフロントに表示されない場合の修正を説明します。
 
 **原因：** ページの&#x200B;*URL キー* パラメーターの許可されていない`/`文字（スラッシュ）（検索エンジン最適化設定）。 文字は通常、*URL キー*&#x200B;ではなく&#x200B;*URL パス* （ページ全体の場所を含む）が誤って指定された場合に追加されます。例えば、*ページ\_name*&#x200B;ではなく&#x200B;*ブログ/ページ\_name*。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## イシュー
 
-Fastlyまたはその他のVarnish ベースのサービスが有効になっている場合、メインメニュー（ユーザーガイドでは[&#x200B; カテゴリトップナビゲーションメニュー](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html)とも呼ばれます）がサブページのストアフロントに表示されません。
+Fastlyまたはその他のVarnish ベースのサービスが有効になっている場合、メインメニュー（ユーザーガイドでは[&#x200B; カテゴリトップナビゲーションメニュー](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=ja)とも呼ばれます）がサブページのストアフロントに表示されません。
 
 ## 原因
 
@@ -57,10 +57,10 @@ Fastlyまたはその他のVarnish ベースのサービスが有効になって
 
 SEOの&#x200B;*URL キー* パラメーター：
 
-* [検索エンジン最適化](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
-* [新しいページの追加](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html)
+* [検索エンジン最適化](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html?lang=ja)
+* [新しいページの追加](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html?lang=ja)
 
 ページ階層：
 
-* [概要](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html)
-* [ノードの追加](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)
+* [概要](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=ja)
+* [ノードの追加](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=ja#add-a-hierarchy-node)
