@@ -79,4 +79,4 @@ Adobe Commerce on cloud infrastructure （すべてのバージョン）
 
 ## 関連トピックス
 
-[&#x200B; サポートナレッジベースで専用クラスター](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters)を確認してください。
+[&#x200B; サポートナレッジベースで専用クラスター](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters)を確認してください。

@@ -34,7 +34,7 @@ ht-degree: 0%
 
 <u>解決策</u>
 
-1. [次の内容を記載したサポートリクエスト &#x200B;](https://experienceleague.adobe.com/home#support)をhttps://experienceleague.adobe.com/home#supportに送信します。
+1. [次の内容を記載したサポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)をhttps://experienceleague.adobe.com/home#supportに送信します。
 
    * 更新する既存の電子メールアドレス
    * 新しいメールアドレス
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 <u>解決策</u>
 
-[現在の所有者の電子メール ]のメールボックスにアクセスできる場合は、Creative Cloud ユーザーガイドの「[Adobe パスワードのリセットまたは変更](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html)」ガイドに従って、現在の所有者の電子メールのパスワードをリセットします。
+[現在の所有者の電子メール ]のメールボックスにアクセスできる場合は、Creative Cloud ユーザーガイドの「[Adobe パスワードのリセットまたは変更](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html)」ガイドに従って、現在の所有者の電子メールのパスワードをリセットします。
 
 1. 現在の所有者のメールボックスに送信されたパスワード リセット リンクを手順を確認します。
 1. 新しいパスワードを設定し、電子メールを[新しい所有者の電子メール ]に変更します。
@@ -62,5 +62,5 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-Creative Cloud ユーザーガイドの[&#x200B; パスワードを忘れた場合](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html)にリセットします。
-Creative Cloud ユーザーガイドの[&#x200B; アカウントプロファイル &#x200B;](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html)を更新します。
+Creative Cloud ユーザーガイドの[&#x200B; パスワードを忘れた場合](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html)にリセットします。
+Creative Cloud ユーザーガイドの[&#x200B; アカウントプロファイル &#x200B;](https://helpx.adobe.com/jp/manage-account/using/edit-adobe-account-personal-profile.html)を更新します。

@@ -27,7 +27,7 @@ ht-degree: 0%
 <u>前提条件</u>:
 
 1. Commerce管理者で、**Stores** > **Configuration** > **Sales** > **Checkout**&#x200B;の下で、**Allow Guest Checkout** = *No*&#x200B;と設定します。
-1. ユーザーガイドの[Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?)の説明に従って、Braintree経由でPayPalを有効にします。
+1. ユーザーガイドの[Braintree](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/braintree?)の説明に従って、Braintree経由でPayPalを有効にします。
 
 <u>複製する手順</u>:
 
