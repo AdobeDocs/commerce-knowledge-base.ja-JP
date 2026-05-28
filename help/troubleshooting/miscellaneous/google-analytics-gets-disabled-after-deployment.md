@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## Solution
 
-Google Analyticsを常に有効にする場合は、開発者ドキュメントの[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics)で説明されているように、デプロイ変数`ENABLE_GOOGLE_ANALYTICS = true`を設定します。
+Google Analyticsを常に有効にする場合は、開発者ドキュメントの[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics)で説明されているように、デプロイ変数`ENABLE_GOOGLE_ANALYTICS = true`を設定します。
 
 >[!NOTE]
 >
