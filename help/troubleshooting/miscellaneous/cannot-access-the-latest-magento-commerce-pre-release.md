@@ -1,78 +1,78 @@
 ---
-title: 最新のAdobe Commerce プレリリースにアクセスできません
-description: この記事では、Adobe Commerceの最新のプレリリースコードを利用しようとする際の問題の解決策を説明します。
+title: 最新のAdobe Commerce プレリリースにアクセスできない
+description: この記事では、Adobe Commerceの最新のプレリリースコードを利用する際の問題に対する解決策を提供します。
 exl-id: cbf54a15-b307-4bfc-90b7-cff98aeb4fce
 feature: Roles/Permissions
 role: Developer
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
 
-# 最新のAdobe Commerce プレリリースにアクセスできません
+# 最新のAdobe Commerce プレリリースにアクセスできない
 
-この記事では、Adobe Commerceの最新のプレリリースコードを利用しようとする際の問題の解決策を説明します。
+この記事では、Adobe Commerceの最新のプレリリースコードを利用する際の問題に対する解決策を提供します。
 
 >[!NOTE]
 >
->Betaへのアクセスで問題が発生した場合は、[&#x200B; 最新バージョンのBetaにアクセスできない &#x200B;](/help/how-to/general/cannot-access-the-latest-beta-version.md) を参照してください。
+>Betaへのアクセスに問題がある場合は、[最新のBeta バージョンにアクセスできません](/help/how-to/general/cannot-access-the-latest-beta-version.md)の記事を参照してください。
 
-## 問題
+## イシュー
 
 この記事では、プレリリースコードへのアクセスに関する次の問題について説明します。
 
 * プレリリースコードが見つかりません。
-* Composer を使用して [magento.com](https://account.magento.com/customer/account/login) からアーリーアクセス Adobe Commerce バージョンをダウンロードできない。
+* Composerを使用して[magento.com](https://account.magento.com/customer/account/login)から早期アクセスのAdobe Commerce バージョンをダウンロードできませんでした。
 
-## 原因：
+## 原因
 
 問題の最も一般的な原因は次のとおりです。
 
-* 間違った場所にあるアーリーアクセスコードを探しています。
-* Composer 経由でコードにアクセスする場合、間違った MageID を使用しています。
-* アカウントは、プレリリースプログラムには含まれていません。
+* 早期アクセスコードを間違った場所で探しています。
+* Composerを介してコードにアクセスする際に、間違ったMageIDを使用している。
+* あなたのアカウントはプレリリースプログラムに含まれていません。
 
-## 解決策
+## Solution
 
-### アーリーアクセスコードの場所
+### 早期アクセスコードの場所
 
-プレリリースでは、リリースパッケージは次の 2 つの場所で使用できます。
+プレリリースの間、リリースパッケージは2つの場所で利用できます。
 
-1. [magento.com](https://repo.magento.com/) の Composer を介して、アカウントのプライマリ MageID を使用します。 Composer の使用方法について詳しくは、開発者向けドキュメントの [Composer を使用したAdobe Commerceのインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer) を参照してください。
-1. **マイアカウント**/**ダウンロード**&#x200B;[account.magento.com](https://account.magento.com/customer/account/login)
+1. アカウントのプライマリ MageIDを使用して、[magento.com](https://repo.magento.com/)のComposer経由で行います。 Composerの使用方法について詳しくは、開発者向けドキュメントの「[Composerを使用したAdobe Commerceのインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)」を参照してください。
+1. [account.magento.com](https://account.magento.com/customer/account/login)の&#x200B;**マイアカウント** > **ダウンロード**。
 
 >[!NOTE]
 >
->リリースパッケージは、GA 日まで GitHub で使用できません。
+>リリースパッケージは、GA日までGitHubでは利用できません。
 
-### 使用する MageID
+### 使用する必要があるMageID
 
-Adobe Commerceまたはパートナーアカウントに関連付けられたプライマリ MageID を使用する必要があります。 プレリリースプログラムは、共有アクセス権を持つ連絡先にリンクされていません。 アーリーアクセスは、Adobe Commerce ライセンスまたはパートナーライセンスに関連付けられた MageID によって、Composer または [repo.magento.com](https://repo.magento.com/) 経由でのみアクセスできます。
+Adobe Commerceまたはパートナーアカウントに関連付けられているプライマリ MageIDを使用する必要があります。 プレリリースプログラムは、共有アクセス権を持つ連絡先にはリンクされません。 早期アクセスは、Adobe Commerce ライセンスまたはパートナーライセンスに関連付けられているMageIDによって、Composerまたは[repo.magento.com](https://repo.magento.com/)経由でのみアクセスできます。
 
-#### 自分の MageID がプライマリかどうかを確認する方法
+#### 自分のMageIDがプライマリ IDであるかどうかを確認するにはどうすればよいですか？
 
-**商人向け**
+**マーチャント向け**
 
-MageID がプライマリかどうかを確認するには、次の手順を実行します。
+MageIDがプライマリであるかどうかを確認するには、次の手順を実行します。
 
-1. [magento.com](https://account.magento.com/customer/account/login) にログインし、「製品とサービス **タブに移動** ます。 Adobe Commerce ライセンス情報が表示されているかどうかを確認します。
-   * Adobe Commerce ライセンス情報が表示される場合は、MageID が primary です。
-   * Adobe Commerce ライセンス情報が表示されない場合は、MageID には共有アクセスのみが付与されます。 プライマリ ID 所有者を確認するには、**自分と共有** に移動します。ここで指定されている SHARENAME に注意してください。 **アカウントの切り替え** をクリックし、SHARENAME でメモした値を選択します。 ようこそページに、プライマリ ID 所有者のメールが表示されます。
-1. 何らかの理由でこの情報が [magento.com](https://account.magento.com/customer/account/login) で見つからない場合は、Adobe アカウントチームにお問い合わせください。
-1. 上記の方法で解決できない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+1. [magento.com](https://account.magento.com/customer/account/login)にログインし、**製品とサービス** タブに移動します。 Adobe Commerceのライセンス情報が表示されているかどうかを確認します。
+   * Adobe Commerceのライセンス情報が表示された場合は、MageIDがプライマリになります。
+   * Adobe Commerceのライセンス情報が表示されない場合、MageIDには共有アクセス権のみが付与されます。 プライマリ ID所有者が誰であるかを確認するには、**自分と共有**&#x200B;に移動します。ここで指定した共有名に注意してください。 「**アカウントを切り替え**」をクリックし、SHARENAMEに記録した値を選択します。 ようこそページには、プライマリ ID所有者の電子メールが表示されます。
+1. 何らかの理由で[magento.com](https://account.magento.com/customer/account/login)でこの情報が見つからない場合は、Adobeのアカウントチームにお問い合わせください。
+1. 上記のいずれも機能しない場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
-**パートナーの場合**
+**パートナー向け**
 
-MageID がプライマリかどうかを確認するには、次の手順を実行します。
+MageIDがプライマリであるかどうかを確認するには、次の手順を実行します。
 
-1. [magento.com](https://account.magento.com/customer/account/login) にログインし、「製品とサービス **タブに移動** ます。 「パートナー」サブセクションで、アクティブなパートナーライセンス情報が表示されているかどうかを確認します。
-   * アクティブなパートナーライセンス情報が表示された場合、MageID はプライマリです。 終了日の値が将来の日付の場合、パートナーライセンスはアクティブになります。
-   * アクティブなパートナーライセンス情報が表示されない場合、お使いの MageID には共有アクセスのみが付与されます。 プライマリ ID 所有者を確認するには、**自分と共有** に移動します。ここで指定されている SHARENAME に注意してください。 **アカウントの切り替え** をクリックし、SHARENAME でメモした値を選択します。 ようこそページに、プライマリ ID 所有者のメールが表示されます。
-1. 何らかの理由でこの情報が [magento.com](https://account.magento.com/customer/account/login) で見つからない場合は、パートナーマネージャーにお問い合わせください。
-1. 上記のいずれも機能しない場合は、[&#x200B; サポートにс連絡してください &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+1. [magento.com](https://account.magento.com/customer/account/login)にログインし、**製品とサービス** タブに移動します。 「パートナー」サブセクションで、アクティブなパートナーライセンス情報が表示されているかどうかを確認します。
+   * アクティブなパートナーライセンス情報が表示された場合、MageIDはプライマリになります。 END DATE値が将来の日付である場合、パートナーライセンスはアクティブです。
+   * アクティブなパートナーライセンス情報が表示されない場合、MageIDには共有アクセス権のみが付与されます。 プライマリ ID所有者が誰であるかを確認するには、**自分と共有**&#x200B;に移動します。ここで指定した共有名に注意してください。 「**アカウントを切り替え**」をクリックし、SHARENAMEに記録した値を選択します。 ようこそページには、プライマリ ID所有者の電子メールが表示されます。
+1. 何らかの理由で[magento.com](https://account.magento.com/customer/account/login)でこの情報が見つからない場合は、パートナーマネージャーにお問い合わせください。
+1. 上記のいずれも機能しない場合は、[ サポートにс連絡してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
-### プレリリースプログラムに含まれていない
+### プレリリースプログラムには含まれていません
 
-プレリリースアクセスプログラムに含めるには、正常な状態のアクティブなAdobe Commerceまたはパートナーアカウントが必要です。 この条件を満たしていて、プレリリースコードにアクセスできない場合は、MageID を使用して [&#x200B; サポートにお問い合わせ &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) ください。
+プレリリース版のアクセスプログラムに含めるには、組織が良好な状態にあるアクティブなAdobe Commerce アカウントまたはパートナーアカウントを持っている必要があります。 この条件を満たしており、プレリリースコードにアクセスできないと思われる場合は、MageIDで[ サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。

@@ -1,12 +1,12 @@
 ---
 title: Adobe Commerce Intelligence アカウントのロックアウトのトラブルシューティング
-description: この記事では、Adobe Commerce Intelligence アカウントのロックアウトのソリューションを説明します。 最初に、これが不具合か、一時的な不具合か、その他かを判断する必要があります。 以下の手順に従うと、できるだけ早くアカウントに戻すのに役立ちます。
+description: この記事では、Adobe Commerce Intelligence アカウントのロックアウトに関する解決策を提供します。 まず、これが欠陥なのか、一時的な不具合なのか、その他のものなのかを判断する必要があります。 以下の手順に従うと、アカウントにできるだけ早く戻るのに役立ちます。
 exl-id: 85968257-ba4b-4cfb-a4fa-497b4c5b5aea
 feature: Cache, Commerce Intelligence, Console
 role: Developer
 source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -17,36 +17,36 @@ ht-degree: 0%
 BOB: Is this in TOC?
 -->
 
-この記事では、Commerce Intelligence アカウントのロックアウトのソリューションを説明します。 最初に、これが不具合か、一時的な不具合か、その他かを判断する必要があります。 以下の手順に従うと、できるだけ早くアカウントに戻すのに役立ちます。
+この記事では、Commerce Intelligence アカウントのロックアウトに関する解決策を提供します。 まず、これが欠陥なのか、一時的な不具合なのか、その他のものなのかを判断する必要があります。 以下の手順に従うと、アカウントにできるだけ早く戻るのに役立ちます。
 
-## メールアドレスが正しいことを確認します
+## メールアドレスが正しいことを確認してください
 
-メールアドレスを再度確認して、ログインに使用しようとしているメールアドレスが既存のCommerce Intelligence アカウントに関連付けられていることを確認します。 場合によっては、アカウント管理者に、メールアドレスに入力ミスがないことを確認するように依頼する必要があります。
+メールアドレスを再確認して、ログインに使用しようとしているメールアドレスが既存のCommerce Intelligence アカウントに関連付けられていることを確認します。 メールアドレスにタイプミスがないことを確認するために、アカウント管理者に問い合わせる必要がある場合があります。
 
-メールアドレスが正しいことを確認したら、[&#x200B; このリンク &#x200B;](https://dashboard.rjmetrics.com/v2/session/create#/) を使用して再度ログインしてみてください。
+メールアドレスが正しいことを確認したら、[このリンク ](https://dashboard.rjmetrics.com/v2/session/create#/)を使用して再度ログインしてみてください。
 
-## パスワードをリセットしてみてください
+## パスワードのリセットをお試しください
 
-正しいメールアドレスを使用していることを確認した場合は、パスワードをリセットしてみてください。 「忘れた場合 **を使用できます。前** 節のログインページにある、パスワードリセットメールをトリガーするためのリンク。
+正しいメールアドレスを使用していることを確認した場合は、パスワードをリセットしてみてください。 **お忘れですか？**&#x200B;を使用できます 前のセクションのログインページのリンクをクリックして、パスワードリセットメールをトリガーします。
 
-最初にメールが表示されない場合は、迷惑メール フォルダーを確認してください。 善意のメールでも、迷惑メールと間違えられることがあります。 **これらのメール内の一時的なアクセスリンクは 1 回だけ有効であることに注意してください。**
+最初にメールが表示されない場合は、必ず迷惑メールフォルダーを探してください。 意図的な電子メールでさえ、迷惑メールと間違われる場合があります。 **これらの電子メールの一時的なアクセス リンクは、一度だけ有効であることに注意してください。**
 
-それでもロックアウトされている場合は、メールアドレスが正しく、リセットメールの正しいリンクを使用していることを確認します。 **別のリセットをリクエストして再度ログインする前に：** を実行することをお勧めします。
+まだロックアウトされている場合は、メールアドレスが正しいことを確認し、リセットメールの正しいリンクを使用していることを確認してください。 次の&#x200B;**を試してから、もう一度リセットをリクエストし、再度ログインを試みることをお勧めします：**
 
-* ブラウザーのキャッシュ、Cookie および保存されたパスワードをクリアします
-* 広告ブロックソフトウェアを一時的に無効にする
+* ブラウザーのキャッシュ、Cookie、保存されたパスワードの消去
+* 広告ブロックソフトウェアを一時的にオフにする
 
-## エラーを文書化し、サポートに連絡します。
+## エラーの文書化とサポートへの問い合わせ
 
 >[!NOTE]
 >
->この手順は必ずしも必要ではありませんが、事前に完了させることで、サポートリクエストに前後して費やす時間を短縮できます。
+>このステップは必ずしも必要なわけではありませんが、事前に完了することで、サポートリクエストとのやり取りにかかる時間を短縮することができます。
 
-それでもアカウントにアクセスできない場合は、エラーを確認し、サポートチームにチケットを送信することをお勧めします。 これはどうすれば実行できますか。 ブラウザーの開発者ツールを開き、コンソールまたはサイトログウィンドウに表示されるエラーのスクリーンショットを撮る。 以下のGIFで、Google Chromeのデベロッパーツールを開きます。
+それでもアカウントにアクセスできない場合は、エラーを確認し、サポートチームにチケットを送信することをお勧めします。 さまざまな要素が？ ブラウザーの開発者ツールを開き、コンソールまたはサイトログウィンドウに表示されるエラーのスクリーンショットを撮ります。 以下のGIFで、Google Chromeの開発者用ツールを開きます。
 
-![Chromeのデベロッパーツールを開く &#x200B;](assets/Opening_Chrome_dev_tools.gif)
+![Chromeの開発者向けツールを開いています。](assets/Opening_Chrome_dev_tools.gif)
 
-上記の例では、最も一般的な方法（**右クリック**>**Inspect**）を使用してコンソールを開きました。 ブラウザーにこの方法がない場合やヘルプが必要な場合は、使用している web ブラウザーに対応する以下のドキュメントリンクを使用します。
+上記の例では、最も一般的な方法（**右クリック** > **インスペクト**）を使用してコンソールを開きました。 お使いのブラウザーにこの方法がない場合、またはヘルプが必要な場合は、以下のドキュメントリンクを使用して、お使いのweb ブラウザーを指定します。
 
 <table>
 <tbody>
@@ -54,22 +54,22 @@ BOB: Is this in TOC?
 <td><a href="https://www.technipages.com/mac-os-x-enable-web-inspector-in-safari">Safari</a></td>
 <td><a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console">Firefox</a></td>
 <td><a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en">Chrome</a></td>
-<td><a href="https://www.opera.com/dragonfly/documentation/">Opera</a></td>
+<td><a href="https://www.opera.com/dragonfly/documentation/">オペラ</a></td>
 <td><a href="https://msdn.microsoft.com/en-us/library/gg589512(v=vs.85).aspx#OpeningTools">Internet Explorer</a></td>
 </tr>
 </tbody>
 </table>
 
-ブラウザーによっては、デベロッパーツールを開いても自動的にコンソールが表示されず、サイトのコードが最初に表示される場合があります。 この問題が発生した場合は、開発者ウィンドウの「コンソール」オプションをクリックし、表示されているエラーのスクリーンショットを撮ります。
+一部のブラウザーでは、開発者ツールを開いてもコンソールが自動的に表示されない場合があります。サイトのコードが最初に表示される場合があります。 この問題が発生した場合は、開発者ウィンドウの「コンソール」オプションをクリックし、そこに表示されるエラーのスクリーンショットを撮ります。
 
-**エラーのスクリーンショット** および **Commerce Intelligence アカウントのメールアドレス** を使用して、サポートチームにチケットを送信します。
+**エラーのスクリーンショット**&#x200B;と&#x200B;**Commerce Intelligence アカウントの電子メールアドレス**&#x200B;を使用して、サポートチームにチケットを送信します。
 
-## エラーが表示されないか、単に失われているだけですか？
+## エラーが表示されない、または失われただけですか？
 
-心配しないで。 新しいサポートチケットを申請すると（Commerce Intelligence アカウントのメールアドレスを必ず含めてください）、できるだけ早くアカウントに戻ります。
+心配しないでください！ 新しいサポートチケットを提出してください（必ずCommerce Intelligence アカウントのメールアドレスを含めてください）。できるだけ早くアカウントに戻ります。
 
 ## サポートナレッジベースの関連トピック：
 
-* [&#x200B; 新しいユーザーの追加と権限の設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=ja)
-* [&#x200B; メールアドレスやパスワードを更新するにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=ja)
-* [&#x200B; パスワードをリセットするにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=ja)
+* [新しいユーザーの追加と権限の設定](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
+* [メールアドレスまたはパスワードを更新するにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
+* [パスワードをリセットするにはどうすればよいですか？](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)

@@ -1,35 +1,35 @@
 ---
-title: New Relic サービスへのアクセス
-description: 'この記事では、十分なライセンスやサブスクリプションの認証を持つお客様が特定のNew Relic サービスにアクセスする方法について説明します。'
+title: New Relicのサービスへのアクセス
+description: この記事では、十分なライセンス/サブスクリプション認証を持つお客様が一部のNew Relic サービスにアクセスする方法について説明します。
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
-# New Relic サービスへのアクセス
+# New Relicのサービスへのアクセス
 
-この記事では、十分なライセンスやサブスクリプションの認証を持つお客様が特定のNew Relic サービスにアクセスする方法について説明します。
+この記事では、十分なライセンス/サブスクリプション認証を持つお客様が一部のNew Relic サービスにアクセスする方法について説明します。
 
-* New Relic インフラストラクチャを使用すると、インフラストラクチャのパフォーマンスを監視できます。
-* New Relic APM: アプリケーションパフォーマンスのトレンドに関するインサイトを提供する、アプリケーションパフォーマンス監視ツール。
+* New Relic Infrastructureは、インフラストラクチャのパフォーマンスを監視するために使用できます。
+* New Relic APMは、アプリケーションのパフォーマンス動向を把握するためのアプリケーションパフォーマンス監視ツールです。
 
-**Adobe Commerce on cloud infrastructure Pro プランアーキテクチャを使用するお客様で、New Relic インフラストラクチャの使用を希望されるお客様：**
+**Adobe Commerce on cloud infrastructure Pro プランアーキテクチャを使用しているお客様で、New Relic Infrastructureを使用する場合：**
 
-Pro アーキテクチャを使用しているお客様は、サブスクリプションが自動インストールされたNew Relic インフラストラクチャサービスを利用できます。 これらのユーザーには、Adobe Commerce プロジェクトの作成時に、New Relicからアクティベーションリンクが記載されたメールが届いています。 メールによるNew Relic アカウント登録手順に従えば、その時点で作成したユーザー名とパスワードで [New Relic login](https://login.newrelic.com/login) ページにログインできます。
+Pro アーキテクチャを使用しているお客様は、サブスクリプションが自動インストールされたNew Relic Infrastructure サービスを利用できます。 これらのユーザーには、Adobe Commerce プロジェクトの作成時に、New Relicからアクティベーションリンクを含むメールが送信されているはずです。 メールの指示に従ってNew Relic アカウントを登録した後、ユーザーは作成時に作成したユーザー名とパスワードで[New Relic login](https://login.newrelic.com/login) ページにログインできます。
 
-**メモ** :Pro アーキテクチャを使用しているお客様には、New Relic インフラストラクチャサービスに加えて、New Relic アプリケーションパフォーマンスモニタリング（APM）が利用されます。
+**注意** : Pro アーキテクチャを使用しているお客様には、New Relic Infrastructure サービスに加えて、New Relic Application Performance Monitoring （APM）が提供されます。
 
-**Pro アーキテクチャを使用しているお客様で、パスワードを忘れた場合や、New Relic インフラストラクチャアカウントを有効にしなかった場合：**
+**Pro アーキテクチャを使用しているお客様で、パスワードを忘れた場合、またはNew Relic Infrastructure アカウントを有効にしなかった場合：**
 
-一部のお客様が、New Relicからアクティベーションリンクが記載されたメールを受け取ってNew Relic アカウントを登録した後、ユーザー資格情報を忘れた場合は、[New Relicのログイン &#x200B;](https://login.newrelic.com/login) ページをクリックし、「パスワードを忘れた場合」をクリックする必要があります。 ユーザー名はメールアドレスです。 New Relicにログインし直すには、パスワードをリセットする必要があります。 メールの受信を覚えておらず、New Relic インフラストラクチャを使用する場合も、次の手順に従う必要があります。
+一部のお客様がNew Relicからアクティベーションリンクを含むメールを受信し、New Relic アカウントを登録したが、その後ユーザーの資格情報を忘れた場合は、[New Relic ログイン ](https://login.newrelic.com/login) ページをクリックし、「パスワードをお忘れですか？」をクリックする必要があります。 ユーザー名はメールアドレスです。 New Relicにログインし直すには、パスワードをリセットする必要があります。 メールを受け取ったことを覚えておらず、New Relic Infrastructureを使用する場合も、次の手順に従う必要があります。
 
-**クラウドインフラストラクチャー上のAdobe Commerceスタータープランアーキテクチャ New Relicを利用したいお客様：**
+**クラウドインフラストラクチャ上のAdobe Commerce スタータープランのアーキテクチャ New Relicを使用するお客様：**
 
-スターターアーキテクチャのお客様は、サブスクリプションの一部としてNew Relic インフラストラクチャサービスを提供されていません。 ただし、アドビの開発者向けドキュメントの [New Relicへの接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) 手順に従ってライセンスを追加する場合は、New Relic Application Performance Monitoring （APM）を使用できます。
+スターターアーキテクチャのお客様は、サブスクリプションの一部としてNew Relic インフラストラクチャサービスを提供されません。 ただし、開発者向けドキュメントの「[New Relicに接続](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)」の手順に従ってライセンスを追加する場合は、New Relic Application Performance Monitoring （APM）を使用できます。
 
-## 関連資料
+## 関連トピックス
 
-New Relic サービスについて詳しくは、開発者向けドキュメントの [&#x200B; パフォーマンスの調査 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) を参照してください。 サポートナレッジベースでは、[&#x200B; クラウドインフラストラクチャ上のAdobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング &#x200B;](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) を参照することもできます。
+New Relic サービスについて詳しくは、開発者向けドキュメントの[ パフォーマンスの調査](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ ](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。

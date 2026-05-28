@@ -1,53 +1,53 @@
 ---
 title: Adobe Commerce Intelligence サービスポリシー
-description: Commerce Intelligenceの目標は、優れたカスタマーサービスを提供し、データを保護し、データ駆動型の意思決定を行うために必要なノウハウを提供することです。
+description: Commerce Intelligenceでは、卓越したカスタマーサービスの提供、データの保護、データにもとづく意思決定に必要なノウハウの提供を目標としています。
 exl-id: 2e1ef4b3-a77c-4281-8337-fb90574a44f7
 feature: Commerce Intelligence, User Account
 role: Developer
 source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Intelligence サービスポリシー
 
-Commerce Intelligenceの目標は、優れたカスタマーサービスを提供し、データを保護し、データ駆動型の意思決定を行うために必要なノウハウを提供することです。
+Commerce Intelligenceでは、卓越したカスタマーサービスの提供、データの保護、データにもとづく意思決定に必要なノウハウの提供を目標としています。
 
-## サポートチームができることは何ですか？
+## サポートチームで何ができますか？
 
-アドビのサポートチームが次の点でお手伝いします。
+アドビのサポートチームがサポートします。
 
-* 製品の欠陥の解決
+* 製品の欠陥を解決する
 * パフォーマンスの問題の解決
-* データの不一致の解決
+* データの不整合を解決する
 * ドキュメントに関する質問とリクエスト
 * 製品/機能ガイダンス
 * 高度な計算列の作成
-* 新しい分析の実行
-* データベースの移行/構造の変更の支援
+* 新たな分析の実施
+* データベースの移行/構造変更の支援
 
-## あなたのサポートチームが行っていないこととは何ですか？
+## サポートチームは何をしないのですか？
 
-認証したユーザーのみがデータにアクセスできるようにする必要があるので、アドビのサポートチームが実行しないタスクはほとんどありません。
+権限を持つユーザーのみがデータにアクセスできるようにするため、サポートチームが実行しないタスクはほとんどありません。
 
-お客様に代わってこれらのアクションを実行することはできませんが、アドビでは十分に理解しています。
+アドビでは、これらのアクションを実行することはできませんが、その方法を詳しく説明します。
 
-* [&#x200B; ユーザーアカウント情報の作成および変更 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=ja)
+* [ユーザーアカウント情報の作成と変更](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
 * 請求情報の入力または変更
-* [&#x200B; ダッシュボードを他のユーザーと共有する &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/dashboards/share-dashboard-with-users.html?lang=ja)
-* データ接続およびサーバーの詳細の説明、作成または変更
-* 標準ユーザーまたは読み取り専用ユーザーに対する管理者レベルの関数の実行（例 [&#x200B; 指標の追加/編集 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html?lang=ja)）
-* インバウンドの電話でアカウントの詳細（レポートや請求情報など）を開示する。 登録したメールアドレスでフォローアップします。
+* [ダッシュボードを他のユーザーと共有する](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/dashboards/share-dashboard-with-users.html?lang=en)
+* データ接続およびサーバーの詳細の議論、作成または変更
+* 標準ユーザーまたは読み取り専用ユーザーに対して管理者レベルの関数を実行する（例：[指標の追加と編集](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html)）
+* アカウントの詳細（レポートや請求情報など）をインバウンド電話で開示する。 登録したメールアドレスでフォローアップします。
 
 上記のデータセキュリティ機能に加えて、サポートチームが対応できない製品関連のリクエストがいくつかあります。
 
-* **SQL の指導** - SQL Report Builderを使用したいが、SQL がわからない場合は、 心配はいりません。基本を学ぶうえで役に立つ [&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html?lang=ja) を用意しています。
+* **SQLを教える** - SQL Report Builderを使用しますが、SQLを知らないのですか？ 心配はいりません。基本を学ぶために、[ チュートリアル ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html)を用意しました。
 
-* **製品の欠陥が原因ではない SQL ビジュアライゼーションの問題** - グラフが少し変わって見え、製品の欠陥が原因である **ではない** 場合は、クエリ自体が原因である可能性があります。 ビジュアライゼーション用のクエリを構造化する方法については、ユーザーガイドの [SQL クエリからのビジュアライゼーションの作成 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html?lang=ja) チュートリアルをご覧ください。
-* **SQL クエリのデバッグ** - クエリの実行を妨げる EXPLAIN 以外のエラーが発生する場合があります。 クエリの問題が発生した場所を特定する方法については、[Commerce Intelligence ユーザーガイドの SQL Report Builderの使用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html?lang=ja) および SQL チュートリアルを参照することをお勧めします。
+* **製品の欠陥が原因ではないSQL ビジュアライゼーションの問題** - グラフが少し不自然に見えて、製品の欠陥が原因で&#x200B;**が**&#x200B;ではない場合、その原因はクエリ自体である可能性が高くなります。 ビジュアライゼーション用にクエリを構造化する方法のガイダンスについては、ユーザーガイドの[SQL クエリからのビジュアライゼーションの作成チュートリアル ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html)をご覧ください。
+* **SQL クエリのデバッグ** - クエリを実行できないEXPLAIN以外のエラーが発生することがあります。 [Commerce Intelligence ユーザーガイド：SQL Report Builder](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html)とSQL チュートリアルを使用して、クエリのエラーの原因を特定することをお勧めします。
 
 ## チケットを送信するにはどうすればよいですか？
 
-ページ上部の [&#x200B; チケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) リンクをクリックして、サポートチームに **チケットを送信** できます。 お問い合わせの前に [&#x200B; サポートチケットの情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) を確認し、必要な情報がすべて最初の送信に含まれていることを確認することをお勧めします。
+ページ上部の「**チケットを送信**」リンクをクリックすると、[ チケットをサポートチームに送信](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)できます。 最初の提出に必要なすべての情報が含まれていることを確認するために、サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)の情報を確認することをお勧めします。[
