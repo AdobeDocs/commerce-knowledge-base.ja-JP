@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # セキュリティスキャンにサイトを追加する際のエラーメッセージ
 
-この記事では、ユーザーが[Commerce セキュリティスキャン ](https://account.magento.com/scanner/dashboard/)にサイトを追加できない場合の問題に対する解決策を示します。
+この記事では、ユーザーが[Commerce セキュリティスキャン &#x200B;](https://account.magento.com/scanner/dashboard/)にサイトを追加できない場合の問題に対する解決策を示します。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## イシュー
 
-[Commerce セキュリティスキャン ](https://account.magento.com/scanner/dashboard/)にサイトを追加できません。 サイトを追加しようとすると、次のエラーメッセージが表示されます。*スキャン用にサイトを送信できません。*
+[Commerce セキュリティスキャン &#x200B;](https://account.magento.com/scanner/dashboard/)にサイトを追加できません。 サイトを追加しようとすると、次のエラーメッセージが表示されます。*スキャン用にサイトを送信できません。*
 
 ## Solution
 
@@ -53,4 +53,4 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-* ユーザーガイドの[ セキュリティスキャン ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)。
+* ユーザーガイドの[&#x200B; セキュリティスキャン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)。

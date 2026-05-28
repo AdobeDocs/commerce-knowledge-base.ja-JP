@@ -23,4 +23,4 @@ Amazonから1時間ごとにメールが届きます。 モジュールはこれ
 
 ## これらのメールをオプトアウトするには：
 
-Amazonのサイト ](https://sellercentral.amazon.com/gp/help/external/G871)で[通知の環境設定を更新する方法については、次の手順に従ってください。
+Amazonのサイト [&#128279;](https://sellercentral.amazon.com/gp/help/external/G871)で通知の環境設定を更新する方法については、次の手順に従ってください。

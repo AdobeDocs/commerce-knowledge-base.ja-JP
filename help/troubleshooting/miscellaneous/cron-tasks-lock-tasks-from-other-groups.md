@@ -36,7 +36,7 @@ Adobe Commerce クラウド版では、複雑な[!DNL cron]個のタスク（長
 
 ## Solution
 
-1. [Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡して、セルフマネージド [!DNL crons]を有効にしてください。
+1. [Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡して、セルフマネージド [!DNL crons]を有効にしてください。
 1. [!DNL Git] ブランチのAdobe Commerce コードのルート ディレクトリにある`.magento.app.yaml` ファイルを編集します。 以下を追加します。
 
    ```yaml
@@ -71,5 +71,5 @@ Adobe Commerce クラウド版では、複雑な[!DNL cron]個のタスク（長
 
 ## 関連トピックス
 
-* 開発者ドキュメントの[ セットアップ  [!DNL cron]  ジョブ ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 開発者ドキュメントの[&#x200B; セットアップ  [!DNL cron]  ジョブ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

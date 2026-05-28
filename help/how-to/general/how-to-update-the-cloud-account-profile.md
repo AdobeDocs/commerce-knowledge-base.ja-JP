@@ -33,7 +33,7 @@ ht-degree: 0%
 
 これらのフィールドを変更するには、次の手順に従います。
 
-1. [Adobe アカウントのログイン ](https://accounts.magento.cloud)でアカウントにアクセスします。
+1. [Adobe アカウントのログイン &#x200B;](https://accounts.magento.cloud)でアカウントにアクセスします。
 1. 「**[!UICONTROL Account Settings]**」タブをクリックします。
 1. 「*新しいパスワードを作成*」チェックボックスを選択します。
 1. 必要な変更を行い、*保存*&#x200B;をクリックします。

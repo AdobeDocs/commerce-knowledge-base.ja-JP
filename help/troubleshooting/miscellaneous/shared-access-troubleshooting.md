@@ -21,7 +21,7 @@ ht-degree: 0%
 
 **解決策：**
 
-* アカウント所有者（プライマリアカウント所有者）の場合は、Adobe アカウントチームにお問い合わせください。 チームメンバーがサポートにアクセスできる場合は、[ サポートチケットを作成してもらいます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)。 アカウントに関連付けられている名前とメールアドレスを指定します。
+* アカウント所有者（プライマリアカウント所有者）の場合は、Adobe アカウントチームにお問い合わせください。 チームメンバーがサポートにアクセスできる場合は、[&#x200B; サポートチケットを作成してもらいます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)。 アカウントに関連付けられている名前とメールアドレスを指定します。
 * アカウント所有者でない場合は、共有アクセスと必要な権限を提供するために、アカウント所有者に連絡する必要があります。
 * アカウント所有者が会社に所属していない場合に、アカウントを別のユーザーに転送する場合は、[Commerce アカウントの転送](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-transfer)を参照してください。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 **解決策**:
 
-1. プロジェクトに追加されていることを確認します。 [ ユーザーアクセスの管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)を参照してください。
+1. プロジェクトに追加されていることを確認します。 [&#x200B; ユーザーアクセスの管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)を参照してください。
 1. アカウント所有者から、プロジェクトに関連付けられたライセンスへの共有アクセス権が付与されていることを確認します。
 
 引き続き問題が発生する場合は、Adobeのアカウントチームにお問い合わせください。 アカウントに関連付けられている名前とメールアドレスを指定します。
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ## 共有アクセスを使用しましたが、共有アクセスの代わりにチケットが表示されます
 
-**問題：**&#x200B;共有アクセスを使用して[ ヘルプセンター](https://support.magento.com/hc/us-en/requests)にアクセスしていますが、自分のアカウント（組織）に属するチケットのみが表示されます。 「[!DNL Commerce] アカウント」ページには、組織のアカウントを使用していることが表示されます。このアカウントは共有アクセスを提供しましたが、組織のチケットはまだ表示されていません。
+**問題：**&#x200B;共有アクセスを使用して[&#x200B; ヘルプセンター](https://support.magento.com/hc/us-en/requests)にアクセスしていますが、自分のアカウント（組織）に属するチケットのみが表示されます。 「[!DNL Commerce] アカウント」ページには、組織のアカウントを使用していることが表示されます。このアカウントは共有アクセスを提供しましたが、組織のチケットはまだ表示されていません。
 
 **考えられる原因：**&#x200B;お使いのブラウザーは、ヘルプセンターからキャッシュされたコンテンツを使用しています。
 

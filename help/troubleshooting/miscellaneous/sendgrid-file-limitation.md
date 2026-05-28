@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 
 ## イシュー
@@ -52,9 +52,9 @@ Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxx
 ## 回避策
 
 * 6Mbまたは10Mbを超える添付ファイルは使用しないでください。
-* Adobe Commerce インスタンスでのリモート SMTP サーバーの使用を検討してください。 手順については、管理者システムガイドの「[ メール通信の設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html)」を参照してください。
+* Adobe Commerce インスタンスでのリモート SMTP サーバーの使用を検討してください。 手順については、管理者システムガイドの「[&#x200B; メール通信の設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html)」を参照してください。
 * モジュール内にファイルを保存できるようにサーバーを再構成し、メール内のファイルへのリンクを添付します。
 
 ## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドの[[!DNL SendGrid] 電子メールサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。
+* Commerce on Cloud Infrastructure ガイドの[[!DNL SendGrid] 電子メールサービス &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。

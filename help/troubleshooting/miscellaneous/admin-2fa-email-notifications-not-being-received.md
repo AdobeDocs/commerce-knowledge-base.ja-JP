@@ -60,12 +60,12 @@ php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 
 Adobeが管理するSendGrid サービスを使用している場合：
 
-SendGridで送信ドメインを認証することを要求する[ サポートチケット ](https://experienceleague.adobe.com/home?support-tab=home#support)を送信します（*ホワイトラベル*と呼ばれることもあります）。
+SendGridで送信ドメインを認証することを要求する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support)を送信します（*ホワイトラベル*と呼ばれることもあります）。
 このプロセスでは、DNS レコード（DKIMとSPF）を追加して、SendGridがドメインの代理でメールを送信することを許可します。これにより、迷惑メールフォルダーではなく受信トレイにメールが配信される可能性が高まります。
 
 自分のSendGrid アカウントを使用している場合：
 
-お客様は、SendGrid アカウントダッシュボード内でドメイン認証設定を直接管理する責任があります。 詳しくは、SendGrid ドキュメントの[ ドメイン認証の設定方法](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication)を参照してください。
+お客様は、SendGrid アカウントダッシュボード内でドメイン認証設定を直接管理する責任があります。 詳しくは、SendGrid ドキュメントの[&#x200B; ドメイン認証の設定方法](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication)を参照してください。
 
 >[!NOTE]
 >

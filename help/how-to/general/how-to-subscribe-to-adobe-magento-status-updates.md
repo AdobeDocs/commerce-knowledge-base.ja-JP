@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Adobe Magentoのステータス更新を購読する方法
 
-1. [Adobe ステータス ](https://status.adobe.com)に移動します。
+1. [Adobe ステータス &#x200B;](https://status.adobe.com)に移動します。
 1. 「**ログイン**」をクリックします。
 1. Adobeの資格情報でログインします。
 1. オプションが表示されている場合は、**会社または学校アカウント**&#x200B;を選択します。
