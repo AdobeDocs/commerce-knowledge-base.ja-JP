@@ -1,36 +1,36 @@
 ---
-title: デプロイ後にGoogle Analyticsが無効になる
-description: ここでは、のデプロイ中にGoogle Analyticsが発生する可能性のある、一般的な問題の解決策について説明します。
+title: デプロイメント後にGoogle Analyticsが無効になる
+description: ここでは、デプロイメント時にGoogle Analyticsで発生する可能性のある一般的な問題の解決策について説明します。
 exl-id: ecf6a277-2dfa-45cf-b86f-9a27f39017f4
 feature: Build, Deploy, Variables
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
-# デプロイ後にGoogle Analyticsが無効になる
+# デプロイメント後にGoogle Analyticsが無効になる
 
-ここでは、のデプロイ中にGoogle Analyticsが発生する可能性のある、一般的な問題の解決策について説明します。
+ここでは、デプロイメント時にGoogle Analyticsで発生する可能性のある一般的な問題の解決策について説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべてのバージョン
+* Adobe Commerceオンクラウドインフラストラクチャ（全バージョン）
 
-## 問題
+## イシュー
 
-環境全体にコードをデプロイする場合は、ビルドスクリプトとデプロイスクリプトによって `master/production/staging` ブランチがデプロイされ、Google Analyticsが有効に保たれるかどうかが検証されます。 マスターの開発（または子）ブランチを開発環境（Integration）にデプロイする場合、デプロイスクリプトでGoogle Analyticsが無効になります。
+環境にコードをデプロイする際に、ビルドスクリプトとデプロイスクリプトによって、`master/production/staging` ブランチがデプロイされ、Google Analyticsが有効に保たれることが確認されます。 マスターの開発（または子）ブランチをデベロッパー環境（統合）にデプロイする場合、デプロイスクリプトはGoogle Analyticsを無効にします。
 
-## 原因：
+## 原因
 
-これは、開発者データとインタラクションが、Google Analyticsに送信されたり、トラッキングされたりしないようにするための機能です。
+これは、開発者データとインタラクションがGoogle Analyticsに送信されたり、追跡されたりしないようにするための機能です。
 
-## 解決策
+## Solution
 
-変数を常に有効にする場合は、開発者向けドキュメントの [Google Analyticsのデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) の説明に従って、デプロイ変数を `ENABLE_GOOGLE_ANALYTICS = true` 定します。
+Google Analyticsを常に有効にする場合は、開発者ドキュメントの[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics)で説明されているように、デプロイ変数`ENABLE_GOOGLE_ANALYTICS = true`を設定します。
 
 >[!NOTE]
 >
->この記事には、人種差別的、性差別的、または抑圧的と思われる業界標準のソフトウェア用語が依然として含まれており、読者が苦痛を感じたり、トラウマを抱いたり、歓迎されないと感じたりする場合があることを認識しています。 Adobeでは、これらの用語をアドビのコード、ドキュメントおよびユーザーエクスペリエンスから削除するよう取り組んでいます。
+>私たちは、この記事には、一部の人が人種差別的、性差別的、または抑圧的であると感じる可能性があり、読者が傷つけられ、トラウマを負わされ、または歓迎されないと感じる可能性がある、業界標準のソフトウェア用語がまだ含まれている可能性があることを認識しています。 Adobeでは、コード、ドキュメント、ユーザーエクスペリエンスからこれらの用語を削除しようと取り組んでいます。

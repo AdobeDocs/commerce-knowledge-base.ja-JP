@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
 source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Adobe Commerce on cloud infrastructure （すべてのバージョン）
 
 書き出しのストレージ使用状況を確認、クリーンアップ、検証するには、次の手順に従います。
 
-1. コマンド `df -h | grep exports`を実行して、書き出しストレージ ファイル システムの現在の使用状況を確認します。 **の** Use%`/data/exports`列を確認してください：
+1. コマンド `df -h | grep exports`を実行して、書き出しストレージ ファイル システムの現在の使用状況を確認します。 `/data/exports`の&#x200B;**Use%**&#x200B;列を確認してください：
 
    * 使用率が70～85%の場合、クリーンアップ計画を開始します。
    * 使用率が90%を超える場合は、書き込みエラーまたはサービスへの影響を回避するために、すぐにアクションを実行します。
@@ -75,7 +75,7 @@ Adobe Commerce on cloud infrastructure （すべてのバージョン）
    * 実稼動以外の環境では、通常、テストメディアや古いアーティファクトをより積極的に削除できます。
    * 本番環境では、メディアまたはビジネスに不可欠なファイルを削除する前に、チームと調整する必要があります。
 
-1. クリーンアップの後、次のコマンド `df -h | grep exports`を実行して、**の** Use%`/data/exports`値が安全な操作レベルに低下したことを確認します。
+1. クリーンアップの後、次のコマンド `df -h | grep exports`を実行して、`/data/exports`の&#x200B;**Use%**&#x200B;値が安全な操作レベルに低下したことを確認します。
 
 ## 関連トピックス
 

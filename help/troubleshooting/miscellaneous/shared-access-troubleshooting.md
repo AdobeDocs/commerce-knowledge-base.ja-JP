@@ -1,97 +1,97 @@
 ---
 title: 共有アクセスのトラブルシューティング
-description: '**問題：**信頼できる仕事仲間への共有アクセスを提供したいが、Commerce アカウント ページで**共有アクセス** タブが見つからない。'
+description: '** 問題：**信頼できる同僚に共有アクセスを提供する必要がありますが、Commerce アカウントページの「**Shared Access**」タブを見つけることができません。'
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
 source-git-commit: c9ad6040ddb65dbb3be6591f2c0e00405dfbebd5
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
 # 共有アクセスのトラブルシューティング
 
-## Commerce アカウントページ（アカウントオーナー）に「[!UICONTROL Shared Access]」タブが表示されません
+## Commerce アカウントページに「[!UICONTROL Shared Access]」タブが表示されない（アカウントオーナー）
 
-**問題：** 信頼できる仕事仲間への共有アクセスを提供したいが、Commerce アカウント ページで [**[!UICONTROL Shared Access]**] タブが見つからない。
+**問題：**&#x200B;信頼できる同僚に共有アクセスを提供する必要がありますが、Commerce アカウント ページで「**[!UICONTROL Shared Access]**」タブが見つかりません。
 
-**原因：** 共有アクセスを許可するために必要なアクセス許可がCommerce アカウントに関連付けられていません。
+**考えられる原因：**&#x200B;共有アクセス権の付与に必要な権限が、Commerce アカウントに関連付けられていません。
 
 **解決策：**
 
-* アカウントオーナー（プライマリアカウントの所有者）の場合は、Adobe アカウントチームにお問い合わせください。 チームメンバーがサポートへのアクセス権を持っている場合は、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed) してもらいます。 アカウントに関連付けられた名前とメールを指定します。
-* アカウントの所有者でない場合は、所有者に連絡して共有アクセスおよび必要な権限を提供してもらう必要があります。
-* アカウント所有者が会社を終了し、アカウントを別のユーザーに転送する場合は、[Commerce アカウントの転送 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-transfer) を参照してください。
+* アカウント所有者（プライマリアカウント所有者）の場合は、Adobe アカウントチームにお問い合わせください。 チームメンバーがサポートにアクセスできる場合は、[&#x200B; サポートチケットを作成してもらいます](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)。 アカウントに関連付けられている名前とメールアドレスを指定します。
+* アカウント所有者でない場合は、共有アクセスと必要な権限を提供するために、アカウント所有者に連絡する必要があります。
+* アカウント所有者が会社に所属していない場合に、アカウントを別のユーザーに転送する場合は、[Commerce アカウントの転送](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-transfer)を参照してください。
 
 >[!NOTE]
 >
->アカウント所有者以外のユーザーでも、自分のアカウントに「[!UICONTROL Shared Access]」タブを設定することは可能です。 ただし、他のユーザーに共有アクセスを提供できるのは、必要な権限を持つアカウント所有者（プライマリアカウント所有者）のみです。 共有アクセスについて詳しくは、『Adobe Commerce Experience League サポートユーザーガイド』の [&#x200B; 共有アクセス：自分のアカウントにアクセスするための他のユーザーへの権限の付与 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) を参照してください。
+>アカウント以外の所有者でも、アカウントに「[!UICONTROL Shared Access]」タブを持つことができます。 ただし、必要な権限を持つアカウント所有者（プライマリアカウント所有者）のみが、他のユーザーに共有アクセスを提供できます。 共有アクセスについて詳しくは、Adobe CommerceのExperience League サポートユーザーガイドの「[共有アクセス：他のユーザーがアカウントにアクセスするための権限を付与する](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access)」を参照してください。
 
 ## 共有アクセスを使用しましたが、特定のリソースにアクセスできません
 
-**問題：** [!UICONTROL Shared Access] アカウントに切り替えましたが、**[!UICONTROL Support tab]** にアクセスできません（例：）。
+**問題：** [!UICONTROL Shared Access] アカウントに切り替えましたが、**[!UICONTROL Support tab]**&#x200B;にアクセスできません（例）。
 
-**考えられる原因：** サポートの使用権限が期限切れになったか、サポートへの共有アクセスが許可されていません。
+**考えられる原因：** サポートの使用権限が期限切れになっているか、サポートへの共有アクセスが許可されていません。
 
 **解決策：**
 
-1. **[!UICONTROL My Account]** に戻ります。
+1. **[!UICONTROL My Account]**&#x200B;に切り替えます。
 1. 「**[!UICONTROL Shared with me]**」タブをクリックします。
-1. 問題が発生している **[!UICONTROL Shared Access]** アカウントをクリックし、アクセス権が付与されているリソースを確認します。
-1. 特定のリソースがない場合は、アカウント所有者（プライマリアカウント所有者）にお問い合わせください。
+1. 問題がある&#x200B;**[!UICONTROL Shared Access]** アカウントをクリックし、アクセス権が付与されているリソースを確認します。
+1. 特定のリソースが見つからない場合は、アカウントオーナー（プライマリアカウント所有者）にお問い合わせください。
 
-問題が引き続き発生する場合は、Adobe アカウントチームにお問い合わせください。 アカウントに関連付けられた名前とメールを指定します。
+引き続き問題が発生する場合は、Adobeのアカウントチームにお問い合わせください。 アカウントに関連付けられている名前とメールアドレスを指定します。
 
-## 共有アクセスを使用して [!UICONTROL Support] をクリックしましたが、組織の新しいチケットを開いたとき、フォームで使用できる製品がありませんでした
+## 共有アクセスを使用して[!UICONTROL Support]をクリックしましたが、組織の新しいチケットを開いたときに、フォームに利用できる製品がありませんでした
 
-**問題：**&#x200B;[Experience Leagueでチケットを開く際に、適切なクラウドプロジェクトを選択できない &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)。
+**問題：** [Experience League](https://experienceleague.adobe.com/home?lang=ja#support)でチケットを開く際に、適切なCloud Projectを選択できません。
 
-**考えられる原因：** 資格が [!DNL Commerce] い正しい組織が選択されていません。
+**考えられる原因：** [!DNL Commerce]の使用権限を持つ正しい組織が選択されていません。
 
 **解決策：**
 
-1. （[!DNL Commerce]）サフィックスの付いた組織を選択してください。 これは、[!DNL Commerce] の使用権限を持つ組織です。
+1. （[!DNL Commerce]）接尾辞が付いた組織を選択してください。 これは、[!DNL Commerce]の使用権限を持つ組織です。
 
-問題が引き続き発生する場合は、Adobe アカウントチームにお問い合わせください。 アカウントに関連付けられた名前とメールを指定します。
+引き続き問題が発生する場合は、Adobeのアカウントチームにお問い合わせください。 アカウントに関連付けられている名前とメールアドレスを指定します。
 
-## 共有アクセスを使用して [!UICONTROL Support] をクリックしましたが、[!DNL Commerce] の使用権限を持つ組織の新しいチケットを開くと、クラウドプロジェクトがフォームにリストされませんでした
+## 共有アクセスを使用して[!UICONTROL Support]をクリックしましたが、[!DNL Commerce]の使用権限を持つ組織の新しいチケットを開いたときに、クラウドプロジェクトがフォームに表示されませんでした
 
-**問題**:[Experience League](https://experienceleague.adobe.com/home?lang=ja#support) でチケットを開く際に、適切なクラウドプロジェクトを選択できません。
+**問題**: [Experience League](https://experienceleague.adobe.com/home?lang=ja#support)でチケットを開く際に、適切なCloud Projectを選択できません。
 
-**考えられる原因**: プロジェクトに追加されていない、またはプロジェクトが別のライセンスに関連付けられている可能性があります（一部の組織は、非常に似た名前を持つ子会社/関連会社を持っています）。
-
-**解決策**:
-
-1. プロジェクトに追加されていることを確認します。 [&#x200B; ユーザーアクセスの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/user-access) を参照してください。
-1. プロジェクトに関連付けられたライセンスに対する共有アクセスが、アカウント所有者から付与されていることを確認します。
-
-問題が引き続き発生する場合は、Adobe アカウントチームにお問い合わせください。 アカウントに関連付けられた名前とメールを指定します。
-
-## 共有アクセスを使用して [!UICONTROL Support] をクリックしましたが、新しいチケットを開いたときに、[!UICONTROL Organization] のドロップダウンが表示されなかったか、その組織がリストされていませんでした
-
-**問題**: [!UICONTROL Shared Access] アカウントに切り替えましたが、[Experience League](https://experienceleague.adobe.com/home?lang=ja#support) でチケットを送信しようとすると、組織が使用できないか、組織名がドロップダウンに表示されません。
-
-**考えられる原因**: アカウント内の 1 つのマーチャントに対してのみ共有アクセスが許可されています。
+**考えられる原因**：プロジェクトに追加されていない可能性があります。または、プロジェクトが別のライセンスに関連付けられている可能性があります（一部の組織では、非常に類似した名前の子会社や関連会社がある場合があります）。
 
 **解決策**:
 
-1. **[!UICONTROL My Account]** に戻ります。
-1. 1 つの共有名のみがリストされている場合、その共有名がチケットを開くデフォルトの組織になります。
+1. プロジェクトに追加されていることを確認します。 [&#x200B; ユーザーアクセスの管理](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/user-access)を参照してください。
+1. アカウント所有者から、プロジェクトに関連付けられたライセンスへの共有アクセス権が付与されていることを確認します。
 
-問題が引き続き発生する場合は、Adobe アカウントチームにお問い合わせください。 アカウントに関連付けられた名前とメールを指定します。
+引き続き問題が発生する場合は、Adobeのアカウントチームにお問い合わせください。 アカウントに関連付けられている名前とメールアドレスを指定します。
 
-## 共有アクセスを使用しましたが、共有アクセスではなくチケットが表示されます
+## 共有アクセスを使用して[!UICONTROL Support]をクリックしましたが、新しいチケットを開いたときに、[!UICONTROL Organization] ドロップダウンが表示されなかったか、その組織を一覧表示しませんでした
 
-**問題：** 共有アクセスを使用して [&#x200B; ヘルプセンター &#x200B;](https://support.magento.com/hc/us-en/requests) にアクセスしていますが、自分のアカウント（組織）に属するチケットのみが表示されます。 [!DNL Commerce] アカウント ページに、共有アクセスを提供してくれた組織のアカウントを使用していることが表示されますが、組織のチケットはまだ表示されていません。
+**問題**: [!UICONTROL Shared Access] アカウントに切り替えましたが、[Experience League](https://experienceleague.adobe.com/home?lang=ja#support)でチケットを送信しようとすると、利用できる組織がないか、または組織名がドロップダウンに表示されません。
 
-**考えられる原因：** ブラウザーがヘルプ センターからキャッシュされたコンテンツを使用しています。
+**考えられる原因**：アカウント内の1人の販売者に対してのみ共有アクセスが許可されています。
 
-**解決策：** ブラウザーのキャッシュをクリアして、ヘルプセンターに再度アクセスします（Commerce アカウントのページで共有アクセスに切り替えていることを確認します）。
+**解決策**:
 
-## 関連資料
+1. **[!UICONTROL My Account]**&#x200B;に切り替えます。
+1. 1つの共有名のみをリストする場合は、チケットを開くデフォルトの組織になります。
 
-* [Adobe Commerce サポートまたは Cloud アカウントにログインできない &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
-* [MageID アカウント所有者がログインしてサポートチケットを送信できません &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25231)
-* [Commerce アカウントの共有 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)
+引き続き問題が発生する場合は、Adobeのアカウントチームにお問い合わせください。 アカウントに関連付けられている名前とメールアドレスを指定します。
+
+## 共有アクセスを使用しましたが、共有アクセスの代わりにチケットが表示されます
+
+**問題：**&#x200B;共有アクセスを使用して[&#x200B; ヘルプセンター](https://support.magento.com/hc/us-en/requests)にアクセスしていますが、自分のアカウント（組織）に属するチケットのみが表示されます。 「[!DNL Commerce] アカウント」ページには、組織のアカウントを使用していることが表示されます。このアカウントは共有アクセスを提供しましたが、組織のチケットはまだ表示されていません。
+
+**考えられる原因：**&#x200B;お使いのブラウザーは、ヘルプセンターからキャッシュされたコンテンツを使用しています。
+
+**解決策：** ブラウザーのキャッシュをクリアし、ヘルプセンターに再度アクセスします（Commerce アカウント ページで共有アクセスに切り替えたことを確認してください）。
+
+## 関連トピックス
+
+* [Adobe Commerce サポートまたはクラウドアカウントにログインできない](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
+* [MageID アカウント所有者がログインしてサポートチケットを送信できない](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Commerce アカウントの共有](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)

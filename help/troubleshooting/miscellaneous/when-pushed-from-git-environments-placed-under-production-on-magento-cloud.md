@@ -1,55 +1,55 @@
 ---
-title: Git からプッシュされると、新しい環境が実稼動環境に配置される
-description: この記事では、Git バージョン管理システムからプッシュされた際に、新しい環境がクラウドインフラストラクチャ上のAdobe Commerce実稼動環境の下に配置される問題の解決策について説明します。
+title: Gitからプッシュされたときに実稼動環境に配置された新しい環境
+description: この記事では、Gitのバージョン管理システムからプッシュすると、Adobe Commerce on cloud infrastructureの実稼動環境の下に新しい環境が配置される問題の解決策を提供します。
 exl-id: 279cd6d8-fd45-45ba-8456-8b397a01976f
 feature: Cloud, Paas
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-# Git からプッシュされると、新しい環境が実稼動環境に配置される
+# Gitからプッシュされたときに実稼動環境に配置された新しい環境
 
-この記事では、Git バージョン管理システムからプッシュされた際に、新しい環境がクラウドインフラストラクチャ上のAdobe Commerce実稼動環境の下に配置される問題の解決策について説明します。
+この記事では、Gitのバージョン管理システムからプッシュすると、Adobe Commerce on cloud infrastructureの実稼動環境の下に新しい環境が配置される問題の解決策を提供します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
-## 問題
+## イシュー
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-プロジェクトのローカル Git で制御されたクローンがある。
+プロジェクトのローカル Git制御クローンを作成します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-ステージングブランチから統合ブランチを作成する必要があります。
+ステージング ブランチから統合ブランチを作成する必要があります。
 
-1. ローカルシェルで次のコマンドを実行して、ステージングブランチに切り替えます。`git checkout staging`
-1. ローカルシェルで次のコマンドを実行して、ステージングブランチから統合ブランチを作成します。`git checkout -b <branch>`
-1. ブランチをリモートリポジトリにプッシュし、ローカルシェルで次のコマンドを実行してアップストリームブランチを設定します。`git push --set-upstream origin <branch>`
+1. ローカル シェルで次のコマンドを実行して、ステージング ブランチに切り替えます：`git checkout staging`
+1. ローカル シェルで次のコマンドを実行して、ステージング ブランチから統合ブランチを作成します：`git checkout -b <branch>`
+1. ブランチをリモート リポジトリにプッシュし、ローカル シェルで次のコマンドを実行してアップストリーム ブランチを設定します：`git push --set-upstream origin <branch>`
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ステージングブランチの下に新しいブランチが作成されます。
+新しいブランチは、ステージングブランチの下に作成されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-実稼動ブランチの下に新しいブランチが作成されました。
+新しいブランチは実稼動用ブランチの下に作成されました。
 
-## 原因：
+## 原因
 
-これはバグではありません。 別のブランチに親ブランチを設定する場合、マーチャントは magento-cloud CLI を使用する必要があります。
+バグではありません。 別のブランチの親ブランチを設定する場合、マーチャントはmagento-cloud CLIを使用する必要があります。
 
-## 解決策
+## Solution
 
-親ブランチは、マーチャントが新しく作成されたブランチをプッシュしてアクティブ化した後にのみ設定できます。 開発者向けドキュメントの [&#x200B; クラウドインフラストラクチャー上のAdobe Commerce/Bitbucket の統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) を参照してください。
+親ブランチは、マーチャントが新しく作成したブランチをプッシュしてアクティブ化した後にのみ設定できます。 開発者向けドキュメントの「[&#x200B; クラウドインフラストラクチャ上のAdobe Commerce > Bitbucket統合](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch)」を参照してください。
 
-サーバー上の既存のブランチの親を更新するには、magento-cloud CLI で `magento-cloud environment:info` コマンドを使用します。
+サーバー上の既存のブランチの親を更新するには、magento-cloud CLIで`magento-cloud environment:info` コマンドを使用してください。
 
 使用例：
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 これにより、現在チェックアウトされているブランチの親ブランチが「ステージング」に設定されます。
 
-## 関連資料
+## 関連トピックス
 
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerce/magento-cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) 開発者向けドキュメント。
+* 開発者向けドキュメントの[Adobe Commerce on cloud infrastructure > magento-cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)。

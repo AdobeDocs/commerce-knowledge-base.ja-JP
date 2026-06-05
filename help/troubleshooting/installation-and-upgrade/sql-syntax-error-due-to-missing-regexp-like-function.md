@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: c5fe316c-99e3-482e-80b5-25aaae371230
 source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >詳しくは、Adobe Commerce ナレッジベースの「[B2B 1.5.2 アップデート後のMagento_Company モジュールのアップグレードにおけるパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)」を参照してください。
 
-この記事では、`REGEXP_LIKE` テーブルを更新しようとしたときに欠落している`company_structure`関数が原因で発生するSQL構文エラーのホットフィックスを提供します。
+この記事では、`company_structure` テーブルを更新しようとしたときに欠落している`REGEXP_LIKE`関数が原因で発生するSQL構文エラーのホットフィックスを提供します。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## イシュー
 
-B2B バージョン 1.5.2へのアップグレードは、`REGEXP_LIKE` テーブルの更新時に`company_structure`関数が欠落しているため、SQL構文エラーで失敗します。
+B2B バージョン 1.5.2へのアップグレードは、`company_structure` テーブルの更新時に`REGEXP_LIKE`関数が欠落しているため、SQL構文エラーで失敗します。
 
 <u>前提条件</u>:
 
