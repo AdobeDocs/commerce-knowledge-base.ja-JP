@@ -43,7 +43,7 @@ Adobe Commerce on cloud infrastructure
 お使いのバージョンは[!DNL OpenSearch]をサポートしていますが、アプリケーションは[!DNL Elasticsearch7]を検索エンジンとしてのみ認識/承認します。
 
 Adobe Commerce バージョン 2.4.6以降、アプリケーションが更新され、[!DNL OpenSearch]が検索エンジンとして選択できるようになりました。
-クラウド以外の環境で**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**&#x200B;に移動すると、以下の&#x200B;**解決策**に示すように、このオプションを変更できます。
+クラウド以外の環境で&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**&#x200B;に移動すると、以下の&#x200B;**解決策**&#x200B;に示すように、このオプションを変更できます。
 （注：クラウド環境では、検索エンジンが`app/etc/env.php` ファイルでロックされているため、このフィールドを変更することはできません）。
 
 ## Solution
