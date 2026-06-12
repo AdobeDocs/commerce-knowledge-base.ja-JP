@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 1f8558e14c82e9f5ca3c050b15394c1361bdd179
+source-git-commit: 5cb7550f95d48b89fc0d68c5e282bc3efe817f17
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 1%
       * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * その他 {#miscellaneous}
-      * [&#x200B; [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [ [!DNL Commerce Data Exporter]  フィードでデータが更新されず、変更ログテーブルを含むエラーが [!DNL cron]  ログに記録されない問題を修正します](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [エラー [!DNL opensearch] 検索エンジンが存在しません。  [!DNL livesearch]にフォールバックしています。](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
@@ -185,7 +185,7 @@ ht-degree: 1%
       * [PHP 8.1をサポートするバージョンにアップグレードする際にデプロイメント中にエラーが発生する](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [デプロイメントエラー：「ダウンロード中にエラー7が発生しました… ポート 443：接続が拒否されました」](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [誤ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
-      * [パッチが見つからないデプロイメントエラー](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
+      * [デプロイメントまたは手動アプリケーション中に「パッチが見つかりません」エラーが発生する](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [キャッシュフラッシュでデプロイメントが失敗しました：「cache」名前空間で定義されたコマンドがありません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアのセキュリティの確保と暗号化キーのローテーションに関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)

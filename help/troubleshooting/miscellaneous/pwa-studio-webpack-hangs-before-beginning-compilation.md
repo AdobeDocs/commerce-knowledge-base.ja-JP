@@ -1,43 +1,43 @@
 ---
-title: 'PWA Studio: コンパイルを開始する前に Webpack がハングします'
-description: ここでは、Progressive Web App Studio （PWA Studio）でコンパイルを開始する前に JavaScript [Webpack] （https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack）が長時間停止した場合の解決策について説明します。
+title: PWA Studio：コンパイルを開始する前にWebpackがハングする
+description: この記事では、Progressive Web App Studio （PWA Studio）でコンパイルを開始する前にJavaScript [Webpack] （https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack）が長い間停止する場合の推奨ソリューションについて説明します。
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
-source-git-commit: 032fe4d32921c63570672b9c68e8c03e00bd1077
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
-# PWA Studio: コンパイルを開始する前に Webpack がハングします
+# PWA Studio：コンパイルを開始する前にWebpackがハングする
 
-この記事では、Progressive Web App Studio （PWA Studio[&#x200B; でコンパイルを開始する前に JavaScript](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)Webpack）が長時間停止した場合の解決策について説明します。
+この記事では、Progressive Web App Studio （PWA Studio）でコンパイルを開始する前に、JavaScript [Webpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)が長い間ハングする場合の推奨ソリューションについて説明します。
 
 ## 影響を受ける製品とバージョン
 
 * PWA Studio
 
-## 問題
+## イシュー
 
-[pwa-buildpack の最新リリースが何であるかを確認します &#x200B;](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)。
-
-```yaml
-pwa-buildpack
-```
-
-バージョン番号は、`package.json` ファイル名のリストの横に表示されます。 古いバージョンの
+[pwa-buildpackの最新リリースが](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)であること、および
 
 ```yaml
 pwa-buildpack
 ```
 
-プロジェクト。webpack は、コンパイルを開始する前に長時間停止する可能性があります。
+バージョン番号は、`package.json` ファイル名リストの横に表示されます。 以前のバージョンの
 
-<u> 再現手順 </u>:
+```yaml
+pwa-buildpack
+```
 
-<u> 前提条件 </u>：ローカルのAdobe Commerce インスタンスを使用して、Venia などのPWA Studio ストアフロントを設定して
+プロジェクトの場合、webpackはコンパイルを開始する前に長い間停止する可能性があります。
+
+<u>複製する手順</u>:
+
+<u>前提条件</u>: VeniaなどのPWA Studio ストアフロントをローカルのAdobe Commerce インスタンスで設定し、を実行します
 
 ```yaml
 build
@@ -51,14 +51,14 @@ watch
 
 コマンド。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-* を使用する場合    ```yaml    build    ```    コマンドを使用すると、通常は Venia のビルドアーティファクトが生成されます。
-* を使用する場合    ```yaml    watch    ```    コマンドを実行すると、Venia ストアフロントが通常どおり開始されます。
+* `build` コマンドを使用する場合、Veniaのビルドアーティファクトが通常どおり生成されます。
+* `watch` コマンドを使用すると、通常どおりVenia ストアフロントが開始されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-あなたの
+自分
 
 ```yaml
 build
@@ -70,7 +70,7 @@ build
 watch
 ```
 
-コマンドが停止しているように見え、完了せず、エラーも表示されません。
+コマンドは停止しているように見え、完了せず、エラーも表示されません。
 
 ## 解決策
 
@@ -80,20 +80,20 @@ watch
 yarn upgrade
 ```
 
-次のコマンドを使用して、システムに現在のバージョンの openssl があることを確認します。
+次のコマンドを使用して、システムに最新バージョンのopensslがあることを確認します。
 
 ```yaml
 openssl version
 ```
 
-バージョンは 1.0 以上（OSX High Sierra の場合は LibreSSL 2）にする必要があります。
+バージョンは1.0以上（OSX High Sierraの場合はLibreSSL 2）である必要があります。
 
-OSX の [Homebrew](https://brew.sh/)、Windows の [Chocolatey](https://chocolatey.org/) または Linux ディストリビューションのパッケージマネージャーを使用して、より新しいバージョンの OpenSSL をインストールできます。
+OSXでは[Homebrew](https://brew.sh/)、Windowsでは[Chocolatey](https://chocolatey.org/)、またはLinux ディストリビューションのパッケージマネージャーを使用して、より高いバージョンのOpenSSLをインストールできます。
 
-## 関連資料
+## 関連トピックス
 
-* [Javascript Webpack：概念 &#x200B;](https://webpack.js.org/concepts/)
-* [Venia ストアフロントのセットアップ &#x200B;](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
+* [Javascript Webpack：概念](https://webpack.js.org/concepts/)
+* [Venia ストアフロントの設定](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
 * [PWA Buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/packages/buildpack/)
-* [buildpack コマンドラインインターフェイス &#x200B;](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
-* [&#x200B; ツールとライブラリ：buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)
+* [buildpack コマンドラインインターフェイス](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
+* [ツールとライブラリ：buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)
