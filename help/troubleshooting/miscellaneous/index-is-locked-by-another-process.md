@@ -94,12 +94,12 @@ bin/magento indexer:reset catalogsearch_fulltext;
 
 アドビのユーザーガイドの内容：
 
-* [インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
+* [インデックス管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
 
 アドビの開発者ドキュメントには、次のようなものがあります。
 
 * [インデックス作成の概要](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [インデクサーのベストプラクティス](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration)
-* [Cronの設定と実行](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
-* [インデクサーの管理](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [インデクサーのベストプラクティス](https://experienceleague.adobe.com/ja/docs/commerce-operations/performance-best-practices/configuration)
+* [Cronの設定と実行](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
+* [インデクサーの管理](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers)
 * [インデクサーの最適化](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)

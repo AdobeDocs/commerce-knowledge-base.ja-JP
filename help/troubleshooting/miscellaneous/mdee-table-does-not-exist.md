@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-カスタムコードがデータ書き出し機能（`commerce-data-exporter`または`saas-exporter`）に適用されたAdobe Commerce インスタンス。 インストールされている[[!DNL SaaS]  データ書き出しバージョンが103.3.0](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes#release-6)以降で、コードが`catalog_data_exporter_products` インデックスを直接参照している場合にエラーが発生します。
+カスタムコードがデータ書き出し機能（`commerce-data-exporter`または`saas-exporter`）に適用されたAdobe Commerce インスタンス。 インストールされている[[!DNL SaaS]  データ書き出しバージョンが103.3.0](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes#release-6)以降で、コードが`catalog_data_exporter_products` インデックスを直接参照している場合にエラーが発生します。
 
 ## イシュー
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 原因
 
-[!DNL Commerce Data Export] [&#x200B; バージョン 103.3.0](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes#release-9) リリースのフィード テーブル、インデックス、およびログ テーブルの変更の名前の変更により、[!DNL Commerce Data Export]拡張機能を使用するカスタム拡張機能の[!DNL Mview] サブスクリプションが正しく機能しない可能性があります。
+[!DNL Commerce Data Export] [&#x200B; バージョン 103.3.0](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes#release-9) リリースのフィード テーブル、インデックス、およびログ テーブルの変更の名前の変更により、[!DNL Commerce Data Export]拡張機能を使用するカスタム拡張機能の[!DNL Mview] サブスクリプションが正しく機能しない可能性があります。
 
 この場合、`catalog_data_exporter` テーブル名が`cde_products_feed`に変更され、[!DNL Data Exporter Mview] サブスクリプションで古い名前を参照するカスタムコードが含まれているため、*テーブルが存在しません* エラーが発生します。
 
@@ -49,5 +49,5 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-* [!DNL SaaS] サービスのAdobe Commerce データ書き出しガイドの[[!DNL SaaS]  データ書き出し拡張機能リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes)
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [!DNL SaaS] サービスのAdobe Commerce データ書き出しガイドの[[!DNL SaaS]  データ書き出し拡張機能リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
