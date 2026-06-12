@@ -4,7 +4,7 @@ description: この記事では、Adobe Commerceの[!UICONTROL Product Recommend
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: beca5aa3fa796e4b12afc4882024db718b65ac0c
+source-git-commit: 48b929f6fdf0bf8745ec03c8faa8b07bf5b3e5c3
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -62,8 +62,14 @@ saas-export
 ） モジュール：
 
 1. [[!DNL cron]](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) （開発者用ドキュメント）ジョブが実行中であることを確認します。
-1. [[!UICONTROL indexers]](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) （開発ドキュメント）が実行されており、```php    Product Feed    ``` [!UICONTROL indexer]が```php    Update by Schedule    ```に設定されていることを確認してください。
-1. モジュールが&#x200B;*有効*&#x200B;であることを確認してください。 ```php    saas-export    ``` メタパッケージは次のモジュールをインストールします。これらはすべて&#x200B;*有効*&#x200B;である必要があります：```php    "magento/module-catalog-data-exporter"      "magento/module-catalog-inventory-data-exporter"      "magento/module-catalog-url-rewrite-data-exporter"      "magento/module-configurable-product-data-exporter"      "magento/module-data-exporter"      "magento/module-saas-catalog"    ```
+1. [[!UICONTROL indexers]](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) （開発ドキュメント）が実行されており、`Product Feed` [!UICONTROL indexer]が`Update by Schedule`に設定されていることを確認してください。
+1. モジュールが&#x200B;*有効*&#x200B;であることを確認してください。 `saas-export` メタパッケージは次のモジュールをインストールします。これらはすべて&#x200B;*有効*&#x200B;である必要があります。
+   * `magento/module-catalog-data-exporter`
+   * `magento/module-catalog-inventory-data-exporter`
+   * `magento/module-catalog-url-rewrite-data-exporter`
+   * `magento/module-configurable-product-data-exporter`
+   * `magento/module-data-exporter`
+   * `magento/module-saas-catalog`
 1. [logs](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/enable-logging)を確認してください（開発者用ドキュメント内）。 上記のモジュールに関連するエラーがないことを確認してください。
 1. [!UICONTROL Configuration cache]を更新します。 **システム** > **ツール** > **キャッシュ管理**&#x200B;に移動し、[!UICONTROL Configuration cache]をクリアします。
 1. `cde_products_products_feed` データベーステーブルにデータがあることを確認します。
@@ -84,4 +90,3 @@ saas-export
 * [!DNL SaaS] データ書き出しガイドの[&#x200B; ログの確認と](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging)のトラブルシューティング
 * [!DNL SaaS] サービスのAdobe Commerce データ書き出しガイドの[[!DNL SaaS]  データ書き出し拡張機能リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/saas-data-export/release-notes)
 * [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
-
