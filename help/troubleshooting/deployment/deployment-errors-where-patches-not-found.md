@@ -2,7 +2,7 @@
 title: デプロイメントまたは手動アプリケーション中に「パッチが見つかりません」エラーが発生する
 description: この記事では、「次のパッチが見つかりませんでした：MDVA-XXXXXXX、ACSD-XXXXX」というエラーが表示される問題の解決策を紹介します。 これらのパッチが現在のMagento バージョンで使用可能かどうかを、「status」コマンド*を使用して確認します。
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
-source-git-commit: 180f0e00ec1a2c6c3bd2ebca4dafe387c7bb3852
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## イシュー
 
@@ -72,10 +72,11 @@ Check the availability of these patches for the  current Magento version using t
     * ACSD-XXXXX
    ```
 
-1. [品質パッチリリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja)でパッチ IDを調べ、アップグレードする新しいバージョンのAdobe Commerceに各IDを適用できるかどうかを確認します。
+1. [品質パッチリリースノート ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)でパッチ IDを調べ、アップグレードする新しいバージョンのAdobe Commerceに各IDを適用できるかどうかを確認します。
 1. アップグレードする新しいバージョンのAdobe Commerceにパッチが適用されない場合は、パッチ IDを`.magento.env.yaml` ファイルから削除します。
 1. エラーが示すパッチ IDをすべて確認したら、変更をプッシュして再デプロイします。
 
 ## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドの[&#x200B; パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja#apply-a-patch-in-a-local-environment)。
+* Commerce on Cloud Infrastructure ガイドの[ パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment)。
+
