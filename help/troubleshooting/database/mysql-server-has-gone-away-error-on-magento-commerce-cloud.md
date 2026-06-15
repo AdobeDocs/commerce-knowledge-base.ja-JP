@@ -47,6 +47,6 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-* [Adobe Commerce on cloud infrastructureのデータベースのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-* [Adobe Commerceのクラウドインフラストラクチャで最も一般的なデータベースの問題](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+* [Adobe Commerce on cloud infrastructureのデータベースのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
+* [Adobe Commerceのクラウドインフラストラクチャで最も一般的なデータベースの問題](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)
 
