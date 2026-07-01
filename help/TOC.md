@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 5cb7550f95d48b89fc0d68c5e282bc3efe817f17
+source-git-commit: dd7e3fe0f0d7e65fefc20c46db52581b14986f64
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1790'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,6 @@ ht-degree: 1%
       * [PHP 8.1をサポートするバージョンにアップグレードする際にデプロイメント中にエラーが発生する](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [デプロイメントエラー：「ダウンロード中にエラー7が発生しました… ポート 443：接続が拒否されました」](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [誤ったファイルをコミットする際のデプロイメントエラー](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
-      * [デプロイメントまたは手動アプリケーション中に「パッチが見つかりません」エラーが発生する](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [キャッシュフラッシュでデプロイメントが失敗しました：「cache」名前空間で定義されたコマンドがありません」エラー](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * 既知の問題 {#known-issues-patches-attached}
       * [ストアのセキュリティの確保と暗号化キーのローテーションに関するガイダンス： [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
