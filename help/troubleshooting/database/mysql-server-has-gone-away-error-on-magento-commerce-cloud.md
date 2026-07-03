@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[&#x200B; サポートされているバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## イシュー
 
