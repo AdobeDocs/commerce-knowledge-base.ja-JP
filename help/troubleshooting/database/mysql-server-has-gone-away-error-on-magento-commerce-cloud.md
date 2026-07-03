@@ -4,9 +4,9 @@ description: この記事では、「cron.log」ファイルに「*SQL サーバ
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+source-git-commit: 467d214d25b2154af0545054a026a588de883f58
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、すべての[&#x200B; サポートされているバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)。
 
 ## イシュー
 
@@ -41,12 +41,12 @@ ht-degree: 0%
 
 ## Solution
 
+1. CLI `php -i |grep default_socket_timeout`で実行して、`default_socket_timeout`の現在のタイムアウト期間を確認してください。
 1. CLIで実行して、`default_socket_timeout`の現在のタイムアウト期間を確認してください：`php -i |grep default_socket_timeout`
 1. タイムアウト設定の増加に応じて、`default_socket_timeout`変数を`/etc/platform/<project_name>/php.ini` ファイルの予想される最長時間に設定します。 10～15分以内に設定することをお勧めします。
 1. GITにコミットして再デプロイします。
 
 ## 関連トピックス
 
-* [Adobe Commerce on cloud infrastructureのデータベースのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
-* [Adobe Commerceのクラウドインフラストラクチャで最も一般的なデータベースの問題](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ja)
-
+* [Adobe Commerce on cloud infrastructureのデータベースのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [Adobe Commerceのクラウドインフラストラクチャで最も一般的なデータベースの問題](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
