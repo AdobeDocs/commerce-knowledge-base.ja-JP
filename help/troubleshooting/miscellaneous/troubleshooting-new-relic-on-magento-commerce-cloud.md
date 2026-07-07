@@ -34,7 +34,7 @@ ht-degree: 0%
 <p>このような場合、管理者ユーザーがプロジェクトにユーザーを追加する必要があります。</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html"> サポートナレッジベースのNew Relic サービス </a>へのアクセス。</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html?lang=ja"> サポートナレッジベースのNew Relic サービス </a>へのアクセス。</p>
 </td>
 </tr>
 <tr>
