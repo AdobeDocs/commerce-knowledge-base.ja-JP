@@ -27,8 +27,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.x、2.4.x。
 
 次に、ダンプファイルへの直接ダウンロードリンク（ストアアドレスと表示されているファイル名）をサポートするように指定できます。
 
-管理者からダンプを作成する際に問題が発生した場合は、開発者ドキュメントの[ サポートユーティリティの実行](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities)で説明されているように、CLI コマンドを使用することを検討してください。
+管理者からダンプを作成する際に問題が発生した場合は、開発者ドキュメントの[&#x200B; サポートユーティリティの実行](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities)で説明されているように、CLI コマンドを使用することを検討してください。
 
 ## 関連トピックス
 
-* [ クラウドインフラストラクチャ上のAdobe Commerceのデータベースの完全なバックアップを作成](/help/how-to/general/create-database-dump-on-cloud.md)します。
+* [&#x200B; クラウドインフラストラクチャ上のAdobe Commerceのデータベースの完全なバックアップを作成](/help/how-to/general/create-database-dump-on-cloud.md)します。
