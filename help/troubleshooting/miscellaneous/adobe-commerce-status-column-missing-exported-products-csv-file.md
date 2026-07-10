@@ -50,5 +50,5 @@ Adobe Commerce （すべてのデプロイメント方法）すべての[&#x200B
 
 ## 関連トピックス
 
-* ユーザーガイドの[CSV ファイルの操作](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv)。
-* ユーザーガイドの[製品書き出し属性リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product)。
+* ユーザーガイドの[CSV ファイルの操作](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-csv)。
+* ユーザーガイドの[製品書き出し属性リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-attributes-product)。
