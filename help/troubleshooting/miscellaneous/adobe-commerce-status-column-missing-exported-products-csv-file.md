@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce （すべてのデプロイメント方法）すべての[ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce （すべてのデプロイメント方法）すべての[&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## イシュー
 
@@ -51,4 +51,4 @@ Adobe Commerce （すべてのデプロイメント方法）すべての[ サポ
 ## 関連トピックス
 
 * ユーザーガイドの[CSV ファイルの操作](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv)。
-* ユーザーガイドの[製品書き出し属性リファレンス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product)。
+* ユーザーガイドの[製品書き出し属性リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product)。
