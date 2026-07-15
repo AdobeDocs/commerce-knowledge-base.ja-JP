@@ -54,7 +54,7 @@ Fastly モジュール v1.2.79の&#x200B;**原因：**&#x200B;後方互換性の
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Adobe Commerce on cloud infrastructure ソリューションを使用している場合、[&#x200B; デプロイログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)にこのエラーメッセージが表示されます。 Adobe Commerce オンプレミスの場合、コマンドラインにエラーが表示されます。
+Adobe Commerce on cloud infrastructure ソリューションを使用している場合、[&#x200B; デプロイログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations)にこのエラーメッセージが表示されます。 Adobe Commerce オンプレミスの場合、コマンドラインにエラーが表示されます。
 
 ## 原因
 
@@ -70,4 +70,4 @@ Fastly モジュールをバージョン 1.2.82以降にアップグレードし
    * magento-cloud-metapackageにFastly モジュールが含まれている場合：    <pre>composer update magento/magento-cloud-metapackage</pre>
    * fastly モジュールが個別にインストールされている場合（例えば、cloud editionではなくAdobe Commerce オンプレミスを使用している場合） <pre>composer update fastly/magento2</pre>
 1. 変更を確定してプッシュし、デプロイメントプロセスが自動的に実行されない場合はトリガーします。
-1. 管理画面で、[新しいVCLをFastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)にアップロードします。
+1. 管理画面で、[新しいVCLをFastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)にアップロードします。
