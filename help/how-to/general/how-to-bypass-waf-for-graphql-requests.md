@@ -1,34 +1,34 @@
 ---
-title: GraphQL リクエストで WAF をバイパスする方法
-description: この記事では、GraphQL リクエストで WAF をバイパスする方法について説明します。
+title: GraphQL リクエストに対するWAFのバイパス方法
+description: この記事では、GraphQL リクエストに対してWAFをバイパスする方法について説明します。
 feature: GraphQL
 exl-id: 3a0f2c22-f976-4596-b6a9-4634be1ea4c3
 source-git-commit: 2bec86818336a9ef4d8316e257a0ca4256cdd93c
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# GraphQL リクエストで WAF をバイパスする方法
+# GraphQL リクエストに対するWAFのバイパス方法
 
-この記事では、[!DNL Fastly] WAF がGraphQL リクエストをブロックしている場合に、GraphQL リクエストの WAF をバイパスする方法について説明します。
+この記事では、[!DNL Fastly] WAFがGraphQL リクエストをブロックしている場合に、GraphQL リクエストに対してWAFをバイパスする方法について説明します。
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce（すべてのバージョン）
+Adobe Commerce on cloud infrastructure （すべてのバージョン）
 
-## 原因：
+## 原因
 
-GraphQL リクエストの性質上、[!DNL Fastly] WAF によるリクエストの偽陽性ブロッキングのトリガーになる可能性がある多くの繰り返し文字が存在する場合があります。
+GraphQL リクエストの固有の性質により、[!DNL Fastly] WAFによるリクエストの偽陽性ブロックをトリガーする可能性のある繰り返し文字が大量に存在する可能性があります。
 
-## 解決策
+## Solution
 
-1. [!DNL Fastly] のMagentoモジュールを介してカスタムスニペットを追加することで、これらのリクエストに対する WAF を回避します。
+1. [!DNL Fastly] Magento モジュールを使用してカスタムスニペットを追加することで、これらのリクエストに対するWAFをバイパスします。
 
    タイプ：recv
-優先度：15
-コンテンツ :
+   優先度：15
+   コンテンツ：
 
    ```
    if( req.url.path ~ "^/graphql" ) {
@@ -36,9 +36,9 @@ GraphQL リクエストの性質上、[!DNL Fastly] WAF によるリクエスト
    }
    ```
 
-1. 「**[!UICONTROL Upload VCL to Fastly]**」をクリックします。
+1. **[!UICONTROL Upload VCL to Fastly]**&#x200B;をクリックします。
 
-## 関連資料
+## 関連トピックス
 
-* クラウドインフラストラクチャー上のCommerceにある [Web アプリケーションファイアウォール（WAF） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) に関するガイド。
-* クラウドインフラストラクチャー上のCommerceにおける [&#x200B; カスタム VCL の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) ガイド。
+* Commerce on Cloud Infrastructure ガイドの[Web Application Firewall （WAF） ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service)。
+* Commerce Cloud Infrastructure版の[ カスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets)の概要ガイド。
