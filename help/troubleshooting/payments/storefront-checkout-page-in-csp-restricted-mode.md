@@ -1,23 +1,23 @@
 ---
-title: 制限モードでのストアフロントのチェックアウトページ [!UICONTROL CSP] トラブルシューティング
-description: この記事では、CSP 制限モードでチェックアウトページを表示している際に発生する可能性のあるエラーについて説明し、それらのエラーを修正するソリューションを提供します。
+title: '[!UICONTROL CSP]制限モードでのストアフロントチェックアウトページのトラブルシューティング'
+description: この記事では、CSP制限モードでチェックアウトページを表示する際に発生する可能性のあるエラーについて説明し、これらのエラーを修正するためのソリューションを提供します。
 feature: Checkout,Security,Orders,Payments
 role: Developer
 exl-id: fb92b75d-c88b-4810-a309-d6ab38485e86
 source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
-# 制限モードでのストアフロントのチェックアウトページ [!UICONTROL CSP] トラブルシューティング
+# [!UICONTROL CSP]制限モードでのストアフロントチェックアウトページのトラブルシューティング
 
-ここでは、**[!UICONTROL CSP restricted mode]** でチェックアウトページを表示している際に発生するAdobe Commerce 2.4.7 の問題と、「*Refused to execute inline script that it permissions to following Content Security Policy directive: &quot;script-src ...*&quot;」というエラーメッセージについて説明します。
+この記事では、次のContent Security Policy ディレクティブに違反しているため、「*インラインスクリプトの実行を拒否しました：&quot;script-src ...*&quot;」を使用して、**[!UICONTROL CSP restricted mode]**&#x200B;のチェックアウトページを表示する際のAdobe Commerce 2.4.7の問題に関する説明と修正について説明します。 ブラウザーコンソールのログにエラーメッセージが表示されます。
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce on cloud infrastructure、Adobe Commerce オンプレミス、およびMagento Open Source:
+Adobe Commerce on cloud infrastructure、Adobe Commerce on-premises、Magento Open Source:
 
 * 2.4.7
 * 2.4.6-pX
@@ -26,39 +26,39 @@ Adobe Commerce on cloud infrastructure、Adobe Commerce オンプレミス、お
 
 ## 問題 – ストアフロントのチェックアウトページが壊れているか、読み込めません
 
-**ストアフロントのチェックアウト** ページが壊れているか、読み込めません。その際、「*インラインスクリプトの実行を拒否しました：ブラウザーコンソールログに表示されるコンテンツセキュリティポリシーディレクティブ「script-src ...*」エラーメッセージに違反しているためです。
+**ストアフロント チェックアウト** ページが壊れているか読み込めません。次のContent Security Policy ディレクティブに違反しているため、「*インラインスクリプトの実行を拒否しました：&quot;script-src ...*&quot; ブラウザーコンソールのログにエラーメッセージが表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. ストアフロントに移動します。
-1. 買い物かごに商品を追加し、チェックアウトに進みます。
+1. 商品をカートに追加し、チェックアウトに進みます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-チェックアウトページが正常に読み込まれる。
+チェックアウトページは正常に読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-チェックアウトページが空白であるか、コンポーネントがありません。 「*コンテンツセキュリティポリシーディレクティブ「script-src ...*」に違反しているので、インラインスクリプトの実行を拒否しました」という [!DNL JS] エラーがブラウザーコンソールログに表示されます
+チェックアウトページが空白であるか、コンポーネントが欠落しています。 次の[!DNL JS] エラーがブラウザーコンソールのログに表示されます。「*次のContent Security Policy ディレクティブに違反しているため、インラインスクリプトの実行を拒否しました：&quot;script-src ...*&quot;
 
-### 原因：
+### 原因
 
-Adobe CommerceおよびMagento Open Sourceバージョン 2.4.7 以降では、**[!UICONTROL CSP]** は、デフォルトで、ストアフロントおよび管理領域の支払いページ用に `restrict-mode` で設定され、その他のすべてのページ用に `report-only` モードで設定されます。
-対応する **[!UICONTROL CSP]** ヘッダーには、支払いページの `script-src` ディレクティブ内に `unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted] インラインスクリプトのみ使用できます。
+Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
-### 解決策
+### Solution
 
-次の理由で特定のスクリプトがブロックされると、ブラウザーエラーが表示される場合が **[!UICONTROL CSP]** ります。
+**[!UICONTROL CSP]**&#x200B;が原因で特定のスクリプトがブロックされているため、ブラウザーのエラーが表示される場合があります。
 
 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
 
-<u> この問題を修正するには、次のいずれかを実行する必要があります </u>
+<u>この問題を修正するには、</u>のいずれかを実行する必要があります。
 
-1. `SecureHtmlRenderer` クラスを使用して、ブロックされたスクリプトを [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) きます。
+1. [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style)は、`SecureHtmlRenderer` クラスを使用してブロックされたスクリプトです。
 1. スクリプトの実行を許可するには、`CSPNonceProvider` クラスを使用します。
-Adobe CommerceおよびMagento Open Source 2.4.7 以降には、各リクエストに一意の [!DNL nonce] 文字列を容易に生成できる **[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。 これらの [!DNL nonce] 文字列は、[!UICONTROL CSP] ヘッダーにアタッチされます。
+Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。次に、これらの[!DNL nonce]文字列が[!UICONTROL CSP] ヘッダーにアタッチされます。
 
-   `Magento\Csp\Helper\CspNonceProvider` の `generateNonce` 関数を使用して、[!DNL nonce] 文字列を取得します。
+   `Magento\Csp\Helper\CspNonceProvider`の`generateNonce`関数を使用して、[!DNL nonce]文字列を取得します。
 
    ```php
    use Magento\Csp\Helper\CspNonceProvider;
@@ -91,44 +91,44 @@ Adobe CommerceおよびMagento Open Source 2.4.7 以降には、各リクエス�
    }
    ```
 
-1. モジュールの `csp_whitelist.xml` ファイルに [a [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes) を追加します。
+1. [&#x200B; モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
 
-## 問題 – 支払い方法が見つからないか、機能していません
+## 問題 – 支払い方法がないか、機能しません
 
-支払い方法がないか、「*インラインスクリプトの実行を拒否しました&#x200B;**が表示される**&#x200B;ストアフロントのチェックアウト」ページで機能しません。これは、ブラウザーコンソールログの「script-src ...*」エラーメッセージに違反しているためです。
+支払い方法が見つからないか、**storefront チェックアウト** ページで機能していません。また、「*インラインスクリプトの実行を拒否しました。これは、次のコンテンツセキュリティポリシーディレクティブに違反しているためです。「script-src ...*」 ブラウザーコンソールのログにエラーメッセージが表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. ストアフロントに移動します。
-2. 買い物かごに商品を追加し、チェックアウトに進みます。
-3. 支払方法を選択します。
+2. 商品をカートに追加し、チェックアウトに進みます。
+3. 支払い方法を選択します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-お支払い方法を選択し、正常に注文に進むことができます。
+お支払い方法を選択し、正常に注文を行うことができます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-支払い方法がないか、機能していません。 「*コンテンツセキュリティポリシーディレクティブ「script-src ...*」に違反しているので、インラインスクリプトの実行を拒否しました」という [!DNL JS] エラーがブラウザーコンソールログに表示されます
+支払い方法がないか、機能しません。 次の[!DNL JS] エラーがブラウザーコンソールのログに表示されます。「*次のContent Security Policy ディレクティブに違反しているため、インラインスクリプトの実行を拒否しました：&quot;script-src ...*&quot;
 
-### 原因：
+### 原因
 
-Adobe CommerceおよびMagento Open Sourceバージョン 2.4.7 以降では、**[!UICONTROL CSP]** は、デフォルトで、ストアフロントおよび管理領域の支払いページ用に `restrict-mode` で設定され、その他のすべてのページ用に `report-only` モードで設定されます。
-対応する **[!UICONTROL CSP]** ヘッダーには、支払いページの `script-src` ディレクティブ内に `unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted] インラインスクリプトのみ使用できます。
+Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
-### 解決策
+### Solution
 
-次の理由で特定のスクリプトがブロックされると、ブラウザーエラーが表示される場合が **[!UICONTROL CSP]** ります。
+**[!UICONTROL CSP]**&#x200B;が原因で特定のスクリプトがブロックされているため、ブラウザーのエラーが表示される場合があります。
 
 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
 
-<u> この問題を修正するには、次のいずれかを実行する必要があります </u>
+<u>この問題を修正するには、</u>のいずれかを実行する必要があります。
 
-1. `SecureHtmlRenderer` クラスを使用して、ブロックされたスクリプトを [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) きます。
+1. [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style)は、`SecureHtmlRenderer` クラスを使用してブロックされたスクリプトです。
 1. スクリプトの実行を許可するには、`CSPNonceProvider` クラスを使用します。
-Adobe CommerceおよびMagento Open Source 2.4.7 以降には、各リクエストに一意の [!DNL nonce] 文字列を容易に生成できる **[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。 これらの [!DNL nonce] 文字列は、[!UICONTROL CSP] ヘッダーにアタッチされます。
+Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。次に、これらの[!DNL nonce]文字列が[!UICONTROL CSP] ヘッダーにアタッチされます。
 
-   `Magento\Csp\Helper\CspNonceProvider` の `generateNonce` 関数を使用して、[!DNL nonce] 文字列を取得します。
+   `Magento\Csp\Helper\CspNonceProvider`の`generateNonce`関数を使用して、[!DNL nonce]文字列を取得します。
 
    ```php
    use Magento\Csp\Helper\CspNonceProvider;
@@ -161,45 +161,45 @@ Adobe CommerceおよびMagento Open Source 2.4.7 以降には、各リクエス�
    }
    ```
 
-1. モジュールの `csp_whitelist.xml` ファイルに [a [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes) を追加します。
+1. [&#x200B; モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
 
-## 問題 – 顧客が注文できない
+## 問題 – お客様が注文できません
 
-顧客は、ブラウザーコンソールログのコンテンツセキュリティポリシーディレクティブ「script-src ...*」に違反するので、「* インラインスクリプトの実行を拒否されました」というエラーメッセージで注文できません。
+「*インラインスクリプトの実行を拒否しました。これは、次のコンテンツセキュリティポリシーディレクティブに違反しているためです。「script-src ...*」 ブラウザーコンソールのログにエラーメッセージが表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. ストアフロントに移動します。
-2. 買い物かごに商品を追加し、チェックアウトに進みます。
-3. 支払方法を選択します。
-4. **Place Order** をクリックします。
+2. 商品をカートに追加し、チェックアウトに進みます。
+3. 支払い方法を選択します。
+4. 「**注文を配置**」をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-注文は正常に行われます。
+正常に注文できるようになりました。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-注文することはできません。 「*コンテンツセキュリティポリシーディレクティブ「script-src ...*」に違反しているので、インラインスクリプトの実行を拒否しました」という [!DNL JS] エラーがブラウザーコンソールログに表示されます
+注文はできません。 次の[!DNL JS] エラーがブラウザーコンソールのログに表示されます。「*次のContent Security Policy ディレクティブに違反しているため、インラインスクリプトの実行を拒否しました：&quot;script-src ...*&quot;
 
-### 原因：
+### 原因
 
-Adobe CommerceおよびMagento Open Sourceバージョン 2.4.7 以降では、**[!UICONTROL CSP]** は、デフォルトで、ストアフロントおよび管理領域の支払いページ用に `restrict-mode` で設定され、その他のすべてのページ用に `report-only` モードで設定されます。
-対応する **[!UICONTROL CSP]** ヘッダーには、支払いページの `script-src` ディレクティブ内に `unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted] インラインスクリプトのみ使用できます。
+Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
-### 解決策
+### Solution
 
-次の理由で特定のスクリプトがブロックされると、ブラウザーエラーが表示される場合が **[!UICONTROL CSP]** ります。
+**[!UICONTROL CSP]**&#x200B;が原因で特定のスクリプトがブロックされているため、ブラウザーのエラーが表示される場合があります。
 
 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
 
-<u> この問題を修正するには、次のいずれかを実行する必要があります </u>
+<u>この問題を修正するには、</u>のいずれかを実行する必要があります。
 
-1. `SecureHtmlRenderer` クラスを使用して、ブロックされたスクリプトを [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) きます。
+1. [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style)は、`SecureHtmlRenderer` クラスを使用してブロックされたスクリプトです。
 1. スクリプトの実行を許可するには、`CSPNonceProvider` クラスを使用します。
-Adobe CommerceおよびMagento Open Source 2.4.7 以降には、各リクエストに一意の [!DNL nonce] 文字列を容易に生成できる **[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。 これらの [!DNL nonce] 文字列は、[!UICONTROL CSP] ヘッダーにアタッチされます。
+Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。次に、これらの[!DNL nonce]文字列が[!UICONTROL CSP] ヘッダーにアタッチされます。
 
-   `Magento\Csp\Helper\CspNonceProvider` の `generateNonce` 関数を使用して、[!DNL nonce] 文字列を取得します。
+   `Magento\Csp\Helper\CspNonceProvider`の`generateNonce`関数を使用して、[!DNL nonce]文字列を取得します。
 
    ```php
    use Magento\Csp\Helper\CspNonceProvider;
@@ -232,4 +232,4 @@ Adobe CommerceおよびMagento Open Source 2.4.7 以降には、各リクエス�
    }
    ```
 
-1. モジュールの `csp_whitelist.xml` ファイルに [a [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes) を追加します。
+1. [&#x200B; モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
