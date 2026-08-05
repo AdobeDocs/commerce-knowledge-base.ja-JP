@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 694ab6fe606195c40b15d2752c09dd380d3dcedb
+source-git-commit: 29d98726945266e08a49af010690728c3b4c81c1
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1762'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,6 @@ ht-degree: 1%
     * [不明なモジュール Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
     * [Cronの準備状況チェックの問題](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
     * [SQL クエリ：コストエラーの説明](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
-    * [Adobe Commerce上のNew Relic クラウドインフラストラクチャのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
     * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [ファイル権限の準備状況チェックの問題](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
     * [Google e コマースの売上の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
