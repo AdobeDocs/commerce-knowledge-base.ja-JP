@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 29d98726945266e08a49af010690728c3b4c81c1
+source-git-commit: 804fdcd482abed2b61fb31e805ee9a24491ff58f
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1757'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,6 @@ ht-degree: 1%
     * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * その他 {#miscellaneous}
     * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [設定ファイルが見つからないか、変更されています](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
     * [cURL エラー60:SSL証明書の有効期限が切れています](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
     * [Adobe Commerceの商品レコメンデーションモジュールのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [不明なモジュール Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
