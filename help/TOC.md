@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 5bb5ce75f5bd20f21762c0c43ab0f54286baf076
+source-git-commit: 9216789f967ee842ee41d669779d8037fd47897f
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,6 @@ ht-degree: 1%
     * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Google e コマースの売上の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
-    * [Fastlyが有効になっているサブページにメインメニュー（カテゴリー）が表示されない](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
     * [ファイルストレージが少なく、特定のページの読み込みが遅い](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
     * [完全なインデックス再作成によるパフォーマンスの低下](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
     * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
