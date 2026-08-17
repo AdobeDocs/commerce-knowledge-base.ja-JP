@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9216789f967ee842ee41d669779d8037fd47897f
+source-git-commit: de7df03b7d60e417b0b419117dd1e658f02d1de5
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1716'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,6 @@ ht-degree: 1%
     * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Adobe Commerceでキャッシュのウォーミングアップとサイトを利用できない](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [CSV ファイルのアップロード時のUTF-8 エラーの解決](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
-    * [Adobe CommerceでのNew Relicを使用したパフォーマンスのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
     * [CLIからのDDoS攻撃の確認](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
     * [ストアフロントまたはCommerce管理者へのアクセス時に空白ページまたはリダイレクトループエラーが発生する](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
     * [Commerce Adminへのログイン時にリダイレクトする](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
