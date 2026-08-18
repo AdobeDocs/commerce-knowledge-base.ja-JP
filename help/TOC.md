@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: de7df03b7d60e417b0b419117dd1e658f02d1de5
+source-git-commit: fbc97f1f9a9df7771ea0473f50fe927923dff630
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,6 @@ ht-degree: 1%
     * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * その他 {#miscellaneous}
     * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Adobe Commerceの商品レコメンデーションモジュールのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [不明なモジュール Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
     * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Google e コマースの売上の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
