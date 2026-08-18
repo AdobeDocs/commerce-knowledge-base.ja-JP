@@ -65,4 +65,4 @@ rabbitmq (type: rabbitmq:3.12, size: L, disk: 1024)
 * [プロアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
 * [スターターアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
-上記の推奨事項を満たした場合は、[追加支援のためにサポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を送信してください。
+上記の推奨事項を満たした場合は、[追加支援のためにサポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を送信してください。

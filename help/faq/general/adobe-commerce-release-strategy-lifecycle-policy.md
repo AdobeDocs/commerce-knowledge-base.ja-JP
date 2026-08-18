@@ -28,9 +28,9 @@ Adobe Commerceのお客様のミッションクリティカルなニーズを満
 
 ### 2.4.4、2.4.5、2.4.6、および2.4.7のお客様は、この新しいポリシーに基づいて、いつサポート終了に達しますか？
 
-Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムラインに示すように、バージョン [!DNL GA]日から3年間のセキュリティおよび品質修正を受け取ります。 特定のサポート終了日については、[!DNL Experience League]の[ リリースバージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) ページを参照してください。
+Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムラインに示すように、バージョン [!DNL GA]日から3年間のセキュリティおよび品質修正を受け取ります。 特定のサポート終了日については、[!DNL Experience League]の[&#x200B; リリースバージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) ページを参照してください。
 
-![ グラフ 1](assets/MSKB-1978-1.jpg)
+![&#x200B; グラフ 1](assets/MSKB-1978-1.jpg)
 
 ### Adobe Commerceのリリーススケジュールはどのように変更されますか？
 
@@ -44,14 +44,14 @@ Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムライ
 
 2023年には、一般公開の約2週間前にAdobe Commerce パッチリリースにアクセスできます。
 
-2024年以降、Adobeではパッチへの「プレリリース」アクセスが提供されなくなりました。 代わりに、2.4.7以降では、お客様は[ ベータリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html)を使用して、テストと開発のために一般化前の可用性コードにアクセスできます。 プレリリース版へのアクセスは、引き続き次の2023 リリースでスケジュールされています。
+2024年以降、Adobeではパッチへの「プレリリース」アクセスが提供されなくなりました。 代わりに、2.4.7以降では、お客様は[&#x200B; ベータリリース &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html)を使用して、テストと開発のために一般化前の可用性コードにアクセスできます。 プレリリース版へのアクセスは、引き続き次の2023 リリースでスケジュールされています。
 
 * 2023年8月8日プレリリース版へのアクセスは2023年7月25日（PT）です
 * 2023年10月10日プレリリースへのアクセスは2023年9月26日（PT）です
 
 ### Adobe Commerceのリリーススケジュールはどこに掲載されますか？
 
-詳しくは、[!DNL Experience League]の[Adobe Commerce リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)を参照してください。
+詳しくは、[!DNL Experience League]の[Adobe Commerce リリーススケジュール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)を参照してください。
 
 ### スケジュールに含まれるリリースにはどのような種類がありますか？
 

@@ -8,7 +8,7 @@ ht-degree: 0%
 # KB ラベルガイド
 
 このドキュメントでは、Adobe Commerce サポート技術情報の記事にラベルを追加するためのガイドラインを提供します。
-ラベル（「タグ」とも呼ばれます）は、[Adobe Commerce サポート ナレッジベース ](https://support.magento.com/hc/en-us)での検索体験を向上させます。
+ラベル（「タグ」とも呼ばれます）は、[Adobe Commerce サポート ナレッジベース &#x200B;](https://support.magento.com/hc/en-us)での検索体験を向上させます。
 ラベルは、記事ファイルのメタデータセクションの「ラベル」フィールドにコンマで区切って追加されます。コンマと次のラベルの間にはスペースがありません。
 詳しくは、[.././.github/CONTRIBUTING.md#metadata]を参照してください。
 

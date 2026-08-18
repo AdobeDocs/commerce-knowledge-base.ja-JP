@@ -276,4 +276,4 @@ Use tables for information that is best presented along two axes (rows and colum
 
 ## ブランディング
 
-* Adobe Commerceが「Adobe Commerce」に進化。 最新のブランディング言語の使用方法について詳しくは、[ リブランディング用語](https://github.com/magento/knowledge-base/wiki) Wikiを参照してください。
+* Adobe Commerceが「Adobe Commerce」に進化。 最新のブランディング言語の使用方法について詳しくは、[&#x200B; リブランディング用語](https://github.com/magento/knowledge-base/wiki) Wikiを参照してください。

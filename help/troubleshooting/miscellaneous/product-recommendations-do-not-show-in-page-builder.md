@@ -32,10 +32,10 @@ ht-degree: 0%
 1. 次のコマンドを実行して、モジュールを個別にインストールしたかどうかを確認します：`composer show magento/module-page-builder-product-recommendations`
 1. 次のメッセージが返される場合：*Package magento/module-page-builder-product-recommendations not found*、次のコマンドを実行してインストールする必要があります：`composer require magento/module-page-builder-product-recommendations`
 
-ページビルダーで製品レコメンデーションを有効にすると、ページビルダーで作成されたあらゆるコンテンツに[ レコメンデーションユニット ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)を追加できるようになります。
+ページビルダーで製品レコメンデーションを有効にすると、ページビルダーで作成されたあらゆるコンテンツに[&#x200B; レコメンデーションユニット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)を追加できるようになります。
 
 ## 関連トピックス
 
-* ユーザーガイドの[ コンテンツの追加 – 製品レコメンデーション ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)。
+* ユーザーガイドの[&#x200B; コンテンツの追加 – 製品レコメンデーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)。
 * [製品レコメンデーションのインストールと設定](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure)については、開発者ドキュメントをご覧ください。
 * [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
