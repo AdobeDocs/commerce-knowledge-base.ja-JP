@@ -31,10 +31,10 @@ Pro統合環境またはスターターステージング環境のパフォー�
 
 パフォーマンスの問題に対処するには、統合環境でのベストパフォーマンスのベストプラクティスに従っていることを確認します。 また、統合を強化するために、環境のアップグレードをリクエストする必要がある場合もあります。
 
-まず、環境が[拡張統合設定](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242)上にあるかどうかを確認します。
+まず、環境が[拡張統合設定](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242)上にあるかどうかを確認します。
 
-* [プロアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [スターターアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [プロアーキテクチャ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [スターターアーキテクチャ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
 次のいずれかの方法を使用して、デプロイメントログを確認します。
 
@@ -59,10 +59,10 @@ opensearch (type: opensearch:2, size: L, disk: 1024)
 rabbitmq (type: rabbitmq:3.12, size: L, disk: 1024)
 ```
 
-拡張統合設定を使用していない場合は、[拡張/アップグレードをリクエストできます](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242)。
+拡張統合設定を使用していない場合は、[拡張/アップグレードをリクエストできます](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27242)。
 拡張統合設定を既に使用している場合、またはアップグレード後もパフォーマンスの問題が発生する場合は、統合環境で最適なパフォーマンスを実現するためのベストプラクティスに従ってください。
 
-* [プロアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [スターターアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [プロアーキテクチャ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [スターターアーキテクチャ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
-上記の推奨事項を満たした場合は、[追加支援のためにサポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を送信してください。
+上記の推奨事項を満たした場合は、[追加支援のためにサポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を送信してください。

@@ -65,7 +65,7 @@ Fastlyは、通常、アプリケーションから取得される応答ヘッ�
 
 キャッシュヒット率を確認するには、次の手順に従います。
 
-1. Adobe Commerce on cloud infrastructure環境の[Fastly資格情報](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)を取得します。
+1. Adobe Commerce on cloud infrastructure環境の[Fastly資格情報](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)を取得します。
 1. 次のLinux/macOS cURL コマンドを実行して、過去30分間のサイトのヒット率を確認し、Fastly資格情報の値にと置き換えます。
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +82,8 @@ Fastlyは、通常、アプリケーションから取得される応答ヘッ�
 
 1. 1時間および1日のヒット率の統計を使用して、ヒット率がいつ減少し始めたかを特定します。 変更をサイトにデプロイした際にヒット率が突然低下した場合は、サイトの読み込みが落ちるまで変更をロールバックすることを検討します。
 1. Commerce管理者で、**Stores** > **Configuration** >Advanced > **System** > **Full Page Cache**&#x200B;の設定を確認します。 公開コンテンツ **の値の** TTLが低すぎないようにしてください。
-1. VCL スニペット [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)を アップロードしたことを確認してください。
-1. カスタム VCL スニペットを使用する場合は、「パス」または「パイプ」アクションを正しく使用するようにデバッグします。これらは慎重に使用し、少なくとも何らかの条件で使用する必要があります。 詳しくは、開発者ドキュメントの[&#x200B; カスタム Fastly VCL スニペット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets)を参照してください。
+1. VCL スニペット [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)を アップロードしたことを確認してください。
+1. カスタム VCL スニペットを使用する場合は、「パス」または「パイプ」アクションを正しく使用するようにデバッグします。これらは慎重に使用し、少なくとも何らかの条件で使用する必要があります。 詳しくは、開発者ドキュメントの[&#x200B; カスタム Fastly VCL スニペット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets)を参照してください。
 
 ### 手順3：サーバー負荷が高い原因となるweb サイトの特定
 
