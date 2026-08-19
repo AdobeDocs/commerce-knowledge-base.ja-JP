@@ -28,9 +28,9 @@ Pro アーキテクチャを使用しているお客様は、サブスクリプ�
 
 **クラウドインフラストラクチャ上のAdobe Commerce スタータープランのアーキテクチャ New Relicを使用するお客様：**
 
-スターターアーキテクチャのお客様は、サブスクリプションの一部としてNew Relic インフラストラクチャサービスを提供されません。 ただし、開発者向けドキュメントの「[New Relicに接続](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)」の手順に従ってライセンスを追加する場合は、New Relic Application Performance Monitoring （APM）を使用できます。
+スターターアーキテクチャのお客様は、サブスクリプションの一部としてNew Relic インフラストラクチャサービスを提供されません。 ただし、開発者向けドキュメントの「[New Relicに接続](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)」の手順に従ってライセンスを追加する場合は、New Relic Application Performance Monitoring （APM）を使用できます。
 
 ## 関連トピックス
 
-New Relic サービスについて詳しくは、開発者向けドキュメントの[&#x200B; パフォーマンスの調査](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40830)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。
+New Relic サービスについて詳しくは、開発者向けドキュメントの[&#x200B; パフォーマンスの調査](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-40830)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。
 
