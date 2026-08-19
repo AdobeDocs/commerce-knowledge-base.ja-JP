@@ -24,7 +24,7 @@ Pro アーキテクチャを使用しているお客様は、サブスクリプ�
 
 **Pro アーキテクチャを使用しているお客様で、パスワードを忘れた場合、またはNew Relic Infrastructure アカウントを有効にしなかった場合：**
 
-一部のお客様がNew Relicからアクティベーションリンクを含むメールを受信し、New Relic アカウントを登録したが、その後ユーザーの資格情報を忘れた場合は、[New Relic ログイン ](https://login.newrelic.com/login) ページをクリックし、「パスワードをお忘れですか？」をクリックする必要があります。 ユーザー名はメールアドレスです。 New Relicにログインし直すには、パスワードをリセットする必要があります。 メールを受け取ったことを覚えておらず、New Relic Infrastructureを使用する場合も、次の手順に従う必要があります。
+一部のお客様がNew Relicからアクティベーションリンクを含むメールを受信し、New Relic アカウントを登録したが、その後ユーザーの資格情報を忘れた場合は、[New Relic ログイン &#x200B;](https://login.newrelic.com/login) ページをクリックし、「パスワードをお忘れですか？」をクリックする必要があります。 ユーザー名はメールアドレスです。 New Relicにログインし直すには、パスワードをリセットする必要があります。 メールを受け取ったことを覚えておらず、New Relic Infrastructureを使用する場合も、次の手順に従う必要があります。
 
 **クラウドインフラストラクチャ上のAdobe Commerce スタータープランのアーキテクチャ New Relicを使用するお客様：**
 
@@ -32,5 +32,5 @@ Pro アーキテクチャを使用しているお客様は、サブスクリプ�
 
 ## 関連トピックス
 
-New Relic サービスについて詳しくは、開発者向けドキュメントの[ パフォーマンスの調査](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40830)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。
+New Relic サービスについて詳しくは、開発者向けドキュメントの[&#x200B; パフォーマンスの調査](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40830)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。
 
