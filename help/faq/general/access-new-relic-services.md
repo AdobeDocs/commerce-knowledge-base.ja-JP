@@ -2,9 +2,9 @@
 title: New Relicのサービスへのアクセス
 description: この記事では、十分なライセンス/サブスクリプション認証を持つお客様が一部のNew Relic サービスにアクセスする方法について説明します。
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 09777d70272bdb78a0bcf7566cc398a53c474f4c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Pro アーキテクチャを使用しているお客様は、サブスクリプ�
 
 ## 関連トピックス
 
-New Relic サービスについて詳しくは、開発者向けドキュメントの[&#x200B; パフォーマンスの調査](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ &#x200B;](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。
+New Relic サービスについて詳しくは、開発者向けドキュメントの[&#x200B; パフォーマンスの調査](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)を参照してください。 また、[Adobe Commerce上のNew Relic クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-40830)を使用したパフォーマンスのトラブルシューティングについては、サポートナレッジベースを参照してください。
