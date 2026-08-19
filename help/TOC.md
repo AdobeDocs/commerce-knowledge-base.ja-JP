@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 2ae94bc621d0cc4b308fbf7d5c0f58a5284b6f4d
+source-git-commit: a57fca068b8154dfa451b2ba76e297f57e7229eb
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -73,8 +73,6 @@ ht-degree: 1%
     * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * その他 {#miscellaneous}
     * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [cURL エラー60:SSL証明書の有効期限が切れています](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
-    * [Adobe Commerceの商品レコメンデーションモジュールのトラブルシューティング](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Google e コマースの売上の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
