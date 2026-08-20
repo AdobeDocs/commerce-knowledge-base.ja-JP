@@ -31,7 +31,7 @@ ht-degree: 0%
 
 最新バージョンの`experience-platform-connector`拡張機能がインストールされていることを確認してください。
 
-最新バージョンについて詳しくは、[[!DNL Data Connection] 拡張機能リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes)を参照してください。
+最新バージョンについて詳しくは、[[!DNL Data Connection] 拡張機能リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes)を参照してください。
 
 >[!NOTE]
 >
@@ -121,9 +121,9 @@ select * from event_data_saas;
 ### サービス IDが許可リストにあるかどうかを確認し、Adobe Commerce サポートに確認します
 
 1. [!UICONTROL Commerce Services Connector] `serviceId`がAdobe Commerceの許可リストに表示されていることを確認します。
-1. [Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせいただき、ステータスを確認してください。
+1. [Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせいただき、ステータスを確認してください。
 
 ## 関連トピックス
 
 * Commerce Services ユーザーガイドの[[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)拡張機能
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
