@@ -89,5 +89,5 @@ Cookie設定の値を確認してクリアするには、次の手順を実行�
 
 ## 関連する記事
 
-* [ アドビのサポートナレッジベースの「お客様のアカウントは一時的に無効になっています」というエラー](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)が表示された場合、管理者ログインフォームにリダイレクトします。
+* [&#x200B; アドビのサポートナレッジベースの「お客様のアカウントは一時的に無効になっています」というエラー](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)が表示された場合、管理者ログインフォームにリダイレクトします。
 * [管理者ログインフォームにリダイレクトし、サポートナレッジベースの「現在のセッションは期限切れです」というエラー](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686)が表示されます。
