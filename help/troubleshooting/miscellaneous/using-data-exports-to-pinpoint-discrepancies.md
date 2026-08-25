@@ -1,19 +1,19 @@
 ---
 title: データ書き出しを使用した不一致の特定
-description: この記事では、Magento BI データ内の矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポート内のデータの不一致を特定するのに役立ちます。特に、[data discreancy diagnostic checklist] （https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy）で問題を特定できない場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
+description: この記事では、Magento BI データ内の矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポート内のデータの不一致を特定するのに役立ちます。特に、[data discreancy diagnostic checklist] （https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479）で問題を特定できない場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
 
 # データ書き出しを使用した不一致の特定
 
-この記事では、Magento BI データ内の矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポート内のデータの不一致を特定するのに役立ちます。特に、[&#x200B; データの不一致の診断チェックリスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)で問題を特定できなかった場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
+この記事では、Magento BI データ内の矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポート内のデータの不一致を特定するのに役立ちます。特に、[&#x200B; データの不一致の診断チェックリスト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)で問題を特定できなかった場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
 
 次のような分析を考えてみましょう。
 
@@ -89,7 +89,7 @@ Data Warehouse Managerでは、プライマリキー列にキーマークが付�
 
 ## 関連トピックス
 
-* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Adobe Commerce Intelligence サービスポリシー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
 * [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
