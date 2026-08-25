@@ -51,7 +51,7 @@ Raw データ書き出しウィンドウに「ダウンロード」ボタンが�
 
 両方のシステムの行数が同じで、**収益**&#x200B;指標がソースデータと一致しない場合、**注文\_total**&#x200B;はどこかから外れている必要があります。 ソースデータベースの&#x200B;**order\_total** フィールドが更新され、Magento BIがこれらの変更を取得していない可能性があります。
 
-これを確認するには、**order\_total**&#x200B;列が再チェックされているかどうかを確認します。 Data Warehouse Managerに移動し、**`orders`** テーブルをクリックします。 「変更？」列に[&#x200B; リチェック頻度](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html)が表示されます。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、先に進んで、目的の再チェック頻度に設定してください。
+これを確認するには、**order\_total**&#x200B;列が再チェックされているかどうかを確認します。 Data Warehouse Managerに移動し、**`orders`** テーブルをクリックします。 「変更？」列に[&#x200B; リチェック頻度](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=ja)が表示されます。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、先に進んで、目的の再チェック頻度に設定してください。
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -69,7 +69,7 @@ Raw データ書き出しウィンドウに「ダウンロード」ボタンが�
 
 ## ソースデータベースの行がMagento BIよりも少ない {#lessrows}
 
-ソースデータベースの行がMagento BIよりも少ない場合、行がソースデータベースから削除され、Magento BIがこれらの削除を取得しない可能性があります。 **[&#x200B; データを削除](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html)すると、データの不整合、更新時間の長さ、多数のロジスティクス上の問題につながる可能性があります。そのため**&#x200B;本当に必要でない限り、データを削除しないことを強くお勧めします。
+ソースデータベースの行がMagento BIよりも少ない場合、行がソースデータベースから削除され、Magento BIがこれらの削除を取得しない可能性があります。 **[&#x200B; データを削除](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=ja)すると、データの不整合、更新時間の長さ、多数のロジスティクス上の問題につながる可能性があります。そのため**&#x200B;本当に必要でない限り、データを削除しないことを強くお勧めします。
 
 ただし、行がテーブルから削除された場合は、プライマリキーの再チェック頻度を確認してください。 プライマリキーを再チェックすると、テーブルが削除された行についてチェックされます。
 
@@ -90,6 +90,6 @@ Data Warehouse Managerでは、プライマリキー列にキーマークが付�
 ## 関連トピックス
 
 * [データの相違の診断チェックリスト](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
-* [Adobe Commerce Intelligence サービスポリシー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Adobe Commerce Intelligence サービスポリシー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
