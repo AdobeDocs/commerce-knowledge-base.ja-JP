@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
+source-git-commit: 85213549e150c6f00e03201750694c0d51b8309d
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1653'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 1%
     * [Adobe Commerce 2.4.2-p1：誤った値の請求書メモ](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [最新のAdobe Commerce プレリリースにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
     * [インデックスは別のプロセスによってロックされています](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
-    * [データの不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
     * [管理者2FAのメール通知が受信されない](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
     * [メンテナンスモードのサイトですが、顧客が利用できます](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
     * [Adobe Commerce ソフトウェアのアップデート時にGit pull origin developが失敗する](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)

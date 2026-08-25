@@ -1,34 +1,34 @@
 ---
 title: MBI：データの不一致
-description: 特定のレポートの数値が不正確に見えますか。 予期しない NULL 値が表示されますか？ あまり適切でないと思われる問題が発生した場合は、次のリソースをトラブルシューティングに役立てることをお勧めします。
+description: 特定のレポートの数値が不正確に見える？ 予期しないNULL値が表示されますか？ 問題が見つからない場合は、次のリソースを使用してトラブルシューティングを行うことをお勧めします。
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 5a5da5104458309b18ef6d9044bb5eb8d52b671f
+source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
 # MBI：データの不一致
 
-特定のレポートの数値が不正確に見えますか。 予期しない NULL 値が表示されますか？ あまり適切でないと思われる問題が発生した場合は、次のリソースをトラブルシューティングに役立てることをお勧めします。
+特定のレポートの数値が不正確に見える？ 予期しないNULL値が表示されますか？ 問題が見つからない場合は、次のリソースを使用してトラブルシューティングを行うことをお勧めします。
 
-* [データの食い違い診断チェックリスト](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-* [書き出しを使用したデータの不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
+* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [書き出しの使用によるデータの不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-また、不一致に関わるテーブルと列に正しい [&#x200B; レプリケーション方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) と [&#x200B; 再確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) が設定されていることを確認することをお勧めします。 レプリケーション方法にアクセスし、情報を再確認するには、管理者権限が必要です。
+また、不一致に関連するテーブルと列に対して、適切な[ レプリケーション方法](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods)と[ リチェック ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks)が設定されていることを確認することをお勧めします。 レプリケーションメソッドにアクセスして情報を再確認するには、管理者権限が必要であることに注意してください。
 
-## まだ助けが必要だ！
+## まだ助けが必要です！
 
-それでもレポートが不正確な場合は、心配しないでください。アドビのサポートチームがお手伝いします。 [&#x200B; お問い合わせください &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) とともに、以下の情報をお知らせください。
+レポートがまだ不正確な場合は、心配しないでください。サポートチームがお手伝いします。 [次の情報を持ってアドビ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してください：
 
-* その不一致が表示されたレポートの名前は何ですか？
-* レポートに表示される誤った値はどれですか？
-* どのような値が表示されますか？
-* 使用する SQL クエリやその他のロジック
+* その矛盾が見える所は何という所ですか。
+* レポートのどの値が正しくないか？
+* どのような価値観が見られると思いますか？
+* SQL クエリやその他のロジックを
 
-## 関連資料
+## 関連トピックス
 
-* [&#x200B; 構造データベースの変更 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=ja)
+* [構造データベースの変更](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
