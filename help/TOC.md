@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: d88862877bdf410f27752386655038d8646f1b45
+source-git-commit: 7b0cda2bfa026f53901b28c376a343a33ddb15eb
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1637'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,6 @@ ht-degree: 1%
     * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Google e コマースの売上の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
-    * [ファイルストレージが少なく、特定のページの読み込みが遅い](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
     * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Adobe Commerceでキャッシュのウォーミングアップとサイトを利用できない](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Commerce Adminへのログイン時にリダイレクトする](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
