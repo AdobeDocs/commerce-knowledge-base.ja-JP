@@ -68,4 +68,4 @@ Stack trace:
 ## 関連トピックス
 
 * OMS ドキュメント [OMS コネクタ設定チュートリアル &#x200B;](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
