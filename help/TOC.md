@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 7b0cda2bfa026f53901b28c376a343a33ddb15eb
+source-git-commit: 4e46bb112f2ccf859592488d97ab4db008c2c871
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,6 @@ ht-degree: 1%
     * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * その他 {#miscellaneous}
     * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Adobe Commerce セキュリティスキャンツールのトラブルシューティングガイド](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Google e コマースの売上の不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 特定のレポートの数値が不正確に見える？ 予期しないNULL値が表示されますか？ 問題が見つからない場合は、次のリソースを使用してトラブルシューティングを行うことをお勧めします。
 
-* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [書き出しの使用によるデータの不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
 また、不一致に関連するテーブルと列に対して、適切な[&#x200B; レプリケーション方法](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods)と[&#x200B; リチェック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks)が設定されていることを確認することをお勧めします。 レプリケーションメソッドにアクセスして情報を再確認するには、管理者権限が必要であることに注意してください。
