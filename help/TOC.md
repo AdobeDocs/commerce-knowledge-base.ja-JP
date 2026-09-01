@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 4e46bb112f2ccf859592488d97ab4db008c2c871
+source-git-commit: 9f4777deac8e9d367643158cf6947f4cb61e8fdd
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1621'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,6 @@ ht-degree: 1%
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Adobe Commerceでキャッシュのウォーミングアップとサイトを利用できない](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
-    * [Commerce Adminへのログイン時にリダイレクトする](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
     * [データ書き出しを使用した不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
     * [コンポーネントの依存関係の準備状況チェックの問題](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
     * [クラウドインフラストラクチャ UI上のAdobe Commerceにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
