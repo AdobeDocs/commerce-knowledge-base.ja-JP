@@ -37,8 +37,8 @@ Adobe Commerceのすべてのバージョンとエディション
 ## Solution
 
 1. データベースのバックアップを作成します。
-1. [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin)などのデータベースツールを使用するか、コマンドラインからDBに手動でアクセスします。 `admin_user` データベース テーブルで、管理者ユーザーレコードの`is_active`が「`1`」に設定されており、`lock_expires`が`NULL`であるかどうかを確認します。 必要に応じて、これらの値をリセットします。
+1. [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin)などのデータベースツールを使用するか、コマンドラインからDBに手動でアクセスします。 `admin_user` データベース テーブルで、管理者ユーザーレコードの`is_active`が「`1`」に設定されており、`lock_expires`が`NULL`であるかどうかを確認します。 必要に応じて、これらの値をリセットします。
 
 ## 関連トピックス
 
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
