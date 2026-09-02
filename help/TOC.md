@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 9f4777deac8e9d367643158cf6947f4cb61e8fdd
+source-git-commit: 2c7e07dac7bb2c6d3ea5e4266511d519a60fbe8a
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1634'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,8 @@ ht-degree: 1%
     * [Adobe Commerce 2.4.2-p1：誤った値の請求書メモ](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [最新のAdobe Commerce プレリリースにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
     * [インデックスは別のプロセスによってロックされています](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
-    * [管理者2FAのメール通知が受信されない](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
+    * [データの不一致の診断](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
+    * [「現在のセッションが期限切れになっています」というエラーが発生した場合は、Commerce管理者ログインフォームにリダイレクトします。](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
     * [メンテナンスモードのサイトですが、顧客が利用できます](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
     * [Adobe Commerce ソフトウェアのアップデート時にGit pull origin developが失敗する](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
     * [Adobe Commerce on cloud infrastructureで起動するブロッカー](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
