@@ -1,23 +1,24 @@
 ---
-title: 「ダッシュボード [!DNL Live Search] 検索結果のランキングが正しくありません」
-description: この記事では、 [!DNL Live Search]  ダッシュボードのデータが正しくない場合や、検索結果のランキングが期待どおりでない場合のトラブルシューティング情報を提供します。
+title: '[!DNL Live Search] ダッシュボードと検索結果のランキングが正しくありません'
+description: この記事では、 [!DNL Live Search]  ダッシュボードのデータが正しくない場合、または検索結果のランキングが期待どおりでない場合のトラブルシューティング情報を提供します。
 feature: Admin Workspace, Categories, Search
 role: Developer
-source-git-commit: 4c1199c31f83d7c2aaf28e259d63473779bf2efe
+exl-id: d4aea1f1-c2c4-45e5-87c8-73069f7c9ffd
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
-# ダッシュボ [!DNL Live Search] ドと検索結果のランキングが正しくありません
+# [!DNL Live Search] ダッシュボードと検索結果のランキングが正しくありません
 
-[!DNL Live Search] ダッシュボードに表示されるデータが正しくない場合や、[&#x200B; 検索結果のランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) が期待どおりでない場合は、考えられる理由により次を参照してください。
+[!DNL Live Search] ダッシュボードに表示されるデータが正しくない場合、または検索結果の[&#x200B; ランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies)が期待したものではない場合は、考えられる理由について次を参照してください。
 
-* `productView` イベントの製品コンテキストの `topLevelSku` フィールドがありません。 これにより、空のコンバージョンや、その他の予期しない指標が発生します。
+* `productView` イベントの製品コンテキストの`topLevelSku` フィールドがありません。 これにより、空のコンバージョンやその他の予期しない指標が発生します。
 
-* `add-to-cart` イベントには、`productContext` フィールドが設定されておらず、値が入力されていません。
+* `add-to-cart` イベントには、`productContext` フィールドが設定および入力されていません。
 
-* 環境のタイプが正しくありません。 例えば、環境が *[!UICONTROL Production]* ではなく *[!UICONTROL Testing]* に設定されている場合です。 詳しくは、[&#x200B; ストアフロントコンテキスト &#x200B;](https://github.com/adobe/commerce-events/blob/main/examples/events/example-contexts/mock-storefront-context.md) を参照してください。
+* 環境タイプが正しくありません。 例えば、環境が&#x200B;*[!UICONTROL Production]*&#x200B;ではなく&#x200B;*[!UICONTROL Testing]*&#x200B;に設定されている場合です。 詳しくは、[&#x200B; ストアフロントのコンテキスト &#x200B;](https://github.com/adobe/commerce-events/blob/main/examples/events/example-contexts/mock-storefront-context.md)を参照してください。
 
-* [search-product-click](https://github.com/adobe/commerce-events/blob/main/examples/events/search-product-click.md) イベントに検索結果のコンテキストがありません。
+* 検索結果コンテキストが[search-product-click](https://github.com/adobe/commerce-events/blob/main/examples/events/search-product-click.md) イベントにありません。

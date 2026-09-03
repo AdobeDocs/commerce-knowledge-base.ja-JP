@@ -1,6 +1,6 @@
 ---
-title: インストール xdebug maximum function nesting level エラー
-description: この記事では、インストール中の xdebug の最大関数のネスト レベル エラーを修正します。
+title: インストール xdebug最大関数のネスト レベル エラー
+description: この記事では、インストール時にxdebug最大関数のネスト レベル エラーが発生する問題を修正します。
 exl-id: 1f64a9bb-59a7-41df-92a4-890d9d32bcbe
 feature: Install
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# インストール xdebug maximum function nesting level エラー
+# インストール xdebug最大関数のネスト レベル エラー
 
-この記事では、インストール中の xdebug の最大関数のネスト レベル エラーを修正します。
+この記事では、インストール時にxdebug最大関数のネスト レベル エラーが発生する問題を修正します。
 
 ## 詳細
 
@@ -21,10 +21,10 @@ Adobe Commerceのインストール中に、次のようなメッセージが表
 
 `PHP Fatal error: Maximum function nesting level of '100' reached, aborting! in <path>/ClassLoader.php`
 
-実稼動環境では使用しないことを強くお勧めします `xdebug`
+実稼動環境で`xdebug`を使用しないことを強くお勧めします。
 
-## 解決策
+## Solution
 
-`xdebug` には既知の問題があり、Adobe Commerceのインストールに影響を与えたり、インストール後にストアフロントまたはCommerce管理者にアクセスしたりする可能性があります。
+Adobe Commerceのインストールまたはインストール後のストアフロントまたはCommerce管理者へのアクセスに影響を与える可能性がある`xdebug`に既知の問題があります。
 
-詳しくは、サポートナレッジベースの [xdebug の既知の問題 &#x200B;](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md) を参照してください。
+詳しくは、サポートナレッジベースの「[xdebug](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)に関する既知の問題」を参照してください。

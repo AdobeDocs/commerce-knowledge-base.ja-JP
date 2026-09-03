@@ -1,49 +1,49 @@
 ---
-title: 特定の店舗の DB エンティティ （注文、請求書、クレジット メモなど）の増分 ID を変更します
-description: この記事では、「ALTER TABLE」 SQL 文を使用して、特定のAdobe Commerce ストアでAdobe Commerce Database （DB）エンティティ（注文、請求書、クレジットメモなど）の増分 ID を変更する方法について説明します。
+title: DB エンティティの増分IDの変更（注文、請求書、クレジットメモなど） 特定の店舗で
+description: ここでは、Adobe Commerce データベース（DB）エンティティ（注文、請求書、クレジットメモなど）の増分IDを変更する方法について説明します。 'ALTER TABLE' SQL文を使用した特定のAdobe Commerce ストア。
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
 source-git-commit: e33d0bf6c857d0d54ec1373db79910d78296b054
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
 
-# 特定の店舗の DB エンティティ （注文、請求書、クレジット メモなど）の増分 ID を変更します
+# DB エンティティの増分IDの変更（注文、請求書、クレジットメモなど） 特定の店舗で
 
-この記事では、`ALTER TABLE` SQL 文を使用して、特定のAdobe Commerce ストアでAdobe Commerce Database （DB）エンティティ（注文、請求書、クレジットメモなど）の増分 ID を変更する方法について説明します。
+ここでは、Adobe Commerce データベース（DB）エンティティ（注文、請求書、クレジットメモなど）の増分IDを変更する方法について説明します。 `ALTER TABLE` SQL ステートメントを使用して、特定のAdobe Commerce ストアで。
 
 >[!NOTE]
 >
->この記事では、注文、請求書、クレジットメモなどの増分 ID の開始数値を変更する方法のみを説明します。
+>この記事では、注文、請求書、クレジットメモなどの増分IDの開始数値を変更する方法についてのみ説明します。
 >
->増分 ID 形式を変更する方法や、カスタムのプレフィックス/サフィックス（例えば、10000001 を ORDER-10000001、MYSTORE-10000001、2A10000001 などに変更する方法など）を追加する方法については説明していません
+>増分ID形式を変更する方法や、カスタム接頭辞/接尾辞を追加する方法（たとえば、ORDER-10000001、MYSTORE-10000001、2A10000001などに10000001を変更する方法については説明しません。
 >
->形式をカスタマイズするには、カスタム拡張機能または開発作業が必要になります。
+>形式をカスタマイズするには、カスタム拡張機能または開発作業が必要です。
 
-## 影響を受けるバージョン
+## 影響のあるバージョン
 
 * Adobe Commerce オンプレミス：2.x.x
-* クラウドインフラストラクチャー上のAdobe Commerce:2.x.x
-* MySQL：任意の [&#x200B; サポートされているバージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)
+* Adobe Commerce オンクラウドインフラストラクチャ：2.x.x
+* MySQL: [&#x200B; サポートされている任意のバージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)
 
-## ID を増分を変更する必要があるのはいつですか（ケース）
+## 増分IDを変更する必要がある場合（ケース）
 
-次のような場合は、新しい DB エンティティの増分 ID を変更する必要があります。
+次のような場合、新しいDB エンティティの増分IDを変更する必要が生じる可能性があります。
 
-* ライブサイトでのハードバックアップの復元後
-* 一部の注文記録は失われましたが、その ID は、現在のマーチャントアカウントの支払いゲートウェイ（PayPal など）で既に使用されています。 このような場合、支払いゲートウェイは同じ ID を持つ新しい注文の処理を停止し、「請求書 ID が重複」というエラーを返します
+* ライブサイトでのハードバックアップ復元後
+* 一部の注文記録は失われましたが、そのIDは既に現在の加盟店アカウントの支払いゲートウェイ（PayPalなど）で使用されています。 このような場合、支払いゲートウェイは、同じIDの新しい注文の処理を停止し、「請求書IDの重複」エラーを返します
 
 >[!NOTE]
 >
->また、PayPal の支払い受け取り環境設定で請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 サポートナレッジベースの [PayPal ゲートウェイの拒否リクエスト – 請求書の重複問題 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838) を参照してください。
+>また、PayPalの支払い受取設定で請求書IDごとに複数の支払いを許可することで、PayPalの支払いゲートウェイの問題を修正することもできます。 サポートナレッジベースの「[PayPal ゲートウェイがリクエストを拒否しました – 重複した請求書の問題](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838)」を参照してください。
 
-## 前提条件の手順
+## 前提条件のステップ
 
-1. 新しい増分 ID を変更する必要があるストアとエンティティを見つけます。
-1. MySQL DB に [&#x200B; 接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) します。 クラウドインフラストラクチャー上のAdobe Commerceの場合、最初に [SSH 経由で環境に接続 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) する必要があります。
-1. 次のクエリを使用して、エンティティシーケンステーブルの現在の auto\_increment 値を確認します。
+1. 新しい増分IDを変更する必要があるストアとエンティティを検索します。
+1. [MySQL DBに](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)を接続します。 クラウドインフラストラクチャ上のAdobe Commerceの場合、最初に[SSHで環境に接続する必要があります](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
+1. 次のクエリを使用して、エンティティシーケンステーブルの現在のauto\_increment値を確認します。
 
 ```sql
 SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_type}_{store_id}';
@@ -51,19 +51,19 @@ SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_typ
 
 ### 例
 
-*ID=1* のストアで注文の自動インクリメントをチェックしている場合、テーブル名は次のようになります。
+*ID=1*&#x200B;のストアで注文の自動増分を確認する場合、テーブル名は次のようになります。
 
 ```sql
 'sequence_order_1'
 ```
 
-`auto_increment` 列の値が *1234* の場合、*ID=1* の店舗での次の注文の *ID \#100001234* になります。
+`auto_increment`列の値が&#x200B;*1234*&#x200B;の場合、*ID=1*&#x200B;の店舗に配置された次の注文には&#x200B;*ID \#100001234*&#x200B;が含まれます。
 
 ### 関連ドキュメント
 
-* 開発者向けドキュメントの [&#x200B; リモート MySQL データベース接続の設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)。
+* [開発者向けドキュメントのMySQL データベース接続のリモート設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)を参照してください。
 
-## 増分 ID を変更するエンティティを更新
+## 増分IDを変更するためのエンティティの更新
 
 次のクエリを使用してエンティティを更新します。
 
@@ -73,7 +73,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!WARNING]
 >
->重要：新しい増分値は、現在の値より大きく、小さくすることはできません。
+>重要：新しい増分値は、現在の増分値よりも大きくする必要があります。
 
 ### 例
 
@@ -83,17 +83,17 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-*ID=1* の店舗で次に行われる注文には、*ID \#100002000* が割り当てられます。
+次に&#x200B;*ID=1*&#x200B;の店舗で注文された注文には、*ID \#100002000*&#x200B;が含まれます。
 
-## 実稼動環境（クラウド）での追加の推奨手順
+## 実稼動環境（Cloud）に関するその他の推奨ステップ
 
-クラウドインフラストラクチャー上のAdobe Commerceの実稼動環境で `ALTER TABLE` クエリを実行する前に、次の手順を実行することを強くお勧めします。
+クラウドインフラストラクチャ上のAdobe Commerceの実稼働環境で`ALTER TABLE` クエリを実行する前に、次の手順を実行することを強くお勧めします。
 
-* ステージング環境で増分 ID を変更する手順全体をテストします
-* [&#x200B; 作成 &#x200B;](/help/how-to/general/create-database-dump-on-cloud.md)：障害発生時に本番 DB をリストアするための DB バックアップ
+* ステージング環境で増分IDを変更する手順をテストします
+* 失敗した場合に実稼動DBを復元するDB バックアップを[作成](/help/how-to/general/create-database-dump-on-cloud.md)します
 
 ## 関連ドキュメント
 
-* サポートナレッジベースの [&#x200B; クラウド上にデータベースダンプを作成する &#x200B;](/help/how-to/general/create-database-dump-on-cloud.md)
-* 開発者向けドキュメントの [&#x200B; お使いの環境に SSH 接続 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Cloud](/help/how-to/general/create-database-dump-on-cloud.md)でデータベース ダンプを作成します。サポート情報をご覧ください
+* ご利用の環境に[SSHを送信する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)方法については、開発者向けドキュメントをご覧ください
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
