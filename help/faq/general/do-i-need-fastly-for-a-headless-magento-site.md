@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->すべてのお客様は、本番環境とステージング環境でFastlyを使用する必要があります。 Fastlyは、Adobe Commerce on Cloud インフラプロジェクトの一環として、フルページキャッシュ、画像の最適化、セキュリティサービス（DDoSおよびWAF）を提供するコンテンツ配信ネットワーク（CDN）です。 これらはAdobe Commerceソリューションのコアコンポーネントであり、パフォーマンスとセキュリティを向上させます。 これらの機能は、AdobeのPCI認定に含まれています。 これらのFastly サービスは、スターター環境、ステージングマスター、プロステージング環境、実稼動環境で設定する必要があります。 ヘッドレス実装でAdobe Commerceを使用している場合、パブリックインターネットからのすべてのAPI トラフィックはFastlyを通過する必要があります。GraphQLの応答をキャッシュするには、Fastlyを使用することを強くお勧めします。 開発者向けドキュメントでは、[GraphQL開発ガイド > Fastlyを使用したキャッシュ ](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly)を参照してください。
+>すべてのお客様は、本番環境とステージング環境でFastlyを使用する必要があります。 Fastlyは、Adobe Commerce on Cloud インフラプロジェクトの一環として、フルページキャッシュ、画像の最適化、セキュリティサービス（DDoSおよびWAF）を提供するコンテンツ配信ネットワーク（CDN）です。 これらはAdobe Commerceソリューションのコアコンポーネントであり、パフォーマンスとセキュリティを向上させます。 これらの機能は、AdobeのPCI認定に含まれています。 これらのFastly サービスは、スターター環境、ステージングマスター、プロステージング環境、実稼動環境で設定する必要があります。 ヘッドレス実装でAdobe Commerceを使用している場合、パブリックインターネットからのすべてのAPI トラフィックはFastlyを通過する必要があります。GraphQLの応答をキャッシュするには、Fastlyを使用することを強くお勧めします。 開発者向けドキュメントでは、[GraphQL開発ガイド > Fastlyを使用したキャッシュ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly)を参照してください。
 
 ## **質問**
 
@@ -33,5 +33,5 @@ Adobe Commerceのヘッドレス実装を開発しています。 FastlyをCDN �
 
 ## 詳細
 
-* [ ヘッドレス Web サイト：分離型アーキテクチャの大きなメリットは何ですか？](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) 作成者：[Josh Koenig](https://pantheon.io/team/josh-koenig)
+* [&#x200B; ヘッドレス Web サイト：分離型アーキテクチャの大きなメリットは何ですか？](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) 作成者：[Josh Koenig](https://pantheon.io/team/josh-koenig)
 * [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)の詳細をご覧ください。

@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * Adobe Commerce オンプレミス：2.x.x
 * Adobe Commerce オンクラウドインフラストラクチャ：2.x.x
-* MySQL: [ サポートされている任意のバージョン ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL: [&#x200B; サポートされている任意のバージョン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## 増分IDを変更する必要がある場合（ケース）
 
@@ -96,4 +96,4 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 * [Cloud](/help/how-to/general/create-database-dump-on-cloud.md)でデータベース ダンプを作成します。サポート情報をご覧ください
 * ご利用の環境に[SSHを送信する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)方法については、開発者向けドキュメントをご覧ください
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

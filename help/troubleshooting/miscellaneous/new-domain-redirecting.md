@@ -40,4 +40,4 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-* [新しいドメインを設定するためのチェックリスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) （サポートナレッジベース）。
+* [新しいドメインを設定するためのチェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) （サポートナレッジベース）。

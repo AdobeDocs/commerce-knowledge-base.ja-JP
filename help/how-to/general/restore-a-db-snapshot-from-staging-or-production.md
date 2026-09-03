@@ -16,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらの方法により、**完全なスナップショット**が復元されます。
+>これらの方法により、**完全なスナップショット**&#x200B;が復元されます。
 >スナップショット **部分**&#x200B;を復元する必要がある場合（例：注文テーブルを完全に残したままカタログテーブルのみを復元する場合など）は、開発者またはDBAに相談する必要があります。
 
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ケースに最適なものを選択します。
 
