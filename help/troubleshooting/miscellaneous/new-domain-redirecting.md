@@ -29,15 +29,15 @@ ht-degree: 0%
 
 ## Solution
 
-1. ドメインが同じ環境内でリダイレクトされている場合は、[変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables)を設定していることを確認してください。
+1. ドメインが同じ環境内でリダイレクトされている場合は、[変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja#modify-variables)を設定していることを確認してください。
 1. ドメインが別の環境にリダイレクトされている場合は、次のコマンドを実行して、正しい[!DNL Fastly] サービスを構成しているかどうかを確認します：`bin/magento fastly:conf:get -s`
 
 >[!NOTE]
 >
->各環境（ステージング/実稼動環境）にログインし、`/mnt/shared/fastly_tokens.txt` ファイルを確認すると、[!DNL Fastly] API資格情報を見つけることができます。 詳しくは、「Commerce on Cloud Infrastructure ガイド」の「[configure [!DNL Fastly] services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)」を参照してください。
+>各環境（ステージング/実稼動環境）にログインし、`/mnt/shared/fastly_tokens.txt` ファイルを確認すると、[!DNL Fastly] API資格情報を見つけることができます。 詳しくは、「Commerce on Cloud Infrastructure ガイド」の「[configure [!DNL Fastly] services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)」を参照してください。
 
 上記の両方の設定が正しい場合は、サポートチケットを送信してください。
 
 ## 関連トピックス
 
-* [新しいドメインを設定するためのチェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) （サポートナレッジベース）。
+* [新しいドメインを設定するためのチェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html?lang=ja) （サポートナレッジベース）。

@@ -25,7 +25,7 @@ Adobe Commerceのヘッドレス実装を開発しています。 FastlyをCDN �
 いえ、ご存じない方も。 このような場合、少なくとも開発の最初は、Fastlyを使用せずに済む可能性があります。
 
 ヘッドレス CMSを導入する場合にのみ、対応が困難になる可能性があります。
-詳しくは、開発者向けドキュメントの[Cloud for Adobe Commerce > Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)を参照してください。
+詳しくは、開発者向けドキュメントの[Cloud for Adobe Commerce > Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)を参照してください。
 
 それでも、ほとんどの場合、SSL証明書を使用するにはFastlyが必要です。
 
@@ -34,4 +34,4 @@ Adobe Commerceのヘッドレス実装を開発しています。 FastlyをCDN �
 ## 詳細
 
 * [&#x200B; ヘッドレス Web サイト：分離型アーキテクチャの大きなメリットは何ですか？](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) 作成者：[Josh Koenig](https://pantheon.io/team/josh-koenig)
-* [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)の詳細をご覧ください。
+* [Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)の詳細をご覧ください。

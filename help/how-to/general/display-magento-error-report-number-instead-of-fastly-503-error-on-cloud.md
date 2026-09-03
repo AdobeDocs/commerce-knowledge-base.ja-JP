@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Authentic Adobe Commerce エラーとエラーレポート番号が表示されたら、次の手順に従ってエラーレポートファイルの詳細を確認できます。
 
-1. 影響を受ける環境へのSSH。 開発者ドキュメントの[環境へのSSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)を参照してください。
+1. 影響を受ける環境へのSSH。 開発者ドキュメントの[環境へのSSH](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections)を参照してください。
 1. `./var/report/{error_number}` ファイルを探します。
 
 ## アプリケーションドメインとIP アドレスをhosts ファイルに追加する：詳細な手順

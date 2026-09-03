@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * Adobe Commerce オンプレミス：2.x.x
 * Adobe Commerce オンクラウドインフラストラクチャ：2.x.x
-* MySQL: [&#x200B; サポートされている任意のバージョン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL: [&#x200B; サポートされている任意のバージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)
 
 ## 増分IDを変更する必要がある場合（ケース）
 
@@ -37,12 +37,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->また、PayPalの支払い受取設定で請求書IDごとに複数の支払いを許可することで、PayPalの支払いゲートウェイの問題を修正することもできます。 サポートナレッジベースの「[PayPal ゲートウェイがリクエストを拒否しました – 重複した請求書の問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838)」を参照してください。
+>また、PayPalの支払い受取設定で請求書IDごとに複数の支払いを許可することで、PayPalの支払いゲートウェイの問題を修正することもできます。 サポートナレッジベースの「[PayPal ゲートウェイがリクエストを拒否しました – 重複した請求書の問題](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838)」を参照してください。
 
 ## 前提条件のステップ
 
 1. 新しい増分IDを変更する必要があるストアとエンティティを検索します。
-1. [MySQL DBに](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)を接続します。 クラウドインフラストラクチャ上のAdobe Commerceの場合、最初に[SSHで環境に接続する必要があります](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. [MySQL DBに](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)を接続します。 クラウドインフラストラクチャ上のAdobe Commerceの場合、最初に[SSHで環境に接続する必要があります](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
 1. 次のクエリを使用して、エンティティシーケンステーブルの現在のauto\_increment値を確認します。
 
 ```sql
@@ -61,7 +61,7 @@ SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_typ
 
 ### 関連ドキュメント
 
-* [開発者向けドキュメントのMySQL データベース接続のリモート設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)を参照してください。
+* [開発者向けドキュメントのMySQL データベース接続のリモート設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote)を参照してください。
 
 ## 増分IDを変更するためのエンティティの更新
 
@@ -95,5 +95,5 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ## 関連ドキュメント
 
 * [Cloud](/help/how-to/general/create-database-dump-on-cloud.md)でデータベース ダンプを作成します。サポート情報をご覧ください
-* ご利用の環境に[SSHを送信する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)方法については、開発者向けドキュメントをご覧ください
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* ご利用の環境に[SSHを送信する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)方法については、開発者向けドキュメントをご覧ください
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
