@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: d8f408d530a9106a1b26c602085bd6ce0db3fef3
+source-git-commit: 16bf1de71bfc6ab2836cb2e98dd60fe191d942d1
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1618'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,7 @@ ht-degree: 1%
 * [Adobe Commerce サポート情報](/help/overview.md)
 * お通知 {#announcements}
   * [お知らせ概要](/help/announcements/overview.md)
+  * [Adobe Commerceに関するセキュリティアップデート公開 – APSB26-146](/help/announcements/commerce-apsb26-146.md)
   * Adobe Commerceのお知らせ {#commerce-announcements}
     * {hide-from-toc}[Adobe Commerce サポートの受け入れプロセスをExperience Leagueに移行](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * トラブルシューティング {#troubleshooting}
