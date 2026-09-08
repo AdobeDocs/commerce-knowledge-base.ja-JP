@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## 関連トピックス
 
-ユーザーガイドの[共有カタログの価格と構造を設定する](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html)。
+ユーザーガイドの[共有カタログの価格と構造を設定する](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html?lang=ja)。
