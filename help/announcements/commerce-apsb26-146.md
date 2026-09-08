@@ -3,17 +3,12 @@ title: Adobe Commerceに関する緊急のアクションが必要なクリテ�
 description: Adobeは、Adobe Commerceのゼロデイ脆弱性であるCVE-2026-75650に対処するセキュリティ情報APSB26-146をリリースしました。 ホットフィックスを適用して資格情報を回転させる方法について説明します。
 autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: e4cb6392735e3adb609d8cbd78548edff7f99570
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: e95fb4ca696be9f6d348ff66196565797575f74a
 workflow-type: tm+mt
-source-wordcount: 852
+source-wordcount: 954
 ht-degree: 0%
 
 ---
@@ -65,43 +60,28 @@ Magento Open Sourceのバージョン：
 
 ### Adobe Commerce on Cloud、Adobe Commerce オンプレミス、およびMagento Open Sourceのソリューション
 
-影響を受ける製品とバージョンの脆弱性を解決するには、VULN-39341 パッチを（バージョンに応じて）適用し、暗号化キーをローテーションする必要があります。
+>[!NOTE]
+>
+>CVE-2026-75650のホットフィックスは、2.4.4 ～ 2.4.7のすべてのAdobe CommerceおよびMagento Open Source バージョンと互換性を持つようになりました。 以下の表を参照し、該当するバージョンのパッチをダウンロードしてください。
 
-互換性に関する注意：このホットフィックスは、以下に示すバージョンについてのみテストされています。 サポートされている他のバージョンでも機能する可能性がありますが、これは正式に検証されていません。
+影響を受ける製品とバージョンの脆弱性を解決するには、パッチ **の下の**&#x200B;を適用し（バージョンに応じて）、暗号化キーを回転させる必要があります。
 
-Adobe Commerceのバージョン：
+| バージョン番号 | パッチ |
+|---|---|
+| 2.4.9-2026-aug、2.4.8-2026-aug、2.4.7-2026-aug、2.4.6-2026-aug、2.4.4-2026-aug、2.4.4-2026-aug、2.4.9-2026-jul、2.4.8-2026-jul、2.4.7-2026-7月、2.4.6-2026-7月、2.4.5-2026-7月、2.4.4-2026-7月、2.4.8-p5、2.4.8-p4、2.4.8-p3、2.4.7-p10、2.4.7-p9、2.4.6-p15、2.47-p14、2.45 2.4.4-p18、2.4.4-p17 | [ ホットフィックス VULN-39341-composer-patches.zip](https://repo.magento.com/patch/VULN-39341-composer-patches.zip) |
+| 2.4.8-p3、2.4.8-p2 | [VULN-39341_248-p3.patch.zip](https://repo.magento.com/patch/VULN-39341-248-p3-patch.zip) |
+| 2.4.8-p1、2.4.8 | [VULN-39341_248-p1.patch.zip](https://repo.magento.com/patch/VULN-39341-248-p1-patch.zip) |
+| 2.4.7-p8、2.4.7-p7 | [VULN-39341_247-p8.patch.zip](https://repo.magento.com/patch/VULN-39341-247-p8-patch.zip) |
+| 2.4.7 - 2.4.7-p6 | [VULN-39341_247-p5.patch.zip](https://repo.magento.com/patch/VULN-39341-247-p5-patch.zip) |
+| 2.4.6-p13、2.4.6-p12、2.4.5-p15、2.4.5-p14、2.4.4-p16、2.4.4-p15 | [VULN-39341_246-p13.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p13-patch.zip) |
+| 2.4.6 - 2.4.6-p11、2.4.5 - 2.4.5-p13、2.4.4 - 2.4.4-p14 | [VULN-39341_246-p11.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p11-patch.zip) |
 
-* 2.4.9-2026-aug
-* 2.4.8-2026-aug
-* 2.4.7-2026-aug
-* 2.4.6-2026-aug
-* 2.4.5-2026-aug
-* 2.4.4-2026-aug
 
-Adobe Commerce B2B版：
-
-* 1.5.3-2026-aug
-* 1.5.2-2026-aug
-* 1.4.2-2026-aug
-* 1.3.4-2026-aug
-* 1.3.3-2026-aug
-
-Magento Open Sourceのバージョン：
-
-* 2.4.9-2026-aug
-* 2.4.8-2026-aug
-* 2.4.7-2026-aug
-* 2.4.6-2026-aug
-
-### ホットフィックスリンク
-
-影響を受ける製品バージョンに次のホットフィックスを適用します。
-
-* [ホットフィックス VULN-39341-composer-patches.zipをダウンロードする](https://repo.magento.com/patch/VULN-39341-composer-patches.zip)
+{style="table-layout:auto"}
 
 ### ホットフィックスの適用方法
 
-ファイルを解凍し、手順については、サポートナレッジベースの[Adobe](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
+ファイルを解凍し、手順については、サポートナレッジベースの[Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
 
 ### ホットフィックスが適用されていることを確認する（Adobe Commerce Cloud版マーチャントのみ）
 
@@ -109,7 +89,7 @@ Magento Open Sourceのバージョン：
 
 これは、ファイル `VULN-39341_Hotfix_COMPOSER.patch`を例として使用して、次の手順を実行することによって実行できます。
 
-1. [品質パッチ ツールをインストールします](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage#install)。
+1. [品質パッチ ツールをインストールします](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage#install)。
 1. 次のコマンドを実行します：`vendor/bin/magento-patches -n status | grep "39341\|Status"`。
 1. 次のような出力が表示されます。この例では、VULN-39341は適用済みステータスを返します。
 
@@ -130,7 +110,7 @@ Magento Open Sourceのバージョン：
 1. ホットフィックスを適用します。
 1. メンテナンスモードを有効にします。
 1. cron実行を無効にします（Commerce on Cloud コマンド：`vendor/bin/ece-tools cron:disable`）。
-1. [暗号化キーを回転](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key?lang=en)。
+1. [暗号化キーを回転](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en)。
 1. すべての管理者パネルユーザーパスワードを回転します。
 1. すべてのREST/SOAP/GraphQL統合トークン（**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**）を非アクティブ化して再生成します。
 1. 接続されているサードパーティアプリケーションのOAuth クライアントシークレットをローテーションします。
@@ -152,4 +132,4 @@ Adobe Commerceに関するセキュリティアップデート公開：
 
 ### 関連トピックス
 
-Adobe Commerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
+Adobe Commerce インストールガイドの[ メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
