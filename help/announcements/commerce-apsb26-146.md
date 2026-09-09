@@ -3,9 +3,14 @@ title: Adobe Commerceに関する緊急のアクションが必要なクリテ�
 description: Adobeは、Adobe Commerceのゼロデイ脆弱性であるCVE-2026-75650に対処するセキュリティ情報APSB26-146をリリースしました。 ホットフィックスを適用して資格情報を回転させる方法について説明します。
 autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 7526f999381e9f117ea2d52dc59330b0d34cba62
 workflow-type: tm+mt
 source-wordcount: 952
@@ -68,7 +73,7 @@ Magento Open Sourceのバージョン：
 
 | バージョン番号 | パッチ |
 |---|---|
-| 2.4.9-2026-aug、2.4.8-2026-aug、2.4.7-2026-aug、2.4.6-2026-aug、2.4.4-2026-aug、2.4.4-2026-aug、2.4.9-2026-jul、2.4.8-2026-jul、2.4.7-2026-7月、2.4.6-2026-7月、2.4.5-2026-7月、2.4.4-2026-7月、2.4.8-p5、2.4.8-p4、2.4.7-p10、2.4.7-p9、2.4.6-p15、2.4.5-p17、2.4 2.4.4-p18、2.4.4-p17 | [ ホットフィックス VULN-39341-composer-patches.zip](https://repo.magento.com/patch/VULN-39341-composer-patches.zip) |
+| 2.4.9-2026-aug、2.4.8-2026-aug、2.4.7-2026-aug、2.4.6-2026-aug、2.4.4-2026-aug、2.4.4-2026-aug、2.4.9-2026-jul、2.4.8-2026-jul、2.4.7-2026-7月、2.4.6-2026-7月、2.4.5-2026-7月、2.4.4-2026-7月、2.4.8-p5、2.4.8-p4、2.4.7-p10、2.4.7-p9、2.4.6-p15、2.4.5-p17、2.4 2.4.4-p18、2.4.4-p17 | [&#x200B; ホットフィックス VULN-39341-composer-patches.zip](https://repo.magento.com/patch/VULN-39341-composer-patches.zip) |
 | 2.4.8-p3、2.4.8-p2 | [VULN-39341_248-p3.patch.zip](https://repo.magento.com/patch/VULN-39341-248-p3-patch.zip) |
 | 2.4.8-p1、2.4.8 | [VULN-39341_248-p1.patch.zip](https://repo.magento.com/patch/VULN-39341-248-p1-patch.zip) |
 | 2.4.7-p8、2.4.7-p7 | [VULN-39341_247-p8.patch.zip](https://repo.magento.com/patch/VULN-39341-247-p8-patch.zip) |
@@ -132,4 +137,4 @@ Adobe Commerceに関するセキュリティアップデート公開：
 
 ### 関連トピックス
 
-Adobe Commerce インストールガイドの[ メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
+Adobe Commerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
