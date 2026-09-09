@@ -39,10 +39,10 @@ ht-degree: 0%
 
 ## Solution
 
-[!DNL ECE Tools]を最新バージョン [2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113)にアップグレードします。
+[!DNL ECE Tools]を最新バージョン [2002.1.13](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113)にアップグレードします。
 
 ## 関連トピックス
 
-* [&#x200B; パフォーマンスが遅く、実行が遅く、長時間実行されています [!DNL crons]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-42802) （サポートナレッジベース）。
-* [[!DNL Cron]  タスクは、サポート ナレッジベースの他のグループ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en)からタスクをロックします。
-* [[!DNL Cron]  ジョブがサポートナレッジベースの「実行中」ステータス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en)で停止しています。
+* [&#x200B; パフォーマンスが遅く、実行が遅く、長時間実行されています [!DNL crons]](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-42802) （サポートナレッジベース）。
+* [[!DNL Cron]  タスクは、サポート ナレッジベースの他のグループ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=ja)からタスクをロックします。
+* [[!DNL Cron]  ジョブがサポートナレッジベースの「実行中」ステータス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja)で停止しています。
