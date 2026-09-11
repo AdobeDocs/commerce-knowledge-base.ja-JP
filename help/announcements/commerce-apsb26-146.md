@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Adobeは、この脆弱性に対処するセキュリティ情報APSB26-146をリリースしました。 情報は次の場所で入手できます。
 
-[Adobe Commerceに関するセキュリティアップデート公開| APSB26-146](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
+[Adobe Commerceに関するセキュリティアップデート公開| APSB26-146](https://helpx.adobe.com/jp/security/products/magento/apsb26-146.html)
 
 この記事では、Adobe CommerceおよびMagento Open Sourceの現在および以前のバージョンのホットフィックスを適用する方法について説明します。
 
@@ -86,7 +86,7 @@ Magento Open Sourceのバージョン：
 
 ### ホットフィックスの適用方法
 
-ファイルを解凍し、手順については、サポートナレッジベースの[Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
+ファイルを解凍し、手順については、サポートナレッジベースの[Adobe](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
 
 ### ホットフィックスが適用されていることを確認する（Adobe Commerce Cloud版マーチャントのみ）
 
@@ -94,7 +94,7 @@ Magento Open Sourceのバージョン：
 
 これは、ファイル `VULN-39341_Hotfix_COMPOSER.patch`を例として使用して、次の手順を実行することによって実行できます。
 
-1. [品質パッチ ツールをインストールします](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage#install)。
+1. [品質パッチ ツールをインストールします](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage#install)。
 1. 次のコマンドを実行します：`vendor/bin/magento-patches -n status | grep "39341\|Status"`。
 1. 次のような出力が表示されます。この例では、VULN-39341は適用済みステータスを返します。
 
@@ -115,7 +115,7 @@ Magento Open Sourceのバージョン：
 1. ホットフィックスを適用します。
 1. メンテナンスモードを有効にします。
 1. cron実行を無効にします（Commerce on Cloud コマンド：`vendor/bin/ece-tools cron:disable`）。
-1. [暗号化キーを回転](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en)。
+1. [暗号化キーを回転](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key?lang=en)。
 1. すべての管理者パネルユーザーパスワードを回転します。
 1. すべてのREST/SOAP/GraphQL統合トークン（**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**）を非アクティブ化して再生成します。
 1. 接続されているサードパーティアプリケーションのOAuth クライアントシークレットをローテーションします。
@@ -132,9 +132,9 @@ Magento Open Sourceのバージョン：
 
 Adobe Commerceに関するセキュリティアップデート公開：
 
-* [Adobeセキュリティ情報（APSB26-146）](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
-* [Adobe Commerceに関する最新のセキュリティアップデート](https://helpx.adobe.com/security/products/magento.html)
+* [Adobeセキュリティ情報（APSB26-146）](https://helpx.adobe.com/jp/security/products/magento/apsb26-146.html)
+* [Adobe Commerceに関する最新のセキュリティアップデート](https://helpx.adobe.com/jp/security/products/magento.html)
 
 ### 関連トピックス
 
-Adobe Commerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
+Adobe Commerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
