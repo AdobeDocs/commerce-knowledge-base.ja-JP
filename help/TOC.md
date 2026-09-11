@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: b4a9384a0d72eec790e08382dd2e45d53cbb9831
+source-git-commit: 829114a6626409412d62e829ba1209d3fbc55ae2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,6 @@ ht-degree: 1%
     * [2.2.Xから2.3.Xへのアップグレード後、キャッシュされた画像が読み込まれない](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
     * [セキュリティスキャンにサイトを追加する際のエラーメッセージ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
     * [共有アクセスのトラブルシューティング](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
-    * [Fastly資格情報の検証中にエラーが発生しました](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
     * [セキュリティ スキャン ツール レポートが空白です](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
     * [Adobe Commerce 2.4.2-p1：誤った値の請求書メモ](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [最新のAdobe Commerce プレリリースにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
