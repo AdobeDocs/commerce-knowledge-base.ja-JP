@@ -11,9 +11,9 @@ feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7526f999381e9f117ea2d52dc59330b0d34cba62
+source-git-commit: 8a165b274bf508d849c60fd6768569af1885fdb7
 workflow-type: tm+mt
-source-wordcount: 952
+source-wordcount: 957
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Adobeは、この脆弱性に対処するセキュリティ情報APSB26-146をリリースしました。 情報は次の場所で入手できます。
 
-[Adobe Commerceに関するセキュリティアップデート公開| APSB26-146](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
+[Adobe Commerceに関するセキュリティアップデート公開| APSB26-146](https://helpx.adobe.com/jp/security/products/magento/apsb26-146.html)
 
 この記事では、Adobe CommerceおよびMagento Open Sourceの現在および以前のバージョンのホットフィックスを適用する方法について説明します。
 
@@ -120,7 +120,7 @@ Magento Open Sourceのバージョン：
 1. すべてのREST/SOAP/GraphQL統合トークン（**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**）を非アクティブ化して再生成します。
 1. 接続されているサードパーティアプリケーションのOAuth クライアントシークレットをローテーションします。
 1. プロバイダーレベルで支払いゲートウェイ APIの資格情報をローテーションします（Stripe、Braintree、Adyen、PayPalなど）。
-1. データベース資格情報をローテーションします。
+1. データベースとFastlyの認証情報を（サポートチケット経由で）ローテーションします。
 1. SSH/デプロイキーと、cronまたはシステム特権のサービスアカウント資格情報をローテーションします。
 1. 配送、税務、その他の統合されたサードパーティ拡張機能のAPI キーを回転できます。
 1. キャッシュをフラッシュします。
@@ -132,8 +132,8 @@ Magento Open Sourceのバージョン：
 
 Adobe Commerceに関するセキュリティアップデート公開：
 
-* [Adobeセキュリティ情報（APSB26-146）](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
-* [Adobe Commerceに関する最新のセキュリティアップデート](https://helpx.adobe.com/security/products/magento.html)
+* [Adobeセキュリティ情報（APSB26-146）](https://helpx.adobe.com/jp/security/products/magento/apsb26-146.html)
+* [Adobe Commerceに関する最新のセキュリティアップデート](https://helpx.adobe.com/jp/security/products/magento.html)
 
 ### 関連トピックス
 
