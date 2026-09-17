@@ -24,7 +24,7 @@ Adobe Commerceクラウドインフラストラクチャ（およびFastly CDN�
 
 Web サイトがDDoSによって過負荷になっている場合は、Commerce管理者にログインできない可能性があります（この記事で詳しく説明されているすべての手順を実行してください）。
 
-管理者にアクセスするには、[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)の説明に従ってweb サイトをメンテナンスモードにし、IP アドレスをホワイトリストに登録します。 これが完了したら、メンテナンスモードを無効にします。
+管理者にアクセスするには、[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)の説明に従ってweb サイトをメンテナンスモードにし、IP アドレスをホワイトリストに登録します。 これが完了したら、メンテナンスモードを無効にします。
 
 ## IPでトラフィックをブロック
 
@@ -132,7 +132,7 @@ Adobe Commerce on cloud infrastructureには、実験的なFastly機能があり
 * ロボットは`robots.txt`を無視できます。 特に、セキュリティ上の脆弱性をウェブ上でスキャンするマルウェアのロボットや、迷惑メール送信者が利用するメールアドレスの収集には注意が必要です。
 * `robots.txt` ファイルは一般公開されているファイルです。 ロボットが使用したくないサーバーのセクションは誰でも確認できます。
 
-基本的な情報とデフォルトのAdobe Commerce `robots.txt`設定については、開発者向けドキュメントの[Search Engine Robots](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots)記事をご覧ください。
+基本的な情報とデフォルトのAdobe Commerce `robots.txt`設定については、開発者向けドキュメントの[Search Engine Robots](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots)記事をご覧ください。
 
 `robots.txt`に関する一般的な情報と推奨事項については、次を参照してください。
 
@@ -144,4 +144,4 @@ Adobe Commerce on cloud infrastructureには、実験的なFastly機能があり
 ## 関連トピックス
 
 * [Adobe Commerce on Cloudの製品固有のライセンス条件](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* Commerce on Cloud ガイドのリクエストをブロックするための[&#x200B; カスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+* Commerce on Cloud ガイドのリクエストをブロックするための[&#x200B; カスタム VCL](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
