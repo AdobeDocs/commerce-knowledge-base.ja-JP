@@ -2,13 +2,11 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: f88551f595f1907957301f2ebdf9c0c9dc685939
+source-git-commit: 75d326acaa5926506fe3078da18abbbcdf2f3df4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1589'
 ht-degree: 1%
-
 ---
-
 # Adobe Commerce のナレッジベース {#kb}
 
 * [Adobe Commerce サポート情報](/help/overview.md)
@@ -73,7 +71,6 @@ ht-degree: 1%
     * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
     * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * その他 {#miscellaneous}
-    * [書き出しストレージがほぼ完全であることを示すメール](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Adobe Commerceでキャッシュのウォーミングアップとサイトを利用できない](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
