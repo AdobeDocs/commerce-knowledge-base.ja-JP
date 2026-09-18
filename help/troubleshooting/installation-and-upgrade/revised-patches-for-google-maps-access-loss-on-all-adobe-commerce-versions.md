@@ -71,4 +71,4 @@ Adobe Commerceのバージョンに応じて、次の添付パッチを使用し
 
 ## 関連トピックス
 
-[Adobeが提供するコンポーザーパッチの適用方法](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Adobeが提供するコンポーザーパッチの適用方法](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)

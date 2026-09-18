@@ -21,7 +21,7 @@ Adobe Commerceのストアフロントのすべてのファセットは、対応
 
 ## 回避策
 
-ただし、一部のエッジケースでは、[[!DNL Live Search]  ファセットワークスペース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace)で設定したアルファベット順にファセットが並べ替えられない場合があります。
+ただし、一部のエッジケースでは、[[!DNL Live Search]  ファセットワークスペース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace)で設定したアルファベット順にファセットが並べ替えられない場合があります。
 
 回避策として、[!UICONTROL Admin]属性セクションで製品属性を並べ替えることができます。
 
