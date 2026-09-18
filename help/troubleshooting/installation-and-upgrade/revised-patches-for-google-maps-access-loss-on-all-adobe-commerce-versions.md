@@ -1,75 +1,74 @@
 ---
-title: Google マップのすべてのAdobe Commerce バージョンのアクセス損失に対する修正パッチ
-description: 「この記事では、3.54 以降の最新バージョンと互換性のないAdobe Commerce マーチャント向けに修正を提供  [!DNL Google Maps]  ます。」
+title: すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ
+description: この記事では、3.54以降の最近の[!DNL Google Maps] バージョンと互換性がないAdobe Commerce マーチャントに対する修正を提供します。
 feature: Install, Upgrade
 role: Developer
-source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
+exl-id: 6151e89a-3190-40cb-b599-94ae5530488b
+source-git-commit: d7e58d6a9ed8e9b369ea41165cbdd6b362e40824
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '345'
 ht-degree: 0%
-
 ---
+# すべてのAdobe Commerce バージョンで[!DNL Google Maps] アクセスが失われた修正パッチ
 
-# すべてのAdobe Commerce バージョンの [!DNL Google Maps] アクセス損失に対する修正パッチ
-
-この記事では、3.54 以降の最新の [!DNL Google Maps] バージョンと互換性のないAdobe Commerce マーチャント向けの修正を説明します。 この問題を修正するには、Adobe CommerceのマーチャントがAdobe Commerceのどのバージョンでも [!DNL Google Maps] にアクセスできなくなっている問題を解決します。
+この記事では、3.54以降の最近の[!DNL Google Maps] バージョンと互換性がないAdobe Commerce マーチャントに対する修正を提供します。 この修正は、Adobe CommerceのマーチャントがAdobe Commerceのどのバージョンでも[!DNL Google Maps]にアクセスできなくなった問題を解決するためのものです。
 
 ## 影響を受けるバージョンと製品
 
-* Adobe Commerceまたはその他の使用済みテクノロジーのバージョン。
-* Adobe Commerce *2.4.4* - *2.4.7* オンクラウドおよびオンプレミス版。
+* Adobe Commerceやその他の使用済みテクノロジーのバージョン。
+* Adobe Commerce *2.4.4* - *2.4.7* （クラウド版およびオンプレミス版）。
 
-## 問題
+## イシュー
 
-*2024 年 6 月 14 日（PT）*[!DNL Google Maps] バージョン *3.53* は提供終了となり、[!DNL Google] 年にスイッチが切られました。
+*2024年6月14日* [!DNL Google Maps] バージョン *3.53*&#x200B;が提供終了に達し、[!DNL Google]によって無効化されました。
 
-詳しくは、[[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions) を参照してください。
+詳しくは、[[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions)を参照してください。
 
-Adobe Commerceは、3.54 以降の最新の [!DNL &#x200B; Google Maps] バージョンとは互換性がありませんでした。
+Adobe Commerceは、3.54以降の最近の[!DNL  Google Maps] バージョンと互換性がありませんでした。
 
-非互換性は、`lib/web/legacy-build.min.js` を通じて読み込まれた従来の `prototype.js script` がネイティブの Array.from 関数を上書きしたために発生し、[!DNL &#x200B; Google Maps] API との直接競合につながります。
+互換性がないのは、従来の`prototype.js script`が`lib/web/legacy-build.min.js`を介して読み込まれ、ネイティブのArray.from関数を上書きしたことが原因で、[!DNL  Google Maps] APIとの直接の競合につながりました。
 
-[[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices) を参照。
+[[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices)を参照してください。
 
-<u> 再現手順 </u> :
+<u>複製する手順</u> :
 
-1. **[!UICONTROL Content]**/**[!UICONTROL Pages]** をクリックし、**[!UICONTROL New Page]** を選択します。
-1. コンテンツブロックを展開し、「**[!DNL PageBuilder]** を編集」ボタンをクリックします。
-1. **[!DNL PageBuilder]** メニューからページにコンテンツブロックをマッピングをドラッグします。
+1. **[!UICONTROL Content]** > **[!UICONTROL Pages]** >をクリックし、**[!UICONTROL New Page]**&#x200B;を選択します。
+1. コンテンツブロックを展開し、「**[!DNL PageBuilder]**」を編集ボタンをクリックします。
+1. コンテンツブロックを&#x200B;**[!DNL PageBuilder]** メニューからページにドラッグします。
 
-<u> 期待される結果：</u>
+<u>期待される結果：</u>
 
-[!DNL Google Maps] は期待どおりに動作します。
+[!DNL Google Maps]は期待どおりに機能する必要があります。
 
-<u> 実際の結果：</u>
+<u>実際の結果：</u>
 
-コンテンツをマッピング ブロック **[!DNL PageBuilder]** メニューからページにドロップすると、「*Sorry! エラーが発生しました」* 表示されます。
+マップ コンテンツ ブロックを&#x200B;**[!DNL PageBuilder]** メニューからページにドロップすると、*などのエラーメッセージが表示されます。「申し訳ありません。 問題が発生しました&quot;*&#x200B;が表示されます。
 
-## 解決策
+## Solution
 
-* 2.4.4、2.4.5、2.4.6 または 2.4.7 のパッチバージョンのすべてのマーチャントは、これらの対応するパッチをバージョンに適用する必要があります。
+* パッチバージョン 2.4.4、2.4.5、2.4.6または2.4.7のすべての販売者は、これらの対応するパッチをバージョンに適用する必要があります。
 
 ## パッチ
 
-Adobe Commerceのバージョンに応じて、次のパッチを適用します。
+Adobe Commerceのバージョンに応じて、次の添付パッチを使用します。
 
-**バージョン 2.4.4 の場合：**
+**バージョン 2.4.4の場合：**
 [ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
-**バージョン 2.4.5 の場合：**
+**バージョン 2.4.5の場合：**
 [ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
-**バージョン 2.4.6 の場合：**
+**バージョン 2.4.6の場合：**
 [ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
-**バージョン 2.4.7 の場合：**
+**バージョン 2.4.7の場合：**
 [ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip)
 
-**注**
+**ご注意ください**
 
-この問題は、8 月のセキュリティ専用パッチリリースの範囲で永続的に修正されます。
+この問題は、8月のセキュリティのみのパッチリリースの範囲で恒久的に修正されます。
 2.4.7-p2、2.4.6-p7、2.4.5-p9、2.4.4-p10
 
-## 関連資料
+## 関連トピックス
 
-[Adobeが提供する Composer パッチを適用する方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Adobeが提供するコンポーザーパッチの適用方法](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
