@@ -39,7 +39,7 @@ ht-degree: 0%
 1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にする必要があります。 サードパーティの拡張機能では、Adobe Commerce キャッシュを無効にする必要はありません。
 1. 調査で一部のキャッシュの種類が誤って無効になっていることが確認された場合は、キャッシュの種類ごとに次のコマンドを実行して有効にします：`php bin/magento cache:enable <your_disabled_cache_type>`
 
-特定のAdobe Commerce キャッシュの種類を無効にできるか無効にすべきかについての懸念や質問がある場合は、[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。
+特定のAdobe Commerce キャッシュの種類を無効にできるか無効にすべきかについての懸念や質問がある場合は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。
 
 ## 関連トピックス
 

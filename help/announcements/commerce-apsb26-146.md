@@ -76,7 +76,7 @@ Magento Open Sourceのバージョン：
 
 | バージョン番号 | パッチ |
 |---|---|
-| 2.4.9-2026-aug、2.4.8-2026-aug、2.4.7-2026-aug、2.4.6-2026-aug、2.4.4-2026-aug、2.4.4-2026-aug、2.4.9-2026-jul、2.4.8-2026-jul、2.4.7-2026-7月、2.4.6-2026-7月、2.4.5-2026-7月、2.4.4-2026-7月、2.4.8-p5、2.4.8-p4、2.4.7-p10、2.4.7-p9、2.4.6-p15、2.4.5-p17、2.4 2.4.4-p18、2.4.4-p17 | [ ホットフィックス VULN-39341-composer-patches.zip](https://repo.magento.com/patch/VULN-39341-composer-patches.zip) |
+| 2.4.9-2026-aug、2.4.8-2026-aug、2.4.7-2026-aug、2.4.6-2026-aug、2.4.4-2026-aug、2.4.4-2026-aug、2.4.9-2026-jul、2.4.8-2026-jul、2.4.7-2026-7月、2.4.6-2026-7月、2.4.5-2026-7月、2.4.4-2026-7月、2.4.8-p5、2.4.8-p4、2.4.7-p10、2.4.7-p9、2.4.6-p15、2.4.5-p17、2.4 2.4.4-p18、2.4.4-p17 | [&#x200B; ホットフィックス VULN-39341-composer-patches.zip](https://repo.magento.com/patch/VULN-39341-composer-patches.zip) |
 | 2.4.8-p3、2.4.8-p2 | [VULN-39341_248-p3.patch.zip](https://repo.magento.com/patch/VULN-39341-248-p3-patch.zip) |
 | 2.4.8-p1、2.4.8 | [VULN-39341_248-p1.patch.zip](https://repo.magento.com/patch/VULN-39341-248-p1-patch.zip) |
 | 2.4.7-p8、2.4.7-p7 | [VULN-39341_247-p8.patch.zip](https://repo.magento.com/patch/VULN-39341-247-p8-patch.zip) |
@@ -139,4 +139,4 @@ Adobe Commerceに関するセキュリティアップデート公開：
 
 ### 関連トピックス
 
-Adobe Commerce インストールガイドの[ メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
+Adobe Commerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en)
