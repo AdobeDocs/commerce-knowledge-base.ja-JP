@@ -1,37 +1,36 @@
 ---
-title: 「[!DNL Live Search] ファセットがアルファベット順に並べ替えられていません」
-description: この記事では、 [!DNL Live Search]  ファセットがアルファベット順に並べ替えられていない場合のトラブルシューティング情報を提供します。
+title: '[!DNL Live Search]個のファセットがアルファベット順に並べ替えられていません'
+description: この記事では、[!DNL Live Search] ファセットがアルファベット順に並べ替えられない場合のトラブルシューティング情報を提供します。
 feature: Admin Workspace, Categories, Search
 role: Developer
-source-git-commit: b20a98e44cfad6667b9fe0ab232b0020ed834ca2
+exl-id: 59f86727-c2a6-4418-8753-40f7937e059c
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '146'
 ht-degree: 0%
-
 ---
-
-# [!DNL Live Search] ファセットはアルファベット順に並べ替えられていません
+# [!DNL Live Search]個のファセットがアルファベット順に並べ替えられていません
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce バージョン 2.4.x 以降
+Adobe Commerce バージョン 2.4.x以降
 
-## 問題
+## イシュー
 
-すべてのAdobe Commerce ストアフロントファセットは、対応する属性に割り当てられた入力タイプに関係なく、単一選択オプションを使用してアルファベット順に並べ替えられます。
+Adobe Commerceのストアフロントのすべてのファセットは、対応する属性に割り当てられている入力タイプに関係なく、単一選択オプションを使用してアルファベット順に並べ替えられます。
 
 ## 回避策
 
-ただし、エッジケースによっては、ファセットが [[!DNL Live Search]  ファセットワークスペース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) で設定されているようにアルファベット順に並べ替えられない場合があります。
+ただし、一部のエッジケースでは、[[!DNL Live Search]  ファセットワークスペース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace)で設定したアルファベット順にファセットが並べ替えられない場合があります。
 
-回避策として、「製品属性」セクションで製 [!UICONTROL Admin] 属性を並べ替えることができます。
+回避策として、[!UICONTROL Admin]属性セクションで製品属性を並べ替えることができます。
 
-1. **[!UICONTROL Admin]** サイドバーで、**ストア**/*属性*/**製品** に移動します。
+1. **[!UICONTROL Admin]** サイドバーで、**ストア** > *属性* > **製品**&#x200B;に移動します。
 1. テーブルから属性を選択します。
 
-   ![&#x200B; 属性リスト &#x200B;](assets/attribute-list.png)
+   ![属性リスト &#x200B;](assets/attribute-list.png)
 
-1. 並べ替える値を持つ属性を開き、**属性情報**/**プロパティ** を選択します。
-1. **管理オプション** で、属性値を並べ替えることができます。
+1. 並べ替える値を持つ属性を開き、**属性情報** > **プロパティ**&#x200B;を選択します。
+1. **オプションの管理**&#x200B;で、属性値を並べ替えることができます。
 
-   ![&#x200B; 属性の並べ替え &#x200B;](assets/sort-attributes.png)
+   ![属性を並べ替え](assets/sort-attributes.png)

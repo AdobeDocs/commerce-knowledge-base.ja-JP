@@ -5,19 +5,22 @@ autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 8a165b274bf508d849c60fd6768569af1885fdb7
+    internal-label: Security
+source-git-commit: d80b5265f4babf0a7ea85034c9ccc8ae19636a48
 workflow-type: tm+mt
-source-wordcount: 957
+source-wordcount: '957'
 ht-degree: 0%
-
 ---
-
 
 # 緊急の対応が必要：Adobe Commerceに関する重要なセキュリティアップデート公開（APSB26-146）
 
@@ -80,7 +83,6 @@ Magento Open Sourceのバージョン：
 | 2.4.7 - 2.4.7-p6 | [VULN-39341_247-p5.patch.zip](https://repo.magento.com/patch/VULN-39341-247-p5-patch.zip) |
 | 2.4.6-p13、2.4.6-p12、2.4.5-p15、2.4.5-p14、2.4.4-p16、2.4.4-p15 | [VULN-39341_246-p13.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p13-patch.zip) |
 | 2.4.6 - 2.4.6-p11、2.4.5 - 2.4.5-p13、2.4.4 - 2.4.4-p14 | [VULN-39341_246-p11.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p11-patch.zip) |
-
 
 {style="table-layout:auto"}
 

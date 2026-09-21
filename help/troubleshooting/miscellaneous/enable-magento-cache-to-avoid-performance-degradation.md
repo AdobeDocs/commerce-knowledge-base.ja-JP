@@ -1,57 +1,55 @@
 ---
-title: パフォーマンスの低下を避けるためにキャッシュを有効にする
-description: この記事では、特定のAdobe Commerce キャッシュタイプが無効になっていることが原因で発生するサイトの速度の問題を解決する方法について説明します。
+title: キャッシュを有効にしてパフォーマンスの低下を回避
+description: この記事では、Adobe Commerceの特定のキャッシュの種類が無効になることでサイトの動作が遅くなる問題を解決する方法について説明します。
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+source-git-commit: 42aa1d4ef3540d4eb9682627dc5bf1dd14091dc3
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
+# キャッシュを有効にしてパフォーマンスの低下を回避
 
-# パフォーマンスの低下を避けるためにキャッシュを有効にする
-
-この記事では、特定のAdobe Commerce キャッシュタイプが無効になっていることが原因で発生するサイトの速度の問題を解決する方法について説明します。
+この記事では、Adobe Commerceの特定のキャッシュの種類が無効になることでサイトの動作が遅くなる問題を解決する方法について説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce 2.2.x、2.3.x
+* Adobe Commerce on cloud infrastructure 2.2.x、2.3.x
 * Adobe Commerce オンプレミス 2.2.x、2.3.x
 
-## 問題
+## イシュー
 
-パフォーマンスの低下が見られます。 例えば、チェックアウト ページの読み込みに時間がかかったり、New Relicで Apdex 値が減少したりします。
+パフォーマンスが低下しています。 例えば、チェックアウトページの読み込みが遅い、New RelicでApdex値が減少するといった具合です。
 
-## 原因：
+## 原因
 
-パフォーマンスが低下する理由の 1 つは、特定のAdobe Commerce キャッシュタイプが無効になっていることです。
+パフォーマンスが低下する理由の1つは、特定のAdobe Commerce キャッシュの種類が無効になっている可能性があります。
 
-## 解決策
+## Solution
 
-1. 最初に、Adobe Commerce キャッシュのステータスをチェックして、これが問題であるかどうかを確認します。 この場合は、環境に [SSH](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) 接続し、次のコマンドを実行します。
+1. まず、Adobe Commerce キャッシュのステータスを確認して、これが問題であるかどうかを確認します。 このために、[SSHをお使いの環境](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh)に送信し、次のコマンドを実行します。
 
    ```bash
    php bin/magento cache:status
    ```
 
-   これにより、各キャッシュタイプのステータスが表示されます（無効の場合は「0」、有効の場合は「1」）。 または、この情報を `app/etc/env.php` ファイルで取得できます。
+   これにより、各キャッシュタイプのステータスが表示されます（無効の場合は「0」、有効の場合は「1」）。 または、`app/etc/env.php` ファイルでこの情報を取得できます。
 
-1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にする必要があります。 サードパーティの拡張機能では、Adobe Commerceのキャッシュを無効にする必要はありません。
-1. 調査により、一部のキャッシュタイプが誤って無効になっていることが確認された場合は、各キャッシュタイプに対して次のコマンドを実行して、それらを有効にします。`php bin/magento cache:enable <your_disabled_cache_type>`
+1. 無効なキャッシュタイプを調べます。 Adobeから別のガイダンスを受けない限り、すべてのAdobe Commerce キャッシュタイプを有効にする必要があります。 サードパーティの拡張機能では、Adobe Commerce キャッシュを無効にする必要はありません。
+1. 調査で一部のキャッシュの種類が誤って無効になっていることが確認された場合は、キャッシュの種類ごとに次のコマンドを実行して有効にします：`php bin/magento cache:enable <your_disabled_cache_type>`
 
-特定のAdobe Commerce キャッシュタイプを無効にできるか無効にすべきかとの懸念や質問がある場合は、[Adobe Commerce サポートにお問い合わせ &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)、レコメンデーションを求めてください。
+特定のAdobe Commerce キャッシュの種類を無効にできるか無効にすべきかについての懸念や質問がある場合は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。
 
-## 関連資料
+## 関連トピックス
 
-開発者向けドキュメントのAdobe Commerce キャッシュのドキュメント：
+Adobe Commerceのキャッシュドキュメントをご覧ください。
 
-* [Adobe Commerce キャッシュの概要 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching)
-* [&#x200B; キャッシュの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Adobe Commerce キャッシュの概要](https://developer.adobe.com/commerce/frontend-core/guide/caching)
+* [キャッシュの管理](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
-パフォーマンスの問題が発生するその他の理由と解決策：
+パフォーマンスの問題とその解決策のその他の考えられる理由：
 
-* [&#x200B; サイトのパフォーマンスを向上させるには、Adobe Commerce バナーの出力を無効にします &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [MySQL テーブルが大きすぎます &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26945)
-* [パフォーマンスが遅く、動作が遅く、長時間実行されるクローン](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
+* [Adobe Commerce Banner出力を無効にして、サイトパフォーマンスを向上させる](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [MySQL テーブルが大きすぎます](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [遅いパフォーマンス、遅い動作のcron](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-42802)

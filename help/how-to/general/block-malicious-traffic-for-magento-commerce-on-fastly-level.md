@@ -3,13 +3,11 @@ title: Fastly レベルでAdobe Commerceの悪意のあるトラフィックを�
 description: この記事では、Adobe Commerce on cloud infrastructure ストアでDDoS攻撃が発生していると疑われる場合に、悪意のあるトラフィックをブロックするために実行できる手順について説明します。
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 8bde15deccc24c548c20cf5955cbebc45ac1d9a1
+source-git-commit: 8e64b148938394e67265da543784b2769df56c58
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '932'
 ht-degree: 0%
-
 ---
-
 # Fastly レベルでAdobe Commerceの悪意のあるトラフィックをブロック
 
 この記事では、悪意のある脅威に対応するだけでなく、ジオグラフィックフィルタリングの方法として、ストアへの不要なトラフィックをブロックする方法について説明します。
@@ -47,8 +45,8 @@ Adobe Commerce オンクラウドインフラストラクチャストアの場�
 
 ユーザーエージェントに基づいてブロッキングを確立するには、Fastly設定にカスタム VCL スニペットを追加する必要があります。 これを行うには、次の手順を実行します。
 
-1. Commerce管理者で、**Stores** > **Configuration** > **Advanced** > **System** > **Full Page Cache**&#x200B;に移動します。
-1. 次に、**Fastly設定** > **カスタム VCL スニペット**&#x200B;です。
+1. Commerce **[!UICONTROL Admin]**&#x200B;で、**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]**&#x200B;に移動します。
+1. 次に、**[!UICONTROL Fastly Configuration]** > **[!UICONTROL Custom VCL Snippets]**&#x200B;です。
 1. Fastly\_Cdn モジュールの[&#x200B; カスタム VCL スニペット &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) ガイドの説明に従って、新しいカスタムスニペットを作成します。 次のコードサンプルを例として使用できます。 このサンプルでは、`AhrefsBot` ユーザーエージェントのトラフィックを許可しません。
 
 ```php
@@ -60,6 +58,64 @@ name: block_bad_useragents
       error 405 "Not allowed";
   }
 ```
+
+## JA3/JA4/OH署名によるトラフィックのブロック（NewrelicからJA3、JA4、OHFPの値を取得）
+
+1. 辞書を作成：**[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full page cache]** > **[!UICONTROL Fastly configuration]** > **[!UICONTROL Edge Dictionary]**&#x200B;に移動し、次のサンプルブロックを作成します。
+
+   ```
+   #table ja3_blocklist:
+   table ja3_blocklist {
+       "********************************": "********************************",
+   }
+   
+   #table ja4_blocklist:
+   table filter_bad_ja4 {
+       "************************************": "************************************",
+   }
+   ```
+
+1. 次に、VCLを追加して、上記の表に記載されているJA3、JA4をブロックします。
+
+   ```
+   name: block_traffic_ja3_ja4
+   type: recv 
+   priority: 5 
+   
+   VCL:
+   if (req.restarts == 0 && fastly.ff.visits_this_service == 0) {
+     if(table.contains(ja3_blocklist, tls.client.ja3_md5)){
+       error 403;
+     }
+     if(table.contains(ja4_blocklist, tls.client.ja4)){
+       error 403;
+     }
+   }
+   ```
+
+1. OHFPに基づくサンプルのブロック：
+
+   ```
+   #table ohfp_h2fp_blocklist
+   table ohfp_h2fp_blocklist {
+       "xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx":"xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx",
+   }
+   ```
+
+
+1. 次に、VCLを追加して、上記の表に記載されているOHFPをブロックします。
+
+   ```
+   # Snippet block_ohfp_h2fp
+   name: block_ohfp_h2fp
+   type: recv 
+   Priority: 5
+   
+   if (table.contains(ohfp_h2fp_blocklist, fastly_info.oh_fingerprint)) {
+     error 403 "Forbidden";
+   }
+   ```
+
 
 ## レート制限（実験的なFastly機能）
 
