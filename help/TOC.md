@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 75d326acaa5926506fe3078da18abbbcdf2f3df4
+source-git-commit: 50b733947e4c62b9a318df1f86a51c456f9f15d1
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1583'
 ht-degree: 1%
 ---
 # Adobe Commerce のナレッジベース {#kb}
@@ -196,7 +196,6 @@ ht-degree: 1%
   * [デプロイに失敗したため、Adobe Commerceのデプロイ後はスキップされます。error.md](/help/how-to/general/adobe-commerce-post-deploy-is-skipped-because-deploy-was-failed-error.md)
   * [フィールドがグレー表示されている場合にmagento.com アカウントのメールアドレスを変更する方法](/help/how-to/general/change-email-address-on-magento-account.md)
   * [Magento Order Managementを削除する方法](/help/how-to/general/how-to-remove-mom.md)
-  * [Commerceの休暇対応に関する技術ヒント](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
   * [GraphQL リクエストに対するWAFのバイパス方法](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
   * [Adobe Commerce クラウド版のMariaDB 10.4から10.5へのアップグレード](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQ {#faq}
