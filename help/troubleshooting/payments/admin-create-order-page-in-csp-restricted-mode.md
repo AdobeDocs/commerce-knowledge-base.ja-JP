@@ -42,7 +42,7 @@ Adobe Commerce on cloud infrastructure、Adobe Commerce on-premises、Magento Op
 ### 原因
 
 Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
-対応する**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
 ### Solution
 
@@ -89,7 +89,7 @@ Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエス�
    }
    ```
 
-1. [ モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
+1. [&#x200B; モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
 
 ## 問題 – 支払い方法がないか、機能しません
 
@@ -115,7 +115,7 @@ Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエス�
 ### 原因
 
 Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
-対応する**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
 ### Solution
 
@@ -189,7 +189,7 @@ Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエス�
 ### 原因
 
 Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
-対応する**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
 ### Solution
 
@@ -236,4 +236,4 @@ Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエス�
    }
    ```
 
-1. [ モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
+1. [&#x200B; モジュールの`csp_whitelist.xml` ファイルに [!DNL hash]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#using-inline-scripts-and-styles-is-discouraged-in-favor-of-ui-components-and-classes)を追加します。
