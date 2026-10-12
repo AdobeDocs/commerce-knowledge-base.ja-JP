@@ -13,5 +13,5 @@ ht-degree: 0%
 # Magento Order Management （MOM）の削除方法
 
 1. [統合を無効にするか有効にする](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/#disable-or-enable-the-integration)の手順に従って、MOM統合を無効にします。
-1. [&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)の手順に従って、MOM モジュールを無効にします。
+1. [&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=ja)の手順に従って、MOM モジュールを無効にします。
 1. フルオーダーデータを抽出するには、APIを提供しています。 詳しくは、注文情報（order_repository）をカバーするAdobe | Magento OMS Docsの[注文リポジトリ &#x200B;](https://commerce-docs.github.io/oms-documentation-archive/specifications/#magento.sales.order_repository)を確認してください。 Adobe | Magento OMS Docsの[仕様セクション &#x200B;](https://commerce-docs.github.io/oms-documentation-archive/specifications/#services)を使用すると、他のAPIを使用して様々な情報タイプを抽出できます。

@@ -1,6 +1,6 @@
 ---
 title: 共有カタログの価格に関するコンテンツステージングの更新をスケジュールできますか？
-description: Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更新（[Content Staging] （https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html））のスケジュール機能は提供されていません。
+description: Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更新（[Content Staging] （https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja））のスケジュール機能は提供されていません。
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
 product_v2:
@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 # 共有カタログの価格に関するコンテンツステージングの更新をスケジュールできますか？
 
-Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更新（[&#x200B; コンテンツステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)）をスケジュールする機能を提供していません。
+Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更新（[&#x200B; コンテンツステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)）をスケジュールする機能を提供していません。
 
 つまり、Commerce管理パネルの「**価格設定と構造を設定**」メニューから直接価格更新をスケジュールすることはできません（このメニューには「**新しい更新をスケジュール**」ボタンはありません）。
 
@@ -32,7 +32,7 @@ Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更�
 
 ## 顧客グループの価格の更新スケジュール
 
-1. 新しい製品アップデートのスケジュールを[開始](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html)します。
+1. 新しい製品アップデートのスケジュールを[開始](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)します。
 1. 「**価格**」フィールドまでスクロールし、「**詳細価格**」をクリックします。
 
    ![advanced_pricing.png](assets/advanced_pricing.png){width="600"}
@@ -49,8 +49,8 @@ Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更�
 
 **関連ドキュメント**
 
-* ユーザーガイドの[更新のスケジュール設定（コンテンツステージング） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html)。
-* ユーザーガイドの[詳細価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。
+* ユーザーガイドの[更新のスケジュール設定（コンテンツステージング） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)。
+* ユーザーガイドの[詳細価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)。
 
 ## 基準価格の予定価格の更新
 

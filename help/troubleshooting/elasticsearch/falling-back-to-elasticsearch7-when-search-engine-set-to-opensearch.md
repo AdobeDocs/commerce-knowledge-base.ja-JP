@@ -62,4 +62,4 @@ Adobe Commerce バージョン 2.4.6以降、アプリケーションが更新�
 
 ## 関連トピックス
 
-Commerce on Cloud Infrastructure ガイドの[OpenSearch サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html)。
+Commerce on Cloud Infrastructure ガイドの[OpenSearch サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=ja)。

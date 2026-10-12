@@ -52,7 +52,7 @@ ht-degree: 0%
 1. これにより、Composer パッケージバージョンの要件が追加されます。 ロックファイル - `composer/composer` バージョンは1.0.22以降である必要があります。
 1. `composer.json`と`composer.lock`をコミットし、デプロイメントをプッシュします。
 
-この方法が機能しない場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+この方法が機能しない場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ## 関連トピックス
 

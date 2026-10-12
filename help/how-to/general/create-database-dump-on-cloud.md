@@ -22,7 +22,7 @@ DBをダンプするために1つのバリアント（オプション）を使�
 
 ## 前提条件：環境へのSSH
 
-この記事で説明したバリエーションをAdobe Commerce上のクラウドインフラストラクチャにDBをダンプするには、まず[SSHで環境に接続する必要があります](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+この記事で説明したバリエーションをAdobe Commerce上のクラウドインフラストラクチャにDBをダンプするには、まず[SSHで環境に接続する必要があります](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ DBをダンプするために1つのバリアント（オプション）を使�
 
 ## オプション 1: db-dump （**ece-tools；推奨**）
 
-[ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) コマンドを使用してDBをダンプできます。
+[ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja) コマンドを使用してDBをダンプできます。
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -38,7 +38,7 @@ vendor/bin/ece-tools db-dump
 
 これは推奨され、最も安全なオプションです。
 
-Commerce on Cloud Infrastructure ガイドの「[Dump your database （ECE-Tools） &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html)」を参照してください。
+Commerce on Cloud Infrastructure ガイドの「[Dump your database （ECE-Tools） &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=ja)」を参照してください。
 
 ## オプション 2: mariadb-dump （または古いバージョンのmysqldump）
 
@@ -77,4 +77,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **関連ドキュメント：**
 
 * [mysqldump - MySQLの公式ドキュメントのデータベース バックアップ プログラム &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)。
-* Commerce on Cloud Infrastructure ガイドの[&#x200B; クラウド固有の変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) （`MAGENTO_CLOUD_RELATIONSHIPS`を参照）。
+* Commerce on Cloud Infrastructure ガイドの[&#x200B; クラウド固有の変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=ja) （`MAGENTO_CLOUD_RELATIONSHIPS`を参照）。

@@ -36,7 +36,7 @@ ht-degree: 0%
 
 Adobe Commerceの`var` サブディレクトリの下にあるすべてのディレクトリとファイルをクリアし、Adobe Commerce ソフトウェアを再度インストールします。
 
-[Adobe Commerce ファイルシステムの所有者](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview)または`root`権限を持つユーザーとして、次のコマンドを入力します。
+[Adobe Commerce ファイルシステムの所有者](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/file-system/overview)または`root`権限を持つユーザーとして、次のコマンドを入力します。
 
 ```bash
 $ cd <your Magento install directory>/var

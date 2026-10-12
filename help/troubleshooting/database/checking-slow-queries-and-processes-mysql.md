@@ -51,7 +51,7 @@ ht-degree: 0%
 Adobe Commerce プロジェクトがPro アーキテクチャにデプロイされている場合は、[!DNL Percona Toolkit]を使用してクエリを分析できます。
 
 1. MySQLの低速クエリログに対して`pt-query-digest --type=slowlog` コマンドを実行します。
-   * 低速なクエリログの場所を確認するには、開発者ドキュメントの&#x200B;**[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)**&#x200B;を参照してください。
+   * 低速なクエリログの場所を確認するには、開発者ドキュメントの&#x200B;**[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)**&#x200B;を参照してください。
    * [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) ドキュメントを参照してください。
 1. 見つかった問題に基づいて、クエリを修正する手順を実行し、より迅速に実行します。
 
@@ -88,4 +88,4 @@ Adobe Commerce プロジェクトがPro アーキテクチャにデプロイさ�
 * dev.mysql.comの[MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html)。
 * dev.mysql.comの[MySQL Kill Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html)。
 * 開発者ドキュメントの[&#x200B; セキュリティ、パフォーマンス、データ処理](https://developer.adobe.com/commerce/php/best-practices/extensions/security/)。
-* 開発者向けドキュメントの[MySQL ヘルプ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql)。
+* 開発者向けドキュメントの[MySQL ヘルプ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql)。

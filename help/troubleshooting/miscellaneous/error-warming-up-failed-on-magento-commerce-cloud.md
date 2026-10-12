@@ -61,5 +61,5 @@ HTTP アクセス制御が有効になっている場合、キャッシュ ウ�
 
 ## 関連トピックス
 
-* ユーザーガイドの[Adobe Commerce ユーザーガイド > フルページキャッシュ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
+* ユーザーガイドの[Adobe Commerce ユーザーガイド > フルページキャッシュ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
 * [&#x200B; キャッシュのウォーミングアップとサイトは、Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)でサポート情報ベースで利用できません。

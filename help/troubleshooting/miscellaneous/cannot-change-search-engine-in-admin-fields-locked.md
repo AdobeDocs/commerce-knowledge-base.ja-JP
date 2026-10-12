@@ -43,4 +43,4 @@ Commerce Adminで検索エンジンを変更しようとしましたが、フィ
 
 ## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドのCommerce Admin[&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879)の ロック（グレー表示）フィールド。
+* Commerce on Cloud Infrastructure ガイドのCommerce Admin[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26879)の ロック（グレー表示）フィールド。

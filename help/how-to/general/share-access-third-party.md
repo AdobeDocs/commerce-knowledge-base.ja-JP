@@ -33,11 +33,11 @@ ht-degree: 0%
 
 * サードパーティベンダーにクラウド環境へのアクセスを提供します。 関連記事：
 
-  * [Adobe Commerce ヘルプセンターユーザーガイド >共有アクセス：他のユーザーがアカウントにアクセスするための権限を付与する](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#shared-access)。詳しくは、サポートナレッジベースを参照してください。
-  * ユーザーガイドの[Commerce アカウントの共有](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share)。
+  * [Adobe Commerce ヘルプセンターユーザーガイド >共有アクセス：他のユーザーがアカウントにアクセスするための権限を付与する](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#shared-access)。詳しくは、サポートナレッジベースを参照してください。
+  * ユーザーガイドの[Commerce アカウントの共有](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-share)。
 
 * データベースダンプを作成します（または、サードパーティベンダーにアクセス権を付与します）。 これは、CLIまたはCommerce管理者を使用して実行できます。 このDB ダンプは顧客データを難読化するので、取得できるのはコードや製品SKUなどだけで、専有/顧客データはありません。 参考までに、サポートナレッジベースの「[Commerce アカウントの共有]」（/help/how-to/general/create-database-dump-on-cloud.md）を使用してください。
-* テストが完了したら、サポート ナレッジベースの[Adobe Commerce ヘルプセンターのユーザーガイド/取り消し（共有アクセスを削除） &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access)の説明に従って、クラウド環境への共有アクセスを取り消すようにしてください。
+* テストが完了したら、サポート ナレッジベースの[Adobe Commerce ヘルプセンターのユーザーガイド/取り消し（共有アクセスを削除） &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access)の説明に従って、クラウド環境への共有アクセスを取り消すようにしてください。
 
 ## テストのベストプラクティス
 

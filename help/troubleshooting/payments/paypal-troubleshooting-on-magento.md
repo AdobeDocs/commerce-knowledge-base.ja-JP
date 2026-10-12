@@ -40,7 +40,7 @@ PayPalの支払いに関するほとんどの問題には、同様の症状が�
 
 PayPal Express チェックアウトソリューションを適用する場合、AVS/CSC応答に基づくトランザクションは、**PayPal Manager** （サービス設定/設定/セキュリティオプション）および&#x200B;**Commerce Admin** （**Stores**/Configuration > **Sales** > **支払い方法** ...）で拒否する必要があります。
 ![magento_paypal_settings_2.4.1.png](assets/magento_paypal_settings_2.4.1.png)
-詳しくは、ユーザーガイドの「[PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm)」および「[Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html)」のドキュメントを参照してください。
+詳しくは、ユーザーガイドの「[PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm)」および「[Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html?lang=ja)」のドキュメントを参照してください。
 
 ## 参照トランザクションを許可
 
@@ -50,14 +50,14 @@ PayPalの支払い方法に請求契約書と参照取引を含むAPIが含ま�
 
 次の記事を参照してください。
 
-* [PayPal ゲートウェイがリクエストを拒否しました – サポートナレッジベースで請求書の問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838)を重複しています。
+* [PayPal ゲートウェイがリクエストを拒否しました – サポートナレッジベースで請求書の問題](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838)を重複しています。
 * [新しいストアエンティティ &#x200B;](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)の増分IDをサポートナレッジベースで変更します。
 
 ## アドバンスド支払いログを収集するには、サポートにお問い合わせください
 
 複雑な支払いの問題をトラブルシューティングするには、Adobe Commerce サポートチームから、高度な支払いログを有効にするための専用パッチの適用を求められる場合があります。 この場合、手順は次のようになります。
 
-[次の詳細を含むサポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
+[次の詳細を含むサポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
 
 * できるだけ多くの詳細で問題を特定してください。
 * この記事、ナレッジベース、その他のリソースから試した手順をリストします。 すべての結果を含める。
@@ -66,5 +66,5 @@ PayPalの支払い方法に請求契約書と参照取引を含むAPIが含ま�
 Advanced Payment Logging パッチを受け取った場合：
 
 * パッチを適用します。
-* ログを収集し、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に添付します。
+* ログを収集し、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に添付します。
 * Adobe Commerceサポートチームからの追加の推奨事項をお待ちください。

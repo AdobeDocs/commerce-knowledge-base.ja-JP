@@ -31,30 +31,30 @@ ht-degree: 0%
 
 ## Solution
 
-ログを確認して、カスタムモジュールの名前を持つエントリがエラーに含まれているかどうかを確認します。  関連するエラーによっては、解決策が表示される場合があります。また、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を開く場合は、役に立つAdobe Commerce ログ情報を含める必要がある場合もあります。 ログの場所と考えられる解決策については、次の段落を参照してください。
+ログを確認して、カスタムモジュールの名前を持つエントリがエラーに含まれているかどうかを確認します。  関連するエラーによっては、解決策が表示される場合があります。また、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を開く場合は、役に立つAdobe Commerce ログ情報を含める必要がある場合もあります。 ログの場所と考えられる解決策については、次の段落を参照してください。
 
 ### Adobe Commerce（すべてのデプロイメント方法）、Magento Open Source、すべての2.X バージョン
 
 1. ログの場所は、Adobe Commerce on cloud infrastructure Pro プランアーキテクチャログ（サポートナレッジベース）に配置されます。
 1. 見つかったエラーに応じて、カスタムモジュールを有効、無効、またはアンインストールする場合は、これらのアクションについて詳しく説明します。
-   * [開発者向けドキュメントのモジュール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules)を有効または無効にします。
-   * 開発者向けドキュメントの[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
+   * [開発者向けドキュメントのモジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/manage-modules)を有効または無効にします。
+   * 開発者向けドキュメントの[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
 
 ### Adobe Commerceオンクラウドインフラストラクチャ（全バージョン）
 
-1. ログの場所：[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceは、開発者ドキュメントのログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)です。
+1. ログの場所：[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceは、開発者ドキュメントのログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations)です。
 1. 見つかったエラーに応じて、カスタムモジュールを有効、無効、またはアンインストールする場合は、次の開発者向けドキュメントの記事で、これらのアクションについて詳しく説明しています。
-   * [拡張機能のインストール、管理、アップグレード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
-   * [&#x200B; コンポーネントの展開エラー](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment)。
+   * [拡張機能のインストール、管理、アップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
+   * [&#x200B; コンポーネントの展開エラー](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment)。
 
 ## 関連トピックス
 
 アドビの開発者ドキュメントには、次のようなものがあります。
 
 * [モジュールの概要](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [オプションのサンプルデータのインストール中にエラーが発生する](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [オプションのサンプルデータのインストール中にエラーが発生する](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
 * [例外処理](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
-* [インストール時の例外](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
-* [モジュールマネージャーの実行](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
-* [モジュール設定ファイル](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
-* [メモリ不足エラー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)
+* [インストール時の例外](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [モジュールマネージャーの実行](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [モジュール設定ファイル](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/module-files)
+* [メモリ不足エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)

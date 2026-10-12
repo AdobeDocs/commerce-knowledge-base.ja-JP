@@ -44,4 +44,4 @@ New Relic アカウントの所有者に連絡し、[!DNL New Relic]のアカウ
 
 ## 関連トピックス
 
-開発者ドキュメントの[管理 [!DNL New Relic]  アカウント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)。
+開発者ドキュメントの[管理 [!DNL New Relic]  アカウント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)。

@@ -37,4 +37,4 @@ ht-degree: 0%
 ## 関連トピックス
 
 * [Adobe Commerce サポートまたはクラウドアカウントにログインできない](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-* [MageID アカウント所有者がログインしてサポートチケットを送信できない](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [MageID アカウント所有者がログインしてサポートチケットを送信できない](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25231)

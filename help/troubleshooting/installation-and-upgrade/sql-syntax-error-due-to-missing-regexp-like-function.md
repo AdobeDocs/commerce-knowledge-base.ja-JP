@@ -52,7 +52,7 @@ B2B バージョン 1.5.2へのアップグレードは、`company_structure` �
 
 <u>複製する手順</u>:
 
-1. 会社を親の会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの[企業階層の管理](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy)を参照してください。
+1. 会社を親の会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの[企業階層の管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/company-management/manage-company-hierarchy)を参照してください。
 1. B2Bを1.5.2 バージョンにアップグレードします。
 
 <u>期待される結果</u>:
@@ -78,7 +78,7 @@ Unable to apply data patch Magento\Company\Setup\Patch\Data\SetCompanyForStructu
    composer update magento/module-b2b
    ```
 
-1. 添付の[ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) パッチを適用します。 手順については、サポートナレッジベースの[Adobeが提供するコンポーザーパッチの適用方法を参照してください。](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)
+1. 添付の[ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) パッチを適用します。 手順については、サポートナレッジベースの[Adobeが提供するコンポーザーパッチの適用方法を参照してください。](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)
 1. `bin/magento setup:upgrade`を実行します。
 
 ### クラウドパッチを使用したパッチの適用
@@ -92,4 +92,4 @@ Adobe Commerce on Cloud インフラストラクチャの場合は、次の手�
    composer update magento/magento-cloud-patches
    ```
 
-1. 変更をコミットしてプッシュし、再デプロイを開始します。 手順については、Adobe Commerce on Cloud ガイドの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+1. 変更をコミットしてプッシュし、再デプロイを開始します。 手順については、Adobe Commerce on Cloud ガイドの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。

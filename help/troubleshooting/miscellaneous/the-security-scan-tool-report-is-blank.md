@@ -32,7 +32,7 @@ ht-degree: 0%
 
 <u>複製する手順</u>:
 
-1. ユーザーガイドの[&#x200B; セキュリティスキャン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)の説明に従って、Web サイトを確認するようにセキュリティスキャンツールを設定します。
+1. ユーザーガイドの[&#x200B; セキュリティスキャン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-scan)の説明に従って、Web サイトを確認するようにセキュリティスキャンツールを設定します。
 1. 「アクション」列で、「**スキャンを実行**」を選択します。
 
 <u>期待される結果</u>:
@@ -56,5 +56,5 @@ web サイトを開いてみます。
 
 ## 関連トピックス
 
-* [本番稼働し、開発者向けドキュメントで](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview)を起動します。
-* ユーザーガイドの[&#x200B; セキュリティスキャン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)。
+* [本番稼働し、開発者向けドキュメントで](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/overview)を起動します。
+* ユーザーガイドの[&#x200B; セキュリティスキャン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-scan)。

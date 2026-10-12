@@ -47,7 +47,7 @@ B2B 1.5.2に更新した後に`Magento_Company` モジュールをアップグ�
 
 <u>複製する手順</u>:
 
-1. 会社を親の会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの[企業階層の管理](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy)を参照してください。
+1. 会社を親の会社に割り当てて、会社の階層を確立します。 詳しくは、Adobe Commerce B2B ガイドの[企業階層の管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/company-management/manage-company-hierarchy)を参照してください。
 1. B2Bを1.5.2 バージョンにアップグレードします。
 
 <u>期待される結果</u>:
@@ -76,7 +76,7 @@ B2B 1.5.2に更新した後に`Magento_Company` モジュールをアップグ�
 
 ### パッチの適用方法
 
-ファイルを解凍し、手順については、サポートナレッジベースの[Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
+ファイルを解凍し、手順については、サポートナレッジベースの[Adobe](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
 
 ### クラウドパッチを使用したパッチの適用
 
@@ -95,8 +95,8 @@ Adobe Commerce on Cloud マーチャントの場合は、次の手順に従い�
    ```
 
 1. ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patchを`m2-hotfixes` ディレクトリに追加します。
-1. 変更をコミットしてプッシュし、再デプロイと`bin/magento setup:upgrade`を開始します。 手順については、Adobe Commerce on Cloud ガイドの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+1. 変更をコミットしてプッシュし、再デプロイと`bin/magento setup:upgrade`を開始します。 手順については、Adobe Commerce on Cloud ガイドの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
 
 ## 関連トピックス
 
-* [REGEXP_LIKE関数が欠落しているため、B2B 1.5.2へのアップグレードがSQL構文エラーで失敗する](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
+* [REGEXP_LIKE関数が欠落しているため、B2B 1.5.2へのアップグレードがSQL構文エラーで失敗する](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)

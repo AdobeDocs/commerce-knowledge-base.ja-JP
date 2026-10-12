@@ -32,4 +32,4 @@ PHP Fatal error:  Class 'PDO' not found in /var/www/html/magento2/setup/module/M
 
 ## Solution
 
-必要なすべての[PHP拡張機能](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)をインストールしてください。
+必要なすべての[PHP拡張機能](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings)をインストールしてください。

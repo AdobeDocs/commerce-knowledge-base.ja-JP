@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ### 早期アクセスコードの場所
 
-ベータアクセス期間中、リリースパッケージは[repo.magento.com](https://repo.magento.com/)のComposerからのみ利用できます。 この間、リリースパッケージはGitHubおよびAdobe Commerce ポータルでは利用できません。これらはGA日にこれらの場所に公開します。 Composerの使用方法について詳しくは、[こちら](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)をクリックしてください。
+ベータアクセス期間中、リリースパッケージは[repo.magento.com](https://repo.magento.com/)のComposerからのみ利用できます。 この間、リリースパッケージはGitHubおよびAdobe Commerce ポータルでは利用できません。これらはGA日にこれらの場所に公開します。 Composerの使用方法について詳しくは、[こちら](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer)をクリックしてください。
 
 ### 使用する必要があるMageID
 
@@ -48,7 +48,7 @@ MageIDがプライマリであるかどうかを確認するには、次の手�
    * アクティブなパートナーライセンス情報が表示された場合、MageIDはプライマリになります。 END DATE値が将来の日付である場合、パートナーライセンスはアクティブです。
    * アクティブなパートナーライセンス情報が表示されない場合、MageIDには共有アクセス権のみが付与されます。 プライマリ ID所有者が誰であるかを確認するには、**自分と共有**&#x200B;に移動します。ここで指定した共有名に注意してください。 「**アカウントを切り替え**」をクリックし、SHARENAMEに記録した値を選択します。 ようこそページに、プライマリ ID所有者の電子メールが表示されます。
 1. 何らかの理由で[magento.com](https://account.magento.com/customer/account/login)でこの情報が見つからない場合は、パートナーマネージャーにお問い合わせください。
-1. 上記のいずれも機能しない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+1. 上記のいずれも機能しない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 #### 開発者がキーに正しくアクセスできない
 

@@ -69,5 +69,5 @@ ElasticSuite プラグインをバージョン > 2.9.8 / 2.10.7にアップグ�
 
 特定の時間頻度でインデックスを削除する場合は、開発者ドキュメントの次の記事を参照して、cron ジョブを作成します。
 
-* [カスタム cron ジョブとcron グループの設定（チュートリアル）](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [cron ジョブの設定](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [カスタム cron ジョブとcron グループの設定（チュートリアル）](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [cron ジョブの設定](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

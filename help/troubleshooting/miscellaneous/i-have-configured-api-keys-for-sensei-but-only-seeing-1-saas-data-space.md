@@ -71,4 +71,4 @@ Adobe決済サービスをご利用のお客様は、Magento Open Sourceのデ�
 
 ## 読み上げ
 
-[SaaS データ空間のプロビジョニング](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas?lang=en#saas-data-space-provisioning)
+[SaaS データ空間のプロビジョニング](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas?lang=en#saas-data-space-provisioning)

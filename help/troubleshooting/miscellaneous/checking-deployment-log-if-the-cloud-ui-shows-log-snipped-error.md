@@ -46,11 +46,11 @@ Adobe Commerce オンクラウドインフラストラクチャ（サポート�
 
 ## 原因
 
-UIに表示されるログは、信頼できる唯一の情報源として扱ってはなりません。特に、デプロイメントが「成功」のステータスで表示された後にサイトが応答していないか、正しく動作していないことがわかっている場合は、注意してください。 サーバー上のログでも確認する必要があります。 開発者ドキュメントの[&#x200B; ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)を参照してください。
+UIに表示されるログは、信頼できる唯一の情報源として扱ってはなりません。特に、デプロイメントが「成功」のステータスで表示された後にサイトが応答していないか、正しく動作していないことがわかっている場合は、注意してください。 サーバー上のログでも確認する必要があります。 開発者ドキュメントの[&#x200B; ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)を参照してください。
 
 ## Solution
 
-1. ローカル環境に[Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html)がインストールされていることを確認してください。
+1. ローカル環境に[Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=ja)がインストールされていることを確認してください。
 1. 次のいずれかのコマンドを実行できます。
 
    ```bash
@@ -86,5 +86,5 @@ UIに表示されるログは、信頼できる唯一の情報源として扱っ
 
 ## 開発者向けドキュメントの関連情報：
 
-* [Adobe Commerce on cloud infrastructure > ビルドとデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce クラウドインフラストラクチャ/ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce on cloud infrastructure > ビルドとデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)
+* [Adobe Commerce クラウドインフラストラクチャ/ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)

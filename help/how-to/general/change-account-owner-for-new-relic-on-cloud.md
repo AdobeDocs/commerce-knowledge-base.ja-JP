@@ -24,4 +24,4 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトの場�
 
 ## 関連トピックス
 
-* 開発者向けドキュメントの[New Relic サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)。
+* 開発者向けドキュメントの[New Relic サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)。

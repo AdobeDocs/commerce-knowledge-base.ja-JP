@@ -37,7 +37,7 @@ ht-degree: 0%
 
 `max_execution_time = 120`
 
-[php.ini設定のカスタマイズ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)の記事を参照してください。
+[php.ini設定のカスタマイズ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/php-settings)の記事を参照してください。
 
 ## 例
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## Solution
 
-`php.ini`の設定をカスタマイズします。 この[php.ini設定のカスタマイズ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)記事を参照してください。
+`php.ini`の設定をカスタマイズします。 この[php.ini設定のカスタマイズ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/php-settings)記事を参照してください。
 
 ## 例
 
@@ -75,9 +75,9 @@ MySQL環境のディスク容量が不足しています。 MySQL環境にディ
 
 アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [PHP設定エラー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [必要なPHP設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Redis検証](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Redisの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [PHP メモリ制限エラー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [PHP設定エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [必要なPHP設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Redis検証](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Redisの設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [PHP メモリ制限エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/overview)
 * [一般的な問題の解決策 – メモリ制限](https://developer.adobe.com/commerce/testing/guide/unit/command-line#solutions-to-common-problems)

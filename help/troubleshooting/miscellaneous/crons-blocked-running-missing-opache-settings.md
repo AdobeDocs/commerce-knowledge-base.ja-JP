@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 原因
 
-[!DNL OpCache] モジュールが新しいバージョンに更新され、ランタイムで`env.php`を書き換える[!DNL GraphQL] プラグインが導入され、cron設定が上書きされ、問題が発生した可能性があります。 `env.php file`の問題を回避するには、[!DNL OpCache]設定を更新する必要があります。これは、[!DNL ECE Tools] パッケージの[&#x200B; バージョン 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13)で解決されました。
+[!DNL OpCache] モジュールが新しいバージョンに更新され、ランタイムで`env.php`を書き換える[!DNL GraphQL] プラグインが導入され、cron設定が上書きされ、問題が発生した可能性があります。 `env.php file`の問題を回避するには、[!DNL OpCache]設定を更新する必要があります。これは、[!DNL ECE Tools] パッケージの[&#x200B; バージョン 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=ja#v2002.1.13)で解決されました。
 
 ## Solution
 
@@ -66,6 +66,6 @@ cronが無効になっていることを示すメッセージが表示される�
 
 ## 関連トピックス
 
-* [Cronの準備状況チェックの問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
-* [Crons プロパティ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
-* [Cron ジョブが「実行中」ステータスで停止している](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+* [Cronの準備状況チェックの問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html?lang=ja)
+* [Crons プロパティ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja)
+* [Cron ジョブが「実行中」ステータスで停止している](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja)

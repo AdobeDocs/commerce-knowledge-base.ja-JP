@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ### すべてのweb サーバーとVarnish {#all-web-servers-and-varnish}
 
-1. [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software) ファイルを使用して、`php.ini`を探します。
+1. [`phpinfo.php`](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/optional-software) ファイルを使用して、`php.ini`を探します。
 1. `root`権限を持つユーザーは、テキストエディターで`php.ini`を開きます。
 1. `max_execution_time`設定を探します。
 1. 値を`18000`に変更します。

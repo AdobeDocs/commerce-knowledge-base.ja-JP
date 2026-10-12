@@ -39,5 +39,5 @@ Adobeでは、インストール済みのバージョンのAdobe Commerce（オ�
 
 詳しくは、次の開発者向けドキュメントを参照してください。
 
-* [品質パッチツールで使用可能なパッチ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [品質パッチツールのリリースノート](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [品質パッチツールで使用可能なパッチ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)
+* [品質パッチツールのリリースノート](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/release-notes)

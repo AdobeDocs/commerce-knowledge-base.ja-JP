@@ -45,4 +45,4 @@ Vendor-Bundled ExtensionsがAdobe Commerce 2.4.4 コードベースから削除�
 
 ## 関連トピックス
 
-Adobe Commerce ドキュメント/リリース情報/Adobe Commerce 2.4.4 リリースノートの[Vendor-Bundled Extensions](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions)を参照してください。
+Adobe Commerce ドキュメント/リリース情報/Adobe Commerce 2.4.4 リリースノートの[Vendor-Bundled Extensions](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=ja&#vendor-bundled-extensions)を参照してください。

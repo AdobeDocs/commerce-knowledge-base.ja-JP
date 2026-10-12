@@ -32,7 +32,7 @@ ht-degree: 0%
 
 電子メールアドレスを変更するには、次の手順に従います。
 
-1. 古いメールアドレスで使用したパスワードをリセットします。 Adobe helpxの[&#x200B; パスワードを忘れた場合のリセット &#x200B;](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html)の手順に従います。
+1. 古いメールアドレスで使用したパスワードをリセットします。 Adobe helpxの[&#x200B; パスワードを忘れた場合のリセット &#x200B;](https://helpx.adobe.com/jp/manage-account/using/change-or-reset-password.html)の手順に従います。
 1. パスワードリセットリンクは、現在の所有者のメールボックスに指示とともに送信されます。
 1. [Adobe アカウントページ &#x200B;](https://account.adobe.com)に移動して、新しい電子メールでログインし、パスワードを設定します。
 
@@ -54,9 +54,9 @@ MAGE IDのメールアドレスを変更した後、Adobe Commerce Marketplace�
 ### Commerce Marketplaceの電子メールを確認
 
 1. [Commerce Marketplace アカウント &#x200B;](https://commercemarketplace.adobe.com/)にログインし、アカウントの電子メールが新しいアドレスに更新されていることを確認します。
-1. 電子メールが更新されていない場合は、Commerce Marketplace アカウントの電子メールの修正を依頼する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/support#home)を送信します。
+1. 電子メールが更新されていない場合は、Commerce Marketplace アカウントの電子メールの修正を依頼する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/support#home)を送信します。
 
 ### サポートに連絡して、社内アカウントの更新を最終調整してもらう
 
-1. [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/support#home)を送信して、必要な内部更新を完了するよう求めます（例えば、古いAdobe IDと新しいMAGE IDのリンクを更新します）。
+1. [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/support#home)を送信して、必要な内部更新を完了するよう求めます（例えば、古いAdobe IDと新しいMAGE IDのリンクを更新します）。
 1. 以前のセクションでCommerce Marketplaceの電子メールが更新されなかったため、サポートチケットを既に開いている場合は、同じチケットを使用して、これらの内部更新をリクエストできます。

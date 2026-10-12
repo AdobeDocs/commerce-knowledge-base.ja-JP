@@ -51,11 +51,11 @@ Adobe Commerceは、有効期限から30日が経過すると、すべての証�
 
 加盟店が独自のカスタム SSL証明書を使用する場合は、証明書の有効期限の30日前までに更新して、内部Adobe Commerce SSL証明書に置き換えないようにする必要があります。
 
-カスタム SSLが内部SSLに置き換えられ、更新されたカスタム SSL証明書に置き換える場合は、新しい証明書ファイルをアップロードした場所で[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信してください。 新しいSSLの開始日を含めてください。 この情報が得られたら、新しいSSL証明書のインストールを進めることができます。
+カスタム SSLが内部SSLに置き換えられ、更新されたカスタム SSL証明書に置き換える場合は、新しい証明書ファイルをアップロードした場所で[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信してください。 新しいSSLの開始日を含めてください。 この情報が得られたら、新しいSSL証明書のインストールを進めることができます。
 
 ## 関連トピックス
 
 * Magento Commerce Cloudの[SSL （TLS）証明書：サポートに関するナレッジベースのFAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-* [&#x200B; コマンドラインツールのリファレンス：magento-cloud証明書:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd)を開発者向けドキュメントでご覧ください。
-* 開発者向けドキュメントの[&#x200B; チェックリストを起動](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)します。
-* ユーザーガイドの[&#x200B; サイト全体の分析ツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool)にアクセスします。
+* [&#x200B; コマンドラインツールのリファレンス：magento-cloud証明書:add](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd)を開発者向けドキュメントでご覧ください。
+* 開発者向けドキュメントの[&#x200B; チェックリストを起動](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/checklist)します。
+* ユーザーガイドの[&#x200B; サイト全体の分析ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool)にアクセスします。

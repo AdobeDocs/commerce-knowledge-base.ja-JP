@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## データベースとSaaSの統合
 
-データベースとSaaS統合のリストについては、開発者ドキュメントの「[統合を使用した外部データの接続](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations)」を参照してください。 （ページを開く場合は、左側の目次を使用してナビゲーションを行います）。
+データベースとSaaS統合のリストについては、開発者ドキュメントの「[統合を使用した外部データの接続](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/saas/integrations)」を参照してください。 （ページを開く場合は、左側の目次を使用してナビゲーションを行います）。
 
 ## 接続に問題がありますか？
 
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 再認証するには、アカウントの資格情報を再入力する必要がある場合があります。 場合によっては、問題の統合用に新しいAPI キーを生成する必要が生じる場合があります。 問題の統合名をクリックして、再認証プロセスを開始します。
 
-問題が解決しない場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+問題が解決しない場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。

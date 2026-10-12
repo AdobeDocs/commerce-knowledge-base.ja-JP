@@ -41,26 +41,26 @@ ht-degree: 0%
 >
 >フルページキャッシュ （FPC）が有効になっている場合、web サイトのパフォーマンスは異なります。本番稼働前に必ずテストしてください。
 
-Fastlyの設定プロセスについて詳しくは、ユーザーガイドの「[Fastlyの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)」トピックを参照してください。 ここでは、重要な手順を解説します。
+Fastlyの設定プロセスについて詳しくは、ユーザーガイドの「[Fastlyの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)」トピックを参照してください。 ここでは、重要な手順を解説します。
 
 ### 1a. Fastly モジュールの最新バージョンがインストールされていることを確認します
 
-最新の機能と改善点を入手するには、最新バージョンのFastly モジュールがインストールされていることを確認してください。 最新バージョンのFastlyがあるかどうかを確認するには、ユーザーガイドの[Fastly モジュールのアップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upgrade-the-fastly-module)を確認してください。 詳しくは、ユーザーガイドの[Fastlyの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)を参照してください。
+最新の機能と改善点を入手するには、最新バージョンのFastly モジュールがインストールされていることを確認してください。 最新バージョンのFastlyがあるかどうかを確認するには、ユーザーガイドの[Fastly モジュールのアップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#upgrade-the-fastly-module)を確認してください。 詳しくは、ユーザーガイドの[Fastlyの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)を参照してください。
 
 ### 1b. Commerce管理者を使用したFastlyの有効化と設定
 
-詳しくは、ユーザーガイドの「[Fastlyの資格情報を取得する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials)」を参照してください。
+詳しくは、ユーザーガイドの「[Fastlyの資格情報を取得する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#get-fastly-credentials)」を参照してください。
 
 ### 1c. Fastly VCL スニペットのアップロード
 
-詳しくは、ユーザーガイドの「[VCLをFastlyにアップロード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)」を参照してください。
+詳しくは、ユーザーガイドの「[VCLをFastlyにアップロード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)」を参照してください。
 
-独自のVCL スニペットを[作成して追加することもできます](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)。
+独自のVCL スニペットを[作成して追加することもできます](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=ja)。
 
 ### 1d. Fastly用のDNSの設定
 
 
-詳細な手順については、この記事を参照してください。[&#x200B; ユーザーガイドのFastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings)のセットアップ。
+詳細な手順については、この記事を参照してください。[&#x200B; ユーザーガイドのFastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#update-dns-configuration-with-development-settings)のセットアップ。
 
 ## &#x200B;2. 有効なSSL （TLS）証明書
 
@@ -81,9 +81,9 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 
 **関連する記事：**
 
-* ユーザーガイドのroutes.yaml[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/redirects.html)を通じて リダイレクトします。
-* ユーザーガイドの[Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html)を通じてリダイレクトします。
-* ユーザーガイドの[URL書き換え](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite.html)。
+* ユーザーガイドのroutes.yaml[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/redirects.html?lang=ja)を通じて リダイレクトします。
+* ユーザーガイドの[Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja)を通じてリダイレクトします。
+* ユーザーガイドの[URL書き換え](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite.html?lang=ja)。
 
 ## &#x200B;4. アセットパフォーマンス
 
@@ -96,8 +96,8 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 * [New Relic](https://support.newrelic.com/): データ、クエリ、Redisなどの転送など、アクションごとに費やされたトラッキング時間でパフォーマンスの低下を引き起こすサイトのプロセスと領域を特定します。
 * [WebPageTest](https://www.webpagetest.org/) （無料）および[Pingdom](https://www.pingdom.com/) （有料）: サイトページのリアルタイム分析は、異なるオリジンの場所で読み込まれます。
 
-また、CSS、JavaScript、HTMLの[縮小](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)を検討することもできます。
+また、CSS、JavaScript、HTMLの[縮小](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ja)を検討することもできます。
 
 **関連する記事：**
 
-* 開発者向けドキュメントの[&#x200B; デプロイメントのテスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production.html)。
+* 開発者向けドキュメントの[&#x200B; デプロイメントのテスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production.html?lang=ja)。

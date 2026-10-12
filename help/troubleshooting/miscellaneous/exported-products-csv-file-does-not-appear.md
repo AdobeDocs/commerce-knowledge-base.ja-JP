@@ -91,7 +91,7 @@ Adobe Commerce アプリケーションの一部バージョン 2.3.2の書き�
 
 #### プロセスをcron ジョブとして追加（オプション）
 
-1. cronが設定および設定されていることを確認します。 詳しくは、[cron ジョブの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)を参照してください。
+1. cronが設定および設定されていることを確認します。 詳しくは、[cron ジョブの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja)を参照してください。
 1. 次のコマンドを実行して、メッセージキューコンシューマーのリストを返します：`./bin/magento queue:consumers:list`
 1. ルートアプリケーションディレクトリの`.magento.env.yaml` ファイルに以下を追加し、追加するコンシューマーを含めます。 例えば、以下は書き出し処理に必要な消費者です。
 
@@ -105,17 +105,17 @@ Adobe Commerce アプリケーションの一部バージョン 2.3.2の書き�
                    - exportProcessor
    ```
 
-   次に、この更新されたファイルをプッシュして、環境を再デプロイします。 また、開発者ドキュメントの[&#x200B; プロジェクトにカスタム cron ジョブを追加する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project)ことも参照してください。
+   次に、この更新されたファイルをプッシュして、環境を再デプロイします。 また、開発者ドキュメントの[&#x200B; プロジェクトにカスタム cron ジョブを追加する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja#add-custom-cron-jobs-to-your-project)ことも参照してください。
 
 >[!NOTE]
 >
->環境の`.magento.env.yaml` ファイルが見つからず、削除されたと思われる場合は、新しい`.magento.env.yaml`を作成する必要があります。 最初は空の場合がありますが、必要に応じてそこに情報を追加できます。 次の記事を参照してください。[&#x200B; デプロイメント用の環境変数を設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)および[環境変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html)。詳しくは、開発者ドキュメントを参照してください。
+>環境の`.magento.env.yaml` ファイルが見つからず、削除されたと思われる場合は、新しい`.magento.env.yaml`を作成する必要があります。 最初は空の場合がありますが、必要に応じてそこに情報を追加できます。 次の記事を参照してください。[&#x200B; デプロイメント用の環境変数を設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)および[環境変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=ja)。詳しくは、開発者ドキュメントを参照してください。
 
 >[!TIP]
 >
->[YAML ファイル &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)では大文字と小文字が区別され、タブは使用できません。 .magento.env.yaml ファイル全体で一貫したインデントを使用するように注意してください。そうしないと、設定が期待どおりに動作しない可能性があります。 ドキュメントおよびサンプルファイルの例では、2つのスペースのインデントが使用されています。 ece-tools validate コマンドを使用して、設定を確認します。
+>[YAML ファイル &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)では大文字と小文字が区別され、タブは使用できません。 .magento.env.yaml ファイル全体で一貫したインデントを使用するように注意してください。そうしないと、設定が期待どおりに動作しない可能性があります。 ドキュメントおよびサンプルファイルの例では、2つのスペースのインデントが使用されています。 ece-tools validate コマンドを使用して、設定を確認します。
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure Pro プロジェクトでは、`.magento.app.yaml`を使用してステージング環境と実稼動環境にカスタム cron ジョブを追加する前に、[自動cron機能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab)をAdobe Commerce on cloud infrastructureで有効にする必要があります。 この機能が有効になっていない場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を作成して、ジョブを追加します。
+>Adobe Commerce on cloud infrastructure Pro プロジェクトでは、`.magento.app.yaml`を使用してステージング環境と実稼動環境にカスタム cron ジョブを追加する前に、[自動cron機能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja#crontab)をAdobe Commerce on cloud infrastructureで有効にする必要があります。 この機能が有効になっていない場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を作成して、ジョブを追加します。
 

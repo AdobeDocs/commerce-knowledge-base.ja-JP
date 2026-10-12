@@ -41,13 +41,13 @@ Adobe Commerce on cloud infrastructure プロジェクトを計画する際に�
 
 Adobe Commerce on cloud infrastructure プロジェクト内でサブドメインを処理するには、次の手順に従います。
 
-* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、サブドメインをFastly サービス/Nginx設定に追加することをリクエストします（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。
+* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、サブドメインをFastly サービス/Nginx設定に追加することをリクエストします（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。
 * 対応するDNS設定を自分の側で設定します。
 
 サブドメイン設定の手順を実行した後、次の手順を実行して、SSL証明書の実稼動ドメインを検証する必要があります。
 
 * 実稼動ドメインのSSL検証用にDNS TXT レコードをアップロードします。
-* SSL証明書の実稼動ドメインの検証を要求する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
+* SSL証明書の実稼動ドメインの検証を要求する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
 
 サブドメインを使用すると、将来ストアの「ソフトローンチ」を実行できます。このようなローンチでは、対応するDNS設定を更新する必要があるだけです。
 
@@ -55,10 +55,10 @@ Adobe Commerce on cloud infrastructure プロジェクト内でサブドメイ�
 
 サポートナレッジベース：
 
-* [ステージング環境と実稼動環境でのFastly DNS設定](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Adobe Commerce on cloud infrastructureの導入を阻む潜在的な障壁](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [ステージング環境と実稼動環境でのFastly DNS設定](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=ja)
+* [Adobe Commerce on cloud infrastructureの導入を阻む潜在的な障壁](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=ja)
 
 アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [Fastlyの概要](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [ライブチェックリスト：FastlyのDNS設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Fastlyの概要](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja)
+* [ライブチェックリスト：FastlyのDNS設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja)

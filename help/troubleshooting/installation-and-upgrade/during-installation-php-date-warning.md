@@ -34,4 +34,4 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 ### Solution {#solution}
 
-PHPのタイムゾーン設定を注意深く確認してください。 開発者向けドキュメントの[&#x200B; インストールガイド/PHP設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)を参照してください。
+PHPのタイムゾーン設定を注意深く確認してください。 開発者向けドキュメントの[&#x200B; インストールガイド/PHP設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings)を参照してください。

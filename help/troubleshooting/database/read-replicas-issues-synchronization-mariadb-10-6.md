@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## Solution
 
-1. `slave_parallel_mode` パラメーターが&#x200B;*保守的*&#x200B;に設定されていることを確認します（値が&#x200B;*保守的*&#x200B;として表示されない場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)を発行する必要があります）。 確認するには、次のコマンドを実行します。
+1. `slave_parallel_mode` パラメーターが&#x200B;*保守的*&#x200B;に設定されていることを確認します（値が&#x200B;*保守的*&#x200B;として表示されない場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を発行する必要があります）。 確認するには、次のコマンドを実行します。
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -63,10 +63,10 @@ ht-degree: 0%
 
 
 
-データベース設定を更新する手順については、『Commerce on Cloud Infrastructure Guide 』の「Deploy variables」トピックの[DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration)を参照してください。
+データベース設定を更新する手順については、『Commerce on Cloud Infrastructure Guide 』の「Deploy variables」トピックの[DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#database_configuration)を参照してください。
 
 
 ## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドの[&#x200B; デプロイメント用の環境変数の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)。
-* 実装プレイブックの[&#x200B; データベース設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)。
+* Commerce on Cloud Infrastructure ガイドの[&#x200B; デプロイメント用の環境変数の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)。
+* 実装プレイブックの[&#x200B; データベース設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)。

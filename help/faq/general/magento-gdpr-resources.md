@@ -20,17 +20,17 @@ ht-degree: 0%
 
 ## Adobe CommerceにおけるGDPRへの対応
 
-すべてのAdobe Commerce GDPR リソースの[公式ホームページ &#x200B;](https://business.adobe.com/privacy/general-data-protection-regulation.html)。
+すべてのAdobe Commerce GDPR リソースの[公式ホームページ &#x200B;](https://business.adobe.com/jp/privacy/general-data-protection-regulation.html)。
 
 ## Adobe Commerceの公式声明
 
-* [一般データ保護規則（GDPR）](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
-* [GDPRへの準拠](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+* [一般データ保護規則（GDPR）](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html?lang=ja)
+* [GDPRへの準拠](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=ja)
 
 ## GDPRへの準拠に関する開発者向けドキュメント（Adobe Commerce 2.Xおよび1.X）
 
-* [お客様の個人情報の参照（バージョン 2.x）](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
-* [お客様の個人情報の参照（バージョン 1.x）](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
+* [お客様の個人情報の参照（バージョン 2.x）](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html?lang=ja)
+* [お客様の個人情報の参照（バージョン 1.x）](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html?lang=ja)
 
 以下のAdobe Commerce開発者向けドキュメントのトピックでは、マーチャントとシステムインテグレーターが次のようなユースケースを解決するのに役立つデータフロー図とデータベース情報を提供します。
 

@@ -78,6 +78,6 @@ Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動�
 
 ## パッチの適用方法
 
-手順については、[Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
+手順については、[Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
 
 ## 添付ファイル

@@ -35,5 +35,5 @@ Galeraの仕組みにより、クラスターで使用される増分IDが常に
 
 アドビの開発者向けドキュメントをご覧ください。
 
-* [Cloud for Adobe Commerce > Pro アーキテクチャ > バックアップと災害復旧](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Cloud for Adobe Commerce/前提条件のインストール：database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud for Adobe Commerce > Pro アーキテクチャ > バックアップと災害復旧](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce/前提条件のインストール：database](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview)
