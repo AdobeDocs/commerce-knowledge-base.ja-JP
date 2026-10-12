@@ -3,13 +3,22 @@ title: クラウドでのバックアップ（スナップショット）:FAQ
 description: この記事では、クラウドインフラストラクチャ上のAdobe Commerceでスナップショットを使用して環境をバックアップするための基本について説明します。
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 878a49fd1bbfa98dd506f0e81008ebe3bf7ecaca
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1173'
 ht-degree: 0%
-
 ---
-
 # クラウドでのバックアップ（スナップショット）:FAQ
 
 この記事では、クラウドインフラストラクチャ上のAdobe Commerceでスナップショットを使用して環境をバックアップする方法について説明します。
@@ -90,4 +99,4 @@ DB バックアップは、クラウドスナップショットの一部です�
 
 開発者ドキュメントの[&#x200B; スナップショットとバックアップ管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)。
 
-Only submit a [support request](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) for a DB snapshot from Pro Production and Staging if you need the DB from a specific point in time. If you need a current backup of your DB only (on any environment), see the knowledge base article: [Generate database dumps on Cloud](/help/how-to/general/create-database-dump-on-cloud.md).
+特定の時点からDBが必要な場合にのみ、Pro実稼動環境およびステージング環境からDB スナップショットの[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を送信してください。 （任意の環境で）現在のDBのバックアップのみが必要な場合は、ナレッジベースの記事「[&#x200B; クラウドでデータベースダンプを生成](/help/how-to/general/create-database-dump-on-cloud.md)」を参照してください。

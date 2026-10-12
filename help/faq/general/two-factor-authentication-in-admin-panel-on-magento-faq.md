@@ -1,15 +1,24 @@
 ---
 title: Adobe Commerceの管理パネルでの2要素認証に関するFAQ
-description: ​1. ** 管理パネルの2要素認証とは何ですか？ 変更された点？**2要素認証（2FA）は、IDを検証するためのセキュリティの追加レイヤーであり、誰かがパスワードを知っている場合でも、管理者アカウントにアクセスできるのは自分だけです。 Adobeでは、2.3.0のCommerce管理パネルで2FAのサポートを追加し、管理者アカウントを不正アクセスから保護しました。 2.4.0では、2FAはAdmin Panelでデフォルトで有効になっており、UIまたはweb APIを使用してAdminにログインする前に設定する必要があります。 Adobeでは、2FA モジュールを無効にしないことを強くお勧めします。
+description: 1. ** 管理パネルの2要素認証とは何ですか？ 変更された点？**2要素認証（2FA）は、IDを検証するためのセキュリティの追加レイヤーであり、誰かがパスワードを知っている場合でも、管理者アカウントにアクセスできるのは自分だけです。 Adobeでは、2.3.0のCommerce管理パネルで2FAのサポートを追加し、管理者アカウントを不正アクセスから保護しました。 2.4.0では、2FAはAdmin Panelでデフォルトで有効になっており、UIまたはweb APIを使用してAdminにログインする前に設定する必要があります。 Adobeでは、2FA モジュールを無効にしないことを強くお勧めします。
 exl-id: 77b57c11-fcde-4bc6-814e-45fa990cc491
 feature: Admin Workspace, Best Practices
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceの管理パネルでの2要素認証に関するFAQ
 
 1. **管理者パネルの2要素認証とは何ですか？ 何が変更されましたか？** 2要素認証（2FA）は、IDを検証するための追加のセキュリティレイヤーであり、誰かがパスワードを知っていても、管理者アカウントにアクセスできるのは自分だけです。 Adobeでは、2.3.0のCommerce管理パネルで2FAのサポートを追加し、管理者アカウントを不正アクセスから保護しました。 2.4.0では、2FAはAdmin Panelでデフォルトで有効になっており、UIまたはweb APIを使用してAdminにログインする前に設定する必要があります。 Adobeでは、2FA モジュールを無効にしないことを強くお勧めします。

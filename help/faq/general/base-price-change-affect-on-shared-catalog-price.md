@@ -3,13 +3,17 @@ title: 基準価格の変更は共有カタログ価格に影響します
 description: この記事では、「共有カタログ内の商品にカスタム価格があり、商品の基本価格が変更された場合（スケジュールされた更新後など）、共有カタログにはどの価格が適用されますか？」という質問に答えます。
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
-
 ---
-
 # 基準価格の変更は共有カタログ価格に影響します
 
 この記事では、「共有カタログ内の商品にカスタム価格があり、商品の基本価格が変更された場合（スケジュールされた更新後など）、共有カタログにはどの価格が適用されますか？」という質問に答えます。

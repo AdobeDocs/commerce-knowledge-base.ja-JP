@@ -1,52 +1,58 @@
 ---
-title: クラウド上のAdobe Commerce用に MariaDB を 10.4 から 10.5 にアップグレード
-description: MariaDB 10.4 は 2024 年 6 月 18 日（PT）にサポートを終了します。 この記事では、MariaDB を 10.4 から 10.5 にアップグレードして、クラウドインフラストラクチャで引き続きAdobe Commerceを使用する方法について説明します。
+title: Adobe Commerce クラウド版のMariaDB 10.4から10.5へのアップグレード
+description: MariaDB 10.4は2024年6月18日にサポート終了となります。 この記事では、Adobe Commerce on cloud infrastructureを引き続き使用するために、MariaDBを10.4から10.5にアップグレードする方法について説明します。
 feature: Best Practices, Cloud
 exl-id: 065840b8-28c1-4686-95fc-df3e73152845
-source-git-commit: 70c2421cb28b45f82ab7c0568c6a45b9572897df
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '696'
 ht-degree: 0%
-
 ---
+# Adobe Commerce クラウド版のMariaDB 10.4から10.5へのアップグレード
 
-# クラウド上のAdobe Commerce用に MariaDB を 10.4 から 10.5 にアップグレード
+MariaDBは、Adobe Commerceで使用されるエンタープライズオープンソースデータベースです。
 
-MariaDB は、Adobe Commerceで使用されるエンタープライズオープンソースデータベースです。
-
-MariaDB 10.4 は [2024 年 6 月 18 日（PT） &#x200B;](https://endoflife.date/mariadb) にサポート終了となります。 サポートされていないバージョンの MariaDB を使用している場合、PCI に準拠していません。 この記事では、MariaDB 10.4 から 10.5 にアップグレードして、クラウドインフラストラクチャで引き続きAdobe Commerceを使用する方法について説明します。
+MariaDB 10.4は、[2024年6月18日](https://endoflife.date/mariadb)にサポート終了に達しました。 サポートされていないバージョンのMariaDBを使用している場合、PCIに準拠しなくなりました。 この記事では、Adobe Commerce on cloud infrastructureを引き続き使用するために、MariaDB 10.4から10.5にアップグレードする方法について説明します。
 
 >[!NOTE]
 >
->MariaDB 10.4 が提供終了（EOL）になると、現在のAdobe Commerce バージョンではサポートされなくなります。 すべての提供終了バージョンは、提供終了から 30 日以内に廃止することをお勧めします。
+>MariaDB 10.4が提供終了（EOL）に達すると、現在のAdobe Commerce版ではサポートされなくなります。 EOLから30日以内にEOL バージョンを削除することをお勧めします。
 
 ## 影響を受ける製品とバージョン
 
-* すべてのAdobe Commerce オンプレミスおよびオンクラウドインフラストラクチャ 2.4.4 および 2.4.5
+* すべてのAdobe Commerce オンプレミスおよびクラウドインフラストラクチャ 2.4.4および2.4.5
 
-## 解決策
+## Solution
 
-2024 年 6 月 11 日（PT）にリリースされる新しいセキュリティ専用パッチ（2.4.4-p9 または 2.4.5-p8）を採用して、MariaDB 10.5 との互換性を確保します。次に、以下の手順に従って MariaDB 10.4 から 10.5 にアップグレードします。
+MariaDB 10.5との互換性を確保するために、2024年6月11日にリリースされる新しいセキュリティ専用パッチ（2.4.4-p9または2.4.5-p8）を採用します。 次に、以下の手順に従って、MariaDB 10.4から10.5にアップグレードします。
 
-### クラウドデプロイメントのアップグレード手順
+### クラウド デプロイメントのアップグレード手順
 
-1. ECE-Tools DB backup コマンドを使用して [DB バックアップを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) ます。 テーブル/行の更新中に問題が発生した場合は、手順 2 および 3 の前に、このバックアップを行う必要があります。
-1. [&#x200B; すべてのコンパクトテーブルを確認して動的テーブルに変換する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)。 この手順は、データベースのアップグレード中にデータが失われる可能性を回避するために必要です。
-1. MYISAM テーブルを確認します。 [&#x200B; すべての MyISAM テーブルを InnoD に変換する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud) 必要があります。
-1. データベーステーブルと行の準備（前の 2 つの手順）が完了したら、[ECE-Tools DB backup コマンドを使用して DB バックアップを作成します &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)。
-1. [&#x200B; サポートチケットを開く &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) と、MariaDB 10.4 から 10.5 へのアップグレードのスケジュールを設定できます。チケットで、DB をアップグレードする日時を詳しく指定します。 サポートチームは 48 時間前に通知を受ける必要があり、マーチャントの開発チームは対応している必要があります。 アップグレードの日時について合意したら、次の手順を実行します。
-   1. サイトをメンテナンスモードにして、DB アクティビティ（cron など）を停止します。
-   1. ECE-Tools DB backup コマンドを使用して [DB バックアップを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) ます。
-   1. サポートチケットを使用してバックアップを完了したことをサポートに連絡します。 チケットの表示およびトラッキング手順については、サポートナレッジベースの [Adobe Commerce ヘルプセンターユーザーガイド：チケットのトラッキング &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) を参照してください。
-   1. 次に、Adobe Commerce サポートチームは、MariaDB のアップグレードプロセスを開始します。 上記の手順がすべて実行され、データベースが平均サイズの場合、プロセスには約 1 時間かかります。 DB が大きいほど時間がかかります。 アップグレードが完了すると、チケットに関する情報が表示されます。
-1. メンテナンスモードを無効にします。 開発者向けドキュメントの [&#x200B; メンテナンスモードの有効化または無効化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。
+1. ECE-Tools DB backup コマンド [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)を使用してDB バックアップを作成します。 このバックアップは、テーブル/行の更新中に何か問題が発生した場合に備えて、手順2と3の前に実行する必要があります。
+1. [すべてのコンパクト テーブルをチェックして動的テーブルに変換します](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)。 この手順は、データベースのアップグレード中にデータが失われる可能性を回避するために必要です。
+1. MYISAM テーブルを確認します。 すべてのMyISAM テーブルを[InnoD](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud)に変換する必要があります。
+1. データベースのテーブルと行（前の2つの手順）を準備したら、ECE-Tools DB バックアップ コマンド [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)を使用してDB バックアップを作成します。
+1. [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を開いて、MariaDB 10.4から10.5へのアップグレードをスケジュールします。 チケットで、DBをアップグレードする日時を詳細に指定します。 サポートチームには48時間前の通知が必要であり、マーチャントの開発チームには連絡できる必要があります。 アップグレードの日時を決定したら、次の操作を行います。
+   1. サイトをメンテナンスモードにし、cronsなどのDB アクティビティを停止します。
+   1. ECE-Tools DB backup コマンド [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)を使用してDB バックアップを作成します。
+   1. サポートチケットを使用してバックアップが完了したことをサポートにお知らせください。 チケットの表示とトラッキングの手順については、サポートナレッジベースの「[Adobe Commerce ヘルプセンターのユーザーガイド：チケットのトラッキング &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets)」を参照してください。
+   1. その後、Adobe Commerce サポートチームはMariaDB アップグレードプロセスを開始します。 上記のすべての手順が実行され、データベースが平均サイズの場合、プロセスには約1時間かかります。 DBが大きいほど時間がかかります。 アップグレードが完了すると、チケットを通じて通知されます。
+1. メンテナンスモードを無効にします。 開発者ドキュメントの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)を参照してください。
 
 >[!NOTE]
 >
->データが失われる可能性を排除するために、アップグレード手順の前後に DB バックアップを作成することをお勧めします。 これにより、バージョンのアップグレード中に問題が発生した場合に、前の手順にロールバックできます。
+>データ損失の可能性を排除するために、アップグレード手順の前後にDB バックアップを作成することをお勧めします。 これにより、バージョンのアップグレード中に問題が発生した場合は、前の手順にロールバックできます。
 
-## 関連資料
+## 関連トピックス
 
-* オンプレミスデプロイメントの [DB アップグレードのベストプラクティスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/prerequisites)。
-* [MariaDB のアップグレードの前提条件：実装プレイブックのアップグレード用のデータベースを準備します &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade#prepare-your-database-for-the-upgrade)。
-* 開発者向けドキュメントの [0&rbrace;Adobe Commerce ライフサイクルポリシー &rbrace;。](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)
+* オンプレミスのデプロイメントに関する[DB アップグレードのベストプラクティス ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/prerequisites)。
+* [MariaDBのアップグレードの前提条件：実装プレイブックのアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade#prepare-your-database-for-the-upgrade)用にデータベースを準備します。
+* 開発者向けドキュメントの[Adobe Commerce ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。

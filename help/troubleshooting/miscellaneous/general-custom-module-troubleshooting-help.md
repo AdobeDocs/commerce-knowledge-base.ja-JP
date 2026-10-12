@@ -4,13 +4,23 @@ description: この記事では、Adobe Commerceのカスタムモジュール�
 exl-id: c6603a2b-dc98-4022-ab29-c081c2b07415
 feature: Extensions
 role: Developer
-source-git-commit: ae2a4508daeaf2d29a5f615918fcc46626b2e196
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '453'
 ht-degree: 0%
-
 ---
-
 # 一般的なカスタムモジュールのトラブルシューティングのヘルプ
 
 この記事では、Adobe Commerceのカスタムモジュールのトラブルシューティングに役立つ一般的なツールについて説明します。
@@ -41,10 +51,10 @@ ht-degree: 0%
 
 アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [&#x200B; モジュールの概要](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [&#x200B; オプションのサンプルデータのインストール中にエラーが発生しました](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [モジュールの概要](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [オプションのサンプルデータのインストール中にエラーが発生する](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
 * [例外処理](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
-* [&#x200B; インストール中に例外が発生しました](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
-* [&#x200B; モジュールマネージャーを実行](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
-* [&#x200B; モジュール設定ファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/module-files)
-* [&#x200B; メモリ不足エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)
+* [インストール時の例外](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [モジュールマネージャーの実行](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [モジュール設定ファイル](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/module-files)
+* [メモリ不足エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)

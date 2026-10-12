@@ -2,13 +2,14 @@
 title: サポートエージェントから要求された場合に「スクラブ」ダンプを作成する方法
 description: この記事では、Adobe Commerce サポートエージェントから提供を依頼された場合に、Adobe Commerce管理者からデータベースの「スクラブ」ダンプ（バックアップ）とコードを作成する方法について説明します。 このダンプは、メディアファイルを除外して、プロセスを高速化し、ファイルを大幅に小さくします。 データベースのバックアップを作成する際に、すべての機密データがハッシュ化されます。
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
-
 ---
-
 # サポートエージェントから要求された場合に「スクラブ」ダンプを作成する方法
 
 

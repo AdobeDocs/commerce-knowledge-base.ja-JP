@@ -1,38 +1,41 @@
 ---
-source-git-commit: c587986edc925c49bf95ab935888b59f265371af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '611'
 ht-degree: 0%
-
 ---
-# KB 形式ガイド
 
-## Markdown での作成者
+# KB形式ガイド
 
-通常、[Adobe Experience League Markdown 構文スタイルガイド &#x200B;](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=ja) を使用しますが、いくつかの違いがあり、例外があります。 また、場合によっては、特定のHTMLタグが必要です。
+## Markdownでのオーサー
 
-リポジトリーで最も一般的に使用される Markdown フォーマットの例を以下に示します。
+通常、[Adobe Experience League Markdown構文スタイルガイド &#x200B;](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en)を使用しますが、いくつかの違いや例外があります。 また、特定のケースでは、特定のHTML タグが必要になります。
 
-## 基本的な書式設定
+次に、当社のリポジトリで最もよく使用されるMarkdown形式の例を示します。
 
-テキストを太字にするには、次の 2 つのアスタリスクで囲みます。
+## 基本書式設定
+
+テキストを太字で書式設定するには、次の2つのアスタリスク記号で囲みます。
 
 `This will be **bold** text`
 
-テキストを斜体として書式設定するには、アスタリスクを 1 つ使用します。
+テキストを斜体として書式設定するには、1つのアスタリスクを使用します。
 
 `This text will be *italics*`
 
-テキストを下線付きとして書式設定するには、`<ins>` のタグを使用します。
+下線付きのテキストを書式設定するには、`<ins>` タグを使用します。
 
 `<ins>This text will be underlined</ins>`
 
-改行を追加するには、`<br>` のHTMLタグを使用します。
+改行を追加するには、`<br>` HTML タグを使用します。
 
 
 ## ヘッダー
 
-H2 から H5 のヘッダーには、次の書式を使用します。 記事のタイトルが H1 と見なされるので、H1 は使用されません。
+H2からH5までのヘッダーには、次の書式設定を使用します。 記事タイトルはH1と見なされるため、H1は使用されません。
 
 `## Header 2 `
 
@@ -42,27 +45,27 @@ H2 から H5 のヘッダーには、次の書式を使用します。 記事の
 
 `##### Header 5`
 
-## コードをインラインおよびブロック化
+## インラインおよびブロックのコード
 
-ハイライトするコード要素を囲むために、バッククォートを 1 つ使用します。
+1つのバックティックを使用して、ハイライトするコード要素を囲みます。
 
-これはテキストの段落内の\&#39;インラインコード\&#39;です。
+これは、テキストの段落内の\&#39;インラインコード\&#39;です。
 
 ### コードブロック
 
-コードブロックを挿入するには、コードブロックを 3 つのバッククォートで囲み、3 つのバッククォートを開いた後で言語を指定します。
+コードブロックを挿入するには、コードブロックを3つのバックティックで囲み、3つのバックティックを開いた後に言語を指定します。
 
 \&#39;\&#39;\&#39; sql
 
-TABLE_NAME を `Table` として選択します。
+SELECT TABLE_NAME AS `Table`,
 ROUND （（DATA_LENGTH + INDEX_LENGTH） / 1024 / 1024） AS `Size (MB)`
 FROM information_schema.TABLES
-TABLE_SCHEMA = &quot;%project_id%&quot;
-（DATA_LENGTH + INDEX_LENGTH）降順；
+WHERE TABLE_SCHEMA = &quot;%project_id%&quot;
+ORDER BY （DATA_LENGTH + INDEX_LENGTH） DESC;
 
 \&#39;\&#39;\&#39;
 
-これは、次のようにレンダリングされます。
+これは次のようにレンダリングされます。
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
@@ -74,9 +77,9 @@ ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 リンティングルールに従って、コードブロックの言語を常に指定する必要があります。
 
-サポートされる言語の一覧は、https://github.com/github/linguist/blob/master/lib/linguist/languages.ymlを参照してください。
+サポートされている言語の一覧については、https://github.com/github/linguist/blob/master/lib/linguist/languages.ymlを参照してください。
 
-Markdown で特定の言語がハイライト表示されない場合（つまり言語がサポートされていない場合）、https://support.magento.com/hc/en-us/に公開したときに少なくともハイライト表示されるようにするには、次のHTMLを使用します。
+マークダウンの特定の言語でハイライト表示が機能しない場合（つまり、言語がサポートされていない場合）、https://support.magento.com/hc/en-us/に公開するときに少なくともハイライト表示するには、次のHTMLを使用します。
 
 ```html
 <pre><code class="language-%language-code%"
@@ -84,13 +87,13 @@ your code here
 </pre></code>
 ```
 
-ここで、``%language-code%`` は [Prism.js でサポートされる言語 &#x200B;](https://prismjs.com/#supported-languages) で定義されるコードです。
+ここで、``%language-code%``は、[Prism.jsがサポートする言語](https://prismjs.com/#supported-languages)によって定義されたコードです。
 
-## リスト
+## Lists
 
-リストは、常に空白行でコンテンツの残りの部分から分離します。 リストの先頭および後には空白行を付ける必要があります。
+リストは常に空白行で他のコンテンツから分離します。 リストの先頭に空白行を付ける必要があります。
 
-順序付きリストには次の書式を使用します。
+順序付きリストには、次の書式設定を使用します。
 
 ```markdown
 1. First numbered list item.
@@ -99,7 +102,7 @@ your code here
 1. Last numbered list item.
 ```
 
-順序なし箇条書きリストを作成するには、行を*、+または – で始めます。 ただし、1 つの方法を選択し、記事全体を通して一貫して使用します。
+順序なし箇条書きリストを作成するには、*、+、-.で行を始めます。 しかし、1つの方法を選択し、記事を通して一貫して使用してください。
 
 例：
 
@@ -110,7 +113,7 @@ your code here
 * Last unordered list item.
 ```
 
-リスト項目間にコンテンツを追加するには、行の先頭に 4 つのスペースを追加します。
+リスト項目間にコンテンツを追加するには、行の先頭に4つのスペースを追加します。
 
 ```markdown
 * List item.
@@ -131,15 +134,15 @@ your code here
 
 ### 添付ファイルへのリンク
 
-あらゆる種類の添付ファイルは、.png、.jpg および.jpeg 形式である必要があります。 セキュリティ上の目的で、3 つの形式のいずれかの添付ファイルのみを受け入れます。
+あらゆる添付ファイルは、.png、.jpg、および.jpeg形式である必要があります。 セキュリティ上の理由から、3つの形式の添付ファイルのみを受け付けます。
 
-画像を挿入するには、画像を記事と同じセクションフォルダーの *assets* サブフォルダーに配置し、次の構文を使用して画像を記事に挿入します。
+画像を挿入するには、記事と同じセクション フォルダーの&#x200B;*assets* サブフォルダーに画像を配置し、次の構文を使用して画像を記事に挿入します。
 
 ```markdown
 ![alt text](assets/image.png)
 ```
 
-画像のサイズをカスタマイズする場合は、次のHTMLタグを使用する必要があります。
+画像のサイズをカスタマイズする場合は、次のHTML タグを使用して設定する必要があります。
 
 ```html
 <img src = "assets/image.png" alt = "your alt text" width="custom width, ex: 250px">
@@ -151,7 +154,7 @@ your code here
 
 ### 記事の特定のセクションへのリンク
 
-記事内のセクションを参照する必要がある場合は、別のアンカーを作成する必要はありません。 すべての H2～H6 見出しの公開時に自動的に生成されます。 アンカーは、すべての単語を小文字にし、単語を区切るために「–」を使用することによって、ヘッダーから生成されます。
+アーティクル内のセクションを参照する必要がある場合は、別のアンカーを作成する必要はありません。 H2～H6の各見出しに対して、公開時に自動的に生成されます。 アンカーは、すべての単語を小文字にし、「 – 」を使用して単語を区切ることで、ヘッダーから生成されます。
 
 例：
 
@@ -159,28 +162,28 @@ your code here
 ## This is header
 ```
 
-このヘッダーへのリンクは次のとおりです。
+このヘッダーへのリンクです：
 
 ```markdown
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-header 以外の要素を参照する必要がある場合は、HTMLを使用して、追加する要素を定義し、[id 属性 &#x200B;](https://www.w3schools.com/html/html_id.asp) を使用します。 その後、Markdown またはHTMLを使用して、この ID を参照できます。
+header以外の要素を参照する必要がある場合は、HTMLを使用して要素を定義し、[id属性](https://www.w3schools.com/html/html_id.asp)を使用します。 その後、MarkdownまたはHTMLを使用して、このIDを参照できます。
 
 ### 他の記事への相対リンクとリンク
 
-サポートナレッジベースの記事を参照するために相対リンクを使用しないでください。 記事が [Adobe Commerce ヘルプセンター &#x200B;](https://support.magento.com/hc/en-us) で公開されると、これらのリンクは機能しません。
-[Adobe Commerce ヘルプ センター &#x200B;](https://support.magento.com/hc/en-us) のハイパーリンクをすべて使用してください。
+サポートナレッジベース記事を参照する際は、相対リンクを使用しないでください。 これらのリンクは、[Adobe Commerce ヘルプセンター](https://support.magento.com/hc/en-us)で記事が公開される際には機能しません。
+[Adobe Commerce ヘルプセンター](https://support.magento.com/hc/en-us)の完全なハイパーリンクを使用してください。
 
 
-## テーブル
+## 表
 
-テーブルには [HTML形式を使用 &#x200B;](https://www.w3schools.com/html/html_tables.asp) ます。
+テーブル [&#128279;](https://www.w3schools.com/html/html_tables.asp)にHTML形式を使用します。
 
 
-## 警告および情報ブロック
+## 警告と情報ブロック
 
-成功メモ ブロック：
+成功メモブロック：
 
 ```
 >![success]

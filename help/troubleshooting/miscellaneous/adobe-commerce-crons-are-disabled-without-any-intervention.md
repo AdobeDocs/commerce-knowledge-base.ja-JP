@@ -1,14 +1,15 @@
 ---
-title: Adobe Commerce [!DNL crons] は操作なしでは無効になっています
-description: この記事を使用して、介入なしで [!DNL crons] が無効になる問題を修正します。
+title: Adobe Commerce [!DNL crons]は操作なしでは無効になっています
+description: この記事を使用して、介入なしで[!DNL crons]が無効になる問題を修正します。
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
-source-git-commit: 6bff1d7a0578ceb8ea17dff347b1bcd4f0068e7a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce cronsを操作せずに無効にする
 
 この記事では、[!DNL crons]が介入せずに無効になっている場合の解決策を紹介します。

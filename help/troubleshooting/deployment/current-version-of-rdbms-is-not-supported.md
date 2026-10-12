@@ -1,56 +1,63 @@
 ---
-title: デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー
-description: この記事では、デプロイメントが失敗し、デプロイログに「現在のバージョンの RDBMS はサポートされていません」というエラーが記録されている場合の解決策を説明します。
+title: デプロイメント時の「現在のバージョンのRDBMSはサポートされていません」エラー
+description: この記事では、デプロイメントが失敗し、デプロイログに次のエラーが発生した場合の解決策を示します。*現在のバージョンのRDBMSはサポートされていません*。
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '331'
 ht-degree: 0%
-
 ---
+# デプロイメント時の「現在のバージョンのRDBMSはサポートされていません」エラー
 
-# デプロイメント時の「現在のバージョンの RDBMS はサポートされていません」エラー
-
-この記事では、デプロイが失敗し、デプロイログに *現在のバージョンの RDBMS はサポートされていません* というエラーが発生した場合の解決策を説明します。
+この記事では、デプロイメントが失敗し、デプロイログに次のエラーが発生した場合の解決策を示します。*現在のバージョンのRDBMSはサポートされていません*。
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー上のAdobe Commerce, 2.3.0-2.3.7-p1, 2.4.0-2.4.3.
+Adobe Commerce on cloud infrastructure, 2.3.0-2.3.7-p1, 2.4.0-2.4.3.
 
-## 問題
+## イシュー
 
-このエラーメッセージは、現在の MariaDB のバージョンは、アップグレード先のAdobe Commerceのバージョンではサポートされなくなっており、MariaDB を互換性のあるバージョンにアップグレードする必要があることを示しています。
+このエラーメッセージは、現在のMariaDB バージョンがアップグレードしようとしているAdobe Commerce バージョンでサポートされなくなり、MariaDBを互換性のあるバージョンにアップグレードする必要があることを意味します。
 
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-デプロイを試みます。
+展開を試みます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-正常なデプロイメント。
+デプロイメントの成功：
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-デプロイメントが失敗し、次のエラーメッセージが表示されます。*現在のバージョンの RDBMS はサポートされていません*。
+デプロイメントが失敗し、エラーメッセージが表示されます：*現在のバージョンのRDBMSはサポートされていません*。
 
-## 原因：
+## 原因
 
-お使いの MariaDB のバージョンは、アップグレードしようとしているAdobe Commerceのバージョンと互換性がありません。
+お使いのバージョンのMariaDBは、アップグレードしようとしているAdobe Commerceのバージョンと互換性がありません。
 
-## 解決策
+## Solution
 
 アプリケーションをアップグレードする前に、MariaDB サービスを互換性のあるバージョンにアップグレードする必要があります。
 
 
-クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの統合ブランチ（およびスターターアーキテクチャのすべてのブランチ）については、開発者向けドキュメントの [&#x200B; サービスを設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) に従ってください。
+Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ（およびスターターアーキテクチャのすべてのブランチ）の統合ブランチについては、開発者ドキュメントの[Configure Service](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/services-yaml)に従ってください。
 
-Adobe Commerce on cloud infrastructure Pro プランアーキテクチャのステージングと実稼働については、Adobe Commerce バージョンのアップグレードをデプロイする前に [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) してサービスのアップグレードをリクエストしてください。
+Adobe Commerce on cloud infrastructure Pro プランのアーキテクチャのステージングと実稼動については、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、Adobe Commerce バージョンのアップグレードをデプロイする前にサービスのアップグレードをリクエストしてください。
 
 
-## 関連資料
+## 関連トピックス
 
-* 開発者向けドキュメントの [&#x200B; ビルドとデプロイメントのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)。
-* [Adobe Commerce 2.3.5 へのアップグレード：動的テーブルにコンパクト化 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=ja) サポート情報ベースで行います。
+* ビルドとデプロイメントに関する[&#x200B; ベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)をご覧ください。
+* [Adobe Commerce 2.3.5 アップグレード：サポート情報ベースの動的テーブル &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=ja)へのコンパクト化。

@@ -4,13 +4,27 @@ description: この記事では、クラウドアカウントのプロファイ�
 feature: Cloud, Support
 role: Admin, Developer
 exl-id: b0c9dbcf-9745-494d-a662-80c5c6378068
-source-git-commit: bc8dbb1b43c3f2ad8f2ac214fd303f6a4d3e3412
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 0%
-
+source-wordcount: '256'
+ht-degree: 1%
 ---
-
 # クラウドアカウントプロファイルの更新方法
 
 この記事では、クラウドアカウントのプロファイルを変更する手順を説明します。

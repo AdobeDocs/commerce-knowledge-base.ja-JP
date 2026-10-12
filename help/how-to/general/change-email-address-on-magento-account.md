@@ -3,16 +3,20 @@ title: フィールドがグレー表示されている場合にmagento.com ア�
 description: この記事では、[Magento.com] （https://account.magento.com） アカウントのメールアドレスを変更する方法について説明します。
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # フィールドがグレー表示されているときにmagento.com アカウントのメールアドレスを変更するにはどうすればよいですか？
 
-この記事では、次のような状況でフィールドがグレー表示された場合に、[Magento.com](https://account.magento.com) アカウントのメールアドレスを変更する方法について説明します。
+この記事では、次のような状況でフィールドがグレー表示されている場合に、[Magento.com](https://account.magento.com) アカウントのメールアドレスを変更する方法について説明します。
 
 * ユーザーが退職した場合：
 * 会社が新しいメールドメインに移行しました。
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 ## 原因
 
-[Magento.com](https://account.magento.com) アカウントの電子メールアドレスは、<https://account.adobe.com>にAdobe アカウントにリンクされているため、そこで更新する必要があります。
+お客様の[Magento.com](https://account.magento.com) アカウントの電子メールアドレスは、<https://account.adobe.com>のAdobe アカウントにリンクされているため、そこで更新する必要があります。
 
 ## メールアドレスの変更手順
 

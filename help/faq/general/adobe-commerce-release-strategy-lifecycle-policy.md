@@ -1,15 +1,19 @@
 ---
 title: 2024年および2023年のAdobe Commerce リリース戦略とライフサイクルポリシーに関するFAQ
-description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4以降のバージョンのサポートウィンドウを、バージョン  [!DNL GA] 日から**3年に拡大し**います。 サポートには**セキュリティパッチと品質パッチの両方が含**れます。 タイミングの詳細については、新しい[ リリースカレンダー] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja）を参照してください。
+description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4以降のバージョンのサポートウィンドウを、バージョン [!DNL GA]日から**3年に拡大し**います。 サポートには**セキュリティパッチと品質パッチの両方が含**れます。 タイミングの詳細については、新しい[ リリースカレンダー] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja）を参照してください。
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
-source-git-commit: 68587ca3e861ef326e006a7ab086d197f37ae9b3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1293'
 ht-degree: 1%
-
 ---
-
 # 2024年および2023年のAdobe Commerce リリース戦略とライフサイクルポリシーに関するFAQ
 
 ## 2024および2023年リリース戦略と更新されたライフサイクルポリシー

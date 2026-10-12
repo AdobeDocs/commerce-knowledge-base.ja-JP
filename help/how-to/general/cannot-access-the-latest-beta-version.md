@@ -2,13 +2,14 @@
 title: 最新のBeta バージョンにアクセスできない
 description: この記事では、最新のBeta バージョンのAdobe Commerce用コードを利用する際の問題に対する解決策を提供します。 Beta コードは、[Adobe Beta プログラム ] （https://github.com/magento/magento2/wiki/Magento-Beta-Program）に記載されているプロセスに従っている公式のAdobe Commerce パートナーでのみ使用できます。
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
-
 ---
-
 # 最新のBeta バージョンにアクセスできない
 
 この記事では、最新のBeta バージョンのAdobe Commerce用コードを利用する際の問題に対する解決策を提供します。 Beta コードは、[Adobe Beta プログラム &#x200B;](https://github.com/magento/magento2/wiki/Magento-Beta-Program)に記載されているプロセスに従った公式のAdobe Commerce パートナーでのみ使用できます。

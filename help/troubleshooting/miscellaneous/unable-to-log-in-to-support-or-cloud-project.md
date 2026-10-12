@@ -4,13 +4,22 @@ description: この記事では、Adobe Commerce サポートまたはクラウ�
 exl-id: 676b32d2-8197-4c60-a1b1-3c51b01dd3a3
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce サポートまたはクラウドアカウントにログインできない
 
 この記事では、Adobe Commerce サポートまたはクラウドプロジェクトにログインするのに苦慮している場合の解決策を提供します。

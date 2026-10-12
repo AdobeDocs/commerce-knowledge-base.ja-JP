@@ -4,13 +4,20 @@ description: この記事では、Adobe Commerce 2.1以降で、Commerce Admin�
 exl-id: 62d16d3c-7f4b-45e9-ae4b-fe2b58cc3620
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
-
 ---
-
 # 無効なオフセットエラーを解決する
 
 この記事では、Adobe Commerce 2.1以降で、Commerce Adminで新しい商品を作成する際に「無効なオフセットを解決する」エラーが表示される場合の解決策を紹介します。

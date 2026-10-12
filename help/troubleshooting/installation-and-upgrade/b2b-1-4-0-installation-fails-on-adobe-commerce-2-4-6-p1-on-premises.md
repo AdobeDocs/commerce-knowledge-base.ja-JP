@@ -1,19 +1,33 @@
 ---
-title: 「Adobe Commerce 2.4.6-p1 オンプレミスで [!DNL B2B] 1.4.0 のインストールが失敗する」
-description: この記事では、バージョン 1.4.0 のインストールに失敗したオンプレミス環境のAdobe Commerce 2 [!DNL B2B] 4.6-p1 の問題の回避策を提供します。
+title: Adobe Commerce 2.4.6-p1 オンプレミスでの[!DNL B2B] 1.4.0のインストールが失敗する
+description: この記事では、[!DNL B2B] バージョン 1.4.0のインストールが失敗するAdobe Commerce 2.4.6-p1 オンプレミスの問題に対する回避策について説明します。
 feature: Install, Upgrade, B2B
 role: Developer
 exl-id: 4a557c13-7ec2-4cfe-b86e-bb0d1a441658
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '196'
 ht-degree: 0%
-
 ---
+# Adobe Commerce 2.4.6-p1 オンプレミスでの[!DNL B2B] 1.4.0のインストールが失敗する
 
-# Adobe Commerce 2.4.6-p1 オンプレミスで [!DNL B2B] 1.4.0 のインストールが失敗する
-
-この記事では、バージョン 1.4.0 のインストールに失敗したオンプレミス環境のAdobe Commerce 2.4.6-p1[!DNL B2B] 問題の回避策を提供します。
+この記事では、[!DNL B2B] バージョン 1.4.0のインストールが失敗するAdobe Commerce 2.4.6-p1 オンプレミスの問題に対する回避策について説明します。
 
 ## 影響を受ける製品とバージョン
 
@@ -22,31 +36,31 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL B2B] バージョン 1.4.0 が **Adobe Commerce Cloud 2.4.6-p1** に正常にインストールされました。
+>[!DNL B2B] バージョン 1.4.0は、**Adobe Commerce Cloud 2.4.6-p1**&#x200B;に正常にインストールされました。
 
-## 問題
+## イシュー
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. Adobe Commerce 2.4.6-p1 をインストールします。
+1. Adobe Commerce 2.4.6-p1をインストールします。
 
    ```bash
    m2install.sh -s composer --ee -v 2.4.6-p1
    ```
 
-1. [!DNL B2B] バージョン 1.4.0 をインストールしてみます。
+1. [!DNL B2B] バージョン 1.4.0をインストールしてみてください。
 
    ```bash
    composer require magento/extension-b2b:1.4.0
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-[!DNL B2B] バージョン 1.4.0 がAdobe Commerce 2.4.6-p1 に正常にインストールされました。
+[!DNL B2B] バージョン 1.4.0がAdobe Commerce 2.4.6-p1に正常にインストールされました。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-インストールが失敗し、次のエラーが表示されます。
+インストールは次のエラーで失敗します。
 
 ```bash
 Your requirements could not be resolved to an installable set of packages.
@@ -61,9 +75,9 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## 回避策
 
-[stability tag](https://getcomposer.org/doc/04-schema.md#package-links) を含む [!DNL B2B] セキュリティパッケージの手動依存関係を追加して、Adobe Commerce 2.4.6-p1 に [!DNL B2B] バージョン 1.4.0 を正常にインストールまたはアップグレードした。
+[安定性タグ &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links)を持つ[!DNL B2B] セキュリティパッケージの手動による依存関係を追加することで、Adobe Commerce 2.4.6-p1上の[!DNL B2B] バージョン 1.4.0を正常にインストールまたはアップグレードしました。
 
-1. Adobe Commerce インストールディレクトリから、必要な依存関係を使用して `composer.json` を更新します。
+1. Adobe Commerce インストールディレクトリから、必要な依存関係で`composer.json`を更新します。
 
    ```bash
    composer require magento/module-re-captcha-company=1.0.3-beta1@beta magento/security-package-b2b=1.0.4-beta1@beta
@@ -92,7 +106,7 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
    No security vulnerability advisories found
    ```
 
-1. `composer.json` を更新して [!DNL B2B] バージョン 1.4.0 を追加します。
+1. `composer.json`を更新して、[!DNL B2B] バージョン 1.4.0を追加します。
 
    ```bash
    composer require magento/extension-b2b=1.4.0
@@ -112,7 +126,7 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
    No security vulnerability advisories found
    ```
 
-1. インストールまたはアップグレードのプロセスを完了します。
+1. インストールまたはアップグレードプロセスを完了します。
 
-   * [&#x200B; クラウドインフラストラ  [!DNL B2B]  チャへのインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html?lang=ja)
-   * [&#x200B; オンプレミスでのインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html?lang=ja)
+   * [クラウド インフラストラクチャへの [!DNL B2B] のインストール](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html?lang=ja)
+   * [オンプレミスのインストール](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html?lang=ja)

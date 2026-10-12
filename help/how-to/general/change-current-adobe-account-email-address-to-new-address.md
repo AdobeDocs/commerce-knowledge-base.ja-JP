@@ -3,13 +3,17 @@ title: 現在のAdobe アカウントのメールアドレスを変更する
 description: Adobe アカウントに登録されている現在の電子メールアドレスを、Adobe アカウントまたはMagento アカウントに登録されていない新しいアドレスに変更する方法について説明します。
 exl-id: ca549d38-0d62-4206-9727-0ed85b733dc3
 feature: Communications
-source-git-commit: 95d4507be9ac06a4cb3b1150000d7f9df30d35f8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # 現在のAdobe アカウントのメールアドレスを変更する
 
 この記事では、[Adobe アカウント &#x200B;](https://account.adobe.com/)に登録されている現在の電子メールアドレスを、[Adobe アカウント &#x200B;](https://account.adobe.com/)または[Magento アカウント &#x200B;](https://account.magento.com/)に現在登録されていない新しいアドレスに変更する方法について説明します。

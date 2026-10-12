@@ -1,21 +1,28 @@
 ---
 title: Adobe Commerce データベースの数値が範囲外です。「INT」から「BIGINT」
-description: この記事では、価格の変更、製品の削除や複製など、製品の更新を保存できない場合のソリューションを説明します。
+description: この記事では、価格の変更、削除、製品の複製など、製品の更新を保存できない場合の解決策を提供します。
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 2fa4ab1fcba962033a6dd6a448a6cec49b5e8bf2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '658'
 ht-degree: 0%
-
 ---
-
-# Adobe Commerce データベースの数値が範囲外です（`INT` ～ `BIGINT`）
+# Adobe Commerce データベースの数値が範囲外です。`INT` ～ `BIGINT`
 
 >[!WARNING]
 >
->この記事（スキーマの更新に `INT` る）のソリューションを実装す `BIGINT` 前に、マーチャントは、変更しようとしているフィールドに別のテーブルへの外部キー関係がないことを常に確認する必要があります。 フィールドに別のテーブルへの外部キー関係がある場合、関連するフィールドがまだ `INT` しいため、問題が発生します。 次のクエリを使用して、これを検証できます。 このクエリは、指定されたテーブル フィールドに対してデータベースで使用できる外部キー関係を一覧表示します。
+>この記事（`INT` ～ `BIGINT` スキーマの更新）のソリューションを実装する前に、マーチャントは常に、変更するフィールドが別のテーブルに対する外部キーの関係がないことを確認する必要があります。 フィールドに別のテーブルへの外部キーの関係がある場合、関連するフィールドがまだ`INT`であるため、問題が発生します。 次のクエリを使用して、これを検証できます。 このクエリは、特定のテーブルフィールドのデータベースで使用可能な外部キー関係をリストします。
 
 ```mysql
 SELECT 
@@ -30,40 +37,40 @@ WHERE
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce（すべてのデプロイメント方法）すべてのバージョン [&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce （すべてのデプロイメント方法）すべての[&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
-この記事では、価格の変更、製品の削除や複製など、製品の更新を保存できない場合のソリューションを説明します。
-「在庫項目を保存できませんでした *というエラーメッセージが表示される場合があります。 もう一度やり直してください。* 製品を更新した後、デプロイに失敗する場合があります。 [!DNL MySQL] を実行すると、次の `php bin/magento setup:upgrade` エラーメッセージが表示される場合もあります（クラウドインフラストラクチャ上のAdobe Commerceでは、このエラーがデプロイメントログに表示されます）。
+この記事では、価格の変更、削除、製品の複製など、製品の更新を保存できない場合の解決策を提供します。
+エラーメッセージ *在庫品目を保存できませんでした。 もう一度やり直してください。* 製品の更新後にデプロイできない場合があります。 `php bin/magento setup:upgrade`を実行すると、次の[!DNL MySQL] エラーメッセージが表示される場合もあります（Adobe Commerce on cloud infrastructureでは、このエラーがデプロイメントログに表示されます）。
 
 ```mysql
 SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column 'value_id' at row 1, query was: INSERT INTO `catalog_product_entity_decimal` (`attribute_id`,`store_id`,`row_id`,`value`) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `attribute_id` = VALUES(`attribute_id`), `store_id` = VALUES(`store_id`), `row_id` = VALUES(`row_id`), `value` = VALUES(`value`)
 ```
 
-この記事で説明する解決策は次のとおりです。
+記事に記載されている解決策は次のとおりです。
 
-* テーブルの次の値に `[ AUTO_INCREMENT ]` を更新する、または
-* `INT` から `BIGINT` スキーマの更新
+* `[ AUTO_INCREMENT ]`をテーブルから次の値に更新するか、または
+* `INT` ～ `BIGINT` スキーマの更新
 
-使用するソリューションは、問題の原因によって異なります。 原因を特定するには、次の手順を参照してください。
+どのソリューションを使用するかは、問題の原因によって異なります。 原因を特定するには、次の手順を参照してください。
 
 ## 原因を確認する手順
 
 
-ターミナルで次のコマンドを実行して、プライマリキーの最大値を確認します。`SELECT MAX(value_id) FROM catalog_product_entity_int;`
+ターミナルで次のコマンドを実行して、プライマリキーの最大値を確認します：`SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-`max(value_id)` が `max int(11) [ 4294967296 ]` よりも小さく、`[ AUTO_INCREMENT ]` の値が `max int(11) [ 4294967296 ]` 以上の場合は、[&#x200B; テーブルの次の値に `[ AUTO_INCREMENT ]` を更新する &#x200B;](#update-the-auto-increment-to-the-next-value-from-the-table) ことを検討してください。 それ以外の場合は、スキーマの更新 [`INT` の `BIGINT` を検討します &#x200B;](#int_to_bigint_schema_update)。
+`max(value_id)`が`max int(11) [ 4294967296 ]`より低く、`[ AUTO_INCREMENT ]`の値が`max int(11) [ 4294967296 ]`以上である場合は、[&#x200B; テーブルから次の値に`[ AUTO_INCREMENT ]`を更新することを検討してください](#update-the-auto-increment-to-the-next-value-from-the-table)。 それ以外は、[`INT`から`BIGINT` スキーマの更新](#int_to_bigint_schema_update)を検討してください。
 
-## `AUTO_INCREMENT` をテーブルの次の値に更新します {#update-the-auto-increment-to-the-next-value-from-the-table}
+## `AUTO_INCREMENT`をテーブルの次の値に更新します {#update-the-auto-increment-to-the-next-value-from-the-table}
 
 >[!WARNING]
 >
->テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを [&#x200B; メンテナンスモード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja#maintenance-mode) にします。 また、変更を加えた後で、データベーステーブルに対して（変更が加えられたテーブルに対してのみ） [!DNL MySQL] optimize コマンドを実行することもできます。
+>テーブルを変更する前に、データベースのバックアップを実行します。 また、サイトを[&#x200B; メンテナンスモード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja#maintenance-mode)にします。 さらに、変更を加えた後で、データベーステーブル（変更が行われたテーブルに対してのみ）で[!DNL MySQL] optimize コマンドを実行することをお勧めします。
 
 >[!NOTE]
 >
->特定のテーブルに対して optimize コマンドを実行している間は、サイトをメンテナンスモードにする必要があります。 これにより、テーブルが完全に再構築され、テーブルからデータが削除された後に領域が解放されます。
+>特定のテーブルでoptimize コマンドを実行している間、サイトはメンテナンスモードである必要があります。 これにより、テーブルが完全に再構築され、テーブルからデータを削除した後に空き容量が増えます。
 
-次の端子出力例に示すように、表示される値が `max int(11) [ 4294967296 ]` より小さい場合は、`[ AUTO_INCREMENT ]` の値より大きいか等しい数に変更され `max [ int(11) ]` テーブルよりも小さい値になります。
+次のターミナル出力の例に示すように、表示される値が`max int(11) [ 4294967296 ]`より小さい場合、テーブル `[ AUTO_INCREMENT ]`が`max [ int(11) ]`の値より大きい数値に変更されています。
 
 ```mariadb
 MariaDB [xxx]> SELECT MAX(value_id) FROM catalog_product_entity_int;
@@ -83,21 +90,21 @@ MariaDB [xxx]> show create table catalog_product_entity_int;
 ) ENGINE=InnoDB AUTO_INCREMENT=4294967297 DEFAULT CHARSET=utf8 COMMENT='Catalog Product Integer Attribute Backend Table';
 ```
 
-上記の例でわかるように、テーブル `[ AUTO_INCREMENT ]` が `max int(11) [ 4294967296 ]` よりも大きい数に変更されたことを出力します。 解決策は、テーブルの次の値に `[ AUTO_INCREMENT]` を更新することです。
+上記の例で示すように、テーブル `[ AUTO_INCREMENT ]`は`max int(11) [ 4294967296 ]`より大きな数に変更されました。 解決策は、`[ AUTO_INCREMENT]`をテーブルから次の値に更新することです。
 
 ```
 ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 ```
 
-## `INT` から `BIGINT` スキーマの更新 {#int_to_bigint_schema_update}
+## `INT` ～ `BIGINT` スキーマの更新 {#int_to_bigint_schema_update}
 
-ただし、次のクエリを実行する際に、表示され `SELECT MAX(value_id) FROM catalog_product_entity_int;` 値がを超える場合は、スキーマの更新を `max int(11) [ 4294967296 ]` 行 `INT` ることを検討してくだ `BIGINT` い。 データタイプ `BIGINT` には、より大きな値の範囲があります。
+ただし、次のクエリ `SELECT MAX(value_id) FROM catalog_product_entity_int;`を実行する場合、表示される値が`max int(11) [ 4294967296 ]`より大きい場合は、`INT` ～ `BIGINT` スキーマの更新を行うことを検討してください。 データ型`BIGINT`の値の範囲が広くなっています。
 
-それには、以下の手順を実行します。
+これを行うには：
 
 1. *app/code/* ディレクトリ内にカスタムモジュールを作成します。
-1. カスタムモジュールで、*db_schema.xml* を作成します。 *db_schema.xml では* データタイプを `BIGINT` に設定します。
-1. 次のコンテンツを追加し、`bin/magento setup:upgrade` を実行して、上記の変更を対応するテーブルに適用します。
+1. カスタムモジュールで、*db_schema.xml*&#x200B;を作成します。 *db_schema.xml*&#x200B;で、データタイプを`BIGINT`に設定します。
+1. 次の内容を追加してから`bin/magento setup:upgrade`を実行し、上記の変更を対応するテーブルに適用します。
 
 ```
 <?xml version="1.0"?>
@@ -110,9 +117,9 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 ```
 
 
-## 関連資料
+## 関連トピックス
 
-* Commerce インスト [&#x200B; ルガイドの  [!DNL MySQL]  一般的なガイドライン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=ja)
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=ja) に関するサポートナレッジベース
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceにおける最も一般的なデータベースの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=ja) については、サポートナレッジベースを参照してください
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce インストールガイドの[General [!DNL MySQL] guidelines](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=ja)
+* [&#x200B; クラウドインフラストラクチャ上のAdobe Commerceのデータベースに関する最も一般的な問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=ja) （サポートナレッジベース）
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

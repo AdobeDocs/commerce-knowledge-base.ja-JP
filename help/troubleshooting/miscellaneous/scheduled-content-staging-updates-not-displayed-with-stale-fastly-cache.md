@@ -1,50 +1,66 @@
 ---
-title: スケジュールされたコンテンツステージングの更新が、古い Fastly キャッシュで表示されない
-description: この記事では、コンテンツのステージングと Fastly を使用する際に、Adobe Commerce ストアにスケジュールされた更新が表示されない問題を修正します。 この問題は、デフォルトで Fastly ソフトパージが有効になっていることが原因です。 この機能により、アプリケーションのリソースの負荷が軽減され、2 回目のリクエストで新しいキャッシュのみが再生成されます。 これを解決するには、Commerce Admin で CMS ページをパージを有効にして、常に新規コンテンツを再生成および提供します。
+title: スケジュールされたコンテンツステージングの更新が、古いFastly キャッシュで表示されない
+description: この記事では、コンテンツステージングとFastlyを使用する際に、Adobe Commerce ストアでスケジュールされた更新が表示されない場合の修正点を紹介します。 この問題は、デフォルトで有効になっているFastly ソフトパージが原因です。 この機能は、アプリケーションリソースの負荷を軽減し、2番目のリクエストに対してのみ新しいキャッシュを再生成します。 この問題を解決するには、Commerce管理者からCMS ページのパージを有効にして、常に新しいコンテンツを再生成して提供できます。
 exl-id: becbffaa-b6dd-4e9b-894e-17901c40223a
 feature: CMS, Cache, Page Content, Staging
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '491'
 ht-degree: 0%
-
 ---
+# スケジュールされたコンテンツステージングの更新が、古いFastly キャッシュで表示されない
 
-# スケジュールされたコンテンツステージングの更新が、古い Fastly キャッシュで表示されない
+この記事では、コンテンツステージングとFastlyを使用する際に、Adobe Commerce ストアでスケジュールされた更新が表示されない場合の修正点を紹介します。 この問題は、デフォルトで有効になっているFastly ソフトパージが原因です。 この機能は、アプリケーションリソースの負荷を軽減し、2番目のリクエストに対してのみ新しいキャッシュを再生成します。 この問題を解決するには、Commerce管理者からCMS ページのパージを有効にして、常に新しいコンテンツを再生成して提供できます。
 
-この記事では、コンテンツのステージングと Fastly を使用する際に、Adobe Commerce ストアにスケジュールされた更新が表示されない問題を修正します。 この問題は、デフォルトで Fastly ソフトパージが有効になっていることが原因です。 この機能により、アプリケーションのリソースの負荷が軽減され、2 回目のリクエストで新しいキャッシュのみが再生成されます。 これを解決するには、Commerce Admin で CMS ページをパージを有効にして、常に新規コンテンツを再生成および提供します。
+## イシュー
 
-## 問題
+ストアコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新の開始時刻の直後にストアフロントに表示されません。 これは、[&#x200B; コンテンツ ステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)機能を使用して更新がスケジュールされた場合に発生します。
 
-ストアのコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新開始直後はストアフロントに表示されません。 これは、「コンテンツのステージング [&#x200B; 機能を使用して更新がスケジュールされている場合 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja) 発生します。
+## 原因
 
-## 原因：
+Fastlyのソフトパージ機能（デフォルトで有効）により、Adobe Commerce ストアフロントは、更新されたアセットの最初の&#x200B;**リクエストを** Fastlyに送信する際に、古い（古い）キャッシュされたコンテンツを引き続き受け取ります。 Fastlyは、サイトデータの再生成に2回目のリクエストを必要とします。
 
-Fastly のソフトパージ機能（デフォルトで有効）により、更新されたアセットに対する **最初の** リクエストを Fastly に送信する際に、Adobe Commerce ストアフロントは古い（古い）キャッシュされたコンテンツを引き続き受け取ります。 Fastly では、サイトデータを再生成するための 2 つ目のリクエストが必要です。
+その結果、Fastlyは、更新されたコンテンツの2回目のリクエストまで、古いコンテンツを配信する場合があります。
 
-その結果、更新されたコンテンツに対する 2 回目のリクエストが行われるまで、Fastly は古いコンテンツを提供する場合があります。
+**想定されるキャッシュ：** コンテンツステージングを使用してコンテンツアセットの更新をスケジュールした後、Adobe CommerceはFastlyにキャッシュの更新リクエストを送信します。 Fastlyは（コンテンツを削除せずに）以前にキャッシュされたコンテンツを無効化し、更新されたコンテンツの配信を開始します。
 
-**予想されるキャッシュ：** コンテンツステージングを使用してコンテンツアセットの更新をスケジュールした後、Adobe Commerceは Fastly にキャッシュを更新するリクエストを送信します。 Fastly は、以前にキャッシュされたコンテンツを（コンテンツを削除せずに）無効にし、更新されたコンテンツの提供を開始します。
+**実際のキャッシュ：** Fastlyが、更新されたコンテンツの最初の&#x200B;**要求を**&#x200B;受信したときに古いコンテンツを引き続き配信する場合、再生成された正しいコンテンツは、2番目の&#x200B;**要求を**&#x200B;受信した後にのみ送信されます。 この動作は、web サイト全体のキャッシュを再生成することなく、トラフィックが証明された領域でのみキャッシュを更新することで、サーバーの負荷を軽減するために実装されました。 キャッシュを徐々に更新し、アプリケーションリソースを保存します。
 
-**実際のキャッシュ：** 更新されたコンテンツに対する **最初の** リクエストを受信したときに Fastly が古いコンテンツを提供する場合、**2 番目の** リクエストを受信した後にのみ、再生成された正しいコンテンツが送信されます。 この動作は、Web サイト全体のキャッシュを再生成せずに、トラフィックが証明済みの領域でのみキャッシュを更新することで、サーバーの負荷を軽減するために実装されました。 Fastly は、キャッシュを徐々に更新して、アプリケーションリソースを節約します。
+## Solution
 
-## 解決策
+最初のリクエストでも古いコンテンツを配信できない場合は、ソフトパージを無効にし、CMSのパージを有効にすることができます。
 
-最初のリクエストでも古いコンテンツを提供することが許容できない場合は、ソフトパージを無効にして、CMS ページをパージを有効にできます。
-
-1. 管理者として、ローカルのCommerce管理者にログインします。
-1. **ストア**/**設定**/**詳細**/**システム**/**フルページキャッシュ** に移動します。
-1. **Fastly 設定** を展開し、**詳細** を展開します。
-1. **ソフト消去を使用** を *いいえ* に設定します。
-1. 「**CMS ページをパージ**」を *はい* に設定します。
-1. ページ上部にある「**設定を保存**」をクリックします。
+1. ローカルのCommerce管理者に管理者としてログインします。
+1. **Stores** > **Configuration** > **Advanced** > **System** > **フルページキャッシュ**&#x200B;に移動します。
+1. **Fastly Configuration**&#x200B;を展開してから、**Advanced**&#x200B;を展開します。
+1. **ソフトパージの使用**&#x200B;を&#x200B;*No*&#x200B;に設定します。
+1. **CMSのページをパージ**&#x200B;から&#x200B;*はい*&#x200B;に設定します。
+1. ページの上部にある「**設定を保存**」をクリックします。
 
 
 ![purge_options.png](assets/purge_options.png)
 
 ## 関連ドキュメント
 
-* Commerce on Cloud Infrastructure ガイドの [&#x200B; パージオプションの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)。
-* [&#x200B; コンテンツのステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja) - コンテンツとデザインに関するドキュメント。
-* Fastly ドキュメントの [&#x200B; 古いコンテンツの提供 &#x200B;](https://docs.fastly.com/guides/performance-tuning/serving-stale-content)。
+* Commerce on Cloud Infrastructure ガイドの[&#x200B; パージ オプションの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja)。
+* コンテンツとデザイン ドキュメントの[&#x200B; コンテンツ ステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)。
+* Fastly ドキュメントの[古いコンテンツの提供](https://docs.fastly.com/guides/performance-tuning/serving-stale-content)。

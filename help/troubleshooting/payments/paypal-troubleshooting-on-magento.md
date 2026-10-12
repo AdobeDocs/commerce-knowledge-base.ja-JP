@@ -1,61 +1,70 @@
 ---
-title: Adobe Commerceの PayPal トラブルシューティング
-description: この記事では、PayPal、特に PayFlow Pro ソリューションを使用して支払いを処理する際の問題の解決策を提供します。 この記事のいくつかの推奨事項は明らかなように見えるかもしれません。 このナレッジベースに記載されているトラブルシューティングオプションを試して、入力したチケットにすべての情報を含めてください。 Adobe Commerceまたは PayPal サポートエンジニアは、問題を診断する際にこれらの手順を実行するように求めます。
+title: Adobe CommerceでのPayPalのトラブルシューティング
+description: この記事では、PayPalを介した支払いの処理に関する問題、特にPayFlow Pro ソリューションに関する解決策を提供します。 この記事の一部の推奨事項は明らかのように思えるかもしれません。 このナレッジベースに記載されているトラブルシューティングオプションを試し、入力したチケットにすべての情報を含めてください。 Adobe CommerceまたはPayPal サポートエンジニアは、問題を診断する際に、以下の手順を実行するように求めます。
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '540'
 ht-degree: 0%
-
 ---
+# Adobe CommerceでのPayPalのトラブルシューティング
 
-# Adobe Commerceの PayPal トラブルシューティング
+この記事では、PayPalを介した支払いの処理に関する問題、特にPayFlow Pro ソリューションに関する解決策を提供します。 この記事の一部の推奨事項は明らかのように思えるかもしれません。 このナレッジベースに記載されているトラブルシューティングオプションを試し、入力したチケットにすべての情報を含めてください。 Adobe CommerceまたはPayPal サポートエンジニアは、問題を診断する際に、以下の手順を実行するように求めます。
 
-この記事では、PayPal、特に PayFlow Pro ソリューションを使用して支払いを処理する際の問題の解決策を提供します。 この記事のいくつかの推奨事項は明らかなように見えるかもしれません。 このナレッジベースに記載されているトラブルシューティングオプションを試して、入力したチケットにすべての情報を含めてください。 Adobe Commerceまたは PayPal サポートエンジニアは、問題を診断する際にこれらの手順を実行するように求めます。
+## 一般的な問題
 
-## よくある問題
+PayPalの支払いに関するほとんどの問題には、同様の症状があります。支払いカードの詳細を指定してチェックアウトに進むと、支払いが処理されません。 エラーメッセージ、支払い処理の失敗、空のページなどが表示されます。
 
-PayPal の支払いに関するほとんどの問題は同様の症状があります。支払いカードの詳細を指定し、チェックアウトに進んだ後、支払いは処理されません。 代わりに、エラーメッセージ、支払いの処理の失敗、または空白のページが表示される場合があります。
+## 資格情報、暗号化キー、ライセンスを確認する
 
-## 資格情報、暗号化キー、およびライセンスを確認します
+考えられる問題：アカウントの詳細（ユーザー名、パスワード）、無効なアカウント、期限切れまたは指定されていないライセンス、無効な公開キーと個人キー、およびその他の多くの側面で誤植が発生します。 これらの問題を見つけるには、支払い設定を確認する必要がある場合もあります。
 
-考えられる問題：アカウントの詳細（ユーザー名、パスワード）の誤印刷、無効なアカウント、期限切れまたは指定されていないライセンス、無効な公開鍵と秘密鍵、その他の多くの側面。 これらの問題を見つけるには、支払い設定の設定を確認する必要がある場合もあります。
+## Adobe CommerceとPayPalで一貫した設定を適用する
 
-## Adobe Commerceと PayPal での一貫性のある設定の適用
+同じ設定を適用し、Commerce管理者とPayPal アカウントの両方で同じ機能を有効にしていることを確認してください。
 
-同じ設定を適用し、Commerce管理と PayPal アカウントの両方で同じ機能を有効にしていることを確認してください。
+### 設定の問題の例
 
-### 設定例の問題
-
-PayPal Express Checkout ソリューションを適用する場合、AVS/CSC 応答に基づくトランザクションは **PayPal Manager** （サービス設定/設定/セキュリティオプション）および **Commerce管理** （**ストア**/設定/**セールス**/**支払い方法** ...）で拒否する必要があります。
+PayPal Express チェックアウトソリューションを適用する場合、AVS/CSC応答に基づくトランザクションは、**PayPal Manager** （サービス設定/設定/セキュリティオプション）および&#x200B;**Commerce Admin** （**Stores**/Configuration > **Sales** > **支払い方法** ...）で拒否する必要があります。
 ![magento_paypal_settings_2.4.1.png](assets/magento_paypal_settings_2.4.1.png)
-詳しくは、ユーザーガイドのドキュメント [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) および [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html?lang=ja) を参照してください。
+詳しくは、ユーザーガイドの「[PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm)」および「[Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html?lang=ja)」のドキュメントを参照してください。
 
 ## 参照トランザクションを許可
 
-PayPal の支払い方法に請求契約と参照トランザクションを含む API が含まれている場合は、設定でそれらが有効になっており、正しく設定されていることを確認してください。
+PayPalの支払い方法に請求契約書と参照取引を含むAPIが含まれる場合は、設定で正しく有効および設定されていることを確認してください。
 
 ### その他のトラブルシューティング
 
-以下の記事を参照してください。
+次の記事を参照してください。
 
-* [PayPal ゲートウェイがリクエストを拒否しました – 請求書の重複の問題 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838) アドビのサポートナレッジベースにあります。
-* サポートナレッジベースの [&#x200B; 新しいストアエンティティの増分 ID を変更 &#x200B;](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) します。
+* [PayPal ゲートウェイがリクエストを拒否しました – サポートナレッジベースで請求書の問題](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26838)を重複しています。
+* [新しいストアエンティティ &#x200B;](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)の増分IDをサポートナレッジベースで変更します。
 
-## 高度な支払いログを収集するには、サポートにお問い合わせください
+## アドバンスド支払いログを収集するには、サポートにお問い合わせください
 
-複雑な支払いの問題をトラブルシューティングするために、Adobe Commerce サポートチームから、高度な支払いログを有効にする専用パッチを適用するよう依頼される場合があります。 この場合、手順は次のようになります。
+複雑な支払いの問題をトラブルシューティングするには、Adobe Commerce サポートチームから、高度な支払いログを有効にするための専用パッチの適用を求められる場合があります。 この場合、手順は次のようになります。
 
-次の詳細を記載した [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) します。
+[次の詳細を含むサポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
 
-* 問題をできるだけ多くの詳細で指定します。
+* できるだけ多くの詳細で問題を特定してください。
 * この記事、ナレッジベース、その他のリソースから試した手順をリストします。 すべての結果を含める。
-* Advanced Payment Logging パッチ（参照番号 MDVA-4352）と、パッチ適用手順をリクエストします。
+* Advanced Payment Logging パッチ（参照番号MDVA-4352）と、そのパッチを適用する手順をリクエストします。
 
-「高度な支払ログ」パッチを受け取った場合：
+Advanced Payment Logging パッチを受け取った場合：
 
 * パッチを適用します。
-* ログを収集し、それらを [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) に添付します。
-* Adobe Commerce サポートチームからの追加の推奨事項が表示されるまで待ちます。
+* ログを収集し、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に添付します。
+* Adobe Commerceサポートチームからの追加の推奨事項をお待ちください。

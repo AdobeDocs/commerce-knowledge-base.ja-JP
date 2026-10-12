@@ -1,16 +1,23 @@
 ---
 title: '[!DNL Cron]件のジョブが**実行中** ステータスで停止しています'
-description: この記事では、Adobe Commerce [!DNL cron]  ジョブが実行を終了せず、「実行中」ステータスで保持され、他 [!DNL cron]  ジョブが実行されない場合の解決策を説明します。 これは、ネットワークの問題、アプリケーションのクラッシュ、再デプロイメントの問題など、さまざまな理由で発生する可能性があります。
+description: この記事では、Adobe Commerce [!DNL cron] ジョブが実行を終了せず、「実行中」ステータスで保持され、他の[!DNL cron] ジョブが実行されない場合の解決策について説明します。 これは、ネットワークの問題、アプリケーションのクラッシュ、再デプロイメントの問題など、さまざまな理由で発生する可能性があります。
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # [!DNL Cron]件のジョブが「実行中」ステータスで停止しています
 
 この記事では、Adobe Commerce [!DNL cron] ジョブが実行を終了せず、「実行中」ステータスで保持され、他の[!DNL cron] ジョブが実行されない場合の解決策について説明します。 これは、ネットワークの問題、アプリケーションのクラッシュ、再デプロイメントの問題など、さまざまな理由で発生する可能性があります。
@@ -72,7 +79,7 @@ Adobe Commerceオンクラウドインフラストラクチャ（全バージョ
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. ブロック展開プロセスを実行する可能性のある長時間実行中の[!DNL cron] ジョブが表示される場合は、`kill` コマンドを使用してプロセスを終了できます。**プロセス ID** （`PID`列が見つかりました）を特定し、その`PID`をコマンドに入れてプロセスを強制終了できます。
+1. ブロック展開プロセスを実行する可能性のある長時間実行中の[!DNL cron] ジョブが表示される場合は、`kill` コマンドを使用してプロセスを終了できます。 **プロセス ID** （`PID`列が見つかりました）を特定し、その`PID`をコマンドに入れてプロセスを強制終了できます。
 **kill process** コマンドは次のとおりです。
 
    `kill -9 <PID>`

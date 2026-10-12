@@ -1,48 +1,57 @@
 ---
-title: 共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？
-description: Adobe Commerceには、共有カタログ内の 1 つ以上の商品の価格アップデート （[ コンテンツのステージング ] （https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja））をスケジュールする機能はありません。
+title: 共有カタログの価格に関するコンテンツステージングの更新をスケジュールできますか？
+description: Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更新（[Content Staging] （https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja））のスケジュール機能は提供されていません。
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+subfeature_v2:
+  - id: deedbb4d-f1b7-58ea-a34a-de1f481f9d4c
+    internal-label: Customer Service
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '290'
 ht-degree: 0%
-
 ---
+# 共有カタログの価格に関するコンテンツステージングの更新をスケジュールできますか？
 
-# 共有カタログの価格に対してコンテンツのステージングの更新をスケジュールすることはできますか？
+Adobe Commerceでは、共有カタログ内の1つ以上の商品の価格更新（[&#x200B; コンテンツステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)）をスケジュールする機能を提供していません。
 
-Adobe Commerceは、共有カタログ内の 1 つ以上の商品の価格アップデート（[&#x200B; コンテンツステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=ja)）をスケジュールする機能を提供していません。
+つまり、Commerce管理パネルの「**価格設定と構造を設定**」メニューから直接価格更新をスケジュールすることはできません（このメニューには「**新しい更新をスケジュール**」ボタンはありません）。
 
-つまり、Commerce管理パネルの **価格と構造を設定** メニューから直接価格の更新をスケジュールすることはできません（このメニューには **新規更新をスケジュール** ボタンはありません）。
-
-それでも、別の方法を使用して、次の項目の価格アップデートをスケジュールすることができます。
+それでも、代替方法を使用して、次の価格の更新をスケジュールすることができます。
 
 * 顧客グループ
 * 製品の基本価格
 
-## 顧客グループの価格更新をスケジュール
+## 顧客グループの価格の更新スケジュール
 
-1. [&#x200B; 新しい製品アップデートのスケジュール設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja) を開始します。
+1. 新しい製品アップデートのスケジュールを[開始](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)します。
 1. 「**価格**」フィールドまでスクロールし、「**詳細価格**」をクリックします。
 
    ![advanced_pricing.png](assets/advanced_pricing.png){width="600"}
 
-1. **顧客グループ価格セクション** で、必要な顧客グループを選択し、更新された価格を設定します。
+1. **顧客グループ価格セクション**&#x200B;で、必要な顧客グループを選択し、更新された価格を設定します。
 
    ![customer_group_price.png](assets/customer_group_price.png){width="700"}
 
-1. 通常どおり更新のスケジュールを完了します。
+1. 更新のスケジュールを通常どおりに完了します。
 
-このワークフローでは、1 つの製品の価格のみを更新できます。一括価格更新はできません。
+このワークフローでは、1つの製品の価格のみを更新できます。一括価格の更新は利用できません。
 
-注意：共有カタログは、顧客グループの価格を利用します。
+覚えておいてほしいのは、共有カタログでは顧客グループの価格を利用することです。
 
 **関連ドキュメント**
 
-* ユーザーガイドの [&#x200B; 更新のスケジュール （コンテンツのステージング） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)。
-* ユーザーガイドの [&#x200B; 詳細価格 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)。
+* ユーザーガイドの[更新のスケジュール設定（コンテンツステージング） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=ja)。
+* ユーザーガイドの[詳細価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)。
 
-## 基本価格の予定価格更新
+## 基準価格の予定価格の更新
 
-関連記事：[&#x200B; 基本価格の変更は共有カタログ価格にどのような影響を与えるか？](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) しくは、サポートナレッジベースを参照してください。
+関連記事を参照してください。[基本価格の変更が共有カタログ価格に与える影響は？](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) サポートナレッジベースに記載されています。

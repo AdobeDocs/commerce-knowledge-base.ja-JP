@@ -3,7 +3,10 @@ title: Adobe Commerce上のクラスター内のvCPU層を表示する
 promoted: true
 description: この記事では、「Observation for Adobe Commerce」の「New Relic Infra」タブを使用して、vCPU層の割り当てを確認する方法について説明します。 Observation for Adobe Commerceは、New Relic サイトの状態、現在および過去の時間ビューを示すAdobe Commerce ナードレットです。
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

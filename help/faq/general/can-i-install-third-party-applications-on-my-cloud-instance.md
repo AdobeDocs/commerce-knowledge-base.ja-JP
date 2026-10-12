@@ -1,38 +1,46 @@
 ---
-title: クラウドインスタンスにサードパーティのアプリケーションをインストールできますか？
-description: いいえ。 クラウドインフラストラクチャサーバー上のAdobe Commerceに、サードパーティアプリ（WordPress や Drupal など）をインストールすることは許可されていません。 このようなアプリケーションは、外部サーバーでホストする必要があります。
+title: クラウドインスタンスにサードパーティアプリケーションをインストールできますか？
+description: いいえ。 クラウドインフラストラクチャサーバー上のAdobe Commerceにサードパーティ製のアプリケーション（WordPressやDrupalなど）をインストールすることは許可されていません。 このようなアプリケーションは、外部サーバー上でホストする必要があります。
 exl-id: 3abbe282-2a14-4597-8af8-da1edcbece30
 feature: Cloud, Compliance, Install
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
+# クラウドインスタンスにサードパーティアプリケーションをインストールできますか？
 
-# クラウドインスタンスにサードパーティのアプリケーションをインストールできますか？
-
-いいえ。 クラウドインフラストラクチャサーバー上のAdobe Commerceに、サードパーティアプリ（WordPress や Drupal など）をインストールすることは許可されていません。 このようなアプリケーションは、外部サーバーでホストする必要があります。
+いいえ。 クラウドインフラストラクチャサーバー上のAdobe Commerceにサードパーティ製のアプリケーション（WordPressやDrupalなど）をインストールすることは許可されていません。 このようなアプリケーションは、外部サーバー上でホストする必要があります。
 
 ## 理由
 
-### サービス利用規約
+### SLA
 
-Adobe Commerce on cloud infrastructure Edition[&#x200B; 利用規約 &#x200B;](https://magento.com/legal/terms/cloud-terms) は、第 18 条に以下を規定しています。
+Adobe Commerce on cloud infrastructure Edition [&#x200B; サービス利用規約](https://magento.com/legal/terms/cloud-terms)には、その第18条に次のように記載されています。
 
-> お客様は、Adobe Commerceおよび本サービスが、本ソフトウェアに直接依存しない他のサードパーティ製ソフトウェアアプリケーションをホスティングするために使用されないことに同意します。
+> お客様は、Adobe Commerceおよび本サービスが、本ソフトウェアに直接依存しない他のサードパーティ製ソフトウェアアプリケーションをホストするために使用されないことに同意するものとします。
 
-クラウドソリューションであるAdobeは、サーバーのセキュリティに対して完全な責任を負います。 高いセキュリティを保証するために、専用のクラウドサーバー上でAdobe Commerce アプリケーションをホストすることのみを許可します。
+Adobeはクラウドソリューションであるため、サーバーのセキュリティに対する全責任を負います。 高いセキュリティを保証するために、Adobe Commerce アプリケーションは専用のクラウドサーバーでのみホスティングできます。
 
-### PCI コンプライアンス
+### PCI認定
 
-PCI 認定のレベル 1 のソリューションプロバイダーであるクラウドインフラストラクチャー上のAdobe Commerceは、PCI データセキュリティ標準に従い、次のことを確認する必要があります。
+PCI認定を受けたレベル 1のソリューションプロバイダーであるAdobe Commerce on cloud インフラストラクチャは、PCI データセキュリティ標準に準拠し、次のことを確実に実行する必要があります。
 
 >...安全なシステムとアプリケーションの開発と維持
-> （[PCI コンプライアンスへのAdobeアプローチ &#x200B;](https://magento.com/pci-compliance) 要件 6、Maintain a Vulnerability Management Program）
+> （[AdobeのPCI コンプライアンスに関する取り組み](https://magento.com/pci-compliance)要件6、脆弱性管理プログラムの維持）
 
-Adobeでは、サードパーティ製アプリケーションの PCI 準拠を保証できないので、クラウドサーバーにそのようなアプリケーションをインストールすることはできません。
+Adobeは、サードパーティアプリケーションのPCI認定を保証できないため、そのようなアプリケーションをクラウドサーバーにインストールすることは許可されていません。
 
-## ヒント：より良い統合のために、Commerce Marketplace拡張機能を使用する
+## ヒント：より優れた統合を行うには、Commerce Marketplaceの拡張機能を使用します
 
-クラウドインフラストラクチャアプリケーション上のAdobe Commerceと、外部サーバーでホストされるサードパーティのソリューションとの統合を強化するために、目的に合った [Commerce Marketplace](https://marketplace.magento.com) 拡張機能を使用することをお勧めします。
+外部サーバー上でホストされているサードパーティ製ソリューションとAdobe Commerce オンクラウド インフラストラクチャ アプリケーションの統合を強化するには、目的に合わせて[Commerce Marketplace](https://marketplace.magento.com)拡張機能を使用することをお勧めします。

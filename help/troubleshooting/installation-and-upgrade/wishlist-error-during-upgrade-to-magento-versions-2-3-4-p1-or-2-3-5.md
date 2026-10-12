@@ -1,44 +1,53 @@
 ---
-title: Adobe Commerce バージョン 2.3.4-p1 または 2.3.5 へのアップグレード中のウィッシュリストエラー
-description: ここでは、Adobe Commerce バージョン 2.3.4-p1 および 2.3.5 へのアップグレード時のウィッシュリストエラーに関連する既知の問題について説明します。
+title: Adobe Commerce バージョン 2.3.4-p1または2.3.5へのアップグレード時のWishlist エラー
+description: この記事では、Adobe Commerce バージョン 2.3.4-p1および2.3.5にアップグレードする際に、これらのバージョンへのアップグレード中に発生するwishlist エラーに関連する既知の問題に対する修正を提供します。
 exl-id: 97479615-bf3f-4544-a9c1-8f19ba74318e
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '388'
 ht-degree: 0%
-
 ---
+# Adobe Commerce バージョン 2.3.4-p1または2.3.5へのアップグレード時のWishlist エラー
 
-# Adobe Commerce バージョン 2.3.4-p1 または 2.3.5 へのアップグレード中のウィッシュリストエラー
-
-ここでは、Adobe Commerce バージョン 2.3.4-p1 および 2.3.5 へのアップグレード時のウィッシュリストエラーに関連する既知の問題について説明します。
+この記事では、Adobe Commerce バージョン 2.3.4-p1および2.3.5にアップグレードする際に、これらのバージョンへのアップグレード中に発生するwishlist エラーに関連する既知の問題に対する修正を提供します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce 2.3.4-p1 および 2.3.5
-* Adobe Commerce オンプレミス 2.3.4-p1 および 2.3.5
+* Adobe Commerce on cloud infrastructure 2.3.4-p1および2.3.5
+* Adobe Commerce オンプレミス 2.3.4-p1および2.3.5
 
-## 問題
+## イシュー
 
-Adobe Commerce（すべてのデプロイメント方法）およびMagento Open Sourceをバージョン 2.3.5 または 2.3.4-p1 にアップグレードすると、モジュールからウィッシュリストエラー（以下で詳しく説明）が発生する場合があります。
+Adobe Commerce（すべてのデプロイメント方式）とMagento Open Sourceをバージョン 2.3.5または2.3.4-p1にアップグレードすると、モジュールからウィッシュリストエラー（詳細は以下を参照）が発生する可能性があります。
 
 ```php
 Magento_Wishlist
 ```
 
-Adobe Commerce（すべてのデプロイメント方法）/Magneto Open Source version 2.3.4-p1 **version 2.3.4-p2 に** またはAdobe Commerce（すべてのデプロイメント方法）/Magneto Open Source version 2.3.5 **version 2.3.5-p1** からアップグレードすると、エラーが修正されます。
+Adobe Commerce（すべてのデプロイメント方式）/Magneto Open Source バージョン 2.3.4-p1 **からバージョン 2.3.4-p2**&#x200B;またはAdobe Commerce（すべてのデプロイメント方式）/Magneto Open Source バージョン 2.3.5 **からバージョン 2.3.5-p1**&#x200B;にアップグレードすると、エラーが修正されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-Adobe Commerce（すべてのデプロイメント方法）/Magento Open Sourceをバージョン 2.3.4-p1 または 2.3.5 にアップグレードします。
+Adobe Commerce（すべてのデプロイメント方法）/Magento Open Sourceをバージョン 2.3.4-p1または2.3.5にアップグレードします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-Adobe Commerce（すべてのデプロイメント方法）/Magento Open Source バージョン 2.3.4-p1 または 2.3.5 へのアップグレードプロセスは通常どおり完了します。
+Adobe Commerce（すべてのデプロイメント方法）/Magento Open Source バージョン 2.3.4-p1または2.3.5へのアップグレードプロセスは正常に完了します。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 アップグレード中に、次のエラーが発生します。
 
@@ -50,15 +59,15 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 
 ## 解決策
 
-* Adobe Commerce（すべてのデプロイメント方法）/Magneto Open Source バージョン 2.3.5 にアップグレードする場合は、**バージョン 2.3.5-p1 にアップグレード** してください。 Adobe Commerce（すべてのデプロイメント方法）/Magento Open Source バージョン 2.3.5-p1 は 2.3.5 に代わるものです。
-* Adobe Commerce（すべてのデプロイメント方法）/Magento Open Source バージョン 2.3.4-p1 にアップグレードしていた場合は、**バージョン 2.3.4-p2 にアップグレード** してください。 Adobe Commerce（すべての導入方法）/Magneto Open Source 2.3.4-p2 は 2.3.4-p1 に代わるものです。
+* Adobe Commerce（すべてのデプロイメント方式）/Magneto Open Source バージョン 2.3.5にアップグレードする場合は、**バージョン 2.3.5-p1**&#x200B;にアップグレードします。 Adobe Commerce（すべてのデプロイメント方法）/Magento Open Source バージョン 2.3.5-p1は、2.3.5に代わるものです。
+* Adobe Commerce（すべてのデプロイメント方式）/Magento Open Source バージョン 2.3.4-p1にアップグレードする場合は、**バージョン 2.3.4-p2**&#x200B;にアップグレードします。 Adobe Commerce（すべてのデプロイメント方法）/Magneto Open Source バージョン 2.3.4-p2は、バージョン 2.3.4-p1に代わるものです。
 
-## 関連資料
+## 関連トピックス
 
-開発者向けドキュメントでは、
+アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview)
-* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerce - Adobe Commerceのバージョンをアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
-* [Adobe Commerce オンプレミスおよびAdobe Commerce - Magento Open Source アプリケーションおよびモジュールをアップグレードし &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/overview) す。
-* [&#x200B; ウィッシュリスト項目の設定ページ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts#wishlist-item-configure-page)
-* [&#x200B; 高度なレポートを提供するモジュール &#x200B;](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/)
+* [Adobe Commerce オンクラウド基盤ガイド](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce on cloud infrastructure - Adobe Commerce バージョンのアップグレード](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [Adobe Commerce オンプレミスおよびMagento Open Source - Adobe Commerce アプリケーションとモジュールのアップグレード](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/overview)
+* [ウィッシュリスト項目設定ページ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts#wishlist-item-configure-page)
+* [高度なレポートを提供するモジュール](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/)

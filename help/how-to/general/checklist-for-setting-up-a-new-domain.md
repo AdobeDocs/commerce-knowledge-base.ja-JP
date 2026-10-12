@@ -1,15 +1,22 @@
 ---
-title: 新しい [!DNL domain]を設定するためのチェックリスト
-description: これは、クラウドインフラストラクチャ上のAdobe Commerceで新しい [!DNL domain] を設定する方法のチェックリストです。
+title: 新しい[!DNL domain]を設定するためのチェックリスト
+description: これは、クラウドインフラストラクチャ上のAdobe Commerceで新しい[!DNL domain]を設定する方法のチェックリストです。
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: 552a290b50f9e0c5fa740f26092c57bac447fe68
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 0%
-
 ---
-
 # 新しい[!DNL domain]を設定するためのチェックリスト
 
 このチェックリストでは、クラウドインフラストラクチャ上のAdobe Commerceで新しい[!DNL domain]を設定する方法について説明します。 新しいドメインを追加する場合でも、現在のドメインを置き換える場合でも適用されます。 新しいステージング環境を取得した後にも適用されます（手順4を参照）。

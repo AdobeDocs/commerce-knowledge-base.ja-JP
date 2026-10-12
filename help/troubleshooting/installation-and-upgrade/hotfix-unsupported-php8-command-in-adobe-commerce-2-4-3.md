@@ -4,18 +4,27 @@ description: この記事では、Adobe Commerce（すべてのデプロイメ�
 exl-id: 1c472214-8387-403e-b2d2-d3f3c9e1da6a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '333'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce アップグレード 2.4.3、2.3.7-p1 PHPの致命的なエラーのホットフィックス
 
 この記事では、Adobe Commerce（すべてのデプロイメント方法）またはMagento Open Source 2.4.3または2.3.7-p1にアップグレードしようとすると、次のエラーが表示される場合の修正点について説明します。
 
-*PHPの致命的なエラー：検出されないエラー：&lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*&#x200B;で未定義の関数Magento\Framework\Filesystem\Directory\str_contains（）を呼び出しています
+*PHPの致命的なエラー：エラーが見つかりません：&lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*&#x200B;のMagento\Framework\Filesystem\Directory\str_contains（）関数が未定義です
 
 この問題は、2.4.4、2.4.3-p1、および2.3.7-p2 リリースの範囲で修正されます。
 
@@ -42,7 +51,7 @@ PHPの致命的なエラー。
 
 ## Solution
 
-回避策として、CLI/ターミナルで次のコマンドを実行します：`composer require symfony/polyfill-php80` Magento ルート フォルダーから、またはコンポーザーのパッチをインストールします。
+回避策として、Magento ルート フォルダーからCLI/ターミナルで次のコマンドを実行するか、コンポーザーのパッチをインストールします。`composer require symfony/polyfill-php80`
 
 2.4.3の問題を修正するには、Adobe Commerce（すべてのデプロイメント方法）とMagento Open Sourceのマーチャントがパッチを適用する必要があります。
 
@@ -58,4 +67,4 @@ PHPの致命的なエラー。
 
 ## 関連トピックス
 
-GitHub [Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680)でサポートされていないPHP 8 コマンド
+Magento 2.4.3 EE #33680[&#128279;](https://github.com/magento/magento2/issues/33680)のGitHub  サポートされていないPHP 8 コマンド

@@ -1,36 +1,45 @@
 ---
-title: MariaDB 10.6 を使用した Adobe Commerce Cloud 2.4.6 のレプリカの問題を確認する
-description: この記事では、MariaDB 10.6 で Adobe Commerce Cloud 2.4.6 のレプリカの読み取りに関する問題をトラブルシューティングする方法について説明します。
+title: MariaDB 10.6を使用したAdobe Commerce Cloud 2.4.6のレプリカに関する問題を読む
+description: この記事では、Adobe Commerce Cloud 2.4.6とMariaDB 10.6のレプリカ読み取り問題のトラブルシューティング方法について説明します。
 feature: Configuration
 role: Developer,Admin
 exl-id: b7af1cc3-93ff-40c5-8959-076cedddb56d
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '251'
 ht-degree: 0%
-
 ---
+# MariaDB 10.6を使用したAdobe Commerce Cloud 2.4.6のレプリカに関する問題を読む
 
-# MariaDB 10.6 を使用した Adobe Commerce Cloud 2.4.6 のレプリカの問題を確認する
-
-この記事では、MariaDB 10.6 以降で Adobe Commerce Cloud 2.4.6 の読み取りレプリカを使用する際の予期しない動作に対するソリューションを提供します。
+この記事では、MariaDB 10.6以降でAdobe Commerce Cloud 2.4.6で読み取りレプリカを使用する際の予期しない動作に対する解決策を提供します。
 
 ## 影響を受ける製品とバージョン
 
-* MariaDB 10.6 以降
-* クラウドインフラストラクチャー上のAdobe Commerce 2.4.6
+* MariaDB 10.6以降
+* Adobe Commerce on cloud infrastructure 2.4.6
 
-## 問題
+## イシュー
 
-重要でない読み取りで、誤った情報が表示される。
+非クリティカル読み取りで誤った情報が表示される。
 
-## 原因：
+## 原因
 
-値を `slave_parallel_mode` 保守的 *にする必要がある場合、データベースの* 設定はデフォルトで *optimistics* に変更され、Ece-Tools の `synchronous_replication` 値は、値を *false* にする場合に *true* にデフォルト設定されています。
+値を&#x200B;*保守的*&#x200B;にする必要がある場合、データベースの`slave_parallel_mode`設定はデフォルトで&#x200B;*楽観主義*&#x200B;に変更され、値を&#x200B;*false*&#x200B;にする必要がある場合、e-Toolsの`synchronous_replication`値はデフォルトで&#x200B;*true*&#x200B;になります。
 
-## 解決策
+## Solution
 
-1. `slave_parallel_mode` パラメーターが *conservative* に設定されていることを確認します（値が [conservative](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) と表示されていない場合は、*サポートチケットを発行* する必要があります）。 確認するには、次のコマンドを実行します。
+1. `slave_parallel_mode` パラメーターが&#x200B;*保守的*&#x200B;に設定されていることを確認します（値が&#x200B;*保守的*&#x200B;として表示されない場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を発行する必要があります）。 確認するには、次のコマンドを実行します。
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -42,7 +51,7 @@ ht-degree: 0%
     1 row in set (0.001 sec)
    ```
 
-1. `.magento.env.yaml` データベース設定を次のように更新します。
+1. `.magento.env.yaml`個のデータベース設定を次の場所に更新します：
 
    ```yaml
        DATABASE_CONFIGURATION:
@@ -54,10 +63,10 @@ ht-degree: 0%
 
 
 
-データベース設定を更新する手順については、Cloud Infrastructure ガイドのCommerceにある「変数のデプロイ」トピックの [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#database_configuration) を参照してください。
+データベース設定を更新する手順については、『Commerce on Cloud Infrastructure Guide 』の「Deploy variables」トピックの[DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#database_configuration)を参照してください。
 
 
-## 関連資料
+## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドの [&#x200B; デプロイメント用の環境変数の設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)。
-* 実装プレイブックの [&#x200B; データベース設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)。
+* Commerce on Cloud Infrastructure ガイドの[&#x200B; デプロイメント用の環境変数の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=ja)。
+* 実装プレイブックの[&#x200B; データベース設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)。

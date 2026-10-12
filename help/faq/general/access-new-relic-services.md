@@ -2,13 +2,14 @@
 title: New Relicのサービスへのアクセス
 description: この記事では、十分なライセンス/サブスクリプション認証を持つお客様が一部のNew Relic サービスにアクセスする方法について説明します。
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: 09777d70272bdb78a0bcf7566cc398a53c474f4c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
-
 ---
-
 # New Relicのサービスへのアクセス
 
 この記事では、十分なライセンス/サブスクリプション認証を持つお客様が一部のNew Relic サービスにアクセスする方法について説明します。

@@ -4,13 +4,26 @@ description: この記事では、CSP制限モードでチェックアウトペ�
 feature: Checkout,Security,Orders,Payments
 role: Developer
 exl-id: fb92b75d-c88b-4810-a309-d6ab38485e86
-source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '1065'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL CSP]制限モードでのストアフロントチェックアウトページのトラブルシューティング
 
 この記事では、次のContent Security Policy ディレクティブに違反しているため、「*インラインスクリプトの実行を拒否しました：&quot;script-src ...*&quot;」を使用して、**[!UICONTROL CSP restricted mode]**&#x200B;のチェックアウトページを表示する際のAdobe Commerce 2.4.7の問題に関する説明と修正について説明します。 ブラウザーコンソールのログにエラーメッセージが表示されます。
@@ -44,7 +57,7 @@ Adobe Commerce on cloud infrastructure、Adobe Commerce on-premises、Magento Op
 ### 原因
 
 Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
-対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
 ### Solution
 
@@ -56,7 +69,7 @@ Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、�
 
 1. [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style)は、`SecureHtmlRenderer` クラスを使用してブロックされたスクリプトです。
 1. スクリプトの実行を許可するには、`CSPNonceProvider` クラスを使用します。
-Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。次に、これらの[!DNL nonce]文字列が[!UICONTROL CSP] ヘッダーにアタッチされます。
+Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。 これらの[!DNL nonce]文字列は[!UICONTROL CSP] ヘッダーにアタッチされます。
 
    `Magento\Csp\Helper\CspNonceProvider`の`generateNonce`関数を使用して、[!DNL nonce]文字列を取得します。
 
@@ -114,7 +127,7 @@ Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエス�
 ### 原因
 
 Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
-対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
 ### Solution
 
@@ -126,7 +139,7 @@ Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、�
 
 1. [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style)は、`SecureHtmlRenderer` クラスを使用してブロックされたスクリプトです。
 1. スクリプトの実行を許可するには、`CSPNonceProvider` クラスを使用します。
-Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。次に、これらの[!DNL nonce]文字列が[!UICONTROL CSP] ヘッダーにアタッチされます。
+Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。 これらの[!DNL nonce]文字列は[!UICONTROL CSP] ヘッダーにアタッチされます。
 
    `Magento\Csp\Helper\CspNonceProvider`の`generateNonce`関数を使用して、[!DNL nonce]文字列を取得します。
 
@@ -185,7 +198,7 @@ Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエス�
 ### 原因
 
 Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、デフォルトで&#x200B;**[!UICONTROL CSP]**&#x200B;がストアフロントおよび管理領域の支払いページ用に`restrict-mode`、およびその他のすべてのページ用に`report-only` モードで設定されています。
-対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
+対応する&#x200B;**[!UICONTROL CSP]** ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、[!DNL whitelisted]個のインラインスクリプトのみが許可されます。
 
 ### Solution
 
@@ -197,7 +210,7 @@ Adobe CommerceおよびMagento Open Source バージョン 2.4.7以降では、�
 
 1. [[!DNL Whitelist]](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style)は、`SecureHtmlRenderer` クラスを使用してブロックされたスクリプトです。
 1. スクリプトの実行を許可するには、`CSPNonceProvider` クラスを使用します。
-Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。次に、これらの[!DNL nonce]文字列が[!UICONTROL CSP] ヘッダーにアタッチされます。
+Adobe CommerceおよびMagento Open Source 2.4.7以降には、各リクエストに対して一意の[!DNL nonce]文字列を簡単に生成できる&#x200B;**[!UICONTROL Content Security Policy (CSP)]** [!DNL nonce] プロバイダーが含まれています。 これらの[!DNL nonce]文字列は[!UICONTROL CSP] ヘッダーにアタッチされます。
 
    `Magento\Csp\Helper\CspNonceProvider`の`generateNonce`関数を使用して、[!DNL nonce]文字列を取得します。
 

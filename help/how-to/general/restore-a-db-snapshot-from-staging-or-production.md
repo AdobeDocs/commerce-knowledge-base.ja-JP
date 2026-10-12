@@ -2,13 +2,14 @@
 title: ステージングまたは実稼動環境からのDB スナップショットの復元
 description: この記事では、クラウドインフラストラクチャ上のAdobe Commerce上のステージングまたは実稼動環境からDB スナップショットを復元する方法について説明します。
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # DB スナップショットを[!DNL Staging]または[!DNL Production]から復元します
 
 この記事では、Cloud Pro インフラストラクチャ上のAdobe Commerceで[!DNL Staging]または[!DNL Production]からDB [!DNL snapshot]を復元する方法について説明します。

@@ -1,57 +1,64 @@
 ---
-title: 実稼働サイトで同じドメインを使用している場合は、実稼動環境で Fastly をテストします
-description: 実稼動ドメイン（「example.com」）で稼働中のサイトがあり、クラウドインフラストラクチャの実稼動環境で Fastly CDN を有効にしてAdobe Commerceで新しいストアをテストする必要がある場合は、ローンチ前のテストアクティビティには、以前に Fastly に追加したサブドメイン（「prod.example.com」など）を使用することをお勧めします。 この記事では、詳細を説明し、関連するAdobe Commerce ドキュメントリソースへの便利なリンクを提供します。
+title: ライブサイトで同じドメインを使用する場合は、実稼動環境でFastlyをテストします
+description: 実稼動ドメイン（「example.com」）でライブサイトを稼働しており、Fastly CDNが有効になっているクラウドインフラストラクチャの実稼動環境でAdobe Commerce上の新しいストアをテストする必要がある場合は、以前にFastlyに追加したサブドメイン（「prod.example.com」など）を使用して、ローンチ前のテストアクティビティを行うことをお勧めします。 この記事では、詳細について説明し、関連するAdobe Commerceのドキュメントリソースへの便利なリンクを提供します。
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
-source-git-commit: 6651963ea5843283dee40a8ce58280baac79053a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
+# ライブサイトで同じドメインを使用する場合は、実稼動環境でFastlyをテストします
 
-# 実稼働サイトで同じドメインを使用している場合は、実稼動環境で Fastly をテストします
+実稼動ドメイン （`example.com`）でライブサイトを稼働中で、Fastly CDNが有効になっているクラウドインフラストラクチャの実稼動環境でAdobe Commerce上の新しいストアをテストする必要がある場合は、起動前のテストアクティビティのために、以前にFastlyに追加したサブドメイン （`prod.example.com`など）を使用することをお勧めします。 この記事では、詳細について説明し、関連するAdobe Commerceのドキュメントリソースへの便利なリンクを提供します。
 
-実稼動ドメイン（`example.com`）で稼働中のサイトがあり、クラウドインフラストラクチャの実稼動環境で Fastly CDN を有効にしてAdobe Commerce上の新しいストアをテストする必要がある場合は、起動前のテストアクティビティには、以前 Fastly に追加したサブドメイン（`prod.example.com` など）を使用することをお勧めします。 この記事では、詳細を説明し、関連するAdobe Commerce ドキュメントリソースへの便利なリンクを提供します。
+## イシュー
 
-## 問題
+`example.com`実稼動ドメインを使用する現在のストアはライブで動作しています。 ただし、新しいストアをテストする必要があります。これは、Adobe Commerceクラウドインフラストラクチャで構築され、Fastly フルページキャッシュサービスが有効になっている状態で、実稼動環境にデプロイされます。
 
-`example.com` の実稼動ドメインを使用する現在のストアは、稼働中です。 ただし、クラウドインフラストラクチャ上にAdobe Commerceを使用して構築し、Fastly フルページキャッシュサービスを有効にして実稼動環境にデプロイした、新しいストアをテストする必要があります。
+問題は、Adobe Commerce on cloud infrastructure プロジェクトの実稼動環境で同じライブドメイン （`example.com`）が使用されており、同じドメインで現在のライブストアを同時に実行して、新しいサイトをこのドメインに切り替えることができないことです。
 
-問題は、クラウドインフラストラクチャプロジェクト上のAdobe Commerceの実稼動環境で同じライブドメイン（`example.com`）が使用されており、新しいサイトをこのドメインに切り替えると、現在のライブストアが同じドメインで動作するようになります。
+### 本番環境でのテストにFastlyを使用する理由？
 
-### Fastly を実稼動環境でのテストに使用する理由
+理論的には、Fastly CDNを使用せずにスキップし、フルページキャッシュを有効にせずに、実稼動環境のクラウドインフラストラクチャストアでAdobe Commerceをテストできます。
 
-理論的には、Fastly CDN の使用をスキップし、フルページキャッシュを有効にせずに、実稼動環境のクラウドインフラストラクチャストアでAdobe Commerceをテストすることができます。
-
-ただし、フルページキャッシュを有効にすると、ストアのパフォーマンスが異なります。起動前に CDN でテストしていない場合、サイトの実際のライブパフォーマンスがわかりません。 Fastly CDN を有効にした実稼動環境でストアをテストすることは、Adobe Commerceの公式の推奨事項です。
+ただし、フルページキャッシュを有効にすると、ストアのパフォーマンスが異なります。CDNでテストしていないサイトの実際のライブパフォーマンスを起動前に把握することはできません。 Fastly CDNを有効にして実稼動環境でストアをテストすることは、Adobe Commerceの公式の推奨事項です。
 
 ## 解決策：実稼動サブドメインの使用
 
-現在のライブサイトをベースドメイン（`prod.example.com`）に維持したまま、実稼動環境のクラウドインフラストラクチャストアに新しいAdobe Commerceを格納するには、第 1 レベルのサブドメイン（`example.com`）を使用します。
+実稼動環境の新しいAdobe Commerce on cloud infrastructure ストアに対して、現在のライブサイトをベースドメイン （`example.com`）に維持しながら、1番目のサブドメイン （`prod.example.com`）を使用します。
 
-Adobe Commerce on cloud infrastructure プロジェクトを計画する際には、そのような実稼動サブドメインを指定し、クラウドインフラストラクチャチームに対して、サブドメインを Fastly サービスに指定するようにリクエストできます。
+Adobe Commerce on cloud infrastructure プロジェクトを計画する際には、このような実稼動サブドメインを指定し、クラウドインフラストラクチャチームに対して、そのサブドメインをFastly サービスに誘導するようにリクエストできます。
 
-クラウドインフラストラクチャプロジェクトでAdobe Commerce内のサブドメインを処理するには、次の手順に従います。
+Adobe Commerce on cloud infrastructure プロジェクト内でサブドメインを処理するには、次の手順に従います。
 
-* [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) サブドメインを Fastly サービス/Nginx 設定に追加することをリクエスト（cloud infrastructure Pro プランアーキテクチャ上のAdobe Commerceの場合）。
-* 対応する DNS 設定を自分で設定します。
+* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、サブドメインをFastly サービス/Nginx設定に追加することをリクエストします（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。
+* 対応するDNS設定を自分の側で設定します。
 
-サブドメインの設定手順を実行した後で、次の手順を実行して実稼動ドメインの SSL 証明書を検証する必要があります。
+サブドメイン設定の手順を実行した後、次の手順を実行して、SSL証明書の実稼動ドメインを検証する必要があります。
 
-* 実稼動ドメインの SSL 検証用の DNS TXT レコードをアップロードします。
-* [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)SSL 証明書の実稼動ドメインの検証をリクエストします。
+* 実稼動ドメインのSSL検証用にDNS TXT レコードをアップロードします。
+* SSL証明書の実稼動ドメインの検証を要求する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
 
-サブドメインを使用すると、今後ストアの「ソフト起動」を実行できます。これは、対応する DNS 設定の更新のみが必要なためです。
+サブドメインを使用すると、将来ストアの「ソフトローンチ」を実行できます。このようなローンチでは、対応するDNS設定を更新する必要があるだけです。
 
 ## 関連ドキュメント
 
-サポートナレッジベースでは、
+サポートナレッジベース：
 
-* [&#x200B; ステージング環境と実稼動環境での Fastly DNS 設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=ja)
-* [&#x200B; クラウドインフラストラクチャー上でのAdobe Commerceの立ち上げに対する潜在的なブロッカー &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=ja)
+* [ステージング環境と実稼動環境でのFastly DNS設定](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=ja)
+* [Adobe Commerce on cloud infrastructureの導入を阻む潜在的な障壁](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=ja)
 
-開発者向けドキュメントでは、
+アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [Fastly の概要 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja)
-* [&#x200B; 運用開始チェックリスト：Fastly の DNS 設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja)
+* [Fastlyの概要](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja)
+* [ライブチェックリスト：FastlyのDNS設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja)

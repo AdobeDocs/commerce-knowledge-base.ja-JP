@@ -2,13 +2,14 @@
 title: '[!UICONTROL Admin] ログインが機能しません – セッションの最大サイズを超えています'
 description: '[!UICONTROL Admin] パネルにログインしようとしたときにフォームが更新され、ログインできない場合の問題を解決します。'
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Admin] ログインが機能しません – セッションの最大サイズを超えています
 
 この記事では、[!UICONTROL Admin] パネルにログインしようとしたが、フォームが更新されただけでログインできない場合、または[!UICONTROL Admin] パネルで一部のアクションを実行して自動的にログアウトする場合の修正について説明します。

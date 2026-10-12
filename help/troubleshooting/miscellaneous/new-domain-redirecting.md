@@ -4,13 +4,20 @@ description: この記事では、新しいドメインが既存の環境また�
 exl-id: 88e9eb3f-9b82-4ca3-aa80-e49f360b3eb9
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
-
 ---
-
 # 新しいドメインがデフォルトのドメインにリダイレクトされる
 
 この記事では、新しいドメインが既存の環境または別の環境のデフォルトドメインにリダイレクトされる問題を修正します。
