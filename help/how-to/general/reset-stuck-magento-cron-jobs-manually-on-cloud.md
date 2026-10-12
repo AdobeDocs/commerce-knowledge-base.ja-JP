@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce on cloud infrastructure cron ジョブが実行を完了せず、停止し、他のcron ジョブが実行されるのを防ぎます。 この記事では、スタックしたcron ジョブを手動でリセットする方法について説明します。
 
-このコマンドは慎重に使用してください。 詳しくは、サポートナレッジベースの「[Cron ジョブのリセット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)」記事を参照することをお勧めします。
+このコマンドは慎重に使用してください。 詳しくは、サポートナレッジベースの「[Cron ジョブのリセット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)」記事を参照することをお勧めします。
 
 ## 手順
 

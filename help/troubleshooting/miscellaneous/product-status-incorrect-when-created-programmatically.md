@@ -37,7 +37,7 @@ Adobe Commerce アプリケーションがブートストラップされたス�
 
 ## 誤った製品ステータスの解決策
 
-開発者ドキュメントの[ObjectManager> プログラマティック製品アップデート ](https://developer.adobe.com/commerce/php/development/components/object-manager/) トピックで説明されているように、`Magento\Framework\Authorization\PolicyInterface`の動的DI環境設定を設定します。
+開発者ドキュメントの[ObjectManager> プログラマティック製品アップデート &#x200B;](https://developer.adobe.com/commerce/php/development/components/object-manager/) トピックで説明されているように、`Magento\Framework\Authorization\PolicyInterface`の動的DI環境設定を設定します。
 
 ## 関連トピックス
 

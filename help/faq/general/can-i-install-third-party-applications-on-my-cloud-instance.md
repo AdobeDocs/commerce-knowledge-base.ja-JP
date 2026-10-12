@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ### SLA
 
-Adobe Commerce on cloud infrastructure Edition [ サービス利用規約](https://magento.com/legal/terms/cloud-terms)には、その第18条に次のように記載されています。
+Adobe Commerce on cloud infrastructure Edition [&#x200B; サービス利用規約](https://magento.com/legal/terms/cloud-terms)には、その第18条に次のように記載されています。
 
 > お客様は、Adobe Commerceおよび本サービスが、本ソフトウェアに直接依存しない他のサードパーティ製ソフトウェアアプリケーションをホストするために使用されないことに同意するものとします。
 

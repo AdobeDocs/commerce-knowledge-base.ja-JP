@@ -45,7 +45,7 @@ Fastlyの設定プロセスについて詳しくは、ユーザーガイドの�
 
 ### 1a. Fastly モジュールの最新バージョンがインストールされていることを確認します
 
-最新の機能と改善点を入手するには、最新バージョンのFastly モジュールがインストールされていることを確認してください。 最新バージョンのFastlyがあるかどうかを確認するには、ユーザーガイドの[Fastly モジュールのアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upgrade-the-fastly-module)を確認してください。 詳しくは、ユーザーガイドの[Fastlyの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)を参照してください。
+最新の機能と改善点を入手するには、最新バージョンのFastly モジュールがインストールされていることを確認してください。 最新バージョンのFastlyがあるかどうかを確認するには、ユーザーガイドの[Fastly モジュールのアップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upgrade-the-fastly-module)を確認してください。 詳しくは、ユーザーガイドの[Fastlyの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)を参照してください。
 
 ### 1b. Commerce管理者を使用したFastlyの有効化と設定
 
@@ -53,14 +53,14 @@ Fastlyの設定プロセスについて詳しくは、ユーザーガイドの�
 
 ### 1c. Fastly VCL スニペットのアップロード
 
-詳しくは、ユーザーガイドの「[VCLをFastlyにアップロード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)」を参照してください。
+詳しくは、ユーザーガイドの「[VCLをFastlyにアップロード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)」を参照してください。
 
 独自のVCL スニペットを[作成して追加することもできます](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)。
 
 ### 1d. Fastly用のDNSの設定
 
 
-詳細な手順については、この記事を参照してください。[ ユーザーガイドのFastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings)のセットアップ。
+詳細な手順については、この記事を参照してください。[&#x200B; ユーザーガイドのFastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings)のセットアップ。
 
 ## &#x200B;2. 有効なSSL （TLS）証明書
 
@@ -81,7 +81,7 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 
 **関連する記事：**
 
-* ユーザーガイドのroutes.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/redirects.html)を通じて[ リダイレクトします。
+* ユーザーガイドのroutes.yaml[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/redirects.html)を通じて リダイレクトします。
 * ユーザーガイドの[Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html)を通じてリダイレクトします。
 * ユーザーガイドの[URL書き換え](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite.html)。
 
@@ -100,4 +100,4 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 
 **関連する記事：**
 
-* 開発者向けドキュメントの[ デプロイメントのテスト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production.html)。
+* 開発者向けドキュメントの[&#x200B; デプロイメントのテスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production.html)。

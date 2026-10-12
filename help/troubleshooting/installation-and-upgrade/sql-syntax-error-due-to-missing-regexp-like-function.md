@@ -92,4 +92,4 @@ Adobe Commerce on Cloud インフラストラクチャの場合は、次の手�
    composer update magento/magento-cloud-patches
    ```
 
-1. 変更をコミットしてプッシュし、再デプロイを開始します。 手順については、Adobe Commerce on Cloud ガイドの「[ パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+1. 変更をコミットしてプッシュし、再デプロイを開始します。 手順については、Adobe Commerce on Cloud ガイドの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。

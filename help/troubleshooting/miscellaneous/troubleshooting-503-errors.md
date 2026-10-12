@@ -77,5 +77,5 @@ Varnishがキャッシングアプリケーションとして設定されてい�
 $ bin/magento cache:enable
 ```
 
-コマンドラインの使用について詳しくは、[ コマンドライン設定の基本を学ぶ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli)を参照してください。
+コマンドラインの使用について詳しくは、[&#x200B; コマンドライン設定の基本を学ぶ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli)を参照してください。
 

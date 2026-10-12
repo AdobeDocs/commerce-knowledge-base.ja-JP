@@ -35,10 +35,10 @@ ht-degree: 0%
 
 ケースに最適なものを選択します。
 
-* アクティビティを計画している場合（デプロイメントまたはアップグレードを計画） - [ シナリオ 1：計画アクティビティ） ](#scen1)。
-* 有効なスナップショットがある場合 – [ シナリオ 2: スナップショットを復元](#scen2)。
-* 安定したビルドを持っているが、有効なスナップショットがない場合 – [ シナリオ 3: スナップショットがない場合、安定したビルド （SSH接続が利用可能） ](#scen3)。
-* ビルドが壊れており、有効なスナップショットがない場合 – [ シナリオ 4: スナップショットがありません。ビルドが壊れています（SSH接続なし） ](#scen4)。
+* アクティビティを計画している場合（デプロイメントまたはアップグレードを計画） - [&#x200B; シナリオ 1：計画アクティビティ） &#x200B;](#scen1)。
+* 有効なスナップショットがある場合 – [&#x200B; シナリオ 2: スナップショットを復元](#scen2)。
+* 安定したビルドを持っているが、有効なスナップショットがない場合 – [&#x200B; シナリオ 3: スナップショットがない場合、安定したビルド （SSH接続が利用可能） &#x200B;](#scen3)。
+* ビルドが壊れており、有効なスナップショットがない場合 – [&#x200B; シナリオ 4: スナップショットがありません。ビルドが壊れています（SSH接続なし） &#x200B;](#scen4)。
 
 ## シナリオ 1：計画されたアクティビティ
 
@@ -56,8 +56,8 @@ ht-degree: 0%
 <u>変更日</u>:
 
 1. Web サイトを[!UICONTROL Maintenance Mode]に配置します。
-[ ユーザーガイドの[!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html)を有効または無効にする方法と、アップグレード ガイドの](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html)のアップグレード用オプション [[!UICONTROL Maintenance Mode]について詳しくお読みください。
-1. cron ジョブを無効にします。 cron ジョブの無効化について詳しくは、[crons プロパティガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs)を参照してください。
+[&#x200B; ユーザーガイドの[!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html)を有効または無効にする方法と、アップグレード ガイドの[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html)のアップグレード用オプション [!UICONTROL Maintenance Mode]について詳しくお読みください。
+1. cron ジョブを無効にします。 cron ジョブの無効化について詳しくは、[crons プロパティガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs)を参照してください。
 1. ローカル [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)を使用します。
 
 <u>[!UICONTROL Rollback]が必要な場合</u>:
@@ -74,13 +74,13 @@ ht-degree: 0%
 
 ## シナリオ 2: スナップショットを復元する
 
-クラウドインフラストラクチャ上のAdobe Commerce上のスナップショットの復元](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot)については、開発者向けドキュメントをご覧ください。[
+クラウドインフラストラクチャ上のAdobe Commerce上のスナップショットの復元[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot)については、開発者向けドキュメントをご覧ください。
 
 >[!NOTE]
 >
 >Adobe Commerce on cloud infrastructure アカウントにアクセスしてから、大きな変更を適用する前に、スナップショットを作成することが最初の手順である必要があります。 これはベストプラクティスであり、強くお勧めします。
 
-詳しくは、開発者ドキュメントの[ スナップショットの作成](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot)を参照してください。
+詳しくは、開発者ドキュメントの[&#x200B; スナップショットの作成](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot)を参照してください。
 
 ## シナリオ 3: スナップショットなし、ビルドの安定した状態（SSH接続が利用可能）
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 Adobe Commerce ソフトウェアをアンインストールすると、データベースが削除および復元され、デプロイメント設定が削除され、`var`の下のディレクトリがクリアされます。
 
-開発者向けドキュメントの[Adobe Commerce ソフトウェアのアンインストール ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html)をお読みください。
+開発者向けドキュメントの[Adobe Commerce ソフトウェアのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html)をお読みください。
 
 Adobe Commerce ソフトウェアをアンインストールするには、次の手順に従います。
 
@@ -152,7 +152,7 @@ Adobe Commerce ソフトウェアをアンインストールするには、次�
 
 この場合は、まず[!DNL git] resetを使用してAdobe Commerce アプリケーションの動作状態を復元してから、Adobe Commerce ソフトウェアをアンインストールする必要があります（データベースをドロップして復元するには、デプロイメント設定を削除するなど）。 シナリオには、シナリオ 3と同じステップが含まれますが、ステップの順序は異なり、追加のステップ（強制的な再展開）があります。 手順は次のとおりです。
 
-1. [ [!DNL git] 分岐をリセットします。](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
+1. [&#x200B; [!DNL git] 分岐をリセットします。](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
 1. [構成管理を無効にします。](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
 1. [Adobe Commerce ソフトウェアをアンインストールします。](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 1. 強制的に再展開する。
@@ -177,4 +177,4 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 1. 空の`main` DBを作成：`create database main;`
 1. 次の設定ファイルを削除します：`config.php`、`config.php.bak`、`env.php`、`env.php.bak`
 
-DBをリセットした後、[a [!DNL git]  プッシュしてトリガーの再デプロイ ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html)を行い、新しく作成したDBにAdobe Commerceをインストールします。 または[redeploy コマンドを実行します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands)。
+DBをリセットした後、[a [!DNL git]  プッシュしてトリガーの再デプロイ &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html)を行い、新しく作成したDBにAdobe Commerceをインストールします。 または[redeploy コマンドを実行します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands)。

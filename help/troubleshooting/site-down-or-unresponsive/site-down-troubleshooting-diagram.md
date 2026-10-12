@@ -25,4 +25,4 @@ ht-degree: 0%
 
 このAdobe Commerceのサイトダウンのトラブルシューティング図は、サイトダウンの原因を特定および解決するために使用できます。
 
-![ サイトダウンのトラブルシューティング図の画像](assets/updated_site_down_1.jpeg)
+![&#x200B; サイトダウンのトラブルシューティング図の画像](assets/updated_site_down_1.jpeg)

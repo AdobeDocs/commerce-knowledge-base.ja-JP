@@ -29,16 +29,16 @@ Bob - not in TOC
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)。
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[&#x200B; サポートされているバージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)。
 
 これらのサーバーエラーのログを表示するには、web サーバーの`access.log`を確認します（例：`<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`）。
 
 関連するログを確認するには：
 
 1. 現在の日にある場合は、CLIで次のコマンドを実行します（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。 ログのカバレッジ時間が制限され、ログのローテーションが利用できないため、過去の特定の時点（クラウドインフラストラクチャ上のAdobe Commerce スタータープランアーキテクチャの場合）までログをローテーションできます。`grep -r "\" [50[0-9]" /path/to/access.log`過去にエラーが発生した場合は、CLIで次のコマンドを実行します（Pro アーキテクチャのみ）。`zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
-1. 次に、同じタイムスタンプの`exception.log`と`error.log`または同等の[回転ログ ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達したときに自動的に回転および圧縮されるログ）を確認して、潜在的なエラーを見つけ、原因となった可能性のあるエラーを確認します。 注意：`exception.log`と`error.log`を確認するには、CLIで上記のコマンドを実行しますが、`access.log`を`exception.log`または`error.log`に置き換えます。
+1. 次に、同じタイムスタンプの`exception.log`と`error.log`または同等の[回転ログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達したときに自動的に回転および圧縮されるログ）を確認して、潜在的なエラーを見つけ、原因となった可能性のあるエラーを確認します。 注意：`exception.log`と`error.log`を確認するには、CLIで上記のコマンドを実行しますが、`access.log`を`exception.log`または`error.log`に置き換えます。
 
 ## 関連トピックス
 
-* *Adobe Commerce on Cloud Infrastructure ガイド*&#x200B;の「[ ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)」を参照してください。
-* サポートナレッジベースの[503 エラーのトラブルシューティング ](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)を参照してください。
+* *Adobe Commerce on Cloud Infrastructure ガイド*&#x200B;の「[&#x200B; ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)」を参照してください。
+* サポートナレッジベースの[503 エラーのトラブルシューティング &#x200B;](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)を参照してください。

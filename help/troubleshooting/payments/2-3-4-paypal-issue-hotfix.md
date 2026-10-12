@@ -56,9 +56,9 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 ## Solution
 
-Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com) ポータルの「ダウンロード」セクションから入手できる[ ホットフィックス、](https://magento.com/tech-resources/download#download2353)をマイアカウントに適用します。
+Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com) ポータルの「ダウンロード」セクションから入手できる[&#x200B; ホットフィックス、](https://magento.com/tech-resources/download#download2353)をマイアカウントに適用します。
 
-Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeには、Commerce v1.0.2のCloud Patchesに修正プログラムが含まれています。 最新のパッケージを適用する手順については、開発者向けドキュメントの「[Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche)」を参照してください。
+Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeには、Commerce v1.0.2のCloud Patchesに修正プログラムが含まれています。 最新のパッケージを適用する手順については、開発者向けドキュメントの「[Commerce リリースノートのクラウドパッチ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche)」を参照してください。
 
 ## パッチの適用方法
 
@@ -66,4 +66,4 @@ Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeに�
 
 ## 関連トピックス
 
-* [ リリース情報> Adobe Commerce 2.3.4 リリースノート > Adobe Commerce 2.3.4のリージョンパッチでPayPal Expressのチェックアウトの問題を適用して、重要なPayPal Expressのチェックアウトの問題に対処します](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue)。詳しくは、開発者向けドキュメントを参照してください。
+* [&#x200B; リリース情報> Adobe Commerce 2.3.4 リリースノート > Adobe Commerce 2.3.4のリージョンパッチでPayPal Expressのチェックアウトの問題を適用して、重要なPayPal Expressのチェックアウトの問題に対処します](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue)。詳しくは、開発者向けドキュメントを参照してください。

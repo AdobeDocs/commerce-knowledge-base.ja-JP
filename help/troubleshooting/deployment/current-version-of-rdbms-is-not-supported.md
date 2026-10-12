@@ -54,10 +54,10 @@ Adobe Commerce on cloud infrastructure, 2.3.0-2.3.7-p1, 2.4.0-2.4.3.
 
 Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ（およびスターターアーキテクチャのすべてのブランチ）の統合ブランチについては、開発者ドキュメントの[Configure Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml)に従ってください。
 
-Adobe Commerce on cloud infrastructure Pro プランのアーキテクチャのステージングと実稼動については、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、Adobe Commerce バージョンのアップグレードをデプロイする前にサービスのアップグレードをリクエストしてください。
+Adobe Commerce on cloud infrastructure Pro プランのアーキテクチャのステージングと実稼動については、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、Adobe Commerce バージョンのアップグレードをデプロイする前にサービスのアップグレードをリクエストしてください。
 
 
 ## 関連トピックス
 
-* ビルドとデプロイメントに関する[ ベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)をご覧ください。
-* [Adobe Commerce 2.3.5 アップグレード：サポート情報ベースの動的テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)へのコンパクト化。
+* ビルドとデプロイメントに関する[&#x200B; ベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)をご覧ください。
+* [Adobe Commerce 2.3.5 アップグレード：サポート情報ベースの動的テーブル &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)へのコンパクト化。

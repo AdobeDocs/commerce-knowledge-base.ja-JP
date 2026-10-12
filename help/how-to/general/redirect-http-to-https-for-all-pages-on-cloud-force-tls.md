@@ -48,7 +48,7 @@ Commerce管理者でFastlyの&#x200B;**Force TLS**&#x200B;機能を有効にし�
 1. 表示されるダイアログで、**アップロード**&#x200B;をクリックします。![magento-admin_force-tls-confirmation-dialog.png](assets/magento-admin_force-tls-confirmation-dialog.png)
 1. ダイアログが閉じた後、現在のForce TLSの状態が&#x200B;**enabled**&#x200B;と表示されていることを確認します。![magento-admin_force-tls-enabled.png](assets/magento-admin_force-tls-enabled.png)
 
-**関連するFastly ドキュメント：** [Adobe Commerce 2のTLS ガイド ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md)を強制します。
+**関連するFastly ドキュメント：** [Adobe Commerce 2のTLS ガイド &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md)を強制します。
 
 ## Force TLSについて
 
@@ -56,7 +56,7 @@ TLS （Transport Layer Security）は、セキュリティの低い先行プロ�
 
 FastlyのForce TLS機能を使用すると、サイトページに対するすべての暗号化されていないリクエストをTLSに強制できます。
 
->>
+&#x200B;>>
 これは、暗号化されていないリクエストに対して&#x200B;*301 Moved Permanently*&#x200B;応答を返し、TLS同等のリクエストにリダイレクトすることで機能します。 例えば、*http://www.example.com/foo.jpeg*&#x200B;のリクエストを行うと、*https://www.example.com/foo.jpeg*&#x200B;にリダイレクトされます。
 
 [通信の保護](https://docs.fastly.com/guides/securing-communications/) （Fastly ドキュメント）

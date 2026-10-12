@@ -36,8 +36,8 @@ Adobe Commerce プロセスを同時に実行すると、インストールロ�
 ## 原因
 
 Installation-fails-cannot-create-install.log
-`php.ini`の`open_basedir`の設定を確認してください。 セットアップ ウィザードでは、[sys\_get\_temp\_dir （void） ](https://php.net/manual/en/function.sys-get-temp-dir.php) PHP呼び出しを使用して、一時ディレクトリの値を取得します。 [open\_basedir](http://php.net/manual/en/ini.core.php#ini.open-basedir)が`sys_get_temp_dir`によって指定されたディレクトリへの接続を拒否するように設定されている場合、インストールは失敗します。
-`php.ini`の`open_basedir`の設定を確認してください。 セットアップ ウィザードでは、[sys\_get\_temp\_dir （void） ](https://php.net/manual/en/function.sys-get-temp-dir.php) PHP呼び出しを使用して、一時ディレクトリの値を取得します。 [open\_basedir](https://php.net/manual/en/ini.core.php#ini.open-basedir)が`sys_get_temp_dir`によって指定されたディレクトリへの接続を拒否するように設定されている場合、インストールは失敗します。
+`php.ini`の`open_basedir`の設定を確認してください。 セットアップ ウィザードでは、[sys\_get\_temp\_dir （void） &#x200B;](https://php.net/manual/en/function.sys-get-temp-dir.php) PHP呼び出しを使用して、一時ディレクトリの値を取得します。 [open\_basedir](http://php.net/manual/en/ini.core.php#ini.open-basedir)が`sys_get_temp_dir`によって指定されたディレクトリへの接続を拒否するように設定されている場合、インストールは失敗します。
+`php.ini`の`open_basedir`の設定を確認してください。 セットアップ ウィザードでは、[sys\_get\_temp\_dir （void） &#x200B;](https://php.net/manual/en/function.sys-get-temp-dir.php) PHP呼び出しを使用して、一時ディレクトリの値を取得します。 [open\_basedir](https://php.net/manual/en/ini.core.php#ini.open-basedir)が`sys_get_temp_dir`によって指定されたディレクトリへの接続を拒否するように設定されている場合、インストールは失敗します。
 
 
 ## Solution

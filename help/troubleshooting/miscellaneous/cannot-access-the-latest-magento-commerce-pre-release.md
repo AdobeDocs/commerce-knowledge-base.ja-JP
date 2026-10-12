@@ -47,7 +47,7 @@ ht-degree: 0%
 
 プレリリースの間、リリースパッケージは2つの場所で利用できます。
 
-1. アカウントのプライマリ MageIDを使用して、[magento.com](https://repo.magento.com/)のComposer経由で行います。 Composerの使用方法について詳しくは、開発者向けドキュメントの「[Composerを使用したAdobe Commerceのインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)」を参照してください。
+1. アカウントのプライマリ MageIDを使用して、[magento.com](https://repo.magento.com/)のComposer経由で行います。 Composerの使用方法について詳しくは、開発者向けドキュメントの「[Composerを使用したAdobe Commerceのインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)」を参照してください。
 1. [account.magento.com](https://account.magento.com/customer/account/login)の&#x200B;**マイアカウント** > **ダウンロード**。
 
 >[!NOTE]
@@ -68,7 +68,7 @@ MageIDがプライマリであるかどうかを確認するには、次の手�
    * Adobe Commerceのライセンス情報が表示された場合は、MageIDがプライマリになります。
    * Adobe Commerceのライセンス情報が表示されない場合、MageIDには共有アクセス権のみが付与されます。 プライマリ ID所有者が誰であるかを確認するには、**自分と共有**&#x200B;に移動します。ここで指定した共有名に注意してください。 「**アカウントを切り替え**」をクリックし、SHARENAMEに記録した値を選択します。 ようこそページには、プライマリ ID所有者の電子メールが表示されます。
 1. 何らかの理由で[magento.com](https://account.magento.com/customer/account/login)でこの情報が見つからない場合は、Adobeのアカウントチームにお問い合わせください。
-1. 上記のいずれも機能しない場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+1. 上記のいずれも機能しない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 **パートナー向け**
 
@@ -78,8 +78,8 @@ MageIDがプライマリであるかどうかを確認するには、次の手�
    * アクティブなパートナーライセンス情報が表示された場合、MageIDはプライマリになります。 END DATE値が将来の日付である場合、パートナーライセンスはアクティブです。
    * アクティブなパートナーライセンス情報が表示されない場合、MageIDには共有アクセス権のみが付与されます。 プライマリ ID所有者が誰であるかを確認するには、**自分と共有**&#x200B;に移動します。ここで指定した共有名に注意してください。 「**アカウントを切り替え**」をクリックし、SHARENAMEに記録した値を選択します。 ようこそページには、プライマリ ID所有者の電子メールが表示されます。
 1. 何らかの理由で[magento.com](https://account.magento.com/customer/account/login)でこの情報が見つからない場合は、パートナーマネージャーにお問い合わせください。
-1. 上記のいずれも機能しない場合は、[ サポートにс連絡してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+1. 上記のいずれも機能しない場合は、[&#x200B; サポートにс連絡してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ### プレリリースプログラムには含まれていません
 
-プレリリース版のアクセスプログラムに含めるには、組織が良好な状態にあるアクティブなAdobe Commerce アカウントまたはパートナーアカウントを持っている必要があります。 この条件を満たしており、プレリリースコードにアクセスできないと思われる場合は、MageIDで[ サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。
+プレリリース版のアクセスプログラムに含めるには、組織が良好な状態にあるアクティブなAdobe Commerce アカウントまたはパートナーアカウントを持っている必要があります。 この条件を満たしており、プレリリースコードにアクセスできないと思われる場合は、MageIDで[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。

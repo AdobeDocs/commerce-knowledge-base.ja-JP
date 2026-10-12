@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャ上のAdobe Commerce [ サポートされているすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+クラウドインフラストラクチャ上のAdobe Commerce [&#x200B; サポートされているすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## イシュー
 

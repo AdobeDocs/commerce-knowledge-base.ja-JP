@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## イシュー
 
-ストアコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新の開始時刻の直後にストアフロントに表示されません。 これは、[ コンテンツ ステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)機能を使用して更新がスケジュールされた場合に発生します。
+ストアコンテンツアセット（ページ、製品、ブロックなど）のスケジュールされた更新 更新の開始時刻の直後にストアフロントに表示されません。 これは、[&#x200B; コンテンツ ステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)機能を使用して更新がスケジュールされた場合に発生します。
 
 ## 原因
 
@@ -61,6 +61,6 @@ Fastlyのソフトパージ機能（デフォルトで有効）により、Adobe
 
 ## 関連ドキュメント
 
-* Commerce on Cloud Infrastructure ガイドの[ パージ オプションの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
-* コンテンツとデザイン ドキュメントの[ コンテンツ ステージング ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)。
+* Commerce on Cloud Infrastructure ガイドの[&#x200B; パージ オプションの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
+* コンテンツとデザイン ドキュメントの[&#x200B; コンテンツ ステージング &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)。
 * Fastly ドキュメントの[古いコンテンツの提供](https://docs.fastly.com/guides/performance-tuning/serving-stale-content)。

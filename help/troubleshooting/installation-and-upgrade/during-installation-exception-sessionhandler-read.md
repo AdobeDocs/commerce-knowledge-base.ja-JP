@@ -26,7 +26,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->このエラーは、2015年9月28日以前のコードバージョンでのみ発生します。 9月29日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redisの設定オプションについて詳しくは、開発者ドキュメントの[Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)の設定を参照してください。 コマンドラインインストーラーを使用してRedisを指定する方法について詳しくは、開発者ドキュメントの[ インストールのトピック ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced)または[ デプロイメント設定のトピック ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment)を参照してください。
+>このエラーは、2015年9月28日以前のコードバージョンでのみ発生します。 9月29日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redisの設定オプションについて詳しくは、開発者ドキュメントの[Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)の設定を参照してください。 コマンドラインインストーラーを使用してRedisを指定する方法について詳しくは、開発者ドキュメントの[&#x200B; インストールのトピック &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced)または[&#x200B; デプロイメント設定のトピック &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment)を参照してください。
 
 ## 原因
 
@@ -34,7 +34,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 ## 解決策：
 
-* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの[ インストールガイド/Adobe Commerce ソフトウェアの更新](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall)を参照してください。
+* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの[&#x200B; インストールガイド/Adobe Commerce ソフトウェアの更新](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall)を参照してください。
 * 既存のコードに対して次の回避策を使用します。
 
 ## `php.ini`を検索 {#locate-php-ini}

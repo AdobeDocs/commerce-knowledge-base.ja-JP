@@ -28,7 +28,7 @@ Adobe Commerce on cloud infrastructure （すべてのバージョン）
 
 ## イシュー
 
-ファイル/フォルダーのリポジトリーにコミットすると、デプロイメントエラーが発生します。 例えば、次のエラーは、[ ビルド フェーズ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase)中にDBが現在利用できない場合にDBへの接続を試みたことが原因で発生します。
+ファイル/フォルダーのリポジトリーにコミットすると、デプロイメントエラーが発生します。 例えば、次のエラーは、[&#x200B; ビルド フェーズ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase)中にDBが現在利用できない場合にDBへの接続を試みたことが原因で発生します。
 
 ```SQL
 SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i  
@@ -49,7 +49,7 @@ SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i
 
 ## 原因
 
-特定のファイルやフォルダーは、[ デプロイメントワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html)で破損するため、リポジトリにコミットしないでください。
+特定のファイルやフォルダーは、[&#x200B; デプロイメントワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html)で破損するため、リポジトリにコミットしないでください。
 
 ## Solution
 

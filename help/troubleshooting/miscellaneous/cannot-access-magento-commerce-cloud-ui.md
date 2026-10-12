@@ -32,12 +32,12 @@ ht-degree: 0%
 
 初めてURLにアクセスする際に403 エラーが発生した場合は、マスターブランチに役割があることを確認してください。
 
-1. Сプロジェクトのライセンス所有者またはスーパーユーザーに連絡し、**環境レベルのユーザー**&#x200B;としてアクセスを提供していることを確認します。詳しくは、開発者ドキュメントの[ クラウドプロジェクト/クラウドコンソールからユーザーを管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-cloud-console)で説明しています。
+1. Сプロジェクトのライセンス所有者またはスーパーユーザーに連絡し、**環境レベルのユーザー**&#x200B;としてアクセスを提供していることを確認します。詳しくは、開発者ドキュメントの[&#x200B; クラウドプロジェクト/クラウドコンソールからユーザーを管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-cloud-console)で説明しています。
 
    特定のブランチに該当する役割のみを持っている場合は、そのブランチのURLに移動する必要があります（例：
    `https://console.adobecommerce.com/<owner-name>/<project-id>/<branch-name>`
 
    次回メイン URLにアクセスすると、最後にアクセスした環境がデフォルトで使用されます。
 
-1. それでもログインできない場合は、сプロジェクトのライセンス所有者またはスーパーユーザーに連絡し、[ クラウドプロジェクト/プロジェクトにユーザーを追加](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-a-user-to-the-project)の説明に従って、**プロジェクトレベルのユーザー**&#x200B;としてアクセス権を提供していることを確認してください。
-1. エラーが解決しない場合は、[ サポートチケットを送信](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)してください。
+1. それでもログインできない場合は、сプロジェクトのライセンス所有者またはスーパーユーザーに連絡し、[&#x200B; クラウドプロジェクト/プロジェクトにユーザーを追加](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-a-user-to-the-project)の説明に従って、**プロジェクトレベルのユーザー**&#x200B;としてアクセス権を提供していることを確認してください。
+1. エラーが解決しない場合は、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)してください。

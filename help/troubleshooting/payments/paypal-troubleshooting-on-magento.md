@@ -51,13 +51,13 @@ PayPalの支払い方法に請求契約書と参照取引を含むAPIが含ま�
 次の記事を参照してください。
 
 * [PayPal ゲートウェイがリクエストを拒否しました – サポートナレッジベースで請求書の問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838)を重複しています。
-* [新しいストアエンティティ ](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)の増分IDをサポートナレッジベースで変更します。
+* [新しいストアエンティティ &#x200B;](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)の増分IDをサポートナレッジベースで変更します。
 
 ## アドバンスド支払いログを収集するには、サポートにお問い合わせください
 
 複雑な支払いの問題をトラブルシューティングするには、Adobe Commerce サポートチームから、高度な支払いログを有効にするための専用パッチの適用を求められる場合があります。 この場合、手順は次のようになります。
 
-[次の詳細を含むサポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
+[次の詳細を含むサポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
 
 * できるだけ多くの詳細で問題を特定してください。
 * この記事、ナレッジベース、その他のリソースから試した手順をリストします。 すべての結果を含める。
@@ -66,5 +66,5 @@ PayPalの支払い方法に請求契約書と参照取引を含むAPIが含ま�
 Advanced Payment Logging パッチを受け取った場合：
 
 * パッチを適用します。
-* ログを収集し、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に添付します。
+* ログを収集し、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に添付します。
 * Adobe Commerceサポートチームからの追加の推奨事項をお待ちください。

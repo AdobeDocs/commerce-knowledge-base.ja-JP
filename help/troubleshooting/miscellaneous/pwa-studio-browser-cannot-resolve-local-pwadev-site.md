@@ -38,7 +38,7 @@ PWA Studioでは、プロジェクトのカスタムホスト名とSSL証明書�
 
 ## Solution
 
-[手動でホストファイル ](https://docs.rackspace.com/docs/modify-your-hosts-file)を編集してエントリを再度追加できますが、他のインストール済みソフトウェアを調べて、以前の変更が上書きされたものを確認する必要があります。
+[手動でホストファイル &#x200B;](https://docs.rackspace.com/docs/modify-your-hosts-file)を編集してエントリを再度追加できますが、他のインストール済みソフトウェアを調べて、以前の変更が上書きされたものを確認する必要があります。
 
 ## サポートナレッジベースの関連情報
 

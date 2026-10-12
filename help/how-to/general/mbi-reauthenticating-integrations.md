@@ -41,4 +41,4 @@ ht-degree: 0%
 
 再認証するには、アカウントの資格情報を再入力する必要がある場合があります。 場合によっては、問題の統合用に新しいAPI キーを生成する必要が生じる場合があります。 問題の統合名をクリックして、再認証プロセスを開始します。
 
-問題が解決しない場合は、[ サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+問題が解決しない場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。

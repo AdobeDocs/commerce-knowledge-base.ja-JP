@@ -67,4 +67,4 @@ PHPの致命的なエラー。
 
 ## 関連トピックス
 
-Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680)のGitHub [ サポートされていないPHP 8 コマンド
+Magento 2.4.3 EE #33680[&#128279;](https://github.com/magento/magento2/issues/33680)のGitHub  サポートされていないPHP 8 コマンド

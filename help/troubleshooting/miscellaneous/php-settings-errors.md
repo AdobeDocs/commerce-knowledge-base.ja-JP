@@ -59,7 +59,7 @@ PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase th
 
 ## xdebug最大関数のネスト レベル エラー
 
-[ インストール中に、xdebug最大関数のネスト レベル エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)を参照してください。
+[&#x200B; インストール中に、xdebug最大関数のネスト レベル エラー](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)を参照してください。
 
 ## PHTML テンプレートにアクセスするとエラーが表示される
 
@@ -71,7 +71,7 @@ Parse error: syntax error, unexpected 'data' (T_STRING)
 
 ### 解決策：php.iniで`asp_tags = off`を設定
 
-複数のテンプレートには、テンプレートの抽象レベルをサポートするための構文があります（Twigなどの異なるテンプレートエンジンを使用します）。製品イメージを表示するには、次の[ テンプレート ](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml)のように、`<% %>` タグで囲まれます。
+複数のテンプレートには、テンプレートの抽象レベルをサポートするための構文があります（Twigなどの異なるテンプレートエンジンを使用します）。製品イメージを表示するには、次の[&#x200B; テンプレート &#x200B;](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml)のように、`<% %>` タグで囲まれます。
 
 ```php
 <img

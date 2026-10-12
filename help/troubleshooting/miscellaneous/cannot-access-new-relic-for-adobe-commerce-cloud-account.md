@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウド インフラストラクチャ上のAdobe Commerceはすべて[ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* クラウド インフラストラクチャ上のAdobe Commerceはすべて[&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## イシュー
 
@@ -44,4 +44,4 @@ New Relic アカウントの所有者に連絡し、[!DNL New Relic]のアカウ
 
 ## 関連トピックス
 
-開発者ドキュメントの[管理 [!DNL New Relic]  アカウント ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)。
+開発者ドキュメントの[管理 [!DNL New Relic]  アカウント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service)。

@@ -59,7 +59,7 @@ Cloud ライセンスは連絡先Aに関連付けられています（電子メ�
 
 ### アクセスキーの無効化
 
-古いキーに関連付けられている[Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してキーを無効にしてもらってください。
+古いキーに関連付けられている[Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してキーを無効にしてもらってください。
 
 古いキーに関連付けられているMarketplace アカウントにアクセスできる場合は、次の手順を実行してキーを無効にします。
 

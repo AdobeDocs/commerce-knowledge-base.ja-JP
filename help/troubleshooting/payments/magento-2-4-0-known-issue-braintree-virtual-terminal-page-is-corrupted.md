@@ -35,7 +35,7 @@ ht-degree: 0%
 
 <u>再生する手順：</u>
 
-Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。 ** **
+Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。 **&#x200B; **
 
 <u>期待される結果：</u>
 
@@ -49,7 +49,7 @@ Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動�
 
 <u>再生する手順：</u>
 
-Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。 ** **
+Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。 **&#x200B; **
 
 <u>期待される結果：</u>
 

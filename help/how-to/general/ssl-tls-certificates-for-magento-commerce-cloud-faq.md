@@ -38,7 +38,7 @@ Pro プランアーキテクチャの場合、ステージング環境と実稼�
 [!DNL Fastly]のサービスにドメインを追加するには：
 
 1. DNSでドメインをprod.magentocloud.map.fastly.netに指定し、最大6時間待ちます。
-1. [ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、このドメインをNginx設定に追加することをリクエストします（以前に行っていない場合）。
+1. [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、このドメインをNginx設定に追加することをリクエストします（以前に行っていない場合）。
 
 ## 証明書をリクエストするには？
 
@@ -56,10 +56,10 @@ Adobeが提供する[Let&#39;s Encrypt証明書](https://letsencrypt.org/)を使
 
 ただし、このプロセスを設定および維持するには、追加の作業が必要です。 まず、web サイトのドメイン名（または共通名）の証明書署名リクエスト（CSR）を生成し、SSL ベンダーに提供してSSL証明書を提供する必要があります。
 
-SSL証明書を取得したら、[Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信するか、CTAと連携してカスタムホスト証明書をクラウド環境に追加します。
+SSL証明書を取得したら、[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信するか、CTAと連携してカスタムホスト証明書をクラウド環境に追加します。
 
 * ドメインが使用されなくなった場合、ドメインは当社のシステムから自動的に消去され、それ以上の操作は必要ありません。
-* 既に証明書を所有している場合は、SFTP （SSH File Transfer Protocol）クライアントを使用して、サーバー上のwebにアクセスできないファイルの場所に証明書をアップロードし、サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信してファイルのパスを知らせます。[
+* 既に証明書を所有している場合は、SFTP （SSH File Transfer Protocol）クライアントを使用して、サーバー上のwebにアクセスできないファイルの場所に証明書をアップロードし、サポートチケット [&#128279;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信してファイルのパスを知らせます。
 
 >[!WARNING]
 >
@@ -76,12 +76,12 @@ SSL証明書の名前はプライマリ URLにのみ関係し、最初のURLで�
 
 ## ワイルドカード TLS証明書を使用できますか？
 
-ワイルドカード TLS証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt証明書では使用できません。 TLS最適化の一環として、Adobeではワイルドカード TLS証明書のサポートを終了します。 AdobeのLet&#39;s Encrypt証明書でワイルドカード証明書を使用し、Adobe Commerceの[!DNL Fastly] コンソールで設定されている販売者を特定し、連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えることをお願いします。 ワイルドカード TLS証明書を置き換えるには、[!DNL Fastly] プラグインの[domain セクション ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains)にアクセスしてください。 ここから、正確なドメインを追加し、ワイルドカードを削除できます。 これらの新しいドメインがCDNを経由するには、DNSで[!DNL Fastly]を指定する必要があることに注意してください。 ドメインが追加され、DNSが更新されると、一致する[Let&#39;s Encrypt](https://letsencrypt.org/)証明書がプロビジョニングされます。 ワイルドカードを使用して[!DNL Fastly]を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 これにより、URL FQDNが設定されておらず、同じURL FQDNがDNSで設定されていない場合、サイトが停止する可能性があります。 したがって、構成されたURLが[!DNL Fastly]を指すDNSでも1対1の一致を持っていることを確認する必要があります。
+ワイルドカード TLS証明書は、カスタム証明書でのみ使用でき、Adobe Commerce Let&#39;s Encrypt証明書では使用できません。 TLS最適化の一環として、Adobeではワイルドカード TLS証明書のサポートを終了します。 AdobeのLet&#39;s Encrypt証明書でワイルドカード証明書を使用し、Adobe Commerceの[!DNL Fastly] コンソールで設定されている販売者を特定し、連絡します。 TLS カバレッジを確保するために、これらのワイルドカード証明書を正確なドメインに置き換えることをお願いします。 ワイルドカード TLS証明書を置き換えるには、[!DNL Fastly] プラグインの[domain セクション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains)にアクセスしてください。 ここから、正確なドメインを追加し、ワイルドカードを削除できます。 これらの新しいドメインがCDNを経由するには、DNSで[!DNL Fastly]を指定する必要があることに注意してください。 ドメインが追加され、DNSが更新されると、一致する[Let&#39;s Encrypt](https://letsencrypt.org/)証明書がプロビジョニングされます。 ワイルドカードを使用して[!DNL Fastly]を指しているドメインを削除しない場合、Adobeは共有証明書を削除します。 これにより、URL FQDNが設定されておらず、同じURL FQDNがDNSで設定されていない場合、サイトが停止する可能性があります。 したがって、構成されたURLが[!DNL Fastly]を指すDNSでも1対1の一致を持っていることを確認する必要があります。
 
 ## ドメインがAdobe Commerceを指さなくなった場合はどうすればよいですか？
 
-ドメインがAdobe Commerceを指していない場合は、[!DNL Fastly]/Adobe Commerce システムからドメインを削除してください。 詳しくは、[!DNL Fastly] [ ドメインの削除](https://docs.fastly.com/en/guides/working-with-domains#deleting-a-domain)を参照してください。 ドメインをAdobe Commerceに指定する必要はありませんが、トップレベルのドメイン TLS証明書が必要かどうかを確認してください。 トップレベルドメインが必要な場合は、DNSを更新してAdobe Commerceを指定してください。 既にAdobe Commerceを指している場合は、[lets-encrypt](https://letsencrypt.org/)を含めるようにCAA レコードを更新します。 これらの手順を実行すると、証明書がカバーする必要なセカンダリ URLでLE証明書が更新されます。&#x200B;
+ドメインがAdobe Commerceを指していない場合は、[!DNL Fastly]/Adobe Commerce システムからドメインを削除してください。 詳しくは、[!DNL Fastly] [&#x200B; ドメインの削除](https://docs.fastly.com/en/guides/working-with-domains#deleting-a-domain)を参照してください。 ドメインをAdobe Commerceに指定する必要はありませんが、トップレベルのドメイン TLS証明書が必要かどうかを確認してください。 トップレベルドメインが必要な場合は、DNSを更新してAdobe Commerceを指定してください。 既にAdobe Commerceを指している場合は、[lets-encrypt](https://letsencrypt.org/)を含めるようにCAA レコードを更新します。 これらの手順を実行すると、証明書がカバーする必要なセカンダリ URLでLE証明書が更新されます。&#x200B;
 
 ## 関連トピックス
 
-[SSL/TLS証明書のプロビジョニング ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
+[SSL/TLS証明書のプロビジョニング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)

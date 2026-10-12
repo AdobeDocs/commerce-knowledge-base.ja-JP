@@ -37,7 +37,7 @@ mysql:
 
 ## Pro プランのステージングまたは実稼動環境に領域を割り当てる
 
-Pro プランのステージング環境または実稼動環境でこれらの変更を行うには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を作成する必要があります。 ストレージを増やすためにサポートチケットを送信する場合、サポートは、ストレージを適用するパーティション（`/mysql`または`/exports`）の量とパーティションを把握する必要があります。 ストレージの増額をリクエストするには、Adobe アカウントチームの承認が必要です。承認を行う前に、（注文フォームに従って）ストレージの利用可能量を確認してください。
+Pro プランのステージング環境または実稼動環境でこれらの変更を行うには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を作成する必要があります。 ストレージを増やすためにサポートチケットを送信する場合、サポートは、ストレージを適用するパーティション（`/mysql`または`/exports`）の量とパーティションを把握する必要があります。 ストレージの増額をリクエストするには、Adobe アカウントチームの承認が必要です。承認を行う前に、（注文フォームに従って）ストレージの利用可能量を確認してください。
 
 ## 割り当て済み領域の削減は利用できません（Pro プランとスタータープラン）
 

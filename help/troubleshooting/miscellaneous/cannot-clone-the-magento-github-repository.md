@@ -34,4 +34,4 @@ fatal: The remote end hung up unexpectedly
 
 ## Solution {#solution}
 
-[GitHub ヘルプページ ](https://help.github.com/articles/generating-ssh-keys)の説明に従って、SSH キーをGitHubにアップロードします。
+[GitHub ヘルプページ &#x200B;](https://help.github.com/articles/generating-ssh-keys)の説明に従って、SSH キーをGitHubにアップロードします。

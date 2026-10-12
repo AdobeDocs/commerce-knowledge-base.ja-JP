@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. Edge辞書の作成。
 
-   まず、Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)で[[!DNL VCL]  スニペットを使用して、エッジディクショナリを定義できます。 これにはリダイレクトが含まれます。
+   まず、Adobe Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)で[!DNL VCL]  スニペットを使用して、エッジディクショナリを定義できます。 これにはリダイレクトが含まれます。
 
    これに対する注意事項：
 
@@ -108,6 +108,6 @@ Adobe Commerce ステージング環境を実行したくないが、これら�
 
 * [[!DNL Fastly VCL]参照](https://docs.fastly.com/vcl/)
 * [開発者用ドキュメントのルートの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html)
-* 開発者向けドキュメントの[ セットアップ  [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* 開発者ドキュメントの[[!DNL VCL] 正規表現のチートシート ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* 開発者向けドキュメントの[&#x200B; セットアップ  [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* 開発者ドキュメントの[[!DNL VCL] 正規表現のチートシート &#x200B;](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

@@ -93,4 +93,4 @@ composer install コマンドの実行中に`.gitignore` ファイルが上書�
 
 ## 関連トピックス
 
-* [ トラッキングされた.gitignore ファイルがコンポーザーによって上書きされています！](https://github.com/magento/magento2/issues/32888) 新しいリポジトリを作成します。
+* [&#x200B; トラッキングされた.gitignore ファイルがコンポーザーによって上書きされています！](https://github.com/magento/magento2/issues/32888) 新しいリポジトリを作成します。

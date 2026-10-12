@@ -41,13 +41,13 @@ Adobe Commerce on cloud infrastructure プロジェクトを計画する際に�
 
 Adobe Commerce on cloud infrastructure プロジェクト内でサブドメインを処理するには、次の手順に従います。
 
-* [ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、サブドメインをFastly サービス/Nginx設定に追加することをリクエストします（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。
+* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信して、サブドメインをFastly サービス/Nginx設定に追加することをリクエストします（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。
 * 対応するDNS設定を自分の側で設定します。
 
 サブドメイン設定の手順を実行した後、次の手順を実行して、SSL証明書の実稼動ドメインを検証する必要があります。
 
 * 実稼動ドメインのSSL検証用にDNS TXT レコードをアップロードします。
-* SSL証明書の実稼動ドメインの検証を要求する[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
+* SSL証明書の実稼動ドメインの検証を要求する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)を送信します。
 
 サブドメインを使用すると、将来ストアの「ソフトローンチ」を実行できます。このようなローンチでは、対応するDNS設定を更新する必要があるだけです。
 

@@ -37,7 +37,7 @@ W:    refused
 
 ## 影響のあるバージョン
 
-クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## イシュー
 
@@ -67,10 +67,10 @@ W:    refused
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-プロジェクトの誰がスーパーユーザーであるかを確認するには、「Commerce on Cloud Infrastructure ガイド」の「[ ユーザーのプロジェクトロールを表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user's-project-role)」を参照してください。
+プロジェクトの誰がスーパーユーザーであるかを確認するには、「Commerce on Cloud Infrastructure ガイド」の「[&#x200B; ユーザーのプロジェクトロールを表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user's-project-role)」を参照してください。
 
 ## 関連リソース
 
-* [Adobe Commerce デプロイメントのトラブルシューティング ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640)。
-* [ クラウドリポジトリ上のAdobe Commerceにアクセスできませんでした：403 Forbiddenまたは404 Not Found エラー（デプロイ時） ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)。
-* [ デプロイメントが「プロジェクトの構築エラー：構築フックがステータスコード 1で失敗しました」 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html)で失敗しました。
+* [Adobe Commerce デプロイメントのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640)。
+* [&#x200B; クラウドリポジトリ上のAdobe Commerceにアクセスできませんでした：403 Forbiddenまたは404 Not Found エラー（デプロイ時） &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)。
+* [&#x200B; デプロイメントが「プロジェクトの構築エラー：構築フックがステータスコード 1で失敗しました」 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html)で失敗しました。

@@ -29,12 +29,12 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ケースに最適なものを選択します。
 
-* 安定したビルドを持っているが、有効なスナップショットがない場合 – [ シナリオ 1: スナップショットがない場合、安定したビルド （SSH接続が利用可能） ](#scen2)。
-* ビルドが壊れており、有効なスナップショットがない場合 – [ シナリオ 2: スナップショットがありません。ビルドが壊れています（SSH接続なし） ](#scen3)。
+* 安定したビルドを持っているが、有効なスナップショットがない場合 – [&#x200B; シナリオ 1: スナップショットがない場合、安定したビルド （SSH接続が利用可能） &#x200B;](#scen2)。
+* ビルドが壊れており、有効なスナップショットがない場合 – [&#x200B; シナリオ 2: スナップショットがありません。ビルドが壊れています（SSH接続なし） &#x200B;](#scen3)。
 
 ## シナリオ 1: スナップショットなし、ビルドの安定した状態（SSH接続が利用可能） {#scen2}
 
@@ -82,7 +82,7 @@ Configuration Managementを無効にするには、`/app/etc/` ディレクト�
 
 Adobe Commerce ソフトウェアをアンインストールすると、データベースが削除および復元され、デプロイメント設定が削除され、`var`の下のディレクトリがクリアされます。
 
-開発者向けドキュメントの[Adobe Commerce ソフトウェアのアンインストール ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html)を確認してください。
+開発者向けドキュメントの[Adobe Commerce ソフトウェアのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html)を確認してください。
 
 Adobe Commerce ソフトウェアをアンインストールするには、次の手順に従います。
 
@@ -178,7 +178,7 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 1. 次の設定ファイルを削除します：`config.php`、`config.php` `.bak`、`env.php`、および`env.php.bak`。
 
-DBをリセットした後、[新しく作成したDBにAdobe Commerceをインストールし、トリガーの再デプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands)にGit プッシュを行います。 または[redeploy コマンドを実行します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands)。
+DBをリセットした後、[新しく作成したDBにAdobe Commerceをインストールし、トリガーの再デプロイ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands)にGit プッシュを行います。 または[redeploy コマンドを実行します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands)。
 
 ## 関連トピックス
 

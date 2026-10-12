@@ -40,4 +40,4 @@ If you are using the sample nginx configuration, please go to http://ce.mtf03.bc
 
 ### 回避策
 
-[ コマンドライン ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced)を使用してAdobe Commerce ソフトウェアをインストールします。
+[&#x200B; コマンドライン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced)を使用してAdobe Commerce ソフトウェアをインストールします。

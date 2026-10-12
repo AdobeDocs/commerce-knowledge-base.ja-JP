@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## イシュー
 
@@ -43,4 +43,4 @@ Commerce Adminで検索エンジンを変更しようとしましたが、フィ
 
 ## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドのCommerce Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879)の[ ロック（グレー表示）フィールド。
+* Commerce on Cloud Infrastructure ガイドのCommerce Admin[&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879)の ロック（グレー表示）フィールド。

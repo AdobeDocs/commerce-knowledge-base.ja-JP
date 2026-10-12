@@ -75,7 +75,7 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## 回避策
 
-[安定性タグ ](https://getcomposer.org/doc/04-schema.md#package-links)を持つ[!DNL B2B] セキュリティパッケージの手動による依存関係を追加することで、Adobe Commerce 2.4.6-p1上の[!DNL B2B] バージョン 1.4.0を正常にインストールまたはアップグレードしました。
+[安定性タグ &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links)を持つ[!DNL B2B] セキュリティパッケージの手動による依存関係を追加することで、Adobe Commerce 2.4.6-p1上の[!DNL B2B] バージョン 1.4.0を正常にインストールまたはアップグレードしました。
 
 1. Adobe Commerce インストールディレクトリから、必要な依存関係で`composer.json`を更新します。
 

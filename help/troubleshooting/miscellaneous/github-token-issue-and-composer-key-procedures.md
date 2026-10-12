@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Composer バージョン 1.10.20以前
 
 >[!NOTE]
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. これにより、Composer パッケージバージョンの要件が追加されます。 ロックファイル - `composer/composer` バージョンは1.0.22以降である必要があります。
 1. `composer.json`と`composer.lock`をコミットし、デプロイメントをプッシュします。
 
-この方法が機能しない場合は、[ サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+この方法が機能しない場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ## 関連トピックス
 

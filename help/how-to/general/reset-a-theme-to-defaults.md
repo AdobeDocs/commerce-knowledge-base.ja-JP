@@ -21,7 +21,7 @@ ht-degree: 0%
 
 テーマをカスタマイズしてストアを開発する際に発生する可能性のある問題によっては、Commerce管理者からアクセスできない場合があります。 管理者にアクセスしなくても、テーマのデフォルトをクリアしてリセットできます。 テーマをクリアすると、デフォルトのLuma テーマが適用されます。
 
-Adobe Commerce（すべてのデプロイメント）とMagento Open Source コンポーネント（モジュール、テーマ、言語パッケージ）を開発する場合、急速に変化する環境では、特定のディレクトリとキャッシュを定期的にクリアする必要があります。 そうしないと、コードは例外で実行され、適切に機能しません。 詳しくは、開発者用ドキュメントの「[開発中にディレクトリをクリア ](https://developer.adobe.com/commerce/php/development/components/clear-directories/)」を参照してください。
+Adobe Commerce（すべてのデプロイメント）とMagento Open Source コンポーネント（モジュール、テーマ、言語パッケージ）を開発する場合、急速に変化する環境では、特定のディレクトリとキャッシュを定期的にクリアする必要があります。 そうしないと、コードは例外で実行され、適切に機能しません。 詳しくは、開発者用ドキュメントの「[開発中にディレクトリをクリア &#x200B;](https://developer.adobe.com/commerce/php/development/components/clear-directories/)」を参照してください。
 
 ## 環境とテクノロジー
 
@@ -48,4 +48,4 @@ Adobe Commerce（すべてのデプロイメント）とMagento Open Source コ�
 
 ## 追加情報
 
-* 開発中に[ ディレクトリをクリアする](https://developer.adobe.com/commerce/php/development/components/clear-directories/)詳しくは、開発者ドキュメントを参照してください
+* 開発中に[&#x200B; ディレクトリをクリアする](https://developer.adobe.com/commerce/php/development/components/clear-directories/)詳しくは、開発者ドキュメントを参照してください

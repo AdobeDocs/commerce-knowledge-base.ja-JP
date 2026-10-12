@@ -75,4 +75,4 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.x
 ## 関連トピックス
 
 * ユーザーガイドの[URL書き換え](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite)。
-* ユーザーガイドの[SEOのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview)。
+* ユーザーガイドの[SEOのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview)。

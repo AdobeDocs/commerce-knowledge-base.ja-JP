@@ -37,7 +37,7 @@ ht-degree: 0%
 
 `max_execution_time = 120`
 
-[php.ini設定のカスタマイズ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)の記事を参照してください。
+[php.ini設定のカスタマイズ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)の記事を参照してください。
 
 ## 例
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## Solution
 
-`php.ini`の設定をカスタマイズします。 この[php.ini設定のカスタマイズ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)記事を参照してください。
+`php.ini`の設定をカスタマイズします。 この[php.ini設定のカスタマイズ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)記事を参照してください。
 
 ## 例
 

@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[&#x200B; サポートされているバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## イシュー
 
@@ -61,5 +61,5 @@ HTTP アクセス制御が有効になっている場合、キャッシュ ウ�
 
 ## 関連トピックス
 
-* ユーザーガイドの[Adobe Commerce ユーザーガイド > フルページキャッシュ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
-* [ キャッシュのウォーミングアップとサイトは、Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)でサポート情報ベースで利用できません。
+* ユーザーガイドの[Adobe Commerce ユーザーガイド > フルページキャッシュ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
+* [&#x200B; キャッシュのウォーミングアップとサイトは、Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)でサポート情報ベースで利用できません。

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ## Markdownでのオーサー
 
-通常、[Adobe Experience League Markdown構文スタイルガイド ](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en)を使用しますが、いくつかの違いや例外があります。 また、特定のケースでは、特定のHTML タグが必要になります。
+通常、[Adobe Experience League Markdown構文スタイルガイド &#x200B;](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en)を使用しますが、いくつかの違いや例外があります。 また、特定のケースでは、特定のHTML タグが必要になります。
 
 次に、当社のリポジトリで最もよく使用されるMarkdown形式の例を示します。
 
@@ -178,7 +178,7 @@ header以外の要素を参照する必要がある場合は、HTMLを使用し�
 
 ## 表
 
-テーブル ](https://www.w3schools.com/html/html_tables.asp)に[HTML形式を使用します。
+テーブル [&#128279;](https://www.w3schools.com/html/html_tables.asp)にHTML形式を使用します。
 
 
 ## 警告と情報ブロック

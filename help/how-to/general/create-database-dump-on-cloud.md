@@ -38,7 +38,7 @@ vendor/bin/ece-tools db-dump
 
 これは推奨され、最も安全なオプションです。
 
-Commerce on Cloud Infrastructure ガイドの「[Dump your database （ECE-Tools） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html)」を参照してください。
+Commerce on Cloud Infrastructure ガイドの「[Dump your database （ECE-Tools） &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html)」を参照してください。
 
 ## オプション 2: mariadb-dump （または古いバージョンのmysqldump）
 
@@ -46,7 +46,7 @@ Commerce on Cloud Infrastructure ガイドの「[Dump your database （ECE-Tools
 
 MariaDB 11.0.1以降、`mysqldump` シンボリックリンクは非推奨（廃止予定）です。 代わりに`mariadb-dump`を使用することをお勧めします。
 
-詳しくは、[mariadb-dump クライアントユーティリティ ](https://mariadb.com/docs/server/clients-and-utilities/backup-restore-and-import-clients/mariadb-dump)を参照してください。
+詳しくは、[mariadb-dump クライアントユーティリティ &#x200B;](https://mariadb.com/docs/server/clients-and-utilities/backup-restore-and-import-clients/mariadb-dump)を参照してください。
 
 +++
 
@@ -76,5 +76,5 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 
 **関連ドキュメント：**
 
-* [mysqldump - MySQLの公式ドキュメントのデータベース バックアップ プログラム ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)。
-* Commerce on Cloud Infrastructure ガイドの[ クラウド固有の変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) （`MAGENTO_CLOUD_RELATIONSHIPS`を参照）。
+* [mysqldump - MySQLの公式ドキュメントのデータベース バックアップ プログラム &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)。
+* Commerce on Cloud Infrastructure ガイドの[&#x200B; クラウド固有の変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) （`MAGENTO_CLOUD_RELATIONSHIPS`を参照）。

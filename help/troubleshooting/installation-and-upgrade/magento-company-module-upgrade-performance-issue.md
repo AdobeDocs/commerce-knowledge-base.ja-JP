@@ -95,7 +95,7 @@ Adobe Commerce on Cloud マーチャントの場合は、次の手順に従い�
    ```
 
 1. ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patchを`m2-hotfixes` ディレクトリに追加します。
-1. 変更をコミットしてプッシュし、再デプロイと`bin/magento setup:upgrade`を開始します。 手順については、Adobe Commerce on Cloud ガイドの「[ パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+1. 変更をコミットしてプッシュし、再デプロイと`bin/magento setup:upgrade`を開始します。 手順については、Adobe Commerce on Cloud ガイドの「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
 
 ## 関連トピックス
 
