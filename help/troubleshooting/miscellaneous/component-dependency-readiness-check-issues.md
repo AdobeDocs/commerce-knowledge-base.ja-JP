@@ -1,31 +1,38 @@
 ---
-title: コンポーネントの依存関係の準備チェックの問題
-description: この記事では、コンポーネントの依存関係の競合に対するソリューションを提供します。
+title: コンポーネントの依存関係の準備状況チェックの問題
+description: この記事では、コンポーネントの依存関係の競合に関する解決策を提供します。
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 0%
-
 ---
+# コンポーネントの依存関係の準備状況チェックの問題
 
-# コンポーネントの依存関係の準備チェックの問題
+この記事では、コンポーネントの依存関係の競合に関する解決策を提供します。
 
-この記事では、コンポーネントの依存関係の競合に対するソリューションを提供します。
-
-## コンポーネントの依存関係の競合を解決する {#resolve-component-dependency-conflicts}
+## コンポーネントの依存関係の競合を解決 {#resolve-component-dependency-conflicts}
 
 次の解決策を示された順序で試すことをお勧めします。
 
 1. [競合する依存関係](#trouble-depend-conflict)
 1. [ファイルシステム権限の問題](#trouble-depend-permission)
-1. [コンポーネントの依存関係チェックのステータスは変更されません](#trouble-depend-state)
+1. [コンポーネント依存関係チェックのステータスは変更されません](#trouble-depend-state)
 
 ### 競合する依存関係 {#trouble-depend-conflict}
 
-インストールまたは更新するコンポーネントを Composer で判断できない場合は、メッセージ *競合するコンポーネントの依存関係が見つかりました* が表示されます。 コンポーネントの依存関係の問題を解決するには、Composer の仕組みを十分に理解している技術担当者である必要があります。
+コンポーネントの依存関係が競合していることが見つかりました&#x200B;*Composerで、インストールまたは更新するコンポーネントを判断できない場合は、*&#x200B;というメッセージが表示されます。 コンポーネントの依存関係の問題を解決するには、Composerの仕組みを十分に理解している技術者である必要があります。
 
 次に、失敗メッセージの例を示します。
 
@@ -42,17 +49,17 @@ We found conflicting component dependencies.
 
 ## ファイルシステム権限の問題 {#trouble-depend-permission}
 
-Adobe Commerce ファイルシステムの所有者がAdobe Commerce ファイルシステム上のディレクトリに書き込む権限を持っていない場合は、次のようなメッセージが表示されます。
+Adobe Commerce ファイルシステムの所有者が、Adobe Commerce ファイルシステム上のディレクトリに書き込む権限を持っていない場合、次のようなメッセージが表示されます。
 
 ```bash
 file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-アドビの開発者ドキュメントの記事 [&#x200B; 所有権と権限の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) の説明に従って、ファイルシステムの権限を設定してください。
+開発者ドキュメントの記事[所有権と権限の概要](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview)で説明されているように、ファイルシステムの権限を設定してください。
 
-## コンポーネントの依存関係チェックのステータスは変更されません {#trouble-depend-state}
+## コンポーネント依存関係チェックのステータスは変更されません {#trouble-depend-state}
 
-問題を修正しようとしても、コンポーネントの依存関係チェックのステータスが変更されない場合があります。 その場合、`<magento_root>/var/.update_cronjob_status` および `<magento_root>/var/.setup_cronjob_status` という名前のファイルを削除または名前変更して、コンポーネントマネージャーを再実行できます。
+場合によっては、問題を修正しても、コンポーネント依存関係チェックのステータスが変更されない場合があります。 その場合、`<magento_root>/var/.update_cronjob_status`および`<magento_root>/var/.setup_cronjob_status`という名前のファイルを削除または名前変更して、コンポーネントマネージャーの実行を再試行できます。
 
-これらのファイルの名前を変更または削除すると、コンポーネントマネージャーで再びチェックが実行されます。
+これらのファイルの名前を変更または削除すると、コンポーネントマネージャーはチェックを再度実行します。

@@ -4,13 +4,22 @@ description: この記事では、Adobe Commerce 2.4.0の既知の問題に対�
 exl-id: 1d4d762d-2ab3-4752-ad6d-1eb6a179917d
 feature: Orders, Payments
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.0 Braintree Virtual Terminal ページが破損しています
 
 この記事では、Adobe Commerce 2.4.0の既知の問題に対するパッチを提供します。このパッチでは、Braintree Virtual Terminal ページで適切なUI要素が読み込まれない、またはBraintreeが設定されていない場合に適切なエラーメッセージが表示されない場合があります。
@@ -26,7 +35,7 @@ ht-degree: 0%
 
 <u>再生する手順：</u>
 
-Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。**&#x200B; **
+Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。 ** **
 
 <u>期待される結果：</u>
 
@@ -40,7 +49,7 @@ Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動�
 
 <u>再生する手順：</u>
 
-Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。**&#x200B; **
+Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動します。 ** **
 
 <u>期待される結果：</u>
 
@@ -69,6 +78,6 @@ Commerce Adminで、**Sales** > **Braintree Virtual Terminal**&#x200B;に移動�
 
 ## パッチの適用方法
 
-手順については、[Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
+手順については、[Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチの適用方法を参照してください。
 
 ## 添付ファイル

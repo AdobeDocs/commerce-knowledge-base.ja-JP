@@ -1,21 +1,22 @@
 ---
-title: Adobe Commerce [!DNL crons] は操作なしでは無効になっています
-description: この記事を使用して、介入なしで [!DNL crons] が無効になる問題を修正します。
+title: Adobe Commerce [!DNL crons]は操作なしでは無効になっています
+description: この記事を使用して、介入なしで[!DNL crons]が無効になる問題を修正します。
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
-source-git-commit: 6bff1d7a0578ceb8ea17dff347b1bcd4f0068e7a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce cronsを操作せずに無効にする
 
 この記事では、[!DNL crons]が介入せずに無効になっている場合の解決策を紹介します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、すべての[&#x200B; サポートされているバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
 
 ## イシュー
 
@@ -39,10 +40,10 @@ ht-degree: 0%
 
 ## Solution
 
-[!DNL ECE Tools]を最新バージョン [2002.1.13](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113)にアップグレードします。
+[!DNL ECE Tools]を最新バージョン [2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113)にアップグレードします。
 
 ## 関連トピックス
 
-* [&#x200B; パフォーマンスが遅く、実行が遅く、長時間実行されています [!DNL crons]](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-42802) （サポートナレッジベース）。
-* [[!DNL Cron]  タスクは、サポート ナレッジベースの他のグループ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=ja)からタスクをロックします。
-* [[!DNL Cron]  ジョブがサポートナレッジベースの「実行中」ステータス &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=ja)で停止しています。
+* [ パフォーマンスが遅く、実行が遅く、長時間実行されています [!DNL crons]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-42802) （サポートナレッジベース）。
+* [[!DNL Cron]  タスクは、サポート ナレッジベースの他のグループ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en)からタスクをロックします。
+* [[!DNL Cron]  ジョブがサポートナレッジベースの「実行中」ステータス ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en)で停止しています。

@@ -1,25 +1,34 @@
 ---
 title: データ書き出しを使用した不一致の特定
-description: この記事では、Magento BI データ内の矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポート内のデータの不一致を特定するのに役立ちます。特に、[data discreancy diagnostic checklist] （https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-41479）で問題を特定できない場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
+description: この記事では、Magento BI データの矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポートのデータの不整合を特定するのに役立ちます。特に、[ データの不整合診断チェックリスト ] （https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479）で問題を特定できなかった場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3cd14413-6539-5c64-b063-fdcabf03abff
+    internal-label: Commerce Intelligence
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 0%
-
 ---
-
 # データ書き出しを使用した不一致の特定
 
-この記事では、Magento BI データ内の矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポート内のデータの不一致を特定するのに役立ちます。特に、[&#x200B; データの不一致の診断チェックリスト &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-41479)で問題を特定できなかった場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
+この記事では、Magento BI データの矛盾をトラブルシューティングするためのソリューションを提供します。 データの書き出しは、Magento BI データとソースデータを比較して、レポートのデータの不整合を特定するのに役立ちます。特に、[ データの不整合診断チェックリスト ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)で問題を特定できなかった場合に役立ちます。 この記事では、データ書き出しを使用してデータの不一致を特定する方法の実例について説明します。
 
 次のような分析を考えてみましょう。
 
 ![](assets/Exports_Discrepancies_1.png)
 
-2014年11月に不審な動きが出ています。 50万780.94 ドル？ それは良くないことだ。 ソースデータベースに2014年11月の月に表示される収益が多いことを確認し、このレポートで使用される&#x200B;**収益**&#x200B;指標が正しく定義されていることを再確認しました。 Magento BI データウェアハウス内のデータが不完全で、データエクスポートを使用して確認できます。
+2014年11月に不審な動きが出ています。 50万780.94 ドル？ それは良くないことだ。 ソースデータベースに2014年11月の月に表示される収益が多いことを確認し、このレポートで使用される&#x200B;**収益**&#x200B;指標が正しく定義されていることを再確認しました。 Magento BI データウェアハウスのデータが不完全で、データエクスポートを使用して確認できます。
 
 ## データの書き出し {#export}
 
@@ -49,27 +58,27 @@ Raw データ書き出しウィンドウに「ダウンロード」ボタンが�
 
 ### 両方のシートに同じ行数が含まれています
 
-両方のシステムの行数が同じで、**収益**&#x200B;指標がソースデータと一致しない場合、**注文\_total**&#x200B;はどこかから外れている必要があります。 ソースデータベースの&#x200B;**order\_total** フィールドが更新され、Magento BIがこれらの変更を取得していない可能性があります。
+両方のシステムの行数が同じで、**収益**&#x200B;指標がソースデータと一致しない場合、**注文\_total**&#x200B;はどこかから外れている必要があります。 ソースデータベースで&#x200B;**order\_total** フィールドが更新され、Magento BIがこれらの変更を取得していない可能性があります。
 
-これを確認するには、**order\_total**&#x200B;列が再チェックされているかどうかを確認します。 Data Warehouse Managerに移動し、**`orders`** テーブルをクリックします。 「変更？」列に[&#x200B; リチェック頻度](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=ja)が表示されます。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、先に進んで、目的の再チェック頻度に設定してください。
+これを確認するには、**order\_total**&#x200B;列が再チェックされているかどうかを確認します。 Data Warehouse Managerに移動し、**`orders`** テーブルをクリックします。 「変更？」列に[ リチェック頻度](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html)が表示されます。 **order\_total** フィールドは、変更が予想される頻度で再チェックするように設定する必要があります。そうでない場合は、先に進んで、目的の再チェック頻度に設定してください。
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
-再チェックの頻度が既に正しく設定されている場合は、他の何かが間違っています。 次の手順については、この記事の最後にある「[&#x200B; サポートへの連絡」セクション &#x200B;](#support)を参照してください。
+再チェックの頻度が既に正しく設定されている場合は、他の何かが間違っています。 次の手順については、この記事の最後にある「[ サポートへの連絡」セクション ](#support)を参照してください。
 
-## ソースデータベースにMagento BIよりも多くの行がある {#morerows}
+## ソースデータベースにMagento BIよりも多くの行があります {#morerows}
 
-ソースデータベースの行がMagento BIよりも多く、間隔が更新サイクルの間に発生すると予想される注文数よりも大きい場合は、接続の問題が発生する可能性があります。 つまり、Magento BIはソースデータベースから新しいデータを取り込むことができず、いくつかの理由で発生する可能性があります。
+ソースデータベースの行がMagento BIよりも多く、間隔が更新サイクルの期間中に発生すると予想される注文数よりも大きい場合は、接続の問題が発生する可能性があります。 つまり、Magento BIはソースデータベースから新しいデータを取り込むことができず、いくつかの理由で行われる可能性があります。
 
 接続ページに移動し、`order` テーブルを含むデータソースのステータスを確認します。
 
 1. **ステータスがRe-auth**&#x200B;の場合、接続で正しい資格情報が使用されていません。 接続をクリックし、正しい資格情報を入力して、再試行してください。
-1. **ステータスが失敗した場合**、接続がサーバーサイドで正しく設定されていない可能性があります。 失敗した接続は、通常、誤ったホスト名またはターゲットサーバーが指定したポートで接続を受け入れないことから発生します。接続をクリックし、ホスト名のスペルと正しいポートが入力されていることを再確認します。 サーバーサイドでは、ポートが接続を受け入れることができること、およびファイアウォールにMagento BI IP アドレス （54.88.76.97/32）が許可されていることを確認します。 **接続が失敗し続ける場合**、次の手順については、この記事の最後にある「[&#x200B; サポートへの連絡」セクション &#x200B;](#support)を参照してください。
-1. **ステータスが成功した場合**、接続は問題ではなく、RJ サポートが参加する必要があります。 次の手順については、この記事の最後にある「[&#x200B; サポートへの連絡」セクション &#x200B;](#support)を参照してください。
+1. **ステータスが失敗した場合**、接続がサーバーサイドで正しく設定されていない可能性があります。 失敗した接続は、通常、誤ったホスト名またはターゲットサーバーが指定したポートで接続を受け入れないことから発生します。接続をクリックし、ホスト名のスペルと正しいポートが入力されていることを再確認します。 サーバー側では、ポートが接続を受け入れることができること、およびファイアウォールに許可されたMagento BI IP アドレス （54.88.76.97/32）が含まれていることを確認してください。 **接続が失敗し続ける場合**、次の手順については、この記事の最後にある「[ サポートへの連絡」セクション ](#support)を参照してください。
+1. **ステータスが成功した場合**、接続は問題ではなく、RJ サポートが参加する必要があります。 次の手順については、この記事の最後にある「[ サポートへの連絡」セクション ](#support)を参照してください。
 
-## ソースデータベースの行がMagento BIよりも少ない {#lessrows}
+## ソースデータベースの行数がMagento BIよりも少ない {#lessrows}
 
-ソースデータベースの行がMagento BIよりも少ない場合、行がソースデータベースから削除され、Magento BIがこれらの削除を取得しない可能性があります。 **[&#x200B; データを削除](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=ja)すると、データの不整合、更新時間の長さ、多数のロジスティクス上の問題につながる可能性があります。そのため**&#x200B;本当に必要でない限り、データを削除しないことを強くお勧めします。
+ソースデータベースの行がMagento BIよりも少ない場合、行がソースデータベースから削除され、Magento BIがこれらの削除を取得しない可能性があります。 **[ データを削除](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html)すると、データの不整合、更新時間の長さ、多数のロジスティクス上の問題につながる可能性があります。そのため**本当に必要でない限り、データを削除しないことを強くお勧めします。
 
 ただし、行がテーブルから削除された場合は、プライマリキーの再チェック頻度を確認してください。 プライマリキーを再チェックすると、テーブルが削除された行についてチェックされます。
 
@@ -83,13 +92,13 @@ Data Warehouse Managerでは、プライマリキー列にキーマークが付�
 
 問題の原因を特定できない場合は、RJ サポートでループする必要があります。 チケットを送信する前に、次の操作を行ってください。
 
-* **ソースデータベースとMagento BIの行数が同じ**&#x200B;で、頻度が正しく設定されているかどうかを再確認する場合は、スプレッドシート **でVLOOKUPを実行して、Magento BIとソースデータベースの間でorder\_id値のorder\_total値が異なるものを見つけます。** チケットの送信時に、これらの値を含めます。
-* **ソースデータベースにMagento BI**&#x200B;より多くの行があり、接続が「正常」または「引き続き失敗」と表示される場合、接続の名前とエラーメッセージを確認する必要があります（存在する場合）。
-* **ソースデータベースの行がMagento BIよりも少ない場合、**&#x200B;行がテーブルから削除されず、頻度が正しく設定されていることを再確認するには、スプレッドシート **でVLOOKUPを実行して、どのorder\_id値がMagento BI**&#x200B;にあるのか、ソースデータベースにはないかを確認します。 チケットの送信時に、これらの値を含めます。
+* **ソースデータベースとMagento BIの行数が同じ**&#x200B;で、頻度が正しく設定されているかどうかを再確認する場合は、スプレッドシート **でVLOOKUPを実行して、Magento BIとソースデータベースの間でorder\_id値が異なるorder\_total値を見つけます。** チケットの送信時に、これらの値を含めます。
+* **ソースデータベースにMagento BI**&#x200B;より多くの行があり、接続が「成功」または「失敗し続ける」と表示される場合、接続の名前と、表示されているエラーメッセージがある場合は、その接続の名前を把握する必要があります。
+* **ソースデータベースの行がMagento BIよりも少ない場合、**&#x200B;行がテーブルから削除されず、頻度が正しく設定されていない場合は、スプレッドシート **でVLOOKUPを実行して、どのorder\_id値がMagento BI**&#x200B;にあるのか、ソースデータベースにはないかを確認します。 チケットの送信時に、これらの値を含めます。
 
 ## 関連トピックス
 
-* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-41479)
-* [Adobe Commerce Intelligence サービスポリシー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [データの相違の診断チェックリスト](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Adobe Commerce Intelligence サービスポリシー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 

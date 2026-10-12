@@ -1,16 +1,25 @@
 ---
-title: Adobe Commerce バージョン 2.4.5へのアップグレード後の[!UICONTROL Recommendations] [!DNL JS]  エラー
-description: この記事では、Adobe Commerceへのアップグレード後（すべてのデプロイメント方法）に、製品[!UICONTROL Recommendations] モジュールに関連するコンソールに [!DNL JS]  エラーが発生した場合の解決策を示します。
+title: Adobe Commerce バージョン 2.4.5へのアップグレード後に[!UICONTROL Recommendations] [!DNL JS] エラーが発生しました
+description: この記事では、Adobe Commerceへのアップグレード後（すべてのデプロイメント方法）に、製品[!UICONTROL Recommendations] モジュールに関連するコンソールに[!DNL JS]個のエラーが発生した場合の対処方法を説明します。
 feature: Install, Upgrade
 role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '197'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce バージョン 2.4.5へのアップグレード後に[!UICONTROL Recommendations] [!DNL JS] エラーが発生しました
 
 この記事では、Adobe Commerceへのアップグレード後（すべてのデプロイメント方法）に、製品[!UICONTROL Recommendations]のモジュール/ユニットに関連するコンソールで[!DNL JS]個のエラーが発生した場合の対処方法を説明します。

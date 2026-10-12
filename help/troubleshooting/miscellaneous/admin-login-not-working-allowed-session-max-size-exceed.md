@@ -2,13 +2,14 @@
 title: '[!UICONTROL Admin] ログインが機能しません – セッションの最大サイズを超えています'
 description: '[!UICONTROL Admin] パネルにログインしようとしたときにフォームが更新され、ログインできない場合の問題を解決します。'
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Admin] ログインが機能しません – セッションの最大サイズを超えています
 
 この記事では、[!UICONTROL Admin] パネルにログインしようとしたが、フォームが更新されただけでログインできない場合、または[!UICONTROL Admin] パネルで一部のアクションを実行して自動的にログアウトする場合の修正について説明します。
@@ -16,8 +17,8 @@ ht-degree: 0%
 
 ## 影響のあるバージョン
 
-* Adobe Commerce オンプレミス、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
-* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce オンプレミス、[ サポートされているすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## イシュー
 
@@ -57,6 +58,6 @@ bin/magento config:set system/security/max_session_size_admin 500000
 
 ## 関連トピックス
 
-* 管理者システムガイドの[&#x200B; セッションサイズ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management#admin-sessions)
-* 設定ガイドの[操作モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/set-mode)
-* Commerce on Cloud Infrastructure ガイドの[&#x200B; セキュアな接続](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections)
+* 管理者システムガイドの[ セッションサイズ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions)
+* 設定ガイドの[操作モード ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Commerce on Cloud Infrastructure ガイドの[ セキュアな接続](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)

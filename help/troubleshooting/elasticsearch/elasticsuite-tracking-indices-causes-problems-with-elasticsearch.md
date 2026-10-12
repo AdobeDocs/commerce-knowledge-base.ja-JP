@@ -1,72 +1,73 @@
 ---
-title: ElasticSuite トラッキングインデックスが原因でElasticsearchの問題が発生する
-description: この記事では、ElasticSuite プラグインによって生成されるトラッキングインデックスによって引き起こされるElasticsearchメモリの問題の問題について説明します。
+title: ElasticSuite トラッキングインデックスがElasticsearchの問題を引き起こす
+description: この記事では、ElasticSuite プラグインによって生成されたインデックスのトラッキングによって発生するElasticsearch メモリの問題について説明します。
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
-# ElasticSuite トラッキングインデックスが原因でElasticsearchの問題が発生する
+# ElasticSuite トラッキングインデックスがElasticsearchの問題を引き起こす
 
 >[!NOTE]
 >
->ElasticSuite とその関連アプリケーションは、現在Adobeでサポートされていないサードパーティ製ツールです。 このコンテンツは情報提供のみを目的としており、サポート範囲に対して有効な内容を示すものではありません。
+>ElasticSuiteとその関連アプリケーションは、現在Adobeでサポートされていないサードパーティツールです。 このコンテンツは情報提供のみとして表示され、サポート対象として有効な内容を示すものではありません。
 
-この記事では、ElasticSuite プラグインによって生成されるトラッキングインデックスによって引き起こされるElasticsearchメモリの問題の問題について説明します。
+この記事では、ElasticSuite プラグインによって生成されたインデックスのトラッキングによって発生するElasticsearch メモリの問題について説明します。
 
 ## 影響を受ける製品とバージョン
 
-ElasticSuite 2.8.0 より前のバージョンでは、トラッキングインデックスを定期的にクリーンアップすることはできません。
+2.8.0より前のバージョンのElasticSuiteでは、トラッキングインデックスを定期的にクリーンアップできません。
 
-2.9.8/2.10.7 より前のバージョンの ElasticSuite は、トラッキングインデックスを毎日のインデックスに保存しているので、オープンインデックスの数が増えます。
+ElasticSuite バージョン 2.9.8 / 2.10.7より前のバージョンでは、トラッキングインデックスを毎日のインデックスに保存しているため、開いているインデックスの数が増加します。
 
-## 問題
+## イシュー
 
-ElasticSuite サードパーティプラグインがインストールされている場合、Elasticsearchメモリの問題が発生し、ElasticSuite トラッキングインデックスが原因でElasticsearchサービスがクラッシュする可能性があります。 症状は次のとおりです。
+ElasticSuite サードパーティ製プラグインがインストールされている場合、Elasticsearch メモリの問題が発生し、ElasticSuite トラッキングインデックスによってElasticsearch サービスがクラッシュする可能性があります。 症状は次のとおりです。
 
-* メモリエラーが発生せずにElasticsearchがクラッシュする。
-* （スターターアカウントに対して）ヘルスコマンド `curl -m1 localhost:9200/_cluster/health?pretty` または `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` を実行すると、数百または数千の `unassigned_shards` ーザーが存在します
-* Elasticsearchまたはサイトのパフォーマンスが著しく低下している。
-* Elasticsearchのデプロイまたはログエラーの *「クラスターにアライブノードが見つかりません」* を参照してください。
-* デプロイまたはログのエラーで *&quot;[&lt;\*>_ tracking_log_event _&lt;\*>]&quot;へのマッピングの更新を拒否しています*。
+* Elasticsearchがクラッシュし、メモリエラーが発生しません。
+* ヘルスコマンド `curl -m1 localhost:9200/_cluster/health?pretty`または`curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` （スターターアカウントの場合）を実行すると、数百または数千の`unassigned_shards`が存在します
+* Elasticsearchまたはサイトのパフォーマンスが大幅に低下する。
+* *「クラスターにアライブノードが見つかりません」* （Elasticsearchのデプロイまたはログエラー）。
+* デプロイまたはログエラーの&#x200B;*「マッピングの更新を[&lt;\*>_tracking_ log_event_&lt;\*>]&quot;*に拒否しています。
 
-## 原因：
+## 原因
 
-ElasticSuite には、トラッキングインデックスを作成する新機能があります。 これらのトラッキングインデックスでは、どの検索用語が最も使用されているか、どの用語が最も売上高を生み出しているか、どの用語が結果のないページにつながっているかを記録しているので、マーチャントは同義語を作成してそれらを修正できます。 トラッキングインデックスが削除されていないように見えるので、Elasticsearchがリソースを使い果たしてクラッシュします。
+ElasticSuiteには、トラッキングインデックスを作成する新機能があります。 これらのトラッキングインデックスは、最も頻繁に使用されている検索語、最も回転率が高い用語、どの用語が「検索結果なし」のページにつながっているかを記録し、加盟店が類義語を作成して修正できるようにします。 トラッキングインデックスは削除されないようなので、Elasticsearchのリソースが不足してクラッシュします。
 
-## 解決策
+## Solution
 
-### トラッキングインデックスを定期的にクリーンアップできるように、ElasticSuite のバージョンをアップグレードしてください
+### トラッキングインデックスを定期的にクリーンアップできるように、ElasticSuite バージョンをアップグレードします
 
-ElasticSuite プラグインを 2.8.0 より上のバージョンにアップグレードしたら、インデックスの定期的なクリーニングを設定できます。
+ElasticSuite プラグインを2.8.0より高いバージョンにアップグレードすると、インデックスの定期的なクリーニングを設定できます。
 
-**ストア**/**設定**/**トラッキング**/**グローバル設定**/**保持遅延** に移動します。
+**ストア** > **設定** > **トラッキング** > **グローバル設定** > **保持遅延**&#x200B;に移動します
 
-デフォルトの保持期間は 365 日です。 30 日または 15 日に減らすことができます。
+デフォルトの保持期間は365日です。 30日や15日に短縮することもできます。
 
-### ElasticSuite のバージョンをアップグレードして、日単位のインデックスではなく月単位のインデックスを使用するようにします
+### ElasticSuiteのバージョンをアップグレードして、日次ベースのインデックスではなく月次ベースのインデックスを使用します
 
-ElasticSuite プラグインをバージョン > 2.9.8 / 2.10.7 にアップグレードすると、トラッキングインデックスは月単位になります。
+ElasticSuite プラグインをバージョン > 2.9.8 / 2.10.7にアップグレードすると、トラッキングインデックスは月次ベースになります。
 
-引き続き、保持期間を短縮できます。
+リテンション期間を短縮することもできます。
 
-**ストア**/**設定**/**トラッキング**/**グローバル設定**/**保持遅延** に移動します。
+**ストア** > **設定** > **トラッキング** > **グローバル設定** > **保持遅延**&#x200B;に移動します
 
-デフォルトの保持期間は 12 か月です（12 個のインデックスが生成されます）。 3 か月または 6 か月に減らすことができます。
+デフォルトの保持期間は12か月です（12のインデックスが生成されます）。 3か月か6か月に短縮できます。
 
-### cronjob を使用してトラッキングインデックスデータをクリーンアップ
+### トラッキングインデックスデータのクリーンアップにcronjobを使用する
 
-Cron ジョブを作成して、トラッキングインデックスを削除します。 このコマンドは、先月に作成したインデックスを削除します。
+トラッキングインデックスを削除するcron ジョブを作成します。 このコマンドは、先月作成されたインデックスを削除します。
 
 ```
    curl -XDELETE localhost:9200/<name in index> * **\_tracking\_log** * _$(date
     +'%Y%m' -d 'last month')*
 ```
 
-設定された時間頻度でインデックスを削除する場合は、開発者向けドキュメントの以下の記事を参照して、cron ジョブを作成します。
+特定の時間頻度でインデックスを削除する場合は、開発者ドキュメントの次の記事を参照して、cron ジョブを作成します。
 
-* [&#x200B; カスタム cron ジョブと cron グループの設定（チュートリアル） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [cron ジョブの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [カスタム cron ジョブとcron グループの設定（チュートリアル）](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [cron ジョブの設定](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

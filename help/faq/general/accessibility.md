@@ -1,27 +1,31 @@
 ---
-title: Adobe Commerceの web コンテンツアクセシビリティ
-description: 'Adobeでのアクセシビリティの重要性を理解しています。 アクセシビリティの責任はパートナー/マーチャントにありますが、2022 年のアクセシビリティ改善計画にも含まれる各リリースで、アクセシビリティを引き続き改善します。  '
+title: Adobe Commerceのweb コンテンツへのアクセシビリティ
+description: 'Adobeにおけるアクセシビリティの重要性を理解しています。 アクセシビリティの責任はパートナー/マーチャントにあります。ただし、2022年のアクセシビリティ改善計画にも含まれる各リリースで、アクセシビリティを継続的に改善していきます。  '
 exl-id: f3b4025e-37ef-44fc-9a18-b0d159994062
 feature: Compliance
-source-git-commit: 48453c667e5cc022ad9a551a0ec0016ca06fda52
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '202'
 ht-degree: 0%
-
 ---
+# Adobe Commerceのweb コンテンツへのアクセシビリティ
 
-# Adobe Commerceの web コンテンツアクセシビリティ
+Adobeにおけるアクセシビリティの重要性を理解しています。 アクセシビリティの責任はパートナー/マーチャントにあります。ただし、2022年のアクセシビリティ改善計画にも含まれる各リリースで、アクセシビリティを継続的に改善していきます。
 
-Adobeでのアクセシビリティの重要性を理解しています。 アクセシビリティの責任はパートナー/マーチャントにありますが、2022 年のアクセシビリティ改善計画にも含まれる各リリースで、アクセシビリティを引き続き改善します。
+Adobe Commerceは高度にカスタマイズ可能であり、お客様はLuma テーマを拡張し、アクセシビリティモジュールを作成し、Commerce Marketplaceにアクセスして、アクセシビリティ要件を満たす拡張機能を見つけることができます。
 
-Adobe Commerceは詳細なカスタマイズが可能で、お客様は Luma テーマを拡張し、アクセシビリティモジュールを作成し、Commerce Marketplaceにアクセスしてアクセシビリティ要件を満たす拡張機能を見つけることができます。
+お客様の多くは、[W3C Accessibility Standards](https://www.w3.org/WAI/standards-guidelines/)を使用しており、[Adobe Commerce Accessibility Conformance Report for Adobe](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html)を利用しています。
 
-お客様の多くは、&lbrace;W3C Accessibility Standards[&#x200B; を利用しており &#x200B;](https://www.w3.org/WAI/standards-guidelines/)Adobe Commerceの [Adobe Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html) を利用しています。
+業界標準の開発者ツールを使用して、主要なアクセシビリティパートナーと連携したり、特定の顧客要件やAdobe準拠レポートに基づいてCommerce Marketplaceの拡張機能を実装したりできます。
 
-業界標準のデベロッパーツールを使用すると、主要なアクセシビリティパートナーと協力したり、お客様の特定の要件やCommerce Marketplaceの適合性レポートに基づいて、Adobeの拡張機能を実装したりできます。
+解決策については、[Commerce Marketplace](https://marketplace.magento.com/)を参照してください。
 
-ソリューションは、[Commerce Marketplace](https://marketplace.magento.com/) にあります。
+## 関連トピックス
 
-## 関連資料
-
-* [Adobeへのアクセス &#x200B;](https://www.adobe.com/trust/accessibility.html)
+* [Adobeのアクセシビリティ](https://www.adobe.com/trust/accessibility.html)

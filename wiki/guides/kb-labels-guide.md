@@ -1,14 +1,17 @@
 ---
-source-git-commit: 88a2b8fe11d718f33c26bbc6f407c55d9f1fd189
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
-
 ---
+
 # KB ラベルガイド
 
 このドキュメントでは、Adobe Commerce サポート技術情報の記事にラベルを追加するためのガイドラインを提供します。
-ラベル（「タグ」とも呼ばれます）は、[Adobe Commerce サポート ナレッジベース &#x200B;](https://support.magento.com/hc/en-us)での検索体験を向上させます。
+ラベル（「タグ」とも呼ばれます）は、[Adobe Commerce サポート ナレッジベース ](https://support.magento.com/hc/en-us)での検索体験を向上させます。
 ラベルは、記事ファイルのメタデータセクションの「ラベル」フィールドにコンマで区切って追加されます。コンマと次のラベルの間にはスペースがありません。
 詳しくは、[.././.github/CONTRIBUTING.md#metadata]を参照してください。
 

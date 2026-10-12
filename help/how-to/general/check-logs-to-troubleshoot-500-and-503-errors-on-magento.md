@@ -1,18 +1,27 @@
 ---
-title: ログを確認して、Adobe Commerceの 500 および 503 エラーのトラブルシューティングを行います
-description: この記事では、「access.log」と関連ログを確認して、トラフィックやサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行う方法について説明します。 「access.log」と関連ログを確認すると、クラウドインフラストラクチャー上のAdobe Commerceに関連して問題を引き起こしている可能性のある原因に関する情報を得ることができます。
+title: ログを確認して、Adobe Commerceの500および503 エラーをトラブルシューティングする
+description: この記事では、「access.log」および関連するログを確認して、トラフィックまたはサーバーリソース不足が原因で発生する可能性のある503および500 エラーをトラブルシューティングする方法について説明します。 「access.log」と関連するログを表示すると、Adobe Commerce on cloud infrastructureに関連する問題の原因となる可能性のある情報を入手できます。
 exl-id: 47d7de6b-3e12-4e79-a5c1-c27a9196b99c
 feature: Cloud, Logs
-source-git-commit: 66ac9de94e9a4a1eccdb5aac1875ecf0a0637e90
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '338'
 ht-degree: 0%
-
 ---
+# ログを確認して、Adobe Commerceの500および503 エラーをトラブルシューティングする
 
-# ログを確認して、Adobe Commerceの 500 および 503 エラーのトラブルシューティングを行います
-
-この記事では、`access.log` と関連ログを確認して、トラフィックまたはサーバーリソースの不足が原因で発生する可能性のある 503 および 500 エラーのトラブルシューティングを行う方法について説明します。 `access.log` と関連ログを確認すると、クラウドインフラストラクチャー上のAdobe Commerceに関連して、何が問題を引き起こしているかに関する情報を得ることができます。
+この記事では、トラフィックまたはサーバーリソース不足が原因で発生する可能性のある503および500 エラーのトラブルシューティングを行うために、`access.log`および関連ログを確認する方法について説明します。 `access.log`と関連するログを表示すると、Adobe Commerce on cloud infrastructureに関連する問題の原因となる可能性のある情報を入手できます。
 
 <!--
 Bob - not in TOC
@@ -20,16 +29,16 @@ Bob - not in TOC
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=ja)。
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)。
 
-これらのサーバーエラーのログを表示するには、web サーバーの `access.log` （例：`<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`）を確認します
+これらのサーバーエラーのログを表示するには、web サーバーの`access.log`を確認します（例：`<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`）。
 
-関連ログを確認するには：
+関連するログを確認するには：
 
-1. 次のコマンドを CLI で実行します（クラウドインフラストラクチャー上のAdobe Commerce Pro プランアーキテクチャの場合）。 または、過去の特定の時点（Adobe Commerce on cloud infrastructure スタータープランアーキテクチャの場合）まで、ログのカバレッジの期間が限られ、ログのローテーションは使用できません。`grep -r "\" [50[0-9]" /path/to/access.log` 過去にエラーが発生した場合は、CLI で次のコマンドを実行します（Pro アーキテクチャのみ）。`zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
-1. 次に、`exception.log` と `error.log`、または同等の [&#x200B; ローテーションされたログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja#log-rotation) （特定のファイルサイズに達すると自動的にローテーションされ圧縮されるログ）で、同じタイムスタンプを確認して、潜在的なエラーを見つけ、そのエラーを引き起こしている可能性のあるものを確認します。 注：`exception.log` をチェックし、`error.log` に CLI で上記のコマンドを実行し、`access.log` を `exception.log` または `error.log` に置き換えます。
+1. 現在の日にある場合は、CLIで次のコマンドを実行します（Adobe Commerce on cloud infrastructure Pro プランアーキテクチャの場合）。 ログのカバレッジ時間が制限され、ログのローテーションが利用できないため、過去の特定の時点（クラウドインフラストラクチャ上のAdobe Commerce スタータープランアーキテクチャの場合）までログをローテーションできます。`grep -r "\" [50[0-9]" /path/to/access.log`過去にエラーが発生した場合は、CLIで次のコマンドを実行します（Pro アーキテクチャのみ）。`zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
+1. 次に、同じタイムスタンプの`exception.log`と`error.log`または同等の[回転ログ ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) （特定のファイルサイズに達したときに自動的に回転および圧縮されるログ）を確認して、潜在的なエラーを見つけ、原因となった可能性のあるエラーを確認します。 注意：`exception.log`と`error.log`を確認するには、CLIで上記のコマンドを実行しますが、`access.log`を`exception.log`または`error.log`に置き換えます。
 
-## 関連資料
+## 関連トピックス
 
-* [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) ログの表示と管理 *を参照してください。*
-* サポートナレッジベースの [503 エラーのトラブルシューティング &#x200B;](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) を参照してください。
+* *Adobe Commerce on Cloud Infrastructure ガイド*&#x200B;の「[ ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)」を参照してください。
+* サポートナレッジベースの[503 エラーのトラブルシューティング ](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)を参照してください。

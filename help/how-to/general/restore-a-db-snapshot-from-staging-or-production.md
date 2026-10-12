@@ -2,13 +2,14 @@
 title: ステージングまたは実稼動環境からのDB スナップショットの復元
 description: この記事では、クラウドインフラストラクチャ上のAdobe Commerce上のステージングまたは実稼動環境からDB スナップショットを復元する方法について説明します。
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # DB スナップショットを[!DNL Staging]または[!DNL Production]から復元します
 
 この記事では、Cloud Pro インフラストラクチャ上のAdobe Commerceで[!DNL Staging]または[!DNL Production]からDB [!DNL snapshot]を復元する方法について説明します。
@@ -16,19 +17,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらの方法により、**完全なスナップショット**&#x200B;が復元されます。
+>これらの方法により、**完全なスナップショット**が復元されます。
 >スナップショット **部分**&#x200B;を復元する必要がある場合（例：注文テーブルを完全に残したままカタログテーブルのみを復元する場合など）は、開発者またはDBAに相談する必要があります。
 
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ケースに最適なものを選択します。
 
 >[!NOTE]
 >
-> 統合環境にスナップショットを読み込む場合は、データベースのサイズに注意してください。 大規模なデータベースは、インポート後にパフォーマンスの低下を引き起こす可能性があります。 スナップショットをステージング環境またはローカル環境に読み込んでレビューし、サイズを縮小してから統合に転送することをお勧めします。 さらに、インポート後にパフォーマンスの問題が発生した場合は、統合ブランチでcron ジョブを無効にすることを検討してください。 詳しくは、Commerce on Cloud Infrastructure ガイドの[Integration environment](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment)を参照してください。
+> 統合環境にスナップショットを読み込む場合は、データベースのサイズに注意してください。 大規模なデータベースは、インポート後にパフォーマンスの低下を引き起こす可能性があります。 スナップショットをステージング環境またはローカル環境に読み込んでレビューし、サイズを縮小してから統合に転送することをお勧めします。 さらに、インポート後にパフォーマンスの問題が発生した場合は、統合ブランチでcron ジョブを無効にすることを検討してください。 詳しくは、Commerce on Cloud Infrastructure ガイドの[Integration environment](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment)を参照してください。
 
 * [方法1: データベース  [!DNL dump] をローカルマシンに転送し、読み込む](#meth2)。
 * [方法2: データベース  [!DNL dump] をサーバー](#meth3)から直接インポートします。
@@ -83,7 +84,7 @@ ht-degree: 0%
    ```
 
 1. データベース [!DNL dump file] （例：[!DNL Production]には`<cluster ID>.sql.gz`、[!DNL Staging]には`<cluster ID_stg>.sql.gz`）をローカル コンピューターにコピーします。
-1. リモートでデータベースに接続するように[!DNL SSH tunnel]を設定していることを確認してください：[[!DNL SSH] および [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)。詳しくは、開発者ドキュメントを参照してください。
+1. リモートでデータベースに接続するように[!DNL SSH tunnel]を設定していることを確認してください：[[!DNL SSH] および [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)。詳しくは、開発者ドキュメントを参照してください。
 1. データベースに接続します。
 
    ```bash
@@ -179,6 +180,6 @@ ht-degree: 0%
 
 アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [コードの読み込み：データベースの読み込み](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots]および [!DNL backup] 管理： [!DNL Dump] あなたのデータベース](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [クラウドでのバックアップ（スナップショット）:FAQ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [コードの読み込み：データベースの読み込み](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots]および [!DNL backup] 管理： [!DNL Dump] あなたのデータベース](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [クラウドでのバックアップ（スナップショット）:FAQ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)

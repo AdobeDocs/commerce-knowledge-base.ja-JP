@@ -1,36 +1,40 @@
 ---
-title: Magento.comと accounts.magento.cloud アカウントのログインにリンクします
-description: 2020 年 4 月 1 日（PT）をもって、Adobe Commerceは、[accounts.magento.cloud] （https://accounts.magento.cloud/）にアカウントを持つユーザーに、このアカウントを [Magento.com] （https://account.magento.com/customer/account/login/） アカウントにリンクすることを義務付けます。 これにより、[Magento.com] （https://account.magento.com/customer/account/login/） アカウントが両方のアカウントのプライマリログイン方式になり、ユーザーのセキュリティが向上します。
+title: Magento.comとaccounts.magento.cloud アカウントのログイン情報をリンク
+description: 2020年4月1日現在、Adobe Commerceでは、[accounts.magento.cloud] （https://accounts.magento.cloud/）にアカウントを持つユーザーは、このアカウントを[Magento.com] （https://account.magento.com/customer/account/login/）アカウントにリンクする必要があります。 これにより、[Magento.com] （https://account.magento.com/customer/account/login/） アカウントのログインが両方のアカウントのプライマリログイン方法になり、ユーザーのセキュリティが向上します。
 exl-id: 89afec50-bc21-46cd-8440-2bcf717ded69
 feature: Cloud
-source-git-commit: 74b04ca74330037252334c288b15d8412d00d253
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
+# Magento.comとaccounts.magento.cloud アカウントのログイン情報をリンク
 
-# Magento.comと accounts.magento.cloud アカウントのログインにリンクします
+2020年4月1日現在、Adobe Commerceでは、[accounts.magento.cloud](https://accounts.magento.cloud/)のアカウントを持つユーザーは、このアカウントを[Magento.com](https://account.magento.com/customer/account/login/) アカウントとリンクする必要があります。 これにより、[Magento.com](https://account.magento.com/customer/account/login/) アカウントのログインが両方のアカウントのプライマリログイン方法になり、ユーザーのセキュリティが向上します。
 
-2020 年 4 月 1 日をもって、Adobe Commerceでは、{accounts.magento.cloud[&#128279;](https://accounts.magento.cloud/) でアカウントを持つユーザーに、このアカウントを [2}Magento.com](https://account.magento.com/customer/account/login/) アカウントにリンクする必要があります。 これにより、[Magento.com](https://account.magento.com/customer/account/login/) アカウントへのログインが両方のアカウントのプライマリログイン方式になり、ユーザーのセキュリティが向上します。
+[accounts.magento.cloud](https://accounts.magento.cloud/)のユーザーは、次の2つの方法のいずれかで、これらのアカウントを接続できます。
 
-[accounts.magento.cloud](https://accounts.magento.cloud/) のユーザーは、次の 2 つの方法のいずれかを使用してこれらのアカウントに接続できます。
+## 方法1
 
-## 方法 1
+1. お好みの方法でログインした後、[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user)の&#x200B;**アカウント設定**&#x200B;に移動します。
+1. ページの&#x200B;**シングルサインオン** セクションを開きます。
+1. **Provider: Magento.com**&#x200B;が「ステータスが接続されていません」と報告した場合は、**Magento.comとの接続** ボタンを選択します。
+1. [https://account.magento.com/applications/customer/login/](https://account.magento.com/applications/customer/login/)にリダイレクトされます。
+1. そこから、Adobe Commerce アカウントを作成するか、既存のアカウントにログインできます。
 
-1. 任意の方法でログインしてから、**アカウント設定** （[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user)）に移動してください。
-1. ページの **シングルサインオン** セクションを開きます。
-1. **Provider: Magento.com** から「Status Not Connected」と表示された場合は、「**Magento.com で接続**」ボタンを選択します。
-1. [https://account.magento.com/applications/customer/login/](https://account.magento.com/applications/customer/login/) にリダイレクトされます。
-1. ここから、Adobe Commerce アカウントを作成するか、既存のアカウントにログインできます。
+## 方法2
 
-## 方法 2
+1. [https://account.magento.com](https://account.magento.com/)にログインします。
+1. 別のタブに移動して、[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user)に移動します。
+1. 「[Magento.com](https://account.magento.com/customer/account/login/)」をクリックします。
 
-1. [https://account.magento.com](https://account.magento.com/) にログインします。
-1. 別のタブに移動して、[https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) に移動します。
-1. 「Magentoと接続」をクリックします [&#128279;](https://account.magento.com/customer/account/login/)
+## 関連トピックス
 
-## 関連資料
-
-* [Adobe Commerce サポートまたは Cloud アカウントにログインできない](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-* [MageID アカウント所有者がログインしてサポートチケットを送信できません &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Adobe Commerce サポートまたはクラウドアカウントにログインできない](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
+* [MageID アカウント所有者がログインしてサポートチケットを送信できない](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)

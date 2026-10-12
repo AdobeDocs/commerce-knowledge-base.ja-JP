@@ -1,41 +1,48 @@
 ---
-title: PWA Studio：ブラウザーが.local.pwadev サイトを解決できない
-description: この記事では、別のプログラムまたはプロセスが [ ホスト ファイル ] （https://en.wikipedia.org/wiki/Hosts_(file）を編集し、プロジェクト ドメインのエントリを削除した場合の解決策を示します。
+title: PWA Studio:.local.pwadev サイトを解決できません
+description: この記事では、別のプログラムまたはプロセスが[ ホストファイル ] （https://en.wikipedia.org/wiki/Hosts_(file\）を編集し、プロジェクトドメインのエントリを削除した場合の解決策を紹介します。
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
-source-git-commit: 1d0d51209bdc02360c6f8527701cdf0da811659d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '255'
 ht-degree: 0%
-
 ---
+# PWA Studio:.local.pwadev サイトを解決できません
 
-# PWA Studio：ブラウザーが.local.pwadev サイトを解決できない
-
-この記事では、別のプログラムまたはプロセスが自分の [ ホスト ファイル ] （https://en.wikipedia.org/wiki/Hosts_(file\））を編集し、自分のプロジェクト ドメインのエントリを削除した場合の解決策を示します。
+この記事では、別のプログラムまたはプロセスが[ ホストファイル ] （https://en.wikipedia.org/wiki/Hosts_(file\）を編集し、プロジェクトドメインのエントリを削除した場合の解決策を紹介します。
 
 ## 影響を受ける製品とバージョン
 
-Adobe CommerceのPWA Studio
+PWA Studio for Adobe Commerce
 
-## 問題
+## イシュー
 
-開発/ステージングサイトを参照しても、`.local.pwadev` サイトは表示されません。
+開発/ステージング サイトを参照すると、`.local.pwadev` サイトが表示されません。
 
-## 原因：
+## 原因
 
-PWA Studioでは、プロジェクトに使用するカスタムのホスト名と SSL 証明書をローカルコンピューターに割り当てることができます。 これには、コンピューターのホストファイルに、`my-storefront-project-abc123.local.pwadev` のような新しいエントリを作成することが含まれます。
+PWA Studioでは、プロジェクトのカスタムホスト名とSSL証明書をローカルコンピューターに割り当てることができます。 これには、コンピューターのホストファイルに、`my-storefront-project-abc123.local.pwadev`のように見える新しいエントリを作成することが含まれます。
 
-このエントリは、開発者のコンピューター上のすべてのブラウザーに、その URL にアクセスしたときにローカルストアフロントプロジェクトを参照するように指示します。 別のプログラムまたはプロセスが入ってきて、そのエントリを削除すると、ブラウザーは移動先を認識できず、ブラウザーは `.local.pwadev` サイトを解決できません。
+このエントリは、開発者のコンピューター上のブラウザーに対して、そのURLにアクセスしたときにローカルのストアフロントプロジェクトを確認するように指示します。 別のプログラムまたはプロセスが入ってきて、そのエントリを削除した場合、ブラウザーはどこに行くかわからず、ブラウザーは`.local.pwadev` サイトを解決できません。
 
-## 解決策
+## Solution
 
-[&#x200B; ホストファイルを手動で編集 &#x200B;](https://docs.rackspace.com/docs/modify-your-hosts-file) してエントリを追加し直すこともできますが、インストールされている他のソフトウェアを調べて、以前の変更を上書きしたものを確認する必要があります。
+[手動でホストファイル ](https://docs.rackspace.com/docs/modify-your-hosts-file)を編集してエントリを再度追加できますが、他のインストール済みソフトウェアを調べて、以前の変更が上書きされたものを確認する必要があります。
 
-## サポートナレッジベースの関連資料
+## サポートナレッジベースの関連情報
 
-* [PWA Studio：自己署名証明書の信頼エラー &#x200B;](https://support.magento.com/hc/en-us/articles/360038973172)
-* [PWA Studio: コンパイルを開始する前に Webpack がハングします](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
-* [PWA Studio：ブラウザーに「Cannot proxy to」エラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
-* [PWA Studio：開発者モードの実行中に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
+* [PWA Studio：自己署名証明書の信頼エラー](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio：コンパイルを開始する前にWebpackがハングする](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
+* [PWA Studio：ブラウザーに「次にプロキシできません」というエラーが表示される](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
+* [PWA Studio：開発者向けモードの実行時に検証エラーが発生する](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)

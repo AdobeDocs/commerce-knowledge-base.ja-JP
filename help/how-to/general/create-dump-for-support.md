@@ -2,13 +2,14 @@
 title: サポートエージェントから要求された場合に「スクラブ」ダンプを作成する方法
 description: この記事では、Adobe Commerce サポートエージェントから提供を依頼された場合に、Adobe Commerce管理者からデータベースの「スクラブ」ダンプ（バックアップ）とコードを作成する方法について説明します。 このダンプは、メディアファイルを除外して、プロセスを高速化し、ファイルを大幅に小さくします。 データベースのバックアップを作成する際に、すべての機密データがハッシュ化されます。
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
-
 ---
-
 # サポートエージェントから要求された場合に「スクラブ」ダンプを作成する方法
 
 
@@ -27,8 +28,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.x、2.4.x。
 
 次に、ダンプファイルへの直接ダウンロードリンク（ストアアドレスと表示されているファイル名）をサポートするように指定できます。
 
-管理者からダンプを作成する際に問題が発生した場合は、開発者ドキュメントの[&#x200B; サポートユーティリティの実行](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/run-support-utilities)で説明されているように、CLI コマンドを使用することを検討してください。
+管理者からダンプを作成する際に問題が発生した場合は、開発者ドキュメントの[ サポートユーティリティの実行](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities)で説明されているように、CLI コマンドを使用することを検討してください。
 
 ## 関連トピックス
 
-* [&#x200B; クラウドインフラストラクチャ上のAdobe Commerceのデータベースの完全なバックアップを作成](/help/how-to/general/create-database-dump-on-cloud.md)します。
+* [ クラウドインフラストラクチャ上のAdobe Commerceのデータベースの完全なバックアップを作成](/help/how-to/general/create-database-dump-on-cloud.md)します。

@@ -4,13 +4,24 @@ description: この記事では、PayPal Braintreeの支払いが使用され、
 exl-id: db3830b2-4885-4d89-85cd-bdcbd4b396e6
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.1既知の問題：PayPal Braintreeでのチェックアウト時にポップアップが表示されるエラー
 
 この記事では、PayPal Braintreeの支払いが使用され、複数の住所の配送が選択されている場合に、チェックアウトの請求ステップにエラーメッセージがポップアップ表示され、表示されなくなる既知のAdobe Commerce 2.4.1の問題について説明します。

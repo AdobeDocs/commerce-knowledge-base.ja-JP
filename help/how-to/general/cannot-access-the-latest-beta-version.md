@@ -2,16 +2,17 @@
 title: 最新のBeta バージョンにアクセスできない
 description: この記事では、最新のBeta バージョンのAdobe Commerce用コードを利用する際の問題に対する解決策を提供します。 Beta コードは、[Adobe Beta プログラム ] （https://github.com/magento/magento2/wiki/Magento-Beta-Program）に記載されているプロセスに従っている公式のAdobe Commerce パートナーでのみ使用できます。
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
-
 ---
-
 # 最新のBeta バージョンにアクセスできない
 
-この記事では、最新のBeta バージョンのAdobe Commerce用コードを利用する際の問題に対する解決策を提供します。 Beta コードは、[Adobe Beta プログラム &#x200B;](https://github.com/magento/magento2/wiki/Magento-Beta-Program)に記載されているプロセスに従った公式のAdobe Commerce パートナーでのみ使用できます。
+この記事では、最新のBeta バージョンのAdobe Commerce用コードを利用する際の問題に対する解決策を提供します。 Beta コードは、[Adobe Beta プログラム ](https://github.com/magento/magento2/wiki/Magento-Beta-Program)に記載されているプロセスに従った公式のAdobe Commerce パートナーでのみ使用できます。
 
 ## イシュー
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 ### 早期アクセスコードの場所
 
-ベータアクセス期間中、リリースパッケージは[repo.magento.com](https://repo.magento.com/)のComposerからのみ利用できます。 この間、リリースパッケージはGitHubおよびAdobe Commerce ポータルでは利用できません。これらはGA日にこれらの場所に公開します。 Composerの使用方法について詳しくは、[こちら](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer)をクリックしてください。
+ベータアクセス期間中、リリースパッケージは[repo.magento.com](https://repo.magento.com/)のComposerからのみ利用できます。 この間、リリースパッケージはGitHubおよびAdobe Commerce ポータルでは利用できません。これらはGA日にこれらの場所に公開します。 Composerの使用方法について詳しくは、[こちら](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)をクリックしてください。
 
 ### 使用する必要があるMageID
 
@@ -47,7 +48,7 @@ MageIDがプライマリであるかどうかを確認するには、次の手�
    * アクティブなパートナーライセンス情報が表示された場合、MageIDはプライマリになります。 END DATE値が将来の日付である場合、パートナーライセンスはアクティブです。
    * アクティブなパートナーライセンス情報が表示されない場合、MageIDには共有アクセス権のみが付与されます。 プライマリ ID所有者が誰であるかを確認するには、**自分と共有**&#x200B;に移動します。ここで指定した共有名に注意してください。 「**アカウントを切り替え**」をクリックし、SHARENAMEに記録した値を選択します。 ようこそページに、プライマリ ID所有者の電子メールが表示されます。
 1. 何らかの理由で[magento.com](https://account.magento.com/customer/account/login)でこの情報が見つからない場合は、パートナーマネージャーにお問い合わせください。
-1. 上記のいずれも機能しない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+1. 上記のいずれも機能しない場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 #### 開発者がキーに正しくアクセスできない
 

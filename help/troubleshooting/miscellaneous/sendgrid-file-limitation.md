@@ -1,23 +1,34 @@
 ---
 title: Adobe Commerce Cloudの[!DNL SendGrid] ファイルの制限
-description: この記事では、クラウドインフラストラクチャ上のAdobe Commerceの [!DNL SendGrid] 制限に対する回避策を提供します。
+description: この記事では、クラウドインフラストラクチャ上のAdobe Commerceの[!DNL SendGrid]制限に対する回避策を提供します。
 feature: Deploy, Marketing Tools
 role: Developer, Admin
 exl-id: 48629f48-8100-4128-9211-53d947aecd49
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce Cloudの[!DNL SendGrid]の制限
 
 この記事では、Adobe Commerce on Cloud インフラストラクチャの[!DNL SendGrid]制限に対する回避策について説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャ上のAdobe Commerce、[&#x200B; サポートされているすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 
 ## イシュー
@@ -52,9 +63,9 @@ Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxx
 ## 回避策
 
 * 6Mbまたは10Mbを超える添付ファイルは使用しないでください。
-* Adobe Commerce インスタンスでのリモート SMTP サーバーの使用を検討してください。 手順については、管理者システムガイドの「[&#x200B; メール通信の設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=ja)」を参照してください。
+* Adobe Commerce インスタンスでのリモート SMTP サーバーの使用を検討してください。 手順については、管理者システムガイドの「[ メール通信の設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html)」を参照してください。
 * モジュール内にファイルを保存できるようにサーバーを再構成し、メール内のファイルへのリンクを添付します。
 
 ## 関連トピックス
 
-* Commerce on Cloud Infrastructure ガイドの[[!DNL SendGrid] 電子メールサービス &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=ja)。
+* Commerce on Cloud Infrastructure ガイドの[[!DNL SendGrid] 電子メールサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。

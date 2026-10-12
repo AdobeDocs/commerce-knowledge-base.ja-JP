@@ -4,13 +4,23 @@ description: この記事では、適用したパッチがサイトをダウン�
 exl-id: dc765bcd-0761-4efd-a345-46a908d61272
 feature: Cache
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '289'
 ht-degree: 0%
-
 ---
-
 # パッチを適用すると、サイトがダウンする
 
 この記事では、適用したパッチがサイトをダウンさせる問題について説明します。 これを解決するには、パッチを削除します。
@@ -48,7 +58,7 @@ Adobe Commerce オンプレミスおよびMagento Open Source 2.x バージョ�
    patch -p1 -R %patch_name%.composer.patch
    ```
 
-   （上記のコマンドが機能しない場合は、`-p2`ではなく`-p1`を使用してみてください）
+   （上記のコマンドが機能しない場合は、`-p1`ではなく`-p2`を使用してみてください）
 
 1. 変更を反映するには、**システム**/**キャッシュ管理**&#x200B;の下の管理者のキャッシュを更新します。
 
@@ -56,7 +66,7 @@ Adobe Commerce オンプレミスおよびMagento Open Source 2.x バージョ�
 
 Adobe Commerceのクラウドインフラストラクチャには、すべてのバージョン，
 
-1. `%patch_name%.composer.patch` ディレクトリから`m2-hotfixes` ファイルを削除します。
+1. `m2-hotfixes` ディレクトリから`%patch_name%.composer.patch` ファイルを削除します。
 1. コード変更をコミットしてプッシュします。
 
    ```
@@ -65,4 +75,4 @@ Adobe Commerceのクラウドインフラストラクチャには、すべての
 
 ## 関連トピックス
 
-* [Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチを適用する方法について、サポートナレッジベースを参照してください。
+* [Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーパッチを適用する方法について、サポートナレッジベースを参照してください。

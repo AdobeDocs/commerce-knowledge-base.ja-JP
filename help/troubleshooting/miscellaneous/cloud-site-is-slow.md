@@ -4,13 +4,31 @@ description: この記事では、トラフィック負荷が大きい場合にA
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
-
 ---
-
 # クラウドサイトは低速です
 
 この記事では、トラフィック負荷が大きい場合にAdobe Commerce on cloud infrastructure サイトのパフォーマンスを向上させる方法と、この負荷を軽減する方法に関する推奨事項について説明します。
@@ -65,12 +83,12 @@ Fastlyは、通常、アプリケーションから取得される応答ヘッ�
 
 キャッシュヒット率を確認するには、次の手順に従います。
 
-1. Adobe Commerce on cloud infrastructure環境の[Fastly資格情報](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)を取得します。
+1. Adobe Commerce on cloud infrastructure環境の[Fastly資格情報](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)を取得します。
 1. 次のLinux/macOS cURL コマンドを実行して、過去30分間のサイトのヒット率を確認し、Fastly資格情報の値にと置き換えます。
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
 
-   また、時間範囲クエリオプションを`?by=minute`から`?by=hour`または`?by=day`に変更することで、過去1日または1か月の過去のヒット率を確認することもできます。 Fastly キャッシュ統計の取得について詳しくは、Fastly ドキュメントの[&#x200B; クエリオプション &#x200B;](https://docs.fastly.com/api/stats#Query)を参照してください。
+   また、時間範囲クエリオプションを`?by=minute`から`?by=hour`または`?by=day`に変更することで、過去1日または1か月の過去のヒット率を確認することもできます。 Fastly キャッシュ統計の取得について詳しくは、Fastly ドキュメントの[ クエリオプション ](https://docs.fastly.com/api/stats#Query)を参照してください。
 
    `| json_pp` オプションは、`json_pp` ユーティリティを使用してJSON応答出力をプリプリントします。 a_&#39;json\_ppが見つからない_ エラーが発生した場合は、`json_pp` ユーティリティをインストールするか、別のコマンドラインツールを使用してJSON整形印刷を行います。 または、`| json_pp` パラメーターを削除して、コマンドを再度実行します。 JSON応答出力はフォーマットされていませんが、JSON ビューティファイアを通じて実行してクリーンアップできます。
 
@@ -82,8 +100,8 @@ Fastlyは、通常、アプリケーションから取得される応答ヘッ�
 
 1. 1時間および1日のヒット率の統計を使用して、ヒット率がいつ減少し始めたかを特定します。 変更をサイトにデプロイした際にヒット率が突然低下した場合は、サイトの読み込みが落ちるまで変更をロールバックすることを検討します。
 1. Commerce管理者で、**Stores** > **Configuration** >Advanced > **System** > **Full Page Cache**&#x200B;の設定を確認します。 公開コンテンツ **の値の** TTLが低すぎないようにしてください。
-1. VCL スニペット [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)を アップロードしたことを確認してください。
-1. カスタム VCL スニペットを使用する場合は、「パス」または「パイプ」アクションを正しく使用するようにデバッグします。これらは慎重に使用し、少なくとも何らかの条件で使用する必要があります。 詳しくは、開発者ドキュメントの[&#x200B; カスタム Fastly VCL スニペット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets)を参照してください。
+1. VCL スニペット ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets)を[ アップロードしたことを確認してください。
+1. カスタム VCL スニペットを使用する場合は、「パス」または「パイプ」アクションを正しく使用するようにデバッグします。これらは慎重に使用し、少なくとも何らかの条件で使用する必要があります。 詳しくは、開発者ドキュメントの[ カスタム Fastly VCL スニペット ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets)を参照してください。
 
 ### 手順3：サーバー負荷が高い原因となるweb サイトの特定
 
@@ -140,4 +158,4 @@ magento-cloud log
    }
    ```
 
-IP アドレスのブロックについて詳しくは、GitHubの[Fastly Adobe Commerce モジュールガイド &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md)を参照してください。
+IP アドレスのブロックについて詳しくは、GitHubの[Fastly Adobe Commerce モジュールガイド ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md)を参照してください。

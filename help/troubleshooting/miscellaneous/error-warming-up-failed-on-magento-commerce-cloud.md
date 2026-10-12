@@ -1,51 +1,65 @@
 ---
-title: 「エラー：クラウドインフラストラクチャのAdobe Commerceでウォーミングアップに失敗しました」
-description: 「この記事では、ページキャッシュがウォーミングアップ中に、次のエラーで失敗した場合の解決策を説明します。」
+title: 'ERROR: クラウドインフラストラクチャ上のAdobe Commerceでウォームアップに失敗しました'
+description: この記事では、ページキャッシュがウォーミングアップ中にエラーで失敗した場合の解決策を提供します。
 exl-id: 20a88030-b1c9-4fdc-83c1-f344d44cd2e1
 feature: Cache, Cloud, Paas
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '213'
 ht-degree: 0%
-
 ---
+# ERROR: クラウドインフラストラクチャ上のAdobe Commerceでウォームアップに失敗しました
 
-# エラー：クラウドインフラストラクチャ上のAdobe Commerceでウォーミングアップに失敗しました
+この記事では、ページキャッシュがウォーミングアップ中にエラーで失敗した場合の解決策を提供します。
 
-この記事では、ページキャッシュがウォームアップ中で、エラーで失敗した場合の解決策を説明します。
-
-*エラー：ウォームアップに失敗しました：`<website link>`*
+*エラー：ウォーミングアップに失敗しました：`<website link>`*
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
-## 問題
+## イシュー
 
-キャッシュウォームアップに失敗しました。
+キャッシュのウォームアップに失敗しました。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-キャッシュのウォームアップ操作を開始します。
+キャッシュウォームアップ操作を開始します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ページまたはサイト全体の読み込み。
+ページまたはサイト全体が読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-サイトが利用できないか、応答時間が長すぎます。 *エラー：ウォームアップに失敗しました：`<website link>`*
+サイトが利用できないか、応答時間が長すぎます。 *エラー：ウォーミングアップに失敗しました：`<website link>`*
 
-## 原因：
+## 原因
 
-キャッシュウォームアップは、HTTP アクセス制御が有効な場合は機能しません。
+HTTP アクセス制御が有効になっている場合、キャッシュ ウォームアップは機能しません。
 
-## 解決策
+## Solution
 
-アクセス制御が有効になっていないことを確認します。特定のブランチまたは環境に移動して「**設定**」アイコンをクリックし、「**HTTP アクセス制御**」設定を確認します。このシナリオではキャッシュウォームアップを行えず、アクセス制御を無効にする必要があります。
+アクセス制御が有効になっていないことを確認します。特定のブランチ/環境に移動し、**設定** アイコンをクリックして、**HTTP アクセス制御**&#x200B;設定を確認します。このシナリオでは、キャッシュ ウォームアップを実行できず、アクセス制御を無効にする必要があります。
 
-## 関連資料
+## 関連トピックス
 
-* ユーザーガイドの [Adobe Commerce ユーザーガイド/フルページキャッシュ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
-* [Adobe Commerceでキャッシュウォーミングアップとサイトを利用できません &#x200B;](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) という内容をサポートナレッジベースに記載しています。
+* ユーザーガイドの[Adobe Commerce ユーザーガイド > フルページキャッシュ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching)。
+* [ キャッシュのウォーミングアップとサイトは、Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)でサポート情報ベースで利用できません。

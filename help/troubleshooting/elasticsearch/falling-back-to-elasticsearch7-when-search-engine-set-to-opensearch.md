@@ -1,16 +1,26 @@
 ---
-title: 検索エンジンが [!DNL Opensearch]に設定されたときに [!DNL Elasticsearch7] にフォールバックします
-description: この記事では、*Adobe Commerceで [!DNL Elasticsearch7]* error occurs when the search engine is set to [!DNL OpenSearch] にフォールバックする際の問題に対する解決策を提供します。
+title: 検索エンジンが[!DNL Opensearch]に設定されたときに[!DNL Elasticsearch7]にフォールバックします
+description: この記事では、Adobe Commerceで検索エンジンが[!DNL OpenSearch]に設定されている場合に「[!DNL Elasticsearch7]*にフォールバック中」エラーが発生する場合の問題の解決策を紹介します。
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '269'
 ht-degree: 0%
-
 ---
-
 # 検索エンジンが[!DNL Opensearch]に設定されたときに[!DNL Elasticsearch7]にフォールバックします
 
 この記事では、Adobe Commerceで検索エンジンが[!DNL OpenSearch]に設定されている場合に&#x200B;*Falling back to[!DNL Elasticsearch7]* エラーが発生した場合の問題の解決策を紹介します。
@@ -43,7 +53,7 @@ Adobe Commerce on cloud infrastructure
 お使いのバージョンは[!DNL OpenSearch]をサポートしていますが、アプリケーションは[!DNL Elasticsearch7]を検索エンジンとしてのみ認識/承認します。
 
 Adobe Commerce バージョン 2.4.6以降、アプリケーションが更新され、[!DNL OpenSearch]が検索エンジンとして選択できるようになりました。
-クラウド以外の環境で&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**&#x200B;に移動すると、以下の&#x200B;**解決策**&#x200B;に示すように、このオプションを変更できます。
+クラウド以外の環境で**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**&#x200B;に移動すると、以下の&#x200B;**解決策**に示すように、このオプションを変更できます。
 （注：クラウド環境では、検索エンジンが`app/etc/env.php` ファイルでロックされているため、このフィールドを変更することはできません）。
 
 ## Solution
@@ -52,4 +62,4 @@ Adobe Commerce バージョン 2.4.6以降、アプリケーションが更新�
 
 ## 関連トピックス
 
-Commerce on Cloud Infrastructure ガイドの[OpenSearch サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=ja)。
+Commerce on Cloud Infrastructure ガイドの[OpenSearch サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html)。

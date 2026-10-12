@@ -1,16 +1,29 @@
 ---
 title: Experience Platformに顧客プロファイルが表示されない
-description: この記事では、 [!DNL Data Connection] 拡張機能を使用する際に、お客様のプロファイルデータがExperience Platformに表示されない場合のトラブルシューティング手順について説明します。
+description: この記事では、[!DNL Data Connection]拡張機能を使用する際に、お客様のプロファイルデータがExperience Platformに表示されない場合のトラブルシューティング手順について説明します。
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
 exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
-
 ---
-
 # Experience Platformに顧客プロファイルが表示されない
 
 この記事では、Data Connection拡張機能を使用する際に、お客様のプロファイルデータがExperience Platformに表示されない場合のトラブルシューティング手順について説明します。
@@ -21,7 +34,7 @@ ht-degree: 0%
 
 ## イシュー
 
-拡張機能[[!DNL Data Connection]](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/data-connection/overview)をインストールして設定し、お客様のプロファイルデータをExperience Platformに送信することを有効にしましたが、そのプロファイルデータはExperience Platformに表示されません。
+拡張機能[[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)をインストールして設定し、お客様のプロファイルデータをExperience Platformに送信することを有効にしましたが、そのプロファイルデータはExperience Platformに表示されません。
 
 ## Solution
 
@@ -31,7 +44,7 @@ ht-degree: 0%
 
 最新バージョンの`experience-platform-connector`拡張機能がインストールされていることを確認してください。
 
-最新バージョンについて詳しくは、[[!DNL Data Connection] 拡張機能リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/data-connection/release-notes)を参照してください。
+最新バージョンについて詳しくは、[[!DNL Data Connection] 拡張機能リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes)を参照してください。
 
 >[!NOTE]
 >
@@ -43,7 +56,7 @@ ht-degree: 0%
 
 #### Adobe Commerce on Cloud インフラストラクチャ
 
-1. `.magento.env.yaml`で`ENABLE_EVENTING` グローバル変数を有効にします。 [学習を増やす](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global)。
+1. `.magento.env.yaml`で`ENABLE_EVENTING` グローバル変数を有効にします。 [学習を増やす](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global)。
 
    ```bash
        stage:
@@ -116,14 +129,14 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. 管理者の&#x200B;*[!UICONTROL Commerce Services Connector]* ページに移動し、指定した[!UICONTROL sandbox/production] キーが正しく設定されていることを確認します。 また、Commerce アカウント [!UICONTROL sandbox/production]の設定が[!UICONTROL Commerce Services Connector]に表示されている設定と一致していることを確認します。 [詳細](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey)を学習します。
+1. 管理者の&#x200B;*[!UICONTROL Commerce Services Connector]* ページに移動し、指定した[!UICONTROL sandbox/production] キーが正しく設定されていることを確認します。 また、Commerce アカウント [!UICONTROL sandbox/production]の設定が[!UICONTROL Commerce Services Connector]に表示されている設定と一致していることを確認します。 [詳細](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey)を学習します。
 
 ### サービス IDが許可リストにあるかどうかを確認し、Adobe Commerce サポートに確認します
 
 1. [!UICONTROL Commerce Services Connector] `serviceId`がAdobe Commerceの許可リストに表示されていることを確認します。
-1. [Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせいただき、ステータスを確認してください。
+1. [Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせいただき、ステータスを確認してください。
 
 ## 関連トピックス
 
-* Commerce Services ユーザーガイドの[[!DNL Data Connection]](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/data-connection/overview)拡張機能
-* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* Commerce Services ユーザーガイドの[[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)拡張機能
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)

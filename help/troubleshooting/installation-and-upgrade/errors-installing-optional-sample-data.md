@@ -4,13 +4,27 @@ description: このトピックでは、オプションのサンプルデータ�
 exl-id: 14692e3a-188c-45f1-9df5-ac873cc9eff0
 feature: Console, Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
-
 ---
-
 # オプションのサンプルデータのインストール中にエラーが発生する
 
 このトピックでは、オプションのサンプルデータのインストールで発生する可能性のあるエラーの解決策について説明します。
@@ -34,11 +48,11 @@ Next exception 'ReflectionException' with message 'Class Magento\CatalogRule\Mod
 
 ### Solution
 
-[&#x200B; ファイルシステムの所有権と権限を`root`権限を持つユーザーとして再度設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=ja)します。
+[ ファイルシステムの所有権と権限を`root`権限を持つユーザーとして再度設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html)します。
 
 ## 症状（実稼動モード）
 
-現在[実稼動モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja)に設定されている場合、[magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=ja) コマンドを使用すると、サンプルデータのインストールが失敗します。
+現在[実稼動モード ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html)に設定されている場合、[magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) コマンドを使用すると、サンプルデータのインストールが失敗します。
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -48,7 +62,7 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 サンプルデータは実稼動モードにインストールしないでください。 開発者モードに切り替えて、一部の`var` ディレクトリをクリアし、もう一度試してください。
 
-次のコマンドを、[Adobe Commerce ファイルシステム オーナー](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html?lang=ja)の順に入力します。
+次のコマンドを、[Adobe Commerce ファイルシステム オーナー](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html)の順に入力します。
 
 ```php
 cd <magento_root>

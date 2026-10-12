@@ -4,13 +4,22 @@ description: この記事では、setup:upgrade コマンドを実行する際�
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # `setup:upgrade`の実行中に「市外局番が設定されていません」エラーが発生する
 
 この記事では、次のコマンドを実行する際に&#x200B;*「市外局番が設定されていません」* エラーを取得することに関連する既知のAdobe Commerce on cloud infrastructure 2.2.3の問題に対するパッチを提供します。
@@ -51,6 +60,6 @@ bin/magento setup:upgrade
 
 ## パッチの適用方法
 
-手順については、サポートナレッジベースの「[Adobeが提供するコンポーザーパッチを適用する方法](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」を参照してください。
+手順については、サポートナレッジベースの「[Adobeが提供するコンポーザーパッチを適用する方法](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」を参照してください。
 
 ## 添付ファイル

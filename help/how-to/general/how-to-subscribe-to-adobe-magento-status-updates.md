@@ -1,19 +1,20 @@
 ---
 title: Adobe Commerceのステータス更新の購読方法
-description: この記事では、[Adobe status] （https://status.adobe.com/ja-jp）でAdobe Commerce ステータスを購読して、ステータスのアラート、更新、重大な障害やメンテナンスに関する情報を入手する方法について説明します。
+description: この記事では、[Adobe status] （https://status.adobe.com）でAdobe Commerce ステータスを購読して、ステータスのアラート、更新、重大な障害やメンテナンスに関する情報を入手する方法について説明します。
 exl-id: 17b39925-4726-45da-b55d-c04c9b782df1
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceのステータス更新の購読方法
 
 ## Adobe Magentoのステータス更新を購読する方法
 
-1. [Adobe ステータス &#x200B;](https://status.adobe.com/ja-jp)に移動します。
+1. [Adobe ステータス ](https://status.adobe.com)に移動します。
 1. 「**ログイン**」をクリックします。
 1. Adobeの資格情報でログインします。
 1. オプションが表示されている場合は、**会社または学校アカウント**&#x200B;を選択します。
@@ -23,7 +24,7 @@ ht-degree: 0%
 1. 「**サブスクリプションを作成**」をクリックします。
 
    ![create-subscription-adobe-status.png](assets/create-subscription-adobe-status.png)
-1. 製品の通知を選択できるウィンドウが表示されます。 プロファイルに基づいて一部のサブスクリプションが事前選択されている場合や、既に一部のサブスクリプションを設定している場合があるので、次のスクリーンショットとは異なる場合があります。 Experience Cloudの下の&#x200B;**Adobe Magento**&#x200B;をクリックします。 すべてのAdobe Magento サービスに関する通知を受け取りたい場合は、「Adobe Magento」チェックボックスをオンにします。 これにより、Adobe Magento セクションが展開されるときに表示されるすべてのAdobe Magento サービスが自動的に選択されます（スクリーンショットを参照）。
+1. 製品の通知を選択できるウィンドウが表示されます。 プロファイルに基づいて一部のサブスクリプションが事前選択されている場合や、既に一部のサブスクリプションを設定している場合があるので、次のスクリーンショットとは異なる場合があります。 Experience Cloudの下の&#x200B;**Adobe Magento**&#x200B;をクリックします。 すべてのAdobe Magento サービスに関する通知を受け取りたい場合は、Adobe Magento チェックボックスをオンにします。 これにより、Adobe Magento セクションが展開されるときに表示されるすべてのAdobe Magento サービスが自動的に選択されます（スクリーンショットを参照）。
 
    ![subscribe_to_all_adobe_magento_services_notifications.png](assets/adobe_magento_all_services_notification.png)
 
@@ -34,7 +35,7 @@ ht-degree: 0%
 
    ![select_adobe_notifications_by_regions_and_events.png](assets/adobe_notifications_regions_events.png)
 
-   または、複数の製品（Adobe Magento以外）を購読しており、各製品に異なる地域とイベントタイプの通知を設定する場合は、「**製品ごとに地域とイベントタイプをカスタマイズ**」チェックボックスをオンにします（スクリーンショットを参照）。
+   または、複数の製品（Adobe Magento以外）を購読しており、各製品に異なる地域とイベントタイプの通知を設定する場合は、「**地域とイベントタイプを製品ごとにカスタマイズ**」チェックボックスをオンにします（スクリーンショットを参照）。
 
    ![select_adobe_notifications_for_different_regions_and_events_by_product.png](assets/adobe_region_events_notifications_custom.png)
 1. **続行**&#x200B;をクリックします。

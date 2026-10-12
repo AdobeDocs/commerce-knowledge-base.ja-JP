@@ -4,13 +4,22 @@ description: この記事では、アクセスキーの所有権の競合によ�
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # アカウント権限とアクセスキーに関連するデプロイメントの問題
 
 この記事では、アクセスキーの所有権の競合によって引き起こされるクラウドインフラストラクチャへのAdobe Commerceのデプロイに関する問題の解決策を提供します。
@@ -50,7 +59,7 @@ Cloud ライセンスは連絡先Aに関連付けられています（電子メ�
 
 ### アクセスキーの無効化
 
-古いキーに関連付けられている[Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してキーを無効にしてもらってください。
+古いキーに関連付けられている[Commerce Marketplace](https://marketplace.magento.com/) アカウントにアクセスできない場合は、[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してキーを無効にしてもらってください。
 
 古いキーに関連付けられているMarketplace アカウントにアクセスできる場合は、次の手順を実行してキーを無効にします。
 
@@ -64,4 +73,4 @@ Cloud ライセンスは連絡先Aに関連付けられています（電子メ�
 
 ## 関連トピックス
 
-* [認証キーを入手](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)する方法については、開発者用ドキュメントをご覧ください。
+* [認証キーを入手](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)する方法については、開発者用ドキュメントをご覧ください。

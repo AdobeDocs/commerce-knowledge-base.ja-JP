@@ -1,31 +1,44 @@
 ---
-title: クラウドスナップショットを使用しない環境のロールバック
-description: この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境のスナップショットを作成することなく、環境をロールバックする 2 つのソリューションについて説明します。
+title: Cloud スナップショットを使用せずに環境をロールバックする
+description: この記事では、Adobe Commerce on cloud infrastructure上の環境のスナップショットを持たずに環境をロールバックするための2つのソリューションについて説明します。
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '949'
 ht-degree: 0%
-
 ---
+# Cloud スナップショットを使用せずに環境をロールバックする
 
-# クラウドスナップショットを使用しない環境のロールバック
-
-この記事では、クラウドインフラストラクチャー上のAdobe Commerceで環境のスナップショットを作成することなく、環境をロールバックする 2 つのソリューションについて説明します。
+この記事では、Adobe Commerce on cloud infrastructure上の環境のスナップショットを持たずに環境をロールバックするための2つのソリューションについて説明します。
 
 ## 影響を受ける製品とバージョン
 
-* クラウドインフラストラクチャー上のAdobe Commerce[&#x200B; サポート対象のすべてのバージョン &#x200B;](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、[ サポートされているすべてのバージョン ](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
-お客様の状況に最も適したものを選択してください。
+ケースに最適なものを選択します。
 
-* 安定したビルドで、有効なスナップショットがない場合 – [&#x200B; シナリオ 1：スナップショットがない、安定したビルド（SSH 接続が使用可能） &#x200B;](#scen2)。
-* ビルドが中断され、有効なスナップショットがない場合 – [&#x200B; シナリオ 2：スナップショットなし、ビルドが中断（SSH 接続なし） &#x200B;](#scen3)。
+* 安定したビルドを持っているが、有効なスナップショットがない場合 – [ シナリオ 1: スナップショットがない場合、安定したビルド （SSH接続が利用可能） ](#scen2)。
+* ビルドが壊れており、有効なスナップショットがない場合 – [ シナリオ 2: スナップショットがありません。ビルドが壊れています（SSH接続なし） ](#scen3)。
 
-## シナリオ 1：スナップショットがなく、安定して構築（SSH 接続を使用可能） {#scen2}
+## シナリオ 1: スナップショットなし、ビルドの安定した状態（SSH接続が利用可能） {#scen2}
 
-ここでは、スナップショットを作成していないが、SSH 経由で環境にアクセスできる場合に、環境をロールバックする方法について説明します。
+この節では、スナップショットを作成していないが、SSH経由で環境にアクセスできる場合に、環境をロールバックする方法を説明します。
 
 手順は次のとおりです。
 
@@ -33,48 +46,48 @@ ht-degree: 0%
 1. Adobe Commerce ソフトウェアをアンインストールします。
 1. Git ブランチをリセットします。
 
-これらの手順を実行した後：
+次の手順を実行した後：
 
-* Adobe Commerceのインストールがバニラ状態に戻ります（データベースが復元されました。デプロイメント設定が削除されました。`var` 下のディレクトリがクリアされました）
-* git ブランチが過去に目的の状態にリセットされます
+* Adobe Commerce インストールがVanilla状態に戻ります（データベースが復元されました。デプロイメント設定が削除されました。`var`以下のディレクトリがクリアされました）
+* git ブランチが過去の状態にリセットされます
 
-以下の詳細な手順を参照してください。
+詳細な手順は、次のとおりです。
 
-### 手順 0 （前提条件）:config.php を削除して、構成管理を無効にします {#disable_config_management}
+### 手順0 （前提条件）:config.phpを削除してConfiguration Managementを無効にする {#disable_config_management}
 
-デプロイメント中に以前の設定が自動的に適用されないように、設定管理を無効にする必要があります。
+デプロイメント時に以前の設定設定を自動的に適用しないように、構成管理を無効にする必要があります。
 
-Configuration Management を無効にするには、`/app/etc/` ディレクトリに `config.php` （Adobe Commerce 2.4.x の場合）または `config.local.php` （Adobe Commerce 2.1.x の場合）のファイルが含まれていないことを確認してください。
+Configuration Managementを無効にするには、`/app/etc/` ディレクトリに`config.php` （Adobe Commerce 2.4.xの場合）または`config.local.php` （Adobe Commerce 2.1.xの場合）ファイルが含まれていないことを確認します。
 
 設定ファイルを削除するには、次の手順に従います。
 
-1. [&#x200B; 環境に SSH で接続します &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
+1. [環境へのSSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
 1. 設定ファイルを削除します。
-   * Adobe Commerce 2.4 の場合：
+   * Adobe Commerce 2.4の場合
 
    ```php
     rm app/etc/config.php
    ```
 
-   * Adobe Commerce 2.1 の場合：
+   * Adobe Commerce 2.1の場合
 
    ```php
      rm app/etc/config.local.php
    ```
 
-開発者向けドキュメントの [&#x200B; ストア設定の設定管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ja) を確認して、設定管理について詳しく説明します。
+ストア設定の[構成管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)を確認して、構成管理について詳しくは、開発者ドキュメントを参照してください。
 
-### 手順 1: setup:uninstall コマンドを使用してAdobe Commerce ソフトウェアをアンインストールする {#setup-uninstall}
+### 手順1: setup:uninstall コマンドを使用してAdobe Commerce ソフトウェアをアンインストールする {#setup-uninstall}
 
 
-Adobe Commerce ソフトウェアをアンインストールすると、データベースが削除されて復元され、配置設定が削除されて、`var` の下のディレクトリがクリアされます。
+Adobe Commerce ソフトウェアをアンインストールすると、データベースが削除および復元され、デプロイメント設定が削除され、`var`の下のディレクトリがクリアされます。
 
-開発者向けドキュメントの [Adobe Commerce ソフトウェアをアンインストールする &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=ja) を確認してください。
+開発者向けドキュメントの[Adobe Commerce ソフトウェアのアンインストール ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html)を確認してください。
 
 Adobe Commerce ソフトウェアをアンインストールするには、次の手順に従います。
 
-1. [&#x200B; 環境に SSH で接続します &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
-1. 実行 `setup:uninstall`:
+1. [環境へのSSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. `setup:uninstall`を実行：
 
    ```php
      php bin/magento setup:uninstall
@@ -82,98 +95,98 @@ Adobe Commerce ソフトウェアをアンインストールするには、次�
 
 1. アンインストールを確認します。
 
-次のメッセージが表示され、アンインストールが正常に完了したことを確認します。
+アンインストールが正常に完了したことを確認するには、次のメッセージが表示されます。
 
 ```php
 [SUCCESS]: Magento uninstallation complete.
 ```
 
-つまり、Adobe Commerce（DB を含む）のインストールが本物の（Vanilla）状態に戻りました。
+つまり、Adobe Commerceのインストール（DBを含む）を真正の（Vanilla）状態に戻しました。
 
-### 手順 2:Git ブランチのリセット {#reset-git-branch}
+### 手順2: Git ブランチをリセットする {#reset-git-branch}
 
-Git をリセットすると、コードが以前に目的の状態に戻ります。
+Git リセットでは、コードを過去の状態に戻します。
 
-1. ローカル開発環境に環境のクローンを作成します。 Cloud Console で次のコマンドをコピーできます。    ![copy_git_clone.png](assets/copy_git_clone.png)
-1. コミット履歴にアクセスします。 `--reverse` を使用して履歴を逆順に表示すると、より便利です。
+1. ローカル開発環境への環境の複製。 Cloud Consoleでコマンドをコピーできます：![copy_git_clone.png](assets/copy_git_clone.png)
+1. コミット履歴へのアクセス： `--reverse`を使用して履歴を逆順で表示すると、利便性が高まります。
 
    ```git
      git log --reverse
    ```
 
-1. 正常に動作しているコミットハッシュを選択します。 コードを本物の状態（Vanilla）にリセットするには、ブランチ（環境）を作成した最初のコミットを見つけます。    ![Git コンソールでのコミットハッシュの選択 &#x200B;](assets/select_commit_hash.png)
-1. ハード Git リセットの適用：
+1. コミット ハッシュを選択します。 コードを実際の状態（Vanilla）にリセットするには、ブランチ（環境）を作成した最初のコミットを見つけます。    ![Git コンソールでのコミットハッシュの選択](assets/select_commit_hash.png)
+1. ハードギットリセットを適用：
 
    ```git
      git reset --h <commit_hash>
    ```
 
-1. 変更をサーバーにプッシュ：
+1. サーバーへの変更のプッシュ：
 
    ```git
      git push --force <origin> <branch>
    ```
 
-これらの手順を実行すると、Git ブランチがリセットされ、Git の変更ログ全体がクリアされます。 最後の Git プッシュは、すべての変更を適用してAdobe Commerceを再インストールするために再デプロイすることをトリガーします。
+これらの手順を実行すると、Git ブランチがリセットされ、Gitの変更ログ全体がクリアされます。 最後のGit プッシュは、すべての変更を適用してAdobe Commerceを再インストールするように再デプロイをトリガーします。
 
-## シナリオ 2：スナップショットがない、ビルドが破損している（SSH 接続がない） {#scen3}
+## シナリオ 2：スナップショットなし、ビルドが壊れている（SSH接続なし） {#scen3}
 
-ここでは、重要な状態の環境をロールバックする方法について説明します。デプロイ手順では、正常に動作するアプリケーションを構築できないため、SSH 接続が使用できなくなります。
+この節では、環境が重大な状態にある場合に環境をロールバックする方法を説明します。デプロイメント手順では、動作するアプリケーションの構築に成功できず、SSH接続を使用できなくなります。
 
-このシナリオでは、まず Git リセットを使用してAdobe Commerce アプリケーションの動作ステータスを復元し、次にAdobe Commerce ソフトウェアをアンインストールして、データベースをドロップして復元したり、デプロイメント設定を削除したりします。 シナリオにはシナリオ 1 と同じステップが含まれますが、ステップの順序は異なり、追加のステップとして再デプロイが強制されます。 手順は次のとおりです。
+この場合は、まずGit resetを使用してAdobe Commerce アプリケーションの動作状態を復元してから、Adobe Commerce ソフトウェアをアンインストールする必要があります（データベースをドロップして復元するには、デプロイメント設定を削除するなど）。 シナリオには、シナリオ 1と同じステップが含まれますが、ステップの順序は異なり、追加のステップ（強制的な再展開）があります。 手順は次のとおりです。
 
 [&#x200B;1. Git ブランチをリセットします。](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
 
-[2。 構成管理を無効にします。](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
+[2. 構成管理を無効にします。](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
 
 [&#x200B;3. Adobe Commerce ソフトウェアをアンインストールします。](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&period; Force redeploy.（強制再デプロイ）
+4&amp;period；強制的に再デプロイ。
 
-これらの手順を実行すると、シナリオ 1 と同じ結果が得られます。
+これらの手順を実行すると、シナリオ 1と同じ結果が得られます。
 
-### 手順 4：再デプロイの強制
+### 手順4：強制的に再デプロイ
 
-コミットを作成し（これは空のコミットである可能性がありますが、お勧めしません）、トリガーにプッシュして再デプロイします。
+コミットを行い（これは空のコミットかもしれませんが、推奨しません）、トリガーの再デプロイのためにサーバにプッシュします。
 
 ```git
 git commit --allow-empty -m "<message>" && git push <origin> <branch>
 ```
 
-## セットアップに失敗した場合 :uninstall データベースを手動でリセットする
+## セットアップ :uninstallが失敗した場合は、データベースを手動でリセットしてください
 
-`setup:uninstall` コマンドの実行がエラーで失敗し、完了しない場合は、次の手順で DB を手動でクリアできます。
+`setup:uninstall` コマンドの実行がエラーで失敗し、完了できない場合は、次の手順でDBを手動でクリアできます。
 
-1. [&#x200B; 環境に SSH で接続します &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)。
-1. MySQL DB に接続します。
+1. [環境へのSSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)。
+1. MySQL DBに接続します。
 
    ```sql
    mysql -h database.internal
    ```
 
-1. `main` DB をドロップします。
+1. `main` DBをドロップします。
 
    ```sql
    drop database main;
    ```
 
-1. 空の `main` DB を作成します。
+1. 空の`main` DBを作成します。
 
    ```sql
    create database main;
    ```
 
-1. 設定ファイル `config.php`、`config.php` `.bak`、`env.php`、`env.php.bak` を削除します。
+1. 次の設定ファイルを削除します：`config.php`、`config.php` `.bak`、`env.php`、および`env.php.bak`。
 
-DB をリセットした後、[トリガーに Git プッシュを送信して環境を再デプロイ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=ja#git-commands)、新しく作成した DB にAdobe Commerceをインストールします。 または [redeploy コマンドを実行します &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=ja#environment-commands)。
+DBをリセットした後、[新しく作成したDBにAdobe Commerceをインストールし、トリガーの再デプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands)にGit プッシュを行います。 または[redeploy コマンドを実行します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands)。
 
-## 関連資料
+## 関連トピックス
 
-開発者向けドキュメントでは、
+アドビの開発者ドキュメントには、次のようなものがあります。
 
-* [&#x200B; クラウド上のスナップショットの復元 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [&#x200B; スナップショットの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
-* [&#x200B; スナップショットとバックアップの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Cloud Console でのブランチの管理 – ログの表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=ja#view-logs)
-* [&#x200B; コンポーネントのデプロイメントの失敗 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=ja)
-* [&#x200B; プロジェクトの管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja#configure-the-project)
+* [クラウド上のスナップショットの復元](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [スナップショットの作成](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [スナップショットとバックアップ管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Cloud Consoleでの分岐の管理 – ログの表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
+* [コンポーネントのデプロイメント失敗](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
+* [プロジェクトの管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)

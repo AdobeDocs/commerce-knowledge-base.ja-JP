@@ -1,15 +1,19 @@
 ---
 title: 2024年および2023年のAdobe Commerce リリース戦略とライフサイクルポリシーに関するFAQ
-description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4以降のバージョンのサポートウィンドウを、バージョン  [!DNL GA] 日から**3年に拡大し**います。 サポートには**セキュリティパッチと品質パッチの両方が含**れます。 タイミングの詳細については、新しい[ リリースカレンダー] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja）を参照してください。
+description: Adobe Commerceのお客様のミッションクリティカルなニーズを満たすために、Adobe Commerce 2.4.4以降のバージョンのサポートウィンドウを、バージョン [!DNL GA]日から**3年に拡大し**います。 サポートには**セキュリティパッチと品質パッチの両方が含**れます。 タイミングの詳細については、新しい[ リリースカレンダー] （https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html）を参照してください。
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
-source-git-commit: 68587ca3e861ef326e006a7ab086d197f37ae9b3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1293'
 ht-degree: 1%
-
 ---
-
 # 2024年および2023年のAdobe Commerce リリース戦略とライフサイクルポリシーに関するFAQ
 
 ## 2024および2023年リリース戦略と更新されたライフサイクルポリシー
@@ -28,9 +32,9 @@ Adobe Commerceのお客様のミッションクリティカルなニーズを満
 
 ### 2.4.4、2.4.5、2.4.6、および2.4.7のお客様は、この新しいポリシーに基づいて、いつサポート終了に達しますか？
 
-Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムラインに示すように、バージョン [!DNL GA]日から3年間のセキュリティおよび品質修正を受け取ります。 特定のサポート終了日については、[!DNL Experience League]の[&#x200B; リリースバージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=ja) ページを参照してください。
+Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムラインに示すように、バージョン [!DNL GA]日から3年間のセキュリティおよび品質修正を受け取ります。 特定のサポート終了日については、[!DNL Experience League]の[ リリースバージョン ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) ページを参照してください。
 
-![&#x200B; グラフ 1](assets/MSKB-1978-1.jpg)
+![ グラフ 1](assets/MSKB-1978-1.jpg)
 
 ### Adobe Commerceのリリーススケジュールはどのように変更されますか？
 
@@ -44,14 +48,14 @@ Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムライ
 
 2023年には、一般公開の約2週間前にAdobe Commerce パッチリリースにアクセスできます。
 
-2024年以降、Adobeではパッチへの「プレリリース」アクセスが提供されなくなりました。 代わりに、2.4.7以降では、お客様は[&#x200B; ベータリリース &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html?lang=ja)を使用して、テストと開発のために一般化前の可用性コードにアクセスできます。 プレリリース版へのアクセスは、引き続き次の2023 リリースでスケジュールされています。
+2024年以降、Adobeではパッチへの「プレリリース」アクセスが提供されなくなりました。 代わりに、2.4.7以降では、お客様は[ ベータリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html)を使用して、テストと開発のために一般化前の可用性コードにアクセスできます。 プレリリース版へのアクセスは、引き続き次の2023 リリースでスケジュールされています。
 
 * 2023年8月8日プレリリース版へのアクセスは2023年7月25日（PT）です
 * 2023年10月10日プレリリースへのアクセスは2023年9月26日（PT）です
 
 ### Adobe Commerceのリリーススケジュールはどこに掲載されますか？
 
-詳しくは、[!DNL Experience League]の[Adobe Commerce リリーススケジュール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja)を参照してください。
+詳しくは、[!DNL Experience League]の[Adobe Commerce リリーススケジュール ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)を参照してください。
 
 ### スケジュールに含まれるリリースにはどのような種類がありますか？
 
@@ -62,11 +66,11 @@ Adobe Commerce 2.4.4以降をご利用のお客様は、以下のタイムライ
 
 ### 顧客は質の高いパッチを入手するためにどこへ行きますか？
 
-品質パッチは、個々の品質の問題に対する修正を配布する方法です。 お客様は、Adobe サポートにお問い合わせいただくか、[[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)を使用して高品質なパッチを検索できます。
+品質パッチは、個々の品質の問題に対する修正を配布する方法です。 お客様は、Adobe サポートにお問い合わせいただくか、[[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)を使用して高品質なパッチを検索できます。
 
 ### プランニング、予算編成、一般的なアップグレードに役立つリソースにはどのようなものがありますか？
 
-利用可能なリソースには、包括的な2.4 アップグレードガイド、テクニカルアップグレードワークショップの録画、および[!DNL Upgrade Compatibility Tool]が含まれます。 リソースの包括的なリストについては、[Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=ja)を参照してください。
+利用可能なリソースには、包括的な2.4 アップグレードガイド、テクニカルアップグレードワークショップの録画、および[!DNL Upgrade Compatibility Tool]が含まれます。 リソースの包括的なリストについては、[Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html)を参照してください。
 
 ### Managed Servicesのお客様として、Customer Engineeringは2.4.4へのアップグレードでどのように役立ちますか+?
 
@@ -191,7 +195,7 @@ Managed Servicesのお客様は、分析、クラウドサービスのアップ�
 
 拡張サポートの下で、当社のカスタマーエンジニアリングチームは引き続き、スコープの低下なしに、通常と同じ品質およびセキュリティパッチを提供します。 ただし、[!DNL MariaDB]などの基盤となるサードパーティ製テクノロジーがサポート終了に達した場合は、お客様が[!DNL PCI]への準拠を維持するために追加の対策を講じる必要があります。
 
-Adobeでは、サポート終了に達したサードパーティ製テクノロジのサポートは提供していません。 Adobeでは、コンプライアンスを確保するために、お客様が[[!DNL PCI] 評価者](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/)と協力することをお勧めします。 テスト済みのサポート対象のサードパーティテクノロジの完全な一覧については、[Adobe Commerceの必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
+Adobeでは、サポート終了に達したサードパーティ製テクノロジのサポートは提供していません。 Adobeでは、コンプライアンスを確保するために、お客様が[[!DNL PCI] 評価者](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/)と協力することをお勧めします。 テスト済みのサポート対象のサードパーティテクノロジの完全な一覧については、[Adobe Commerceの必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
 
 <table style="height: 444px; width: 632.2px;">
 <tbody>

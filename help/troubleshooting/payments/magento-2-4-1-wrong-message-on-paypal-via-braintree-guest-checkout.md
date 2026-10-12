@@ -4,13 +4,24 @@ description: この記事では、Adobe Commerce 2.4.1の既知の問題につ�
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.1:PayPal-Braintree ゲストチェックアウトの誤ったメッセージ
 
 この記事では、Adobe Commerce 2.4.1の既知の問題について説明します。ゲストチェックアウトが無効になっている場合、Braintreeを通じてPayPalで注文しようとすると、情報のないエラーメッセージが表示されます。
@@ -27,7 +38,7 @@ ht-degree: 0%
 <u>前提条件</u>:
 
 1. Commerce管理者で、**Stores** > **Configuration** > **Sales** > **Checkout**&#x200B;の下で、**Allow Guest Checkout** = *No*&#x200B;と設定します。
-1. ユーザーガイドの[Braintree](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/braintree?)の説明に従って、Braintree経由でPayPalを有効にします。
+1. ユーザーガイドの[Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?)の説明に従って、Braintree経由でPayPalを有効にします。
 
 <u>複製する手順</u>:
 
@@ -59,6 +70,6 @@ Braintreeを使用せずにDirect Paypalを有効にすると、このシナリ�
 
 ## 関連トピックス
 
-* [Adobe Commerceの買い物かご内の商品数に関するベストプラクティス &#x200B;](https://support.magento.com/hc/en-us/articles/360048550332)をサポートナレッジベースでご覧ください。
-* [注文処理チュートリアル：ステップ 1。 カート &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/)に商品を追加する方法については、開発者ドキュメントを参照してください
-* [GraphQL チェックアウトのチュートリアル：ステップ 1。 製品をカート &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/)に追加する方法については、開発者ドキュメントを参照してください
+* [Adobe Commerceの買い物かご内の商品数に関するベストプラクティス ](https://support.magento.com/hc/en-us/articles/360048550332)をサポートナレッジベースでご覧ください。
+* [注文処理チュートリアル：ステップ 1。 カート ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/)に商品を追加する方法については、開発者ドキュメントを参照してください
+* [GraphQL チェックアウトのチュートリアル：ステップ 1。 製品をカート ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/)に追加する方法については、開発者ドキュメントを参照してください

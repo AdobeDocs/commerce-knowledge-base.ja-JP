@@ -1,21 +1,28 @@
 ---
-title: Composer の変更によりダウンロードが失敗する
-description: この記事では、Adobe Commerceのダウンロードに失敗した場合の修正方法と例外エラーについて説明します。
+title: Composerの変更によりダウンロードに失敗する
+description: この記事では、失敗したAdobe Commerceのダウンロードエラーと例外エラーの修正について説明します。
 exl-id: 5abdab97-4b0c-466b-a68f-a2637d2826e5
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '190'
 ht-degree: 0%
-
 ---
+# Composerの変更によりダウンロードに失敗する
 
-# Composer の変更によりダウンロードが失敗する
+この記事では、失敗したAdobe Commerceのダウンロードエラーと例外エラーの修正について説明します。
 
-この記事では、Adobe Commerceのダウンロードに失敗した場合の修正方法と例外エラーについて説明します。
-
-## 問題
+## イシュー
 
 ダウンロード中に、次のエラーが表示されます。
 
@@ -24,33 +31,33 @@ ht-degree: 0%
   file_get_contents(app/etc/NonComposerComponentRegistration.php): failed to open stream: No such file or directory
 ```
 
-## 原因：
+## 原因
 
-これは、Composer の特定のバージョンの変更が原因で発生します。 これを回避するには、Composer を旧バージョンにダウングレードし、Adobe Commerceを再度ダウンロードします。
+これは、コンポーザーの特定のバージョンでの変更が原因で発生します。 この問題を回避するには、Composerを以前のバージョンにダウングレードし、Adobe Commerceのダウンロードを再試行します。
 
-## 解決策
+## Solution
 
-2015 年 11 月 21 日（PT）から 11 月 26 日（PT）までの Composer バージョンには、この問題があります。 この問題が Composer のバージョンに関連していることを確認するには、次のコマンドを入力します。
+2015年11月21日から11月26日までのバージョンのComposerには、この問題があります。 この問題がComposer バージョンに関連することを確認するには、次のコマンドを入力します。
 
 ```php
 composer -v
 ```
 
-次のようなバージョンが表示されます。
+バージョンは次のように表示されます。
 
 ```php
 Composer version 1.0-dev (2b14f0a047dd4f3545ec82381f65c36ea93a4c81) 2015-11-25 17:13:09
 ```
 
-日付は 2015-11-25 です。これは、Composer にこの問題があることを示しています。
+日付は2015-11-25で、Composerにこの問題があることを示します。
 
-この問題を回避するには：
+回避するには：
 
-1. Composer のバージョンを変更し、次のいずれかの操作を行ってAdobe Commerce ソフトウェアをダウンロードできるようにします。
+1. 次のいずれかの操作を行って、Composerのバージョンを変更し、Adobe Commerce ソフトウェアをダウンロードできるようにします。
 
-   * 次のコマンドを使用して Composer をダウングレードします：`composer self-update 1.0.0-alpha11`。
-   * Composer を 2015 年 11 月 26 日（PT）以降のバージョンにアップグレード：`composer self-update`
+   * 次のコマンドを使用してComposerをダウングレードします：`composer self-update 1.0.0-alpha11`。
+   * Composerを2015年11月26日以降のバージョンにアップグレード：`composer self-update`。
 
-1. Adobe Commerce ディレクトリとサブディレクトリを削除します。
-1. `[composer create-project](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/composer)` または `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)` を使用して、もう一度ダウンロードしてみてください。
-1. Adobe Commerce ソフトウェアのダウンロードが完了したら、Composer を更新します。`composer self-update`
+1. Adobe Commerceのディレクトリとサブディレクトリを削除します。
+1. `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)`または`[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`を使用して、ダウンロードを再試行してください。
+1. Adobe Commerce ソフトウェアのダウンロードが完了したら、Composerを更新します：`composer self-update`。

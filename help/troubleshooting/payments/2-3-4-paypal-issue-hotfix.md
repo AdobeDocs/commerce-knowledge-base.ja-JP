@@ -4,13 +4,22 @@ description: この記事では、PayPal Express チェックアウトで地域�
 exl-id: 9f5ec100-49b0-4ac5-8951-32b5c4fe6bed
 feature: Orders, Payments
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
-
 ---
-
 # 2.3.4 PayPal問題のホットフィックス
 
 この記事では、PayPal Express チェックアウトで地域を選択する際に注文処理中に受け取るエラーの修正について説明します。 この問題は、Adobe Commerce v2.3.4 リリースで行われた変更によって引き起こされ、PayPal Express チェックアウトのアドレスフィールドの解析方法に関連しています。
@@ -47,14 +56,14 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 ## Solution
 
-Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com) ポータルの「ダウンロード」セクションから入手できる[&#x200B; ホットフィックス、](https://magento.com/tech-resources/download#download2353)をマイアカウントに適用します。
+Adobe Commerce オンプレミスのマーチャントの場合：[magento.com](https://magento.com) ポータルの「ダウンロード」セクションから入手できる[ ホットフィックス、](https://magento.com/tech-resources/download#download2353)をマイアカウントに適用します。
 
-Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeには、Commerce v1.0.2のCloud Patchesに修正プログラムが含まれています。 最新のパッケージを適用する手順については、開発者向けドキュメントの「[Commerce リリースノートのクラウドパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche)」を参照してください。
+Adobe Commerce on cloud infrastructureのマーチャントの場合：Adobeには、Commerce v1.0.2のCloud Patchesに修正プログラムが含まれています。 最新のパッケージを適用する手順については、開発者向けドキュメントの「[Commerce リリースノートのクラウドパッチ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche)」を参照してください。
 
 ## パッチの適用方法
 
-手順については、サポートナレッジベースの「[Adobeが提供するコンポーザーパッチを適用する方法](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」を参照してください。
+手順については、サポートナレッジベースの「[Adobeが提供するコンポーザーパッチを適用する方法](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」を参照してください。
 
 ## 関連トピックス
 
-* [&#x200B; リリース情報> Adobe Commerce 2.3.4 リリースノート > Adobe Commerce 2.3.4のリージョンパッチでPayPal Expressのチェックアウトの問題を適用して、重要なPayPal Expressのチェックアウトの問題に対処します](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue)。詳しくは、開発者向けドキュメントを参照してください。
+* [ リリース情報> Adobe Commerce 2.3.4 リリースノート > Adobe Commerce 2.3.4のリージョンパッチでPayPal Expressのチェックアウトの問題を適用して、重要なPayPal Expressのチェックアウトの問題に対処します](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue)。詳しくは、開発者向けドキュメントを参照してください。

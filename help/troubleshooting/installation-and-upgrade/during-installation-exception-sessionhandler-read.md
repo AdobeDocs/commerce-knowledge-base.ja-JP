@@ -1,21 +1,22 @@
 ---
-title: インストール中、例外 SessionHandler::read （）
-description: 「この記事では、Adobe Commerceのインストール中に例外**SessionHandler::read （）**が発生した場合の対処方法について説明します。」
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+title: インストール中に、例外SessionHandler::read （）
+description: この記事では、Adobe Commerceのインストール時に発生する例外**SessionHandler::read （）** エラーの修正点を紹介します。
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
 
+# インストール中に、例外SessionHandler::read （）
 
-# インストール中、例外 SessionHandler::read （）
+この記事では、Adobe Commerceのインストール中に発生した例外&#x200B;**SessionHandler::read （）**&#x200B;のエラーに対する修正を説明します。
 
-この記事では、Adobe Commerceのインストール中に発生した例外 **SessionHandler::read （）** エラーを修正します。
+## イシュー
 
-## 問題
-
-Adobe Commerceをインストールするための最後の手順で、次の例外が表示されます。
+Adobe Commerceのインストールの最後の手順では、次の例外が表示されます。
 
 ```temrinal
 exception 'Exception' with message 'Warning: SessionHandler::read():
@@ -25,34 +26,34 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->このエラーは、2015 年 9 月 28 日（PT）より前のコードバージョンでのみ発生します。 9 月 29 日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redis の設定オプションについて詳しくは、開発者向けドキュメントの [Redis の設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/config-redis) を参照してください。 コマンドラインインストーラーを使用して Redis を指定する方法については、開発者向けドキュメントの [&#x200B; インストールトピック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/advanced) または [&#x200B; デプロイメント設定トピック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/deployment) を参照してください。
+>このエラーは、2015年9月28日以前のコードバージョンでのみ発生します。 9月29日以降の日付のコードをインストールする場合、このエラーは発生しません。 Redisの設定オプションについて詳しくは、開発者ドキュメントの[Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)の設定を参照してください。 コマンドラインインストーラーを使用してRedisを指定する方法について詳しくは、開発者ドキュメントの[ インストールのトピック ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced)または[ デプロイメント設定のトピック ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment)を参照してください。
 
-## 原因：
+## 原因
 
-これは、`session.save_handler` の PHP パラメータが `files` 以外のセッションストレージ（たとえば、`redis`、`memcached` など）に設定されている場合に発生します。 これは、解決に向けて取り組んでいる既知の問題です。
+これは、`session.save_handler` PHP パラメーターが`files`以外のセッションストレージ（`redis`、`memcached`など）に設定されている場合に発生します。 これは、私たちが解決するために取り組んでいる既知の問題です。
 
-## ソリューション：
+## 解決策：
 
-* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの [&#x200B; インストールガイド/Adobe Commerce ソフトウェアのアップデート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall) を参照してください。
-* 既存のコードで次の回避策を使用します。
+* Adobe Commerce コードをアップグレードします。 開発者向けドキュメントの[ インストールガイド/Adobe Commerce ソフトウェアの更新](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall)を参照してください。
+* 既存のコードに対して次の回避策を使用します。
 
-## `php.ini` を見つけます {#locate-php-ini}
+## `php.ini`を検索 {#locate-php-ini}
 
-次のコマンドを入力して、`php.ini` を見つけます。
+次のコマンドを入力して、`php.ini`を探します。
 
 ```php
 php -i | grep "Loaded Configuration File"
 ```
 
-典型的な位置は次の通りです。
+一般的な場所は次のとおりです。
 
 * Ubuntu: `/etc/php5/cli/php.ini`
 * CentOS: `/etc/php.ini`
 
 ## 回避策 {#workaround}
 
-1. `root` 権限を持つユーザーとして、`php.ini` をテキストエディターで開きます。
-1. `session.save_handler` を見つけます
+1. `root`権限を持つユーザーは、テキストエディターで`php.ini`を開きます。
+1. `session.save_handler`を検索
 1. 次のいずれかの方法で設定します。
    * コメントアウトするには：
 
@@ -60,7 +61,7 @@ php -i | grep "Loaded Configuration File"
      ;session.save_path = <path>
      ```
 
-   * ファイルシステムパスに設定するには：
+   * ファイルシステムのパスに設定するには：
 
      ```php
      session.save_handler = files

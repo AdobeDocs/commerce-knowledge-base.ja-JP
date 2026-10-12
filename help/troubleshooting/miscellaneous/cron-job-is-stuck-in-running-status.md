@@ -1,16 +1,23 @@
 ---
 title: '[!DNL Cron]件のジョブが**実行中** ステータスで停止しています'
-description: この記事では、Adobe Commerce [!DNL cron]  ジョブが実行を終了せず、「実行中」ステータスで保持され、他 [!DNL cron]  ジョブが実行されない場合の解決策を説明します。 これは、ネットワークの問題、アプリケーションのクラッシュ、再デプロイメントの問題など、さまざまな理由で発生する可能性があります。
+description: この記事では、Adobe Commerce [!DNL cron] ジョブが実行を終了せず、「実行中」ステータスで保持され、他の[!DNL cron] ジョブが実行されない場合の解決策について説明します。 これは、ネットワークの問題、アプリケーションのクラッシュ、再デプロイメントの問題など、さまざまな理由で発生する可能性があります。
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # [!DNL Cron]件のジョブが「実行中」ステータスで停止しています
 
 この記事では、Adobe Commerce [!DNL cron] ジョブが実行を終了せず、「実行中」ステータスで保持され、他の[!DNL cron] ジョブが実行されない場合の解決策について説明します。 これは、ネットワークの問題、アプリケーションのクラッシュ、再デプロイメントの問題など、さまざまな理由で発生する可能性があります。
@@ -37,7 +44,7 @@ Adobe Commerceオンクラウドインフラストラクチャ（全バージョ
 
 この問題を解決するには、`cron:unlock` コマンドを使用して[!DNL cron] ジョブをリセットする必要があります。 このコマンドは、データベース内の[!DNL cron] ジョブのステータスを変更し、ジョブを強制的に終了して、他のスケジュールされたジョブを続行できるようにします。
 
-1. ターミナルを開き、[SSH キー](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections)を使用して、影響を受ける環境に接続します。
+1. ターミナルを開き、[SSH キー](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)を使用して、影響を受ける環境に接続します。
 1. MySQL データベースの資格情報を取得：`echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`
 1. `mysql`を使用してデータベースに接続：`mysql -hdatabase.internal -uuser -ppassword main`
 1. `main` データベースを選択：`use main`
@@ -47,7 +54,7 @@ Adobe Commerceオンクラウドインフラストラクチャ（全バージョ
 
 ### 単一の[!DNL cron]を停止するためのソリューション {#solution-stop-a-single-cron}
 
-1. ターミナルを開き、[SSH キー](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections)を使用して、影響を受ける環境に接続します。
+1. ターミナルを開き、[SSH キー](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)を使用して、影響を受ける環境に接続します。
 1. 次のコマンドを使用して、長時間実行しているタスクを確認します。
 
    `date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'`
@@ -72,7 +79,7 @@ Adobe Commerceオンクラウドインフラストラクチャ（全バージョ
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. ブロック展開プロセスを実行する可能性のある長時間実行中の[!DNL cron] ジョブが表示される場合は、`kill` コマンドを使用してプロセスを終了できます。**プロセス ID** （`PID`列が見つかりました）を特定し、その`PID`をコマンドに入れてプロセスを強制終了できます。
+1. ブロック展開プロセスを実行する可能性のある長時間実行中の[!DNL cron] ジョブが表示される場合は、`kill` コマンドを使用してプロセスを終了できます。 **プロセス ID** （`PID`列が見つかりました）を特定し、その`PID`をコマンドに入れてプロセスを強制終了できます。
 **kill process** コマンドは次のとおりです。
 
    `kill -9 <PID>`
