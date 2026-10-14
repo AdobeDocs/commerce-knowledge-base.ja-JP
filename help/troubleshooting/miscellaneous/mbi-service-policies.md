@@ -52,11 +52,11 @@ Commerce Intelligenceでは、卓越したカスタマーサービスの提供�
 
 上記のデータセキュリティ機能に加えて、サポートチームが対応できない製品関連のリクエストがいくつかあります。
 
-* **SQLを教える** - SQL Report Builderを使用しますが、SQLを知らないのですか？ 心配はいりません。基本を学ぶために、[ チュートリアル ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html)を用意しました。
+* **SQLを教える** - SQL Report Builderを使用しますが、SQLを知らないのですか？ 心配はいりません。基本を学ぶために、[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html)を用意しました。
 
-* **製品の欠陥が原因ではないSQL ビジュアライゼーションの問題** - グラフが少し不自然に見えて、製品の欠陥が原因で&#x200B;**が**&#x200B;ではない場合、その原因はクエリ自体である可能性が高くなります。 ビジュアライゼーション用にクエリを構造化する方法のガイダンスについては、ユーザーガイドの[SQL クエリからのビジュアライゼーションの作成チュートリアル ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html)をご覧ください。
+* **製品の欠陥が原因ではないSQL ビジュアライゼーションの問題** - グラフが少し不自然に見えて、製品の欠陥が原因で&#x200B;**が**&#x200B;ではない場合、その原因はクエリ自体である可能性が高くなります。 ビジュアライゼーション用にクエリを構造化する方法のガイダンスについては、ユーザーガイドの[SQL クエリからのビジュアライゼーションの作成チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html)をご覧ください。
 * **SQL クエリのデバッグ** - クエリを実行できないEXPLAIN以外のエラーが発生することがあります。 [Commerce Intelligence ユーザーガイド：SQL Report Builder](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html)とSQL チュートリアルを使用して、クエリのエラーの原因を特定することをお勧めします。
 
 ## チケットを送信するにはどうすればよいですか？
 
-ページ上部の「**チケットを送信**」リンクをクリックすると、[ チケットをサポートチームに送信](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)できます。 最初の提出に必要なすべての情報が含まれていることを確認するために、サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)の情報を確認することをお勧めします。[
+ページ上部の「**チケットを送信**」リンクをクリックすると、[&#x200B; チケットをサポートチームに送信](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)できます。 最初の提出に必要なすべての情報が含まれていることを確認するために、サポートチケット [&#128279;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)の情報を確認することをお勧めします。
