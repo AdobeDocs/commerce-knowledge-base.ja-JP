@@ -3,6 +3,7 @@ cloud: Experience Cloud
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
 usetq: true
 feature-set: Commerce
 landing-page-name: commerce
@@ -15,11 +16,9 @@ index: true
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: be3af16156719ed47daf3fdaec1113663885a1a3
 workflow-type: tm+mt
-source-wordcount: 97
+source-wordcount: '91'
 ht-degree: 0%
-
 ---
-
 
 # 内部使用のためのメタデータ
 
