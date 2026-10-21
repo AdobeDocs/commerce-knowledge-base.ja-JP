@@ -129,7 +129,7 @@ your code here
 外部リンクは簡単です。
 
 ```markdown
-[Adobe](https://www.adobe.com)
+[Adobe](https://www.adobe.com/jp)
 ```
 
 ### 添付ファイルへのリンク

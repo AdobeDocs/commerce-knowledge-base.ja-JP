@@ -256,7 +256,7 @@ Use tables for information that is best presented along two axes (rows and colum
 
 ### 外部サイトへのリンク
 
-[Adobe.com](http://Adobe.com)以外のページにリンクするには、goURLではなく通常のURLを使用します。
+[Adobe.com](http://Adobe.com/jp)以外のページにリンクするには、goURLではなく通常のURLを使用します。
 
 
 ## コンマ

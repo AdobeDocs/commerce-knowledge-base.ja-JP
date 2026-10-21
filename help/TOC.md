@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce のナレッジベース
 user-guide-description: Commerce ストアのトラブルシューティングと管理に必要なすべて。
 breadcrumb-title: Commerce KB
-source-git-commit: 152df0a44bb16aae19cd84c6d79b891da7365565
+source-git-commit: f95d594316ff1df6f10be04bc4662e9907bee469
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1559'
 ht-degree: 1%
 ---
 # Adobe Commerce のナレッジベース {#kb}
@@ -66,14 +66,12 @@ ht-degree: 1%
     * [Adobe Commerce 2.4.0:B2B 1.2.0 インストール時の例外](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-exception-during-b2b-1-2-0-install.md)
     * [インストールまたはアップグレード中のメモリ不足エラー](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
     * [REGEXP_LIKE関数が欠落しているため、B2B 1.5.2へのアップグレードがSQL構文エラーで失敗する](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
-    * [B2B 1.5.2 アップデート後のMagento_Company モジュールのアップグレードのパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
+    * [B2B 1.5.2 アップデート後のMagento_Company モジュールアップグレードのパフォーマンスの問題](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
   * サイトがダウンしているか、反応がない {#site-down-or-unresponsive}
     * [パッチを適用すると、サイトがダウンする](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
     * [すべてのAdobe Commerce バージョンでのGoogle Maps アクセス損失に対する修正されたパッチ](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * その他 {#miscellaneous}
     * [Adobe AIのAPI キーを設定しましたが、SaaS データスペースが1つしか表示されません](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
-    * [一般的なカスタムモジュールのトラブルシューティングのヘルプ](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
-    * [Adobe Commerceでキャッシュのウォーミングアップとサイトを利用できない](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [データ書き出しを使用した不一致の特定](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
     * [コンポーネントの依存関係の準備状況チェックの問題](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
     * [クラウドインフラストラクチャ UI上のAdobe Commerceにアクセスできない](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)

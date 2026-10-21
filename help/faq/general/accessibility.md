@@ -28,4 +28,4 @@ Adobe Commerceは高度にカスタマイズ可能であり、お客様はLuma �
 
 ## 関連トピックス
 
-* [Adobeのアクセシビリティ](https://www.adobe.com/trust/accessibility.html)
+* [Adobeのアクセシビリティ](https://www.adobe.com/jp/trust/accessibility.html)
